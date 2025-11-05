@@ -145,6 +145,21 @@ Esto creará las pestañas automáticamente y agregará datos de ejemplo.
 ./venv/bin/python main.py
 ```
 
+### Resetear Google Sheets
+
+Si necesitas limpiar las noticias procesadas y newsletters generados (manteniendo las fuentes y temas configurados):
+
+```bash
+./venv/bin/python reset_sheets.py
+```
+
+Este script:
+- ✅ Elimina todas las noticias procesadas
+- ✅ Elimina todos los newsletters generados
+- ✅ Mantiene las fuentes configuradas
+- ✅ Mantiene los temas configurados
+- ⚠️ Requiere confirmación doble antes de ejecutar
+
 ### Testing de Stages Individuales
 
 Cada stage puede ser probado independientemente:

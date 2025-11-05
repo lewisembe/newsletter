@@ -263,6 +263,91 @@ class GoogleSheetsClient:
             logger.error(f"Error getting latest newsletter: {e}")
             return None
 
+    # ===== RESET OPERATIONS =====
+
+    def reset_processed_news(self) -> bool:
+        """
+        Reset the processed news sheet (clear all articles but keep headers)
+
+        Returns:
+            True if successful, False otherwise
+        """
+        try:
+            logger.info("Resetting processed news sheet...")
+            worksheet = self.spreadsheet.worksheet(settings.SHEET_PROCESSED_NEWS)
+
+            # Clear all content
+            worksheet.clear()
+
+            # Restore headers
+            headers = [
+                'fecha_publicacion', 'titulo', 'fuente', 'tema', 'contenido_completo',
+                'contenido_truncado', 'url_original', 'url_sin_paywall', 'fecha_fetch', 'hash_contenido'
+            ]
+            worksheet.append_row(headers)
+
+            logger.info("✓ Processed news sheet reset successfully")
+            return True
+
+        except Exception as e:
+            logger.error(f"Error resetting processed news: {e}")
+            return False
+
+    def reset_newsletters(self) -> bool:
+        """
+        Reset the newsletters sheet (clear all newsletters but keep headers)
+
+        Returns:
+            True if successful, False otherwise
+        """
+        try:
+            logger.info("Resetting newsletters sheet...")
+            worksheet = self.spreadsheet.worksheet(settings.SHEET_NEWSLETTERS)
+
+            # Clear all content
+            worksheet.clear()
+
+            # Restore headers
+            headers = ['fecha_generacion', 'contenido', 'num_articulos', 'temas_cubiertos']
+            worksheet.append_row(headers)
+
+            logger.info("✓ Newsletters sheet reset successfully")
+            return True
+
+        except Exception as e:
+            logger.error(f"Error resetting newsletters: {e}")
+            return False
+
+    def reset_all_data(self, confirm: bool = False) -> Dict[str, bool]:
+        """
+        Reset both processed news and newsletters sheets
+
+        Args:
+            confirm: Must be True to execute (safety check)
+
+        Returns:
+            Dictionary with success status for each sheet reset
+        """
+        if not confirm:
+            raise ValueError("Must explicitly confirm reset by passing confirm=True")
+
+        logger.warning("⚠️  RESETTING ALL DATA (keeping sources and topics)")
+
+        results = {
+            'processed_news': False,
+            'newsletters': False
+        }
+
+        results['processed_news'] = self.reset_processed_news()
+        results['newsletters'] = self.reset_newsletters()
+
+        if all(results.values()):
+            logger.info("✅ All data reset successfully")
+        else:
+            logger.warning("⚠️  Some resets failed")
+
+        return results
+
 
 # Convenience function for quick access
 def get_client() -> GoogleSheetsClient:
