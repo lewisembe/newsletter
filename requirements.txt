@@ -1,0 +1,38 @@
+# Google Sheets Integration
+gspread==6.0.0
+google-auth==2.27.0
+google-auth-oauthlib==1.2.0
+google-auth-httplib2==0.2.0
+
+# OpenAI API
+openai>=1.30.0
+
+# News Fetching - RSS
+feedparser==6.0.11
+
+# Web Scraping
+beautifulsoup4==4.12.3
+requests==2.31.0
+lxml==5.1.0
+
+# Content Extraction
+newspaper3k==0.2.8
+readability-lxml==0.8.1
+
+# Date Parsing
+python-dateutil==2.8.2
+dateparser==1.2.0
+pytz==2024.1
+
+# Environment Variables
+python-dotenv==1.0.1
+
+# Web Crawling (optional, for advanced crawling)
+scrapy==2.11.1
+
+# Text Processing
+html2text==2024.2.26
+
+# Fuzzy String Matching (for deduplication)
+fuzzywuzzy==0.18.0
+python-Levenshtein==0.25.0
