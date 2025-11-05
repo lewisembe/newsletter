@@ -60,3 +60,4 @@ htmlcov/
 
 # Jupyter Notebook
 .ipynb_checkpoints
+github_token.txt
