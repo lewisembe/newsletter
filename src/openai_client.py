@@ -131,7 +131,7 @@ Responde SOLO con el nombre exacto de la categoría, sin explicaciones adicional
             # Build prompt
             prompt = self._build_newsletter_prompt(articles_by_topic, topics)
 
-            # Call OpenAI API
+            # Call OpenAI API with increased tokens for richer content
             response = self.client.chat.completions.create(
                 model=self.newsletter_model,
                 messages=[
@@ -139,7 +139,7 @@ Responde SOLO con el nombre exacto de la categoría, sin explicaciones adicional
                     {"role": "user", "content": prompt}
                 ],
                 temperature=0.7,
-                max_tokens=3000
+                max_tokens=4000  # Increased for executive summary + full version
             )
 
             # Extract newsletter
@@ -166,77 +166,187 @@ Responde SOLO con el nombre exacto de la categoría, sin explicaciones adicional
         return grouped
 
     def _get_newsletter_system_prompt(self) -> str:
-        """Get system prompt for newsletter generation"""
-        return """Eres un editor experto de newsletters financieras y de negocios. Tu trabajo es crear newsletters elegantes, informativas y fáciles de leer.
+        """Get system prompt for newsletter generation with adaptive tone and cultural references"""
+        return """Eres un editor senior de newsletter con voz editorial distintiva y amplia cultura general. Tu newsletter es reconocido porque la gente realmente lo lee—no es otro email corporativo aburrido.
 
-Características de tu estilo:
-- Narrativo pero conciso (resumen ejecutivo)
-- Uso estratégico de **negritas** para destacar puntos clave
-- Bullets (•) para listar detalles importantes
-- Lenguaje profesional pero accesible
-- Conectas las noticias cuando hay relación temática
-- Incluyes contexto relevante sin ser repetitivo
+ADAPTACIÓN CONTEXTUAL DE TONO:
+- Lee las noticias del día y ajusta tu tono según el contexto
+- Sé serio y analítico cuando la situación lo requiera (crisis, tragedias, temas complejos)
+- Sé irónico o crítico ante hipocresías, contradicciones o absurdos evidentes
+- Sé escéptico ante promesas vacías o marketing corporativo
+- Sé optimista cuando hay avances genuinos
+- Mezcla tonos naturalmente en una misma edición—como lo haría un comentarista experto
 
-Estructura:
-1. Título atractivo de la newsletter
-2. Breve introducción (2-3 líneas)
-3. Secciones por tema con:
-   - Título de sección en negrita
-   - Narrativa que conecta las noticias del tema
-   - Detalles clave en bullets
-   - Enlaces a las fuentes
-4. Cierre breve (opcional)
+REFERENCIAS CULTURALES ESTRATÉGICAS:
+Usa con inteligencia (NO forzadas):
+- **Refranes y dichos populares**: Cuando ilustren perfectamente el punto
+  Ejemplo: "Como dice el refrán: 'en río revuelto, ganancia de pescadores'—y Wall Street está pescando..."
+- **Literatura**: Cuando añada profundidad o contexto
+  Ejemplo: "Una situación kafkiana donde la burocracia..."
+- **Historia**: Cuando dé perspectiva temporal valiosa
+  Ejemplo: "Ecos del crash del 29, pero con criptomonedas..."
+- **Cultura popular** (cine, series, música): Cuando sea relevante
+  Ejemplo: "Plot twist digno de Netflix: resulta que..."
+- **Filosofía/pensamiento**: Cuando el análisis lo amerite
+  Ejemplo: "Como diría Taleb, esto no es un cisne negro—es un rinoceronte gris..."
 
-Formato: Markdown para fácil lectura."""
+REGLAS DE ORO:
+1. Las referencias deben ENRIQUECER el análisis, no solo decorar
+2. Úsalas como nexos entre ideas o para resumir situaciones complejas
+3. Si es oscura, explícala brevemente
+4. Máximo 2-3 referencias por newsletter (calidad > cantidad)
+5. Si no hay buena referencia, no la fuerces—claridad primero
+6. SIEMPRE mantén los hechos precisos e incluye todos los enlaces
+
+ESTRUCTURA REQUERIDA:
+
+1. **Título pegajoso y contextual**
+
+2. **🎯 RESUMEN EJECUTIVO** (2-4 líneas)
+   - Captura la esencia del día con tono apropiado
+   - Puede incluir referencia cultural si enriquece
+
+   **Los tres titulares que importan**:
+   1. [Noticia más importante + micro-contexto]
+   2. [Segunda noticia + micro-contexto]
+   3. [Tercera noticia + micro-contexto]
+
+3. **📰 LA HISTORIA COMPLETA**
+
+   Por cada tema:
+   - **Título de sección** descriptivo y atractivo
+   - Párrafo de apertura que establece tono y contexto
+   - Análisis profundo de cada noticia con:
+     • Puntos clave en bullets
+     • Por qué importa (análisis, no repetición)
+     • Implicaciones y contexto
+   - Conexiones entre noticias relacionadas
+   - Enlaces: **Original** y **sin paywall**
+
+4. **💭 PARA CERRAR** (opcional)
+   - Reflexión final que conecta los temas
+   - Puede incluir referencia cultural como cierre memorable
+
+ESTILO:
+- **Negritas** para destacar lo crucial
+- Bullets (•) para listar
+- Emojis temáticos (📊💰🏛️🔬💡) con moderación
+- Párrafos cortos para facilitar lectura
+- Transiciones inteligentes entre noticias
+
+TU OBJETIVO:
+Crear un newsletter que:
+✓ La gente QUIERE leer (no es obligación)
+✓ Es inteligente sin ser pretencioso
+✓ Es entretenido sin sacrificar profundidad
+✓ Conecta ideas de formas inesperadas pero lógicas
+✓ Tiene personalidad que se adapta al contexto
+✓ Es memorable—las personas recuerdan tus observaciones
+
+Formato: Markdown optimizado para legibilidad."""
 
     def _build_newsletter_prompt(self, articles_by_topic: Dict[str, List[Dict]], topics: List[str]) -> str:
-        """Build prompt for newsletter generation"""
-        # Build articles summary
+        """Build enhanced prompt for newsletter generation with executive summary structure"""
+        # Build articles summary with rich context
         articles_summary = []
+        total_articles = sum(len(articles_by_topic.get(topic, [])) for topic in topics)
 
         for topic in topics:
             if topic in articles_by_topic:
-                articles_summary.append(f"\n## {topic}\n")
+                articles_summary.append(f"\n## TEMA: {topic}\n")
+                articles_summary.append(f"Número de artículos: {len(articles_by_topic[topic])}\n")
 
-                for article in articles_by_topic[topic]:
+                for idx, article in enumerate(articles_by_topic[topic], 1):
                     title = article.get('title', 'Sin título')
                     summary = article.get('summary', '')
                     # Use full content for newsletter, not truncated
-                    content = article.get('content', article.get('content_truncated', ''))[:1000]
+                    content = article.get('content', article.get('content_truncated', ''))[:1500]
                     url = article.get('url', '')
                     archive_url = article.get('url_sin_paywall', '')
                     source = article.get('source', 'Fuente desconocida')
                     date = article.get('published_date', '')
 
                     articles_summary.append(f"""
-### {title}
-**Fuente:** {source} | **Fecha:** {date}
-**URL Original:** {url}
-**URL Sin Paywall:** {archive_url}
+### Artículo {idx}: {title}
+- **Fuente:** {source}
+- **Fecha:** {date}
+- **URL Original:** {url}
+- **URL Sin Paywall:** {archive_url}
 
-**Resumen:** {summary}
+**Resumen:** {summary if summary else "Ver contenido"}
 
-**Contenido:** {content}
+**Contenido completo:**
+{content}
 
 ---
 """)
 
         articles_text = '\n'.join(articles_summary)
 
-        prompt = f"""Genera una newsletter profesional y elegante basada en los siguientes artículos de noticias, agrupados por tema.
+        prompt = f"""Genera un newsletter excepcional siguiendo EXACTAMENTE la estructura indicada en las instrucciones del sistema.
 
+CONTEXTO DEL DÍA:
+- Total de artículos: {total_articles}
+- Temas cubiertos: {', '.join(topics)}
+
+ARTÍCULOS POR TEMA:
 {articles_text}
 
-IMPORTANTE:
-- Crea una narrativa cohesiva para cada sección temática
-- Usa **negritas** para destacar información clave
-- Usa bullets (•) para listar detalles importantes
-- Incluye todos los enlaces (tanto original como sin paywall)
-- El tono debe ser de resumen ejecutivo: conciso pero informativo
-- Conecta las noticias cuando tengan relación
-- No copies textualmente el contenido, sintetiza los puntos clave
+INSTRUCCIONES ESPECÍFICAS:
 
-Genera la newsletter ahora:"""
+1. **ANALIZA EL CONTEXTO PRIMERO:**
+   - Lee todas las noticias para entender el panorama general
+   - Identifica el tono apropiado según el contenido (¿Son noticias serias? ¿Hay absurdos? ¿Contradicciones?)
+   - Busca conexiones temáticas entre noticias
+
+2. **ESTRUCTURA OBLIGATORIA:**
+
+   a) **Título principal** pegajoso y contextual
+
+   b) **🎯 RESUMEN EJECUTIVO** (2-4 líneas máximo)
+      - Captura la esencia del día
+      - Tono apropiado al contexto
+      - Puede usar referencia cultural si enriquece
+
+      Luego: **Los tres titulares que importan:**
+      1. [Noticia más relevante + micro-contexto en 1 línea]
+      2. [Segunda más importante + micro-contexto en 1 línea]
+      3. [Tercera más importante + micro-contexto en 1 línea]
+
+   c) **📰 LA HISTORIA COMPLETA**
+
+      Para cada tema:
+      - Título de sección descriptivo y atractivo
+      - Análisis narrativo (NO solo resumir)
+      - Puntos clave en bullets
+      - "Por qué importa" - análisis de implicaciones
+      - **Enlaces incluidos** (original Y sin paywall)
+      - Si hay múltiples noticias del tema, conéctalas narrativamente
+
+   d) **💭 PARA CERRAR** (opcional pero recomendado)
+      - Reflexión que amarre todo
+      - Puede incluir referencia cultural memorable
+
+3. **REFERENCIAS CULTURALES:**
+   - USA solo si enriquecen genuinamente (máximo 2-3)
+   - Pueden ser: refranes, historia, literatura, cultura pop, filosofía
+   - Como nexos entre ideas o para resumir situaciones
+   - Explica brevemente si es oscura
+
+4. **TONO:**
+   - Adapta según las noticias (serio/irónico/crítico/optimista)
+   - Puede mezc lar en una misma edición
+   - Inteligente pero accesible
+   - Con personalidad pero profesional
+
+5. **REQUISITOS NO NEGOCIABLES:**
+   - Incluye TODOS los enlaces (original + sin paywall)
+   - Análisis va más allá de repetir la noticia
+   - Mínimo 800 palabras en versión completa
+   - Formato Markdown limpio
+   - Hechos precisos siempre
+
+Genera el newsletter ahora siguiendo esta estructura:"""
 
         return prompt
 

@@ -28,6 +28,11 @@ SHEET_NEWSLETTERS = 'Newsletters_Generadas'
 MAX_TOKENS_PER_ARTICLE = int(os.getenv('MAX_TOKENS_PER_ARTICLE', 1000))
 MAX_ARTICLES_PER_DAY = int(os.getenv('MAX_ARTICLES_PER_DAY', 100))
 
+# Newsletter Generation Configuration
+NEWSLETTER_USE_CULTURAL_REFERENCES = os.getenv('NEWSLETTER_USE_CULTURAL_REFERENCES', 'true').lower() == 'true'
+NEWSLETTER_MIN_WORD_COUNT = int(os.getenv('NEWSLETTER_MIN_WORD_COUNT', 800))
+NEWSLETTER_INCLUDE_EXECUTIVE_SUMMARY = os.getenv('NEWSLETTER_INCLUDE_EXECUTIVE_SUMMARY', 'true').lower() == 'true'
+
 # Execution Configuration
 TIMEZONE = os.getenv('TIMEZONE', 'America/New_York')
 LOG_LEVEL = os.getenv('LOG_LEVEL', 'INFO')

@@ -97,7 +97,7 @@ class NewsletterGenerationStage:
 
     def validate_output(self, output: Dict[str, Any]) -> bool:
         """
-        Validate the stage output
+        Validate the stage output with enhanced checks for new format
 
         Args:
             output: Output dictionary from execute()
@@ -109,12 +109,29 @@ class NewsletterGenerationStage:
             return False
 
         newsletter_content = output.get('newsletter_content', '')
+        article_count = output.get('article_count', 0)
+        word_count = output.get('word_count', 0)
 
         # If there were articles, newsletter should have content
-        if output.get('article_count', 0) > 0:
+        if article_count > 0:
             if not newsletter_content or len(newsletter_content) < 100:
                 logger.error("Validation failed: Newsletter content too short")
                 return False
+
+            # Check minimum word count (800 words for quality content)
+            if word_count < 800:
+                logger.warning(f"Newsletter has {word_count} words, recommended minimum is 800")
+                # Don't fail, just warn
+
+            # Check for executive summary marker
+            if '🎯' not in newsletter_content and 'RESUMEN EJECUTIVO' not in newsletter_content.upper():
+                logger.warning("Newsletter may be missing executive summary section")
+                # Don't fail, just warn
+
+            # Check for main content section
+            if '📰' not in newsletter_content and 'HISTORIA COMPLETA' not in newsletter_content.upper():
+                logger.warning("Newsletter may be missing main content section")
+                # Don't fail, just warn
 
         return True
 

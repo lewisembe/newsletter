@@ -10,9 +10,13 @@ Sistema automatizado para generar newsletters inteligentes a partir de múltiple
 - ✅ **Clasificación Automática**: Usa OpenAI para clasificar artículos en categorías predefinidas
 - ✅ **Sin Paywalls**: Genera enlaces sin paywall usando archive.ph, Wayback Machine y 12ft.io
 - ✅ **Deduplicación**: Evita artículos repetidos entre ejecuciones
-- ✅ **Newsletter Elegante**: Genera newsletters narrativas profesionales con formato Markdown
+- ✅ **Newsletter con Personalidad**: Genera newsletters con tono adaptativo y referencias culturales
+  - 🎯 **Resumen Ejecutivo**: Vista rápida de los highlights del día
+  - 📰 **Análisis Profundo**: Versión completa con narrativa inteligente
+  - 🎭 **Tono Adaptativo**: Serio, irónico, crítico o optimista según el contexto
+  - 📚 **Referencias Culturales**: Refranes, literatura, historia, filosofía para enriquecer el análisis
 - ✅ **Google Sheets**: Almacena todo en Google Sheets para fácil acceso
-- ✅ **Optimizado para Costos**: Minimiza uso de tokens de OpenAI (~$3/mes para 50 artículos/día)
+- ✅ **Optimizado para Costos**: Minimiza uso de tokens de OpenAI (~$3-4/mes para 50 artículos/día)
 
 ## 📋 Estructura del Proyecto
 
@@ -254,6 +258,38 @@ CLASSIFICATION_MODEL=gpt-4-turbo-preview
 # Usar GPT-3.5 para newsletter (más barato pero menos elaborado)
 NEWSLETTER_MODEL=gpt-3.5-turbo
 ```
+
+### Configurar Generación de Newsletter
+
+El newsletter ahora incluye tono adaptativo y referencias culturales. Puedes configurarlo en `.env`:
+
+```env
+# Habilitar referencias culturales (refranes, literatura, historia, cultura pop)
+NEWSLETTER_USE_CULTURAL_REFERENCES=true
+
+# Número mínimo de palabras para el contenido del newsletter
+NEWSLETTER_MIN_WORD_COUNT=800
+
+# Incluir resumen ejecutivo al principio
+NEWSLETTER_INCLUDE_EXECUTIVE_SUMMARY=true
+```
+
+**Estructura del Newsletter Mejorado:**
+
+1. **🎯 Resumen Ejecutivo**: 2-4 líneas que capturan la esencia del día + top 3 titulares
+2. **📰 La Historia Completa**: Análisis profundo por tema con:
+   - Tono adaptado al contexto (serio, irónico, crítico, optimista)
+   - Referencias culturales estratégicas (refranes, literatura, historia)
+   - Conexiones narrativas entre noticias relacionadas
+   - Análisis de implicaciones, no solo resumen
+3. **💭 Para Cerrar**: Reflexión final que conecta los temas del día
+
+**Ejemplos de Referencias Culturales:**
+- Refranes: "Como dice el refrán: 'en río revuelto, ganancia de pescadores'..."
+- Literatura: "Una situación kafkiana donde la burocracia..."
+- Historia: "Ecos del crash del 29, pero con criptomonedas..."
+- Cultura pop: "Plot twist digno de Netflix: resulta que..."
+- Filosofía: "Como diría Taleb, esto no es un cisne negro..."
 
 ## 📊 Estimación de Costos
 
