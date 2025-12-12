@@ -1,0 +1,797 @@
+{
+  "metadata": {
+    "newsletter_name": "general_newsletter",
+    "run_date": "2025-12-11",
+    "generated_at": "2025-12-11T08:16:47.756622+01:00",
+    "stage": "05_generate_newsletters"
+  },
+  "configuration": {
+    "max_articles": 25,
+    "top_with_content": 25,
+    "expected_categories": [
+      "geopolitica",
+      "deportes",
+      "sociedad",
+      "economia",
+      "tecnologia",
+      "finanzas",
+      "politica"
+    ],
+    "ranked_file_categories": null,
+    "template": "default",
+    "model_writer": "gpt-4o-mini",
+    "output_format": "markdown"
+  },
+  "ranked_data": {
+    "total_urls_in_ranked_file": 0,
+    "urls_selected_for_processing": 25,
+    "initial_ranked_order": []
+  },
+  "content_extraction": {
+    "urls_requested_for_content": [
+      {
+        "rank": 1,
+        "url_id": 16382,
+        "url": "https://www.nytimes.com/2025/12/10/us/politics/oil-tanker-seized-us-venezuela-trump.html",
+        "title": "U.S. Seizes Oil Tanker Off Venezuela, Escalating Pressure on Maduro"
+      },
+      {
+        "rank": 2,
+        "url_id": 16386,
+        "url": "https://www.nytimes.com/2025/12/10/us/politics/house-approves-defense-bill.html",
+        "title": "House Passes $900 Billion Bill That Would Put Trump’s Stamp on Military"
+      },
+      {
+        "rank": 3,
+        "url_id": 16371,
+        "url": "https://www.lemonde.fr/international/article/2025/12/10/la-reserve-federale-americaine-baisse-ses-taux-sur-fond-de-division-des-gouverneurs-quant-a-l-etat-de-l-economie-aux-etats-unis_6656819_3210.html",
+        "title": "La Réserve fédérale américaine baisse ses taux sur fond de division des gouverneurs quant à l’état de l’économie aux Etats-Unis"
+      },
+      {
+        "rank": 4,
+        "url_id": 16380,
+        "url": "https://www.lemonde.fr/international/live/2025/12/11/en-direct-guerre-en-ukraine-donald-trump-affirme-avoir-eu-des-mots-assez-forts-avec-les-europeens-dans-les-negociations_6656313_3210.html",
+        "title": "EN DIRECT, guerre en Ukraine : Donald Trump affirme avoir eu des « mots assez forts » avec les Européens dans les négociations"
+      },
+      {
+        "rank": 5,
+        "url_id": 16363,
+        "url": "https://www.lemonde.fr/international/article/2025/12/11/amnesty-international-accuse-pour-la-premiere-fois-le-hamas-d-avoir-commis-des-crimes-contre-l-humanite-le-7-octobre-et-par-la-suite_6656827_3210.html",
+        "title": "Amnesty International accuse pour la première fois le Hamas d’avoir commis des crimes contre l’humanité le 7-Octobre et par la suite"
+      },
+      {
+        "rank": 6,
+        "url_id": 16379,
+        "url": "https://www.lemonde.fr/international/article/2025/12/10/des-demandeurs-d-asile-russes-expulses-par-les-etats-unis-se-retrouvent-sur-le-front-ukrainien_6656734_3210.html",
+        "title": "Des demandeurs d’asile russes expulsés par les Etats-Unis se retrouvent sur le front ukrainien"
+      },
+      {
+        "rank": 7,
+        "url_id": 16298,
+        "url": "https://www.ft.com/content/ec490909-80e5-48ff-a518-8185a6a5d2c7",
+        "title": "Ukraine’s ‘fortress belt’ that Donald Trump wants to trade for peace"
+      },
+      {
+        "rank": 8,
+        "url_id": 16288,
+        "url": "https://www.ft.com/content/6a04be70-6d05-4f03-b4c7-39ceae52bb64",
+        "title": "Fed to launch $40bn debt-buying scheme after money market strains"
+      },
+      {
+        "rank": 9,
+        "url_id": 16287,
+        "url": "https://www.ft.com/content/1f0627d0-a9c4-48d7-9a13-307bc59dea66",
+        "title": "US seizes oil tanker off coast of Venezuela, says Donald Trump"
+      },
+      {
+        "rank": 10,
+        "url_id": 16205,
+        "url": "https://elpais.com/cultura/2025-12-10/muere-robe-iniesta-lider-de-extremoduro-a-los-63-anos.html#?rel=lom",
+        "title": "Muere Robe Iniesta, fundador de Extremoduro y figura central en la música española, a los 63 años"
+      },
+      {
+        "rank": 11,
+        "url_id": 16112,
+        "url": "https://elpais.com/internacional/2025-12-11/la-camara-de-representantes-de-estados-unidos-aprueba-un-presupuesto-de-defensa-de-900000-millones-de-dolares.html",
+        "title": "La Cámara de Representantes de Estados Unidos aprueba un presupuesto de Defensa de 900.000 millones de dólares"
+      },
+      {
+        "rank": 12,
+        "url_id": 16113,
+        "url": "https://elpais.com/internacional/2025-12-11/amnistia-acusa-a-hamas-de-crimenes-de-guerra-y-contra-la-humanidad-el-7-de-octubre-de-2023.html",
+        "title": "Amnistía Internacional acusa a Hamás de “crímenes de guerra y contra la humanidad” en el ataque a Israel el 7 de octubre de 2023"
+      },
+      {
+        "rank": 13,
+        "url_id": 16210,
+        "url": "https://www.expansion.com/economia/politica/2025/12/10/69398e80468aeb9d1c8b458e.html",
+        "title": "Detenidos la exmilitante socialista Leire Díez y el expresidente de la Sepi Vicente Fernández"
+      },
+      {
+        "rank": 14,
+        "url_id": 16237,
+        "url": "https://www.expansion.com/economia/politica/2025/12/10/693990b6e5fdea592c8b45ac.html",
+        "title": "El Congreso suspende a Ábalos como diputado y deniega su petición para votar"
+      },
+      {
+        "rank": 15,
+        "url_id": 16275,
+        "url": "https://www.expansion.com/economia/2025/12/10/6939df26e5fdeadd018b4571.html",
+        "title": "EEUU confisca un petrolero frente a las costas de Venezuela"
+      },
+      {
+        "rank": 16,
+        "url_id": 16140,
+        "url": "https://elpais.com/economia/2025-12-10/bruselas-investiga-la-compra-de-la-operadora-tercat-del-puerto-de-barcelona-por-el-gigante-msc-y-la-china-hutchison-ports.html",
+        "title": "Bruselas investiga la compra de la operadora TERCAT del Puerto de Barcelona por el gigante MSC y la china Hutchison Ports"
+      },
+      {
+        "rank": 17,
+        "url_id": 15899,
+        "url": "https://www.bbc.com/news/articles/cr7l0nyxxygo",
+        "title": "Panic in France as children fall victim to lethal violence of Marseille drug gangs"
+      },
+      {
+        "rank": 18,
+        "url_id": 15894,
+        "url": "https://www.bbc.com/news/articles/c1w9lg11jw0o",
+        "title": "US seizes oil tanker off the coast of Venezuela, Trump says"
+      },
+      {
+        "rank": 19,
+        "url_id": 15917,
+        "url": "https://www.bbc.com/news/articles/c5y20p7xweko",
+        "title": "Intensive work continuing on Ukraine plan, European leaders say after Trump call"
+      },
+      {
+        "rank": 20,
+        "url_id": 16135,
+        "url": "https://elpais.com/espana/2025-12-10/detenida-la-exmilitante-del-psoe-leire-diez.html",
+        "title": "La UCO detiene a la exmilitante del PSOE Leire Díez y al expresidente de la SEPI Vicente Fernández"
+      },
+      {
+        "rank": 21,
+        "url_id": 16136,
+        "url": "https://elpais.com/espana/2025-12-10/el-congreso-suspende-los-derechos-y-deberes-de-abalos-mientras-este-en-prision-y-no-podra-votar.html",
+        "title": "El Congreso suspende los derechos y deberes de Ábalos mientras esté en prisión y no podrá votar"
+      },
+      {
+        "rank": 22,
+        "url_id": 15831,
+        "url": "https://www.abc.es/internacional/estados-unidos-captura-petrolero-cerca-venezuela-plena-20251210212827-nt.html",
+        "title": "Estados Unidos captura un petrolero cerca de Venezuela en plena escalada de tensión en el Caribe"
+      },
+      {
+        "rank": 23,
+        "url_id": 16301,
+        "url": "https://www.ft.com/content/cc834260-4ae6-44d3-ad70-7c4e2205d0d3",
+        "title": "Zelenskyy talks Ukraine postwar plan with Scott Bessent, Jared Kushner and Larry Fink"
+      },
+      {
+        "rank": 24,
+        "url_id": 16319,
+        "url": "https://www.ft.com/content/6149f7d9-7ebb-43b1-9b74-9381f80cf35c",
+        "title": "Fed cuts rates amid growing division"
+      },
+      {
+        "rank": 25,
+        "url_id": 16310,
+        "url": "https://www.ft.com/content/03c341ba-210d-4195-87a9-621084a1fa26",
+        "title": "Bolivian ex-president Luis Arce arrested in corruption probe"
+      }
+    ],
+    "urls_successfully_extracted": [
+      {
+        "rank": 3,
+        "url_id": 16371,
+        "url": "https://www.lemonde.fr/international/article/2025/12/10/la-reserve-federale-americaine-baisse-ses-taux-sur-fond-de-division-des-gouverneurs-quant-a-l-etat-de-l-economie-aux-etats-unis_6656819_3210.html",
+        "title": "La Réserve fédérale américaine baisse ses taux sur fond de division des gouverneurs quant à l’état de l’économie aux Etats-Unis",
+        "method": "readability",
+        "word_count": 311
+      },
+      {
+        "rank": 4,
+        "url_id": 16380,
+        "url": "https://www.lemonde.fr/international/live/2025/12/11/en-direct-guerre-en-ukraine-donald-trump-affirme-avoir-eu-des-mots-assez-forts-avec-les-europeens-dans-les-negociations_6656313_3210.html",
+        "title": "EN DIRECT, guerre en Ukraine : Donald Trump affirme avoir eu des « mots assez forts » avec les Européens dans les négociations",
+        "method": "xpath_cache",
+        "word_count": 3334
+      },
+      {
+        "rank": 5,
+        "url_id": 16363,
+        "url": "https://www.lemonde.fr/international/article/2025/12/11/amnesty-international-accuse-pour-la-premiere-fois-le-hamas-d-avoir-commis-des-crimes-contre-l-humanite-le-7-octobre-et-par-la-suite_6656827_3210.html",
+        "title": "Amnesty International accuse pour la première fois le Hamas d’avoir commis des crimes contre l’humanité le 7-Octobre et par la suite",
+        "method": "readability",
+        "word_count": 744
+      },
+      {
+        "rank": 6,
+        "url_id": 16379,
+        "url": "https://www.lemonde.fr/international/article/2025/12/10/des-demandeurs-d-asile-russes-expulses-par-les-etats-unis-se-retrouvent-sur-le-front-ukrainien_6656734_3210.html",
+        "title": "Des demandeurs d’asile russes expulsés par les Etats-Unis se retrouvent sur le front ukrainien",
+        "method": "llm_direct",
+        "word_count": 211
+      },
+      {
+        "rank": 7,
+        "url_id": 16298,
+        "url": "https://www.ft.com/content/ec490909-80e5-48ff-a518-8185a6a5d2c7",
+        "title": "Ukraine’s ‘fortress belt’ that Donald Trump wants to trade for peace",
+        "method": "llm_direct",
+        "word_count": 204
+      },
+      {
+        "rank": 8,
+        "url_id": 16288,
+        "url": "https://www.ft.com/content/6a04be70-6d05-4f03-b4c7-39ceae52bb64",
+        "title": "Fed to launch $40bn debt-buying scheme after money market strains",
+        "method": "llm_direct",
+        "word_count": 204
+      },
+      {
+        "rank": 9,
+        "url_id": 16287,
+        "url": "https://www.ft.com/content/1f0627d0-a9c4-48d7-9a13-307bc59dea66",
+        "title": "US seizes oil tanker off coast of Venezuela, says Donald Trump",
+        "method": "llm_direct",
+        "word_count": 246
+      },
+      {
+        "rank": 10,
+        "url_id": 16205,
+        "url": "https://elpais.com/cultura/2025-12-10/muere-robe-iniesta-lider-de-extremoduro-a-los-63-anos.html#?rel=lom",
+        "title": "Muere Robe Iniesta, fundador de Extremoduro y figura central en la música española, a los 63 años",
+        "method": "readability",
+        "word_count": 2007
+      },
+      {
+        "rank": 11,
+        "url_id": 16112,
+        "url": "https://elpais.com/internacional/2025-12-11/la-camara-de-representantes-de-estados-unidos-aprueba-un-presupuesto-de-defensa-de-900000-millones-de-dolares.html",
+        "title": "La Cámara de Representantes de Estados Unidos aprueba un presupuesto de Defensa de 900.000 millones de dólares",
+        "method": "readability",
+        "word_count": 935
+      },
+      {
+        "rank": 12,
+        "url_id": 16113,
+        "url": "https://elpais.com/internacional/2025-12-11/amnistia-acusa-a-hamas-de-crimenes-de-guerra-y-contra-la-humanidad-el-7-de-octubre-de-2023.html",
+        "title": "Amnistía Internacional acusa a Hamás de “crímenes de guerra y contra la humanidad” en el ataque a Israel el 7 de octubre de 2023",
+        "method": "readability",
+        "word_count": 1311
+      },
+      {
+        "rank": 13,
+        "url_id": 16210,
+        "url": "https://www.expansion.com/economia/politica/2025/12/10/69398e80468aeb9d1c8b458e.html",
+        "title": "Detenidos la exmilitante socialista Leire Díez y el expresidente de la Sepi Vicente Fernández",
+        "method": "json_ld",
+        "word_count": 406
+      },
+      {
+        "rank": 14,
+        "url_id": 16237,
+        "url": "https://www.expansion.com/economia/politica/2025/12/10/693990b6e5fdea592c8b45ac.html",
+        "title": "El Congreso suspende a Ábalos como diputado y deniega su petición para votar",
+        "method": "json_ld",
+        "word_count": 200
+      },
+      {
+        "rank": 15,
+        "url_id": 16275,
+        "url": "https://www.expansion.com/economia/2025/12/10/6939df26e5fdeadd018b4571.html",
+        "title": "EEUU confisca un petrolero frente a las costas de Venezuela",
+        "method": "json_ld",
+        "word_count": 296
+      },
+      {
+        "rank": 16,
+        "url_id": 16140,
+        "url": "https://elpais.com/economia/2025-12-10/bruselas-investiga-la-compra-de-la-operadora-tercat-del-puerto-de-barcelona-por-el-gigante-msc-y-la-china-hutchison-ports.html",
+        "title": "Bruselas investiga la compra de la operadora TERCAT del Puerto de Barcelona por el gigante MSC y la china Hutchison Ports",
+        "method": "readability",
+        "word_count": 535
+      },
+      {
+        "rank": 17,
+        "url_id": 15899,
+        "url": "https://www.bbc.com/news/articles/cr7l0nyxxygo",
+        "title": "Panic in France as children fall victim to lethal violence of Marseille drug gangs",
+        "method": "readability",
+        "word_count": 1730
+      },
+      {
+        "rank": 18,
+        "url_id": 15894,
+        "url": "https://www.bbc.com/news/articles/c1w9lg11jw0o",
+        "title": "US seizes oil tanker off the coast of Venezuela, Trump says",
+        "method": "readability",
+        "word_count": 940
+      },
+      {
+        "rank": 19,
+        "url_id": 15917,
+        "url": "https://www.bbc.com/news/articles/c5y20p7xweko",
+        "title": "Intensive work continuing on Ukraine plan, European leaders say after Trump call",
+        "method": "readability",
+        "word_count": 731
+      },
+      {
+        "rank": 20,
+        "url_id": 16135,
+        "url": "https://elpais.com/espana/2025-12-10/detenida-la-exmilitante-del-psoe-leire-diez.html",
+        "title": "La UCO detiene a la exmilitante del PSOE Leire Díez y al expresidente de la SEPI Vicente Fernández",
+        "method": "readability",
+        "word_count": 1036
+      },
+      {
+        "rank": 21,
+        "url_id": 16136,
+        "url": "https://elpais.com/espana/2025-12-10/el-congreso-suspende-los-derechos-y-deberes-de-abalos-mientras-este-en-prision-y-no-podra-votar.html",
+        "title": "El Congreso suspende los derechos y deberes de Ábalos mientras esté en prisión y no podrá votar",
+        "method": "readability",
+        "word_count": 557
+      },
+      {
+        "rank": 22,
+        "url_id": 15831,
+        "url": "https://www.abc.es/internacional/estados-unidos-captura-petrolero-cerca-venezuela-plena-20251210212827-nt.html",
+        "title": "Estados Unidos captura un petrolero cerca de Venezuela en plena escalada de tensión en el Caribe",
+        "method": "json_ld",
+        "word_count": 847
+      },
+      {
+        "rank": 23,
+        "url_id": 16301,
+        "url": "https://www.ft.com/content/cc834260-4ae6-44d3-ad70-7c4e2205d0d3",
+        "title": "Zelenskyy talks Ukraine postwar plan with Scott Bessent, Jared Kushner and Larry Fink",
+        "method": "llm_direct",
+        "word_count": 178
+      },
+      {
+        "rank": 24,
+        "url_id": 16319,
+        "url": "https://www.ft.com/content/6149f7d9-7ebb-43b1-9b74-9381f80cf35c",
+        "title": "Fed cuts rates amid growing division",
+        "method": "json_ld",
+        "word_count": 152
+      },
+      {
+        "rank": 25,
+        "url_id": 16310,
+        "url": "https://www.ft.com/content/03c341ba-210d-4195-87a9-621084a1fa26",
+        "title": "Bolivian ex-president Luis Arce arrested in corruption probe",
+        "method": "llm_direct",
+        "word_count": 315
+      }
+    ],
+    "urls_failed_extraction": [
+      {
+        "rank": 1,
+        "url_id": 16382,
+        "url": "https://www.nytimes.com/2025/12/10/us/politics/oil-tanker-seized-us-venezuela-trump.html",
+        "title": "U.S. Seizes Oil Tanker Off Venezuela, Escalating Pressure on Maduro",
+        "status": "failed",
+        "error": "All fetch methods failed (tried: cookies, direct, no-js, selenium-no-js, archive.today)"
+      },
+      {
+        "rank": 2,
+        "url_id": 16386,
+        "url": "https://www.nytimes.com/2025/12/10/us/politics/house-approves-defense-bill.html",
+        "title": "House Passes $900 Billion Bill That Would Put Trump’s Stamp on Military",
+        "status": "failed",
+        "error": "All fetch methods failed (tried: cookies, direct, no-js, selenium-no-js, archive.today)"
+      }
+    ],
+    "extraction_stats": {
+      "total_requested": 25,
+      "total_success": 23,
+      "total_failed": 2,
+      "success_rate": 92.0
+    }
+  },
+  "articles": [
+    {
+      "processing_rank": 1,
+      "url_id": 16382,
+      "url": "https://www.nytimes.com/2025/12/10/us/politics/oil-tanker-seized-us-venezuela-trump.html",
+      "title": "U.S. Seizes Oil Tanker Off Venezuela, Escalating Pressure on Maduro",
+      "source": "www.nytimes.com",
+      "category": "geopolitica",
+      "has_full_content": false,
+      "extraction_status": "failed",
+      "extraction_method": null,
+      "extraction_error": "All fetch methods failed (tried: cookies, direct, no-js, selenium-no-js, archive.today)",
+      "word_count": null,
+      "archive_url": null
+    },
+    {
+      "processing_rank": 2,
+      "url_id": 16386,
+      "url": "https://www.nytimes.com/2025/12/10/us/politics/house-approves-defense-bill.html",
+      "title": "House Passes $900 Billion Bill That Would Put Trump’s Stamp on Military",
+      "source": "www.nytimes.com",
+      "category": "politica",
+      "has_full_content": false,
+      "extraction_status": "failed",
+      "extraction_method": null,
+      "extraction_error": "All fetch methods failed (tried: cookies, direct, no-js, selenium-no-js, archive.today)",
+      "word_count": null,
+      "archive_url": null
+    },
+    {
+      "processing_rank": 3,
+      "url_id": 16371,
+      "url": "https://www.lemonde.fr/international/article/2025/12/10/la-reserve-federale-americaine-baisse-ses-taux-sur-fond-de-division-des-gouverneurs-quant-a-l-etat-de-l-economie-aux-etats-unis_6656819_3210.html",
+      "title": "La Réserve fédérale américaine baisse ses taux sur fond de division des gouverneurs quant à l’état de l’économie aux Etats-Unis",
+      "source": "www.lemonde.fr",
+      "category": "economia",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 311,
+      "archive_url": null,
+      "full_content": "Jerome Powell, le président de la Réserve fédérale américaine, à Washington, le 10 décembre 2025. KEVIN LAMARQUE/REUTERS Plusieurs messages ressortent de la réunion de la Réserve fédérale américaine (Fed), mercredi 10 décembre, et ils ne disent pas tous la même chose. La banque centrale a décidé d’abaisser ses taux directeurs d’un quart de point pour la troisième fois d’affilée, une première depuis 2019 – ils se situent désormais entre 3, 5 % et 3, 75 %. Il s’agit du niveau le plus bas depuis trois ans, ce qui n’a pas empêché le président américain, Donald Trump, de déclarer, dans la foulée de l’annonce, que la Fed aurait pu _« doubler »_ sa baisse de taux. Ce nouveau coup de pouce à l’économie américaine s’accompagne d’un gros sous-titre: le conseil des gouverneurs et directeurs de banques centrales locales, qui prend la décision à l’issue d’un vote, n’a jamais eu l’air aussi divisé, dans l’histoire récente, sur la lecture des événements actuels et sur la stratégie à suivre par la suite. _« Les conditions sur le marché du travail semblent se refroidir progressivement, et l’inflation demeure quelque peu élevée au regard de nos objectifs »_, a déclaré Jerome Powell. Le président de la Réserve fédérale estime que les données n’ont pas fondamentalement changé depuis octobre, malgré le shutdown, la longue fermeture de l’administration fédérale, et la non-publication de données récentes essentielles sur l’emploi et les niveaux des prix. Ce qui signifie qu’à ses yeux, la balance des risques penche toujours en faveur d’un soutien au marché du travail. Les derniers signaux semblent en effet montrer que les créations d’emplois sont insuffisantes depuis plusieurs mois, signe d’une économie peu dynamique. La baisse des taux vise à fluidifier ce marché, mais peut dans le même temps nourrir l’inflation. **Il vous reste 67. 98% de cet article à lire. La suite est réservée aux abonnés. **",
+      "content_preview": "Jerome Powell, le président de la Réserve fédérale américaine, à Washington, le 10 décembre 2025. KEVIN LAMARQUE/REUTERS Plusieurs messages ressortent de la réunion de la Réserve fédérale américaine (Fed), mercredi 10 décembre, et ils ne disent pas tous la même chose. La banque centrale a décidé d’abaisser ses taux directeurs d’un quart de point pour la troisième fois d’affilée, une première depuis 2019 – ils se situent désormais entre 3, 5 % et 3, 75 %. Il s’agit du niveau le plus bas depuis tr..."
+    },
+    {
+      "processing_rank": 4,
+      "url_id": 16380,
+      "url": "https://www.lemonde.fr/international/live/2025/12/11/en-direct-guerre-en-ukraine-donald-trump-affirme-avoir-eu-des-mots-assez-forts-avec-les-europeens-dans-les-negociations_6656313_3210.html",
+      "title": "EN DIRECT, guerre en Ukraine : Donald Trump affirme avoir eu des « mots assez forts » avec les Européens dans les négociations",
+      "source": "www.lemonde.fr",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "xpath_cache",
+      "extraction_error": null,
+      "word_count": 3334,
+      "archive_url": null,
+      "full_content": "Posez votre question à la rédaction: La Russie a déclaré jeudi matin avoir abattu dans la nuit 287 drones ukrainiens, soit l’une des attaques les plus massives de l’armée de Kiev en bientôt quatre ans d’offensive russe. Sur ces drones« interceptés et abattus »par la défense anti-aérienne russe, 32 se dirigeaient vers Moscou, a précisé le ministère de la défense russe dans un communiqué sur Telegram. En raison des attaques de drones visant la capitale russe, rarement prise pour cible, des restrictions temporaires ont été mises en place dans les quatre aéroports moscovites – Cheremetievo, Domodedovo, Vnoukovo et Joukovski –, selon l’agence fédérale du transport aérien, Rosaviatsia. Des dizaines de vols y ont été annulés, reportés ou redirigés vers d’autres aéroports, selon les agences de presse russes. La Chambre américaine des représentants a adopté mercredi un texte sur la stratégie de défense des Etats-Unis pour 2026, avec plusieurs clauses visant à maintenir la présence américaine en Europe, à rebours de signaux récents de la Maison Blanche. Le NDAA, voté annuellement par les deux chambres du Congrès avec un certain consensus entre démocrates et républicains, détermine les axes sur lesquels les Etats-Unis devraient, selon les parlementaires, se concentrer en priorité pour l’année suivante en matière de défense. La version 2026, longue de plus de 3 000 pages, préconise un budget global de plus de 900 milliards de dollars, en augmentation de cinq milliards par rapport à l’année précédente. Fruit de négociations de plusieurs semaines entre les deux partis, le texte a été adopté à la Chambre des représentants avec 312 voix pour et seulement 112 contre. Il se dirige désormais vers le Sénat, qui devrait à son tour l’approuver avant la fin de l’année. Dans un communiqué, le président de la Chambre des représentants, le républicain Mike Johnson, a qualifié ce texte de« pièce maîtresse du programme du président Trump de paix par la force ». Il a cité notamment une augmentation de 3, 8 % de la rémunération des soldats, le déploiement accru de militaires pour lutter contre l’immigration à la frontière sud, le renforcement des défenses antimissiles, ou encore« la dissuasion envers la Chine dans l’Indo-Pacifique ». Mike Johnson a également vanté les économies prévues avec une réduction de près de 7 milliards de dollars des coûts« superflus en bureaucratie au Pentagone », des coupes de 1, 6 milliard dans des programmes liés à la lutte contre le réchauffement climatique, ou la suppression d’initiatives en faveur de la diversité pour 40, 5 millions de dollars. En revanche, il ne fait pas état de manière explicite d’autres éléments du texte moins populaires chez les élus républicains, comme l’aide à l’Ukraine. Car le NDAA prévoit pour 2026 quelque 400 millions de dollars d’achats par Washington d’équipements militaires américains à destination de Kiev, afin de continuer à lutter contre l’invasion russe. Le Pentagone, sous l’égide du ministre Pete Hegseth, tente de recentrer la stratégie de défense des Etats-Unis sur les Amériques. Mais la proposition de loi élaborée par le Congrès prévoit le maintien de la présence des Etats-Unis sur le sol européen. Elle empêche le Pentagone de réduire le nombre de soldats américains déployés en Europe sous la barre des 76 000 sans justification auprès du Congrès. Le président américain, Donald Trump, a déclaré, mercredi à la Maison Blanche, avoir eu des« mots assez forts »pendant son entretien plus tôt avec le président français, Emmanuel Macron, le premier ministre britannique, Keir Starmer, et le chancelier allemand, Friedrich Merz. Il a ajouté que les dirigeants européens voulaient organiser une réunion sur l’Ukraine ce week-end mais a souligné que la participation américaine n’était pas acquise. « Avant d’aller à une réunion, il y a des choses que nous voulons savoir », a-t-il expliqué. « Nous allons prendre une décision »à propos de cette réunion, « nous ne voulons pas perdre notre temps », a-t-il lancé. « Parfois il faut laisser les gens se battre jusqu’au bout, et parfois pas », a-t-il encore affirmé. Donald Trump a laissé percer plusieurs fois récemment son impatience face au président ukrainien, Volodymyr Zelensky, lui reprochant de ne pas avoir lu la proposition américaine de plan de paix. Deux sources ukrainiennes ont déclaré, mercredi soir, à l’Agence France-Presse (AFP) que l’Ukraine avait remis aux Etats-Unis sa dernière version du plan pour mettre fin à la guerre avec la Russie. Kiev« a déjà envoyé »à Washington la nouvelle version du plan de sortie du conflit, a déclaré un haut responsable ukrainien sans donner davantage de précisions. Cette dernière version« tient compte de la vision ukrainienne, c’est une proposition plus poussée pour une solution adéquate à des questions problématiques », a rapporté un second responsable ukrainien à l’AFP. « Nous ne divulguons pas les détails en attendant la réaction de la partie américaine », a ajouté ce responsable. Découvrez les articles les plus lus par nos abonnés Article réservé aux abonnésL’entrisme, tactique d’infiltration héritée du trotskisme, sert désormais à désigner des « ennemis de l’intérieur » Temps de lectureTemps de3 min de lecture Article réservé aux abonnésEspions, policiers ou militaires d’élite français trahis par les données publicitaires de leurs téléphones Temps de lectureTemps de8 min de lecture Article réservé aux abonnésBudget de la « Sécu »: avec la méthode du compromis, Sébastien Lecornu réussit son pari Temps de lectureTemps de6 min de lecture Article réservé aux abonnésDes demandeurs d’asile russes expulsés par les Etats-Unis se retrouvent sur le front ukrainien Temps de lectureTemps de2 min de lecture Article réservé aux abonnés« Le gendre de Donald Trump se retrouve au cœur des deux opérations de fusion-acquisition phares de 2025 aux Etats-Unis » Temps de lectureTemps de1 min de lecture Article réservé aux abonnésL’itinéraire de Paul D. , un jeune homme à la « pensée vide » qui a froidement exécuté cinq personnes dans le Nord Temps de lectureTemps de7 min de lecture Le président ukrainien dit avoir eu« une conversation productive »avec le secrétaire au Trésor américain, Scott Bessent, l’émissaire et gendre de Donald Trump Jared Kushner et l’homme d’affaires Larry Fink, PDG de la société d’investissement BlacRock, dans le cadre d’une première réunion consacrée à la reconstruction et la relance économique. « Nous avons discuté des points-clés de la reconstruction, de divers mécanismes et de la vision de la reconstruction. Il existe de nombreuses initiatives qui, avec une approche appropriée, peuvent fonctionner en Ukraine », écrit Volodymyr Zelensky surTelegram. «Nous avons également préparé le point de vue ukrainien sur les 20 points fondamentaux du document de base pour mettre fin à la guerre. C’est précisément la sécurité générale qui déterminera la sécurité économique et façonnera la sécurité du climat des affaires », ajoute-t-il sans plus de précisions. Dans un message diffusé quelques heures plus tôtpour annoncer la réunion, le président ukrainien écrivait que la position de Kiev sur le plan de règlement du conflit serait communiquée prochainement à l’administration américaine. Le pétrolierDashanappartenant à la flotte fantôme russe a été endommagé par des drones navals du Service de sécurité d’Ukraine (SBU) en mer Noire, selon des sources proches de l’unité citées notamment par l’agenceUkrinformetRBK-Ukraine. Le canal Telegram russe « Rybar », réputé proche du ministère de la défense, signale également l’attaque. Le navire sous le coup de sanctions internationales battant pavillon des Comores, qui naviguait dans la zone économique exclusive de l’Ukraine en direction du terminal portuaire de Novorossiïsk, dans le kraï russe de Krasnodar, a été mis hors service, écrit Ukrinform. Selon « Rybar », il a été touché par trois drones ukrainiens. Deux autres pétroliers de la flotte fantôme, qui permet à la Russie de contourner les sanctions, avaient été endommagés le 29 novembrelors d’opérations revendiquées par le SBU. Trente et un drones ukrainiens ont été interceptés en Russie et en Crimée entre 15 heures et 20 heures, heure de Moscou, annonce le ministère de la défense russe. Treize de ces drones ont été abattus dans l’oblast de Briansk, 11 dans celui de Kalouga, cinq en Crimée et les deux derniers dans les régions de Toula et de Moscou, précise-t-il, sans signaler de dégâts. Selon le canal Telegram «Vent de Crimée», qui cite des témoins, plusieurs explosions ont retenti dans le secteur de l’aérodrome de Hvardiïske (🚩), au nord de Simferopol. Les saisies d’armes à feu ont augmenté de plus de 60 % entre les trois années antérieures au lancement de l’offensive russe à grande échelle et les trois suivantes, selon l’ONG suisse Small Arms Survey et l’ukrainienne CENSS. Il s’agit d’armes de poing et d’épaule, telles que fusils automatiques, pistolets-mitrailleurs ou fusils-mitrailleurs légers, précisent-elles dans un rapport établi sur la base des chiffres fournis par les autorités judiciaires ukrainiennes. Sur la même période, les saisies de lance-grenades, de grenades, de lance-roquettes et de mines ont toutes plus que doublé. « Ces données reflètent non seulement l’évolution des stocks illicites en Ukraine, mais aussi les efforts concertés des autorités ukrainiennes pour retirer ces articles de la circulation », affirment les ONG. « Au vu des importantes quantités d’armes et de munitions non sécurisées déjà dispersées à travers l’Ukraine et du déploiement constant d’armes supplémentaires sur les lignes de front, il est essentiel de maintenir des ressources pour les opérations de récupération d’armes et de déminage », font-elles valoir. Small Arms Survey et CENSS assurent, toutefois, ne pas avoir trouvé de preuve de détournement massif d’armes légères fournies à Kiev par ses alliés occidentaux, une crainte exprimée par certaines autorités et entretenue par les réseaux de propagande prorusses. « Notre dernière évaluation montre une nette détérioration de la santé maternelle à travers l’Ukraine, avec de plus en plus de femmes risquant de mourir et de plus en plus de grossesses conduisant à des complications potentiellement mortelles », déclare Florence Bauer, responsable du Fonds des Nations unies pour la population (Fnuap) en Europe de l’Est, dans un communiqué. « Il ne s’agit pas de statistiques abstraites, ce sont des personnes et des familles qui vivent dans un stress insupportable et sont le reflet d’un système de santé attaqué », poursuit-elle, en citant l’exemple d’une maternité gérée par le Fnuap prise pour cible à Kherson, dans le sud du pays. La mortalité maternelle a augmenté de 37 % l’an dernier, selon le Fnuap. Malgré la diminution du nombre de naissances, la mortalité maternelle est passée de 18, 9 à 25, 9 morts pour 100 000 naissances entre 2023 et 2024, précise le Fnuap. Cette évolution s’explique, selon lui, par une plus grande proportion de femmes enceintes touchées par des complications graves, notamment une augmentation de 44 % des ruptures utérines et de 12 % de l’hypertension lors des grossesses. Le taux de césarienne, « marqueur »d’une crise de la santé maternelle, qui atteint 46 % dans la région de Kherson et 32 % dans celle d’Odessa, est l’un des plus élevés en Europe, souligne-t-il. La commissaire européenne à l’élargissement, Marta Kos, a visité aujourd’hui une centrale thermique ukrainienne en compagnie de la vice-ministre de l’énergie chargée de l’intégration européenne, Olha Yukhymchuk. Cette centrale, visée par de nombreuses attaques russes, dont la localisation a été tenue secrète, est en cours de remise en état grâce au soutien du fonds d’appui à l’énergie pour l’Ukraine. Les émissaires américains Steve Witkoff et Jared Kushner« semblent être du côté de la Russie au lieu d’être des négociateurs impartiaux ou objectifs », déclare le sénateur américain Richard Blumenthal, qui plaide pour leur remplacement, dans unentretienaccordé au groupe de radio-télévision public ukrainien Suspilne. « Tout le “plan de paix” doit être abandonné. Il faut revenir à la case départ », poursuit l’élu démocrate, corapporteur duprojet de loiproposant de surtaxer les importations en provenance de pays qui continuent à acheter du pétrole et des matières premières russes. Richard Blumenthal se dit, en outre, « profondément préoccupé »par le fait que Donald Trump« semble abandonner l’Ukraine à son sort »et la contraigne« à faire des concessions territoriales injustes et irrationnelles ». Réagissant auxpropos du président des Etats-Unis concernant la tenue d’électionsen Ukraine, il juge qu’il s’agit d’une« étape supplémentaire dans ce qu’il essaie de faire »pour son homologue russe, Vladimir Poutine. « Poutine n’organise pas d’élections. [Le président ukrainien Volodymyr]Zelensky n’en a pas besoin non plus », ajoute le sénateur. Volodymyr Zelensky annonce s’être entretenu, mercredi, avec son homologue finlandais, Alexander Stubb. « Alex et moi nous coordonnons presque quotidiennement. Je lui suis reconnaissant pour cette attention sérieuse portée aux questions de sécurité et aux efforts déployés pour parvenir à la paix », écrit le président ukrainien sur lesréseaux sociaux. « Chaque jour compte désormais et nous apportons des mises à jour à notre travail commun avec les Etats-Unis, l’Europe et nos amis du G7. Le rythme est très rapide, il y a beaucoup de bonnes idées et nous devons faire en sorte que la paix soit véritablement durable », ajoute-t-il. L’armée russe a lancé mercredi une offensive« pour tenter de percer du sud vers le nord »de Pokrovsk dans laquelle plusieurs blindés ont été engagés, rapporte le 7ecorps de réaction rapide des forces ukrainiennes aéroportées. « Les occupants ont commencé leurs opérations dès le matin, en profitant des conditions météorologiques défavorables. Pour l’assaut, les Russes ont utilisé des véhicules blindés, des voitures et des motos », écrit-il surTelegram. « La 68ebrigade de chasseurs Oleksa Dovbush a détruit la première colonne russe. D’autres unités, notamment d’artillerie, ont ensuite commencé à infliger des pertes matérielles et humaines aux effectifs ennemis », poursuit le 7ecorps, ajoutant que les combats se poursuivent. Emmanuel Macron a annoncé mercredi s’être entretenu au téléphone avec son homologue américain, Donald Trump, et d’autres dirigeants européens au sujet de l’Ukraine, « pour essayer d’avancer ». Cet appel a duré quarante minutes, selon le président français. Le premier ministre britannique, Keir Starmer, et le chancelier allemand, Friedrich Merz, ont pris part à cet entretien, a précisé l’Elysée. Selon la présidence, ils ont« discuté des derniers développements de la médiation engagée par les Etats-Unis et salué leurs efforts pour parvenir à une paix solide et durable en Ukraine et mettre fin aux tueries ». « Ce travail intensif se poursuit et va se poursuivre dans les prochains jours. Ils ont convenu qu’il s’agissait d’un moment critique pour l’Ukraine, pour son peuple et pour la sécurité commune de la région euro-atlantique », a-t-elle ajouté. Les trois dirigeants européens se sont réunis lundi à Londres avec le président ukrainien, Volodymyr Zelensky, pour lui apporter leur soutien au moment où il est de nouveau sous la pression des Etats-Unis pour faire des concessions dans le but de mettre fin à la guerre. Emmanuel Macron et Keir Starmer doivent présider jeudi une nouvelle réunion en visioconférence de la coalition des volontaires, qui rassemble les alliés de Kiev disposés à lui apporter des« garanties de sécurité », dans le cadre d’un éventuel cessez-le-feu ou d’un accord de paix. Alors que la nouvelle stratégie américaine secoue l’équilibre transatlantique, l’Europe doit« accélérer »vers« l’autonomie stratégique », a déclaré mercredi le ministre des affaires étrangères français, Jean-Noël Barrot. La publication vendredi de la« stratégie de sécurité nationale »américaine constitue« un moment de clarification et de vérité qui nous invite à tenir le cap et à accélérer », car« elle donne raison à la France »qui« depuis 2017 appelle l’Europe à l’autonomie stratégique », a estimé M. Barrot devant l’Assemblée nationale. « Les peuples européens refusent les capitulations dans les guerres d’invasion comme dans les guerres commerciales », a déclaré M. Barrot, faisant implicitement référence à deux sujets de friction entre l’Europe et les Etats-Unis: les propositions américaines pour mettre fin à la guerre en Ukraine, jugées trop favorables à l’agresseur russe, et la hausse unilatérale de droits de douane de la part de l’administration Trump. « Les peuples européens refusent que l’Europe devienne un continent vassalisé et vieillissant. Ils veulent que l’Europe devienne une puissance démocratique qui ne laisse personne décider à sa place. Alors, (…)le moment est venu, ne les décevons pas », a lancé le ministre devant les députés. Le premier ministre s’est exprimé, mercredi, devant les députés sur la stratégie de défense nationale, en application de l’article 50-1 de la Constitution. « L’indépendance ne se décrète pas, c’est une conquête permanente », commence Sébastien Lecornu, qui rappelle que le gouvernement proposera une actualisation de la loi de programmation militaire au début de l’année 2026 au Parlement. « Depuis 2017, le budget du ministère des armées a progressé – et il doit encore augmenter en 2026 si le budget de l’Etat est voté », poursuit-il. Cette hausse du budget des armées a produit des effets concrets, « mais l’argent ne sera pas la seule réponse », assure le premier ministre. Depuis 2017, cette hausse des crédits a permis notamment un renouvellement des capacités de dissuasion nucléaires françaises et aussi une modernisation des équipements. Le chef de gouvernement rappelle que depuis 2022 la donne a changé, avec l’agression russe en Ukraine: la dégradation de l’environnement sécuritaire s’est accélérée, « avec le retour des guerres de haute intensité », estime le premier ministre. Il rappelle que le rejet de la partie recettes du projet de loi de finance (PLF) n’a pas permis aux députés de discuter des crédits concernant l’armée; c’est pourquoi ce débat est organisé, précise-t-il. Plusieurs chantiers prioritaires sont donc abordés par le premier ministre: Il revient aussi sur l’annonce, par le président français, de la création d’un service national militaire et volontaire qui accueillera 3 000 jeunes Français. « Le réarmement doit aussi être moral et humain», assure le premier ministre. Selon lui, armer la France, c’est donc garantir« notre sécurité partout sur la planète ». « Si l’instabilité politique nous bouleverse, elle ne doit pas pour autant nous couper des réalités », ajoute M. Lecornu, qui conclut sa prise de parole en appelant les députés à débattre sur le principe d’une augmentation du budget de la défense en 2026. En France, les élections municipales se sont déroulées les 29 avril et 13 mai 1945. Ce sont les premières élections depuis la libération de la France etles premières où les femmes peuvent voter. Elles n’ont toutefois pas eu lieu dans les départements du Bas-Rhin, du Haut-Rhin, de la Moselle et du Territoire de Belfort, des combats trop récents ayant empêché la constitution des listes électorales. Elles n’ont pas lieu non plus dans les communes faisant partie, ou étant proches, des poches occupées par les Allemands sur la façade Atlantique. Elles furent donc reportées aux 23 et 30 septembre en même temps que les cantonales. Pour citer des exemples plus récents, en janvier 2005, desélections ont été organisées en Irakpour élire l’Assemblée nationale irakienne chargée de rédiger la Constitution. En 2013, leMali a organisé des élections présidentielles, au lendemain de l’intervention française dans le pays pour contrer, à la demande des autorités de transition, la percée de rebelles islamistes. Des élections présidentielles se sont déroulées en Afghanistan en2004, 2009et2014. En Ukraine, il est juridiquement interdit d’organiser une élection sous loi martiale; or une partie du territoire est occupée, et les attaques russes sont permanentes. Dans un message sur lesréseaux sociaux, le président ukrainien annonce que de nouvelles discussions sont prévues ce mercredi entre les Etats-Unis et l’Ukraine sur le plan de paix américain. « Aujourd’hui, une discussion avec la partie américaine au sujet d’un document qui détaillera le processus de reconstruction et de développement économique de l’Ukraine après la guerre aura lieu. Parallèlement, nous finalisons le travail sur les 20 points d’un document(…)susceptible de définir les paramètres pour mettre fin à la guerre. Nous espérons transmettre prochainement ce document aux Etats-Unis après notre travail conjoint avec l’équipe du président Trump et nos partenaires européens. Demain, nous avons au programme une réunion au format de la coalition des volontaires(…). Cette semaine pourrait apporter des nouvelles pour nous tous, et pour mettre fin à l’effusion de sang ». Temps deLecture 5 min. Temps deLecture 4 min. Temps deLecture 4 min. Temps deLecture 4 min. Temps deLecture 4 min. Temps deLecture 4 min. Ce live a aussi été animé par Glenn Cloarec et Violette Robinet. Liretous nos articles, analyses et reportages sur la guerre en Ukraine. Retrouveznotre précédent live sur la guerre en Ukraine.",
+      "content_preview": "Posez votre question à la rédaction: La Russie a déclaré jeudi matin avoir abattu dans la nuit 287 drones ukrainiens, soit l’une des attaques les plus massives de l’armée de Kiev en bientôt quatre ans d’offensive russe. Sur ces drones« interceptés et abattus »par la défense anti-aérienne russe, 32 se dirigeaient vers Moscou, a précisé le ministère de la défense russe dans un communiqué sur Telegram. En raison des attaques de drones visant la capitale russe, rarement prise pour cible, des restric..."
+    },
+    {
+      "processing_rank": 5,
+      "url_id": 16363,
+      "url": "https://www.lemonde.fr/international/article/2025/12/11/amnesty-international-accuse-pour-la-premiere-fois-le-hamas-d-avoir-commis-des-crimes-contre-l-humanite-le-7-octobre-et-par-la-suite_6656827_3210.html",
+      "title": "Amnesty International accuse pour la première fois le Hamas d’avoir commis des crimes contre l’humanité le 7-Octobre et par la suite",
+      "source": "www.lemonde.fr",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 744,
+      "archive_url": null,
+      "full_content": "Sur les lieux du massacre du festival Tribe of Nova, près du kibboutz Réim et de la frontière avec Gaza, dans le sud d’Israël, le 30 novembre 2025. OHAD ZWIGENBERG/AP Amnesty International a accusé, jeudi 11 décembre, pour la première fois, le Hamas et d’autres groupes armés palestiniens d’avoir commis des crimes contre l’humanité, dont celui d’ _« extermination »_ lors de l’attaque du 7 octobre 2023 en Israël. L’ONG vise aussi par le qualificatif de crimes contre l’humanité la prise d’otages par le mouvement islamiste. _« Des groupes armés palestiniens ont commis des violations du droit international humanitaire, des crimes de guerre et des crimes contre l’humanité lors de leurs attaques dans le sud d’Israël ayant commencé le 7 octobre 2023 »_, écrit l’organisation de défense des droits humains dans un nouveau rapport de plus de 170 pages. Amnesty International juge que le massacre de civils du 7-Octobre relève du _« crime contre l’humanité d’extermination »_ et recense comme autres crimes contre l’humanité commis par des groupes palestiniens l’emprisonnement, la torture, la disparition forcée, le viol et _« d’autres formes de violences sexuelles »_. Ces groupes, en premier lieu le Hamas, _« ont continué de commettre des violations et des crimes relevant du droit international »_, après le 7-Octobre, notamment des crimes contre l’humanité, en _« détenant et maltraitant des otages ainsi qu’en retenant des corps enlevés »_, ajoute Amnesty. _« La détention d’otages s’inscrivait dans un plan explicitement formulé par la direction du Hamas et d’autres groupes armés palestiniens »_, écrit-elle. L’ONG internationale avait déjà conclu que le Hamas et d’autres groupes avaient commis des crimes de guerre lors de l’attaque du 7-Octobre en Israël, qui a déclenché la guerre dans la bande de Gaza. Cette attaque palestinienne a entraîné la mort de 1 221 personnes côté israélien, en majorité des civils, selon un décompte de l’Agence France-Presse. Ce jour-là, 251 personnes avaient été prises en otage, dont 44 déjà mortes. Sur les 207 otages emmenés vivants, 41 sont morts ou ont été tués en captivité. A ce jour, tous les captifs sont rentrés, à l’exception d’un Israélien, dont la dépouille se trouve encore dans Gaza. Pour les violences sexuelles commises le 7-Octobre, l’ONG a précisé qu’elle n’avait pu interroger qu’une seule personne parmi les survivants, et n’était, par conséquent, pas en mesure de déterminer leur ampleur ou étendue. Le rapport conclut que le Hamas – notamment sa branche armée, les Brigades Ezzedine Al-Qassam – était _« principalement responsable »_ des crimes commis, imputant aussi une responsabilité, mais moindre, au Jihad islamique palestinien, aux Brigades des martyrs d’Al-Aqsa et à des _« civils palestiniens non affiliés »_. ## La justice internationale saisie pour les deux camps Amnesty International, qui accuse Israël de commettre un génocide à Gaza, a estimé à la fin de novembre qu’il _« se poursuit sans relâche malgré le cessez-le-feu »_ fragile, en vigueur depuis le 10 octobre. L’Etat hébreu rejette avec force les accusations de génocide le visant, qu’il qualifie de _« mensongères »_ et _« antisémites »_. Selon le statut de Rome ayant institué la Cour pénale internationale (CPI), les crimes contre l’humanité qualifient des actes commis _« dans le cadre d’une attaque généralisée ou systématique lancée contre toute population civile et en connaissance de cette attaque »_. Les crimes de guerre qualifient, eux, des violations graves du droit international commises à l’encontre de civils ou de combattants à l’occasion d’un conflit armé. En mai 2024, la CPI avait lancé des mandats d’arrêt contre Ismaïl Haniyeh, alors chef du Hamas, Mohammed Deif, alors chef des Brigades Al-Qassam, et Yahya Sinouar, alors chef du Hamas à Gaza et largement considéré comme le cerveau des massacres du 7-Octobre. La CPI a annulé ces mandats d’arrêt après leur mort plus tard cette année-là dans des attaques israéliennes. La CPI a également émis, en novembre 2024, un mandat d’arrêt, toujours en vigueur, contre le premier ministre israélien, Benyamin Nétanyahou, et son ancien ministre de la défense Yoav Gallant pour crimes de guerre et crimes contre l’humanité commis durant la guerre à Gaza. Plus de 70 369 Palestiniens auraient été tués dans la bande de Gaza dans la campagne militaire israélienne de représailles pour le 7-Octobre, selon le ministère de la santé local, placé sous l’autorité du Hamas. Le ministère, dont les chiffres sont jugés fiables par l’ONU, ne précise pas le nombre de combattants tués, mais, selon ses données, plus de la moitié des morts sont des mineurs et des femmes.",
+      "content_preview": "Sur les lieux du massacre du festival Tribe of Nova, près du kibboutz Réim et de la frontière avec Gaza, dans le sud d’Israël, le 30 novembre 2025. OHAD ZWIGENBERG/AP Amnesty International a accusé, jeudi 11 décembre, pour la première fois, le Hamas et d’autres groupes armés palestiniens d’avoir commis des crimes contre l’humanité, dont celui d’ _« extermination »_ lors de l’attaque du 7 octobre 2023 en Israël. L’ONG vise aussi par le qualificatif de crimes contre l’humanité la prise d’otages pa..."
+    },
+    {
+      "processing_rank": 6,
+      "url_id": 16379,
+      "url": "https://www.lemonde.fr/international/article/2025/12/10/des-demandeurs-d-asile-russes-expulses-par-les-etats-unis-se-retrouvent-sur-le-front-ukrainien_6656734_3210.html",
+      "title": "Des demandeurs d’asile russes expulsés par les Etats-Unis se retrouvent sur le front ukrainien",
+      "source": "www.lemonde.fr",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "llm_direct",
+      "extraction_error": null,
+      "word_count": 211,
+      "archive_url": null,
+      "full_content": "Des demandeurs d’asile russes expulsés par les États-Unis se retrouvent sur le front ukrainien. Ces hommes, qui fuyaient la répression en Russie, se retrouvent maintenant à combattre pour l'Ukraine. La situation est alarmante. Les autorités américaines ont expulsé plusieurs demandeurs d'asile russes, les renvoyant dans un pays où ils craignent pour leur vie. Beaucoup d'entre eux ont été interceptés à la frontière entre les États-Unis et le Canada, où ils espéraient trouver refuge. Une fois de retour en Russie, certains ont été recrutés de force par l'armée, tandis que d'autres ont réussi à fuir à nouveau, cette fois vers l'Ukraine, où ils se battent contre l'invasion russe. Les témoignages de ces hommes révèlent une réalité troublante: ils se retrouvent dans une guerre qu'ils n'ont pas choisie, mais qui est devenue leur seule option pour échapper à la persécution. Les organisations de défense des droits de l'homme s'inquiètent de cette situation, soulignant que ces expulsions vont à l'encontre des principes de protection des réfugiés. Les États-Unis, qui se présentent souvent comme un bastion des droits humains, semblent ignorer les conséquences tragiques de leurs décisions. Les demandeurs d'asile russes, qui espéraient trouver un nouveau départ, se retrouvent maintenant sur le champ de bataille, confrontés à des choix impossibles et à un avenir incertain.",
+      "content_preview": "Des demandeurs d’asile russes expulsés par les États-Unis se retrouvent sur le front ukrainien. Ces hommes, qui fuyaient la répression en Russie, se retrouvent maintenant à combattre pour l'Ukraine. La situation est alarmante. Les autorités américaines ont expulsé plusieurs demandeurs d'asile russes, les renvoyant dans un pays où ils craignent pour leur vie. Beaucoup d'entre eux ont été interceptés à la frontière entre les États-Unis et le Canada, où ils espéraient trouver refuge. Une fois de re..."
+    },
+    {
+      "processing_rank": 7,
+      "url_id": 16298,
+      "url": "https://www.ft.com/content/ec490909-80e5-48ff-a518-8185a6a5d2c7",
+      "title": "Ukraine’s ‘fortress belt’ that Donald Trump wants to trade for peace",
+      "source": "www.ft.com",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "llm_direct",
+      "extraction_error": null,
+      "word_count": 204,
+      "archive_url": null,
+      "full_content": "Known as the Donbas, the region has become the fulcrum of fraught US-led diplomacy to end Russia’s full-scale invasion. The Donbas, which includes the provinces of Donetsk and Luhansk, has been a focal point of conflict since 2014, when Russia annexed Crimea and pro-Russian separatists seized control of parts of these regions. The area has seen intense fighting and significant loss of life, making it a critical battleground in the ongoing war. Former President Donald Trump has suggested that he could negotiate a peace deal involving the Donbas, proposing to trade it for concessions from Russia. This idea has sparked debate among policymakers and analysts, with some arguing that it could undermine Ukraine's sovereignty and embolden Russian aggression. Supporters of Ukraine fear that any territorial concessions could set a dangerous precedent, while others believe that a pragmatic approach is necessary to achieve peace. The complexities of the situation are further compounded by the geopolitical interests of various nations, including the United States, European countries, and Russia. As the conflict continues, the fate of the Donbas remains uncertain, with both military and diplomatic efforts ongoing. The region's strategic importance and the humanitarian crisis it has generated make it a key issue in international relations today.",
+      "content_preview": "Known as the Donbas, the region has become the fulcrum of fraught US-led diplomacy to end Russia’s full-scale invasion. The Donbas, which includes the provinces of Donetsk and Luhansk, has been a focal point of conflict since 2014, when Russia annexed Crimea and pro-Russian separatists seized control of parts of these regions. The area has seen intense fighting and significant loss of life, making it a critical battleground in the ongoing war. Former President Donald Trump has suggested that he ..."
+    },
+    {
+      "processing_rank": 8,
+      "url_id": 16288,
+      "url": "https://www.ft.com/content/6a04be70-6d05-4f03-b4c7-39ceae52bb64",
+      "title": "Fed to launch $40bn debt-buying scheme after money market strains",
+      "source": "www.ft.com",
+      "category": "finanzas",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "llm_direct",
+      "extraction_error": null,
+      "word_count": 204,
+      "archive_url": null,
+      "full_content": "The US central bank is set to launch a $40bn debt-buying scheme aimed at stabilizing the money markets, which have recently shown signs of strain. This decision comes just weeks after the Federal Reserve halted its balance sheet reduction program, a move that was intended to tighten monetary policy. The new initiative will involve the purchase of short-term Treasuries, which are government securities that mature in less than a year. The Fed's actions are designed to inject liquidity into the financial system and ensure that banks have enough cash on hand to meet their obligations. Market analysts have expressed concerns about the recent volatility in money markets, which has been exacerbated by rising interest rates and a decrease in available cash. The Fed's intervention is seen as a necessary step to prevent further disruptions and maintain stability in the financial system. This move reflects the central bank's ongoing commitment to support the economy and manage inflationary pressures. By increasing its purchases of government debt, the Fed aims to reassure investors and restore confidence in the markets. As the situation develops, the Fed will continue to monitor economic indicators and adjust its policies as needed to ensure that the financial system remains robust and resilient.",
+      "content_preview": "The US central bank is set to launch a $40bn debt-buying scheme aimed at stabilizing the money markets, which have recently shown signs of strain. This decision comes just weeks after the Federal Reserve halted its balance sheet reduction program, a move that was intended to tighten monetary policy. The new initiative will involve the purchase of short-term Treasuries, which are government securities that mature in less than a year. The Fed's actions are designed to inject liquidity into the fin..."
+    },
+    {
+      "processing_rank": 9,
+      "url_id": 16287,
+      "url": "https://www.ft.com/content/1f0627d0-a9c4-48d7-9a13-307bc59dea66",
+      "title": "US seizes oil tanker off coast of Venezuela, says Donald Trump",
+      "source": "www.ft.com",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "llm_direct",
+      "extraction_error": null,
+      "word_count": 246,
+      "archive_url": null,
+      "full_content": "The US has seized an oil tanker off the coast of Venezuela, according to President Donald Trump. The move is part of Washington's efforts to increase pressure on the regime of Nicolás Maduro amid a broader campaign against drug trafficking. The tanker, named \"Nabarima, \" was reportedly carrying crude oil and was intercepted by US authorities as it attempted to deliver its cargo to Cuba. This action is seen as a significant escalation in the US's ongoing efforts to undermine the Venezuelan government, which it accuses of being involved in drug trafficking and other illicit activities. Trump announced the seizure during a press conference, stating that the US will continue to take strong measures against those who support Maduro's regime. The seizure has led to a spike in oil prices, reflecting market concerns over the potential for further disruptions in oil supply from Venezuela, which has the largest proven oil reserves in the world. The US has previously imposed sanctions on Venezuela's oil industry, which is a critical source of revenue for the Maduro government. The seizure of the tanker is part of a broader strategy to cut off funding to the regime and support opposition efforts within the country. Venezuela's government has condemned the seizure, calling it an act of piracy and a violation of international law. The situation remains tense as the US continues to apply pressure on Maduro, who has faced increasing challenges to his authority amid a deepening economic crisis in Venezuela.",
+      "content_preview": "The US has seized an oil tanker off the coast of Venezuela, according to President Donald Trump. The move is part of Washington's efforts to increase pressure on the regime of Nicolás Maduro amid a broader campaign against drug trafficking. The tanker, named \"Nabarima, \" was reportedly carrying crude oil and was intercepted by US authorities as it attempted to deliver its cargo to Cuba. This action is seen as a significant escalation in the US's ongoing efforts to undermine the Venezuelan govern..."
+    },
+    {
+      "processing_rank": 10,
+      "url_id": 16205,
+      "url": "https://elpais.com/cultura/2025-12-10/muere-robe-iniesta-lider-de-extremoduro-a-los-63-anos.html#?rel=lom",
+      "title": "Muere Robe Iniesta, fundador de Extremoduro y figura central en la música española, a los 63 años",
+      "source": "elpais.com",
+      "category": "sociedad",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 2007,
+      "archive_url": null,
+      "full_content": "Robe Iniesta ha muerto. Y lo ha hecho de forma tan inesperada que cuesta enfrentarse hoy a cualquier texto sobre él. Poco antes de las cuatro de la madrugada, el _manager_ del músico extremeño enviaba un texto a este periodista: “Nuestro Robe ha fallecido. Estamos rotos”. Iniesta padecía “una enfermedad” desde hacía unos meses. Su círculo más íntimo no quiso que se conociera la gravedad de su estado. Tenía 63 años. [Hace un año el cantante suspendió de manera]( \" indefinida sus últimos conciertos en Madrid tras ser diagnosticado con un “tromboembolismo pulmonar”. La última vez que Iniesta fue entrevistado en EL PAÍS, en mayo de 2024, cuando presentaba su imponente último disco, _Se nos lleva el aire, _ la charla finalizó así: **P. ** Dígame si estos son los cálculos que maneja: después de esta gira de 2024 estará dos años desaparecido y luego 12 meses para componer. En la próxima gira, entonces, tendrá 66 o 67 años. **R. ** Uf. No sé si será esa edad, pero que en la próxima gira voy a tener muchos años, pues sí. Y, encima, algunos años de joven me cuentan como los años de perro [risas]. Así que en 2027 tendré ciento y pico años. [La trascendencia de Iniesta]( \" (Plasencia, 1962) en la música española es gigantesca. Un caso poco habitual: alguien que viniendo del rock agreste fue conquistando terrenos hasta convertirse en un clásico respetado por todo el mundo. Sus letras, primero de exaltación marginal en la incipiente etapa con Extremoduro y después de una profunda carga filosófica y romántica, se encuentran entre lo mejor del rock español de todos los tiempos. Muchos de sus textos versan sobre el amor romántico. Debajo de ese coraza de tipo malencarado latía un corazón híper sensible, que escribía sobre amores, pasiones y ausencias dolorosas. “Hoy despedimos al último gran filósofo, al último gran humanista y literato contemporáneo de lengua hispana, y al cantante cuyas melodías han conseguido estremecer a generaciones y generaciones”, expone el escrito de su representante. Desde primera hora de esta mañana, cientos de mensajes están despidiendo al músico extremeño. Hace unos meses Robe todavía seguía de “mala leche” por la suspensión de los conciertos de Madrid por el trombo pulmonar. En su cabeza tenía retomar los recitales para cerrar la que él calificó como “la mejor gira de mi vida”. “Todo el que ha tenido la suerte de trabajar con Robe, después de hacerlo, reconoce ser mucho mejor profesional, y mucho mejor persona. Muy tristes por esta pronta despedida, pero igualmente agradecidos, a más no poder, de haber recibido un tesoro en forma de legado para seguir el camino que nos queda en la vida”, señala el comunicado de Dromedario Records que ha anunciado su fallecimiento. El éxito de Extremoduro pilló a contrapié a la industria musical. Fue un fenómeno que se fraguó en la calle, a base de conciertos y con el empuje de la gente, que veía a Iniesta como el cantor de la marginalidad. Aquí no existía un soporte promocional. Fue una conquista calle por calle, garito por garito. “Rock transgresivo”, lo definió el propio grupo. Robe consiguió el dinero para grabar su primer disco con una versión callejera del [_crowdfunding_]( vendía papeletas en los bares a los colegas por 1. 000 pesetas a cambio del disco… cuando estuviera hecho. Lo grabó, entregó el álbum a sus _creyentes_ y, a partir de ahí, todo fue en ascenso. El músico Robe Iniesta en un concierto en Madrid, el 10 de abril de 1999. Claudio AlvarezRobe Iniesta (a la derecha), durante su actuación en el Palacio de Deportes de Madrid, el 10 de abril de 1999. Claudio AlvarezGrabación en Bilbao del disco Extrechinato y Tú, fruto de la unión de dos de las bandas de rock más populares del país, Extremoduro —liderada por Robe Iniesta— y Platero y Tú, para dar voz a un poeta desconocido. Manolo Chinato, pastor y dueño de un bar en Puerto de Béjar (Salamanca), escribe ‘versos de amor y rebeldía’ en sus ratos libres. ” En la imagen, Robe Iniesta (a la derecha), en 2001. Cristobal ManuelRobe Iniesta, durante la grabación en Bilbao del disco Extrechinato y Tú, proyecto que unió a dos de las bandas de rock más populares del país —Extremoduro y Platero y Tú, en 2001. Cristobal ManuelRobe Iniesta (segundo por la izquierda), junto al resto de los miembros del grupo Extremoduro, en la sede de la Sociedad General de Autores Españoles (SGAE) en Madrid en 2002. Bernardo PerezEl líder de Extremoduro, Robe Iniesta (segundo por la derecha), junto al resto de la banda, muestra el disco de oro obtenido por la venta anticipada de 40. 000 ejemplares de su nuevo álbum La ley innata, unos días antes de su lanzamiento, en Madrid en 2008. J. L. Pino (EFE)Robe Iniesta, autor de la novela El viaje íntimo a la locura durante una entrevista en Madrid en 2009. Claudio AlvarezRobe Iniesta retratado en Madrid, en 2009. Claudio AlvarezEl guitarrista y cantante de Extremoduro, Robe Iniesta, durante un concierto en Madrid en 2014. Alberto Martín (EFE)El rockero placentino Robe Iniesta recibe la Medalla de Extremadura 2014 de manos del presidente José Antonio Monago, durante la celebración del Día de Extremadura en el Teatro Romano de Mérida. Jero Morales (EFE)Robe Iniesta, durante la presentación de su segundo trabajo en solitario Destrozares, canciones para el final de los tiempos, durante una rueda de prensa celebrada en Madrid en 2016. Claudio AlvarezLos líderes de Extremoduro, Robe Iniesta e Iñaki Antón, en Madrid tras el anuncio de la separación del grupo en 2019. J. J. Guillén (EFE)Robe Iniesta fotografiado en Madrid, en 2022. Kiko Huesca (EFE)Robe Iniesta, durante un concierto en Cáceres en 2022. Jero Morales (EFE)Robe Iniesta, durante la presentación en Madrid de su cuarto álbum en solitario Se nos lleva el aire, en Madrid el 19 de diciembre de 2023. Europa Press News (Europa Press via Getty Images)Roberto Iniesta, en un concierto en el Auditorio Marina Sur de Valencia en 2024. Europa Press News (Europa Press via Getty Images) Canciones como _Jesucristo García, La hoguera_ o _Extremaydura, _ contenidas en el primer disco de Extremoduro __(1989), __ mostraban a un letrista que dibujaba retratos de tipos a los que el sistema les había dado la espalda y los acompañaba de una voz áspera y de una música combativa emparentada con el rock callejero español de la escuela de Leño. “Estuve cuatro años por ahí dando tumbos. Pero tumbos auténticos. Iba con mi bulldog _Angelito_ de ciudad en ciudad. A veces dormía en casas de colegas y otras nos buscábamos la vida”. Así definió el músico sus primeros años. Pronto empezó la llamada _etapa del caos, _ en los primeros noventa. Conciertos descontrolados, letras de canciones que se olvidan, perros en el escenario, demasiado alcohol y sustancias. El grupo viajaba incluso con un _camello. _ Su legado musical se fue ampliando, con discos grabados con poco presupuesto, pero las canciones comienzan a tatuarse en la piel de los aficionados: _Tu corazón, Deltoya, Ama, ama, ama y ensancha el alma_(con letra del poeta de bar Manolo Chinato), _Sin Dios ni amo. . . _ Robe cultivaba su perfil indómito y paralelamente comenzaba a leer poesía. Su escritura gana en profundidad. Robe Iniesta, en un concierto en Madrid en 2017. Foto: Víctor Lerena (EFE) [En su camino se cruza entonces Iñaki _Uoho_ Antón, ]( \" miembro de Platero y Tú. Ambos grupos se reconocen y ven que juntos pueden comandar un movimiento, el resurgir del rock urbano. Protagonizan varias giras juntos donde ya llenan pabellones. Uoho pasa a formar parte de Extremoduro y con su llegada el grupo se profesionaliza, su sonido mejora, sus discos se graban en condiciones. _Agila_ (1996) supone un cambio total en Extremoduro: un disco de canciones soberbias, con las mejores letras de Iniesta hasta la fecha y la cuidada producción de Uoho. Uno de sus sencillos, _So payaso, _ vive en los primeros puestos de la lista de Los40, prueba clara de que Extremoduro ya había conquistado a todo el mundo. Robe había sufrido un par de sustos con las sustancias y a finales de los noventa decide bajar el ritmo. Regresa con su pareja, de la que se había separado y con la que comparte dos hijos, y dosifica las drogas. “Dejé la heroína mucho antes de empezar con Extremoduro… Le eché cojones y la dejé solo. Mucha gente está empeñada en decir que soy yonqui, pero no es verdad. Solo me pongo… lo normal. La droga no es mala. Los malos son los hombres y sus acciones. Es como si pegas un tiro a alguien y le echas la culpa a la bala”, dijo a este periódico. Robe Iniesta, en un concierto en Cáceres en 2022. Jero Morales (EFE) En esta época, Robe se entrega a la poesía y a la literatura de forma desordenada y compulsiva, Su paleta va desde los autores que encuentra en los bares (Sor Kampana, Chinato…) a las referencias clásicas (Machado, Neruda, Miguel Hernández…). [Después de _Agila_ Extremoduro]( \" publicó cinco discos, todos relevantes, sobre todo _La ley innata_ (2008), donde comienza a convertir su escritura en tratados filosóficos. El final de Extremoduro llega con el distanciamiento entre Robe e Iñaki. Aquello que comenzaron como una fiesta creativa se ha convertido en una empresa. Grandes giras, presupuestos amplios, mucho que organizar, reuniones con abogados. . . Esta logística supera a los dos amigos y su relación se rompe. La última gira de Extremoduro se la llevó la pandemia. Robe prefirió centrarse en su carrera en solitario, que había comenzado en 2015 con _Lo que aletea en nuestras cabezas, _ y la gira de Extremoduro quedó aparcada definitivamente. Sus dos últimos discos en solitario, _Mayéutica_ (2021) y _Se nos lleva el aire_ (2023), presentan a un escritor mayúsculo, un poeta sabio y en estado de gracia reflexionando sobre la transcendencia e intrascendencia del ser humano, ofreciendo soluciones para vivir felizmente en este mundo efímero. Los versos de esa obra maestra que es [_El poder del arte_]( \" suenan hoy como un maravilloso recuerdo a un hombre que transformó la vida de mucha gente: “Sé que puede que mañana ya no nos quede nada y ya nada importe. / Voy alzando la mirada y casi no sé de nada, nada que importe. / Tal vez, si pudiera hablarte, de si fuera cierto, que el poder del arte bien nos pudiera salvar. / De una vida inerte, de una vida triste, de una mala muerte”. El Robe de los últimos tiempos era un tipo que había limado su afilado carácter. Seguía siendo un tipo desconfiado, pero se iba abriendo con los años. Ofrecía entrevistas con regularidad, eso sí, casi siempre por teléfono y cuando publicaba disco o salía de gira. Reía mucho en estos encuentros con la prensa. Vivía entre Extremadura y el País Vasco junto a su mujer, Bibi, siempre dispuesta a echar una mano cuando había que organizar la intendencia de un día de actuación. La pareja tiene dos hijos, ya camino de la treintena, uno de ellos músico. También se dejaba querer en estos últimos tiempos el músico extremeño, recibiendo algún que otro homenaje. Enternecedor resultó un encuentro que tuvo en Piornal (Valle del Jerte, Cáceres) al recibir la Cereza de Oro. Allí, [unos niños de un colegio le cantaron el clásico de Extremoduro]( _Ama, ama, ama y ensancha el alma. _ Robe se conmovió. __ “Creo que al final lo que manda es la música. Y aunque a la gente le dé mucho morbo mi pasado, lo que cuentan son las canciones. Cuando llevas tanto tiempo y haces músicas diferentes es normal que le gustes a mucha gente a la que le interesan las canciones”, dijo a este periódico tras aquel homenaje. Y eso es lo que nos quedará siempre de Robe, sus canciones y la enorme capacidad que tenía para emocionar con ellas. Roberto Iniesta, 'Robe', actúa durante una actuación en el Auditorio Marina Sur, el 11 de mayo de 2024 en Valencia. Foto: Rober Solsona/Europa Press | Vídeo: EPV",
+      "content_preview": "Robe Iniesta ha muerto. Y lo ha hecho de forma tan inesperada que cuesta enfrentarse hoy a cualquier texto sobre él. Poco antes de las cuatro de la madrugada, el _manager_ del músico extremeño enviaba un texto a este periodista: “Nuestro Robe ha fallecido. Estamos rotos”. Iniesta padecía “una enfermedad” desde hacía unos meses. Su círculo más íntimo no quiso que se conociera la gravedad de su estado. Tenía 63 años. [Hace un año el cantante suspendió de manera]( \" indefinida sus últimos concierto..."
+    },
+    {
+      "processing_rank": 11,
+      "url_id": 16112,
+      "url": "https://elpais.com/internacional/2025-12-11/la-camara-de-representantes-de-estados-unidos-aprueba-un-presupuesto-de-defensa-de-900000-millones-de-dolares.html",
+      "title": "La Cámara de Representantes de Estados Unidos aprueba un presupuesto de Defensa de 900.000 millones de dólares",
+      "source": "elpais.com",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 935,
+      "archive_url": null,
+      "full_content": "La Cámara de Representantes de Estados Unidos ha aprobado un proyecto de ley que asigna 900. 000 millones de dólares para gasto de [Defensa]( \" El prolijo documento, que cuenta con el respaldo de los dos partidos, incluye medidas de apoyo a los aliados europeos, incluida Ucrania, en momentos en los que la Casa Blanca redobla sus críticas a sus socios en el continente. También añade una provisión para forzar al secretario de Defensa, Pete Hegseth, a hacer público el vídeo del [ataque a una narcolancha en el Caribe]( \" en el que un segundo bombardeo mató a los supervivientes del primero. Y prevé una reforma del sistema militar de compras de armamento y una subida de sueldo del 3, 8% para los soldados. El proyecto de ley de Presupuesto para la Defensa Nacional, de 3. 000 páginas, recibió el respaldo de 312 congresistas de los dos partidos, por 112 que se opusieron. Se espera que obtenga sin problemas el visto bueno del Senado la semana próxima, inmediatamente antes de las vacaciones navideñas, y el presidente Donald Trump la firme sin objeciones. Previamente, la Casa Blanca había expresado su “firme apoyo” a la amplia ley. Entre otras cosas, la nueva medida busca proteger la presencia militar estadounidense en Europa de las veleidades de una Administración que, en su [nueva Estrategia de Seguridad Nacional]( \" acusa al continente de estar en riesgo de una “destrucción de su civilización”, de frenar la libertad de expresión de la extrema derecha y se muestra mucho más crítico contra los gobiernos aliados que contra la Rusia hostil. El Gobierno estadounidense ya ha [retirado parte del contingente que mantenía hasta ahora en Rumanía]( \" para [proteger el flanco este]( \" de la amenaza rusa, y los aliados temen que este paso solo sea el principio de una salida mayor. El documento exige al Pentágono mantener al menos 76. 000 soldados en Europa a menos que los aliados de la OTAN sean consultados y se determine que retirar esas tropas es necesario para los intereses estadounidenses. En la actualidad Estados Unidos mantiene un contingente de 80. 000 a 100. 000 militares en el continente europeo. Asimismo una provisión del proyecto de ley obliga a Washington a mantener al menos 28. 500 soldados en Corea del Sur. Pese a las presiones de Trump sobre el presidente ucranio, Volodímir Zelenski, para que acepte rápidamente un acuerdo de paz por el que cedería a Rusia el 20% del territorio de su país, y su amenaza de retirar su apoyo a la nación ocupada, el proyecto de ley también envía un espaldarazo a Kiev, relativamente modesto pero muy bienvenido: autoriza 400 millones de dólares anuales para 2026 y 2027 para fabricar armas destinadas a [Ucrania]( \" La medida ha logrado algo que cada vez parece más difícil en un mundo político en Washington cada vez más polarizado: un compromiso en el que los dos partidos han cedido. Los republicanos consiguen recortes y eliminaciones de programas y partidas presupuestarias dedicados a la lucha contra el cambio climático y a apoyar la diversidad. El ala dura del Partido Republicano se lamenta, por su parte, de que la nueva ley no incluya más recortes a la presencia militar estadounidense en el exterior. Los demócratas obtienen un mayor escrutinio sobre el Pentágono y la cancelación de varias autorizaciones a guerras ya antiguas. Incluida la quizá más simbólica de todas, la de Irak que Estados Unidos lanzó en 2003 con el argumento falso de que el entonces régimen de Sadam Husein contaba con armas de destrucción masiva. Con la aprobación de esta ley, Washington pondrá fin oficialmente a la invasión. Un paso necesario, según los legisladores, para subrayar que hoy día Irak es un socio estratégico y para evitar abusos en el futuro: la primera Administración de Trump recurrió en parte a la resolución que autorizaba la guerra en Irak como justificación legal para el ataque de drones que mató al general iraní Qasim Suleimani en 2020. “Necesitamos una fuerza de combate dispuesta, capaz y letal porque las amenazas contra nuestra nación, especialmente las procedentes de China, son más complejas y desafiantes que nunca en los últimos cuarenta años”, ha declarado el presidente del Comité de Servicios Armados de la cámara baja, el republicano Mike Rogers. La medida confirma el levantamiento de las sanciones estadounidenses contra Siria. Y uno de los cambios más significativos que introduce la medida es una reforma del sistema de compras de armamento en el Pentágono, que busca acelerar el proceso de adquisiciones, una de las prioridades para Hegseth. Según la Casa Blanca, el nuevo procedimiento “reforzará la base industrial de defensa al tiempo que elimina fondos para programas radicales y que desperdician dinero”. El secretario de Defensa se ve también presionado a dar más información sobre el ataque del 2 de septiembre contra la narcolancha en aguas internacionales del Caribe frente a Venezuela, en la que viajaban once personas. Aquel ataque fue el primero de lo que el Pentágono denomina ahora “Operación Lanza del Sur” contra los carteles de la droga, que ha hundido al menos 22 embarcaciones y ha matado a 87 personas. Al anunciarlo en redes sociales, Trump incluyó un vídeo en el que se veía la lancha alcanzada por un proyectil. Hace dos semanas se supo que al menos dos personas sobrevivieron ese bombardeo, pero el almirante al mando de la operación ordenó un segundo golpe que los mató. La nueva ley prevé retener el 25% del presupuesto para viajes de Hegseth si el jefe del Pentágono no divulga el vídeo completo del ataque y las órdenes exactas que se dieron para ejecutarlo.",
+      "content_preview": "La Cámara de Representantes de Estados Unidos ha aprobado un proyecto de ley que asigna 900. 000 millones de dólares para gasto de [Defensa]( \" El prolijo documento, que cuenta con el respaldo de los dos partidos, incluye medidas de apoyo a los aliados europeos, incluida Ucrania, en momentos en los que la Casa Blanca redobla sus críticas a sus socios en el continente. También añade una provisión para forzar al secretario de Defensa, Pete Hegseth, a hacer público el vídeo del [ataque a una narcol..."
+    },
+    {
+      "processing_rank": 12,
+      "url_id": 16113,
+      "url": "https://elpais.com/internacional/2025-12-11/amnistia-acusa-a-hamas-de-crimenes-de-guerra-y-contra-la-humanidad-el-7-de-octubre-de-2023.html",
+      "title": "Amnistía Internacional acusa a Hamás de “crímenes de guerra y contra la humanidad” en el ataque a Israel el 7 de octubre de 2023",
+      "source": "elpais.com",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 1311,
+      "archive_url": null,
+      "full_content": "Amnistía Internacional (AI) ha divulgado este jueves un informe en el que acusa a Hamás y otros grupos armados palestinos de haber cometido “crímenes de guerra y de lesa humanidad” durante los ataques del 7 de octubre de 2023 y al retener luego en Gaza a 251 rehenes, [de los que los últimos 20 aún con vida]( \" fueron devueltos a Israel el pasado 13 de octubre. En un comunicado difundido conjuntamente con el informe, la organización recuerda también que Israel, por su parte, ha cometido y “sigue cometiendo [genocidio con total impunidad en Gaza]( \" a pesar [del alto el fuego]( \" que este miércoles cumplió dos meses. La ONG insta por ello a que la justicia internacional garantice que los responsables de todos esos graves crímenes, sea Israel o bien los grupos armados palestinos, rindan cuentas por ellos. A pesar de mencionar [también ese genocidio]( \" durante la ofensiva con la que Israel respondió a los ataques del 7 de octubre de 2023, el documento de 173 páginas _Targeting Civilians, murder, hostage-taking and other violations by palestinian armed groups in Israel and Gaza_ (Civiles en el blanco, asesinatos, toma de rehenes y otros abusos cometidos por grupos armados palestinos en Israel y Gaza) se centra en la actuación de las facciones armadas palestinas aquel día. Para ello, AI ha entrevistado a 70 personas, entre ellas 17 supervivientes de los ataques, familiares de víctimas, peritos médicos, sanitarios y profesionales del derecho, periodistas y “responsables de las investigaciones”. El equipo de investigación de la ONG ha visitado también algunos de los lugares donde se produjeron los hechos y examinado más de 350 vídeos y fotografías de lo sucedido en esa jornada. El análisis de ese material ha llevado a la organización a acusar a Hamás y a otros grupos armados palestinos de los crímenes “de lesa humanidad”, “asesinato”, “exterminio”, “encarcelación u otra privación grave de la libertad física en violación de normas fundamentales de derecho internacional”, “desaparición forzada”, “tortura”, “violación […] o cualquier otra forma de violencia sexual de gravedad comparable” y “otros actos inhumanos”. La ONG comienza recordando cómo desde la madrugada del 7 de octubre de 2023, hasta 3. 000 militantes de Hamás, otras facciones palestinas como Yihad Islámica e incluso civiles palestinos, penetraron en el sur de Israel tras romper la valla fronteriza de Gaza en lo que describe como “un ataque coordinado, dirigido principalmente contra espacios civiles”. Alude a las localidades, [los kibutz ]( \" y el festival de música Nova, que se convirtieron en los escenarios principales de una masacre que terminó con la muerte de 1. 200 personas, la gran mayoría israelíes judíos, pero también trabajadores y estudiantes extranjeros y beduinos con ciudadanía israelí. Cocina del kibutz Nir Oz, donde casi una cuarta parte de sus 400 habitantes fue asesinada o secuestrada en el ataque de Hamás del 7 de octubre. Luis de Vega Más de 800 de esas víctimas, incluidos 36 niños, eran civiles, recalca el informe, que subraya “que el ataque se dirigió efectivamente” contra esa categoría de población. En el texto se determina, por ejemplo, que responsables del brazo armado de Hamás, las Brigadas Ezzedín al Qasam, ordenaron a sus militantes llevar a cabo ataques específicamente contra población civil, una circunstancia en la que Amnistía apuntala su consideración de que esos ataques constituyeron “crímenes de lesa humanidad”. El informe desmiente luego a grandes rasgos el argumento de Hamás de que sus fuerzas “no participaron en los asesinatos selectivos, secuestros o malos tratos a civiles durante los ataques del 7 de octubre de 2023; que muchos civiles murieron por fuego israelí y que no tenía intención de tomar civiles como rehenes”, detalla el texto. Por el contrario, “basándose en numerosos vídeos, testimonios y otras pruebas”, Amnistía “ha llegado a la conclusión de que, si bien es cierto que algunas personas civiles murieron a manos de las fuerzas israelíes, la gran mayoría de las víctimas mortales fueron asesinadas por combatientes palestinos”. La ONG denuncia a su vez que todos los rehenes “detenidos ilegalmente” en Gaza “fueron sometidos a abusos psicológicos”. Miembros de Hamás y de Yihad Islámica esperaban el pasado 3 de diciembre en Gaza a una delegación de la Cruz Roja para entregarle el cuerpo de un rehén secuestrado el 7 de octubre de 2023. Dawoud Abu Alkas (REUTERS) Casi todos esos 251 rehenes —en su mayoría civiles, incluidos niños y personas mayores— tomados ese día fueron capturados vivos, [pero alrededor de 36 estaban ya muertos]( \" cuando fueron trasladados a la Franja palestina. Los últimos liberados permanecieron retenidos dos años, mientras que algunos, asegura la ONG, “estuvieron encadenados en [túneles subterráneos]( \" durante todo su cautiverio o parte de él y soportaron condiciones extremas de violencia, privación y abusos psicológicos, incluidas amenazas de ejecución”. Algunos de esos cautivos, continúa el informe, “sufrieron violencia sexual, incluidas agresión sexual, amenaza de matrimonio forzado y desnudez forzada. Al menos seis rehenes murieron a manos de sus captores”. ### Rendir cuentas Amnistía da por seguros la comisión de actos de [violencia sexual el 7 de octubre de 2023]( \" pero se muestra cautelosa sobre su alcance. Ese aspecto ha sido objeto de especial controversia. Israel sostiene que ese crimen se cometió de forma masiva ese día, aunque no ha aportado pruebas concluyentes, mientras que Hamás lo niega de plano. Entre los relatos que incluye el informe, figura el de un israelí que confirmó bajo anonimato a la organización haber sido violado por militantes palestinos en el festival Nova y que recibió asistencia médica por ello, según AI. Ese testimonio directo y otros indicios indirectos —por ejemplo, relatos de personas que dijeron haber visto cadáveres semidesnudos o con sangre en la zona genital— llevan a Amnistía a creer que “agresores palestinos cometieron, tanto en Israel como en Gaza, agresiones sexuales y otras formas de violencia sexual contra personas que se encontraban bajo su control”. La ONG precisa que, “sin embargo, salvo en un caso [el del hombre citado que denunció la violación]”, no pudo entrevistar a “personas que denunciaran haber sobrevivido o presenciado actos de violencia sexual durante los ataques en Israel o mientras estaban secuestradas”. Por lo tanto, asegura no haber podido “llegar a conclusiones sobre el alcance o la magnitud de la violencia”. Ese y otros crímenes que Amnistía atribuye a los grupos armados palestinos son “atroces”, zanja en el comunicado que acompaña al informe la secretaria general de Amnistía Internacional, Agnès Callamard. Y no tienen “justificación”, reitera el informe, a pesar de que el “contexto” en el que se produjeron fue “la prolongada ocupación israelí del territorio palestino ocupado [Gaza] y las violaciones generalizadas de los derechos humanos perpetradas por las fuerzas israelíes contra los palestinos”. Entre ellas, el texto cita “la imposición de un sistema de apartheid a los palestinos y el bloqueo ilegal de Gaza desde 2007″. “El alarmante historial de violaciones de derechos cometidas [por Israel contra la población palestina, ]( \" incluidos los decenios de ocupación ilegal, el apartheid y el persistente genocidio de Gaza, no puede justificar en absoluto esos crímenes. Ni tampoco exime a los grupos armados palestinos de sus obligaciones según el derecho internacional”, sostiene la secretaria general de la organización en el comunicado. El informe de Amnistía concluye reclamando una rendición de cuentas real y que las investigaciones del [Tribunal Penal Internacional sobre los crímenes de Israel y de los grupos armados]( \" palestinos puedan llevarse a cabo sin impedimentos. “En tales investigaciones [deben abordarse el genocidio y el crimen de lesa humanidad]( \" de apartheid de Israel, así como los crímenes cometidos por los grupos armados palestinos antes de los ataques del 7 de octubre de 2023, en el curso de ellos y desde entonces, a fin de garantizar que todas las personas —en especial las más responsables, en caso de que estén vivas todavía— comparezcan ante la justicia”, reclama el comunicado de la organización.",
+      "content_preview": "Amnistía Internacional (AI) ha divulgado este jueves un informe en el que acusa a Hamás y otros grupos armados palestinos de haber cometido “crímenes de guerra y de lesa humanidad” durante los ataques del 7 de octubre de 2023 y al retener luego en Gaza a 251 rehenes, [de los que los últimos 20 aún con vida]( \" fueron devueltos a Israel el pasado 13 de octubre. En un comunicado difundido conjuntamente con el informe, la organización recuerda también que Israel, por su parte, ha cometido y “sigue ..."
+    },
+    {
+      "processing_rank": 13,
+      "url_id": 16210,
+      "url": "https://www.expansion.com/economia/politica/2025/12/10/69398e80468aeb9d1c8b458e.html",
+      "title": "Detenidos la exmilitante socialista Leire Díez y el expresidente de la Sepi Vicente Fernández",
+      "source": "www.expansion.com",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "json_ld",
+      "extraction_error": null,
+      "word_count": 406,
+      "archive_url": null,
+      "full_content": "La Guardia Civil ha detenido este miércoles en Madrid a la exmilitante del PSOE Leire Díez y al expresidente de la Sociedad Española de Participaciones Industriales (SEPI) Vicente Fernández, según han indicado a EFE fuentes próximas a la investigación, que aluden a contratos públicos bajo sospecha. Ambos han sido detenidos por la Unidad Central Operativa (UCO) de la Guardia Civil, debido a una causa que se sigue en el Juzgado Central de Instrucción número 6 de la Audiencia Nacional, en coordinación con la Fiscalía Anticorrupción, y en la que las diligencias están bajo secreto sumarial. Los arrestados se encuentran en la comandancia de la Guardia Civil en Tres Cantos (Madrid), en el marco de una operación que sigue abierta. Leire Díez está imputada también por el juzgado de instrucción número 9 de Madrid por delitos de cohecho y tráfico de influencias debido a presuntas maniobras contra la Fiscalía o altos mandos de la Guardia Civil con los que según el juez pretendía malbaratar investigaciones judiciales. El titular de este juzgado, Arturo Zamarriego, investiga a esta exmilitante y al empresario Javier Pérez Dolset por las reuniones que mantuvieron en busca de información comprometida de fiscales y guardias civiles y también por la denuncia de intentos de soborno por parte de dos fiscales. Leire Díez, extrabajadora de la empresa pública Correos, que depende de la Sepi, enmarcó sus movimientos en una investigación periodística, pero en la causa en su contra figura la grabación de una reunión mantenida con el fiscal Ignacio Stampa en la que dice ser &quot; mano derecha&quot; de Santos Cerdán y &quot; la persona que ha puesto el PSOE&quot; para investigar posibles irregularidades. Por su parte, Vicente Fernández trabajó en Servinabar, empresa investigada en el caso Koldo, después de dimitir en 2019 como presidente de la Sepi al ser imputado por un supuesto amaño en el concurso internacional que adjudicó a la empresa México-Minorbis la explotación en la reserva minera de Aznalcóllar (Sevilla), un caso en el que ha sido absuelto al igual que el resto de los 16 acusados. Servinabar es una empresa vinculada con el ex secretario de Organización del PSOE Santos Cerdán, que según la Unidad Central Operativa (UCO) de la Guardia Civil se quedaba con un 2% de cada adjudicación que lograba Acciona, una empresa que tiene varios exdirectivos investigados por su presunta relación con una trama que supuestamente lograría contratos por medio de la &quot; indebida influencia&quot; del exdirigente socialista.",
+      "content_preview": "La Guardia Civil ha detenido este miércoles en Madrid a la exmilitante del PSOE Leire Díez y al expresidente de la Sociedad Española de Participaciones Industriales (SEPI) Vicente Fernández, según han indicado a EFE fuentes próximas a la investigación, que aluden a contratos públicos bajo sospecha. Ambos han sido detenidos por la Unidad Central Operativa (UCO) de la Guardia Civil, debido a una causa que se sigue en el Juzgado Central de Instrucción número 6 de la Audiencia Nacional, en coordinac..."
+    },
+    {
+      "processing_rank": 14,
+      "url_id": 16237,
+      "url": "https://www.expansion.com/economia/politica/2025/12/10/693990b6e5fdea592c8b45ac.html",
+      "title": "El Congreso suspende a Ábalos como diputado y deniega su petición para votar",
+      "source": "www.expansion.com",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "json_ld",
+      "extraction_error": null,
+      "word_count": 200,
+      "archive_url": null,
+      "full_content": "Fuentes parlamentarias han informado de que el Tribunal Supremo ha notificado al Congreso el auto que desestima íntegramente el recurso de apelación interpuesto por Ábalos contra el auto del magistrado instructor del caso Koldo, Leopoldo Puente. Ahora se confirma el auto, que adquiere firmeza, y la Mesa del Congreso se ha reunido al acabar la sesión plenaria de hoy para aplicar el reglamento, añaden las fuentes. El paso dado este miércoles por el Supremo era necesario para que la Mesa del Congreso pudiera aplicar el Reglamento y suspender a Ábalos de sus atribuciones parlamentarias en virtud del artículo 21. 2 del citado texto. Dicho precepto señala que los parlamentarios quedarán suspendidos de sus derechos y deberes cuando haya un auto de procesamiento firme y se hallen en situación de prisión preventiva o cuando la sentencia sea firme y su cumplimiento implique la imposibilidad de ejercer sus funciones. Pocos minutos después de conocerse la decisión del Supremo, Ábalos, en prisión preventiva desde el pasado 27 de noviembre, había solicitado a la Mesa del Congreso poder votar telemáticamente en el pleno de esta semana. Ábalos alega que aún sigue siendo diputado y que mantiene todos sus derechos, deberes y prerrogativas parlamentarias intactas.",
+      "content_preview": "Fuentes parlamentarias han informado de que el Tribunal Supremo ha notificado al Congreso el auto que desestima íntegramente el recurso de apelación interpuesto por Ábalos contra el auto del magistrado instructor del caso Koldo, Leopoldo Puente. Ahora se confirma el auto, que adquiere firmeza, y la Mesa del Congreso se ha reunido al acabar la sesión plenaria de hoy para aplicar el reglamento, añaden las fuentes. El paso dado este miércoles por el Supremo era necesario para que la Mesa del Congre..."
+    },
+    {
+      "processing_rank": 15,
+      "url_id": 16275,
+      "url": "https://www.expansion.com/economia/2025/12/10/6939df26e5fdeadd018b4571.html",
+      "title": "EEUU confisca un petrolero frente a las costas de Venezuela",
+      "source": "www.expansion.com",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "json_ld",
+      "extraction_error": null,
+      "word_count": 296,
+      "archive_url": null,
+      "full_content": "El presidente de Estados Unidos, Donald Trump, anunció este miércoles que su país interceptó y confiscó un petrolero frente a las costas de Venezuela, elevando la tensión entre Washington y Caracas. &quot; Acabamos de incautar un petrolero en la costa de Venezuela, un petrolero grande, muy grande, el más grande jamás incautado, en realidad&quot; , declaró el mandatario al iniciar una mesa redonda con empresarios en la Casa Blanca. La agencia Bloomberg había informado primero en exclusiva, citando a fuentes conocedoras del caso, que un petrolero sancionado por Estados Unidos había sido confiscado por Washington frente a las costas de Venezuela. Esta incautación podría dificultar mucho más la exportación de petróleo de Venezuela, ya que otros transportistas podrían mostrarse más reacios a cargar crudo. Estos hechos ocurren el mismo día de la ceremonia en Oslo para la entrega del Premio Nobel de la Paz a la opositora venezolana María Corina Machado, quien no asistió, aunque aseguró que llegará a la capital noruega en las próximas horas La Administración de Donald Trump ha incrementado la presión sobre el Gobierno de Nicolás Maduro, a quien acusa de liderar una red internacional de narcotráfico como supuesto líder del Cartel de los Soles, algo que Caracas niega tajantemente. Desde septiembre, las Fuerzas Armadas estadounidenses han destruido más de una veintena de embarcaciones supuestamente cargadas con droga en el Caribe y en el Pacífico, matando extrajudicialmente a más de 80 tripulantes. Trump ha prometido que &quot; pronto&quot; comenzarán los ataques dentro de territorio venezolano, mientras que Maduro ha llamado a sus ciudadanos a unirse contras las amenazas estadounidenses y alistarse en milicias ciudadanas. PDVSA, la petrolera estatal venezolana, trabaja en tareas de perforación con la estadounidense Chevron, que tiene una licencia del Departamento del Tesoro que la exime de las sanciones.",
+      "content_preview": "El presidente de Estados Unidos, Donald Trump, anunció este miércoles que su país interceptó y confiscó un petrolero frente a las costas de Venezuela, elevando la tensión entre Washington y Caracas. &quot; Acabamos de incautar un petrolero en la costa de Venezuela, un petrolero grande, muy grande, el más grande jamás incautado, en realidad&quot; , declaró el mandatario al iniciar una mesa redonda con empresarios en la Casa Blanca. La agencia Bloomberg había informado primero en exclusiva, citand..."
+    },
+    {
+      "processing_rank": 16,
+      "url_id": 16140,
+      "url": "https://elpais.com/economia/2025-12-10/bruselas-investiga-la-compra-de-la-operadora-tercat-del-puerto-de-barcelona-por-el-gigante-msc-y-la-china-hutchison-ports.html",
+      "title": "Bruselas investiga la compra de la operadora TERCAT del Puerto de Barcelona por el gigante MSC y la china Hutchison Ports",
+      "source": "elpais.com",
+      "category": "finanzas",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 535,
+      "archive_url": null,
+      "full_content": "La Comisión Europea sospecha que la adquisición del control conjunto de TERCAT, que opera la terminal BEST del puerto de Barcelona, por parte del gigante naviero MSC, con sede en Suiza, y de la firma china Hutchison Ports puede estar infringiendo [las normas europeas de competencia. ]( \" Por ese motivo, Bruselas ha anunciado la apertura de una investigación en profundidad. El Ejecutivo europeo quiere así ver si se confirman sus sospechas iniciales, entre otras si esta transacción puede provocar un aumento de los precios o una reducción de la calidad de los servicios de la terminal de contenedores en el puerto barcelonés, según ha indicado en un comunicado. El paso se ha dado después de que una investigación preliminar concluyera que “la operación podría reducir significativamente la competencia en el mercado de prestación de servicios de terminales de contenedores en el puerto de Barcelona”, además de provocar precios más altos y una disminución de la calidad de los servicios a las competidoras de MSC. [TERCAT (Terminal Catalunya SAU) opera BEST, ]( \" una de las dos principales terminales de contenedores de aguas profundas situadas en el puerto de Barcelona. La compañía está controlada por Hutchison Ports, que forma parte de [un conglomerado con sede en Hong Kong. ]( \" A finales de junio, el Puerto de Barcelona dio su visto bueno a la transmisión del 50% de TERCAT a Terminal Investments Limited Holding (TIL), un operador portuario que forma parte del grupo MSC Mediterranean Shipping Company Holding (MSC), líder mundial en transporte marítimo de contenedores con importantes operaciones en el puerto de Barcelona, recuerda la Comisión. Los servicios de la terminal de contenedores del puerto de Barcelona son “un importante factor para la prestación de servicios de transporte marítimo regular de contenedores para la carga con origen o destino en Barcelona y su interior”, subraya Bruselas. Lo que la investigación en profundidad pretende ahora confirmar o desmentir es su sospecha preliminar de que la entidad fusionada surgida del acuerdo pueda “excluir” a compañías navieras de contenedores competidoras, “ofreciendo un trato preferencial a MSC para el uso de los servicios de la terminal de contenedores de BEST”, explica el comunicado. Específicamente, subraya la Comisión, ese potencial trato “discriminatorio” podría reflejarse en “precios más elevados, acceso tardío al muelle y disponibilidad limitada de grúas y espacio de almacenamiento para los competidores de MSC”. Una situación que se complica porque Bruselas también quiere confirmar si las navieras excluidas podrían además tener “posibilidades limitadas de cambiar” a la otra terminal de contenedores de alta mar del puerto de Barcelona, la Terminal de Contenedores de Barcelona (TCB). Bruselas, que tiene la obligación de evaluar las fusiones y adquisiciones en las que participen empresas con un volumen de negocios superior a determinados umbrales y de impedir las concentraciones que obstaculicen de manera significativa la competencia efectiva en el Espacio Económico Europeo (EEE) o en una parte sustancial del mismo, recibió notificación de la transacción barcelonesa el pasado 5 de noviembre. Tras la decisión de abrir una investigación en profundidad, la Comisión dispone ahora de 90 días laborables, hasta el 30 de abril de 2026, para tomar una decisión, que subraya no se verá prejuzgada por el paso dado este miércoles.",
+      "content_preview": "La Comisión Europea sospecha que la adquisición del control conjunto de TERCAT, que opera la terminal BEST del puerto de Barcelona, por parte del gigante naviero MSC, con sede en Suiza, y de la firma china Hutchison Ports puede estar infringiendo [las normas europeas de competencia. ]( \" Por ese motivo, Bruselas ha anunciado la apertura de una investigación en profundidad. El Ejecutivo europeo quiere así ver si se confirman sus sospechas iniciales, entre otras si esta transacción puede provocar ..."
+    },
+    {
+      "processing_rank": 17,
+      "url_id": 15899,
+      "url": "https://www.bbc.com/news/articles/cr7l0nyxxygo",
+      "title": "Panic in France as children fall victim to lethal violence of Marseille drug gangs",
+      "source": "www.bbc.com",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 1730,
+      "archive_url": null,
+      "full_content": "# Panic in France as children fall victim to lethal violence of Marseille drug gangs Andrew HardingParis correspondent, Marseille AFP via Getty Images Drug crime has skyrocketed in Marseille, France's second largest city _Warning: This article contains disturbing details from the start. _ A group of children spotted Adel's body on their way to school, just as his parents were heading to the police station to report him missing. A grotesque, charred silhouette, reclining, with one knee raised, as if lounging on one of Marseille's nearby beaches. He was 15 when he died, in the usual way: a bullet in the head, then petrol poured over his slim corpse and set on fire. Someone even filmed the scene on the beach, the latest in a grim series of shoot-then-burn murders linked to this port city's fast-evolving drug wars, increasingly fuelled by social media and now marked by chillingly random acts of violence and by the growing role of children, often coerced into the trade. \"It's chaos now, \" said a scrawny gang-member, lifting his shirt in a nearby park to show us a torso marked by the scars of at least four bullets - the result of an attempted assassination by a rival gang. France's Ministry of Justice estimates that the number of teenagers involved in the drugs trade has risen more than four-fold in the past eight years. \"I've been in [a gang] since I was 15. But everything has changed now. The codes, the rules – there are no more rules. Nobody respects anything these days. The bosses start. . . to use youngsters. They pay them peanuts. And they end up killing others for no real reason. It's anarchy, all over town, \" said the man, now in his early 20s, who asked us to use his nickname, The Immortal. The Immortal, a Marseille gang member, showing his bullet wounds from a rival gang attack Across Marseille, police, lawyers, politicians and community organisers talk of a _psychose_ – a state of collective trauma or panic – gripping parts of the city, as they debate whether to fight back with ever tougher police action or with fresh attempts to address entrenched poverty. \"It's an atmosphere of fear. It's obvious that the drug traffickers are dominant, and gaining more ground every day, \" said a local lawyer, who asked to remain anonymous for fear of reprisals against her or her family. \"The rule of law is now subordinate to the gangs. Until we have a strong state again, we have to take precautions, \" she said, explaining her recent decision to stop representing victims of gang violence. \"There's so much competition in the drugs trade that. . . people are ready to do anything. So, we have kids aged 13 or 14 who come in as lookouts or dealers. The young see dead bodies, they hear about it, every day. And they're no longer afraid of killing, or being killed, \" community organiser Mohamed Benmeddour told us. The trigger for Marseille's current _psychose_ was the murder, last month, of Mehdi Kessaci, a 20-year-old trainee policeman with no links to the drug trade. It is widely believed his death was intended as a warning to his brother, a prominent 22-year-old anti-gang activist and aspiring politician named Ahmed Kessaci. Under close police protection now, Kessaci spoke to the BBC about Mehdi's death, and the guilt he feels. \"Should I have made my family leave [Marseille]? The struggle of my life is going to be this fight against guilt, \" he said. AFP via Getty Images French anti-drug activist Amine Kessaci (centre) is mourning his brother Mehdi, who was murdered in Marseille Ahmed Kessaci first rose to national prominence in 2020, after his older brother, a gang member named Brahim, was also murdered. \"We've had this _psychose_ for years. We've known that our lives are hanging by a single thread. But everything changed since Covid. The perpetrators are getting younger and younger. The victims are younger and younger, \" he said. \"My little brother was an innocent victim. There was a time when the real thugs. . . had a moral code. You don't kill in daytime. Not in front of everyone. You don't burn bodies. First you threaten with a shot to the leg. . . Today these steps have all disappeared. \" Citing today's \"unprecedented\" levels of violence, French police are responding with what they call security \"bombardments\" in high-crime areas of Marseille. Although one gang, the DZ Mafia, now appears to dominate the trade, it operates a kind of franchise system, with a fractious network of small distributors often staffed by teenagers and undocumented immigrants, who clash violently over territory. According to one estimate, up to 20, 000 people may be involved in the city's drug industry. Last year officials confiscated €42m (£36m) in criminal assets from the gangs. Video footage shared on social media routinely shows gang members, armed with automatic rifles, shooting at each other in Marseille's various _cités_ – poor neighbourhoods characterised by high-rise buildings and a concentration of social housing. On a cold afternoon last week, we accompanied a group of armed riot police on one of their regular \"bombardment\" missions. The officers sped up to a dilapidated block of flats in their vans as a youthful gang look-out on the gate promptly fled on foot. Splitting into two groups, the police ran up either side of the building seeking to catch dealers in the stairwells. \"The aim is to disrupt the drug dealing spots. We've closed more than 40 of them. . . and we've locked up a lot of people, \" explained Sébastien Lautard, a regional police chief. Watch: BBC films arrests in Marseille drug raid \"Turn him round, \" said an officer, brusquely, as his team pinned an 18-year-old up against a door. In a filthy cellar nearby, the police found dozens of vials and tiny plastic bags used to distribute cocaine. Later, a policeman explained that the young man they had detained was pleading to be arrested, saying he had come to Marseille from another city, and was now being held against his will and forced to work for a drug gang. The officers took him away in a van. \"This is not El Dorado. We have a lot of youngsters recruited on social media. They come to Marseille thinking they'll make easy money. They're promised €200 ($233; £175) a day. But it often ends in misery, violence and sometimes death, \" said the city's chief prosecutor, Nicolas Bessone. In his office close to the city's old harbour, Bessone described an industry thought to be worth up to €7bn nationwide and characterised by two new developments: a growing emphasis on online recruitment, sales, and delivery; and a rising number of teenagers coerced into the trade. \"We now see how the traffickers enslave these. . . little soldiers. They create fictional debts to make them work for free. They torture them if they steal €20 to buy a sandwich. It's ultra-violence. The average age of the perpetrators and victims is getting younger and younger, \" said Bessone. He urged local people not to succumb to a _psychose_ but instead to \"react, to rise up\". The lawyer who asked us to hide her identity described a case she had handled. \"One young person, who absolutely didn't want to be part of a network, was picked up after school, forced to participate in the drugs trade, was raped, then threatened, then his family also threatened. All means are used to create a workforce, \" she said. On Tiktok, dozens of videos, set to music, advertise drugs for sale in Marseille's _cités_, \"from 10: 00 to midnight\", each product with its own emoji, for cocaine, hashish and marijuana. Other adverts seek to recruit new gang members with messages like \"recruiting a worker\", \"€250 for lookouts\", \"€500 to carry drugs\". For some local politicians, the answer to Marseille's troubles is a state of emergency, and far tougher rules on immigration. \"Authority must be restored. We need to end a culture of permissiveness in our country. We need to give more freedom, more power to the police and the judiciary, \" said Franck Alissio, a local MP for the populist, far-right National Rally party, and a prospective mayoral candidate. Although the ancient Mediterranean city of Marseille has, for centuries, been known for its large immigrant community, Alissio argued that \"today, the problem is that we are no longer able to integrate economically and assimilate. Too much immigration. It's the number [of immigrants] that's the problem. And in fact, the drug traffickers, dealers, lookouts, the leaders of these mafia, are almost all immigrants or foreigners with dual nationality. \" It is a controversial claim that is hard to verify in a country that strives to avoid including such details in official figures. Alissio claimed that billions of euros had been poured into Marseille's poorest neighborhoods by successive governments to no effect. He blamed parents and schools for allowing children into the drugs trade but added that he was focused on \"solving the problem, not doing sociology\". Far-right parties have long enjoyed strong support across the south of France, but less so in the diverse city of Marseille itself. Critics of the RN, like the lawyer whose identity we have concealed, accused the party of \"exploiting misery and fear, \" and wrongly blaming immigrants for a \"gangrene\" that is widespread across all communities in France. Philippe Pujol, a local writer and expert on the drug trade in Marseille, was also offered police protection after the murder of Mehdi Kessaci last month. \"I'm not sure if there's a good reason for this terror. But. . . terror is taking hold. I would rather be afraid and careful than take unnecessary risks, \" he said. But he hit back against calls for tougher police action, arguing it was merely nursing the symptoms \"of a suffering society\", rather than treating the causes of the problem. Describing entrenched poverty as a \"monster, \" Pujol painted a picture of a society radicalised by decades of neglect. \"The monster is a mixture of patronage, corruption, and political and economic decisions made against the public interest, \" Pujol said. \"These kids can be jerks when they're in a group, but when you're alone with them, they're still children, with dreams, who don't want this violence. \"",
+      "content_preview": "# Panic in France as children fall victim to lethal violence of Marseille drug gangs Andrew HardingParis correspondent, Marseille AFP via Getty Images Drug crime has skyrocketed in Marseille, France's second largest city _Warning: This article contains disturbing details from the start. _ A group of children spotted Adel's body on their way to school, just as his parents were heading to the police station to report him missing. A grotesque, charred silhouette, reclining, with one knee raised, as..."
+    },
+    {
+      "processing_rank": 18,
+      "url_id": 15894,
+      "url": "https://www.bbc.com/news/articles/c1w9lg11jw0o",
+      "title": "US seizes oil tanker off the coast of Venezuela, Trump says",
+      "source": "www.bbc.com",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 940,
+      "archive_url": null,
+      "full_content": "# US seizes oil tanker off the coast of Venezuela, Trump says Watch: Video shows US military seizing oil tanker off Venezuela coast US forces have seized an oil tanker off the coast of Venezuela, President Donald Trump said, marking a sharp escalation in Washington's pressure campaign against Nicolás Maduro's government. \"We have just seized a tanker on the coast of Venezuela - a large tanker, very large, the largest one ever seized actually, \" Trump told reporters at the White House. Releasing a video of the seizure, Attorney General Pam Bondi described the vessel as a \"crude oil tanker used to transport sanctioned oil from Venezuela and Iran\". Caracas swiftly denounced the action, calling it an act of \"international piracy\". Earlier, President Maduro declared that Venezuela would never become an \"oil colony\". The Trump administration accuses Venezuela of funnelling narcotics into the US and has intensified its efforts to isolate President Maduro in recent months. Venezuela - home to some of the world's largest proven oil reserves - has, in turn, accused Washington of seeking to steal its resources. Brent crude prices inched higher on Wednesday as news of the seizure stoked short-term supply concerns. Analysts warn the move could threaten shippers and further disrupt Venezuela's oil exports. US Attorney General Pam Bondi, who leads the US Department of Justice, said the Federal Bureau of Investigation, Department of Defense, Department of Homeland Security, and the US Coast Guard co-ordinated the seizure. \"For multiple years, the oil tanker has been sanctioned by the United States due to its involvement in an illicit oil shipping network supporting foreign terrorist organizations, \" the nation's top prosecutor wrote on X. Footage shared by Bondi showed a military helicopter hovering over a large ship, and troops descending on to the deck using ropes. Uniformed men were seen in the clip moving about the ship with guns drawn. A senior military official told the BBC's US partner CBS that the helicopters used in the operation launched from the USS Gerald Ford, the world's largest aircraft carrier, which was sent to the Caribbean last month. It involved two helicopters, 10 Coast Guard members and 10 Marines, as well as special forces. Watch: Venezuela’s Maduro sings \"Don't worry, be happy\" as he calls for peace with the US Defence Secretary Pete Hegseth was aware of the operation, and the Trump administration was considering more actions like this, a source told CBS. When asked by reporters what the US would do with the oil on the tanker, Trump said: \"We keep it, I guess. . . I assume we're going to keep the oil. \" Maritime risk company Vanguard Tech identified the vessel as the Skipper and said it believed the ship had been \"spoofing\" its position - or broadcasting a false location - for a long time. The US treasury department sanctioned the Skipper in 2022, CBS reported, for alleged involvement in oil smuggling that generated revenue for Hezbollah and the Islamic Revolutionary Guard Corps-Quds Force. BBC Verify located this tanker on MarineTraffic, which shows it was sailing under the flag of Guyana when its position was last updated two days ago. A statement from Guyana's Maritime Administration Department on Wednesday evening, however, said that the Skipper was \"falsely flying the Guyana Flag as it is not registered in Guyana. \" The Skipper's port of call log shows it called in Iran, Iraq, and the UAE from 30 June to 9 July this year. Its most recent stop, according to MarineTraffic, was at Soroosh port in Iran on 9 July, BBC Verify has found. That does not mean that it has not called at multiple other ports since then. MarineTraffic shows it was last near Iran in mid-September before arriving off the coast of Guyana at the end of October and making minimal further movement since then. This data may be partial or incorrect because of spoofing. MarineTraffic lists the beneficial owner and operator as Nigeria-based Thomarose Global Ventures Ltd and it lists the registered owner as Marshall Islands-based Triton Navigation Corp. Watch: Trump says US has seized \"large tanker\" off Venezuela coast The Venezuelan government issued a statement denouncing the seizure as a \"grave international crime\". Interior Minister Diosdado Cabello called the US \"murderers, thieves, pirates\". He referred to Pirates of the Caribbean, but said that while that film's lead character Jack Sparrow was a \"hero\", he believed \"these guys are high seas criminals, buccaneers\". Cabello said this was how the US had \"started wars all over the world\". Speaking at a rally earlier on Wednesday, Maduro had a message for Americans opposed to war with Venezuela. It came in the form of a 1988 hit song. \"To American citizens who are against the war, I respond with a very famous song: Don't worry, be happy, \" Maduro said in Spanish before singing along to the lyrics of the 1988 hit. \"Not war, be happy. Not, not crazy war, not, be happy. \" It's unclear if Maduro knew about the seizure of the tanker before this rally. In recent days, the US has ramped up its military presence in the Caribbean Sea, which borders Venezuela to the north. The build-up involves thousands of troops and the USS Gerald Ford being positioned within striking distance of Venezuela, [BBC Verify reported]( The move has sparked speculation about the potential for some kind of military action. Since September, the US has conducted at least 22 strikes on boats in the region that the Trump administration says are smuggling drugs. At least 80 people have died in these attacks. _Ione Wells contributed to this report from Sao Paulo, Brazil. _",
+      "content_preview": "# US seizes oil tanker off the coast of Venezuela, Trump says Watch: Video shows US military seizing oil tanker off Venezuela coast US forces have seized an oil tanker off the coast of Venezuela, President Donald Trump said, marking a sharp escalation in Washington's pressure campaign against Nicolás Maduro's government. \"We have just seized a tanker on the coast of Venezuela - a large tanker, very large, the largest one ever seized actually, \" Trump told reporters at the White House. Releasing ..."
+    },
+    {
+      "processing_rank": 19,
+      "url_id": 15917,
+      "url": "https://www.bbc.com/news/articles/c5y20p7xweko",
+      "title": "Intensive work continuing on Ukraine plan, European leaders say after Trump call",
+      "source": "www.bbc.com",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 731,
+      "archive_url": null,
+      "full_content": "European leaders have said \"intensive work\" will continue in the coming days on a US-led plan to end the Russia-Ukraine war, after a joint phone call with President Donald Trump. UK Prime Minister Sir Keir Starmer, French President Emmanuel Macron and German Chancellor Friedrich Merz said they \"agreed that this was a critical moment - for Ukraine, its people and for shared security across the Euro-Atlantic region\". Trump later said \"we discussed Ukraine in pretty strong words\", admitting that there were \"some little disputes about people\". The joint call comes the day after [Trump called European leaders \"weak\"]( suggesting the US could scale back support for Ukraine. The three European leaders issued identical statements shortly after their call with Trump on Wednesday. They read: \"The leaders discussed the latest on the ongoing US-led peace talks, welcoming their efforts to achieve a just and lasting peace for Ukraine, and to see an end to the killing. \"Intensive work on the peace plan is continuing and will continue in the coming days. \" The call lasted for about 45 minutes, and was initiated by the Americans last night. Sources characterise progress as \"inching towards a deal\" - but emphasise the complexity of arriving at one. A key sticking point remains Ukrainian territory and whether it is viable or reasonable to expect Kyiv to effectively give up land regarded as its own. The longstanding formulation of the British government is that decisions about Ukraine have to be made by Ukraine. This is an argument European governments are making to Washington, while publicly and privately praising Trump's commitment to bringing an end to the war. National Security Advisers from around Europe, including the UK's Jonathan Powell, are meeting regularly with Ukrainian officials. Summaries of those conversations and others are then shared by allies with Washington. It is expected that were a point to be reached where a potential deal was arrived at, America would then lead a conversation with Moscow. At a White House briefing later on Wednesday, Trump admitted that \"strong words\" were used during the phone call. He said he was yet to decide on whether to agree with European proposals to hold more meetings this weekend involving Washington and Kyiv. \"We don't want to be wasting time, \" the US president said. He also called on Zelensky to be \"realistic\", saying that Ukrainians \"want a settlement. . . they wanna see it [the war] end\". Earlier on Wednesday, Zelensky wrote on social media that a 20-point document on how to end the war would be handed over to the US in \"the near future\" after \"our joint work with President Trump's team and partners in Europe\". The Ukrainian leader provided no further details. The original US draft peace plan - widely leaked to media last month - had 28 points, and was seen as favouring Russia. Ukraine has since held separate talks with US and European negotiators, seeking to change some key clauses such as territorial issues and security guarantees. Zelensky is under increasing pressure from Trump to agree to a peace deal to end the war, with the US president urging Kyiv to \"play ball\" by ceding territory to Moscow. Zelensky has repeatedly refused to do so, seeking instead an immediate ceasefire on the vast front line and iron-clad security guarantees for Kyiv in any future settlement. The Ukrainian leader is on a diplomatic tour of Europe following intensive talks between US and Ukrainian negotiators over the weekend which failed to produce a deal to which Kyiv could agree. Zelensky has been pressing his European allies to help deter the US from backing an agreement that could leave Ukraine exposed to future attacks by Russia. Meanwhile, the Kremlin said Trump's \"very important\" statements on Ukraine, including saying Moscow would win the war and that Kyiv would need to hand over land, align with Russia's view. \"In many ways, on the subject of Nato membership, on the subject of territories, on the subjects of how Ukraine is losing land, it is in tune with our understanding, \" Putin's spokesman Dmitry Peskov said. Last week, Putin repeated his warning that [Ukrainian troops must completely withdraw from Ukraine's eastern Donbas region]( or Russia will seize it, rejecting any compromise over how to end the war. In recent weeks Russian troops have continued their slow advance in south-eastern Ukraine - despite reported heavy combat casualties.",
+      "content_preview": "European leaders have said \"intensive work\" will continue in the coming days on a US-led plan to end the Russia-Ukraine war, after a joint phone call with President Donald Trump. UK Prime Minister Sir Keir Starmer, French President Emmanuel Macron and German Chancellor Friedrich Merz said they \"agreed that this was a critical moment - for Ukraine, its people and for shared security across the Euro-Atlantic region\". Trump later said \"we discussed Ukraine in pretty strong words\", admitting that th..."
+    },
+    {
+      "processing_rank": 20,
+      "url_id": 16135,
+      "url": "https://elpais.com/espana/2025-12-10/detenida-la-exmilitante-del-psoe-leire-diez.html",
+      "title": "La UCO detiene a la exmilitante del PSOE Leire Díez y al expresidente de la SEPI Vicente Fernández",
+      "source": "elpais.com",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 1036,
+      "archive_url": null,
+      "full_content": "[La exmilitante y exconcejal del PSOE Leire Díez]( \" y el expresidente de la SEPI (Sociedad Estatal de Participaciones Industriales) Vicente Fernández han sido detenidos este miércoles por agentes de la Unidad Central Operativa (UCO) de la Guardia Civil, según han confirmado a EL PAÍS fuentes cercanas a la investigación. Ambos arrestos se enmarcan en un procedimiento relacionado con contratación pública, que impulsa el Juzgado Central de Instrucción número 6 de la Audiencia Nacional, encabezada por el magistrado Antonio Piña. La operación continúa abierta bajo la tutela de la Fiscalía Anticorrupción, según fuentes policiales y jurídicas. Las pesquisas se centran en posibles delitos de fraude, falsedad documental, malversación, tráfico de influencias y prevaricación. **** La investigación se encuentra secreta y en una fase inicial. Díez trabajó para una empresa pública, Enusa, participada en un 60% por la SEPI, en la época en que Fernández era presidente de la sociedad estatal. Las detenciones se han producido antes de la media tarde de este miércoles y los agentes han trasladado a Leire Díez a los calabozos de la Guardia Civil en Tres Cantos (Madrid). La exconcejala socialista, nacida en Bilbao hace 52 años, está también imputada en otra investigación por cohecho y tráfico de influencias que instruye el Juzgado Número 9 de Madrid. El ministerio público le atribuye el “liderazgo” de un “plan delictivo” para “desacreditar” a la cúpula de la UCO y de la Fiscalía Anticorrupción con el objetivo de “anular” causas que “afectan a políticos y empresarios”. Ella se presentaba como una reportera de investigación que lleva años indagando en las llamadas cloacas del Estado y ha negado su vinculación con el Partido Socialista. Sin embargo, [unas grabaciones que constan en el sumario del caso que dirige Arturo Zamarriego]( \" revelan que ella se presentaba como la “mano derecha” del ex secretario de Organización del PSOE Santos Cerdán. Díez fue teniente de alcalde socialista en el municipio cántabro de Vega de Pas tras las elecciones de 2011. Con el presidente del Gobierno Pedro Sánchez ya en La Moncloa fue nombrada responsable de comunicación de Enusa, empresa pública que depende la SEPI, entre 2018 y 2021, cuando la sociedad estatal estaba presidida por el otro detenido, Vicente Fernández. Luego, ostentó el cargo de consejera en Cistec, una empresa de servicios tecnológicos con sede en Bilbao, entre octubre de 2021 y mayo de 2023. Entre 2022 y 2024, fue directora de Filatelia y Relaciones Institucionales de Correos, de donde salió dando las gracias a Juan Manuel Serrano, quien fuera presidente de la compañía postal y ex jefe de gabinete de Pedro Sánchez antes de llegar a La Moncloa. A la izquierda Leire Díez, en 2022, cuando era la directora de Relaciones Institucionales y Filatelia. A. Pérez Meca / Europa Press Vicente Fernández Guerrero (Málaga, 52 años) accedió en 2018 a la presidencia de la SEPI, tras la investidura de Sánchez, y cesó un año y cinco meses después. Años más tarde, pidió permiso a la Oficina de Conflictos de Intereses para trabajar como asesor externo de Servinabar, una de las sociedades vinculadas al _caso Cerdán_, para la que trabajó de 2021 a 2023. La investigación que implica al ex secretario de Organización del PSOE ha revelado que Cerdán tenía presuntamente un 45% de esa mercantil que conseguía contratos públicos a través de supuestos amaños que perpetraban desde el Ministerio de Transportes. Fuentes del entorno de Fernández exponen que la asesoría a Servinabar fue de carácter directo para el dueño de la empresa, Joseba Antxon Alonso, y consistía en buscar socios y obras privadas y no públicas en la Costa del Sol. Por esa colaboración recibió entre 100. 000 y 200. 000 euros. Las mismas fuentes señalan que prestó a Leire Díez un piso en el madrileño barrio de Salamanca para algunas reuniones. Antes de su etapa en la SEPI, Fernández Guerrero fue interventor general de la Junta de Andalucía, el máximo órgano de control interno y contabilidad de la Administración andaluza. También ejerció como secretario general de Innovación, Industria y Energía en esa comunidad autónoma entre 2012 y 2016 y como secretario en consejos de administración de empresas públicas, como la Empresa Pública de Gestión de Activos, la Sociedad de Gestión, Financiación e Inversión Patrimonial; y Cartuja 93. Fernández, letrado de la Junta de Andalucía, obtuvo el número uno de su promoción. Fuentes próximas al ahora detenido en su etapa en Andalucía, destacan de él una enorme ambición profesional a la que se unían una gran capacidad técnica y nutridos contactos con el mundo empresarial y de la Administración. Fernánez en 2018, cuando era presidente de la SEPI, en un acto organizado con motivo de la celebración del 40 aniversario de la Constitución Española. Javier Lizón (EFE) El exdirectivo [estuvo imputado]( \" en una causa de la Audiencia de Sevilla por la adjudicación de la mina de Aznalcóllar (Sevilla), de la que resultó absuelto junto al resto de 15 acusados. El pasado mes de julio compareció en la comisión parlamentaria del Senado que investiga el _caso Cerdán, _ pero se acogió a su derecho a no declarar. El presidente del PP, Alberto Núñez Feijóo, se ha referido a las detenciones asegurando que se ha arrestado a una “fontanera” de Sánchez y a un “estrecho colaborador” de la vicepresidenta primera, María Jesús Montero. “Así no se puede seguir, @sanchezcastejon”, ha tuiteado. Antes, la portavoz parlamentaria del PP, Ester Muñoz, ha asegurado que “con este ritmo de escándalos, en 2027 del PSOE no van a quedar ni las raspas”, en referencia a la fecha límite de la legislatura, que el presidente Sánchez ha insistido que finalizará entonces. “A este ritmo de detenciones, probablemente, las cárceles se queden pequeñas”, ha añadido la portavoz popular. El portavoz parlamentario de Izquierda Unida, dentro de Sumar, socio minoritario del Gobierno, Enrique de Santiago, ha ceñido las detenciones en el marco de un asunto de particulares. “Desgraciadamente, hay problemas de corrupción. Nosotros hemos dicho claramente cómo analizamos este problema. Todo lo que atañe a personas particulares es de particulares. En el momento que se cruce la línea y lo que aparezca es financiación a un partido, eso ya es otros términos, por supuesto”, ha asegurado. Con información de **Óscar López-Fonseca** y **J J Gálvez. **",
+      "content_preview": "[La exmilitante y exconcejal del PSOE Leire Díez]( \" y el expresidente de la SEPI (Sociedad Estatal de Participaciones Industriales) Vicente Fernández han sido detenidos este miércoles por agentes de la Unidad Central Operativa (UCO) de la Guardia Civil, según han confirmado a EL PAÍS fuentes cercanas a la investigación. Ambos arrestos se enmarcan en un procedimiento relacionado con contratación pública, que impulsa el Juzgado Central de Instrucción número 6 de la Audiencia Nacional, encabezada ..."
+    },
+    {
+      "processing_rank": 21,
+      "url_id": 16136,
+      "url": "https://elpais.com/espana/2025-12-10/el-congreso-suspende-los-derechos-y-deberes-de-abalos-mientras-este-en-prision-y-no-podra-votar.html",
+      "title": "El Congreso suspende los derechos y deberes de Ábalos mientras esté en prisión y no podrá votar",
+      "source": "elpais.com",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 557,
+      "archive_url": null,
+      "full_content": "La Mesa del Congreso ha aprobado por unanimidad de sus nueve componentes, cinco del PSOE y Sumar y cuatro del PP, “declarar suspendido en el ejercicio del cargo y, por tanto, en los derechos y deberes” de diputado a José Luis Ábalos Meco, que está en prisión desde el 27 de noviembre y del que [el Tribunal Supremo ha rechazado este martes sus recursos y confirmado su procesamiento]( \" Ábalos ya no podrá votar telemáticamente desde la cárcel de Soto del Real, como había solicitado, y tampoco percibirá retribuciones económicas mientras continúe en prisión preventiva. El [órgano que dirige el funcionamiento del Congreso se ha reunido excepcionalmente ]( \" terminar en la tarde de este miércoles el pleno de sesión de control al Gobierno y ha resuelto por unanimidad y sin discusión suspender las atribuciones de Ábalos como diputado, aunque no le puede retirar su escaño. La Mesa le suspende sus derechos y deberes con efectos desde este mismo miércoles según lo que estipula[ el artículo 21. 1. 2º del Reglamento del Congreso, ]( \" que señala literalmente que ”los diputados y diputadas quedarán suspendidos en sus derechos y deberes parlamentarios cuando, concedida por la Cámara la autorización objeto de un suplicatorio y firme el Auto de procesamiento, se hallaren en situación de prisión preventiva y mientras dure ésta”. La suspensión conlleva la pérdida de todas las prerrogativas y derechos funcionales y económicos como diputado electo de Ábalos, que cobraba unos 6. 000 euros al mes. A partir de ahora y mientras se mantenga en esta situación, al exministro y exsecretario de Organización del PSOE no se le abonarán las percepciones económicas propias de la condición del diputado; se procederá a darle de baja en la cobertura de protección social con cargo al Presupuesto de la Cámara, así como en la póliza de accidentes concertada por las Cortes Generales; y se le detraerá la parte proporcional de la subvención correspondiente al Grupo Parlamentario Mixto, que era en el que se había incluido tras ser expulsado del PSOE y decidir mantener su acta. El Congreso ya concedió la autorización del suplicatorio para investigar a Ábalos en un pleno el pasado 22 de enero. El exdiputado socialista había requerido al Congreso poder seguir votando desde la cárcel. En la mañana de este martes, desde la cuenta en la red social X (antes Twitter) que manejan personas de su entorno, había exigido que se le mantuvieran intactos sus “derechos, deberes y prerrogativas parlamentarias” basándonse en el artículo 82. 2 del Reglamento de la Cámara porque entendía que en el mismo se reconoce el supuesto de “situaciones excepcionales de especial gravedad”, no especificándose el motivo de dicha situación excepcional. Ábalos había argumentado así que “el ejercicio de la representación popular de un diputado electo en el órgano legislativo mediante su voto es fundamental en una democracia plena como la nuestra” y que, por tanto, ese “derecho a participar en las decisiones de la Cámara, y la posibilitación de su ejercicio” serían claves “para el papel legislativo en la aprobación de leyes y de control del gobierno” y su impedimento lo consideraba “una vulneración sin precedentes y de extrema gravedad tanto en los derechos inherentes a cualquier diputado o diputada como a la representación de la ciudadanía”. Esas consideraciones no han sido tenidas en cuenta por nadie en la Mesa del Congreso.",
+      "content_preview": "La Mesa del Congreso ha aprobado por unanimidad de sus nueve componentes, cinco del PSOE y Sumar y cuatro del PP, “declarar suspendido en el ejercicio del cargo y, por tanto, en los derechos y deberes” de diputado a José Luis Ábalos Meco, que está en prisión desde el 27 de noviembre y del que [el Tribunal Supremo ha rechazado este martes sus recursos y confirmado su procesamiento]( \" Ábalos ya no podrá votar telemáticamente desde la cárcel de Soto del Real, como había solicitado, y tampoco perci..."
+    },
+    {
+      "processing_rank": 22,
+      "url_id": 15831,
+      "url": "https://www.abc.es/internacional/estados-unidos-captura-petrolero-cerca-venezuela-plena-20251210212827-nt.html",
+      "title": "Estados Unidos captura un petrolero cerca de Venezuela en plena escalada de tensión en el Caribe",
+      "source": "www.abc.es",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "json_ld",
+      "extraction_error": null,
+      "word_count": 847,
+      "archive_url": null,
+      "full_content": "Estados Unidos se ha incautado de un petrolero que navegaba hacia Cuba con crudo venezolano, según anunció el propio presidente en la Casa Blanca y han ampliado después fuentes conocedoras de la operación. El buque, cuyo nombre y bandera siguen sin hacerse públicos, . . . fue interceptado por la Guardia Costera en un punto no precisado del Caribe tras un seguimiento previo que situó su ruta en el corredor Venezuela –Cuba. Washington investiga si el cargamento formaba parte de un esquema para sortear las sanciones y financiar al régimen de Nicolás Maduro y a sus aliados en La Habana. La tripulación permanece bajo custodia mientras se evalúan posibles violaciones. La noticia elevó de inmediato los precios del crudo. El Brent repuntó hasta 62, 35 dólares el barril y el West Texas Intermediate alcanzó los 58, 46 dólares, tras una sesión que había arrancado en negativo. La Casa Blanca no respondió oficialmente a las preguntas de ABC y otros medios sobre los detalles de la intervención, y el Gobierno de Maduro tampoco ofreció comentarios. Según el Departamento de Justicia, en esta incautación sí participó el FBI, policía judicial, por tratarse de una operación relacionada con sanciones al crudo venezolano. Venezuela exportó más de 900. 000 barriles diarios el mes pasado, su tercer mayor volumen del año, impulsado por la importación de nafta para diluir su crudo extrapesado. Hasta ahora, pese a la presión sobre Maduro, Washington no había interferido de forma directa en los flujos petroleros del país. Caracas vende hoy su crudo con fuertes descuentos a China, compitiendo con petróleo sancionado de Rusia e Irán. Empresas como la española Repsol, la india Reliance o la italiana ENI tienen vetado el acceso al crudo venezolano, mientras que Chevron opera bajo una licencia especial vinculada al pago de deuda. Noticia Relacionada estandar Si Trump corta toda la ayuda a Colombia y acusa a Petro de «liderar» el narcotráfico mientras ataca otra narcolancha David Alandete El presidente anuncia el fin de los fondos y amenaza con «cerrar por la fuerza» los centros de producción de cocaína, en la mayor ruptura bilateral en décadasLa operación llega en plena escalada militar en la región, que incluye el despliegue de un portaaviones, cazas y decenas de miles de efectivos. Trump endureció el tono tras la intervención y dijo en una reunión en la Sala Roosevelt: «Acabamos de incautarnos de un petrolero en Venezuela». El gesto alimenta un clima ya tenso, tras las acusaciones de Maduro de que Estados Unidos prepara una intervención para derrocarlo y hacerse con las reservas petroleras del país. María Corina perseguida por el régimen El episodio coincide con la salida clandestina de María Corina Machado hacia Curazao, desde donde emprendió viaje para recibir el Nobel de la Paz en Noruega. La dirigente venezolana, perseguida por el régimen y con orden de arresto, dedicó el premio a Trump, reforzando el impacto político del gesto en Caracas y Washington. No llegó al acto, pero sí pudo reunirse con jefes de gobierno en Oslo. La incautación reabre un frente que ya marcó la relación bilateral durante el primer mandato de Trump, cuando Washington impuso un embargo total al petróleo venezolano en 2019. Aquel veto paralizó las exportaciones de PDVSA hacia su principal mercado y forzó a Caracas a redirigir su crudo a Asia con fuertes descuentos. La Administración Biden revirtió parte de esas restricciones en 2022 y 2023, otorgando licencias temporales a algunas compañías para operar con PDVSA a cambio de avances electorales que no llegaron a consolidarse. El nuevo movimiento de la Casa Blanca vuelve a situar la cuestión petrolera en el centro del conflicto político con el régimen de Maduro. Aquí tienes dos párrafos añadidos, redactados en tu estilo y listos para insertar tras el bloque sobre la relación Caracas–La Habana o inmediatamente antes del contexto histórico del embargo de 2019: En 2020, Washington, con Trump como presidente, interceptó cuatro cargueros que transportaban combustible iraní hacia Venezuela, en una acción que formó parte de la estrategia de «máxima presión» contra Teherán y del cerco financiero al régimen de Maduro. Aquellos buques —desviados tras órdenes judiciales y cooperación de terceros países— transportaban más de un millón de barriles de gasolina que Estados Unidos incautó al considerar que los beneficios de la operación financiaban estructuras militares iraníes y apuntalaban la red política y de seguridad del chavismo. El episodio marcó un punto de inflexión en la política energética de Washington hacia Caracas. Esa intervención estableció un patrón que ahora vuelve a emerger en el Caribe: Estados Unidos está dispuesto a actuar contra rutas petroleras asociadas a Venezuela incluso fuera de aguas territoriales y con independencia de la bandera del buque. En su día, la incautación de los petroleros iraníes debilitó temporalmente la alianza entre Caracas y Teherán, obligó a PDVSA a reorganizar sus redes de suministro y dejó claro que los envíos de crudo o combustible ligados al régimen tendrían un coste. La operación de esta semana, dirigida contra la ruta Venezuela–Cuba, replica esa lógica y consolida el uso de las confiscaciones marítimas como herramienta de presión estratégica en la zona.",
+      "content_preview": "Estados Unidos se ha incautado de un petrolero que navegaba hacia Cuba con crudo venezolano, según anunció el propio presidente en la Casa Blanca y han ampliado después fuentes conocedoras de la operación. El buque, cuyo nombre y bandera siguen sin hacerse públicos, . . . fue interceptado por la Guardia Costera en un punto no precisado del Caribe tras un seguimiento previo que situó su ruta en el corredor Venezuela –Cuba. Washington investiga si el cargamento formaba parte de un esquema para sor..."
+    },
+    {
+      "processing_rank": 23,
+      "url_id": 16301,
+      "url": "https://www.ft.com/content/cc834260-4ae6-44d3-ad70-7c4e2205d0d3",
+      "title": "Zelenskyy talks Ukraine postwar plan with Scott Bessent, Jared Kushner and Larry Fink",
+      "source": "www.ft.com",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "llm_direct",
+      "extraction_error": null,
+      "word_count": 178,
+      "archive_url": null,
+      "full_content": "Ukrainian President Volodymyr Zelenskyy met with prominent figures including Scott Bessent, Jared Kushner, and Larry Fink to discuss plans for Ukraine's postwar reconstruction. The discussions come at a critical time as the country seeks to rebuild after the ongoing conflict with Russia. Zelenskyy emphasized the importance of international support and investment in Ukraine's recovery efforts. He outlined a vision for a modern, resilient economy that could attract foreign capital and expertise. Bessent, a former chief investment officer at Soros Fund Management, expressed optimism about Ukraine's potential for growth, while Kushner highlighted the need for a strategic approach to ensure long-term stability in the region. Fink, CEO of BlackRock, underscored the role of private investment in driving economic recovery and the importance of creating a favorable business environment in Ukraine. The meeting reflects a growing interest among global investors in Ukraine's future, as the country navigates the challenges of rebuilding amidst ongoing geopolitical tensions. Zelenskyy aims to leverage this interest to secure the necessary resources for a comprehensive reconstruction plan that addresses both immediate needs and long-term development goals.",
+      "content_preview": "Ukrainian President Volodymyr Zelenskyy met with prominent figures including Scott Bessent, Jared Kushner, and Larry Fink to discuss plans for Ukraine's postwar reconstruction. The discussions come at a critical time as the country seeks to rebuild after the ongoing conflict with Russia. Zelenskyy emphasized the importance of international support and investment in Ukraine's recovery efforts. He outlined a vision for a modern, resilient economy that could attract foreign capital and expertise. B..."
+    },
+    {
+      "processing_rank": 24,
+      "url_id": 16319,
+      "url": "https://www.ft.com/content/6149f7d9-7ebb-43b1-9b74-9381f80cf35c",
+      "title": "Fed cuts rates amid growing division",
+      "source": "www.ft.com",
+      "category": "economia",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "json_ld",
+      "extraction_error": null,
+      "word_count": 152,
+      "archive_url": null,
+      "full_content": "The Federal Reserve cut interest rates by a quarter point, and Oracle shares fell on Wednesday after it reported disappointing revenues. Plus, there’s one conglomerate in Abu Dhabi dominating the economy and its ownership is in the hands of the royal family. Mentioned in this podcast: Federal Reserve cuts rates to lowest level in three years in divisive decision Oracle shares slide as data centre spending mounts How Abu Dhabi’s economy came to be dominated by IHC Note: The FT does not use generative AI to voice its podcasts Today’s FT News Briefing was hosted and edited by Sonja Hutson, and produced by Fiona Symon and Victoria Craig. Our show was mixed by Kelly Garry. Additional help from Gavin Kallmann, Michael Lello and David da Silva. The FT’s acting co-head of audio is Topher Forhecz. The show’s theme music is by Metaphor Music. Read a transcript of this episode on FT. com",
+      "content_preview": "The Federal Reserve cut interest rates by a quarter point, and Oracle shares fell on Wednesday after it reported disappointing revenues. Plus, there’s one conglomerate in Abu Dhabi dominating the economy and its ownership is in the hands of the royal family. Mentioned in this podcast: Federal Reserve cuts rates to lowest level in three years in divisive decision Oracle shares slide as data centre spending mounts How Abu Dhabi’s economy came to be dominated by IHC Note: The FT does not use genera..."
+    },
+    {
+      "processing_rank": 25,
+      "url_id": 16310,
+      "url": "https://www.ft.com/content/03c341ba-210d-4195-87a9-621084a1fa26",
+      "title": "Bolivian ex-president Luis Arce arrested in corruption probe",
+      "source": "www.ft.com",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "llm_direct",
+      "extraction_error": null,
+      "word_count": 315,
+      "archive_url": null,
+      "full_content": "Luis Arce, el ex presidente de Bolivia, fue arrestado en el marco de una investigación por corrupción, un mes después de dejar el cargo. Arce, quien asumió la presidencia en noviembre de 2020, fue detenido por la policía en su residencia en La Paz. Las autoridades han indicado que su arresto está relacionado con un caso de corrupción que involucra la gestión de recursos públicos durante su administración. La detención de Arce ha generado una gran conmoción en el país, donde su partido, el Movimiento al Socialismo (MAS), ha expresado su apoyo al ex presidente y ha denunciado lo que consideran una persecución política. Los líderes del MAS han convocado a manifestaciones en defensa de Arce y han pedido a sus seguidores que se movilicen en su apoyo. El caso de corrupción que se investiga involucra supuestas irregularidades en la asignación de contratos públicos y el uso de fondos estatales. Las autoridades han afirmado que hay pruebas suficientes para justificar la detención de Arce y que la investigación continuará en los próximos días. Arce ha negado cualquier irregularidad y ha calificado las acusaciones como infundadas. En un comunicado, su equipo legal ha afirmado que el ex presidente está dispuesto a colaborar con la justicia y a demostrar su inocencia. La situación política en Bolivia se ha vuelto cada vez más tensa desde la salida de Arce del poder, con protestas y enfrentamientos entre partidarios y opositores. La detención de Arce podría tener un impacto significativo en el futuro político del país y en la estabilidad del gobierno actual. Los analistas advierten que este caso podría abrir una nueva fase de inestabilidad en Bolivia, donde la polarización política ha sido una constante en los últimos años. La comunidad internacional también está atenta a los desarrollos de este caso, ya que podría influir en la percepción de la democracia y el estado de derecho en el país.",
+      "content_preview": "Luis Arce, el ex presidente de Bolivia, fue arrestado en el marco de una investigación por corrupción, un mes después de dejar el cargo. Arce, quien asumió la presidencia en noviembre de 2020, fue detenido por la policía en su residencia en La Paz. Las autoridades han indicado que su arresto está relacionado con un caso de corrupción que involucra la gestión de recursos públicos durante su administración. La detención de Arce ha generado una gran conmoción en el país, donde su partido, el Movimi..."
+    }
+  ],
+  "newsletter_preview": {
+    "word_count": 977,
+    "char_count": 8746,
+    "first_500_chars": "Vivimos en un mundo donde las decisiones económicas y políticas afectan nuestra vida diaria. Empecemos con la [**Reserva Federal de Estados Unidos**](https://www.lemonde.fr/international/article/2025/12/10/la-reserve-federale-americaine-baisse-ses-taux-sur-fond-de-division-des-gouverneurs-quant-a-l-etat-de-l-economie-aux-etats-unis_6656819_3210.html). Han decidido bajar las tasas de interés por tercera vez seguida, dejándolas entre el 3,5% y el 3,75%. [**Jerome Powell**](https://www.ft.com/conte..."
+  }
+}

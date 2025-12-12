@@ -1,0 +1,22 @@
+{
+  "newsletter_name": "chief_economist_brief",
+  "run_date": "2025-11-20",
+  "generated_at": "2025-11-20T13:44:30.812332+00:00",
+  "stages": {
+    "stage_03": {
+      "duration": 1.3218772411346436,
+      "status": "completed"
+    },
+    "stage_04": {
+      "duration": 18.280348539352417,
+      "status": "failed",
+      "error": "Stage 04 failed with exit code 1"
+    },
+    "stage_05": {
+      "duration": 181.29233312606812,
+      "status": "completed"
+    }
+  },
+  "summary": {},
+  "total_duration": 202.12515807151794
+}

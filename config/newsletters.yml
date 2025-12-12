@@ -1,0 +1,144 @@
+# Newsletter Pipeline Configuration (DB-Centric Architecture)
+# Última actualización: 2025-11-20
+
+newsletters:
+  # Newsletter Principal: Economía, Política y Geopolítica
+  - name: "noticias_diarias"
+    date: "2025-11-21"  # Fecha de ejecución (YYYY-MM-DD)
+
+    # Fuentes a incluir (IDs del archivo sources.yml)
+    # Opciones: ["all"] para todas, o lista específica ["elpais", "ft", "nyt"]
+    sources:
+      - "all"
+
+    # Categorías temáticas (del archivo categories.yml)
+    categories:
+      - "economia"
+      - "politica"
+      - "geopolitica"
+
+    # Número de artículos a rankear y procesar
+    articles_count: 20
+
+    # Método de ranking: 'level_scoring' o 'dual_subset'
+    ranker_method: "level_scoring"
+
+    # Formato de salida de la newsletter
+    output_format: "markdown"  # markdown, html, o both
+
+    # Template de prompt a usar (templates/prompts/)
+    template: "default"
+
+    # Activar generación de debug report
+    debug: false
+
+    # Forzar re-ejecución de todos los stages (override idempotencia)
+    force: false
+
+    # Saltar validación de paywall (más rápido, pero puede obtener contenido incompleto)
+    skip_paywall_check: false
+
+    # Saltar generación LLM (solo para testing)
+    skip_llm: false
+
+    # Logs detallados
+    verbose: true
+
+    # Ventana temporal para noticias relacionadas (días hacia atrás)
+    # 0 = solo fecha actual, 365 = incluir related hasta 1 año atrás
+    related_window_days: 365
+
+  # Chief Economist Brief: Economía y Finanzas
+  - name: "chief_economist_brief"
+    date: "2025-11-21"
+
+    # Fuentes especializadas (solo fuentes internacionales de referencia)
+    sources:
+      - "ft"
+      - "nyt"
+      - "bbc"
+      - "lemonde"
+
+    # Categorías especializadas
+    categories:
+      - "economia"
+      - "finanzas"
+
+    # Número de artículos
+    articles_count: 15
+
+    # Método de ranking
+    ranker_method: "dual_subset"
+
+    # Configuración de output
+    output_format: "markdown"
+    template: "default"  # Cambiar a "chief_economist" si existe ese template
+
+    # Debug report activado para esta newsletter
+    debug: true
+
+    # Opciones adicionales
+    force: false
+    skip_paywall_check: false
+    skip_llm: false
+    verbose: true
+
+    # Ventana temporal para noticias relacionadas (días hacia atrás)
+    related_window_days: 365
+
+
+# === NOTAS DE CONFIGURACIÓN ===
+#
+# SCHEMA SIMPLIFICADO (v3.0 - DB-Centric):
+# Todos los stages ahora leen/escriben de/a la base de datos.
+# No más archivos JSON intermedios entre stages.
+#
+# PARÁMETROS CLAVE:
+# - name: Identificador único de la newsletter (requerido)
+# - date: Fecha de ejecución YYYY-MM-DD (requerido)
+# - categories: Lista de categorías temáticas a incluir (requerido)
+# - articles_count: Número de artículos a rankear (default: 20)
+# - ranker_method: Método de ranking (level_scoring o dual_subset)
+# - output_format: Formato de salida (markdown, html, both)
+# - template: Template de prompt a usar (default, tech_focus, concise)
+# - debug: Activar generación de debug report (default: false)
+#
+# FLAGS OPCIONALES:
+# - force: Forzar re-ejecución ignorando idempotencia
+# - skip_paywall_check: Saltar validación de paywall
+# - skip_llm: Saltar generación LLM (testing)
+# - verbose: Logs detallados
+# - related_window_days: Días hacia atrás para buscar noticias relacionadas del cluster (default: 0 = solo día actual)
+#
+# MÉTODOS DE RANKING:
+# - level_scoring: Clasificación por niveles de relevancia (1-5)
+# - dual_subset: Selección dual de headlines + featured articles
+#
+# CATEGORÍAS DISPONIBLES (config/categories.yml):
+# - politica, economia, tecnologia, geopolitica, finanzas, sociedad, deportes, otros
+#
+# TEMPLATES DISPONIBLES (templates/prompts/):
+# - default: Estilo narrativo conversacional
+# - tech_focus: Análisis técnico profundo (si existe)
+# - concise: Briefing ejecutivo ultra-conciso (si existe)
+#
+# DEBUG REPORTS:
+# Cuando debug=true o --debug en CLI:
+# - Se genera JSON con métricas detalladas por stage
+# - Guardado en: data/debug/debug_report_{newsletter}_{date}.json
+# - Incluye: duraciones, tokens usados, URLs procesadas, errores
+#
+# COSTOS ESTIMADOS (con gpt-4o-mini):
+# - Stage 02 (clasificación): ~$0.02-0.04
+# - Stage 03 (ranking): ~$0.02-0.04
+# - Stage 04 (paywall detection): ~$0.005-0.01
+# - Stage 05 (generación): ~$0.003
+# - TOTAL: ~$0.05-0.09 por newsletter
+#
+# TIEMPOS ESTIMADOS:
+# - Stage 01: 2-5 min (scraping, común para todas)
+# - Stage 02: 15-30s (clasificación)
+# - Stage 03: 10-20s (ranking)
+# - Stage 04: 1-3 min (extracción contenido)
+# - Stage 05: 30-40s (generación)
+# - TOTAL: ~4-8 minutos por newsletter

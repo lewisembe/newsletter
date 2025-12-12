@@ -1,0 +1,3 @@
+# SSL certificates will go here
+# For Let's Encrypt with Certbot, run:
+# docker run -it --rm -v $(pwd)/docker/nginx/ssl:/etc/letsencrypt certbot/certbot certonly --standalone -d lewisembe.duckdns.org

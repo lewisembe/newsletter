@@ -1,0 +1,215 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: newsletter_postgres
+    environment:
+      POSTGRES_USER: newsletter_user
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-newsletter_pass}
+      POSTGRES_DB: newsletter_db
+      PGDATA: /var/lib/postgresql/data/pgdata
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./docker/init-scripts:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U newsletter_user -d newsletter_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+    networks:
+      - newsletter_network
+
+  cloudbeaver:
+    image: dbeaver/cloudbeaver:latest
+    container_name: newsletter_cloudbeaver
+    ports:
+      - "127.0.0.1:8978:8978"
+    volumes:
+      - cloudbeaver_data:/opt/cloudbeaver/workspace
+    environment:
+      CB_SERVER_NAME: "Newsletter DB Manager"
+      CB_SERVER_URL: "http://localhost:8978"
+      CB_ADMIN_NAME: ${ADMIN_EMAIL:-admin}
+      CB_ADMIN_PASSWORD: ${ADMIN_PASSWORD:-admin123}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: unless-stopped
+    networks:
+      - newsletter_network
+
+  redis:
+    image: redis:7-alpine
+    container_name: newsletter_redis
+    ports:
+      - "127.0.0.1:6379:6379"
+    volumes:
+      - redis_data:/data
+    command: redis-server --appendonly yes
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+    restart: unless-stopped
+    networks:
+      - newsletter_network
+
+  backend:
+    build:
+      context: ./webapp/backend
+      dockerfile: Dockerfile
+    container_name: newsletter_backend
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      DATABASE_URL: postgresql://newsletter_user:${POSTGRES_PASSWORD:-newsletter_pass}@postgres:5432/newsletter_db
+      REDIS_URL: redis://redis:6379/0
+      CELERY_BROKER_URL: redis://redis:6379/1
+      CELERY_RESULT_BACKEND: redis://redis:6379/2
+      SECRET_KEY: ${SECRET_KEY}
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY}
+      JWT_ALGORITHM: ${JWT_ALGORITHM:-HS256}
+      ACCESS_TOKEN_EXPIRE_MINUTES: ${ACCESS_TOKEN_EXPIRE_MINUTES:-30}
+      CORS_ORIGINS: ${CORS_ORIGINS:-https://lewisembe.duckdns.org,http://localhost:3000}
+      ADMIN_EMAIL: ${ADMIN_EMAIL:-admin@example.com}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:-admin123}
+      ENCRYPTION_KEY: ${ENCRYPTION_KEY}
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    volumes:
+      - ./webapp/backend:/app
+      - ./common:/app/common
+      - ./celery_app:/app/celery_app
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+    networks:
+      - newsletter_network
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./webapp/frontend
+      dockerfile: Dockerfile
+    container_name: newsletter_frontend
+    ports:
+      - "127.0.0.1:3000:3000"
+    environment:
+      # Leave empty to use relative URLs through Nginx proxy
+      # This prevents mixed content errors (HTTPS -> HTTP localhost)
+      NEXT_PUBLIC_API_URL: ""
+    depends_on:
+      - backend
+    volumes:
+      - ./webapp/frontend:/app
+      - /app/node_modules
+      - /app/.next
+    networks:
+      - newsletter_network
+    restart: unless-stopped
+
+  celery_worker:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.celery
+    container_name: newsletter_celery_worker
+    command: celery -A celery_app worker --loglevel=info --queues=stage01,scheduler --concurrency=1
+    environment:
+      DATABASE_URL: postgresql://newsletter_user:${POSTGRES_PASSWORD:-newsletter_pass}@postgres:5432/newsletter_db
+      CELERY_BROKER_URL: redis://redis:6379/1
+      CELERY_RESULT_BACKEND: redis://redis:6379/2
+      ENCRYPTION_KEY: ${ENCRYPTION_KEY}
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    volumes:
+      - .:/app
+      - /app/__pycache__
+    working_dir: /app
+    networks:
+      - newsletter_network
+    restart: unless-stopped
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  celery_worker_newsletters:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.celery
+    container_name: newsletter_celery_worker_newsletters
+    command: celery -A celery_app worker --loglevel=info --queues=newsletters --concurrency=${NEWSLETTER_MAX_PARALLEL:-3}
+    environment:
+      DATABASE_URL: postgresql://newsletter_user:${POSTGRES_PASSWORD:-newsletter_pass}@postgres:5432/newsletter_db
+      CELERY_BROKER_URL: redis://redis:6379/1
+      CELERY_RESULT_BACKEND: redis://redis:6379/2
+      ENCRYPTION_KEY: ${ENCRYPTION_KEY}
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      NEWSLETTER_EXECUTION_MODE: ${NEWSLETTER_EXECUTION_MODE:-parallel}
+      NEWSLETTER_MAX_PARALLEL: ${NEWSLETTER_MAX_PARALLEL:-3}
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    volumes:
+      - .:/app
+      - /app/__pycache__
+    working_dir: /app
+    networks:
+      - newsletter_network
+    restart: unless-stopped
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  celery_beat:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.celery
+    container_name: newsletter_celery_beat
+    command: celery -A celery_app beat --loglevel=info --schedule=/tmp/celerybeat-schedule
+    environment:
+      DATABASE_URL: postgresql://newsletter_user:${POSTGRES_PASSWORD:-newsletter_pass}@postgres:5432/newsletter_db
+      CELERY_BROKER_URL: redis://redis:6379/1
+      CELERY_RESULT_BACKEND: redis://redis:6379/2
+    depends_on:
+      redis:
+        condition: service_healthy
+      celery_worker:
+        condition: service_started
+      celery_worker_newsletters:
+        condition: service_started
+    volumes:
+      - .:/app
+    working_dir: /app
+    networks:
+      - newsletter_network
+    restart: unless-stopped
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+volumes:
+  postgres_data:
+  cloudbeaver_data:
+  redis_data:
+
+networks:
+  newsletter_network:
+    driver: bridge

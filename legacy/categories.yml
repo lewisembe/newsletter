@@ -1,0 +1,108 @@
+# Categorías temáticas para clasificación de contenido
+# Consolidado de 19 a 7 categorías (2025-11-12)
+
+categories:
+  - id: "politica"
+    name: "politica"
+    description: "politica nacional, gobierno, partidos politicos, justicia, educacion, legislacion"
+    consolidates:
+      - politica
+      - nacional
+      - justicia
+      - educacion
+    examples:
+      - "Gobierno anuncia reforma educativa"
+      - "Congreso aprueba nueva ley de presupuestos"
+      - "Tribunal Supremo dicta sentencia sobre caso de corrupción"
+      - "Ministro de Educación presenta plan nacional"
+      - "Elecciones regionales fijadas para mayo"
+
+  - id: "economia"
+    name: "economia"
+    description: "macroeconomia, politica fiscal, bancos centrales, indicadores economicos, empleo, inflacion, pib, comercio internacional"
+    consolidates:
+      - economia
+    examples:
+      - "Banco Central sube tipos de interés al 4.5%"
+      - "Inflación anual se sitúa en el 3.2%"
+      - "PIB crece un 2.1% en el segundo trimestre"
+      - "Tasa de desempleo baja al 5.8%"
+      - "Gobierno anuncia recorte de impuestos corporativos"
+
+  - id: "finanzas"
+    name: "finanzas"
+    description: "mercados financieros, bolsas, empresas, banca comercial, inversiones, fusiones, adquisiciones, energia, startups, resultados corporativos"
+    consolidates:
+      - empresas
+      - mercados
+      - energia
+    examples:
+      - "Bolsa cierra con caídas del 2% por volatilidad"
+      - "Goldman Sachs reporta ganancias récord en Q3"
+      - "Precio del petróleo alcanza máximos de $95 por barril"
+      - "Startup española recibe inversión de $50M"
+      - "Fusión entre dos gigantes tecnológicos valorada en $40B"
+
+  - id: "tecnologia"
+    name: "tecnologia"
+    description: "tecnologia, ciencia, innovacion, salud, investigacion, medioambiente, sostenibilidad"
+    consolidates:
+      - tecnologia
+      - ciencia
+      - salud
+      - medioambiente
+    examples:
+      - "Nueva IA revoluciona diagnóstico médico"
+      - "Científicos descubren nueva especie en la Amazonía"
+      - "Estudio revela avances contra el Alzheimer"
+      - "Acuerdo climático fija objetivos de emisiones"
+      - "Apple presenta nuevo iPhone con chip revolucionario"
+
+  - id: "geopolitica"
+    name: "geopolitica"
+    description: "relaciones internacionales, politica exterior, conflictos, diplomacia, organizaciones internacionales"
+    consolidates:
+      - internacional
+    examples:
+      - "Cumbre G7 acuerda sanciones contra país"
+      - "ONU advierte sobre crisis humanitaria"
+      - "Conflicto en Oriente Medio escala a nueva fase"
+      - "UE y China firman acuerdo comercial"
+      - "Presidente visita aliados europeos"
+
+  - id: "sociedad"
+    name: "sociedad"
+    description: "lifestyle, cultura, moda, belleza, entretenimiento, arte, musica, cine, tv, celebrities, opinion, tendencias sociales"
+    consolidates:
+      - sociedad
+      - cultura
+      - entretenimiento
+      - opinion
+    examples:
+      - "Los anillos de compromiso más exclusivos de celebridades"
+      - "Festival de Cannes premia nueva película española"
+      - "Tendencias de moda para la próxima temporada"
+      - "Museo del Prado inaugura exposición de Velázquez"
+      - "Serie de Netflix rompe récords de audiencia"
+      - "Columna: Por qué necesitamos repensar la democracia"
+
+  - id: "deportes"
+    name: "deportes"
+    description: "deportes, competiciones, atletas, equipos, resultados deportivos"
+    consolidates:
+      - deportes
+    examples:
+      - "Real Madrid vence al Barcelona 3-1"
+      - "Nadal anuncia su retirada del tenis profesional"
+      - "Juegos Olímpicos: España suma dos medallas de oro"
+      - "Liga de Campeones: resultados de cuartos de final"
+      - "Ciclista español gana etapa del Tour de Francia"
+
+  - id: "otros"
+    name: "otros"
+    description: "contenido inclasificable, temas diversos que no encajan en las categorias principales"
+    consolidates: []
+    examples:
+      - "Artículos sobre temas muy específicos o nichos"
+      - "Contenido híbrido difícil de categorizar"
+      - "Noticias locales muy específicas sin relevancia nacional"

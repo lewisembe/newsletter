@@ -1,0 +1,20 @@
+[
+  {
+    "name": "session_id",
+    "value": "your-session-token-here",
+    "domain": ".ft.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "auth_token",
+    "value": "your-auth-token-here",
+    "domain": ".ft.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "Strict"
+  }
+]

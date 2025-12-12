@@ -1,0 +1,23 @@
+{
+  "newsletter_name": "noticias_diarias",
+  "run_date": "2025-11-19",
+  "generated_at": "2025-11-19T17:16:32.816783+00:00",
+  "stages": {
+    "stage_03": {
+      "duration": 110.11501240730286,
+      "status": "completed"
+    },
+    "stage_04": {
+      "duration": 79.50687766075134,
+      "status": "failed",
+      "error": "Stage 04 failed with exit code 1"
+    },
+    "stage_05": {
+      "duration": 1.1025176048278809,
+      "status": "failed",
+      "error": "Stage 05 failed with exit code 1"
+    }
+  },
+  "summary": {},
+  "total_duration": 764.6417183876038
+}

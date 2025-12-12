@@ -1,0 +1,102 @@
+# Configuración de Fuentes de Noticias
+# Última actualización: 2025-11-13
+
+sources:
+  # === Fuentes Españolas ===
+
+  - id: "elconfidencial"
+    name: "El Confidencial"
+    url: "https://www.elconfidencial.com/"
+    enabled: true
+    priority: 1
+    language: "es"
+    description: "Medio español generalista con enfoque en economía y política"
+
+  - id: "elpais"
+    name: "El País"
+    url: "https://elpais.com/"
+    enabled: true
+    priority: 1
+    language: "es"
+    description: "Principal diario español, cobertura generalista"
+
+  - id: "elmundo"
+    name: "El Mundo"
+    url: "https://www.elmundo.es/"
+    enabled: true
+    priority: 1
+    language: "es"
+    description: "Diario español generalista"
+
+  - id: "expansion"
+    name: "Expansión"
+    url: "https://www.expansion.com/"
+    enabled: true
+    priority: 1
+    language: "es"
+    description: "Diario económico español"
+
+  - id: "abc"
+    name: "ABC"
+    url: "https://www.abc.es/"
+    enabled: true
+    priority: 1
+    language: "es"
+    description: "Diario español generalista"
+
+  # === Fuentes Internacionales ===
+
+  - id: "ft"
+    name: "Financial Times"
+    url: "https://www.ft.com/"
+    enabled: true
+    priority: 1
+    language: "en"
+    description: "Medio económico y business británico, referencia mundial"
+
+  - id: "bloomberg"
+    name: "Bloomberg"
+    url: "https://www.bloomberg.com/"
+    enabled: false
+    priority: 1
+    language: "en"
+    description: "Medio líder en noticias financieras, mercados y análisis económico (DESACTIVADO: paywall agresivo, solo extrae 3 links de suscripción)"
+
+  - id: "nyt"
+    name: "The New York Times"
+    url: "https://www.nytimes.com/"
+    enabled: true
+    priority: 1
+    language: "en"
+    description: "Principal diario estadounidense, cobertura global"
+
+  - id: "bbc"
+    name: "BBC News"
+    url: "https://www.bbc.com/news"
+    enabled: true
+    priority: 1
+    language: "en"
+    description: "Medio público británico, cobertura internacional de referencia"
+
+  - id: "lemonde"
+    name: "Le Monde"
+    url: "https://www.lemonde.fr/"
+    enabled: true
+    priority: 1
+    language: "fr"
+    description: "Principal diario francés, cobertura internacional"
+
+# === NOTAS DE USO ===
+#
+# - id: Identificador único (se usa para filtrar en newsletters)
+# - name: Nombre mostrado en newsletters
+# - url: URL base para scraping
+# - enabled: true/false para activar/desactivar temporalmente
+# - priority: Orden de autoridad (1=máxima, usado para desempates en ranker)
+# - language: Idioma de la fuente (es/en/fr)
+# - description: Descripción interna
+#
+# Para añadir una nueva fuente:
+# 1. Añadir entrada aquí
+# 2. Ejecutar Stage 01 con UPDATE_RULES_ON_RUN=true
+# 3. Las reglas de clasificación se generarán automáticamente

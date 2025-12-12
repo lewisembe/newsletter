@@ -1,0 +1,339 @@
+{
+  "metadata": {
+    "newsletter_name": "tecnologia_diaria",
+    "run_date": "2025-12-11",
+    "generated_at": "2025-12-11T08:12:01.847486+01:00",
+    "stage": "05_generate_newsletters"
+  },
+  "configuration": {
+    "max_articles": 10,
+    "top_with_content": 10,
+    "expected_categories": [
+      "tecnologia"
+    ],
+    "ranked_file_categories": null,
+    "template": "default",
+    "model_writer": "gpt-4o-mini",
+    "output_format": "markdown"
+  },
+  "ranked_data": {
+    "total_urls_in_ranked_file": 0,
+    "urls_selected_for_processing": 10,
+    "initial_ranked_order": []
+  },
+  "content_extraction": {
+    "urls_requested_for_content": [
+      {
+        "rank": 1,
+        "url_id": 16428,
+        "url": "https://www.nytimes.com/2025/12/10/science/archaeology-humans-neanderthals-fire.html",
+        "title": "Archaeologists Find Oldest Evidence of Fire-Making"
+      },
+      {
+        "rank": 2,
+        "url_id": 16372,
+        "url": "https://www.lemonde.fr/pixels/article/2025/12/10/espions-policiers-ou-militaires-d-elite-francais-trahis-par-les-donnees-publicitaires-de-leurs-smartphones_6656694_4408996.html",
+        "title": "Espions, policiers ou militaires d’élite français trahis par les données publicitaires de leurs téléphones"
+      },
+      {
+        "rank": 3,
+        "url_id": 16303,
+        "url": "https://www.ft.com/content/a30cd04b-ca3a-405c-826b-28a3b2de9d94",
+        "title": "Taiwan probes leaks of vital chip technology"
+      },
+      {
+        "rank": 4,
+        "url_id": 16091,
+        "url": "https://elpais.com/clima-y-medio-ambiente/2025-12-11/el-observatorio-de-cambio-global-de-sierra-nevada-pionero-en-el-estudio-de-impactos-en-montanas-en-grave-riesgo-de-desaparicion.html",
+        "title": "El Observatorio de Cambio Global de Sierra Nevada, pionero en el estudio de impactos en montañas, en grave riesgo de desaparición"
+      },
+      {
+        "rank": 5,
+        "url_id": 16146,
+        "url": "https://elpais.com/ciencia/2025-12-10/hallado-el-primer-fuego-encendido-por-humanos.html",
+        "title": "Los neandertales encendieron el primer fuego de la humanidad"
+      },
+      {
+        "rank": 6,
+        "url_id": 16005,
+        "url": "https://www.elconfidencial.com/tecnologia/novaceno/2025-12-10/espacio-nasa-nuevo-telescopio-espacial-nancy-grace-roman_4263813/",
+        "title": "El nuevo telescopio espacial de la NASA ya está listo y será 100 veces más potente que el Hubble"
+      },
+      {
+        "rank": 7,
+        "url_id": 15927,
+        "url": "https://www.bbc.co.uk/news/resources/idt-b9da7a6d-165b-492a-8785-235cd10e2e8e",
+        "title": "The moment the earliest known man-made fire was uncovered - BBC News"
+      },
+      {
+        "rank": 8,
+        "url_id": 15826,
+        "url": "https://www.abc.es/sociedad/nuevo-clima-hipertropical-surgiendo-amazonia-20251210034359-nt.html",
+        "title": "Un nuevo clima hipertropical está surgiendo en la Amazonía"
+      },
+      {
+        "rank": 9,
+        "url_id": 16426,
+        "url": "https://www.nytimes.com/2025/12/10/technology/lip-bu-tan-intel-ceo-investor.html",
+        "title": "Does the Job of C.E.O. or Private Investor Come First? Intel’s Chief Is Juggling That Question."
+      },
+      {
+        "rank": 10,
+        "url_id": 16290,
+        "url": "https://www.ft.com/content/229983ee-c11f-44fb-8e61-2ac61d8d100a",
+        "title": "The perils of using AI when recruiting"
+      }
+    ],
+    "urls_successfully_extracted": [
+      {
+        "rank": 2,
+        "url_id": 16372,
+        "url": "https://www.lemonde.fr/pixels/article/2025/12/10/espions-policiers-ou-militaires-d-elite-francais-trahis-par-les-donnees-publicitaires-de-leurs-smartphones_6656694_4408996.html",
+        "title": "Espions, policiers ou militaires d’élite français trahis par les données publicitaires de leurs téléphones",
+        "method": "llm_xpath",
+        "word_count": 332
+      },
+      {
+        "rank": 3,
+        "url_id": 16303,
+        "url": "https://www.ft.com/content/a30cd04b-ca3a-405c-826b-28a3b2de9d94",
+        "title": "Taiwan probes leaks of vital chip technology",
+        "method": "llm_direct",
+        "word_count": 239
+      },
+      {
+        "rank": 4,
+        "url_id": 16091,
+        "url": "https://elpais.com/clima-y-medio-ambiente/2025-12-11/el-observatorio-de-cambio-global-de-sierra-nevada-pionero-en-el-estudio-de-impactos-en-montanas-en-grave-riesgo-de-desaparicion.html",
+        "title": "El Observatorio de Cambio Global de Sierra Nevada, pionero en el estudio de impactos en montañas, en grave riesgo de desaparición",
+        "method": "readability",
+        "word_count": 1267
+      },
+      {
+        "rank": 5,
+        "url_id": 16146,
+        "url": "https://elpais.com/ciencia/2025-12-10/hallado-el-primer-fuego-encendido-por-humanos.html",
+        "title": "Los neandertales encendieron el primer fuego de la humanidad",
+        "method": "readability",
+        "word_count": 1191
+      },
+      {
+        "rank": 6,
+        "url_id": 16005,
+        "url": "https://www.elconfidencial.com/tecnologia/novaceno/2025-12-10/espacio-nasa-nuevo-telescopio-espacial-nancy-grace-roman_4263813/",
+        "title": "El nuevo telescopio espacial de la NASA ya está listo y será 100 veces más potente que el Hubble",
+        "method": "readability",
+        "word_count": 820
+      },
+      {
+        "rank": 7,
+        "url_id": 15927,
+        "url": "https://www.bbc.co.uk/news/resources/idt-b9da7a6d-165b-492a-8785-235cd10e2e8e",
+        "title": "The moment the earliest known man-made fire was uncovered - BBC News",
+        "method": "readability",
+        "word_count": 207
+      },
+      {
+        "rank": 8,
+        "url_id": 15826,
+        "url": "https://www.abc.es/sociedad/nuevo-clima-hipertropical-surgiendo-amazonia-20251210034359-nt.html",
+        "title": "Un nuevo clima hipertropical está surgiendo en la Amazonía",
+        "method": "json_ld",
+        "word_count": 458
+      }
+    ],
+    "urls_failed_extraction": [
+      {
+        "rank": 1,
+        "url_id": 16428,
+        "url": "https://www.nytimes.com/2025/12/10/science/archaeology-humans-neanderthals-fire.html",
+        "title": "Archaeologists Find Oldest Evidence of Fire-Making",
+        "status": "failed",
+        "error": "All fetch methods failed (tried: cookies, direct, no-js, selenium-no-js, archive.today)"
+      },
+      {
+        "rank": 9,
+        "url_id": 16426,
+        "url": "https://www.nytimes.com/2025/12/10/technology/lip-bu-tan-intel-ceo-investor.html",
+        "title": "Does the Job of C.E.O. or Private Investor Come First? Intel’s Chief Is Juggling That Question.",
+        "status": "failed",
+        "error": "All fetch methods failed (tried: cookies, direct, no-js, selenium-no-js, archive.today)"
+      },
+      {
+        "rank": 10,
+        "url_id": 16290,
+        "url": "https://www.ft.com/content/229983ee-c11f-44fb-8e61-2ac61d8d100a",
+        "title": "The perils of using AI when recruiting",
+        "status": "failed",
+        "error": "All extraction methods failed (including LLM direct extraction)"
+      }
+    ],
+    "extraction_stats": {
+      "total_requested": 10,
+      "total_success": 7,
+      "total_failed": 3,
+      "success_rate": 70.0
+    }
+  },
+  "articles": [
+    {
+      "processing_rank": 1,
+      "url_id": 16428,
+      "url": "https://www.nytimes.com/2025/12/10/science/archaeology-humans-neanderthals-fire.html",
+      "title": "Archaeologists Find Oldest Evidence of Fire-Making",
+      "source": "www.nytimes.com",
+      "category": "tecnologia",
+      "has_full_content": false,
+      "extraction_status": "failed",
+      "extraction_method": null,
+      "extraction_error": "All fetch methods failed (tried: cookies, direct, no-js, selenium-no-js, archive.today)",
+      "word_count": null,
+      "archive_url": null
+    },
+    {
+      "processing_rank": 2,
+      "url_id": 16372,
+      "url": "https://www.lemonde.fr/pixels/article/2025/12/10/espions-policiers-ou-militaires-d-elite-francais-trahis-par-les-donnees-publicitaires-de-leurs-smartphones_6656694_4408996.html",
+      "title": "Espions, policiers ou militaires d’élite français trahis par les données publicitaires de leurs téléphones",
+      "source": "www.lemonde.fr",
+      "category": "tecnologia",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "llm_xpath",
+      "extraction_error": null,
+      "word_count": 332,
+      "archive_url": null,
+      "full_content": "Temps deLecture 8 min. Article réservé aux abonnés EnquêteEn utilisant des données publicitaires d’accès facile, « Le Monde » a pu déterminer avec certitude ou un haut niveau de probabilité l’identité, le domicile et les habitudes de plusieurs dizaines de salariés ou fonctionnaires d’entités sensibles. L’identité des espions français fait partie des secrets les plus sensibles de la République. La révélerest un délit. Il est pourtant possible, moyennant quelques connaissances techniques, de trouver le domicile de certains d’entre eux, et donc leur identité, leurs habitudes, ainsi que celles de leurs proches, mettant en danger leur sécurité, celle de leur famille et de leur service. La faute incombe à une industrie publicitaire boulimique, opaque et hors de contrôle qui extrait chaque jour des smartphones des milliards de données personnelles, et notamment des déplacements précis à quelques mètres près, avant de les revendre. A moins d’une hygiène numérique à toute épreuve, il est difficile de lui échapper. Tous les personnels des institutions les plus sensibles de l’Etat sont concernés: les officiers de services de renseignement, donc, mais aussi les personnels chargés de la protection des plus hautes personnalités, les policiers d’élite, les membres du groupe d’intervention de la gendarmerie nationale (GIGN), les militaires affectés dans des bases cruciales pour la dissuasion nucléaire, les cadres d’entreprises de l’armement, le personnel pénitentiaire ou encore les salariés de centrales nucléaires. Ces révélations, qui confirment et approfondissentcelles deFranceinfo, sont le fruit d’un partenariat entreLe Monde, le quotidien belgeL’Echo, la rédaction spécialisée allemandeNetzpolitik. org, la radio néerlandaise BNR et la radio allemande BR. Elles prolongent plusieurs enquêtes sur l’industrie des données personnelles: Des données publicitaires géolocalisées ont permis de suivre à la trace des responsables de l’UE, parfois jusqu’à leur domicile Données personnelles en vente libre: les « data brokers », une industrie hors de contrôle Commentsurveiller et limiter la collecte de nos données personnelles Leboncoin, Vinted, Candy Crush…comment les applications nous pistent Il vous reste 90. 34% de cet article à lire. La suite est réservée aux abonnés.",
+      "content_preview": "Temps deLecture 8 min. Article réservé aux abonnés EnquêteEn utilisant des données publicitaires d’accès facile, « Le Monde » a pu déterminer avec certitude ou un haut niveau de probabilité l’identité, le domicile et les habitudes de plusieurs dizaines de salariés ou fonctionnaires d’entités sensibles. L’identité des espions français fait partie des secrets les plus sensibles de la République. La révélerest un délit. Il est pourtant possible, moyennant quelques connaissances techniques, de trouv..."
+    },
+    {
+      "processing_rank": 3,
+      "url_id": 16303,
+      "url": "https://www.ft.com/content/a30cd04b-ca3a-405c-826b-28a3b2de9d94",
+      "title": "Taiwan probes leaks of vital chip technology",
+      "source": "www.ft.com",
+      "category": "tecnologia",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "llm_direct",
+      "extraction_error": null,
+      "word_count": 239,
+      "archive_url": null,
+      "full_content": "Taiwan is investigating leaks of sensitive semiconductor technology amid concerns that its vital chip sector is under threat from espionage and industrial sabotage. The investigation follows reports that several Taiwanese companies have been targeted by foreign entities seeking to gain access to proprietary technology, including advanced chip designs and manufacturing processes. Taiwan's semiconductor industry is a cornerstone of its economy, accounting for a significant portion of its exports and GDP. The island is home to some of the world's largest chip manufacturers, including Taiwan Semiconductor Manufacturing Company (TSMC), which produces chips for major global tech firms. Authorities are particularly concerned about the potential for foreign competitors to exploit vulnerabilities in Taiwan's supply chain and intellectual property protections. The government has pledged to enhance security measures and collaborate with industry leaders to safeguard critical technologies. In recent years, Taiwan has faced increasing pressure from China, which views the island as a breakaway province and has ramped up military and economic threats. The semiconductor sector is seen as a strategic asset in this geopolitical struggle, making it a prime target for espionage. The investigation is expected to involve close cooperation between government agencies and private companies to identify the sources of the leaks and implement stronger safeguards against future incidents. As the global demand for semiconductors continues to rise, Taiwan's ability to protect its technological edge will be crucial for maintaining its position in the competitive landscape of the tech industry.",
+      "content_preview": "Taiwan is investigating leaks of sensitive semiconductor technology amid concerns that its vital chip sector is under threat from espionage and industrial sabotage. The investigation follows reports that several Taiwanese companies have been targeted by foreign entities seeking to gain access to proprietary technology, including advanced chip designs and manufacturing processes. Taiwan's semiconductor industry is a cornerstone of its economy, accounting for a significant portion of its exports a..."
+    },
+    {
+      "processing_rank": 4,
+      "url_id": 16091,
+      "url": "https://elpais.com/clima-y-medio-ambiente/2025-12-11/el-observatorio-de-cambio-global-de-sierra-nevada-pionero-en-el-estudio-de-impactos-en-montanas-en-grave-riesgo-de-desaparicion.html",
+      "title": "El Observatorio de Cambio Global de Sierra Nevada, pionero en el estudio de impactos en montañas, en grave riesgo de desaparición",
+      "source": "elpais.com",
+      "category": "tecnologia",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 1267,
+      "archive_url": null,
+      "full_content": "La exrectora de la Universidad de Granada, Pilar Aranda, ha definido recientemente el Observatorio de Cambio Global de Sierra Nevada ([OBSNEV]( \" como “un laboratorio abierto, en el espacio natural, que permite analizar en tiempo real los cambios que se van produciendo en [Sierra Nevada]( \" Y menciona, por ejemplo, “cómo diversas especies de flora y fauna van ascendiendo la cordillera y adaptándose a vivir cada vez a mayor altura evidenciando que la temperatura va aumentando año a año”. La definición de la catedrática de Fisiología describe sucintamente la función general de este proyecto, que incluye investigación, monitorización, ayuda a los gestores medioambientales a tomar decisiones y divulgación sobre los [ecosistemas de montaña]( \" Pero desde noviembre de 2024, esta iniciativa, que depende económicamente de la Junta de Andalucía y científicamente de la Universidad de Granada (UGR), no recibe fondos nuevos. El último año ha respirado gracias a fondos de reserva y ahorros. Regino Zamora, coordinador científico del proyecto y catedrático de Ecología de la universidad granadina, asegura que ya no tiene más recursos y que si la Junta no aporta dinero, este proyecto pionero en España llegará a su fin. El Observatorio de Cambio Global de Sierra Nevada se creó en 2008. Inicialmente, se pretendía poner en marcha un organismo de investigación y control de todos los datos y parámetros disponibles de la sierra. Se constituyó entonces un órgano gestionado por la Administración andaluza para que la UGR generara investigación. Los científicos de la universidad dependían de los trabajadores del [Parque Nacional de Sierra Nevada]( \" para que le suministraran datos. En 2018 se firmó un convenio que, tras una renovación, venció en noviembre de 2024. El observatorio y los propósitos iniciales han ido creciendo estos años y de aquella idea de monitorizar ha pasado a convertirse en una importante estructura de investigación internacionalmente conectada. Y mucho más. De hecho, OBSNEV es más que un centro, una red de investigadores o una infraestructura concreta. En realidad, es una suma de proyectos que incluyen investigación, monitorización, gestión, información histórica, difusión y también trabajo compartido con los más de 60 pueblos de Sierra Nevada y su entorno para que la población de estos lugares entienda cuál es el valor de su sierra y la importancia de su protección. Por ello, finalmente, el OBSNEV es una especie de capa que agrupa proyectos diversos en todos esos ámbitos. Y, como explica Zamora, es un manto que cuesta muy poco a la Junta de Andalucía. Es, añade, poco dinero, pero crucial y sin el que no se puede seguir. Cuando el convenio venció en noviembre del año pasado, la Consejería de Sostenibilidad y Medio Ambiente andaluz explicó a Regino Zamora que esa figura de convenio no era la adecuada. “Estábamos cerca de firmarlo”, cuenta, “cuando lo pararon todo”. Desde la consejería explican que la búsqueda de esa nueva figura sigue en marcha, 13 meses después. “Se trabaja en la adaptación del convenio de colaboración para el mantenimiento del Observatorio de Sierra de Nevada. Es necesario adecuar y actualizar las funciones y tareas desarrolladas por ambas partes firmantes del convenios, consejería y universidad, a las nuevas necesidades del Parque Nacional de Sierra Nevada y a los nuevos marcos financieros”. La Junta ha pedido a Zamora que acuda a una nueva ayuda que han puesto en marcha. Se refieren, aclara una portavoz de la consejería, a “otros mecanismos de financiación para los proyectos desarrollados por el observatorio como una orden de ayudas de I+D+i cuyas consultas públicas previas se publicaron el pasado 5 de noviembre, por importe de 2, 4 millones de euros”. Zamora argumenta que la administración lo envía a financiarse a través de fondos FEDER “que solo financia proyectos de investigación puros y duros, I+D+i, una cosa muy distinta a lo que hemos creado en el observatorio”. Y añade, “por ejemplo, esa capa de colaboración con los municipios y ayuntamientos que ofrecemos no se puede incluir en un registro de investigación y no la financian esos fondos. Si no lo hace la Junta o una administración, nadie lo hará”. El coordinador científico del proyecto explica, además, que la aportación de la Junta de Andalucía es pequeña en comparación a lo que los investigadores han conseguido en proyectos nacionales e internacionales. “Ellos han aportado poco más de 100. 000 euros cada año, frente a, por ejemplo, el proyecto europeo [Smart Ecomountains]( \" con el que conseguimos más de seis millones de euros”. Zamora valora que por cada euro de la administración andaluza, los científicos han conseguido cuatro o cinco en libre concurrencia. Pero aun así, con esa proporción, la aportación de la Junta es fundamental para mantener a flote el proyecto. “Nosotros podemos seguir pidiendo proyectos e investigando”, comenta, pero es ese ropaje institucional, esa capa que arropa los diferentes proyectos, la que acaba dando sentido unitario a todo. Además del Smart Ecomountains, el observatorio ha desarrollado proyectos como [Life Adaptamed]( \" [PRESINMED]( \" o [GLORIA]( \" de seguimiento del cambio global en ambientes alpinos. También ha desplegado una red de sensores por el parque nacional, que ofrecen en remoto numerosos parámetros ambientales, o ha estudiado aspectos muy concretos como la evolución de la nieve, la afectación del polvo sahariano en el territorio, los cambios en el verdor de la vegetación, etc. El catedrático de Ecología está especialmente orgulloso de la interacción con la sociedad y su aportación a lo que llama una “gestión adaptativa”, que permite que a las acciones ordinarias se les haga seguimiento, se compruebe si se cumplen los objetivos previstos y, en su caso, se propongan modificaciones. OBSNEV fue pionero en España en el momento de su creación y lo sigue siendo, explica Zamora, con solo una institución similar, el OPCC, [Observatorio de Cambio Climático Pirenaico]( \" Con sede en Jaca, este OPCC cuenta con una estructura transnacional en la que participan cuatro comunidades españolas, dos regiones francesas y Andorra, y se mantiene con fondos europeos en su totalidad. El riesgo que supone la posible desaparición de OBSNEV ha alertado a la comunidad científica. Así, 12 premios nacionales de Investigación Científica Alejandro Malaspina en el área de Ciencias y Tecnologías de los Recursos Naturales han escrito [una carta pública mostrando su apoyo]( \" a la continuidad del OBSNEV. Por otro lado, alrededor de 800 investigadores han hecho público su apoyo a esta iniciativa. También han mostrado su preocupación diversas instituciones nacionales e internacionales. Regino Zamora aclara que también ha acudido al Ministerio para la Transición Ecológica y el Reto Demográfico. Pero más allá de informarle de lo preocupados que están, tampoco ha recibido ninguna solución al problema. Miguel Delibes de Castro, biólogo que fuera director de la Estación Biológica de Doñana y uno de los premios nacionales firmantes, explica su interés por la continuidad de OBSNEV. “Es necesario que se realicen comprobaciones o revisión rutinaria de ciertos parámetros en espacios como Sierra Nevada. Es como la salud, no basta con ir al médico cuando enfermamos, sino que tenemos que hacernos ciertos chequeos rutinarios para estar advertidos. Y esto es lo que requiere Sierra Nevada: saber si nieva más o menos que antes, si la nieve dura más o menos”. Delibes asegura que no comprende “como a las administraciones responsables les cuesta entender esto”. La recolección de datos, afirma, “no es un capricho, ni nos basta la intuición o la percepción. Necesitamos tenerlos y tenerlos a lo largo de los años”. Y si no se hace, se pierde la capacidad de actuar sobre el futuro y todo el valor del trabajo realizado durante años. El OBSNEV tiene días, quizá semanas, para no perder todo su aportación de 27 años.",
+      "content_preview": "La exrectora de la Universidad de Granada, Pilar Aranda, ha definido recientemente el Observatorio de Cambio Global de Sierra Nevada ([OBSNEV]( \" como “un laboratorio abierto, en el espacio natural, que permite analizar en tiempo real los cambios que se van produciendo en [Sierra Nevada]( \" Y menciona, por ejemplo, “cómo diversas especies de flora y fauna van ascendiendo la cordillera y adaptándose a vivir cada vez a mayor altura evidenciando que la temperatura va aumentando año a año”. La defin..."
+    },
+    {
+      "processing_rank": 5,
+      "url_id": 16146,
+      "url": "https://elpais.com/ciencia/2025-12-10/hallado-el-primer-fuego-encendido-por-humanos.html",
+      "title": "Los neandertales encendieron el primer fuego de la humanidad",
+      "source": "elpais.com",
+      "category": "tecnologia",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 1191,
+      "archive_url": null,
+      "full_content": "No es el fuego, ni sus cenizas, pero sí el _mechero_ que lo encendió. Científicos de Reino Unido han encontrado los restos de la hoguera más antigua prendida por humanos. Se hizo hace unos 400. 000 años en Barnham, al sureste de Inglaterra, cuando una persona hizo chocar un trozo de pedernal y otro de pirita para sacar chispas y hacer llamas, según su hipótesis. Fue solo un gesto, pero supone una revolución, pues sería la primera prueba de control absoluto del fuego, algo que tradicionalmente se atribuía a nuestra especie, los [_Homo sapiens_]( Pero los creadores de estas lumbres fueron los neandertales, aseguran los responsables del trabajo, que se publica este miércoles en [_Nature_]( El fuego está tan enraizado en la humanidad que la primera acepción de hogar es el lugar donde se hace fuego. Las llamas nos permitieron salir de la oscuridad, huir del frío, ahuyentar a los depredadores y cocinar, lo que facilitó las digestiones y liberó recursos para desarrollar cerebros cada vez más grandes. La hoguera también es el lugar primigenio de reunión, por lo que probablemente en torno a su calor se inventaron las primeras historias, tradiciones y creencias. “Es increíble que los grupos más primitivos de neandertales ya conocieran las propiedades de pedernal, pirita y yesca”, resalta [Nick Ashton]( conservador de colecciones paleolíticas del Museo Británico, y autor principal del estudio, en una nota de prensa. Su colega Rob Davis, añade: “La habilidad de hacer fuego y controlarlo es uno de los momentos estelares de la historia de la humanidad”, y este descubrimiento “retrasa su aparición unos 350. 000 años”. El estudio destaca que en la zona Barnham no hay pirita, así que los humanos tuvieron que traerla de otro lugar, lo que refuerza la hipótesis de que ya conocían su excepcional utilidad. Los indicios más antiguos de uso del fuego están en África, y se remontan más de millón y medio de años. Esto demuestra que los homínidos ya sabían encontrar un incendio natural —prendido por un rayo, por ejemplo— y aprovecharlo. En Europa y Asia hay hogueras de hace hasta 800. 000 años, como en la Cueva Negra del Estrecho del Río Quípar, en Murcia. Pero en ningún caso se ha podido descartar que su origen fuesen incendios naturales, cuyas llamas eran mantenidas con cada vez más pericia por los humanos. Conservar el fuego era, literalmente, mantener el hogar. Las nuevas pruebas se han hallado en una antigua cantera de arcilla explotada desde el siglo XVIII, y excavada como yacimiento desde principios del XX. Tras años de búsqueda, los investigadores creen haber encontrado pruebas concluyentes de que aquí hubo un campamento humano con fuegos encendidos y mantenidos en el tiempo. El análisis geoquímico de los sedimentos muestra temperaturas de más de 700 grados que refuerzan la hipótesis de fogatas repetidas. También hay herramientas de piedra quemadas. Pero sobre todo hay dos pequeños fragmentos de pirita, algo mayores que la uña de un pulgar. Este mineral rico en azufre se habría usado como encendedor, y los dos trocitos descubiertos serían esquirlas que saltaron en el proceso. Excavaciones en el yacimiento de Barnham, Reino Unido, donde han aparecido las antiguas hogueras. Jordan Mansfield En Europa ya se conocían fogatas humanas en esta época en cuevas de Francia y Portugal; y también en campo abierto en Ucrania, Reino Unido y España. Pero en ninguno de ellos —ni en otros posteriores— se ha hallado pirita como piedra de chispa, según los autores del nuevo trabajo. Para encontrar la prueba más clara de dominio absoluto del fuego en Europa, señalan, hay que esperar hasta hace unos 50. 000 años [en Francia]( Y también en este caso [los autores eran neandertales]( la especie humana más cercana a la nuestra, que se extinguieron hace unos 40. 000 años por [causas desconocidas. ]( La gran pregunta es quiénes eran aquellos humanos que ya dominaban el fuego. [Chris Stringer]( investigador del Museo de Ciencias Naturales de Londres y coautor del estudio, explica que en este yacimiento no hay restos humanos. Pero a unos 100 kilómetros al sur se han hallado tres fragmentos de cráneo que evidencian una capacidad cerebral muy parecida a la de los humanos actuales. Los restos pertenecían a neandertales tempranos, ancestros de esta especie con una fisonomía muy parecida a los que vivían en la [sierra de Atapuerca]( en Burgos, hace unos 430. 000 años. Es interesante, porque justo en este yacimiento, del que han salido miles de fósiles de estos humanos, no hay ni rastro de fuego. Probablemente, el dominio del fuego no surgió en Inglaterra, opinan los responsables del hallazgo. “Hace unos 450. 000 años hubo una glaciación que probablemente aniquiló a todos los humanos” de la isla, ha relatado Stringer en una rueda de prensa. Un puente de tierra unía este territorio con el resto de Europa, así que estos ancestros neandertales europeos la repoblaron y llegaron “más al norte” gracias a la nueva tecnología que ya dominaban. El fuego fue “un seguro de vida”, y se convirtió en el lugar donde contar historias, transmitir conocimiento y desarrollar el lenguaje. Estos hallazgos “encajan con un comportamiento neandertal más complejo del que pensábamos”, ha añadido el paleoantropólogo. “No estamos diciendo que fuesen los únicos [capaces de dominar el fuego], pero desde luego este es el primer caso del que podemos estar seguros”. Los dos fragmentos de pirita vistos desde dos perspectivas distintas. Nature “El control del fuego”, reconoce la historiadora[ Ruth Blasco]( es “uno de los temas más debatidos y controvertidos en el ámbito de la arqueología del Paleolítico”. La investigadora del Instituto Catalán de Paleoecología Humana, que no ha participado en el trabajo, opina que las pruebas presentadas son diversas y “robustas”. “La comunidad científica ya asumía que el uso regular y controlado del fuego se produjo en Europa hace entre 400. 000 y 300. 000 mil años, y que la señal arqueológica queda bien establecida en yacimientos posteriores a 100. 000 mil años. El panorama científico no cambia mucho a partir de Barnham, pero sí se pone una fecha clara para la producción intencional del fuego”, razona. La hoguera de Barnham se hizo en campo abierto, probablemente a orillas de una laguna. Pasados 400. 000 años era imposible que se conservasen los indicadores normales del fuego, como cenizas o tizones. Para probar su caso, los científicos echaron mano de varias técnicas muy novedosas, como el análisis magnético de los sedimentos, la espectroscopía de infrarrojos y el análisis de hidrocarburos, que presentan un patrón diferente cuando hay un fuego natural y otro encendido en el mismo lugar en varias ocasiones. “La convergencia de múltiples líneas de evidencia y de métodos analíticos independientes aporta un elevado grado de robustez a las conclusiones del estudio”, opina la arqueóloga [Montserrat Sanz]( de la Universidad de Barcelona, que ha sido revisora científica independiente de este trabajo. “Posiblemente, no se trata del primer fuego producido por humanos en sentido estricto, ya que existen indicios de control y uso del fuego en cronologías anteriores. Sin embargo, el hallazgo es especialmente relevante porque documenta el encendedor más antiguo conocido hasta el momento; y documentarlo implica que el fuego fue producido por humanos”, argumenta.",
+      "content_preview": "No es el fuego, ni sus cenizas, pero sí el _mechero_ que lo encendió. Científicos de Reino Unido han encontrado los restos de la hoguera más antigua prendida por humanos. Se hizo hace unos 400. 000 años en Barnham, al sureste de Inglaterra, cuando una persona hizo chocar un trozo de pedernal y otro de pirita para sacar chispas y hacer llamas, según su hipótesis. Fue solo un gesto, pero supone una revolución, pues sería la primera prueba de control absoluto del fuego, algo que tradicionalmente se..."
+    },
+    {
+      "processing_rank": 6,
+      "url_id": 16005,
+      "url": "https://www.elconfidencial.com/tecnologia/novaceno/2025-12-10/espacio-nasa-nuevo-telescopio-espacial-nancy-grace-roman_4263813/",
+      "title": "El nuevo telescopio espacial de la NASA ya está listo y será 100 veces más potente que el Hubble",
+      "source": "www.elconfidencial.com",
+      "category": "tecnologia",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 820,
+      "archive_url": null,
+      "full_content": "La NASA ha finalizado el ensamblaje del Telescopio Espacial Nancy Grace Roman en el Centro Espacial Goddard. Este observatorio infrarrojo podría adelantar su lanzamiento, previsto para 2027, y está llamado, junto al James Webb, a **captar nuevas imágenes que cambien radicalmente lo que sabemos sobre el universo. ** Desde la misteriosa energía oscura hasta la búsqueda de mundos potencialmente habitables. El impacto del Roman supondrá una aceleración sin precedentes en nuestra capacidad de observación cósmica. Según **Julie McEnery, ** científica principal del proyecto, \"en los primeros cinco años de la misión, se espera que revele más de 100. 000 mundos distantes, cientos de millones de estrellas y miles de millones de galaxias\". Para ponerlo en perspectiva, este telescopio fotografiará en cinco años más de 50 veces la cantidad de cielo que el Hubble capturó en sus primeros 30 años de operación. El Roman generará **20 petabytes de datos (20. 000 terabytes)** durante su misión primaria, una cantidad ingente de datos que estarán disponibles para investigadores de todo el mundo a perpetuidad, permitiendo descubrimientos científicos durante décadas. \"La ciencia transformadora depende de la ingeniería disciplinada, y este equipo lo ha conseguido, pieza por pieza, prueba por prueba, con un observatorio que expandirá nuestra comprensión del universo\", señala **Amit Kshatriya**, administrador asociado de la NASA: ## Cómo funciona El Roman es un telescopio infrarrojo equipado con solo dos instrumentos, pero son extraordinariamente potentes. El primero es el **Instrumento de Campo Amplio** (WFI, por sus siglas en inglés), una cámara de 288 megapíxeles que proporciona **un campo de visión 100 veces mayor que el del Hubble. ** Esta capacidad panorámica es crucial para uno de sus objetivos principales: **desentrañar el misterio de la energía oscura, ** esa fuerza misteriosa que impulsa la expansión acelerada del universo. El segundo instrumento es el**Instrumento Coronógrafo**(CGI), un sistema sofisticado de máscaras, filtros y espejos autoajustables diseñado para bloquear la luz estelar cuando se observan exoplanetas y discos de formación planetaria. \"La pregunta '¿Estamos solos? ' es enorme, y es una tarea igualmente grande construir herramientas que puedan ayudarnos a responderla\", explica **Feng Zhao, ** responsable del coronógrafo. Este será el primer coronógrafo activo que viaje al espacio, probando tecnologías de última generación en múltiples modos de observación. Durante su misión de cinco años, **el Roman orbitará alrededor del punto de Lagrange L2 del sistema Sol-Tierra, ** la misma ubicación que el telescopio James Webb. A diferencia de algunos telescopios infrarrojos, el Roman no depende de refrigerante, por lo que su vida útil está limitada principalmente por el combustible necesario para mantener su órbita y reposicionarse. Esto abre la posibilidad de ampliar el rango de misiones más allá de los cinco años iniciales, si el combustible lo permite. ## Lo que nos espera en el futuro La clave del Roman está en su[ capacidad para estudiar la energía oscura. ]( de nuestras vidas, ha surgido un gran misterio sobre el cosmos: por qué la expansión del universo parece estar acelerándose. Hay algo fundamental sobre el espacio y el tiempo que aún no entendemos y el Roman fue construido para descubrir qué es\", afirma **Nicky Fox, ** administradora asociada de la Dirección de Misiones Científicas de la NASA. Solo mapeando la estructura a gran escala del universo y rastreando su evolución a través del desarrollo de cúmulos de galaxias podremos detectar los efectos sutiles de esta fuerza misteriosa. La búsqueda de vida más allá de nuestro planeta también recibirá un impulso significativo. El aumento de los descubrimientos de nuevas _Tierras_ dominó la década pasada, el problema es que estos planetas suelen quedar eclipsados por el brillo de sus estrellas anfitrionas. El coronógrafo del Roman solucionará este obstáculo, permitiendo la **observación directa de exoplanetas cercanos** y sus espectros atmosféricos. El telescopio espacial Roman nos puede ayudar a entender como evolucionará nuestro universo. (NASA) La Administración Trump ha recortado el presupuesto de la NASA y ha puesto al proyecto del Roman al borde de la cancelación. Una vez solucionado el bache, la NASA continúa con su plan de lanzarlo al espacio en mayo de 2027 a bordo de un cohete Falcon Heavy de SpaceX. Sin embargo, si las pruebas finales se completan satisfactoriamente, **el lanzamiento podría adelantarse al otoño de 2026**. Si lo consiguen, romperán una racha de lanzamientos donde los retrasos son la norma. El Hubble se lanzó con cinco años de retraso y el James Webb más de una década después de lo previsto. \"La misión adquirirá enormes cantidades de imágenes astronómicas que permitirán a los científicos **hacer descubrimientos revolucionarios durante décadas\", ** señala**Jackie Townsend, ** subdirectora del proyecto. La NASA ha finalizado el ensamblaje del Telescopio Espacial Nancy Grace Roman en el Centro Espacial Goddard. Este observatorio infrarrojo podría adelantar su lanzamiento, previsto para 2027, y está llamado, junto al James Webb, a **captar nuevas imágenes que cambien radicalmente lo que sabemos sobre el universo. ** Desde la misteriosa energía oscura hasta la búsqueda de mundos potencialmente habitables.",
+      "content_preview": "La NASA ha finalizado el ensamblaje del Telescopio Espacial Nancy Grace Roman en el Centro Espacial Goddard. Este observatorio infrarrojo podría adelantar su lanzamiento, previsto para 2027, y está llamado, junto al James Webb, a **captar nuevas imágenes que cambien radicalmente lo que sabemos sobre el universo. ** Desde la misteriosa energía oscura hasta la búsqueda de mundos potencialmente habitables. El impacto del Roman supondrá una aceleración sin precedentes en nuestra capacidad de observa..."
+    },
+    {
+      "processing_rank": 7,
+      "url_id": 15927,
+      "url": "https://www.bbc.co.uk/news/resources/idt-b9da7a6d-165b-492a-8785-235cd10e2e8e",
+      "title": "The moment the earliest known man-made fire was uncovered - BBC News",
+      "source": "www.bbc.com",
+      "category": "tecnologia",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 207,
+      "archive_url": null,
+      "full_content": "Dr Davis shows me how sparks are created when the pyrite is hit with a flint axe, enough to create a fire when it lands on dry tinder. It was the first known lighter. Simple technology, but utterly transformative for the future course of humanity. \"That was a really key moment, \" Dr Davis told me, \"It was then that we started putting the pieces together\". The team conducted geological studies which reveal just how rare iron pyrite is in this landscape. The ancient people went far and wide to seek it out as fool's gold was, to them, the most precious mineral in the whole world. \"The relationship of that pyrite to that hearth, to the burnt artefacts: it was then it all fell into place, \"​ Dr Davis tells me, cheerfully. No getting all misty-eyed for him, just pure joy. The British Museum team found three crucial clues in this scientific detective story, all in the same spot: the fire, heated hand axes and iron pyrite which didn’t belong there. This was the first compelling evidence that the fire was deliberately created here so far back in time, Dr Davis told me. \"This is big. This changes everything, \" his enormous grin, getting wider still.",
+      "content_preview": "Dr Davis shows me how sparks are created when the pyrite is hit with a flint axe, enough to create a fire when it lands on dry tinder. It was the first known lighter. Simple technology, but utterly transformative for the future course of humanity. \"That was a really key moment, \" Dr Davis told me, \"It was then that we started putting the pieces together\". The team conducted geological studies which reveal just how rare iron pyrite is in this landscape. The ancient people went far and wide to see..."
+    },
+    {
+      "processing_rank": 8,
+      "url_id": 15826,
+      "url": "https://www.abc.es/sociedad/nuevo-clima-hipertropical-surgiendo-amazonia-20251210034359-nt.html",
+      "title": "Un nuevo clima hipertropical está surgiendo en la Amazonía",
+      "source": "www.abc.es",
+      "category": "tecnologia",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "json_ld",
+      "extraction_error": null,
+      "word_count": 458,
+      "archive_url": null,
+      "full_content": "Un nuevo tipo de clima ha comenzado a abrirse paso en la Amazonía. Los científicos lo han bautizado como 'clima hipertropical' y se caracteriza por unas condiciones de calor extremo, mayor del que ya es habitual en la selva, y. . . una profunda sequía. Su avance, por ahora tímido, apenas ha empezado a vislumbrarse, pero sus consecuencias sobre la selva amazónica son claras: provoca la muerte de árboles y afecta a la capacidad de la Tierra para gestionar los crecientes niveles de dióxido de carbono atmosférico. Son las conclusiones de un nuevo estudio publicado este miércoles en 'Nature', que ha analizado el impacto que tiene el ascenso de la temperatura global en los bosques tropicales, que ya de por sí son uno de los ecosistemas más cálidos y húmedos que existen. Pero de aquí a final de siglo «podríamos crear un clima que ha estado ausente en la Tierra durante millones de años: los 'hipertrópicos'», dicen los autores. Y puede aparecer fuera de la Amazonía, como en las selvas tropicales de África occidental y en todo el sudeste asiático. Para 2100, el trópico pasaría a ser el hipertrópico, donde los días de sequía extremadamente calurosa ya no se limitarán al pico de la estación seca, sino que se darán con mayor frecuencia a lo largo de todo el año, incluso durante los meses más lluviosos. Noticia Relacionada estandar No Islandia clasifica el colapso del sistema de corrientes del Atlántico de amenaza para la seguridad nacional ABC El Gobierno prepara ahora un plan contra los efectos derivados del frenazo de la AMOCPor ahora, las condiciones de este clima hipertropical solo se dan durante unos días o semanas en períodos de sequía extrema en la Amazonía. Pero tienen importantes repercusiones: aumentan un 55% la tasa de mortalidad de los árboles. Ocurre porque, cuando el suelo se seca y el contenido de humedad disminuye a un tercio, los árboles dejan de capturar carbono, muriendo de hambre; o sufriendo colapsos hidráulicos, similares a una embolia, con burbujas de aire en su savia. «Normalmente, las plantas son bastante hábiles para intentar compartimentar y simplemente decir: 'Vale, estoy dispuesto a sacrificar esa rama para mantener viva esta parte central'», dice Jeff Chambers, líder del estudio y profesor de geografía de la Universidad de California en Berkeley. «Pero si hay suficientes embolias, el árbol simplemente muere». Según observaron los autores, las especies de árboles de crecimiento rápido eran más susceptibles que las de crecimiento lento. Según avance el calentamiento global, también serán más frecuentes las condiciones de un clima hipertropical. Calculan que, si no se frenan las emisiones, en 2100 las sequías intensas podrían alcanzar hasta 150 días al año y podrían conducir a procesos más amplios de muerte regresiva de los bosques, advierten.",
+      "content_preview": "Un nuevo tipo de clima ha comenzado a abrirse paso en la Amazonía. Los científicos lo han bautizado como 'clima hipertropical' y se caracteriza por unas condiciones de calor extremo, mayor del que ya es habitual en la selva, y. . . una profunda sequía. Su avance, por ahora tímido, apenas ha empezado a vislumbrarse, pero sus consecuencias sobre la selva amazónica son claras: provoca la muerte de árboles y afecta a la capacidad de la Tierra para gestionar los crecientes niveles de dióxido de carbo..."
+    },
+    {
+      "processing_rank": 9,
+      "url_id": 16426,
+      "url": "https://www.nytimes.com/2025/12/10/technology/lip-bu-tan-intel-ceo-investor.html",
+      "title": "Does the Job of C.E.O. or Private Investor Come First? Intel’s Chief Is Juggling That Question.",
+      "source": "www.nytimes.com",
+      "category": "tecnologia",
+      "has_full_content": false,
+      "extraction_status": "failed",
+      "extraction_method": null,
+      "extraction_error": "All fetch methods failed (tried: cookies, direct, no-js, selenium-no-js, archive.today)",
+      "word_count": null,
+      "archive_url": null
+    },
+    {
+      "processing_rank": 10,
+      "url_id": 16290,
+      "url": "https://www.ft.com/content/229983ee-c11f-44fb-8e61-2ac61d8d100a",
+      "title": "The perils of using AI when recruiting",
+      "source": "www.ft.com",
+      "category": "tecnologia",
+      "has_full_content": false,
+      "extraction_status": "failed",
+      "extraction_method": "failed",
+      "extraction_error": "All extraction methods failed (including LLM direct extraction)",
+      "word_count": null,
+      "archive_url": null
+    }
+  ],
+  "newsletter_preview": {
+    "word_count": 649,
+    "char_count": 5408,
+    "first_500_chars": "Recientemente, nos hemos enterado de que los [**datos publicitarios pueden poner en peligro a espías y funcionarios franceses**](https://www.lemonde.fr/pixels/article/2025/12/10/espions-policiers-ou-militaires-d-elite-francais-trahis-par-les-donnees-publicitaires-de-leurs-smartphones_6656694_4408996.html). Esta revelación, fruto de una investigación conjunta de medios europeos, nos recuerda lo frágil que es nuestra privacidad en la era digital. La industria publicitaria no solo recolecta, sino q..."
+  }
+}

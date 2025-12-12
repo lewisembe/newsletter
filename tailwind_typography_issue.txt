@@ -1,0 +1,7 @@
+Issue: Next.js dev server failed with "Cannot find module '@tailwindcss/typography'" coming from tailwind.config.ts while compiling app/globals.css.
+
+Cause: The frontend container volume `/app/node_modules` did not include `@tailwindcss/typography` even though package.json lists it. Mounting the host project over `/app` meant the container missed installing the new dependency after local changes.
+
+Fix applied: Installed the plugin inside the running frontend container (`docker exec newsletter_frontend npm install @tailwindcss/typography`) and restarted the service (`docker-compose restart frontend`). Verified logs showed successful compilation and 200 responses.
+
+Prevention: After adding dependencies, rebuild the frontend with `docker-compose up -d --build frontend` or remove the node_modules volume (`docker-compose down -v frontend` or full `docker-compose down -v`) before rebuilding so all packages reinstall.

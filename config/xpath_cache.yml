@@ -1,0 +1,73 @@
+generic_selectors:
+  article_body:
+  - //article//p
+  - //div[contains(@class, 'article')]//p
+  - //div[contains(@class, 'story')]//p
+  - //div[contains(@class, 'content')]//p
+  - //div[contains(@id, 'article')]//p
+  - //main//p
+  exclude:
+  - //aside
+  - //nav
+  - //footer
+  - //*[contains(@class, 'related')]
+  - //*[contains(@class, 'advertisement')]
+  - //*[contains(@class, 'newsletter-signup')]
+  - //*[contains(@class, 'social')]
+  json_ld:
+  - //script[@type='application/ld+json']
+  og_description:
+  - //meta[@property='og:description']/@content
+last_updated: '2025-11-17'
+sources: {}
+version: '1.0'
+www.elconfidencial.com/economia:
+  confidence: 85
+  content_selector: article p
+  discovered_at: '2025-12-07T23:25:39.542253+00:00'
+  fail_count: 0
+  last_used_at: '2025-12-12T13:47:53.241315+00:00'
+  selector_type: css
+  success_count: 5
+  success_rate: 1.0
+  url_pattern: www.elconfidencial.com/economia
+www.lemonde.fr/international:
+  confidence: 70
+  content_selector: .live-content p
+  discovered_at: '2025-11-20T13:40:22.469790+00:00'
+  fail_count: 12
+  last_used_at: '2025-12-12T13:54:12.603695+00:00'
+  selector_type: css
+  success_count: 6
+  success_rate: 0.33
+  url_pattern: www.lemonde.fr/international
+www.lemonde.fr/pixels:
+  confidence: 85
+  content_selector: article p
+  discovered_at: '2025-12-11T07:09:28.606351+00:00'
+  fail_count: 0
+  last_used_at: '2025-12-11T07:09:28.606351+00:00'
+  selector_type: css
+  success_count: 1
+  success_rate: 1.0
+  url_pattern: www.lemonde.fr/pixels
+www.nytimes.com:
+  confidence: 85
+  content_selector: article p
+  discovered_at: '2025-12-10T12:57:37.501629+00:00'
+  fail_count: 1
+  last_used_at: '2025-12-12T13:54:01.735695+00:00'
+  selector_type: css
+  success_count: 3
+  success_rate: 0.75
+  url_pattern: www.nytimes.com
+www.nytimes.com/interactive:
+  confidence: 85
+  content_selector: article p
+  discovered_at: '2025-12-11T07:10:28.727293+00:00'
+  fail_count: 0
+  last_used_at: '2025-12-11T07:10:28.727293+00:00'
+  selector_type: css
+  success_count: 1
+  success_rate: 1.0
+  url_pattern: www.nytimes.com/interactive

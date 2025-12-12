@@ -1,0 +1,787 @@
+{
+  "metadata": {
+    "newsletter_name": "general_newsletter",
+    "run_date": "2025-12-12",
+    "generated_at": "2025-12-12T14:58:04.472175+01:00",
+    "stage": "05_generate_newsletters"
+  },
+  "configuration": {
+    "max_articles": 25,
+    "top_with_content": 25,
+    "expected_categories": [
+      "geopolitica",
+      "deportes",
+      "sociedad",
+      "economia",
+      "tecnologia",
+      "finanzas",
+      "politica"
+    ],
+    "ranked_file_categories": null,
+    "template": "default",
+    "model_writer": "gpt-4o-mini",
+    "output_format": "markdown"
+  },
+  "ranked_data": {
+    "total_urls_in_ranked_file": 0,
+    "urls_selected_for_processing": 25,
+    "initial_ranked_order": []
+  },
+  "content_extraction": {
+    "urls_requested_for_content": [
+      {
+        "rank": 1,
+        "url_id": 17146,
+        "url": "https://www.nytimes.com/2025/12/11/us/politics/maduro-oil-sanctions-venezuela-tanker.html",
+        "title": "U.S. Issues New Sanctions Targeting Maduro’s Family and the Oil Sector"
+      },
+      {
+        "rank": 2,
+        "url_id": 17141,
+        "url": "https://www.nytimes.com/2025/12/12/business/china-investment-economy.html",
+        "title": "Historic Shift Is Underway in China’s Economy as Investment Slump Deepens"
+      },
+      {
+        "rank": 3,
+        "url_id": 17195,
+        "url": "https://www.nytimes.com/2025/12/10/climate/gregg-phillips-fema.html",
+        "title": "A Proponent of Election Conspiracy Theories Will Take a Top Role at FEMA"
+      },
+      {
+        "rank": 4,
+        "url_id": 17115,
+        "url": "https://www.lemonde.fr/m-le-mag/article/2025/12/12/nous-ne-sommes-pas-en-train-de-tendre-vers-une-force-autoritaire-nous-y-sommes-au-fbi-la-grande-purge-a-commence_6656969_4500055.html",
+        "title": "Le FBI aux ordres de Donald Trump : « Nous ne sommes pas en train de tendre vers une force autoritaire. Nous y sommes »"
+      },
+      {
+        "rank": 5,
+        "url_id": 17152,
+        "url": "https://www.nytimes.com/2025/12/11/us/politics/health-care-senate-affordable-care-act.html",
+        "title": "Senate Deadlocks on Health Care, Leaving Subsidies to Expire4 min read"
+      },
+      {
+        "rank": 6,
+        "url_id": 17062,
+        "url": "https://www.ft.com/content/3d259fb5-1248-415f-8f6d-d7ff5b6d2448",
+        "title": "Bulgarian PM Rosen Zhelyazkov and government resign weeks ahead of entry to euro"
+      },
+      {
+        "rank": 7,
+        "url_id": 17139,
+        "url": "https://www.lemonde.fr/international/live/2025/12/12/en-direct-guerre-en-ukraine-kiev-revendique-la-reconquete-de-deux-localites-dans-l-oblast-de-kharkiv_6656313_3210.html",
+        "title": "EN DIRECT, guerre en Ukraine : Kiev revendique la reconquête de deux localités dans l’oblast de Kharkiv"
+      },
+      {
+        "rank": 8,
+        "url_id": 17155,
+        "url": "https://www.nytimes.com/2025/12/12/world/asia/thailand-cambodia-trump-call.html",
+        "title": "Thailand Says Trump Call About Cambodia Conflict Is Set for FridayPresident Trump’s planned intervention comes as the hostilities entered their fifth day and appeared to escalate.4 min readChalinee Thirasupa/Reuters"
+      },
+      {
+        "rank": 9,
+        "url_id": 17148,
+        "url": "https://www.nytimes.com/2025/12/11/us/politics/trump-venezuela-tanker.html",
+        "title": "What to Know About Trump’s Seizure of an Oil Tanker Near Venezuela"
+      },
+      {
+        "rank": 10,
+        "url_id": 17126,
+        "url": "https://www.lemonde.fr/international/article/2025/12/11/l-ukraine-est-prete-a-accepter-une-zone-demilitarisee-dans-le-donbass_6656943_3210.html",
+        "title": "Récit Claire Gatinois et Philippe Ricard Article réservé aux abonnésL’Ukraine est prête à envisager une zone démilitarisée dans le Donbass, une concession majeure pour mettre fin à la guerre Le conseiller de Volodymyr Zelensky, Mykhaïlo Podoliak dit au « Monde » que cette zone imposerait un recul des forces ukrainiennes et russes des deux côtés de la ligne de front. Le président ukrainien a déclaré, jeudi, que toute cession de ces régions devrait être validée soit par une « élection », soit par un « référendum ». 5 min de lecture"
+      },
+      {
+        "rank": 11,
+        "url_id": 17107,
+        "url": "https://www.lemonde.fr/international/article/2025/12/12/l-allemagne-accuse-la-russie-d-une-cyberattaque-contre-la-securite-aerienne-et-d-ingerence-lors-des-dernieres-elections-legislatives_6657045_3210.html",
+        "title": "L’Allemagne accuse la Russie d’une cyberattaque contre la sécurité aérienne et d’ingérence lors des dernières élections législatives"
+      },
+      {
+        "rank": 12,
+        "url_id": 17165,
+        "url": "https://www.nytimes.com/2025/12/12/world/europe/king-charles-cancer-update.html",
+        "title": "King Charles to Speak About His Cancer in Televised Message, BBC Repo…"
+      },
+      {
+        "rank": 13,
+        "url_id": 17112,
+        "url": "https://www.lemonde.fr/international/article/2025/12/12/on-peut-quitter-la-guerre-on-peut-y-revenir-mais-comment-la-guerre-peut-elle-quitter-un-homme-les-temoignages-poignants-de-soldats-russes-revenus-d-ukraine_6656986_3210.html",
+        "title": "« On peut quitter la guerre, on peut y revenir, mais comment la guerre peut-elle quitter un homme ? » : les témoignages saisissants de soldats russes revenus d’Ukraine"
+      },
+      {
+        "rank": 14,
+        "url_id": 16668,
+        "url": "https://www.elconfidencial.com/espana/pais-vasco/2025-12-11/condenas-franquismo-fusilamientos-reconocimiento-victimas-1tps_4264569/",
+        "title": "El Gobierno reconoce como víctimas a Txiki y Otaegi, miembros de ETA, y anula sus sentencias de muerte"
+      },
+      {
+        "rank": 15,
+        "url_id": 16629,
+        "url": "https://www.elconfidencial.com/espana/2025-12-12/la-uco-entra-en-hacienda-y-transicion-ecologica-y-en-las-empresas-publicas-correos-y-cofivacasa_4265034/",
+        "title": "La UCO entra en Hacienda y Transición Ecológica y en las empresas públicas Correos y Cofivacasa"
+      },
+      {
+        "rank": 16,
+        "url_id": 16636,
+        "url": "https://www.elconfidencial.com/espana/2025-12-12/aragon-ira-a-elecciones-el-proximo-8-de-febrero-tras-naufragar-el-pacto-del-pp-con-vox_4265168/",
+        "title": "Aragón irá a elecciones el próximo 8 de febrero tras naufragar el pacto entre PP y Vox"
+      },
+      {
+        "rank": 17,
+        "url_id": 16645,
+        "url": "https://www.elconfidencial.com/mundo/2025-12-12/cuba-virus-muerte-epidemia-chikungunya_4263828/",
+        "title": "Un virus africano está haciendo estragos en Cuba: \"La gente va por la calle como zombis\""
+      },
+      {
+        "rank": 18,
+        "url_id": 16692,
+        "url": "https://www.elconfidencial.com/mundo/2025-12-11/activos-rusos-congelados-ucrania-1hms_4264592/",
+        "title": "La UE garantiza la inmovilización de fondos rusos en plenas maniobras del crédito para Ucrania"
+      },
+      {
+        "rank": 19,
+        "url_id": 16696,
+        "url": "https://www.elconfidencial.com/mundo/2025-12-11/rueda-de-prensa-corina_4264173/",
+        "title": "María Corina Machado reivindica desde Oslo \"la libertad\" y asegura que Venezuela es un \"hub criminal\""
+      },
+      {
+        "rank": 20,
+        "url_id": 16579,
+        "url": "https://www.bbc.com/news/articles/c2lvplrxpe9o",
+        "title": "Trump's Gaza peace plan struggles to progress as Israel and Hamas face tough choices"
+      },
+      {
+        "rank": 21,
+        "url_id": 16584,
+        "url": "https://www.bbc.com/news/articles/cn81x8py3j5o",
+        "title": "We must prepare for war with Russia, says Nato chief in stark new warning"
+      },
+      {
+        "rank": 22,
+        "url_id": 16525,
+        "url": "https://www.abc.es/deportes/laporta-niega-favores-arbitrales-valverde-luis-enrique-20251212122643-nt.html",
+        "title": "Laporta niega favores arbitrales y Valverde y Luis Enrique haber visto los informes de Negreira"
+      },
+      {
+        "rank": 23,
+        "url_id": 16849,
+        "url": "https://elpais.com/clima-y-medio-ambiente/2025-12-11/una-operacion-mundial-contra-el-trafico-de-especies-decomisa-casi-30000-animales-vivos-en-134-paises.html",
+        "title": "Una operación mundial contra el tráfico de especies decomisa casi 30.000 animales vivos en 134 países"
+      },
+      {
+        "rank": 24,
+        "url_id": 16842,
+        "url": "https://elpais.com/espana/2025-12-12/dimite-en-plena-guerra-interna-el-lider-de-jucil-la-asociacion-de-guardias-civiles-enfrentada-a-interior.html",
+        "title": "Dimite en plena guerra interna el líder de Jucil, la asociación de guardias civiles enfrentada a Interior"
+      },
+      {
+        "rank": 25,
+        "url_id": 17121,
+        "url": "https://www.lemonde.fr/international/article/2025/12/12/le-premier-ministre-thailandais-prive-du-soutien-d-une-partie-de-l-opposition-decide-de-dissoudre-l-assemblee_6657023_3210.html",
+        "title": "Le premier ministre thaïlandais, privé du soutien d’une partie de l’opposition, décide de dissoudre l’Assemblée"
+      }
+    ],
+    "urls_successfully_extracted": [
+      {
+        "rank": 4,
+        "url_id": 17115,
+        "url": "https://www.lemonde.fr/m-le-mag/article/2025/12/12/nous-ne-sommes-pas-en-train-de-tendre-vers-une-force-autoritaire-nous-y-sommes-au-fbi-la-grande-purge-a-commence_6656969_4500055.html",
+        "title": "Le FBI aux ordres de Donald Trump : « Nous ne sommes pas en train de tendre vers une force autoritaire. Nous y sommes »",
+        "method": "readability",
+        "word_count": 343
+      },
+      {
+        "rank": 6,
+        "url_id": 17062,
+        "url": "https://www.ft.com/content/3d259fb5-1248-415f-8f6d-d7ff5b6d2448",
+        "title": "Bulgarian PM Rosen Zhelyazkov and government resign weeks ahead of entry to euro",
+        "method": "llm_direct",
+        "word_count": 227
+      },
+      {
+        "rank": 7,
+        "url_id": 17139,
+        "url": "https://www.lemonde.fr/international/live/2025/12/12/en-direct-guerre-en-ukraine-kiev-revendique-la-reconquete-de-deux-localites-dans-l-oblast-de-kharkiv_6656313_3210.html",
+        "title": "EN DIRECT, guerre en Ukraine : Kiev revendique la reconquête de deux localités dans l’oblast de Kharkiv",
+        "method": "xpath_cache",
+        "word_count": 1963
+      },
+      {
+        "rank": 11,
+        "url_id": 17107,
+        "url": "https://www.lemonde.fr/international/article/2025/12/12/l-allemagne-accuse-la-russie-d-une-cyberattaque-contre-la-securite-aerienne-et-d-ingerence-lors-des-dernieres-elections-legislatives_6657045_3210.html",
+        "title": "L’Allemagne accuse la Russie d’une cyberattaque contre la sécurité aérienne et d’ingérence lors des dernières élections législatives",
+        "method": "readability",
+        "word_count": 318
+      },
+      {
+        "rank": 12,
+        "url_id": 17165,
+        "url": "https://www.nytimes.com/2025/12/12/world/europe/king-charles-cancer-update.html",
+        "title": "King Charles to Speak About His Cancer in Televised Message, BBC Repo…",
+        "method": "llm_direct",
+        "word_count": 145
+      },
+      {
+        "rank": 13,
+        "url_id": 17112,
+        "url": "https://www.lemonde.fr/international/article/2025/12/12/on-peut-quitter-la-guerre-on-peut-y-revenir-mais-comment-la-guerre-peut-elle-quitter-un-homme-les-temoignages-poignants-de-soldats-russes-revenus-d-ukraine_6656986_3210.html",
+        "title": "« On peut quitter la guerre, on peut y revenir, mais comment la guerre peut-elle quitter un homme ? » : les témoignages saisissants de soldats russes revenus d’Ukraine",
+        "method": "llm_direct",
+        "word_count": 329
+      },
+      {
+        "rank": 14,
+        "url_id": 16668,
+        "url": "https://www.elconfidencial.com/espana/pais-vasco/2025-12-11/condenas-franquismo-fusilamientos-reconocimiento-victimas-1tps_4264569/",
+        "title": "El Gobierno reconoce como víctimas a Txiki y Otaegi, miembros de ETA, y anula sus sentencias de muerte",
+        "method": "readability",
+        "word_count": 531
+      },
+      {
+        "rank": 15,
+        "url_id": 16629,
+        "url": "https://www.elconfidencial.com/espana/2025-12-12/la-uco-entra-en-hacienda-y-transicion-ecologica-y-en-las-empresas-publicas-correos-y-cofivacasa_4265034/",
+        "title": "La UCO entra en Hacienda y Transición Ecológica y en las empresas públicas Correos y Cofivacasa",
+        "method": "readability",
+        "word_count": 720
+      },
+      {
+        "rank": 16,
+        "url_id": 16636,
+        "url": "https://www.elconfidencial.com/espana/2025-12-12/aragon-ira-a-elecciones-el-proximo-8-de-febrero-tras-naufragar-el-pacto-del-pp-con-vox_4265168/",
+        "title": "Aragón irá a elecciones el próximo 8 de febrero tras naufragar el pacto entre PP y Vox",
+        "method": "readability",
+        "word_count": 652
+      },
+      {
+        "rank": 17,
+        "url_id": 16645,
+        "url": "https://www.elconfidencial.com/mundo/2025-12-12/cuba-virus-muerte-epidemia-chikungunya_4263828/",
+        "title": "Un virus africano está haciendo estragos en Cuba: \"La gente va por la calle como zombis\"",
+        "method": "readability",
+        "word_count": 2065
+      },
+      {
+        "rank": 18,
+        "url_id": 16692,
+        "url": "https://www.elconfidencial.com/mundo/2025-12-11/activos-rusos-congelados-ucrania-1hms_4264592/",
+        "title": "La UE garantiza la inmovilización de fondos rusos en plenas maniobras del crédito para Ucrania",
+        "method": "readability",
+        "word_count": 729
+      },
+      {
+        "rank": 19,
+        "url_id": 16696,
+        "url": "https://www.elconfidencial.com/mundo/2025-12-11/rueda-de-prensa-corina_4264173/",
+        "title": "María Corina Machado reivindica desde Oslo \"la libertad\" y asegura que Venezuela es un \"hub criminal\"",
+        "method": "readability",
+        "word_count": 1308
+      },
+      {
+        "rank": 20,
+        "url_id": 16579,
+        "url": "https://www.bbc.com/news/articles/c2lvplrxpe9o",
+        "title": "Trump's Gaza peace plan struggles to progress as Israel and Hamas face tough choices",
+        "method": "readability",
+        "word_count": 1179
+      },
+      {
+        "rank": 21,
+        "url_id": 16584,
+        "url": "https://www.bbc.com/news/articles/cn81x8py3j5o",
+        "title": "We must prepare for war with Russia, says Nato chief in stark new warning",
+        "method": "readability",
+        "word_count": 596
+      },
+      {
+        "rank": 22,
+        "url_id": 16525,
+        "url": "https://www.abc.es/deportes/laporta-niega-favores-arbitrales-valverde-luis-enrique-20251212122643-nt.html",
+        "title": "Laporta niega favores arbitrales y Valverde y Luis Enrique haber visto los informes de Negreira",
+        "method": "json_ld",
+        "word_count": 711
+      },
+      {
+        "rank": 23,
+        "url_id": 16849,
+        "url": "https://elpais.com/clima-y-medio-ambiente/2025-12-11/una-operacion-mundial-contra-el-trafico-de-especies-decomisa-casi-30000-animales-vivos-en-134-paises.html",
+        "title": "Una operación mundial contra el tráfico de especies decomisa casi 30.000 animales vivos en 134 países",
+        "method": "readability",
+        "word_count": 418
+      },
+      {
+        "rank": 24,
+        "url_id": 16842,
+        "url": "https://elpais.com/espana/2025-12-12/dimite-en-plena-guerra-interna-el-lider-de-jucil-la-asociacion-de-guardias-civiles-enfrentada-a-interior.html",
+        "title": "Dimite en plena guerra interna el líder de Jucil, la asociación de guardias civiles enfrentada a Interior",
+        "method": "readability",
+        "word_count": 678
+      },
+      {
+        "rank": 25,
+        "url_id": 17121,
+        "url": "https://www.lemonde.fr/international/article/2025/12/12/le-premier-ministre-thailandais-prive-du-soutien-d-une-partie-de-l-opposition-decide-de-dissoudre-l-assemblee_6657023_3210.html",
+        "title": "Le premier ministre thaïlandais, privé du soutien d’une partie de l’opposition, décide de dissoudre l’Assemblée",
+        "method": "llm_direct",
+        "word_count": 273
+      }
+    ],
+    "urls_failed_extraction": [
+      {
+        "rank": 1,
+        "url_id": 17146,
+        "url": "https://www.nytimes.com/2025/12/11/us/politics/maduro-oil-sanctions-venezuela-tanker.html",
+        "title": "U.S. Issues New Sanctions Targeting Maduro’s Family and the Oil Sector",
+        "status": "failed",
+        "error": "All fetch methods failed (tried: cookies, direct, no-js, selenium-no-js, archive.today)"
+      },
+      {
+        "rank": 2,
+        "url_id": 17141,
+        "url": "https://www.nytimes.com/2025/12/12/business/china-investment-economy.html",
+        "title": "Historic Shift Is Underway in China’s Economy as Investment Slump Deepens",
+        "status": "failed",
+        "error": "All fetch methods failed (tried: cookies, direct, no-js, selenium-no-js, archive.today)"
+      },
+      {
+        "rank": 3,
+        "url_id": 17195,
+        "url": "https://www.nytimes.com/2025/12/10/climate/gregg-phillips-fema.html",
+        "title": "A Proponent of Election Conspiracy Theories Will Take a Top Role at FEMA",
+        "status": "failed",
+        "error": "All fetch methods failed (tried: cookies, direct, no-js, selenium-no-js, archive.today)"
+      },
+      {
+        "rank": 5,
+        "url_id": 17152,
+        "url": "https://www.nytimes.com/2025/12/11/us/politics/health-care-senate-affordable-care-act.html",
+        "title": "Senate Deadlocks on Health Care, Leaving Subsidies to Expire4 min read",
+        "status": "failed",
+        "error": "All fetch methods failed (tried: cookies, direct, no-js, selenium-no-js, archive.today)"
+      },
+      {
+        "rank": 8,
+        "url_id": 17155,
+        "url": "https://www.nytimes.com/2025/12/12/world/asia/thailand-cambodia-trump-call.html",
+        "title": "Thailand Says Trump Call About Cambodia Conflict Is Set for FridayPresident Trump’s planned intervention comes as the hostilities entered their fifth day and appeared to escalate.4 min readChalinee Thirasupa/Reuters",
+        "status": "failed",
+        "error": "All fetch methods failed (tried: cookies, direct, no-js, selenium-no-js, archive.today)"
+      },
+      {
+        "rank": 9,
+        "url_id": 17148,
+        "url": "https://www.nytimes.com/2025/12/11/us/politics/trump-venezuela-tanker.html",
+        "title": "What to Know About Trump’s Seizure of an Oil Tanker Near Venezuela",
+        "status": "failed",
+        "error": "All fetch methods failed (tried: cookies, direct, no-js, selenium-no-js, archive.today)"
+      },
+      {
+        "rank": 10,
+        "url_id": 17126,
+        "url": "https://www.lemonde.fr/international/article/2025/12/11/l-ukraine-est-prete-a-accepter-une-zone-demilitarisee-dans-le-donbass_6656943_3210.html",
+        "title": "Récit Claire Gatinois et Philippe Ricard Article réservé aux abonnésL’Ukraine est prête à envisager une zone démilitarisée dans le Donbass, une concession majeure pour mettre fin à la guerre Le conseiller de Volodymyr Zelensky, Mykhaïlo Podoliak dit au « Monde » que cette zone imposerait un recul des forces ukrainiennes et russes des deux côtés de la ligne de front. Le président ukrainien a déclaré, jeudi, que toute cession de ces régions devrait être validée soit par une « élection », soit par un « référendum ». 5 min de lecture",
+        "status": "failed",
+        "error": "All extraction methods failed (including LLM direct extraction)"
+      }
+    ],
+    "extraction_stats": {
+      "total_requested": 25,
+      "total_success": 18,
+      "total_failed": 7,
+      "success_rate": 72.0
+    }
+  },
+  "articles": [
+    {
+      "processing_rank": 1,
+      "url_id": 17146,
+      "url": "https://www.nytimes.com/2025/12/11/us/politics/maduro-oil-sanctions-venezuela-tanker.html",
+      "title": "U.S. Issues New Sanctions Targeting Maduro’s Family and the Oil Sector",
+      "source": "www.nytimes.com",
+      "category": "finanzas",
+      "has_full_content": false,
+      "extraction_status": "failed",
+      "extraction_method": null,
+      "extraction_error": "All fetch methods failed (tried: cookies, direct, no-js, selenium-no-js, archive.today)",
+      "word_count": null,
+      "archive_url": null
+    },
+    {
+      "processing_rank": 2,
+      "url_id": 17141,
+      "url": "https://www.nytimes.com/2025/12/12/business/china-investment-economy.html",
+      "title": "Historic Shift Is Underway in China’s Economy as Investment Slump Deepens",
+      "source": "www.nytimes.com",
+      "category": "economia",
+      "has_full_content": false,
+      "extraction_status": "failed",
+      "extraction_method": null,
+      "extraction_error": "All fetch methods failed (tried: cookies, direct, no-js, selenium-no-js, archive.today)",
+      "word_count": null,
+      "archive_url": null
+    },
+    {
+      "processing_rank": 3,
+      "url_id": 17195,
+      "url": "https://www.nytimes.com/2025/12/10/climate/gregg-phillips-fema.html",
+      "title": "A Proponent of Election Conspiracy Theories Will Take a Top Role at FEMA",
+      "source": "www.nytimes.com",
+      "category": "politica",
+      "has_full_content": false,
+      "extraction_status": "failed",
+      "extraction_method": null,
+      "extraction_error": "All fetch methods failed (tried: cookies, direct, no-js, selenium-no-js, archive.today)",
+      "word_count": null,
+      "archive_url": null
+    },
+    {
+      "processing_rank": 4,
+      "url_id": 17115,
+      "url": "https://www.lemonde.fr/m-le-mag/article/2025/12/12/nous-ne-sommes-pas-en-train-de-tendre-vers-une-force-autoritaire-nous-y-sommes-au-fbi-la-grande-purge-a-commence_6656969_4500055.html",
+      "title": "Le FBI aux ordres de Donald Trump : « Nous ne sommes pas en train de tendre vers une force autoritaire. Nous y sommes »",
+      "source": "www.lemonde.fr",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 343,
+      "archive_url": null,
+      "full_content": "Trois coups retentissent, la salle se lève. L’audience peut commencer, ce 8 octobre, au tribunal d’Alexandria, dans la banlieue chic de Washington: _« Les Etats-Unis contre James Comey! », _ lance la greffière. Le prévenu déploie son grand corps, 2, 03 mètres dressés face à la cour tel un épouvantail. L’ancien directeur du FBI (Federal Bureau of Investigation) ne se retourne pas vers sa famille, qui a fait la queue parmi la foule des journalistes afin d’assister à ce moment historique. Dehors, des manifestants bravent la pluie pour dénoncer une _« justice spectacle ». _ James Comey, 64 ans, commence la première manche de son bras de fer judiciaire contre Donald Trump, l’homme le plus puissant de la planète. Le haut fonctionnaire est poursuivi pour entrave à une commission d’enquête parlementaire et fausses déclarations au Congrès. Il lui est reproché d’avoir menti au sujet de sa conduite des investigations sur l’ingérence russe dans la campagne présidentielle américaine de 2016. Moscou avait alors cherché à favoriser la victoire de Donald Trump face à Hillary Clinton. Malgré de lourds soupçons, la complicité du républicain n’avait pas été démontrée. Le milliardaire est persuadé que le FBI cherchait sa perte avec cette très médiatique instruction. Rancunier, il crie aujourd’hui vengeance. James Comey est l’homme qui a refusé de lui prêter allégeance en 2017, lors d’un dîner en tête à tête**** à la Maison Blanche, digne de la mafia. _« J’ai besoin de loyauté, j’attends de la loyauté », _ lui lançait ce soir-là le président américain. Donald Trump attendait notamment de son convive qu’il enterre une enquête du FBI portant sur les liens avec la Russie de son conseiller à la sécurité nationale, Michael Flynn. Faute d’avoir donné la réponse escomptée, le directeur du Bureau était limogé quelques semaines plus tard. Il racontera la scène dans ses Mémoires, qui seront adaptés dans une série télévisée, _The Comey Rule_ (2020), cruelle pour Donald Trump, campé en personnage brutal et sans limites. **Il vous reste 90. 69% de cet article à lire. La suite est réservée aux abonnés. **",
+      "content_preview": "Trois coups retentissent, la salle se lève. L’audience peut commencer, ce 8 octobre, au tribunal d’Alexandria, dans la banlieue chic de Washington: _« Les Etats-Unis contre James Comey! », _ lance la greffière. Le prévenu déploie son grand corps, 2, 03 mètres dressés face à la cour tel un épouvantail. L’ancien directeur du FBI (Federal Bureau of Investigation) ne se retourne pas vers sa famille, qui a fait la queue parmi la foule des journalistes afin d’assister à ce moment historique. Dehors, d..."
+    },
+    {
+      "processing_rank": 5,
+      "url_id": 17152,
+      "url": "https://www.nytimes.com/2025/12/11/us/politics/health-care-senate-affordable-care-act.html",
+      "title": "Senate Deadlocks on Health Care, Leaving Subsidies to Expire4 min read",
+      "source": "www.nytimes.com",
+      "category": "politica",
+      "has_full_content": false,
+      "extraction_status": "failed",
+      "extraction_method": null,
+      "extraction_error": "All fetch methods failed (tried: cookies, direct, no-js, selenium-no-js, archive.today)",
+      "word_count": null,
+      "archive_url": null
+    },
+    {
+      "processing_rank": 6,
+      "url_id": 17062,
+      "url": "https://www.ft.com/content/3d259fb5-1248-415f-8f6d-d7ff5b6d2448",
+      "title": "Bulgarian PM Rosen Zhelyazkov and government resign weeks ahead of entry to euro",
+      "source": "www.ft.com",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "llm_direct",
+      "extraction_error": null,
+      "word_count": 227,
+      "archive_url": null,
+      "full_content": "Rosen Zhelyazkov, el primer ministro de Bulgaria, y su gobierno han presentado su renuncia a solo unas semanas de que el país se convierta en miembro de la zona euro. Esta decisión se produce en medio de protestas públicas generalizadas contra las propuestas de aumento de impuestos. Las manifestaciones, que han crecido en intensidad en las últimas semanas, han sido impulsadas por la preocupación de los ciudadanos sobre el impacto de las reformas fiscales en su vida diaria. Los críticos del gobierno han argumentado que las medidas propuestas son injustas y perjudiciales para la economía del país. Zhelyazkov, quien asumió el cargo en 2021, había estado bajo presión para abordar las preocupaciones de los ciudadanos y mejorar la situación económica. Sin embargo, su administración no logró calmar el descontento público, lo que llevó a su decisión de dimitir. La renuncia del primer ministro plantea interrogantes sobre el futuro político de Bulgaria y su capacidad para cumplir con los requisitos necesarios para unirse a la eurozona. Los analistas advierten que la inestabilidad política podría complicar aún más el proceso de adhesión al euro, que se había previsto para el próximo año. A medida que Bulgaria se prepara para este cambio significativo, la atención se centrará en quién asumirá el liderazgo del país y cómo se abordarán las preocupaciones económicas y sociales que han llevado a la crisis actual.",
+      "content_preview": "Rosen Zhelyazkov, el primer ministro de Bulgaria, y su gobierno han presentado su renuncia a solo unas semanas de que el país se convierta en miembro de la zona euro. Esta decisión se produce en medio de protestas públicas generalizadas contra las propuestas de aumento de impuestos. Las manifestaciones, que han crecido en intensidad en las últimas semanas, han sido impulsadas por la preocupación de los ciudadanos sobre el impacto de las reformas fiscales en su vida diaria. Los críticos del gobie..."
+    },
+    {
+      "processing_rank": 7,
+      "url_id": 17139,
+      "url": "https://www.lemonde.fr/international/live/2025/12/12/en-direct-guerre-en-ukraine-kiev-revendique-la-reconquete-de-deux-localites-dans-l-oblast-de-kharkiv_6656313_3210.html",
+      "title": "EN DIRECT, guerre en Ukraine : Kiev revendique la reconquête de deux localités dans l’oblast de Kharkiv",
+      "source": "www.lemonde.fr",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "xpath_cache",
+      "extraction_error": null,
+      "word_count": 1963,
+      "archive_url": null,
+      "full_content": "Posez votre question à la rédaction: Le président ukrainien, Volodymyr Zelensky, a affirmé vendredi s’être rendu auprès de troupes ukrainiennes dans le secteur de la ville clé de Koupiansk, dans le nord-est de l’Ukraine, où Kiev a revendiqué plus tôt dans la journée la reprise de quartiers à l’armée russe. « J’ai adressé mes félicitations aux gars. Merci à chaque unité et à tous ceux qui combattent, tous ceux qui détruisent l’occupant, a-t-il déclaré dans une vidéo publiée sur Telegram. Aujourd’hui, il est extrêmement important d’obtenir des résultats sur le front afin que l’Ukraine puisse obtenir des résultats en matière de diplomatie. C’est ainsi que cela fonctionne: toutes nos positions fortes à l’intérieur du pays sont des positions fortes dans les discussions sur la fin de la guerre. » A la suite de la parution de cet article, la présidence ukrainienne juge que l’interprétation duMondeest« incorrecte », ajoutant, sans démentir l’existence de réflexions sur une zone tampon, qu’« il est possible de discuter de différentes choses, mais que la question est toujours dans les détails ». Et de souligner qu’« une décision ne peut être prise qu’au plus haut niveau politique ou par le peuple ukrainien ». La brigade ukrainienne Khartiia affirmeavoir repris aux troupes russes les localités de Kindrachivka (📍) et de Radkivka (📍), ainsi que des quartiers au nord de Koupiansk (📍), un nœud ferroviaire-clé dans l’oblast de Kharkiv, que la Russie a affirmé avoir capturé en novembre. Les troupes ukrainiennes ont« effectué une percée jusqu’à la rivière Oskil, coupant les lignes d’approvisionnement de l’ennemi »et« libéré »les villages, ainsi que plusieurs quartiers au nord de Koupiansk, écrit la 13ebrigade ukrainienne, sur Telegram. Découvrez les articles les plus lus par nos abonnés Article réservé aux abonnésA Amiens, un dispositif pour aider les personnes isolées atteintes du syndrome de Diogène: « Quand on nous laisse entrer dans le logement, c’est déjà un grand pas » Temps de lectureTemps de3 min de lecture Article réservé aux abonnésPourquoi la justice a abandonné les poursuites pour viol contre Ary Abittan, et pourquoi des militantes féministes se mobilisent Temps de lectureTemps de5 min de lecture Article réservé aux abonnésLa riposte d’OpenAI à Google avec la sortie d’un nouveau modèle d’IA, symbole de la rivalité croissante des deux géants Temps de lectureTemps de3 min de lecture Article réservé aux abonnésEn Autriche, la rébellion de trois religieuses du couvent de Goldenstein Temps de lectureTemps de3 min de lecture Article réservé aux abonnésComment le monde trumpiste applique à l’Europe sa propre obsession du déclin Temps de lectureTemps de3 min de lecture Article réservé aux abonnésLogement: les députés votent largement la pérennisation et le renforcement de l’encadrement des loyers Temps de lectureTemps de4 min de lecture Deux personnes ont été tuées, hier, après des attaques de drones et des bombardements russes à Droujkivka (📍) et à Illinivka (📍), dans l’oblast de Donetsk, dans l’est de l’Ukraine, a fait savoir, ce matin, la police nationale ukrainienne. Plus tôt, la police ukrainienne avait également annoncéla mort, hier, de deux femmes âgées de 40 et 62 ans, à Velyka Pyssarivka (📍), dans l’oblast de Soumy, après un bombardement russe sur un magasin. La Banque centrale de Russie a déclaré qu’elle poursuivait en justice l’institution financière Euroclear, basée à Bruxelles, devant un tribunal de Moscou pour des actions qui, selon elle, lui portent préjudice en affectant sa capacité à disposer de ses fonds et de ses titres, rapporte l’agence de presse britannique Reuters. « Les mécanismes d’utilisation directe ou indirecte des avoirs de la Banque de Russie, ainsi que toute autre forme d’utilisation non autorisée des avoirs de la Banque de Russie, sont illégaux et contraires au droit international, violant notamment les principes d’immunité souveraine des avoirs », a déclaré la banque centrale russe dans un communiqué. Cette annonce intervient alors queles Etats membres de l’Union européenne doivent se prononcer aujourd’huisur une clause qui permettrait de geler les actifs souverains russes aussi longtemps que nécessaire, sans avoir à renouveler ce gel tous les six mois par un vote à l’unanimité, au risque de se heurter au veto de pays prorusses, comme la Hongrie. Ni Euroclear, où sont logés une grande partie des avoirs russes gelés en Europe depuis l’invasion à grande échelle de l’Ukraine par la Russie en février 2022 − soit quelque 140 milliards d’euros −, ni la Commission européenne, ni le gouvernement belge n’ont réagi dans l’immédiat. Des drones ukrainiens ont attaqué la raffinerie de pétrole de Slavneft-Ianos, à Iaroslavl (📍), à 250 kilomètres au nord-est de Moscou, ont fait savoir plusieurs chaînes Telegram, dont Astra, qui précise qu’un incendie est toujours en cours. Ce matin, le ministère de la défense russe avait annoncéavoir abattu plusieurs drones ukrainiens au-dessus de cet oblast, sans cependant faire part de potentiels dégâts. Le gouverneur de l’oblast a fait part, cette nuit, d’une incursion de drones ukrainiens et avait appelé la population à se mettre à l’abri. Il n’a pas communiqué depuis. Astra rappelle que cette raffinerie − l’une des cinq plus importantes du pays − avait déjà été ciblée plusieurs fois par les Ukrainiens et que la dernière attaque remonterait au début du mois d’octobre. L’armée russe a ciblé de nouvelles infrastructures énergétiques ukrainiennes au cours de la nuit, ont fait savoir Oleh Kiper, chef de l’administration militaire de l’oblast d’Odessa, et Serhi Lyssak, le chef de l’administration militaire de la ville d’Odessa. « Dans certaines parties de la ville, l’approvisionnement en électricité reste interrompu. Les électriciens travaillent déjà à sa restauration », écrit M. Lyssak sur Telegram. Plus largement, ce sont plusieurs localités qui sont actuellement privées d’électricité, complète M. Kiper, qui assure, lui aussi, que les réparations sont en cours. Dans un autre message publié dans la matinée, le chef de l’administration militaire de l’oblast d’Odessa annonce qu’environ 90 000 personnes se sont retrouvées sans électricité pendant la nuit et que des« interruptions d’approvisionnement en eau ont également été signalées », en raison des attaques russes. L’immobilisation« aussi longtemps que nécessaire »des quelque 200 milliards d’actifs de la Russie placés en Europe est« une décision majeure »prise par l’Union européenne, a estimé le ministre des affaires étrangères français, Jean-Noël Barrot, alors que les Vingt-Sept doivent entériner une décision en ce sens aujourd’hui. Au début de la guerre de la Russie en Ukraine, ces actifs russes ont été immobilisés pour une durée de six mois, renouvelables tous les six mois, à condition que les 27 pays européens soient tous d’accord. « Ce qui suppose que si un pays s’y oppose, la Russie pouvait à tout moment récupérer ses sommes », a expliqué Jean-Noël Barrot sur Franceinfo. « Ce que nous voulons, c’est la sécurité pour l’Europe et les Européens, a-t-il dit. C’est l’objectif de la décision que nous prenons aujourd’hui, qui est une décision majeure, qui va sans doute infléchir le cours de cette guerre et accélérer la paix. »Selon lui, ces actifs seront immobilisés« jusqu’à ce que la Russie cesse sa guerre d’agression et verse des réparations à l’Europe ». Cette décision permettra d’éviter que« d’autres que les Européens »décident à la place des Européens« du sort de la destination de ces sommes », a également souligné le ministre français, en référence au fait que l’administration américaine de Donald Trump ait envisagé d’utiliser ces avoirs pour des investissements qui profiteraient aux entreprises américaines. Cette immobilisation sans limite de temps permet d’envisager de nouvelles aides pour l’Ukraine, « y compris la constitution d’un paquet de financements qui est en train d’être discuté intensément à Bruxelles, qui pourrait aboutir à la fin de la semaine prochaine à mettre l’Ukraine à l’abri de toute difficulté pendant au moins deux ans, si toutefois la guerre devait se poursuivre », a également commenté Jean-Noël Barrot. La Russie a attaqué l’Ukraine avec 80 drones au cours de la nuit, annonce l’armée de l’air ukrainiennesur Telegram. Les défenses ukrainiennes disent avoir détruit ou brouillé 64 de ces drones. Par ailleurs, les frappes de 12 drones ont été enregistrées sur huit sites, mais l’armée n’a pas donné plus de détails. Elle ajoute que l’attaque se poursuit, plusieurs drones russes survolant encore le pays. Un homme de 71 ans a été tué cette nuit au cours d’une attaque de drones russe à Pavlohrad (📍), dans l’oblast de Dnipropetrovsk, dans l’est de l’Ukraine, a annoncé Vladyslav Haïvanenko, chef par intérim de l’administration militaire de l’oblast, sur Telegram. Selon M. Haïvanenko, quatre personnes, un homme et trois femmes, ont également été blessées au cours de cette attaque. L’une d’entre elles, âgée de 54, a été gravement brûlée et se trouve« dans un état critique », poursuit-il. L’état-major de l’armée ukrainienne a déclaré, ce matin, avoir recensé 174 combats l’ayant opposé aux forces russes, au cours de la journée de jeudi. La région de Pokrovsk (📍), dans l’oblast de Donetsk, dans l’est du pays, a été particulièrement ciblée, comme tous les jours depuis plusieurs mois. Près d’un tiers des combats ont eu lieu dans cette zone avec 49 assauts russes, selon l’armée ukrainienne. L’état-major ukrainien rapporte également avoir subi 145 bombardements et six assauts russes sur le front nord, au nord de Soumy (📍). Sur un autre front plus au sud, au nord-est de Kharkiv (📍), les forces ukrainiennes ont recensé cinq tentatives d’avancées russes. L’armée ukrainienne fait également état de plusieurs attaques russes en direction de Kostiantynivka (📍) et de Lyman (📍), mais aussi quelques-unes dans les directions de Sloviansk (📍) – oùla Russie a affirmé avoir conquis Siversk, hier, ce que l’Ukraine dément– et de Koupiansk (📍). A la frontière entre l’oblast de Donetsk et l’oblast de Dnipropetrovsk, l’état-major de l’armée ukrainienne assure que l’armée russe a essayé d’avancer à 26 reprises, dans plusieurs localités en direction d’Oleksandrivka (📍). Dans le Sud, les Ukrainiens disent avoir fait face à 13 attaques russes en direction de Houliaïpole (📍) et 16 autres en direction d’Orikhiv (📍), ainsi qu’une autre, repoussée, en direction de Prydniprovske (📍). Le ministère de la défense russe affirmeavoir abattu 90 drones ukrainiens pendant la nuit. La plupart de ces drones ont été interceptés dans des oblasts proches de la frontière russo-ukrainienne, affirment les Russes, mais certains ont pu traverser le pays sur de plus longues distances, jusqu’aux oblasts de Iaroslavl et de Moscou, par exemple. Dans son message, publié sur Telegram, le ministère de la défense russe ne fait pas part de potentiels dégâts causés par ces drones. Sept personnes, parmi lesquelles un enfant, ont été blessées pendant la nuit à la suite d’une attaque de drone ukrainienne à Tver, à environ 180 kilomètres au nord-ouest de Moscou, ont fait savoir vendredi matin les autorités locales. « A Tver, on est en train de combattre les conséquences de la chute des débris d’un drone sur un immeuble résidentiel », a écrit sur Telegram le gouverneur régional par intérim, Vitali Koroliov. Selon lui, « six adultes et un enfant »ont été blessés dans l’attaque, et une vingtaine d’habitants ont dû être évacués en raison des dommages infligés à l’immeuble. Selon l’agence officielle TASS, la chute des débris du drone a provoqué un violent incendie dans un appartement, et les vitres de plusieurs autres ont été brisées. Dans la journée s’est tenue une réunion de la coalition volontaire, comme le rappelle le président ukrainien, Volodymyr Zelensky, sur X. «Nous veillons à ce que les garanties de sécurité comprennent des éléments importants de dissuasion européenne et soient fiables. Il est crucial que les Etats-Unis soient à nos côtés et soutiennent ces efforts. Personne ne souhaite une troisième invasion russe », a-t-il ajouté, sans donner plus détails sur le contenu des discussions. Temps deLecture 6 min. Temps deLecture 4 min. Temps deLecture 5 min. Temps deLecture 8 min. Temps deLecture 3 min. Temps deLecture 5 min. Liretous nos articles, analyses et reportages sur la guerre en Ukraine. Retrouveznotre précédent live sur la guerre en Ukraine.",
+      "content_preview": "Posez votre question à la rédaction: Le président ukrainien, Volodymyr Zelensky, a affirmé vendredi s’être rendu auprès de troupes ukrainiennes dans le secteur de la ville clé de Koupiansk, dans le nord-est de l’Ukraine, où Kiev a revendiqué plus tôt dans la journée la reprise de quartiers à l’armée russe. « J’ai adressé mes félicitations aux gars. Merci à chaque unité et à tous ceux qui combattent, tous ceux qui détruisent l’occupant, a-t-il déclaré dans une vidéo publiée sur Telegram. Aujourd’..."
+    },
+    {
+      "processing_rank": 8,
+      "url_id": 17155,
+      "url": "https://www.nytimes.com/2025/12/12/world/asia/thailand-cambodia-trump-call.html",
+      "title": "Thailand Says Trump Call About Cambodia Conflict Is Set for FridayPresident Trump’s planned intervention comes as the hostilities entered their fifth day and appeared to escalate.4 min readChalinee Thirasupa/Reuters",
+      "source": "www.nytimes.com",
+      "category": "geopolitica",
+      "has_full_content": false,
+      "extraction_status": "failed",
+      "extraction_method": null,
+      "extraction_error": "All fetch methods failed (tried: cookies, direct, no-js, selenium-no-js, archive.today)",
+      "word_count": null,
+      "archive_url": null
+    },
+    {
+      "processing_rank": 9,
+      "url_id": 17148,
+      "url": "https://www.nytimes.com/2025/12/11/us/politics/trump-venezuela-tanker.html",
+      "title": "What to Know About Trump’s Seizure of an Oil Tanker Near Venezuela",
+      "source": "www.nytimes.com",
+      "category": "geopolitica",
+      "has_full_content": false,
+      "extraction_status": "failed",
+      "extraction_method": null,
+      "extraction_error": "All fetch methods failed (tried: cookies, direct, no-js, selenium-no-js, archive.today)",
+      "word_count": null,
+      "archive_url": null
+    },
+    {
+      "processing_rank": 10,
+      "url_id": 17126,
+      "url": "https://www.lemonde.fr/international/article/2025/12/11/l-ukraine-est-prete-a-accepter-une-zone-demilitarisee-dans-le-donbass_6656943_3210.html",
+      "title": "Récit Claire Gatinois et Philippe Ricard Article réservé aux abonnésL’Ukraine est prête à envisager une zone démilitarisée dans le Donbass, une concession majeure pour mettre fin à la guerre Le conseiller de Volodymyr Zelensky, Mykhaïlo Podoliak dit au « Monde » que cette zone imposerait un recul des forces ukrainiennes et russes des deux côtés de la ligne de front. Le président ukrainien a déclaré, jeudi, que toute cession de ces régions devrait être validée soit par une « élection », soit par un « référendum ». 5 min de lecture",
+      "source": "www.lemonde.fr",
+      "category": "geopolitica",
+      "has_full_content": false,
+      "extraction_status": "failed",
+      "extraction_method": "failed",
+      "extraction_error": "All extraction methods failed (including LLM direct extraction)",
+      "word_count": null,
+      "archive_url": null
+    },
+    {
+      "processing_rank": 11,
+      "url_id": 17107,
+      "url": "https://www.lemonde.fr/international/article/2025/12/12/l-allemagne-accuse-la-russie-d-une-cyberattaque-contre-la-securite-aerienne-et-d-ingerence-lors-des-dernieres-elections-legislatives_6657045_3210.html",
+      "title": "L’Allemagne accuse la Russie d’une cyberattaque contre la sécurité aérienne et d’ingérence lors des dernières élections législatives",
+      "source": "www.lemonde.fr",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 318,
+      "archive_url": null,
+      "full_content": "A Berlin, en Allemagne, le 11 décembre 2025. ANNEGRET HILSE / REUTERS L’Allemagne a attribué, vendredi 12 décembre, à la Russie une _« attaque informatique »_ visant son système de contrôle du trafic aérien ainsi qu’une _« campagne »_ de déstabilisation durant [les dernières législatives allemandes]( et a convoqué l’ambassadeur russe à Berlin afin qu’il réponde à ces accusations. _« Le service de renseignement militaire russe GRU est responsable de cette attaque »_ informatique commise en août 2024 contre la sécurité aérienne allemande, que l’Allemagne _« attribue clairement_(…)_[au collectif de hackers APT 28]( également connu sous le nom de Fancy Bear »_, a déclaré un porte-parole du ministère des affaires étrangères allemand, lors d’un point presse régulier. _« Deuxièmement, nous pouvons aujourd’hui affirmer de manière formelle que la Russie a tenté, à travers la campagne Storm 1516, d’influencer et de déstabiliser tant la dernière élection au Bundestag que, de façon continue, les affaires intérieures de la République fédérale d’Allemagne »_, a-t-il poursuivi. Contactée vendredi par l’Agence France-Presse, l’ambassade russe à Berlin n’avait pas réagi dans l’immédiat. ## « Une série de mesures de rétorsion » Le porte-parole de la diplomatie allemande a annoncé, _« en étroite concertation avec nos partenaires européens, une série de mesures de rétorsion afin de faire payer à la Russie le prix de ses attaques hybrides »_. L’Allemagne va _« soutenir de nouvelles sanctions individuelles contre des acteurs hybrides »_ au niveau de l’Union européenne (UE), qui impliqueront des _« interdictions d’entrée »_ dans l’UE, _« le gel de leurs avoirs et une interdiction d’accès aux ressources économiques »_. Depuis l’invasion russe de l’Ukraine, les pays européens accusent la Russie de mener une guerre _« hybride »_ à leur égard − soit un mélange de moyens non conventionnels qui peut inclure du sabotage ou des campagnes de désinformation. Premier soutien de l’Ukraine en Europe, l’Allemagne se considère comme une cible centrale de ces attaques.",
+      "content_preview": "A Berlin, en Allemagne, le 11 décembre 2025. ANNEGRET HILSE / REUTERS L’Allemagne a attribué, vendredi 12 décembre, à la Russie une _« attaque informatique »_ visant son système de contrôle du trafic aérien ainsi qu’une _« campagne »_ de déstabilisation durant [les dernières législatives allemandes]( et a convoqué l’ambassadeur russe à Berlin afin qu’il réponde à ces accusations. _« Le service de renseignement militaire russe GRU est responsable de cette attaque »_ informatique commise en août 2..."
+    },
+    {
+      "processing_rank": 12,
+      "url_id": 17165,
+      "url": "https://www.nytimes.com/2025/12/12/world/europe/king-charles-cancer-update.html",
+      "title": "King Charles to Speak About His Cancer in Televised Message, BBC Repo…",
+      "source": "www.nytimes.com",
+      "category": "sociedad",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "llm_direct",
+      "extraction_error": null,
+      "word_count": 145,
+      "archive_url": "https://archive.today/newest/https://www.nytimes.com/2025/12/12/world/europe/king-charles-cancer-update.html",
+      "full_content": "King Charles will address his ongoing battle with cancer in a televised message today. The video, which is part of a national cancer awareness campaign in the U. K. , will air on Channel 4. In the message, the king will discuss his \"recovery journey\" and the importance of early detection and treatment of cancer. This initiative aims to raise awareness about the disease and encourage people to seek medical advice if they notice any concerning symptoms. The royal family has been open about the king's health challenges, and this message is expected to resonate with many who are facing similar struggles. The campaign is part of a broader effort to destigmatize cancer and promote conversations around health and wellness. Viewers are encouraged to tune in to hear the king's personal insights and experiences, which may provide hope and encouragement to those affected by cancer.",
+      "content_preview": "King Charles will address his ongoing battle with cancer in a televised message today. The video, which is part of a national cancer awareness campaign in the U. K. , will air on Channel 4. In the message, the king will discuss his \"recovery journey\" and the importance of early detection and treatment of cancer. This initiative aims to raise awareness about the disease and encourage people to seek medical advice if they notice any concerning symptoms. The royal family has been open about the kin..."
+    },
+    {
+      "processing_rank": 13,
+      "url_id": 17112,
+      "url": "https://www.lemonde.fr/international/article/2025/12/12/on-peut-quitter-la-guerre-on-peut-y-revenir-mais-comment-la-guerre-peut-elle-quitter-un-homme-les-temoignages-poignants-de-soldats-russes-revenus-d-ukraine_6656986_3210.html",
+      "title": "« On peut quitter la guerre, on peut y revenir, mais comment la guerre peut-elle quitter un homme ? » : les témoignages saisissants de soldats russes revenus d’Ukraine",
+      "source": "www.lemonde.fr",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "llm_direct",
+      "extraction_error": null,
+      "word_count": 329,
+      "archive_url": null,
+      "full_content": "« On peut quitter la guerre, on peut y revenir, mais comment la guerre peut-elle quitter un homme? » Cette question, posée par des soldats russes revenus d’Ukraine, résonne avec une intensité poignante. Les témoignages recueillis révèlent les cicatrices invisibles laissées par le conflit, tant sur le plan psychologique que physique. Les soldats parlent de la brutalité des combats, des pertes de camarades, et de la difficulté de réintégrer la vie civile. Beaucoup d’entre eux évoquent des souvenirs traumatisants qui les hantent, des images de violence et de souffrance qui ne s’effacent jamais complètement. Un ancien soldat raconte comment il a dû faire face à la réalité de la guerre, décrivant des scènes de destruction et de désespoir. Il se souvient d’un moment où il a dû prendre une décision difficile, une décision qui a changé sa vie à jamais. Ce type de dilemme moral est fréquent parmi ceux qui ont été au front. D’autres témoignages mettent en lumière les défis de la réinsertion. Les soldats se sentent souvent incompris par leurs proches, qui ne peuvent pas saisir l’ampleur de ce qu’ils ont vécu. Cette déconnexion crée un sentiment d’isolement, rendant encore plus difficile le retour à une vie normale. La guerre laisse des marques indélébiles, et pour certains, le retour à la paix est un combat en soi. Les soldats expriment le besoin de soutien psychologique, de compréhension et d’empathie de la part de la société. Ils souhaitent que leurs expériences soient reconnues et validées, afin de pouvoir commencer à guérir. Ces témoignages sont un appel à la compassion et à la prise de conscience des conséquences durables de la guerre. Ils rappellent que derrière chaque uniforme se cache un individu avec des histoires, des luttes et des rêves, souvent brisés par le conflit. La question demeure: comment la guerre peut-elle quitter un homme? Les réponses sont aussi variées que les expériences vécues, mais une chose est claire: le chemin vers la guérison est long et semé d’embûches.",
+      "content_preview": "« On peut quitter la guerre, on peut y revenir, mais comment la guerre peut-elle quitter un homme? » Cette question, posée par des soldats russes revenus d’Ukraine, résonne avec une intensité poignante. Les témoignages recueillis révèlent les cicatrices invisibles laissées par le conflit, tant sur le plan psychologique que physique. Les soldats parlent de la brutalité des combats, des pertes de camarades, et de la difficulté de réintégrer la vie civile. Beaucoup d’entre eux évoquent des souvenir..."
+    },
+    {
+      "processing_rank": 14,
+      "url_id": 16668,
+      "url": "https://www.elconfidencial.com/espana/pais-vasco/2025-12-11/condenas-franquismo-fusilamientos-reconocimiento-victimas-1tps_4264569/",
+      "title": "El Gobierno reconoce como víctimas a Txiki y Otaegi, miembros de ETA, y anula sus sentencias de muerte",
+      "source": "www.elconfidencial.com",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 531,
+      "archive_url": null,
+      "full_content": "El **Gobierno** ha reconocido \"la ilegalidad y la ilegitimidad\" de los [consejos de guerra]( que juzgaron a los **miembros de ETA** **Juan Paredes**, Txiki, y **Ángel Otaegi**, y también ha considerado \"**ilegítimas y nulas** \" las dos condenas dictadas que tuvieron como consecuencia su **fusilamiento por el régimen franquista**. Las familias de Txiki y Otaegi formularon el pasado 14 de enero la solicitud de **Declaración de Reconocimiento y Reparación Personal** de ambos jóvenes, que fueron fusilados en 1975, solicitud que fue formalizada ante la **delegada del Gobierno en el País Vasco**, **Marisol Garmendia**, quien trasladó al **Ejecutivo** las dos peticiones formalizadas ante su registro general. El **asesoramiento jurídico** y la redacción y fundamentación jurídica empleada como argumentación de las dos solicitudes individualizadas ha sido elaborada por el representante legal de ambas familias, el abogado y catedrático de **Derecho Internacional Privado**, **Juanjo Álvarez**, quien ha confirmado a EFE **la resolución favorable del Gobierno para ambos casos**. **Álvarez** fundamentó su argumentación en los principios recogidos en los artículos 4, 5 y 6 de la [Ley de Memoria Democrática]( que declara \"**el carácter ilegal y radicalmente nulo de todas las condenas y sanciones** producidas durante la guerra y la dictadura por razones políticas, ideológicas o de conciencia\". Opinión Fruto de sendas resoluciones favorables, fechadas ambas el 25 de noviembre y comunicadas recientemente a las respectivas familias, el Gobierno reconoce que los dos jóvenes fusilados padecieron \"**persecución por razones políticas e ideológicas durante la dictadura franquista** \". ## \"Ilegítima y nula\" la condena a muerte El documento oficial pone de relieve su condición de [víctimas]( por haber sido \"**vulneradas las más elementales exigencias del derecho a un juicio justo**, así como la concurrencia de intimidación e indefensión\", al tiempo que declara \"ilegales\" los **consejos de guerra** a los que fueron sometidos e \"ilegítimas y nulas, por vicios de forma y fondo, las condenas\" que derivaron en su fusilamiento. Álvarez ha precisado que tal y como señala la comunicación recibida por los allegados de Txiki y Otaegi y enviada desde el [Ministerio de Memoria Democrática]( estas resoluciones permiten \"**recuperar la dignidad personal de ambos** \" y \"contribuyen al reconocimiento de quienes, como las dos personas injustamente fusiladas, sufrieron las consecuencias de la represión\". Ambas familias, \"reconfortadas tras haber obtenido la resolución favorable por parte del **Gobierno español** \", han transmitido su agradecimiento a quienes han hecho posible esta reparación personal y el **reconocimiento institucional**. Han querido además particularizar este agradecimiento, por un lado, en la **delegada del Gobierno en Euskadi**, por su gestión, y por otro en el **ministro de Política Territorial y Memoria Democrática**, **Ángel Víctor Torres** y su equipo por **haber admitido los argumentos y resuelto de forma favorable sus solicitudes**. También ha reconocido el apoyo recibido en su momento por el **Gobierno Vasco** que, a través de la [dirección de Derechos Humanos del Departamento de Justicia]( **reconoció a ambos jóvenes la condición de víctimas**. El **Gobierno** ha reconocido \"la ilegalidad y la ilegitimidad\" de los [consejos de guerra]( que juzgaron a los **miembros de ETA** **Juan Paredes**, Txiki, y **Ángel Otaegi**, y también ha considerado \"**ilegítimas y nulas** \" las dos condenas dictadas que tuvieron como consecuencia su **fusilamiento por el régimen franquista**.",
+      "content_preview": "El **Gobierno** ha reconocido \"la ilegalidad y la ilegitimidad\" de los [consejos de guerra]( que juzgaron a los **miembros de ETA** **Juan Paredes**, Txiki, y **Ángel Otaegi**, y también ha considerado \"**ilegítimas y nulas** \" las dos condenas dictadas que tuvieron como consecuencia su **fusilamiento por el régimen franquista**. Las familias de Txiki y Otaegi formularon el pasado 14 de enero la solicitud de **Declaración de Reconocimiento y Reparación Personal** de ambos jóvenes, que fueron fus..."
+    },
+    {
+      "processing_rank": 15,
+      "url_id": 16629,
+      "url": "https://www.elconfidencial.com/espana/2025-12-12/la-uco-entra-en-hacienda-y-transicion-ecologica-y-en-las-empresas-publicas-correos-y-cofivacasa_4265034/",
+      "title": "La UCO entra en Hacienda y Transición Ecológica y en las empresas públicas Correos y Cofivacasa",
+      "source": "www.elconfidencial.com",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 720,
+      "archive_url": null,
+      "full_content": "La Unidad Central Operativa (UCO) de la Guardia Civil ha ampliado este viernes los registros relacionados con la operación que se ha saldado [con la detención de la fontanera del PSOE Leire Díez]( el expresidente de la Sepi Vicente Fernández y el empresario vasco Antxon Alonso. Según aseguran fuentes del caso Leire, ha accedido a los **Ministerios de Hacienda y Transición Ecológica, ** además de entrar en Correos y la empresa dependiente de la Sepi Cofivacasa. En concreto, [los agentes que actúan en coordinación]( con el Juzgado Central de Instrucción 6 de la Audiencia Nacional y la Fiscalía Anticorrupción han reclamado documentación en las **Direcciones Generales de Patrimonio del Estado y Política Energética y Minas**. También se han dirigido al Tribunal Administrativo Central de Recursos Contractuales, confirman las mismas fuentes. El caso ha sido bautizado con el nombre de pila de la fontanera. La operación se desató en la tarde de este miércoles con los arrestos de Díez, Alonso y Fernández que pasarán a disposición del juez Antonio Piña en la mañana de este sábado. Se les atribuye la comisión de delitos de prevaricación, malversación, tráfico de influencias y organización criminal. Más allá de los tres arrestados, se investiga a **otra docena de personas**. Todas ellas están vinculadas con contrataciones irregulares bajo el manto de la Sepi. La organización investigada se dedicaba, según consideran acreditado los investigadores, a**vender influencias en el partido socialista** y mediar con diferentes empresas a cambio del **cobro de comisiones o prebendas**. La empresa Servinabar, propiedad de Alonso y vinculada a Santos Cerdán, servía para la canalización de los pagos, como sucede en el caso Acciona que investiga el Tribunal Supremo. El expresidente de la Sepi estuvo contratado en ella tras abandonar en 2018 su cargo público, salpicado por la causa de la mina de Aznalcóllar. [Servinabar no era la única pantalla]( Como ha publicado El Confidencial, la trama habría empleado terceras empresas para camuflar el cobro de los sobornos. ## De Enusa a Correos Leire Díez trabajó tres años en la Empresa Nacional de Uranio (ENUSA) en años coincidentes con las tareas públicas de Fernández. Entró en esta sociedad meses después de que Pedro Sánchez llegara al poder, en concreto, en octubre de 2018 en la compañía pública. **Más tarde dio el salto a Correos** para ocuparse de las relaciones institucionales del Grupo que presidió el exjefe de gabinete de Pedro Sánchez, Juanma Serrano. Cofivacasa, por su parte, se ocupa de actividades de liquidación de las sociedades estatales. Las entradas de este viernes**se suman a las desarrolladas en las últimas horas**. Entre el miércoles y el jueves, la [UCO registró ]( empresas y viviendas]( entre ellas, las oficinas de la Sociedad Estatal de Participaciones Industriales (SEPI) y sus filiales Sepides, Mercasa y Enusa. Según las pesquisas, Leire Díez y Vicente Fernández se habrían concertado con Antxón Alonso, socio de [Santos Cerdán]( en la constructora Servinabar 2000 SL, para ofrecer a todo tipo de compañías privadas **su intermediación ante instituciones y empresas públicas** controladas por el Gobierno de [Pedro Sánchez]( o el PSOE. Sus servicios incluían la adulteración de adjudicaciones y concesiones. A cambio, los tres presuntos cabecillas de la organización se llevaban un porcentaje. Tras conocerse los registros, **desde el Ministerio de Transición Ecológica** han precisado que la Guardia Civil ha acudido a su sede para reclamar dos expedientes administrativos que han sido facilitados \"con total colaboración\". \"Los expedientes aportados fueron tramitados con todas las garantías y siguiendo los procedimientos habituales establecidos\", han añadido. Por su parte, la vicepresidenta y ministra de Hacienda, **María Jesús Montero**, ha asegurado que se prestará una \"absoluta colaboración\" a los cuerpos y fuerzas de seguridad. \"Que lleguen hasta cualquier lugar, por supuesto, de cualquier institución, cualquier organismo donde entiendan que puedan requerir información que sea útil para la investigación, porque de esto es de lo que se trata, de requerir información\", ha precisado. La Unidad Central Operativa (UCO) de la Guardia Civil ha ampliado este viernes los registros relacionados con la operación que se ha saldado [con la detención de la fontanera del PSOE Leire Díez]( el expresidente de la Sepi Vicente Fernández y el empresario vasco Antxon Alonso. Según aseguran fuentes del caso Leire, ha accedido a los **Ministerios de Hacienda y Transición Ecológica, ** además de entrar en Correos y la empresa dependiente de la Sepi Cofivacasa.",
+      "content_preview": "La Unidad Central Operativa (UCO) de la Guardia Civil ha ampliado este viernes los registros relacionados con la operación que se ha saldado [con la detención de la fontanera del PSOE Leire Díez]( el expresidente de la Sepi Vicente Fernández y el empresario vasco Antxon Alonso. Según aseguran fuentes del caso Leire, ha accedido a los **Ministerios de Hacienda y Transición Ecológica, ** además de entrar en Correos y la empresa dependiente de la Sepi Cofivacasa. En concreto, [los agentes que actúa..."
+    },
+    {
+      "processing_rank": 16,
+      "url_id": 16636,
+      "url": "https://www.elconfidencial.com/espana/2025-12-12/aragon-ira-a-elecciones-el-proximo-8-de-febrero-tras-naufragar-el-pacto-del-pp-con-vox_4265168/",
+      "title": "Aragón irá a elecciones el próximo 8 de febrero tras naufragar el pacto entre PP y Vox",
+      "source": "www.elconfidencial.com",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 652,
+      "archive_url": null,
+      "full_content": "Era un secreto a voces. Aragón sigue el ejemplo de Extremadura y abrirá las urnas el próximo 8 de febrero, según confirman fuentes populares. La decisión estaba tomada desde hace días, pero **Jorge Azcón quería escenificar antes una ronda de contactos** con todos los grupos parlamentarios. Este viernes, el presidente de Aragón ha mantenido una última reunión con el líder territorial de Vox, **Alejandro Nolasco, ** que sirvió para ratificar que [no hay opción de entendimiento]( posible tras dos años sin presupuestos en la región. Los de Abascal no han presentado condiciones de máximos para apoyar las cuentas de Azcón y evitar las urnas, conscientes de que, según los sondeos, podrían perder su influencia sobre el ejecutivo regional por la posibilidad de pactos postelectorales del PP con fuerzas regionalistas, como Aragón Existe o el PAR. Vox presentó las mismas exigencias que hace sólo unas semanas **asumió Juanfran Pérez Llorca en la Comunidad Valenciana**: una declaración en la que se comprometa a sus postulados [contra la Agenda Verde y la inmigración]( irregular. En Vox asumían desde hace días que **Azcón pulsaría el 'botón rojo', ** pero se niegan a que[ les culpen del \"bloqueo\" en la región]( Se quejan de la \"incoherencia\" del Partido Popular por no asumir en Aragón lo que sí habían aceptado en Valencia. Pero el presidente regional ve sus postulados \"inasumibles\" e incluso \"ilegales. **\"El PP de Azcón es un calco del socialismo caprichoso de María Guardiola\"**, lanzó Alejandro Nolasco en una rueda de prensa posterior a la reunión, en la que afeó que el barón del PP no llevó \"ningún documento\" al encuentro porque ya tenía decidido el anticipo electoral y no hizo amago alguno de \"querer negociar\". El barón del PP cuenta con el visto bueno de Feijóo, **con el que ya había coordinado la apertura de urnas**. En Génova, de hecho, ya tenían reservada la fecha. Preguntados sobre por qué Azcón no pacta[ los postulados que Pérez Llorca sí asumió en la Comunidad Valenciana ]( aprobar los presupuestos, en la dirección del PP justifican que en la segunda región era necesario un \"esfuerzo\" de los dos partidos para dar estabilidad a la región y **a la \"reconstrucción\" tras las inundaciones de octubre de 2024**. Azcón arranca de este modo la carrera electoral con viento a favor. Más allá de estar en condiciones de reducir la dependencia de Vox, para el PP resulta demasiado tentador **dejar en fuera de juego a la ministra Pilar Alegría**, que llegó a ofrecer un pacto presupuestario a los populares con el fin de evitar las urnas, y que los populares rechazaron. La convocatoria provocará [de forma inmediata una crisis de Gobierno]( en un momento de máxima debilidad de los socialistas por la cadena de escándalos de las últimas horas y la crisis por el caso de acoso sexual de Paco Salazar que salpicó especialmente a la también ministra de Educación. **\"Tenemos la campaña hecha\"**, afirman en la cúpula nacional del PP, donde asumen que, tras Extremadura, Sánchez experimentará otra derrota \"letal\" en este territorio. El PP formalizará la convocatoria electoral **el próximo lunes 15 de diciembre**, día en que Azcón firmará el decreto de disolución de las Cortes. La campaña arrancará el próximo 23 de enero, y la cita se encuadra en mitad del maratón electoral al que seguirá Castilla y León en la primera quincena de marzo y Andalucía en mayo o junio de 2026. Era un secreto a voces. Aragón sigue el ejemplo de Extremadura y abrirá las urnas el próximo 8 de febrero, según confirman fuentes populares. La decisión estaba tomada desde hace días, pero **Jorge Azcón quería escenificar antes una ronda de contactos** con todos los grupos parlamentarios. Este viernes, el presidente de Aragón ha mantenido una última reunión con el líder territorial de Vox, **Alejandro Nolasco, ** que sirvió para ratificar que [no hay opción de entendimiento]( posible tras dos años sin presupuestos en la región.",
+      "content_preview": "Era un secreto a voces. Aragón sigue el ejemplo de Extremadura y abrirá las urnas el próximo 8 de febrero, según confirman fuentes populares. La decisión estaba tomada desde hace días, pero **Jorge Azcón quería escenificar antes una ronda de contactos** con todos los grupos parlamentarios. Este viernes, el presidente de Aragón ha mantenido una última reunión con el líder territorial de Vox, **Alejandro Nolasco, ** que sirvió para ratificar que [no hay opción de entendimiento]( posible tras dos a..."
+    },
+    {
+      "processing_rank": 17,
+      "url_id": 16645,
+      "url": "https://www.elconfidencial.com/mundo/2025-12-12/cuba-virus-muerte-epidemia-chikungunya_4263828/",
+      "title": "Un virus africano está haciendo estragos en Cuba: \"La gente va por la calle como zombis\"",
+      "source": "www.elconfidencial.com",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 2065,
+      "archive_url": null,
+      "full_content": "\"Es**increíble ver a la gente caminando a rastras por la calle como zombis**. [No sabes si reírte o llorar. Es espeluznante. ]( Ver eso en las calles de Pinar del Río o La Habana me recordó al juego de terror _Silent Hill_ \", cuenta a este diario un ingeniero informático de paso por Cuba para visitar a su familia. Hasta los vecinos de su casa natal y los pocos amigos que le quedan en la isla le han pedido medicamentos y otros productos sanitarios para mitigar los dolores. **“La primera pregunta que todos se hacen aquí es: ‘¿Cogiste el virus? ** ”. La situación descrita se debe a **una sindemia** (concurrencia de dos o más epidemias o brotes de enfermedades) **que azota a la población de la isla** desde hace meses, sin que hasta ahora el régimen cubano reconociera las primeras muertes y contagios. Organizaciones del exilio cubano denuncian que**[las cifras publicadas no reflejan ni de lejos la grave crisis sanitaria]( que atraviesa la isla**, marcada por el colapso del sistema de salud, y [ni los sesgados pronósticos oficiales]( se atreven a hablar de mejora a corto plazo. Por eso el citado ingeniero camina con mascarilla y no recomienda visitar Cuba en estos momentos. Nunca imaginó ver a su país en esas condiciones. Las enfermedades que circulan en Cuba ahora son dengue, oropouche, zika, influenza virus H1N1, covid-19 y **chikungunya, pero esta última[es la que tiene a los cubanos afectados]( Se trata de un virus de origen africano y cuyo nombre significa en la lengua makonde “doblarse por el dolor” o “caminar encorvado”, porque **ataca directamente a las articulaciones**, dificultando gravemente el movimiento de manos y pies. ## La crisis arrecia por la escasez Otros países latinoamericanos o del trópico asiático se enfrentan a las mismas enfermedades que padecen los cubanos. De hecho, fue en Tailandia donde se aisló el virus del chikungunya por primera vez en 1958, y actualmente Bangladesh, Sri Lanka y la provincia china de Guangdong sufren brotes preocupantes, según [una reciente alerta de viaje internacional]( emitida por el Centro para el Control y la Prevención de Enfermedades de EEUU. Pero aunque en Brasil y Colombia también hay brotes, Cuba fue el único país americano incluido en la alerta, porque **la escasez crónica** de transporte, comida, medicamentos o electricidad ha creado una especie de**tormenta perfecta** para que afloren estos virus. “Amén de las condiciones climáticas que comparten muchos países de la región, **las condiciones higiénico-sanitarias** de Cuba son **un agravante peligroso** ”, explica desde su exilio en Bogotá el doctor **Miguel Ruano**, presidente del Gremio Médico Cubano Libre (GMCL). “Cuba es un país donde apenas se recoge la basura, en cada esquina hay un vertedero y estos virus proliferan ahí donde se acumulan desechos y aguas estancadas, porque los mosquitos que los transmiten se benefician de esos entornos. Aquí en Colombia estos virus también circulan, pero la incidencia no es la misma. **Los cubanos no tienen cómo tratarse y por eso desarrollan formas graves de estas enfermedades**, como la poliartritis que deja a las personas sin poder apenas caminar o mover los brazos [tras padecer chikungunya]( En las embarazadas, el zika puede provocar defectos al nacer o la parálisis cerebral de los bebés”. A mediados de noviembre, [la Organización Panamericana de la Salud reconoció]( que la incidencia acumulada de chikungunya en Cuba era de **183, 43 casos por cada 100. 000 habitantes, la mayor en toda América en 2025**. Estos datos parten de las cifras ofrecidas por el régimen cubano, que ha llegado a reconocer que existe un subregistro de casos. De los más de 40. 000 contagios de chikungunya que reconoce La Habana, menos de 2. 000 se confirmaron mediante pruebas de PCR, porque solo en la capital de la isla hay un hospital capaz de hacerlas y tampoco existen los reactivos suficientes para realizarlas. Un vertedero improvisado en una esquina de la avenida Infanta de La Habana, a principios de febrero de 2025. (Alfredo Herrera) “Ese subregistro es intencional por parte del régimen, que con**un interés político intenta minimizar el caos** para mantener una imagen de destino turístico seguro”, detalla Ruano. “En el caso de los fallecidos, por ejemplo, se indican otras causas de muerte para no achacar tantas víctimas a estas arbovirosis. Eso es un crimen, porque **cuando no hay datos reales de lo que está pasando en el país, todo se complica**. Nosotros, desde el GMCL, denunciamos toda esta situación ante las instituciones como la OMS, pero no ocurre nada”. Los datos publicados hablan de **44 muertes hasta el 8 de diciembre: 28 han sido víctimas del chikungunya y 16 del dengue**. Lo más complejo es que la mayoría son niños, pues 29 fallecidos tenían menos de 18 años. Las autoridades sanitarias de la isla explicaron que **los más propensos a desarrollar formas graves son los niños menores de un año**, especialmente los menores de tres meses. Con síntomas que van desde lesiones y ampollas en la piel hasta fallas intestinales agudas y complicaciones neurológicas o cardíacas, en Cuba había hace pocos días **[11 menores de un año en estado crítico]( por chikungunya. “Aquí muchas personas están padeciendo chikungunya”, explica a El Confidencial la socióloga **Helen Ochoa**, residente en la ciudad de Cienfuegos, en la costa sur de Cuba. “Los meses de octubre y noviembre fueron los de más contagios, pero ahora muchos sufren**las secuelas, que son muy dolorosas y traumáticas**. Las personas se ven en las calles con dificultades para caminar y quejándose de **las terribles dolencias que deja el virus en manos y pies**. Es frecuente ver casos de personas sanas sin enfermedades de base que se han puesto muy mal, condicionadas por [la menguada alimentación que tenemos los cubanos. ]( Mi hija, por ejemplo, convulsionó cuando tuvo el virus. Después de casi tres meses, todos en mi casa padecemos dolencias e inflamaciones articulares”. El 80% de las personas que desarrollan formas graves de chikungunya**sufren poliartritis** que puede quedarse para toda la vida, precisa Ruano, porque para enfrentarla se necesitan antiinflamatorios y tratamientos con esteroides específicos que no hay en Cuba. Ochoa explica que la conversación cotidiana en las calles gira en torno a las dolencias que dejan estos virus y a las condiciones de abandono total que siente la población. En su barrio, uno de los más céntricos de Cienfuegos, **[se han normalizado apagones]( de más de 50 horas**, y luego tienen “alumbrones” de solo tres o cuatro horas en las que tienen que intentar hacer cosas elementales como cocinar o lavar. “En Cienfuegos han muerto niños y personas jóvenes con o sin enfermedades crónicas de base”, precisa Ochoa. **“El problema está en el colapso total del sistema de salud**, sumado a la insalubridad, la mala alimentación, y la escasez de medicamentos y de personal médico. Estos virus ponen de manifiesto el fracaso total del sistema, la indolencia del régimen para dar una respuesta certera, y el agotamiento de un pueblo con cuerpos maltratados por muchos años de crisis”. ## “No fui nunca al hospital, ¿para qué? ” Amén de las carencias ya descritas, los cubanos también se enfrentan a la **resaca del poderoso huracán Melissa que dejó 3, 5 millones de damnificados**. [La misión de la ONU en la isla explicó a mediados de noviembre]( que las primeras valoraciones subestimaron el alcance de la devastación, pero que **más de 90. 000 viviendas quedaron destruidas o afectadas**, y unas 100. 000 hectáreas de cultivos resultaron dañadas. Todo el desastre se concentró en las provincias del oriente cubano, por donde pasó el huracán. Una habanera que prefiere mantener el anonimato explica que se contagió en Santiago de Cuba mientras acompañaba a su esposo fotógrafo para retratar el desastre generado por el huracán. “**Donde estábamos nosotros, todo el mundo lo empezó a coger porque había muchos mosquitos** y el día que regresamos a [La Habana]( nuestro camarógrafo empezó con fiebre alta. Luego caí yo con inapetencia, vómitos, diarreas y fiebre de más de 40 grados Celsius durante tres días, pero lo peor fueron los dolores corporales. **Estuve semanas sin poder levantarme de la cama y caminé de nuevo con la ayuda de un bastón** ”. Esta mujer de 55 años insiste en que su caso no ha sido de los más graves, porque ella pudo acceder a medicamentos gracias a una hermana que se los enviaba desde España. La mayoría de los cubanos**no pueden permitirse los precios que se manejan en la calle por medicamentos elementales** como el paracetamol o el ibuprofeno. “Esos son los que peor lo han pasado; basta con ir a cualquier lugar y fijarte en cómo caminan las personas para saber cuánto daño están haciendo estas enfermedades”, explica la residente en el municipio habanero Cerro. “**Nosotros vivimos muy cerca de la Plaza de la Revolución y ni aquí**[fumigan contra los mosquitos]( o recogen la basura. El poco repelente que nos queda para evitar los mosquitos lo dejamos para mi madre, quien apenas sale a la calle. Donde mejor se puede proteger uno es en su casa. **Yo ni siquiera fui al hospital cuando me enfermé, para qué iba a ir, ** si ver a un médico aquí es por gusto”. Otro problema que afecta el tratamiento de estos virus consiste en **la falta de un diagnóstico claro**, señala Ruano. “La gente no sabe lo que tiene realmente y si van al médico llegan con enfermedades que se parecen en cuanto a síntomas. Como no hay diagnóstico serológico, no se sabe qué virus tienen. **Todas estas circunstancias hacen que en Cuba proliferen más estas enfermedades** y los pacientes desarrollen formas más agresivas de las mismas”. Un vertedero improvisado en el centro de la ciudad de Colón de la provincia de Matanzas, a principios de febrero de 2025. (Alfredo Herrera) En Mayarí, un municipio de Holguín (otra provincia afectada por el huracán Melissa), la ruralidad condena a los enfermos a un doble aislamiento. Si en las grandes ciudades o La Habana resulta casi imposible acceder a insumos y servicios básicos con regularidad, **en una zona montañosa como Mayarí el caos se acrecienta**. “Aquí hay muchos casos de covid-19, zika, chikungunya y dengue, y estas últimas son las que más secuelas dejan”, explica el periodista independiente **Osmel Ramírez**. “[Quienes cogen chikungunya]( y **no hacen reposo absoluto, quedan con las articulaciones lastimadas** e hinchadas. Lo peor es que muchos tienen que trabajar a pesar de estar en esas condiciones. Mi mujer cogió chikungunya y lo pasó muy mal, tres vecinos lo tienen ahora mismo y un joven que trabaja para mí en una cafetería que tengo estuvo sin andar buen tiempo. Ninguno va al hospital y pasa la enfermedad en su casa como puede”. ## No hay ni medicamentos ni médicos Además de la escasez de medicamentos que ha obligado a los galenos a [recetar infusiones y remedios caseros]( por la falta de antibióticos, la crisis migratoria también ha mermado el personal sanitario. Entre 2021 y 2025, **más de 30. 000 médicos dejaron de trabajar en el sistema de salud cubano** para irse a otro país o simplemente dedicarse a otra cosa. Tal es el caso de **Armando** *, un joven de 29 años que decidió dejar su puesto como director de un policlínico (hospital pequeño) en un municipio de la provincia de Matanzas, la más afectada por virus como el chikungunya. “Mi esposa, también doctora, estaba embarazada y **no podía enfrentarse al nacimiento de mi hijo ganando tan poco como médico** ”, explica el joven que acababa de recibir la canastilla que le envió su padre desde Brasil, porque en Cuba es muy difícil encontrar el ajuar de un bebé. “Al dejar la medicina me puse a revender cosas por la calle. Eso da más dinero y así no me busco problemas atendiendo a pacientes sin tener recursos para hacerlo. **Cada día llegaban decenas de personas con virus y no sabíamos qué decirles**. Mi idea es coger una misión cuando me avisen para irme a trabajar fuera de aquí”. Armando se refiere a **los convenios que sostiene el régimen cubano con decenas de países de todo el mundo para exportar a médicos**, como los que están en la región italiana de Calabria. El despliegue de estos médicos [ha sido condenado por el Parlamento Europeo ]( a que **el régimen cubano les confisca más del 80% de sus salarios** y les retira el pasaporte para impedir su movilidad. *Nombre cambiado para proteger la identidad de la fuente.",
+      "content_preview": "\"Es**increíble ver a la gente caminando a rastras por la calle como zombis**. [No sabes si reírte o llorar. Es espeluznante. ]( Ver eso en las calles de Pinar del Río o La Habana me recordó al juego de terror _Silent Hill_ \", cuenta a este diario un ingeniero informático de paso por Cuba para visitar a su familia. Hasta los vecinos de su casa natal y los pocos amigos que le quedan en la isla le han pedido medicamentos y otros productos sanitarios para mitigar los dolores. **“La primera pregunta ..."
+    },
+    {
+      "processing_rank": 18,
+      "url_id": 16692,
+      "url": "https://www.elconfidencial.com/mundo/2025-12-11/activos-rusos-congelados-ucrania-1hms_4264592/",
+      "title": "La UE garantiza la inmovilización de fondos rusos en plenas maniobras del crédito para Ucrania",
+      "source": "www.elconfidencial.com",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 729,
+      "archive_url": null,
+      "full_content": "Los Veintisiete han lanzado el procedimiento escrito para **cambiar el voto bianual** para confirmar el bloqueo de los activos rusos por una congelación sin fecha límite en pleno debate de su uso para un crédito a Ucrania Los embajadores representantes permanentes de **los Veintisiete** ante la **Unión Europea** han lanzado este jueves el procedimiento escrito para **inmovilizar a largo plazo los activos rusos** congelados como parte de las **sanciones europeas contra Rusia**, según han confirmado varias fuentes diplomáticas. Un movimiento clave en plenas maniobras para acordar usar los saldos de caja de esos mismos activos para canalizar un **crédito sin intereses a Ucrania**. De esta manera evitarían que **un único Estado miembro pudiera provocar el desbloqueo** de estos fondos. **Bélgica**, el país en el que se encuentra la empresa que tiene la mayoría de estos activos, se niega por el momento a permitir que la UE haga uso de ellos para dar **asistencia financiera a Kiev**. La aprobación de esta **propuesta se realiza por procedimiento escrito**, por lo que se considerará completa este viernes a las cinco de la tarde. Las **sanciones**, **que se aprueban por unanimidad en la Unión Europea**, se tienen que renovar cada seis meses y esta **renovación también funciona por unanimidad**. Eso significa que, al menos hasta ahora, cualquier país que se opusiera a la renovación de las **medidas restrictivas contra Rusia** provocaría que caducara esa inmovilización de activos y obligaría a devolver a Rusia los cerca de **210. 000 millones de euros** que se encuentran congelados en la Unión Europea. Ese es uno de los principales riesgos de la idea que está impulsando la **Comisión Europea** y a la que se opone el **Gobierno belga**. Para evitar que eso ocurra, los embajadores han acordado hacer uso de una cláusula legal extraordinaria, el [artículo 122 de los Tratados]( para suprimir una fecha límite a esa inmovilización y eliminar así la opción que alguno de los países más cercanos a Moscú —como son Hungría y Eslovaquia— **puedan vetar la renovación y provocar que toda la arquitectura del crédito a Ucrania** se desmorone. Para entender su importancia, hay que comprender cómo pretende el Ejecutivo comunitario que sea el diseño de esa asistencia a Ucrania. Según estos planes, la UE crearía un instrumento de deuda en el que las empresas que cuentan con activos congelados rusos, principalmente _Euroclear, _ que controla más de **140. 000 millones** del banco central ruso, tengan que invertir. Ese dinero sería después transferido a Ucrania sin intereses para cubrir una gran parte de sus necesidades financieras para 2026 y 2027. Kiev no tendría que devolverlo salvo en un escenario: cuando Rusia pague [reparaciones de guerra a Ucrania]( tras el final del conflicto. Con parte de esas reparaciones, **el dinero volvería a la UE**, que a su vez podría devolvérselo a las instituciones financieras que lo controlan actualmente. Justo después, la UE consideraría cumplidas sus condiciones para acabar con el congelamiento de activos rusos, que es que haya paz y el Kremlin haya pagado reparaciones de guerra a Ucrania. Así, los europeos desbloquearían el dinero, que sería devuelto a Rusia. Ese era el escenario ideal, pero ¿y si en la renovación que cada seis meses se debe hacer de las sanciones un solo país votaba en contra y se descongelaban los fondos? Eso daba a Rusia derecho a reclamar su dinero… y su dinero no estaría ahí. Por eso, la Comisión ha planteado **toda una serie de garantías para cubrir esos fondos que se trasladarían a Ucrania. ** Pero además ha propuesto esta modificación de las reglas para hacer que ese escenario sea mucho menos probable. Eso no significa que el debate vaya a ser más sencillo. **Bélgica sigue manteniendo una oposición muy fuerte al plan**, que se debatirá la semana que viene en el **Consejo Europeo**. **Ucrania necesita asistencia financiera tan pronto como hacia finales del primer trimestre de 2026**, y el **Fondo Monetario Internacional** (**FMI**) calcula que necesitará unos 140. 000 millones durante los dos próximos años. Como parte de su esfuerzo por convencer a los belgas, [la Comisión Europea]( **limitó a 90. 000 millones los fondos** que pretende utilizar para el crédito a Kiev. Los Veintisiete han lanzado el procedimiento escrito para **cambiar el voto bianual** para confirmar el bloqueo de los activos rusos por una congelación sin fecha límite en pleno debate de su uso para un crédito a Ucrania",
+      "content_preview": "Los Veintisiete han lanzado el procedimiento escrito para **cambiar el voto bianual** para confirmar el bloqueo de los activos rusos por una congelación sin fecha límite en pleno debate de su uso para un crédito a Ucrania Los embajadores representantes permanentes de **los Veintisiete** ante la **Unión Europea** han lanzado este jueves el procedimiento escrito para **inmovilizar a largo plazo los activos rusos** congelados como parte de las **sanciones europeas contra Rusia**, según han confirma..."
+    },
+    {
+      "processing_rank": 19,
+      "url_id": 16696,
+      "url": "https://www.elconfidencial.com/mundo/2025-12-11/rueda-de-prensa-corina_4264173/",
+      "title": "María Corina Machado reivindica desde Oslo \"la libertad\" y asegura que Venezuela es un \"hub criminal\"",
+      "source": "www.elconfidencial.com",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 1308,
+      "archive_url": null,
+      "full_content": "Después de **una travesía de infarto**, la líder opositora María Corina Machado logró llegar a Oslo tras un viaje en el que ha asumido enormes riesgos después de haber vivido 16 meses en la clandestinidad más absoluta. A pesar de sus esfuerzos, **Corina no logró llegar a tiempo para recibir el Nobel de la Paz** —[en su lugar fue su hija]( Ana Corina, quien lo recibió—, pese a que ella[ había iniciado su viaje casi 48 horas antes de la gala. ]( Según adelantó _The Washington Post_, Corina comenzó [su trayecto]( en la tarde de este pasado lunes. Las investigaciones apuntan a que la ganadora del Nobel logró salir disfrazada desde Caracas, junto con otros dos acompañantes, hacia la costa. **Los tres lograron superar una decena de controles de seguridad y de servicios de inteligencia** hasta llegar a un puerto pesquero frente al mar Caribe. Allí tomaron una lancha de madera pequeña rumbo a la isla de Curazao, perteneciente a los Países Bajos, donde se estima que llegaron el martes. En este tramo, su odisea transcurrió en un momento de máxima tensión, mientras**la Administración Trump libra una guerra abierta contra los narcotraficantes en el mar Caribe. ** La escalada entre Washington y el Gobierno de Nicolás Maduro ha llegado a un punto en el que [actualmente hay más de 15. 000 soldados estadounidenses]( desplegados en aguas caribeñas, junto a decenas de aeronaves y el portaviones _USS Gerald R. Ford, _ capaz de transportar más de 75 aeronaves. El equipo de la líder opositora, según informaciones del mismo medio, **llamó a Washington para informar de su camino** con el objetivo de no confundirles con una narcolancha. Durante el trayecto de la venezolana, dos aviones F-18 de la Armada de Estados Unidos sobrevolaron el Golfo de Venezuela, permaneciendo aproximadamente 40 minutos en círculos cerrados cerca de la ruta que llevaría a Corina desde la costa hasta Curazao. Desde allí —y después de pasar la noche en la isla— se subió un avión privado Legacy 600, registrado en México y operado por JetVip Business Aviation, con capacidad para 13 pasajeros. El avión despegó del Aeropuerto Ejecutivo _Opa Locka_ en Miami con rumbo al Aeropuerto Internacional Hato, en Willemstad, Curazao. Posteriormente, el vuelo partió el miércoles a las 6: 42 hora local con destino a Bangor, Maine, en Estados Unidos, **realizando una escala técnica de casi cinco horas. ** Después de la escala y tras más de 6 horas de vuelo, finalmente, **Corina consiguió llegar a la capital noruega alrededor de las 2 de la madrugada. ** El presidente del comité del Nobel, Jorgen Watne Frydnes, fue el primero en sorprenderse del periplo de su travesía cuando, antes de coger el avión, Corina le llamó para asegurarle que estaba de camino. **La expectación de su llegada fue mayúscula. ** Decenas de personas se agolparon bajo el balcón del Grand Hotel en Oslo para saludar a Corina. Dio igual que su llegada se produjera a altas horas de la madrugada. Entre abrazos y lágrimas de Corina con otros ciudadanos venezolanos, la principal opositora del régimen de Maduro **agradeció el apoyo que el mundo le brindó. ** Durante la mañana del jueves, Corina ofreció dos ruedas de prensa. La primera se produjo**junto al primer ministro noruego**, Jonas Gahr Støre, con quien se reunió en Oslo [tras recibir el Premio Nobel de la Paz]( \"En Venezuela tenemos una situación en la que un líder autoritario está librando una guerra contra su pueblo\", afirmó Støre, que aprovechó para agradecer públicamente la labor de Machado en favor de la democracia en el país. Corina aseguró, además, que **llevaría el Premio Nobel a Venezuela**, aunque no dijo cuándo regresaría. \"Vine a recibir el premio en nombre del pueblo venezolano y lo llevaré de vuelta a Venezuela en el momento oportuno. **Por supuesto, no diré cuándo\"**, declaró a la prensa. Antes, Machado concedió una entrevista a la BBC. \"Por supuesto que voy a regresar. Sé exactamente los riesgos que corro. **Estaré donde sea más útil para nuestra causa\", ** aseguró al medio británico. \"Hasta hace poco, creía que mi lugar debía ser Venezuela; hoy, en nombre de nuestra causa, siento que debo estar en Oslo\", añadió. \"Durante más de 16 meses**no he podido abrazar ni tocar a nadie. ** De repente, en cuestión de horas, pude ver a las personas que más quiero, tocarlas, llorar y rezar juntas\", relató. \"El Gobierno venezolano dice que soy terrorista y que debo pasar el resto de mi vida en la cárcel y me buscan\", afirmó. **\"Salir de Venezuela hoy, en estas circunstancias, es extremadamente peligroso\"**, reconoció Machado. \"Solo quiero decir que estoy aquí gracias a que muchos hombres y mujeres arriesgaron sus vidas para que pudiera llegar a Oslo\". La dirigente venezolana respondió con un breve discurso centrado en el significado del galardón para la diáspora y para quienes siguen en el país. \"Estoy muy esperanzada de que Venezuela sea libre y de que convertiremos al país en un referente para la democracia\", señaló. Insistió en que la paz [\"solo es posible con democracia\" y]( que esta, a su vez, **\"no puede existir sin libertad\"**, un concepto que describió como una “decisión individual y consciente” que se convierte en fuerza colectiva cuando la amenaza al propio país se vuelve intolerable. Aseguró, además, que el motor de su lucha es “el amor de millones de venezolanos **por nuestra tierra, por nuestros hijos y por la posibilidad de volver a vivir con dignidad** ”. Cuestionada sobre si respalda una intervención estadounidense en Venezuela, Machado rechazó el planteamiento. \"La gente habla de una invasión en Venezuela, **pero Venezuela ya ha sido invadida\"**, aseveró. Afirmó que [en el país operan agentes rusos e iraníes]( organizaciones como Hezbolá, guerrillas colombianas y cárteles del narcotráfico, además de redes de trata y prostitución. Esa convergencia criminal, sostuvo, ha convertido al país en \"**_el criminal hub_ de las Américas\"** y sostiene a un aparato represivo que se financia a través del tráfico de drogas, **el mercado negro del petróleo**, el contrabando de armas y la explotación de personas. \"**Hay que cortar esos flujos. Es lo único que le queda al régimen: violencia y terror** \", afirmó, en referencia al Gobierno de Nicolás Maduro. Sobre los meses que pasó oculta para evitar la detención, Machado aseguró que el régimen no logró localizarla: \"**De haber sabido dónde estaba, habrían hecho todo para impedir que viniera\"** Agradeció a quienes la ayudaron a salir del país “arriesgando su vida” y afirmó que, cuando regrese, seguirá protegida por redes de apoyo dentro de Venezuela: **\"Tenemos maneras de cuidarnos\". ** En su segunda rueda de prensa, Machado se dirigió a los venezolanos y aseguró que el Nobel es un reconocimiento para todos los que han resistido al régimen de Maduro. **“Pronto estaré de vuelta en Venezuela y sé que pronto ustedes también”**, afirmó, en referencia a los millones de ciudadanos que se han visto obligados a abandonar el país. Por último, recordó [el discurso que pronunció su hija]( en su nombre en la ceremonia del miércoles —dado que ella no logró llegar a tiempo a la ceremonia— y sostuvo que esta generación, que no ha conocido la democracia, **será la que pasará a la historia por recuperarla. ** En paralelo, este mismo jueves, el presidente de Rusia, Vladímir Putin, trasladó su apoyo a su homólogo venezolano en una conversación que habrían mantenido por teléfono. \"Putin expresó su solidaridad con el pueblo venezolano y **reafirmó su apoyo a las políticas del Gobierno de Maduro** dirigidas a proteger los intereses y la soberanía nacionales frente a[ la creciente presión externa]( ha indicado el Kremlin en un breve comunicado publicado tras la conversación. Así, ha destacado que \"los jefes de Estado intercambiaron opiniones **sobre el desarrollo de las amistosas relaciones ruso-venezolanas**, en línea con el acuerdo de asociación estratégica y cooperación\", que entró en vigor en noviembre de 2025.",
+      "content_preview": "Después de **una travesía de infarto**, la líder opositora María Corina Machado logró llegar a Oslo tras un viaje en el que ha asumido enormes riesgos después de haber vivido 16 meses en la clandestinidad más absoluta. A pesar de sus esfuerzos, **Corina no logró llegar a tiempo para recibir el Nobel de la Paz** —[en su lugar fue su hija]( Ana Corina, quien lo recibió—, pese a que ella[ había iniciado su viaje casi 48 horas antes de la gala. ]( Según adelantó _The Washington Post_, Corina comenzó..."
+    },
+    {
+      "processing_rank": 20,
+      "url_id": 16579,
+      "url": "https://www.bbc.com/news/articles/c2lvplrxpe9o",
+      "title": "Trump's Gaza peace plan struggles to progress as Israel and Hamas face tough choices",
+      "source": "www.bbc.com",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 1179,
+      "archive_url": null,
+      "full_content": "# Trump's Gaza peace plan struggles to progress as Israel and Hamas face tough choices Lucy WilliamsonMiddle East correspondent, Jerusalem Anadolu via Getty Images Search and rescue groups attended a two storey building collapse following heavy rainfall in Beit Lahia on Friday A steady stream of water trickles through openings in the tent Ghadir al-Adham shares with her husband and six children in Gaza City. Her family is still displaced after the war and waiting for reconstruction to begin. \"Here we are, living a life of humiliation, \" she told the BBC. \"We want caravans. We want our homes rebuilt. We long for concrete to keep us warm. Every day I sit and cry for my children. \" Two months into an American-imposed ceasefire, Gaza is stuck in the first phase of Donald Trump's peace plan - its territory divided between the warring parties, its people still displaced and surrounded by rubble. Heavy rain has deluged camps and led several buildings to collapse, as a powerful winter storm sweeps through the Strip. More than 800, 000 Gazans are at risk from flooding, the UN says. Ghadir al-Adham is longing to move her children into a solid home ## Sticking point Plans for new homes - and new government - lie frozen in the next stage of US President Donald Trump's peace deal, as the search continues for Israel's last missing hostage, Ran Gvili. Israel's Prime Minister, Benjamin Netanyahu, has insisted Hamas must return all Israel's hostages – living and dead – before the two sides move on to the next, more difficult, stage of the peace deal. But several searches of Gaza's rubble have so far shown no sign of him. Mr Gvili was captured during the 7 October Hamas attacks - a police officer, recovering from a broken shoulder, who went to defend nearby kibbutz Alumim. Handout Yellow flags have been hung for Ran Gvili near his home in southern Israel His parents, Talik and Itzik, were told last year he had not survived. The road to their home in Meitar, in southern Israel, is lined with banners paying tribute to him, the yellow flags of remembrance for Israel's hostages fluttering alongside. \"They stole our kid, they stole him, \" his mother Talik told me. \"They know where he is, \" Itzik said. \"They just try to hide or keep him. They're play[ing] with us. \" They believe Hamas wants to keep their son as an insurance policy against future negotiations, after returning all the other hostages, both living and dead. Itzik Gvili (right) accuses Hamas of trying to hide his son In response, a Hamas official told the BBC their allegations were untrue, and that Israel was trying to avoid implementing the agreement. But with no sign of Ran's body, and pressure from Washington growing, his parents say they are counting on Israel's leaders not to move forward before their son is found. \"Everyone in Israel['s] government says to us, 'No, we don't move to the second level until Ran comes back. ' This is their promise, \" Talik said. Many in Israel believe it would be politically difficult for Netanyahu to carry out the next steps in the deal, including withdrawing Israeli forces further back towards Gaza's perimeter, if even one hostage is still missing in Gaza. ## Time 'running out' Both Israel and Hamas face difficult concessions in the next stage of the deal. For Hamas, it means handing over weapons and power. For Israel, handing over security to an international stabilisation force. And this is also why leaders on both sides may be hesitating, says retired General Israel Ziv, a former head of Israel's military Operations Directorate. \"Israel and Hamas are sharing the same interests not to move so fast into the second stage, \" he told me. \"Hamas doesn't want to lose control, and the Israeli side for political reasons also prefer to stay in Gaza, as nobody wants to explain to their base that they have to withdraw. \" He says Trump is the only one who can force the two sides forward, and that time is running out. \"By waiting I think we might miss the opportunity because Hamas is reorganising and [its] strength is coming back, \" he explained. \"We have to take a deep breath and go forward with that plan, because staying in the situation as it is, it's the worst-case scenario. \" Disarming Hamas – in a way both sides will accept – is seen as the first major hurdle. Without that, no foreign countries are likely to commit troops to secure the Strip, and no reconstruction is likely to begin in Hamas-controlled areas. Earlier this week, Netanyahu suggested he was sceptical that foreign nations could complete the task in place of Israel. \"Our friends in America want to try to establish an international force that will do the job, \" he said. \"We know that there are certain tasks that this force can do. I don't want to go into detail, they can't do everything, and maybe they can't do the main thing, but we'll see. \" ## Trump eager to move fast Gaza is currently divided in two by the \"yellow line\" marking the limits of Israeli forces under the first stage of the ceasefire deal. Israel's military chief of staff recently referred to it as a \"new border line\", sparking accusations that Israel was signalling an intention to remain there long term. Key issues, including how to disarm Hamas, are due to be discussed at a meeting between Netanyahu and Trump in Florida later this month. The US president – who has already brokered a ceasefire in Gaza and pushed his peace plan through the UN Security Council – has been outspoken about his desire to move the process forward. He told journalists this week that he would announce the membership of a newly created Board of Peace for Gaza early next year. \"It will be one of the most legendary boards ever… Everybody wants to be on it, \" he said. Getty Images The floods make it hard for Gazans to keep children dry There are also widespread reports that, under pressure from Washington, Israel is beginning work to clear rubble, in preparation for a new temporary housing project in the Israeli-held area of Rafah, in the south of the Strip. The new housing could reportedly provide shelter for tens of thousands of Gazans, on condition that they are willing to cross into Israeli-held areas, and submit to checks for any links to Hamas. Some see it as part of a plan to draw Gazans across into Israeli-held areas, in order to isolate Hamas. A small number of people have already crossed into these areas, to camps set up by armed groups supported by Israel there. But many Gazans – even those who want to replace Hamas – say they refuse to live under Israeli control. It's a glimpse of an alternative future for Gaza, if this second stage of Trump's plan fails; a future where Gaza, already divided, becomes more divided still.",
+      "content_preview": "# Trump's Gaza peace plan struggles to progress as Israel and Hamas face tough choices Lucy WilliamsonMiddle East correspondent, Jerusalem Anadolu via Getty Images Search and rescue groups attended a two storey building collapse following heavy rainfall in Beit Lahia on Friday A steady stream of water trickles through openings in the tent Ghadir al-Adham shares with her husband and six children in Gaza City. Her family is still displaced after the war and waiting for reconstruction to begin. \"He..."
+    },
+    {
+      "processing_rank": 21,
+      "url_id": 16584,
+      "url": "https://www.bbc.com/news/articles/cn81x8py3j5o",
+      "title": "We must prepare for war with Russia, says Nato chief in stark new warning",
+      "source": "www.bbc.com",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 596,
+      "archive_url": null,
+      "full_content": "# Russia could attack Nato within five years, says alliance chief in stark new warning Frank Gardner, Security Correspondentand Paulin Kola Reuters Many were complacent, but conflict was next door, the Nato chief warned Russia could attack a Nato country within the next five years, the Western military alliance's chief has said in a stark new warning. \"Russia is already escalating its covert campaign against our societies, \" Mark Rutte said in a speech in Germany. \"We must be prepared for the scale of war our grandparents or great-grandparents endured. \" He echoed similar statements about Russia's intentions made by Western intelligence agencies, which Moscow dismisses as hysteria. Rutte's warning comes as US President Donald Trump tries to bring an end to Russia's full-scale invasion of Ukraine, launched in February 2022. Earlier this month, Russia's President Vladimir Putin said his country was not planning to go to war with Europe, but it was ready \"right now\" if Europe wanted to - or started a war. But similar reassurances were given by Moscow in 2022, just before 200, 000 Russian troops crossed the border and invaded Ukraine. Putin has accused European countries of hindering US efforts to bring peace in Ukraine - a reference to the role Ukraine's European allies have recently played in trying to change a US peace plan to end the war, whose initial draft was seen as favouring Russia. But Putin was not sincere, Nato's secretary-general said in the German capital, Berlin. Supporting Ukraine, he added, was a guarantee for European security. \"Just imagine if Putin got his way; Ukraine under the boot of Russian occupation, his forces pressing against a longer border with Nato, and the significantly increased risk of an armed attack against us. \" Russia's economy has been on a war footing for more than three years now - its factories churn out ever more supplies of drones, missiles and artillery shells. According to a recent report by the Kiel Institute for the World Economy, Russia has been producing each month around 150 tanks, 550 infantry fighting vehicles, 120 Lancet drones and more than 50 artillery pieces. The UK, and most of its Western allies, are simply not anywhere near this point. Analysts say it would take years for Western Europe's factories to come close to matching Russia's mass-production of weapons. France and Germany have both recently moved to revive a system of voluntary military service for 18-year-olds. So-called \"hybrid\" or \"grey-zone\" warfare, which includes events that are often deniable, such as cyber-attacks, disinformation and the alleged launching of drones close to airports and military bases in Nato countries, has been ramping up this year. But worrying as these events are, they pale compared to the crisis that would be triggered by a Russian military attack on a Nato country, especially if it involved seizing territory and people being killed. Nato includes 30 European countries - as well as Canada and the US, the alliance's most powerful military member. Under pressure from Trump, its members have pledged to increase military spending. \"Nato's own defences can hold for now, \" Rutte warned in Berlin, but conflict was \"next door\" to Europe and he feared \"too many are quietly complacent, and too many don't feel the urgency, too many believe that time is on our side. \"Allied defence spending and production must rise rapidly, our armed forces must have what they need to keep us safe, \" the Nato chief said. Reuters \"Listen to the sirens across Ukraine, look at the bodies pulled from the rubble, \" Rutte warned in his speech",
+      "content_preview": "# Russia could attack Nato within five years, says alliance chief in stark new warning Frank Gardner, Security Correspondentand Paulin Kola Reuters Many were complacent, but conflict was next door, the Nato chief warned Russia could attack a Nato country within the next five years, the Western military alliance's chief has said in a stark new warning. \"Russia is already escalating its covert campaign against our societies, \" Mark Rutte said in a speech in Germany. \"We must be prepared for the sc..."
+    },
+    {
+      "processing_rank": 22,
+      "url_id": 16525,
+      "url": "https://www.abc.es/deportes/laporta-niega-favores-arbitrales-valverde-luis-enrique-20251212122643-nt.html",
+      "title": "Laporta niega favores arbitrales y Valverde y Luis Enrique haber visto los informes de Negreira",
+      "source": "www.abc.es",
+      "category": "deportes",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "json_ld",
+      "extraction_error": null,
+      "word_count": 711,
+      "archive_url": null,
+      "full_content": "Joan Laporta niega que el Barça haya obtenido favores arbitrales por tener en nómina a José María Enríquez Negreira. Durante su declaración como testigo ante la juez que instruye el caso, el actual mandatario azulgrana ha sostenido este viernes que el equipo era. . . un «ejemplo en el mundo», y que «en absoluto los árbitros nos han favorecido». La instructora investiga los pagos del Barça a quien fuera número dos de los colegiados españoles durante 18 años. La tesis de la Fiscalía, que formalizó la denuncia contra el club en febrero de 2023, es que esos pagos, que la Guardia Civil cifra en más de 8 millones de euros, perseguían precisamente obtener dicho trato favorable por parte de los colegiados. Preguntado por los informes que habría elaborado para el club el hijo de Negreira, Javier Enríquez, Laporta ha indicado ante la instructora que ya ha aportado 629 de ellos a la causa, y que no puede entregar más porque se destruían «cada cinco a seis años». Sobre el origen de los mismos, el presidente azulgrana ha indicado que en su primer mandato (2003-2010) «heredó» los pagos a Negreira «de una época anterior», y que desde el área deportiva del club le trasladaron que «merecía la pena» mantenerlos por su información sobre árbitros y de 'scooting'. Según han detallado fuentes jurídicas presentes en la declaración, algún abogado también le ha inquirido sobre facturas por los abonos a Enríquez Negreira y este ha explicado que, como presidente, no está al tanto de cada pago, sino que a él le informan de manera «genérica» sobre las gestiones. Además, ha recordado que se trata de información de hace dos décadas, por lo que no puede recordar cada detalle. Según el mandatario azulgrana, los pagos al exvicepresidente del Comité Técnico de Árbitros (CTA) «no pasaban por la junta directiva». Y sobre su objetivo, si es tal y como sospecha la Fiscalía, para obtener beneficios de los colegiados, ha subrayado que nunca sintió que los árbitros favoreciesen al club y que esa acusación no tiene «ningún sentido». Noticia Relacionada estandar Si El hijo de Negreira se desmarca de su padre y acorrala al Barça Elena Burés Rosell y Bartomeu defienden los pagos al exdirigente arbitral por sus asesoríasAdemás de Laporta, esta misma mañana también han declarado como testigos ante el Juzgado de Instrucción 1 de Barcelona dos extécnicos azulgranas: Ernesto Valverde y Luis Enrique. El primero, como ya hiciera ante la Guardia Civil, ha sostenido sobre los informes de Negreira: « No los he visto, no sé si existen y además me daban igual ». Por su parte, el asturiano, en la misma línea, también ha negado haberlos visto y ha indicado que «no tenía conocimiento» de si existían o no. Javier EnríquezCabe recordar que el pasado septiembre, uno de los investigados en la causa, el hijo de Negreira, Javier Enríquez, aseguró ante la juez haber elaborado informes de asesoramiento para el club, pero indicó que cobraba por ellos unos 250 euros; lejos de las cifras astronómicas que percibió el progenitor del Barça, entre 2001 y 2018. Los pagos cesaron, precisamente, cuando Negreira dejó de ser vicepresidente del CTA. Laporta fue unos de los presidente azulgranas investigados en los inicios de la causa pero, finalmente, la Audiencia de Barcelona tumbó su imputación al descartar el presunto cohecho en el caso Negreira y considerar que los presuntos delitos habrían prescrito. Sí lo están Sandro Rosell y Josep Maria Bartomeu, quienes durante su declaración ante la juez, también hace tres meses, subrayaron que el Barça ganaba gracias Messi y no por pagar al exvicepresidente del CTA. Además, igual que hoy Laporta, ambos exmandatarios azulgranas indicaron que habían heredado la contratación de Negreira de anteriores directivas, y que todos los grandes equipos cuentan o deben contar con asesoramiento para que los entrenadores tengan información sobre la forma de pitar de los árbitros y así poder preparar los partidos. Será a finales de enero y principios de febrero cuando se producirán nuevas declaraciones. Por una parte, la de la representante del Barça -imputado como persona jurídica- Elena Font, y como testigo, de otro de sus exmandatarios, Joan Gaspart. Fue precisamente en esa misma providencia en la que la juez, Alejandra Gil, requirió al club los contratos con el exdirigente arbitral.",
+      "content_preview": "Joan Laporta niega que el Barça haya obtenido favores arbitrales por tener en nómina a José María Enríquez Negreira. Durante su declaración como testigo ante la juez que instruye el caso, el actual mandatario azulgrana ha sostenido este viernes que el equipo era. . . un «ejemplo en el mundo», y que «en absoluto los árbitros nos han favorecido». La instructora investiga los pagos del Barça a quien fuera número dos de los colegiados españoles durante 18 años. La tesis de la Fiscalía, que formalizó..."
+    },
+    {
+      "processing_rank": 23,
+      "url_id": 16849,
+      "url": "https://elpais.com/clima-y-medio-ambiente/2025-12-11/una-operacion-mundial-contra-el-trafico-de-especies-decomisa-casi-30000-animales-vivos-en-134-paises.html",
+      "title": "Una operación mundial contra el tráfico de especies decomisa casi 30.000 animales vivos en 134 países",
+      "source": "elpais.com",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 418,
+      "archive_url": null,
+      "full_content": "[Interpol]( \" anunció este jueves la incautación de casi 30. 000 animales vivos (entre ellos, 6. 660 aves, 2. 040 tortugas y 1. 150 reptiles), así como la identificación de 1. 100 sospechosos en una operación mundial contra el [tráfico de especies]( \" en la que participaron 134 países. En colaboración con la Organización Mundial de Aduanas (OMA), la agencia policial internacional precisó que la operación ‘Thunder 2025’ la novena de este tipo, se llevó a cabo entre el 15 de septiembre al 15 de octubre y permitió un nivel récord de decomisos, lo que se explica principalmente por la fuerte demanda de mascotas exóticas. En concreto, se incautaron más de 30 toneladas de especies en peligro de extinción según la Convención sobre el Comercio Internacional de Especies Amenazadas de Fauna y Flora Silvestres ([CITES]( \" en inglés). Asimismo, se confiscaron decenas de miles de metros cúbicos de madera talada ilegalmente, lo que incluye más de 32. 000 metros cúbicos y 14. 000 piezas. Se requisó una cifra récord de 5, 8 toneladas de carne de animales salvajes (Bushmeat) a nivel global. Kenia decomisó 400 kilos de carne de jirafa. Entre las incautaciones más destacadas geográficamente, las autoridades brasileñas desmantelaron una red en la que identificaron a 145 sospechosos y de la que rescataron a más de 200 animales salvajes. En esa operación se impusieron severas medidas contra una red internacional de tráfico de titís león dorado (una especia de mono pequeño, famoso por su brillante y distintivo pelaje de color dorado o rojizo-dorado que se asemeja a una melena de león). Asimismo, las autoridades mexicanas incautaron siete animales en el estado de Sinaloa, incluidos dos tigres, junto con componentes de armas de fuego frecuentemente asociados con actividades del crimen organizado. En la República Dominicana, las autoridades detuvieron a 90 personas por delitos vinculados a la tala ilegal, mientras que en Tanzania se incautaron más de 100 colmillos y piezas de marfil valorados en 415. 000 dólares estadounidenses y más de 140 dientes de hipopótamo valorados en 40. 000 dólares. En Catar, se arrestó a un individuo que intentaba vender un primate en peligro de extinción por 14. 000 dólares en redes sociales. En el comunicado de la organización, el secretario general de Interpol, el brasileño Valdecy Urquiza, destacó que la operación expone la sofisticación de las redes criminales que impulsan el comercio ilegal y advirtió de que “estas redes se interconectan cada vez más con otras áreas delictivas, como el tráfico de drogas y la explotación humana”.",
+      "content_preview": "[Interpol]( \" anunció este jueves la incautación de casi 30. 000 animales vivos (entre ellos, 6. 660 aves, 2. 040 tortugas y 1. 150 reptiles), así como la identificación de 1. 100 sospechosos en una operación mundial contra el [tráfico de especies]( \" en la que participaron 134 países. En colaboración con la Organización Mundial de Aduanas (OMA), la agencia policial internacional precisó que la operación ‘Thunder 2025’ la novena de este tipo, se llevó a cabo entre el 15 de septiembre al 15 de oc..."
+    },
+    {
+      "processing_rank": 24,
+      "url_id": 16842,
+      "url": "https://elpais.com/espana/2025-12-12/dimite-en-plena-guerra-interna-el-lider-de-jucil-la-asociacion-de-guardias-civiles-enfrentada-a-interior.html",
+      "title": "Dimite en plena guerra interna el líder de Jucil, la asociación de guardias civiles enfrentada a Interior",
+      "source": "elpais.com",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 678,
+      "archive_url": null,
+      "full_content": "Primera víctima en [la guerra interna que se vive en el seno de Justicia Guardia Civil (Jucil)]( \" la asociación de agentes más beligerante contra el Ministerio del Interior. Ernesto Vilariño, su líder hasta ahora, ha presentado este viernes su “renuncia voluntaria” al cargo antes de comenzar una asamblea extraordinaria que él mismo había convocado para forzar el cese de varios críticos. Según se recoge en el breve escrito de dos párrafos que ha presentado para formalizar su dimisión, al que ha tenido acceso EL PAÍS, Vilariño no especifica si también renuncia al puesto de vocal que ocupa en la Consejo de la Guardia Civil, órgano de representación de los agentes ante Interior. En una nota de prensa posterior, el ya ex secretario general jutifica su decisión en la necesidad de “desbloquear” la situación que se vivía en el Comité Ejecutivo Nacional desde el fracaso electoral del pasado octubre con dos sectores enfrentados. “Los socios tendrán ahora la oportunidad de elegir una nueva directiva y el rumbo de la asociación”, añade en dicha nota, que recuerda que la decisión de Vilariño “activa de manera inmediata el proceso electoral interno” para elegir a una nueva dirección. Hasta entonces, las riendas de la asociación la toman en funciones los restantes nueve miembros del comité ejecutivo. La dimisión se produce después de que en los últimos días saliera a la luz la fractura sufrida en este órgano con acusaciones cruzadas entre dos sectores que habian provocado que ambos convocaran por separado a los cerca de 15. 000 asociados a sendas asambleas extraordinarias. La primera, convocada precisamente por la facción encabezada por Vilariño se celebraba este viernes y en ella el ya ex secretario general de Jucil pretendía cesar a dos de los dirigentes enfrentados a él. El otro sector de dirigentes había planteado que la reunión se celebrase la próxima semana con un orden del día en el que se planteaba analizar “la situación actual”, estudiar qué “soluciones adoptar” y “modificar los estatutos”, sin más concreción, aunque todo apuntaba a que su intención era forzare la salida de Vilariño. No ha hecho falta esperar a ella y ha sido el propio dirigente el que ha dimitido este viernes. Fuentes de su entorno aseguran que estaba “cansado” de la situación vivida en los últimos meses, en los que incluso se habían cuestionado algunos de sus gastos. La crisis interna en Jucil se remonta a hace algo más de un año, cuando se produjo un [cruce de demandas y querellas]( \" en los juzgados entre el comité que encabezaba Vilariño y [cinco exdirigentes que denunciaron supuestos gastos irregulares]( \" y que aún se dirimen en los juzgados. Sin embargo, fue el varapalo electoral sufrido el pasado octubre, cuando la asociación perdió la mitad de sus seis vocales en el Consejo de la Guardia Civil tras tener que conformarse con 6. 838 votos, menos de la mitad de las 14. 251 papeletas que obtuvo cuatro años cuando se convirtió en la asociación mayoritaria. Tras los último comicios, la Asociación Unificada de la Guardia Civil (AUGC) les superó en votos y representantes. Esta derrota provocó un cisma en el que un sector formado por seis de los 10 miembros del comité ejecutivo y liderado por los hermanos Óscar y David González Sequera, vicesecretario general y secretario nacional de formación respectivamente, rechazaron en las reuniones internas diversas propuestas hechas por Vilariño para reconducir la situación de Jucil. No obstante, a comienzos de diciembre ambos sectores parecieron llegar a un acuerdo con un documento que planteaba desconvocar las dos asambleas a cambio de celebrar elecciones internas el próximo 30 de enero para elegir una nueva dirección. Sin embargo, la tregua duró poco, ya que la facción enfrentada al secretario general consideró poco después que Vilariño había modificado el texto pactado. [La publicación el pasado miércoles en EL PAÍS de detalles de la crisis interna]( \" provocó un nuevo roce y llevó a los críticos a difundir entre los asociados un comunicado ese mismo día en el que acusaban a Vilariño de “enturbiar” la organización con diferentes maniobras.",
+      "content_preview": "Primera víctima en [la guerra interna que se vive en el seno de Justicia Guardia Civil (Jucil)]( \" la asociación de agentes más beligerante contra el Ministerio del Interior. Ernesto Vilariño, su líder hasta ahora, ha presentado este viernes su “renuncia voluntaria” al cargo antes de comenzar una asamblea extraordinaria que él mismo había convocado para forzar el cese de varios críticos. Según se recoge en el breve escrito de dos párrafos que ha presentado para formalizar su dimisión, al que ha ..."
+    },
+    {
+      "processing_rank": 25,
+      "url_id": 17121,
+      "url": "https://www.lemonde.fr/international/article/2025/12/12/le-premier-ministre-thailandais-prive-du-soutien-d-une-partie-de-l-opposition-decide-de-dissoudre-l-assemblee_6657023_3210.html",
+      "title": "Le premier ministre thaïlandais, privé du soutien d’une partie de l’opposition, décide de dissoudre l’Assemblée",
+      "source": "www.lemonde.fr",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "llm_direct",
+      "extraction_error": null,
+      "word_count": 273,
+      "archive_url": null,
+      "full_content": "Le premier ministre thaïlandais, Srettha Thavisin, a annoncé, vendredi 12 décembre, la dissolution de l’Assemblée nationale, après avoir perdu le soutien d’une partie de l’opposition. Cette décision survient alors que le pays est confronté à une crise politique croissante, exacerbée par des tensions entre le gouvernement et les partis d’opposition. Srettha, qui a pris ses fonctions en septembre, a déclaré que la dissolution était nécessaire pour permettre de nouvelles élections et restaurer la confiance du public dans le processus démocratique. \"Nous devons écouter la voix du peuple et donner la possibilité à tous les citoyens de s’exprimer lors des prochaines élections\", a-t-il affirmé lors d’une conférence de presse. La décision de dissoudre l’Assemblée a été accueillie avec des réactions mitigées. Certains analystes estiment qu’elle pourrait ouvrir la voie à une nouvelle ère politique, tandis que d’autres craignent qu’elle n’aggrave les divisions existantes au sein du pays. Le gouvernement a été critiqué pour sa gestion de l’économie et des questions sociales, et la perte de soutien de l’opposition pourrait compliquer davantage sa position. Les élections anticipées devraient avoir lieu dans les mois à venir, mais la date exacte reste à déterminer. Les partis d’opposition, qui avaient initialement soutenu le gouvernement, ont exprimé leur mécontentement face à certaines politiques et décisions prises par Srettha. Ils ont appelé à une réforme politique plus large et à une meilleure représentation des citoyens dans le processus décisionnel. La situation en Thaïlande reste volatile, avec des manifestations sporadiques et des appels à des réformes démocratiques plus profondes. Les observateurs politiques surveillent de près les développements, alors que le pays se prépare à une nouvelle phase de son histoire politique.",
+      "content_preview": "Le premier ministre thaïlandais, Srettha Thavisin, a annoncé, vendredi 12 décembre, la dissolution de l’Assemblée nationale, après avoir perdu le soutien d’une partie de l’opposition. Cette décision survient alors que le pays est confronté à une crise politique croissante, exacerbée par des tensions entre le gouvernement et les partis d’opposition. Srettha, qui a pris ses fonctions en septembre, a déclaré que la dissolution était nécessaire pour permettre de nouvelles élections et restaurer la c..."
+    }
+  ],
+  "newsletter_preview": {
+    "word_count": 1422,
+    "char_count": 11987,
+    "first_500_chars": "Hoy nos sumergimos en un mar de noticias que abarca desde la política internacional hasta la salud pública y la justicia social. Empezamos con un juicio que podría cambiar cómo vemos al FBI y a la administración Trump. [**James Comey**](https://www.lemonde.fr/m-le-mag/article/2025/12/12/nous-ne-sommes-pas-en-train-de-tendre-vers-une-force-autoritaire-nous-y-sommes-au-fbi-la-grande-purge-a-commence_6656969_4500055.html), quien fue director del FBI, está siendo juzgado por obstrucción de justicia...."
+  }
+}

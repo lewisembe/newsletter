@@ -1,0 +1,800 @@
+{
+  "metadata": {
+    "newsletter_name": "general_newsletter",
+    "run_date": "2025-12-10",
+    "generated_at": "2025-12-10T17:31:44.033205+01:00",
+    "stage": "05_generate_newsletters"
+  },
+  "configuration": {
+    "max_articles": 25,
+    "top_with_content": 25,
+    "expected_categories": [
+      "geopolitica",
+      "deportes",
+      "sociedad",
+      "economia",
+      "tecnologia",
+      "finanzas",
+      "politica"
+    ],
+    "ranked_file_categories": null,
+    "template": "default",
+    "model_writer": "gpt-4o-mini",
+    "output_format": "markdown"
+  },
+  "ranked_data": {
+    "total_urls_in_ranked_file": 0,
+    "urls_selected_for_processing": 25,
+    "initial_ranked_order": []
+  },
+  "content_extraction": {
+    "urls_requested_for_content": [
+      {
+        "rank": 1,
+        "url_id": 15725,
+        "url": "https://www.lemonde.fr/international/article/2025/12/10/face-aux-tensions-thailande-cambodge-plus-de-500-000-personnes-evacuent-les-regions-frontalieres_6656682_3210.html",
+        "title": "Face aux tensions Thaïlande-Cambodge, plus de 500 000 personnes évacuent les régions frontalières"
+      },
+      {
+        "rank": 2,
+        "url_id": 15716,
+        "url": "https://www.lemonde.fr/international/article/2025/12/10/la-mairie-de-miami-bascule-dans-le-camp-democrate-une-premiere-depuis-28-ans_6656686_3210.html",
+        "title": "La démocrate Eileen Higgins élue maire de Miami, en terre trumpiste, une première pour le parti depuis vingt-huit ans"
+      },
+      {
+        "rank": 3,
+        "url_id": 15717,
+        "url": "https://www.lemonde.fr/afrique/article/2025/12/10/rdc-la-region-des-grands-lacs-plus-que-jamais-en-proie-a-la-guerre-une-semaine-apres-la-paix-signee-a-washington_6656708_3212.html",
+        "title": "L’est de la RDC plus que jamais en proie à la guerre, une semaine après la « paix » signée à Washington"
+      },
+      {
+        "rank": 4,
+        "url_id": 15760,
+        "url": "https://www.nytimes.com/2025/12/10/opinion/trum-maduro-venezuela.html",
+        "title": "Opinion | Trump Picked This Fight With Maduro. He Can’t Back Down."
+      },
+      {
+        "rank": 5,
+        "url_id": 15743,
+        "url": "https://www.nytimes.com/2025/12/09/us/politics/trump-nvidia-ai-chips-china.html",
+        "title": "Trump’s Nvidia Chip Deal Reverses Decades of Technology Restrictions"
+      },
+      {
+        "rank": 6,
+        "url_id": 15435,
+        "url": "https://elpais.com/internacional/2025-12-10/maria-corina-machado-no-asistira-a-la-ceremonia-de-entrega-de-los-premios-nobel.html",
+        "title": "La líder opositora María Corina Machado logra salir de Venezuela: “Estaré en Oslo, estoy de camino”"
+      },
+      {
+        "rank": 7,
+        "url_id": 15472,
+        "url": "https://elpais.com/planeta-futuro/2025-12-10/granjas-que-agonizan-y-familias-desplazadas-la-sequia-en-iran-afecta-a-millones-de-personas.html",
+        "title": "Granjas que agonizan y familias desplazadas: la sequía en Irán afecta a millones de personas"
+      },
+      {
+        "rank": 8,
+        "url_id": 15493,
+        "url": "https://elpais.com/internacional/2025-12-09/el-ministro-ultra-israeli-itamar-ben-gvir-luce-un-pin-con-una-horca-en-defensa-de-la-pena-de-muerte-para-palestinos.html",
+        "title": "El ministro ultra israelí Itamar Ben Gvir exhibe su defensa de la pena de muerte para palestinos con un pin con forma de horca"
+      },
+      {
+        "rank": 9,
+        "url_id": 15639,
+        "url": "https://www.ft.com/content/ea36e244-4b2d-486e-881d-af7e1c25094a",
+        "title": "Trump gives Zelenskyy ‘days’ to respond to peace proposal"
+      },
+      {
+        "rank": 10,
+        "url_id": 15667,
+        "url": "https://www.ft.com/content/4f0e678d-2ff7-4a1e-8fa3-8be35b553585",
+        "title": "Donald Trump pledges to intervene as Thailand-Cambodia conflict flares"
+      },
+      {
+        "rank": 11,
+        "url_id": 15679,
+        "url": "https://www.ft.com/content/df510f08-56ee-4327-9d60-ebc1745daeb0",
+        "title": "Australia is first country to ban social media for children"
+      },
+      {
+        "rank": 12,
+        "url_id": 15632,
+        "url": "https://www.expansion.com/catalunya/2025/12/09/69387850468aeba9558b45a9.html",
+        "title": "Un juzgado investigará el brote de peste porcina y el sector cifra en 24 millones las pérdidas semanales"
+      },
+      {
+        "rank": 13,
+        "url_id": 15627,
+        "url": "https://www.expansion.com/economia/2025/12/10/69393c0be5fdea7c0a8b45aa.html?intcmp=NOT002",
+        "title": "El Consejo Europeo ve \"muy cerca\" un acuerdo para salvar financieramente a Ucrania"
+      },
+      {
+        "rank": 14,
+        "url_id": 15447,
+        "url": "https://elpais.com/deportes/el-montanista/2025-12-10/un-alpinista-acusado-de-homicidio-por-la-muerte-de-su-pareja-en-una-escalada-silencio-el-movil-y-rechazo-un-rescate-en-helicoptero.html",
+        "title": "Un alpinista, acusado de homicidio por la muerte de su pareja en una escalada: silenció el móvil y rechazó un rescate en helicóptero"
+      },
+      {
+        "rank": 15,
+        "url_id": 15278,
+        "url": "https://www.bbc.com/news/articles/c208vd511ljo",
+        "title": "Nobel officials unsure when Peace Prize winner will arrive for ceremony"
+      },
+      {
+        "rank": 16,
+        "url_id": 15260,
+        "url": "https://www.bbc.com/news/articles/cx2pn5dxd0go",
+        "title": "Thailand-Cambodia border conflict: US calls for end to hostilities as clashes enter third day"
+      },
+      {
+        "rank": 17,
+        "url_id": 15275,
+        "url": "https://www.bbc.com/news/articles/cyvgq5nr05yo",
+        "title": "Sierra Leone mining: Two young lives that ended in the search for gold"
+      },
+      {
+        "rank": 18,
+        "url_id": 15193,
+        "url": "https://www.abc.es/internacional/muertos-tras-derrumbe-dos-edificos-fez-marruecos-20251210100627-nt.html",
+        "title": "Al menos 19 muertos tras el derrumbe de dos edificios en Fez (Marruecos)"
+      },
+      {
+        "rank": 19,
+        "url_id": 15235,
+        "url": "https://www.abc.es/espana/andalucia/almeria/guardia-civil-apunta-pareja-madre-menor-garrucha-20251210082804-nts.html",
+        "title": "La Guardia Civil apunta a que la pareja de la madre del niño de Garrucha lo habría violado y golpeado hasta la muerte"
+      },
+      {
+        "rank": 20,
+        "url_id": 15349,
+        "url": "https://www.elconfidencial.com/espana/comunidad-valenciana/2025-12-10/violencia-machista-mujer-catarroja-1tna-1tps_4263285/",
+        "title": "Detenido el agresor de su pareja en Catarroja (Valencia), que murió 3 días después"
+      },
+      {
+        "rank": 21,
+        "url_id": 15367,
+        "url": "https://www.elconfidencial.com/tecnologia/novaceno/2025-12-09/china-investigacion-combustible-armas-hipersonicas_4263084/",
+        "title": "Científicos chinos encuentran una fuente inagotable de combustible para sus armas hipersónicas"
+      },
+      {
+        "rank": 22,
+        "url_id": 15432,
+        "url": "https://elpais.com/cultura/2025-12-10/muere-robe-iniesta-lider-de-extremoduro-a-los-63-anos.html",
+        "title": "Muere Robe Iniesta, fundador de Extremoduro y figura central en la música española, a los 63 años"
+      },
+      {
+        "rank": 23,
+        "url_id": 15443,
+        "url": "https://elpais.com/sociedad/2025-12-10/muere-una-mujer-en-catarroja-tras-tres-dias-en-la-uci-por-una-brutal-paliza-de-su-pareja.html",
+        "title": "Muere una mujer en Catarroja después de tres días en la UCI por una paliza de su pareja"
+      },
+      {
+        "rank": 24,
+        "url_id": 15470,
+        "url": "https://elpais.com/internacional/2025-12-10/el-regimen-de-tunez-choca-con-la-ue-y-se-ve-amenazado-por-los-sindicatos-tras-encarcelar-a-la-oposicion.html",
+        "title": "El régimen de Túnez choca con la UE y se ve amenazado por los sindicatos tras encarcelar a la oposición"
+      },
+      {
+        "rank": 25,
+        "url_id": 15765,
+        "url": "https://www.nytimes.com/2025/12/09/world/middleeast/iran-egypt-world-cup-seattle-pride.html",
+        "title": "Seattle’s Plans for a Pride Match at World Cup Infuriates Iran and Egypt"
+      }
+    ],
+    "urls_successfully_extracted": [
+      {
+        "rank": 1,
+        "url_id": 15725,
+        "url": "https://www.lemonde.fr/international/article/2025/12/10/face-aux-tensions-thailande-cambodge-plus-de-500-000-personnes-evacuent-les-regions-frontalieres_6656682_3210.html",
+        "title": "Face aux tensions Thaïlande-Cambodge, plus de 500 000 personnes évacuent les régions frontalières",
+        "method": "readability",
+        "word_count": 663
+      },
+      {
+        "rank": 2,
+        "url_id": 15716,
+        "url": "https://www.lemonde.fr/international/article/2025/12/10/la-mairie-de-miami-bascule-dans-le-camp-democrate-une-premiere-depuis-28-ans_6656686_3210.html",
+        "title": "La démocrate Eileen Higgins élue maire de Miami, en terre trumpiste, une première pour le parti depuis vingt-huit ans",
+        "method": "readability",
+        "word_count": 405
+      },
+      {
+        "rank": 3,
+        "url_id": 15717,
+        "url": "https://www.lemonde.fr/afrique/article/2025/12/10/rdc-la-region-des-grands-lacs-plus-que-jamais-en-proie-a-la-guerre-une-semaine-apres-la-paix-signee-a-washington_6656708_3212.html",
+        "title": "L’est de la RDC plus que jamais en proie à la guerre, une semaine après la « paix » signée à Washington",
+        "method": "llm_direct",
+        "word_count": 230
+      },
+      {
+        "rank": 4,
+        "url_id": 15760,
+        "url": "https://www.nytimes.com/2025/12/10/opinion/trum-maduro-venezuela.html",
+        "title": "Opinion | Trump Picked This Fight With Maduro. He Can’t Back Down.",
+        "method": "readability",
+        "word_count": 567
+      },
+      {
+        "rank": 5,
+        "url_id": 15743,
+        "url": "https://www.nytimes.com/2025/12/09/us/politics/trump-nvidia-ai-chips-china.html",
+        "title": "Trump’s Nvidia Chip Deal Reverses Decades of Technology Restrictions",
+        "method": "readability",
+        "word_count": 372
+      },
+      {
+        "rank": 6,
+        "url_id": 15435,
+        "url": "https://elpais.com/internacional/2025-12-10/maria-corina-machado-no-asistira-a-la-ceremonia-de-entrega-de-los-premios-nobel.html",
+        "title": "La líder opositora María Corina Machado logra salir de Venezuela: “Estaré en Oslo, estoy de camino”",
+        "method": "readability",
+        "word_count": 924
+      },
+      {
+        "rank": 7,
+        "url_id": 15472,
+        "url": "https://elpais.com/planeta-futuro/2025-12-10/granjas-que-agonizan-y-familias-desplazadas-la-sequia-en-iran-afecta-a-millones-de-personas.html",
+        "title": "Granjas que agonizan y familias desplazadas: la sequía en Irán afecta a millones de personas",
+        "method": "readability",
+        "word_count": 1460
+      },
+      {
+        "rank": 8,
+        "url_id": 15493,
+        "url": "https://elpais.com/internacional/2025-12-09/el-ministro-ultra-israeli-itamar-ben-gvir-luce-un-pin-con-una-horca-en-defensa-de-la-pena-de-muerte-para-palestinos.html",
+        "title": "El ministro ultra israelí Itamar Ben Gvir exhibe su defensa de la pena de muerte para palestinos con un pin con forma de horca",
+        "method": "readability",
+        "word_count": 1062
+      },
+      {
+        "rank": 9,
+        "url_id": 15639,
+        "url": "https://www.ft.com/content/ea36e244-4b2d-486e-881d-af7e1c25094a",
+        "title": "Trump gives Zelenskyy ‘days’ to respond to peace proposal",
+        "method": "llm_direct",
+        "word_count": 223
+      },
+      {
+        "rank": 10,
+        "url_id": 15667,
+        "url": "https://www.ft.com/content/4f0e678d-2ff7-4a1e-8fa3-8be35b553585",
+        "title": "Donald Trump pledges to intervene as Thailand-Cambodia conflict flares",
+        "method": "llm_direct",
+        "word_count": 224
+      },
+      {
+        "rank": 11,
+        "url_id": 15679,
+        "url": "https://www.ft.com/content/df510f08-56ee-4327-9d60-ebc1745daeb0",
+        "title": "Australia is first country to ban social media for children",
+        "method": "json_ld",
+        "word_count": 206
+      },
+      {
+        "rank": 12,
+        "url_id": 15632,
+        "url": "https://www.expansion.com/catalunya/2025/12/09/69387850468aeba9558b45a9.html",
+        "title": "Un juzgado investigará el brote de peste porcina y el sector cifra en 24 millones las pérdidas semanales",
+        "method": "json_ld",
+        "word_count": 438
+      },
+      {
+        "rank": 13,
+        "url_id": 15627,
+        "url": "https://www.expansion.com/economia/2025/12/10/69393c0be5fdea7c0a8b45aa.html?intcmp=NOT002",
+        "title": "El Consejo Europeo ve \"muy cerca\" un acuerdo para salvar financieramente a Ucrania",
+        "method": "json_ld",
+        "word_count": 412
+      },
+      {
+        "rank": 14,
+        "url_id": 15447,
+        "url": "https://elpais.com/deportes/el-montanista/2025-12-10/un-alpinista-acusado-de-homicidio-por-la-muerte-de-su-pareja-en-una-escalada-silencio-el-movil-y-rechazo-un-rescate-en-helicoptero.html",
+        "title": "Un alpinista, acusado de homicidio por la muerte de su pareja en una escalada: silenció el móvil y rechazó un rescate en helicóptero",
+        "method": "readability",
+        "word_count": 934
+      },
+      {
+        "rank": 15,
+        "url_id": 15278,
+        "url": "https://www.bbc.com/news/articles/c208vd511ljo",
+        "title": "Nobel officials unsure when Peace Prize winner will arrive for ceremony",
+        "method": "readability",
+        "word_count": 319
+      },
+      {
+        "rank": 16,
+        "url_id": 15260,
+        "url": "https://www.bbc.com/news/articles/cx2pn5dxd0go",
+        "title": "Thailand-Cambodia border conflict: US calls for end to hostilities as clashes enter third day",
+        "method": "readability",
+        "word_count": 475
+      },
+      {
+        "rank": 17,
+        "url_id": 15275,
+        "url": "https://www.bbc.com/news/articles/cyvgq5nr05yo",
+        "title": "Sierra Leone mining: Two young lives that ended in the search for gold",
+        "method": "readability",
+        "word_count": 1063
+      },
+      {
+        "rank": 18,
+        "url_id": 15193,
+        "url": "https://www.abc.es/internacional/muertos-tras-derrumbe-dos-edificos-fez-marruecos-20251210100627-nt.html",
+        "title": "Al menos 19 muertos tras el derrumbe de dos edificios en Fez (Marruecos)",
+        "method": "json_ld",
+        "word_count": 184
+      },
+      {
+        "rank": 19,
+        "url_id": 15235,
+        "url": "https://www.abc.es/espana/andalucia/almeria/guardia-civil-apunta-pareja-madre-menor-garrucha-20251210082804-nts.html",
+        "title": "La Guardia Civil apunta a que la pareja de la madre del niño de Garrucha lo habría violado y golpeado hasta la muerte",
+        "method": "json_ld",
+        "word_count": 495
+      },
+      {
+        "rank": 20,
+        "url_id": 15349,
+        "url": "https://www.elconfidencial.com/espana/comunidad-valenciana/2025-12-10/violencia-machista-mujer-catarroja-1tna-1tps_4263285/",
+        "title": "Detenido el agresor de su pareja en Catarroja (Valencia), que murió 3 días después",
+        "method": "readability",
+        "word_count": 418
+      },
+      {
+        "rank": 21,
+        "url_id": 15367,
+        "url": "https://www.elconfidencial.com/tecnologia/novaceno/2025-12-09/china-investigacion-combustible-armas-hipersonicas_4263084/",
+        "title": "Científicos chinos encuentran una fuente inagotable de combustible para sus armas hipersónicas",
+        "method": "readability",
+        "word_count": 794
+      },
+      {
+        "rank": 22,
+        "url_id": 15432,
+        "url": "https://elpais.com/cultura/2025-12-10/muere-robe-iniesta-lider-de-extremoduro-a-los-63-anos.html",
+        "title": "Muere Robe Iniesta, fundador de Extremoduro y figura central en la música española, a los 63 años",
+        "method": "readability",
+        "word_count": 2006
+      },
+      {
+        "rank": 23,
+        "url_id": 15443,
+        "url": "https://elpais.com/sociedad/2025-12-10/muere-una-mujer-en-catarroja-tras-tres-dias-en-la-uci-por-una-brutal-paliza-de-su-pareja.html",
+        "title": "Muere una mujer en Catarroja después de tres días en la UCI por una paliza de su pareja",
+        "method": "readability",
+        "word_count": 795
+      },
+      {
+        "rank": 24,
+        "url_id": 15470,
+        "url": "https://elpais.com/internacional/2025-12-10/el-regimen-de-tunez-choca-con-la-ue-y-se-ve-amenazado-por-los-sindicatos-tras-encarcelar-a-la-oposicion.html",
+        "title": "El régimen de Túnez choca con la UE y se ve amenazado por los sindicatos tras encarcelar a la oposición",
+        "method": "readability",
+        "word_count": 1346
+      },
+      {
+        "rank": 25,
+        "url_id": 15765,
+        "url": "https://www.nytimes.com/2025/12/09/world/middleeast/iran-egypt-world-cup-seattle-pride.html",
+        "title": "Seattle’s Plans for a Pride Match at World Cup Infuriates Iran and Egypt",
+        "method": "xpath_cache",
+        "word_count": 401
+      }
+    ],
+    "urls_failed_extraction": [],
+    "extraction_stats": {
+      "total_requested": 25,
+      "total_success": 25,
+      "total_failed": 0,
+      "success_rate": 100.0
+    }
+  },
+  "articles": [
+    {
+      "processing_rank": 1,
+      "url_id": 15725,
+      "url": "https://www.lemonde.fr/international/article/2025/12/10/face-aux-tensions-thailande-cambodge-plus-de-500-000-personnes-evacuent-les-regions-frontalieres_6656682_3210.html",
+      "title": "Face aux tensions Thaïlande-Cambodge, plus de 500 000 personnes évacuent les régions frontalières",
+      "source": "www.lemonde.fr",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 663,
+      "archive_url": null,
+      "full_content": "Des Thaïlandais évacués vers un abri temporaire après les affrontements à la frontière entre la Thaïlande et le Cambodge, dans la province de Buriram (Thaïlande), le 8 décembre 2025. SAROT MEKSOPHAWANNAKUL / THAI NEWS PIX / AFP Les autorités de la Thaïlande et du Cambodge ont annoncé, mercredi 10 décembre, que plus de 500 000 personnes avaient été évacuées des régions frontalières depuis la reprise des affrontements, dimanche. _« Plus de 400 000 personnes ont été déplacées vers des abris »_, a déclaré lors d’un point presse le porte-parole du ministère de la défense thaïlandais, Surasant Kongsiri. _« Les civils ont dû évacuer massivement en raison de ce que nous avons évalué comme une menace imminente pour leur sécurité »_, a-t-il ajouté. _« Au total, 20 105 familles, soit 101 229 personnes, ont été évacuées vers des abris et chez des proches dans cinq provinces »_, a, pour sa part, déclaré la porte-parole du ministère de la défense cambodgien, Maly Socheata. ## Au moins onze morts dans les récents affrontements Les deux pays s’accusent mutuellement d’avoir déclenché la reprise des hostilités, qui ont fait au moins onze morts: sept civils cambodgiens et quatre soldats thaïlandais, selon les derniers bilans des autorités. Le Cambodge et la Thaïlande, qui se disputent de longue date des morceaux de territoire le long de leur frontière, s’étaient déjà affrontés en juillet. Cinq jours de combats, au sol et dans les airs, avaient fait 43 morts et contraint quelque 300 000 personnes à évacuer de part et d’autre. Des tirs d’artillerie résonnaient, mercredi matin, dans le village cambodgien quasi désert de Samraong, à quelques kilomètres de la frontière et de plusieurs temples historiques revendiqués par la Thaïlande. _« Les combats sont plus intenses cette fois_ [qu’en juillet]_, les Thaïlandais larguent des bombes avec des avions de chasse »_, a dit à l’Agence France-Presse (AFP) Lay Non, qui a trouvé refuge dans une pagode de la province de Siem Reap. De l’autre côté de la frontière, Niam Poda faisait sa lessive lundi chez elle, dans la province thaïlandaise de Sa Kaeo, lorsqu’une forte explosion a retenti. _« J’ai dû courir pour sauver ma vie dès que j’ai pu »_, a témoigné l’agricultrice de 62 ans. ## Donald Trump prévoit « de passer un appel » La Thaïlande poursuivra ses opérations militaires jusqu’à ce que le Cambodge _« change de position »_, a affirmé, mardi soir, le ministère de la défense thaïlandais, sans montrer de signes d’apaisement. Les deux parties avaient signé le 26 octobre un accord de cessez-le-feu, sous l’égide de Washington, mais il a depuis été suspendu. Leur conflit repose sur un différend ancien concernant le tracé de certaines parties de leur frontière – longue de 800 kilomètres – datant de la colonisation française. Mardi, lors d’un discours devant ses partisans en Pennsylvanie, Donald Trump a déclaré qu’il prévoyait _« de passer un appel »_ au sujet du conflit Cambodge-Thaïlande. _« Je pense qu’ils s’en sortiront_, a-t-il poursuivi. _Qui d’autre pourrait dire: “Je vais passer un coup de fil et arrêter une guerre entre deux pays très puissants” »_, a-t-il relevé. ## Le Cambodge se retire des Jeux d’Asie du Sud-Est Dans ce contexte, le Cambodge a décidé de se retirer des Jeux d’Asie du Sud-Est organisés en Thaïlande, a fait savoir, mercredi à l’AFP, Akarin Hiranprueck, un haut responsable de la compétition sportive. Des membres de la délégation cambodgienne avaient participé mardi au défilé des athlètes, lors de la cérémonie d’ouverture à Bangkok, ville hôte au même titre que la province côtière de Chonburi. La cérémonie a eu lieu sous haute sécurité, en présence de membres de la famille royale thaïlandaise. Le Comité national olympique cambodgien (NOCC) avait déjà annoncé à la fin de novembre que ses athlètes ne participeraient pas aux épreuves concernant huit disciplines _« en raison d’importants problèmes de sécurité »_. Des milliers d’athlètes originaires de onze pays asiatiques doivent prendre part jusqu’au 20 décembre à des épreuves de football, skateboard, voile ou encore d’escrime.",
+      "content_preview": "Des Thaïlandais évacués vers un abri temporaire après les affrontements à la frontière entre la Thaïlande et le Cambodge, dans la province de Buriram (Thaïlande), le 8 décembre 2025. SAROT MEKSOPHAWANNAKUL / THAI NEWS PIX / AFP Les autorités de la Thaïlande et du Cambodge ont annoncé, mercredi 10 décembre, que plus de 500 000 personnes avaient été évacuées des régions frontalières depuis la reprise des affrontements, dimanche. _« Plus de 400 000 personnes ont été déplacées vers des abris »_, a d..."
+    },
+    {
+      "processing_rank": 2,
+      "url_id": 15716,
+      "url": "https://www.lemonde.fr/international/article/2025/12/10/la-mairie-de-miami-bascule-dans-le-camp-democrate-une-premiere-depuis-28-ans_6656686_3210.html",
+      "title": "La démocrate Eileen Higgins élue maire de Miami, en terre trumpiste, une première pour le parti depuis vingt-huit ans",
+      "source": "www.lemonde.fr",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 405,
+      "archive_url": null,
+      "full_content": "La maire élue de Miami (Floride), Eileen Higgins, célèbre sa victoire lors de la soirée électorale organisée au Miami Women’s Club, le 9 décembre 2025. JOE RAEDLE / AFP Les démocrates font un retour inattendu à Miami. Eileen Higgins a remporté, mardi 9 décembre, la mairie de cette grande ville de Floride, Etat du sud-est des Etats-Unis qui a majoritairement voté pour Donald Trump aux trois derniers scrutins présidentiels. C’est une première depuis vingt-huit ans dans la capitale financière du « Sunshine State » (« l’Etat ensoleillé »). Eileen Higgins s’est imposée avec environ 60 % des suffrages face au candidat républicain Emilio T. Gonzalez soutenu par l’actuel président américain, selon les projections de la chaîne CNN et du quotidien _Miami Herald_. Elle devient la première femme à la tête de la ville. Son concurrent a déclaré l’avoir appelée pour la féliciter. Cette victoire, dans un Etat où Donald Trump passe la plupart de ses week-ends, dans sa résidence de Mar-a-Lago, vient prolonger une série de succès des démocrates. Ils ont notamment remporté cet automne les élections au poste de gouverneur en Virginie et dans le New Jersey, ainsi que [la mairie de New York]( A Miami, Mme Higgins, 61 ans, a promis _« une gouvernance éthique et responsable qui produit des résultats concrets pour la population »_. Son programme électoral comprenait la recherche de terrains appartenant à la ville, qui pourraient être transformés en logements abordables. ## Un faible taux de participation _« Nous sommes confrontés, de la part d’élus, à des propos tellement déshumanisants et cruels, en particulier envers les populations immigrées »_, a déclaré Eileen Higgins à l’agence Associated Press après sa victoire. _« Les habitants de Miami en avaient assez »_, a-t-elle ajouté. Son élection a été marquée par un taux de participation de 20 % seulement, dans une ville comportant une large population d’origine cubaine, traditionnellement acquise aux républicains. La cote de popularité de Donald Trump a chuté à son plus bas niveau depuis son retour au pouvoir, en janvier, notamment en raison du coût de la vie, que les Américains imputent en partie à sa politique en matière de droits de douane, selon les sondages. _« Le résultat de ce soir est un nouveau signal d’alarme pour les républicains: les électeurs en ont assez de leur programme déconnecté de la réalité qui fait grimper les coûts »_, a déclaré Ken Martin, président du comité national démocrate, dans un communiqué.",
+      "content_preview": "La maire élue de Miami (Floride), Eileen Higgins, célèbre sa victoire lors de la soirée électorale organisée au Miami Women’s Club, le 9 décembre 2025. JOE RAEDLE / AFP Les démocrates font un retour inattendu à Miami. Eileen Higgins a remporté, mardi 9 décembre, la mairie de cette grande ville de Floride, Etat du sud-est des Etats-Unis qui a majoritairement voté pour Donald Trump aux trois derniers scrutins présidentiels. C’est une première depuis vingt-huit ans dans la capitale financière du « ..."
+    },
+    {
+      "processing_rank": 3,
+      "url_id": 15717,
+      "url": "https://www.lemonde.fr/afrique/article/2025/12/10/rdc-la-region-des-grands-lacs-plus-que-jamais-en-proie-a-la-guerre-une-semaine-apres-la-paix-signee-a-washington_6656708_3212.html",
+      "title": "L’est de la RDC plus que jamais en proie à la guerre, une semaine après la « paix » signée à Washington",
+      "source": "www.lemonde.fr",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "llm_direct",
+      "extraction_error": null,
+      "word_count": 230,
+      "archive_url": null,
+      "full_content": "Une semaine après la signature d'un accord de paix à Washington, la région des Grands Lacs, et plus particulièrement l'est de la République démocratique du Congo (RDC), est de nouveau en proie à la violence. Les combats entre les forces armées congolaises et les groupes armés se sont intensifiés, entraînant des déplacements massifs de populations et une détérioration de la situation humanitaire. Les tensions sont exacerbées par des rivalités ethniques et des luttes pour le contrôle des ressources naturelles. Les groupes armés, dont certains sont soutenus par des pays voisins, continuent de semer la terreur dans les villages, rendant la vie quotidienne insupportable pour des milliers de personnes. Les promesses de paix faites lors des négociations à Washington semblent désormais vaines, alors que les civils subissent les conséquences de ce cycle de violence. Les organisations humanitaires alertent sur l'urgence de la situation, appelant à une intervention internationale pour protéger les populations vulnérables. Les autorités congolaises, tout en affirmant leur engagement envers la paix, peinent à contenir la montée des violences. Les forces de sécurité sont souvent accusées de ne pas agir avec suffisamment de fermeté contre les groupes armés, laissant les civils à la merci de ces derniers. Dans ce contexte chaotique, les espoirs d'une résolution pacifique du conflit s'amenuisent. Les habitants de l'est de la RDC continuent de vivre dans la peur, attendant désespérément une amélioration de leur situation.",
+      "content_preview": "Une semaine après la signature d'un accord de paix à Washington, la région des Grands Lacs, et plus particulièrement l'est de la République démocratique du Congo (RDC), est de nouveau en proie à la violence. Les combats entre les forces armées congolaises et les groupes armés se sont intensifiés, entraînant des déplacements massifs de populations et une détérioration de la situation humanitaire. Les tensions sont exacerbées par des rivalités ethniques et des luttes pour le contrôle des ressource..."
+    },
+    {
+      "processing_rank": 4,
+      "url_id": 15760,
+      "url": "https://www.nytimes.com/2025/12/10/opinion/trum-maduro-venezuela.html",
+      "title": "Opinion | Trump Picked This Fight With Maduro. He Can’t Back Down.",
+      "source": "www.nytimes.com",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 567,
+      "archive_url": null,
+      "full_content": "On Wednesday in Oslo, officials are holding an award ceremony for the Venezuelan opposition leader María Corina Machado, who won this year’s Nobel Peace Prize for her efforts to promote democracy in Venezuela. But in Washington her insistence that President Nicolás Maduro must go, and the Trump administration’s apparent agreement, has been making people nervous. Critics warn that ousting Mr. Maduro could turn the country into another Iraq or a Libya on the Caribbean — a collapsed state, carved up by armed factions, worse than the dictatorship it replaced. Better, they say, to live with an odious ruler than to risk another chaotic experiment in regime change. This is the wrong analogy. It misunderstands what Venezuela has achieved and what is at stake for the United States in the struggle for Venezuela’s future. In light of the diplomatic pressure and military assets Washington has committed to the Caribbean, backing off now would not avoid disaster; it would constitute one. It would signal that a criminal dictatorship masquerading as a state can stare down the United States and win. Venezuela has done what Iraq and Libya, also under the thumbs of dictators, didn’t get the chance to do: It has cast its votes for a new government. The opposition candidate Edmundo González is widely believed to have won the country’s 2024 presidential election. Tally sheets gathered and preserved by tens of thousands of volunteers across the country [showed]( Mr. González leading by almost 40 points, winning in every state and in about 90 percent of Venezuela’s 335 municipalities. [Independent]( analyses validate the veracity of these results. Assuming these figures are accurate, this was not a marginal, contested outcome. It was a societal landslide achieved despite regime repression, persecution and [the disenfranchisement]( of up to three million eligible voters in the country, as well as most of the eight million or so Venezuelans living abroad. This is what Ms. Machado means when she insists that her movement is “not asking for regime change” but asking for “respect of the will of the people. ” The comparison so often made in Washington these days between Ms. Machado and Ahmad Chalabi, the longtime exile who persuaded George W. Bush that Iraq would be a cakewalk, gets things backward. Iraq’s political order after the 2003 U. S. invasion was designed in a hurry under American occupation and essentially imposed from the outside. Venezuela’s new order-in-waiting has already been chosen by the country’s people. The opposition does not hold the guns. It may command democratic legitimacy and popular support, but it has no militias, no armed insurgency and no territorial control. The armed forces remain the single dominant coercive institution in the country. This configuration makes civil war unlikely — you need at least two comparable armed factions for that — but also makes regime change from below next to impossible. That is why credible military pressure matters; in its absence, there is no reason for insiders to break with the regime. We are having trouble retrieving the article content. Please enable JavaScript in your browser settings. * * * Thank you for your patience while we verify access. If you are in Reader mode please exit and [log into]( your Times account, or [subscribe]( for all of The Times. * * * Thank you for your patience while we verify access. Already a subscriber? [Log in]( Want all of The Times? [Subscribe](",
+      "content_preview": "On Wednesday in Oslo, officials are holding an award ceremony for the Venezuelan opposition leader María Corina Machado, who won this year’s Nobel Peace Prize for her efforts to promote democracy in Venezuela. But in Washington her insistence that President Nicolás Maduro must go, and the Trump administration’s apparent agreement, has been making people nervous. Critics warn that ousting Mr. Maduro could turn the country into another Iraq or a Libya on the Caribbean — a collapsed state, carved u..."
+    },
+    {
+      "processing_rank": 5,
+      "url_id": 15743,
+      "url": "https://www.nytimes.com/2025/12/09/us/politics/trump-nvidia-ai-chips-china.html",
+      "title": "Trump’s Nvidia Chip Deal Reverses Decades of Technology Restrictions",
+      "source": "www.nytimes.com",
+      "category": "tecnologia",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 372,
+      "archive_url": null,
+      "full_content": "In the first few months after President Trump returned to the White House, he held firm to an American technology policy that stretches back to the depths of the Cold War. Don’t sell your adversaries America’s most advanced technology, the thinking went in those early months — starting with the computing power that has given the United States its edge in space and cyberspace, and in designing nuclear weapons and next-generation fighters. But all that began to change a few months ago. A handful of the nation’s richest technology executives and Mr. Trump’s own artificial intelligence chief, David Sacks, arrived in Washington with a counterargument: that America’s best bet is to suck China and other nations into the “American tech stack, ” the layer cake of American hardware and software that would make China’s users dependent on the most advanced chips in the American arsenal. Quickly that argument focused on the chips designed by Nvidia, now the world’s largest company, at least when measured by its $4. 48 trillion market capitalization. The company won a huge victory late Monday afternoon, when Mr. Trump declared on his social media account that he was freeing Nvidia to sell its second most powerful chip, known as the H200, to China. The chip gives the Chinese a chance to speed ahead in the neck-and-neck artificial intelligence race. China’s own top executives, even the leaders of its most successful A. I. venture, DeepSeek, complain that their progress is limited by a shortage of computing power. Mr. Trump offered little rationale behind the decision, and said nothing about the intense lobbying by Jensen Huang, Nvidia’s chief executive and a frequent visitor to the White House. But he did say that in return, 25 percent of all the revenues from the sales would go to the United States. We are having trouble retrieving the article content. Please enable JavaScript in your browser settings. * * * Thank you for your patience while we verify access. If you are in Reader mode please exit and [log into]( your Times account, or [subscribe]( for all of The Times. * * * Thank you for your patience while we verify access. Already a subscriber? [Log in]( Want all of The Times? [Subscribe](",
+      "content_preview": "In the first few months after President Trump returned to the White House, he held firm to an American technology policy that stretches back to the depths of the Cold War. Don’t sell your adversaries America’s most advanced technology, the thinking went in those early months — starting with the computing power that has given the United States its edge in space and cyberspace, and in designing nuclear weapons and next-generation fighters. But all that began to change a few months ago. A handful o..."
+    },
+    {
+      "processing_rank": 6,
+      "url_id": 15435,
+      "url": "https://elpais.com/internacional/2025-12-10/maria-corina-machado-no-asistira-a-la-ceremonia-de-entrega-de-los-premios-nobel.html",
+      "title": "La líder opositora María Corina Machado logra salir de Venezuela: “Estaré en Oslo, estoy de camino”",
+      "source": "elpais.com",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 924,
+      "archive_url": null,
+      "full_content": "La líder opositora venezolana [María Corina Machado]( \" galardonada con el [Nobel de la Paz]( \" de este año, ha logrado salir de Venezuela para viajar hacia Oslo, la capital noruega, aunque no podrá acudir a la ceremonia de entrega del premio, que se celebrará este miércoles en el Ayuntamiento de la ciudad, según ha informado el Instituto Nobel noruego. “Ha hecho todo lo posible para asistir a la ceremonia de hoy. Un viaje en una situación de extremo peligro”, [ha comunicado la organización en una breve nota]( \" “Estamos profundamente felices de confirmar que ella está a salvo y que estará con nosotros en Oslo”. “Estaré en Oslo, estoy en camino”, ha dicho Machado en una conversación telefónica con el secretario del Comité Nobel Noruego, Jørgen Watne Frydnes, [difundida por la organización]( \" En la charla mantenida entre los dos, Machado ha agradecido de nuevo el galardón y los esfuerzos de todos los que han arriesgado sus vidas. “Siento decirte que no podré llegar a tiempo a la ceremonia”, ha manifestado al teléfono la líder opositora pocos minutos antes de coger un avión, como ella misma ha confesado a Watne Frydnes. “Sé que hay muchos venezolanos que sí han podido llegar a Oslo, así como mi familia y mi equipo”, ha proseguido Machado, “tan pronto como llegue, podré abrazar a mi familia e hijos, que no he visto en dos años, así como a tantos venezolanos y noruegos que sé que comparten nuestra lucha y esfuerzo”. La posible llegada de Machado a Noruega ha causado una enorme expectación dentro y fuera de Venezuela. En un inicio, se esperaba que la dirigente opositora, de 58 años, apareciera por primera vez en Noruega en la tradicional rueda de prensa que precede a la ceremonia de entrega, prevista para el martes a la una de la tarde (hora local y de la España peninsular, ocho de la mañana en Venezuela). El encuentro con los medios de comunicación fue pospuesto y después cancelado definitivamente por los organizadores. “La propia María Corina Machado ha afirmado en entrevistas a medios [lo desafiante que será su viaje a Oslo]( \" Por eso, en este punto no podemos dar ninguna información sobre cuándo ni cómo va a llegar a la ceremonia del premio Nobel de la Paz”, informó Erik Aasheim, portavoz del Instituto del Nobel, que adelantó hace un par de semanas la intención de la líder opositora de viajar al país escandinavo para recoger el premio. El Instituto Nobel noruego informó a primera hora del miércoles de que la opositora no estaría en la gala en Oslo. “Lamentablemente, no se encuentra en Noruega ahora. Y no estará en el escenario del Ayuntamiento de Oslo a la una de hoy, cuando comience la ceremonia”, agregó el director del [Instituto Nobel]( \" Ana Corina Sosa, la hija de Machado, será quien recoja el premio en su honor: una medalla y un diploma. Tradicionalmente, después de que el Comité Noruego del Nobel expone las razones por las que concede el premio durante la ceremonia, la persona ganadora o alguien en su representación pronuncia un discurso, conocido tradicionalmente como la conferencia Nobel. “Simplemente, vive bajo la amenaza de muerte del régimen”, señaló el director del Instituto noruego sobre las dificultades logísticas para poder contar con la presencia de Machado. “Esa amenaza también se aplica cuando está fuera del país, tanto por parte del régimen como de los amigos del régimen en todo el mundo”, agregó Harpviken. El equipo de Machado aún no ha dado a conocer las razones por las que no podrá estar presente ni información sobre dónde se encuentra la líder opositora. “Es una pena, siempre es mejor cuando el ganador del Nobel está presente”, lamentó el ministro de Exteriores noruego, Espen Barth Eide, en declaraciones a la prensa de su país. La política conservadora ha estado en paradero desconocido desde agosto de 2024, apenas unas semanas después de que se celebraran las elecciones presidenciales en Venezuela del año pasado, en las que [Nicolás Maduro]( \" se declaró ganador, pese a las acusaciones de fraude y al recuento que presentó la oposición y que favorecía al exdiplomático [Edmundo González]( \" por amplio margen. Machado, la figura más visible de la disidencia al régimen chavista, se había impuesto en las primarias de la oposición con un 93% de las preferencias, pero fue inhabilitada por las autoridades electorales para participar y se volcó en apoyar la candidatura de González. El Instituto Nobel noruego anunció el premio para Machado el pasado 10 de octubre, en pleno pico de [las tensiones entre Estados Unidos y Venezuela]( \" por el despliegue militar ordenado por [Donald Trump]( \" en aguas del Caribe. Desde entonces se ha barajado la posibilidad de que la líder opositora salga del país, así como sus implicaciones políticas. En paralelo a la ceremonia formal de entrega, se espera también que los cientos de venezolanos que han hecho el viaje puedan seguir el acto en una plaza contigua al Centro Nobel de la Paz y a unos metros del Ayuntamiento de Oslo. La tradicional [procesión de las antorchas]( \" y un banquete encabezado por altos cargos del Gobierno, el poder judicial y la monarquía de Noruega son otras actividades programadas para este miércoles. Cuatro presidentes latinoamericanos han sido invitados por la líder opositora venezolana. José Raúl Mulino, de Panamá, llegó el lunes a la capital noruega. El martes aterrizaron el controvertido Javier Milei, de Argentina, y Santiago Peña, de Paraguay. Se espera que el último en sumarse, este mismo miércoles, sea Daniel Noboa, de Ecuador.",
+      "content_preview": "La líder opositora venezolana [María Corina Machado]( \" galardonada con el [Nobel de la Paz]( \" de este año, ha logrado salir de Venezuela para viajar hacia Oslo, la capital noruega, aunque no podrá acudir a la ceremonia de entrega del premio, que se celebrará este miércoles en el Ayuntamiento de la ciudad, según ha informado el Instituto Nobel noruego. “Ha hecho todo lo posible para asistir a la ceremonia de hoy. Un viaje en una situación de extremo peligro”, [ha comunicado la organización en u..."
+    },
+    {
+      "processing_rank": 7,
+      "url_id": 15472,
+      "url": "https://elpais.com/planeta-futuro/2025-12-10/granjas-que-agonizan-y-familias-desplazadas-la-sequia-en-iran-afecta-a-millones-de-personas.html",
+      "title": "Granjas que agonizan y familias desplazadas: la sequía en Irán afecta a millones de personas",
+      "source": "elpais.com",
+      "category": "tecnologia",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 1460,
+      "archive_url": null,
+      "full_content": "El huerto que una vez fue el legado familiar de Mina casi no registra ningún movimiento. La matriarca de 68 años, procedente de Bukan, al oeste de[ Irán]( \" camina con impotencia entre los restos de manzanos y cerezos que antaño alimentaron a sus hijos y sustentaron a su comunidad. La pérdida de ingresos ha obligado a su familia y a los lugareños a mudarse a otras partes del país, especialmente a la capital, Teherán, en la que viven unos 10 millones de personas y donde tampoco hay agua suficiente. Irán suma seis años de sequía y, ahora, con [la amenaza que pesa sobre Teherán de una posible evacuación de parte de la población por la falta de agua]( \" familias como la de Mina se enfrentan a la incertidumbre sin tener claro a dónde ir. “Ya no podemos elegir cultivos en función de la rentabilidad; debemos elegir por supervivencia”, dice Leyla, la nieta de Mina, en una entrevista telefónica. Algunos miembros de su familia ahora cultivan alimentos resistentes[ a la sequía]( \" como cebada, trigo y una cosecha limitada de remolacha. “Tememos perder todas nuestras tierras fértiles, como ya les ha pasado a muchos de nuestros vecinos. Los precios se han desplomado y vender los terrenos es imposible. Algunos agricultores de nuestra comunidad han recurrido a medidas arriesgadas e ilegales, como la perforación de pozos no autorizados, solo para asegurar la supervivencia de sus hijos”, añade Leyla. Irán gasta gran parte de su agua en agricultura, [un porcentaje que algunos estudios elevan a hasta el 90%]( \" Esta proviene de presas y acuíferos que, cada vez, tienen menos recursos como consecuencia de la disminución de las lluvias: las autoridades han reportado que [las precipitaciones se han desplomado un 96%]( \" en comparación con el año pasado. También juegan en contra las altas temperaturas ―en algunas zonas, [las olas de calor han elevado los termómetros por encima de los 50°C]( \" y la gestión deficiente de las autoridades, según explican los expertos. Según datos de la Compañía de Gestión de Recursos Hídricos, 19 presas están a punto de secarse y actualmente se encuentran a menos del 5% de su capacidad. Vestigios del lago Maharloo, en la provincia de Fars, Irán, el 12 de noviembre de 2025. Ali Mohammadi Rad ### Una ciudad al borde del abismo La escasez de agua en las provincias de Irán se ha extendido hasta[ la capital]( \" En un nuevo golpe a la creciente crisis hídrica del país, [el presidente iraní, Masud Pezeshkian]( \" sugirió a principios de noviembre que debían evacuar la ciudad. “No tenemos otra opción. La reubicación es una necesidad. No podemos saturar esta región con más población y construcciones”, declaró. Uno de los posibles destinos de reubicación es la región de Makrán, en el sur, al otro extremo de Irán. La advertencia de evacuación ha dejado sumidos en el miedo a los que se han desplazado a la capital. “Han cortado el suministro de agua durante horas al día en mi barrio. En otros ya se ha acabado. Toda esta crisis del agua es solo una de las situaciones catastróficas a las que nos ha llevado este régimen”, afirma, por teléfono, Meher Hosseini, residente de Teherán de 40 años. > Irán no ha sido inteligente en el ahorro de agua. Gastó dinero en grandes proyectos hídricos que enriquecieron a unos pocos y dejó el camino libre para que la Guardia Revolucionaria gastara los recursos que debían haber sido destinados a la gestión > > Nik Kowsar Hosseini reconoce que [las sanciones económicas impuestas por la UE a Irán]( \" pueden haber mermado la capacidad del gobierno ―al limitar sus posibilidades de atraer inversiones extranjeras para atender el problema―, pero responsabiliza plenamente a las autoridades por ignorar las medidas recomendadas por los especialistas en agua. [Uno de estos analistas es Nik Kowsar]( \" quien en declaraciones a EL PAÍS cuenta que en 2001 advirtió al entonces presidente, [Mohamed Jatamí, ]( \" sus políticas llevarían al país a un desastre. “Jatamí me citó a su oficina en 2001 y, tras informarle, desestimó muchos de mis argumentos. Más tarde descubrí que muchos miembros de su entorno colaboraban estrechamente con la Guardia Revolucionaria en la construcción de muchas de las presas del país. También he escrito sobre la mafia del agua [Kowsar es, además, periodista] y cómo las organizaciones que la respaldan han desempeñado un papel fundamental en esta crisis”, declara por teléfono. A pesar de que sus advertencias fueron ignoradas en el pasado, Kowsar señala las reformas urgentes que, en su opinión, aún son posibles si las autoridades actúan con decisión. “Es innegable que el cambio climático ya nos ha alcanzado, pero aun así es clave gestionar bien los recursos. Irán no ha sido inteligente en el ahorro de agua. Gastó dinero en grandes proyectos hídricos que enriquecieron a unos pocos y dejó el camino libre para que [la Guardia Revolucionaria lavara dinero]( \" destinado a la gestión del agua a través de intermediarios”, denuncia. ### Estudiantes, agricultores y los más vulnerables sufren Con la amenaza del llamado “Día Cero” sobre [Teherán]( \" es decir, el día en el que la demanda de agua supere el suministro disponible, quienes más sufren la crisis son los agricultores, las familias que viven en la pobreza y no pueden comprar tanques de agua y los estudiantes en residencias universitarias que han estado protestando por la falta de agua potable. Durante el último mes, estudiantes de varias universidades, como la Universidad de Teherán, la Universidad de Alzahra y la Universidad Tecnológica Sharif, han sufrido una grave escasez debido a la implementación de un plan de racionamiento que impuso el Gobierno. Ali Ramezani, editor jefe de [_Amirkabir. org/ \" un medio de comunicación del movimiento estudiantil iraní, relata a EL PAÍS que en algunas residencias el agua se ha cortado completamente durante la noche, a veces sin previo aviso. “La situación ha provocado pequeñas pero crecientes protestas. Sus demandas son simples: acceso al agua y comunicación transparente por parte de las universidades. Los estudiantes informan que las autoridades a menudo responden con soluciones temporales o promesas, pero que el problema reaparece al día siguiente”, asegura Ramezani por teléfono. Vestigios del lago Bakhtegan, en la provincia de Fars, Irán, el 24 de abril de 2025. Ali Mohammadi Rad Reza, activista de derechos civiles con sede en Teherán que pide que se cambie su nombre por seguridad, sostiene que la única razón por la que la crisis del agua es noticia “es porque afecta al corazón del régimen”, a Teherán. “Durante décadas, personas de otras regiones, especialmente los baluchis, han sido desplazadas debido a la discriminación. Incluso si esta situación mejora aquí, la gente de estas provincias tendrán que seguir luchando”, afirma. > Durante décadas, personas de otras regiones, especialmente los baluchis, han sido desplazadas debido a la discriminación. Incluso si esta situación mejora aquí, la gente de estas provincias tendrá que seguir luchando En cuanto a la situación de las comunidades rurales, Kowsar afirma que miles de personas se han mudado a barrios marginales. “La gente de Sistán-Baluchistán, Jorasán, Fars y Kermán se ha visto obligada a desplazarse porque el agua subterránea se ha agotado. Sin embargo, existen medidas que pueden ayudar a la gente a regresar. Yo trabajaba en la provincia de Fars, en la zona de Gareh-Bygone. Tardamos dos o tres años en recolectar agua de lluvia para recargar los acuíferos, y cuando los pozos funcionaron, los agricultores volvieron”, recuerda Kowsar. Incluso en los lugares donde las familias permanecen, el temor al desplazamiento está siempre presente. En Sistán-Baluchistán, Mohammad, un agricultor, explica la ansiedad que se cierne sobre su comunidad. “Me preocupa que si la crisis continúa y el agua se agota por completo, perderé mis cultivos y el poco ganado que me queda, y mi familia se quedará sin ingresos ni alimentos. Si esto pasa, nos veremos obligados a abandonar definitivamente nuestros pueblos”, dice Mohammad, quien solía cultivar plátanos y sandías, y ahora solamente tiene palmeras datileras que necesitan poca agua. Teme que, si la situación persiste, en unos dos años estas familias se enfrentarán a una catástrofe. “Es necesario reeducar sobre cómo consumir menos. En las grandes ciudades se infravalora la importancia de cuidar el agua, y la educación al respecto es deficiente. El agua es un derecho humano, pero la República Islámica no lo reconoce como tal. Varias etnias y provincias han sufrido discriminación en el suministro de agua; [la injusticia ambiental]( \" por parte del régimen ha generado pobreza hídrica en todo el país\", dice. “Si la situación actual continúa, me temo que quienes se vean obligados a abandonar sus hogares podrían intentar cruzar las fronteras. ¿Están nuestros vecinos y los países europeos preparados para tal éxodo? Sería una crisis humanitaria masiva”, reflexiona Kowsar.",
+      "content_preview": "El huerto que una vez fue el legado familiar de Mina casi no registra ningún movimiento. La matriarca de 68 años, procedente de Bukan, al oeste de[ Irán]( \" camina con impotencia entre los restos de manzanos y cerezos que antaño alimentaron a sus hijos y sustentaron a su comunidad. La pérdida de ingresos ha obligado a su familia y a los lugareños a mudarse a otras partes del país, especialmente a la capital, Teherán, en la que viven unos 10 millones de personas y donde tampoco hay agua suficient..."
+    },
+    {
+      "processing_rank": 8,
+      "url_id": 15493,
+      "url": "https://elpais.com/internacional/2025-12-09/el-ministro-ultra-israeli-itamar-ben-gvir-luce-un-pin-con-una-horca-en-defensa-de-la-pena-de-muerte-para-palestinos.html",
+      "title": "El ministro ultra israelí Itamar Ben Gvir exhibe su defensa de la pena de muerte para palestinos con un pin con forma de horca",
+      "source": "elpais.com",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 1062,
+      "archive_url": null,
+      "full_content": "Itamar Ben-Gvir, el [ultraderechista ministro de Seguridad Nacional de Israel, ]( \" se presentó este lunes en la Comisión de Seguridad Nacional del Parlamento israelí con un pin que representaba una horca prendido en la solapa de su chaqueta. Esa comisión examinaba el proyecto estrella de su partido, Poder Judío, que consiste en ampliar la pena de muerte que ya existe en la legislación israelí a los palestinos que asesinen a ciudadanos israelíes. Aunque el borrador de la ley no los menciona de forma explícita, tal y como está redactado, ellos serían la única categoría a quien se aplicaría esa nueva norma, que no recoge una pena análoga para los israelíes que asesinen a palestinos. El propio Ben Gvir dejó claro más tarde en un tuit que su gesto y el de sus correligionarios, que también lucieron el pin, es un símbolo de su “compromiso con la aprobación de una ley” para los “terroristas” (los palestinos) que, según escribió, “merecen morir”. En la víspera, los asesores legales del Comité de Seguridad Nacional habían puesto de relieve que el borrador es difícilmente compatible, no solo con las leyes internacionales firmadas por Israel, sino incluso con las leyes fundamentales israelíes que sirven de Constitución. Según su dictamen, el borrador prácticamente obliga a los jueces a imponer la pena capital en caso de asesinato de israelíes, por encima de las circunstancias en las que sucedan los hechos, lo que anula la discrecionalidad de los tribunales y supera incluso lo previsto en la legislación israelí para los responsables de los crímenes de la Alemania nazi. Ninguno de los delitos contemplados en las leyes israelíes que conllevan la pena de muerte obliga ahora a los jueces a aplicar esa pena capital, afirman los asesores legales. “Ni siquiera en la Ley de Castigo contra los Nazis y sus Colaboradores. Los tribunales siempre conservan su discreción para imponer una pena más leve”, subrayan. Esa norma contra los nazis fue la que se aplicó en uno de los dos únicos casos en los que Israel ha aplicado la pena capital desde la creación de su Estado en 1948: [el ahorcamiento en 1962 del nazi Adolf Eichmann]( secuestrado antes por el Mosad en Buenos Aires. Las condenas a muerte obligatorias a las que aspiran Ben Gvir y su partido se aplicarían además solo a los palestinos. [Incluidos los de Cisjordania, ]( \" un territorio palestino ocupado, donde estos están sujetos a la legislación militar (incluidos los niños) mientras que los colonos judíos que viven allí —ilegalmente, según la legislación internacional— están amparados por la jurisdicción civil, mucho más garantista. El borrador de esta legislación [dio un paso adelante el pasado 3 de noviembre]( \" cuando la Comisión de Seguridad Nacional la aprobó en primera lectura, antes de pasar al plenario del Parlamento israelí, donde se examina ahora. En la sesión plenaria de este lunes, Ben Gvir aseguró que la pequeña soga amarilla que lucieron él y sus compañeros de partido es “una de las opciones mediante las cuales la ley aplicará la pena de muerte a los terroristas”. Luego añadió que además de la horca “existe la opción de la silla eléctrica y la inyección letal”. El ministro continuó su intervención restando importancia a las críticas de la Asociación Médica de Israel, al proclamar que ha recibido “cientos de llamadas de médicos” que se ofrecieron a aplicar la pena capital a condenados. “Me dijeron: ‘Itamar, solo dime cuándo’”, afirmó el titular de Seguridad Nacional. El primer ministro israelí, Benjamín Netanyahu, apoya el proyecto de ley de sus socios más radicales. El borrador cuenta también con el respaldo del servicio de seguridad e inteligencia interior, Shin Bet, según informó su director, David Zini, al Gobierno en noviembre. Este servicio de inteligencia se había opuesto durante años a la norma. ### Críticas escasas El ministro Ben Gvir, [ él mismo un colono que vive en el asentamiento de Kiriat Arba]( \" cerca de la ciudad cisjordana de Hebrón, es el máximo representante de la extrema derecha nacionalista israelí y del movimiento radical que aspira a colonizar y anexionarse Gaza y Cisjordania (el otro territorio ocupado, Jerusalén Este, ya fue anexionado ilegalmente por Israel en 1980). El éxito de su partido y la progresiva normalización de unas ideas que hace años eran consideradas extremistas en Israel ilustra la derechización de una sociedad que alcanzó su culmen tras el ataque de Hamás del 7 de octubre de 2023 y la respuesta israelí en forma de ofensiva en Gaza, que ya ha causado más de 70. 000 muertos. Hasta hace pocos años, este ministro tenía en su caso un retrato de Baruj Goldstein, el colono que en 1994 [asesinó a tiros a 29 palestinos al abrir fuego contra la multitud]( en una mezquita de Hebrón. Para Ben Gvir, Goldstein es “un héroe”, en sus propias palabras. El auge de este discurso ultra en Israel ha propiciado que el titular de Seguridad Nacional abandonara los márgenes de la política israelí para situarse en su centro al entrar en la coalición de gobierno de Benjamín Netanyahu, tras las elecciones de 2022. Esta extrema derecha nacionalista da voz y voto en el Ejecutivo al movimiento de colonos radicales que [ha estado marcando en buena medida la senda a seguir en Gaza]( \" y en Cisjordania. Solo organizaciones de derechos humanos y la irrelevante izquierda israelí han criticado que Ben Gvir compareciera en el Parlamento con la pequeña soga. Esas escasas voces críticas han subrayado además el color del pin: amarillo, al igual que el lazo de esa tonalidad que en los últimos dos años había simbolizado el clamor por el retorno a Israel de los rehenes tomados por Hamás y otros grupos armados palestinos el 7 de octubre de 2023. El símbolo de la soga es también uno de los que utiliza la organización racista estadounidense, Ku Klux Klan. El diario _Haaretz_, cuya línea editorial se enmarca en el sionismo moderado de centroizquierda, [recogía este lunes las críticas]( \" del instituto de investigación israelí Zulat para la Igualdad y los Derechos Humanos. Esa organización cree que la aprobación de la ley tendría como consecuencia que la pena capital “no se impondría a un acusado por su responsabilidad en el acto, sino por su identidad nacional y la de la víctima”, lo que consagraría una “jerarquía” en el asesinato. El grupo compara esta ley en proyecto con “la legislación nazi”.",
+      "content_preview": "Itamar Ben-Gvir, el [ultraderechista ministro de Seguridad Nacional de Israel, ]( \" se presentó este lunes en la Comisión de Seguridad Nacional del Parlamento israelí con un pin que representaba una horca prendido en la solapa de su chaqueta. Esa comisión examinaba el proyecto estrella de su partido, Poder Judío, que consiste en ampliar la pena de muerte que ya existe en la legislación israelí a los palestinos que asesinen a ciudadanos israelíes. Aunque el borrador de la ley no los menciona de f..."
+    },
+    {
+      "processing_rank": 9,
+      "url_id": 15639,
+      "url": "https://www.ft.com/content/ea36e244-4b2d-486e-881d-af7e1c25094a",
+      "title": "Trump gives Zelenskyy ‘days’ to respond to peace proposal",
+      "source": "www.ft.com",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "llm_direct",
+      "extraction_error": null,
+      "word_count": 223,
+      "archive_url": null,
+      "full_content": "Former President Donald Trump has given Ukrainian President Volodymyr Zelenskyy a deadline of 'days' to respond to a peace proposal aimed at ending the ongoing conflict with Russia. This ultimatum was communicated through U. S. envoys who are pressing for a swift agreement to a ceasefire, with hopes of reaching a resolution by Christmas. The proposal reportedly includes terms that would require significant concessions from Ukraine, which has been resisting pressure to negotiate with Russia since the invasion began. The urgency of the situation has been underscored by the ongoing military and humanitarian crises in Ukraine, as well as the geopolitical implications of the conflict. Trump's approach has raised concerns among some analysts and officials who fear that a rushed agreement could undermine Ukraine's sovereignty and territorial integrity. They argue that any peace deal must prioritize Ukraine's long-term security and independence, rather than simply appeasing Russia. As the deadline approaches, Zelenskyy faces mounting pressure both domestically and internationally. The Ukrainian government has been cautious in its response, emphasizing the need for a comprehensive and just peace that reflects the will of the Ukrainian people. The situation remains fluid, with various stakeholders weighing in on the potential outcomes of the proposed negotiations. The coming days will be critical in determining the future of Ukraine and its relationship with both the U. S. and Russia.",
+      "content_preview": "Former President Donald Trump has given Ukrainian President Volodymyr Zelenskyy a deadline of 'days' to respond to a peace proposal aimed at ending the ongoing conflict with Russia. This ultimatum was communicated through U. S. envoys who are pressing for a swift agreement to a ceasefire, with hopes of reaching a resolution by Christmas. The proposal reportedly includes terms that would require significant concessions from Ukraine, which has been resisting pressure to negotiate with Russia since..."
+    },
+    {
+      "processing_rank": 10,
+      "url_id": 15667,
+      "url": "https://www.ft.com/content/4f0e678d-2ff7-4a1e-8fa3-8be35b553585",
+      "title": "Donald Trump pledges to intervene as Thailand-Cambodia conflict flares",
+      "source": "www.ft.com",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "llm_direct",
+      "extraction_error": null,
+      "word_count": 224,
+      "archive_url": null,
+      "full_content": "Donald Trump has pledged to intervene in the escalating conflict between Thailand and Cambodia, stating he will 'make a phone call' to address the situation. This comes after a truce brokered by the US president in July collapsed, leading to renewed tensions along the border between the two Southeast Asian nations. The conflict has intensified over the disputed area surrounding the ancient Preah Vihear temple, which has been a source of contention for decades. Both countries have mobilized troops to the region, raising concerns about a potential military confrontation. Trump's commitment to intervene marks a significant shift in US foreign policy in the region, as he seeks to assert American influence amidst growing tensions in Southeast Asia. Analysts suggest that his involvement could either help de-escalate the situation or complicate it further, depending on how both nations respond to his overtures. The international community is watching closely, as any military escalation could have broader implications for regional stability. The US has historically played a mediating role in Southeast Asian disputes, and Trump's willingness to engage directly may signal a new approach to diplomacy in the area. As the situation develops, both Thailand and Cambodia are urged to exercise restraint and seek a peaceful resolution to their differences. The potential for dialogue remains, but the path forward will require careful navigation to avoid further conflict.",
+      "content_preview": "Donald Trump has pledged to intervene in the escalating conflict between Thailand and Cambodia, stating he will 'make a phone call' to address the situation. This comes after a truce brokered by the US president in July collapsed, leading to renewed tensions along the border between the two Southeast Asian nations. The conflict has intensified over the disputed area surrounding the ancient Preah Vihear temple, which has been a source of contention for decades. Both countries have mobilized troop..."
+    },
+    {
+      "processing_rank": 11,
+      "url_id": 15679,
+      "url": "https://www.ft.com/content/df510f08-56ee-4327-9d60-ebc1745daeb0",
+      "title": "Australia is first country to ban social media for children",
+      "source": "www.ft.com",
+      "category": "sociedad",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "json_ld",
+      "extraction_error": null,
+      "word_count": 206,
+      "archive_url": null,
+      "full_content": "EU countries want to fast-track a decision to indefinitely immobilise up to €210bn in Russian sovereign assets, investors have increased bets that interest rates in major economies could diverge next year, and Berlin stands ready to throw its weight behind a German candidate to be the next president of the European Central Bank. Plus, Australia is now the first country in the world to restrict social media access for kids under the age of 16. Mentioned in this podcast: Trump gives Zelenskyy ‘days’ to respond to peace proposal EU races to bypass Viktor Orbán on Russia assets before summit Investors increase bets on ECB rate rise in threat to dollar Germany sees high hurdles to winning ECB presidency The countdown to the world’s first social media ban for children Note: The FT does not use generative AI to voice its podcasts Today’s FT News Briefing was hosted and edited by Marc Filippino, and produced by Fiona Symon, Victoria Craig and Sonja Hutson. Our show was mixed by Kelly Garry. Additional help from Gavin Kallmann, Michael Lello and David da Silva. The FT’s acting co-head of audio is Topher Forhecz. The show’s theme music is by Metaphor Music. Read a transcript of this episode on FT. com",
+      "content_preview": "EU countries want to fast-track a decision to indefinitely immobilise up to €210bn in Russian sovereign assets, investors have increased bets that interest rates in major economies could diverge next year, and Berlin stands ready to throw its weight behind a German candidate to be the next president of the European Central Bank. Plus, Australia is now the first country in the world to restrict social media access for kids under the age of 16. Mentioned in this podcast: Trump gives Zelenskyy ‘day..."
+    },
+    {
+      "processing_rank": 12,
+      "url_id": 15632,
+      "url": "https://www.expansion.com/catalunya/2025/12/09/69387850468aeba9558b45a9.html",
+      "title": "Un juzgado investigará el brote de peste porcina y el sector cifra en 24 millones las pérdidas semanales",
+      "source": "www.expansion.com",
+      "category": "economia",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "json_ld",
+      "extraction_error": null,
+      "word_count": 438,
+      "archive_url": null,
+      "full_content": "Un juzgado de Cerdanyola del Vallès (Barcelona) investigará el origen del brote de peste porcina africana (PPA) detectado hace diez días en la zona de Collserola por un supuesto delito contra el medio ambiente, después que el Ministerio de Agricultura indicara que la cepa podría haber salido de un laboratorio. Según ha informado el Tribunal Superior de Justicia de Cataluña (TSJC), los Mossos d&apos; Esquadra y la Guardia Civil han remitido el primer atestado a los juzgados de Cerdanyola y el tribunal de instancia del municipio barcelonés ha acordado remitir el caso a la plaza número dos para que abra diligencias por un delito contra el medio ambiente. La investigación judicial irá en paralelo a la auditoría encargada por la Generalitat para averiguar si el brote salió de uno de los cinco laboratorios que investigan el virus ubicados en un radio de 20 kilómetros del lugar do donde se han detectado los jabalíes infectados. En la auditoría se incluye el centro de investigación IRTA-CReSA, laboratorio de referencia situado en el campus de Bellaterrra de la Universidad Autónoma de Barcelona (UAB), cerca de Collserola, y que estudia cepas atenuadas del virus. El Govern se ha reunido este martes con representantes del sector porcino para hacer seguimiento de las medidas puestas en marcha para contener la peste. Tras el encuentro, el responsable de la industria porcina del sindicato Unió de Pagesos, Rossend Saltiveri, y el presidente de Asaja Cataluña, Pere Roqué, han cifrado en 24 millones de euros las pérdidas semanales del sector porcino español causadas por la enfermedad, que ha bloqueado las exportaciones de derivados del cerdo en 40 países. Estas estimaciones llegan tras las bajadas de precios del kilo de cerdo en Mercolleida, la lonja de referencia a nivel estatal. &quot; El lunes de la semana pasada hizo una corrección de 10 céntimos y el pasado jueves volvió a bajar otros 10 céntimos. Esto son 20 céntimos por cerdo, que traducido por el peso que tenemos por cerdo, de 120 kilos, son 24 euros de momento de bajada&quot; , ha dicho Saltiveri. Por ahora, los casos confirmados se mantienen en 13 jabalíes. El Govern ha declarado la emergencia para agilizar la lucha contra el virus, con el objetivo de acelerar la tramitación de contratos de servicios, suministros e incluso obras. El objetivo del gobierno autonómico es contratar de forma rápida suministros de material veterinario, servicios de laboratorio, medicamentos y equipos de protección, entre otros. La Generalitat también ha aprobado la creación de una línea de ayudas y subvenciones por 10 millones de euros, ampliable a otros diez más, para mitigar el impacto económico del brote en el sector.",
+      "content_preview": "Un juzgado de Cerdanyola del Vallès (Barcelona) investigará el origen del brote de peste porcina africana (PPA) detectado hace diez días en la zona de Collserola por un supuesto delito contra el medio ambiente, después que el Ministerio de Agricultura indicara que la cepa podría haber salido de un laboratorio. Según ha informado el Tribunal Superior de Justicia de Cataluña (TSJC), los Mossos d&apos; Esquadra y la Guardia Civil han remitido el primer atestado a los juzgados de Cerdanyola y el tri..."
+    },
+    {
+      "processing_rank": 13,
+      "url_id": 15627,
+      "url": "https://www.expansion.com/economia/2025/12/10/69393c0be5fdea7c0a8b45aa.html?intcmp=NOT002",
+      "title": "El Consejo Europeo ve \"muy cerca\" un acuerdo para salvar financieramente a Ucrania",
+      "source": "www.expansion.com",
+      "category": "finanzas",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "json_ld",
+      "extraction_error": null,
+      "word_count": 412,
+      "archive_url": null,
+      "full_content": "La diplomacia europea ve la luz al final del túnel después de meses de bloqueo y duro trabajo. António Costa, presidente del Consejo Europeo, aseguró ayer, en una intervención en Irlanda, que el acuerdo para encontrar una solución para salvar financieramente a Ucrania está &quot; muy cerca&quot; . El político de origen portugués se mostró optimista respecto al principal punto de fricción en la Unión Europea de cara a la cumbre del próximo 18 de diciembre. Los Estados miembros, después de no haber alcanzado un acuerdo en octubre, deberán encontrar una forma de financiar las necesidades de Ucrania para 2026 y 2027 si no quieren que el país caiga frente a Rusia cuando se quede sin recursos tras el segundo trimestre del próximo ejercicio. El plan inicial pasaba por ofrecer un préstamo de 140. 000 millones a Ucrania utilizando los activos rusos que se encuentran paralizados por las sanciones en territorio europeo, una cuantía que ahora se ha recortado hasta los 90. 000 millones para tratar de salvar la oposición belga. El grueso de los activos congelados se encuentra en Euroclear, la compañía de liquidación y compensación con sede en Bélgica y, Bart de Wever, primer ministro del país, se ha opuesto a este plan. Su principal temor es que se pueda acusar a Bélgica de confiscación en un arbitraje internacional que considera más que probable, por lo que se ha enrocado en una negativa que el resto de países de la UE no ha sido capaz de solventar hasta la fecha. La Comisión Europea hizo una nueva propuesta la pasada semana en la que estableció una serie de garantías comunitarias y nacionales para compartir el riesgo entre todos los Estados miembros, pero Bélgica volvió a rechazar ese movimiento. Atendiendo a las palabras de António Costa, sin embargo, algo podría haber cambiado. Según señaló el presidente del Consejo Europeo, &quot; estamos trabajando ya en los últimos ajustes legales y técnicos para dar con una solución que pueda contar al menos con el apoyo de una mayoría cualificada de los gobiernos&quot; . El político europeo se mostró confiado señalando que &quot; para mí, tomaremos una decisión el 18 de diciembre&quot; . Sin embargo, no descartó que la cumbre se extienda &quot; hasta el 19 o el 20, hasta que encontremos una conclusión positiva a este asunto&quot; . Hasta la fecha, nunca una cumbre del Consejo Europeo ha durado tres días, pero Ucrania se ha quedado sin margen y caerá si no hay acuerdo.",
+      "content_preview": "La diplomacia europea ve la luz al final del túnel después de meses de bloqueo y duro trabajo. António Costa, presidente del Consejo Europeo, aseguró ayer, en una intervención en Irlanda, que el acuerdo para encontrar una solución para salvar financieramente a Ucrania está &quot; muy cerca&quot; . El político de origen portugués se mostró optimista respecto al principal punto de fricción en la Unión Europea de cara a la cumbre del próximo 18 de diciembre. Los Estados miembros, después de no habe..."
+    },
+    {
+      "processing_rank": 14,
+      "url_id": 15447,
+      "url": "https://elpais.com/deportes/el-montanista/2025-12-10/un-alpinista-acusado-de-homicidio-por-la-muerte-de-su-pareja-en-una-escalada-silencio-el-movil-y-rechazo-un-rescate-en-helicoptero.html",
+      "title": "Un alpinista, acusado de homicidio por la muerte de su pareja en una escalada: silenció el móvil y rechazó un rescate en helicóptero",
+      "source": "elpais.com",
+      "category": "deportes",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 934,
+      "archive_url": null,
+      "full_content": "En la montaña, [los problemas suelen ir encordados a las malas decisiones]( \" Las tomadas de forma negligente por el alpinista austriaco Thomas Plamberber (36 años) el pasado 18 de enero pueden llevarle a la cárcel, pero sea o no declarado culpable por los tribunales el próximo 19 de febrero, nada devolverá a la vida a su compañera sentimental, Kerstin Gurtner (33 años). Ambos emprendieron hace casi un año la ascensión de la montaña más elevada de Austria, el Grossglockner (3. 798 m) por su arista suroeste, un itinerario largo, complejo, con tramos de escalada y especialmente delicado en invierno. Atacaron su objetivo a las siete menos cuarto de la mañana, y poco después de la una del mediodía se encontraban a menos de 250 metros de desnivel de la cima. En ese punto y coincidiendo con el tramo más complicado de la vía, su progresión dejó de fluir y pronto les sorprendió la noche. Sus lámparas frontales, bien visibles desde el valle, [ pusieron en alerta a los servicios de rescate]( \" y un helicóptero salió a su encuentro dispuesto a extraerlos de la pared pasadas ya las 10 de la noche y bajo ráfagas de viento en aumento. Para su enorme sorpresa, Thomas Plamberger rechazó la ayuda y ambos siguieron progresando montaña arriba. Pero Kerstin Gurtner nunca llegó a alcanzar la cima, el punto clave para emprender un descenso por terreno más sencillo hasta una cabaña de abrigo. Los cuerpos de rescate localizaron sus restos a la mañana siguiente, unos metros por debajo de la cima: había soportado una ventisca con ráfagas de hasta 70 km/h y una sensación térmica de 20 grados bajo cero. Murió de hipotermia. En su relato a la policía, el alpinista asegura que rechazó la llegada del helicóptero porque ambos se encontraban bien y planeaban terminar su ascensión, pero que “poco después” su compañera “mostró signos crecientes de agotamiento”. En este punto, la cordada decidió continuar, puede que juzgando que si alcanzaban la cima les sería más sencillo escapar de la montaña. La policía se pregunta ahora por qué Plamberger no respondió a los mensajes y las llamadas de los servicios de rescate y tuerce el gesto cuando este asegura que no escuchó tales llamadas porque tenía el móvil en silencio. ### Las llamadas a emergencias, clave en la investigación Finalmente, Plamberger llamó al servicio de rescate a las 12. 30 de la noche, pero aquí el relato de unos y otros difiere: según los rescatadores, la conversación con el alpinista no fue clara en absoluto, mientras este asegura que dejó claro que necesitaban ser rescatados. En cualquier caso, ya era tarde y en ese momento ya no se daban las condiciones para un nuevo vuelo del helicóptero. Los equipos de rescate se pusieron manos a la obra a pie. El alpinista se mantuvo junto a su pareja hasta las dos de la madrugada. Después salió en busca de alguien que pudiese estar alojado en un refugio ubicado en la ladera contraria. No volvió a pedir ayuda por teléfono hasta las 3. 40 de esa madrugada. La Fiscalía de Innsbruck ha acusado a Plamberger con el cargo de homicidio por negligencia grave, señalando varios puntos que refuerzan su tesis. Para empezar, uno de los mayores errores que cometió el acusado es involucrar a una persona con escaso bagaje en alpinismo en una actividad exigente, invernal y con mala previsión meteorológica. En montaña, la persona con mayores conocimientos y experiencia siempre es responsable de sus acompañantes y son las capacidades de los que tienen menores recursos las que han de marcar la dificultad de la ascensión. Además, la Fiscalía señala que en invierno, los días son más cortos y una actividad como la del Grossglockner ha de emprenderse al menos dos horas antes de lo planificado por Plamberger y su pareja. ### Sin abrigo de emergencia y sin botas adecuadas Los equipos de rescate[ se encontraron a la víctima]( \" sin ningún tipo de abrigo de emergencia; tampoco estaba colocada a resguardo del viento, otra negligencia, según la Fiscalía. La mujer, además, seguía sin desprenderse de su pesada mochila. Uno de los aspectos más llamativos de la investigación es el equipamiento de la fallecida, que no vestía botas de alpinismo, sino botas blandas de snowboard; iba también cargada con una tabla a sus espaldas. Cualquiera con un mínimo de experiencia sabe que una arista no se afronta con botas de ese tipo y que acarrear una tabla es como portar un ancla. ¿Dónde estaba la experiencia de Plamberger para impedir semejante desatino? Asimismo, como miembro más experimentado, el joven austriaco debería haber renunciado cuando arreció el viento, antes de medirse a la zona más compleja del itinerario. La Fiscalía le acusa, igualmente, de no haber emitido señales de socorro hasta que fue demasiado tarde y de desoír las llamadas de los servicios de rescate. La acusación pretende dictaminar que el imputado cometió una cadena de errores cuando era responsable de la seguridad de la cordada, pero la defensa mantiene que todo fue propio de un cúmulo de pequeñas casualidades y matices. Nadie, salvo el acusado, puede explicar el razonamiento de progresión que conoció la cordada: ¿fueron decisiones tomadas de forma consensuada? ¿fueron decisiones impuestas por el acusado? ¿por qué no hizo uso de su teléfono para pedir ayuda Kerstin Gurtner? ¿tenían la misma experiencia en el mundo del alpinismo, como afirma Palmberger, o su pareja, aun estando en forma, carecía de recorrido como señalan varias fuentes? ¿qué dinámica de comunicación mantuvo la pareja? La decisión de los tribunales puede abrir una nueva forma de relación entre las cordadas.",
+      "content_preview": "En la montaña, [los problemas suelen ir encordados a las malas decisiones]( \" Las tomadas de forma negligente por el alpinista austriaco Thomas Plamberber (36 años) el pasado 18 de enero pueden llevarle a la cárcel, pero sea o no declarado culpable por los tribunales el próximo 19 de febrero, nada devolverá a la vida a su compañera sentimental, Kerstin Gurtner (33 años). Ambos emprendieron hace casi un año la ascensión de la montaña más elevada de Austria, el Grossglockner (3. 798 m) por su aris..."
+    },
+    {
+      "processing_rank": 15,
+      "url_id": 15278,
+      "url": "https://www.bbc.com/news/articles/c208vd511ljo",
+      "title": "Nobel officials unsure when Peace Prize winner will arrive for ceremony",
+      "source": "www.bbc.com",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 319,
+      "archive_url": null,
+      "full_content": "A press conference by María Corina Machado - the Nobel Peace Prize laureate, who is currently in-hiding - was cancelled on Tuesday, with the Nobel Institute saying they are \"in the dark\" about her whereabouts. Machado is Venezuela's opposition leader and has been in hiding since the country's disputed 2024 election, which she and her supporters say was stolen. She was awarded the Nobel Peace Prize for efforts to bring democracy to Venezuela, and was expected to formally collect it in a ceremony on Wednesday. Although Machado regularly gives social media video updates, usually against a neutral white wall, her current whereabouts are unknown. The Nobel Institute had previously said she would attend the event in person, however on Tuesday it said in a statement: \"María Corina Machado has herself stated in interviews how challenging the journey to Oslo, Norway will be. We therefore cannot at this point provide any further information about when and how she will arrive for the Nobel peace prize ceremony. \" Machado's family are already in Oslo. Venezuela's government has said that if she left Venezuela, Machado would be considered a \"fugitive\" by the authorities. The country's attorney general, Tarek William Saab, told AFP last month: \"By being outside Venezuela and having numerous criminal investigations, she is considered a fugitive\". He added that she is accused of \"acts of conspiracy, incitement of hatred, terrorism\". Machado had earlier told her followers that she would return to Venezuela after collecting the prize. If she attends, it would be her first public appearance since the start of the year, when she went to a protest in Caracas on 9 January against the inauguration of Venezuelan President Nicolás Maduro. After Venezuela's 2024 election, the opposition published tallies suggesting it won, despite Maduro claiming victory. Some nations, including the US, have recognised its candidate - Edmundo González - as the president-elect. Machado was banned from running in the election.",
+      "content_preview": "A press conference by María Corina Machado - the Nobel Peace Prize laureate, who is currently in-hiding - was cancelled on Tuesday, with the Nobel Institute saying they are \"in the dark\" about her whereabouts. Machado is Venezuela's opposition leader and has been in hiding since the country's disputed 2024 election, which she and her supporters say was stolen. She was awarded the Nobel Peace Prize for efforts to bring democracy to Venezuela, and was expected to formally collect it in a ceremony ..."
+    },
+    {
+      "processing_rank": 16,
+      "url_id": 15260,
+      "url": "https://www.bbc.com/news/articles/cx2pn5dxd0go",
+      "title": "Thailand-Cambodia border conflict: US calls for end to hostilities as clashes enter third day",
+      "source": "www.bbc.com",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 475,
+      "archive_url": null,
+      "full_content": "The US has asked Thailand and Cambodia to \"cease hostilities immediately\" as border clashes extended for a third day, killing at least 10 people and displacing hundreds of thousands. The two nations must follow de-escalatory measures outlined in a peace accord brokered by US President Donald Trump in October, Secretary of State Marco Rubio said. Trump has also said that he would \"make a phone call\" to stop the fighting, which is the most serious escalation since clashes in July killed dozens of people. Both countries have blamed each other for re-igniting the fighting, which has seen air strikes and exchanges of artillery fire. The death toll over three days of hostilities stands at 10 - seven from Cambodia and three from Thailand. Thai officials said they evacuated more than 400, 000 people, while Phnom Penh said 100, 000 on the Cambodian side have been moved to shelters. Thailand's defence ministry said Wednesday military actions were \"limited in scope and employed as a last option\". \"Peace must come with the safety and security of our citizens, full stop, \" the ministry's spokesman said. Cambodia on the other hand accused Thailand of launching \"aggressive military attacks\" that targeted civilian institutions and \"sacred cultural sites\", including historic temples along the disputed border. Also on Wednesday, Cambodia announced it was pulling out from the South East Asian Games that is being hosted in Thailand. The Cambodian National Olympic Committee cited \"serious concerns and requests\" from the families of its athletes for the withdrawal. It added that the decision was \"not made lightly\". United Nations' Secretary-General António Guterres urged both sides to \"exercise restraint and avoid further escalation\", noting how their dispute has led to \"significant civilian casualties, damage to civilian infrastructure, and displacement on both sides\". The [century-old border dispute]( between the South East Asian neighbours dramatically escalated on 24 July with a Cambodian rocket barrage into Thailand, followed by Thai air strikes. That set off five days of intense fighting, which left dozens of soldiers and civilians dead. Later that month, Bangkok and Phnom Penh agreed to an \"[immediate and unconditional ceasefire]( brokered by Malaysian Prime Minister Anwar Ibrahim and Trump - who at the time threatened to stop tariff negotiations until the hostilities stopped. In October, Trump claimed a historic achievement in ending the border conflict after both sides signed a ceasefire agreement, but tensions have continued to simmer. Violence this week has expanded into at least six provinces in north-eastern Thailand and five provinces in Cambodia's north and north-west. Thailand and Cambodia have been contesting territorial sovereignty along their 800km land border for more than a century, since the borders of the two nations were drawn after the French occupation of Cambodia. This week, several countries, including the UK, US and Japan, have issued warnings against travelling to the border areas citing the renewed fighting.",
+      "content_preview": "The US has asked Thailand and Cambodia to \"cease hostilities immediately\" as border clashes extended for a third day, killing at least 10 people and displacing hundreds of thousands. The two nations must follow de-escalatory measures outlined in a peace accord brokered by US President Donald Trump in October, Secretary of State Marco Rubio said. Trump has also said that he would \"make a phone call\" to stop the fighting, which is the most serious escalation since clashes in July killed dozens of ..."
+    },
+    {
+      "processing_rank": 17,
+      "url_id": 15275,
+      "url": "https://www.bbc.com/news/articles/cyvgq5nr05yo",
+      "title": "Sierra Leone mining: Two young lives that ended in the search for gold",
+      "source": "www.bbc.com",
+      "category": "sociedad",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 1063,
+      "archive_url": null,
+      "full_content": "# Two teenagers went to seek gold. They were buried alive in a mine collapse Godwin AsedibaBBC News Komla Dumor Award winner, Eastern Province, Sierra Leone Andre Lombard / BBC Namina Jenneh is mourning her 17-year-old son who died while mining for gold There is a sense of disbelief in this Sierra Leonean village as people weep in front of the bodies of two teenage boys wrapped in white cloth. The day before, 16-year-old Mohamed Bangura and 17-year-old Yayah Jenneh left their homes in Nyimbadu, in the country's Eastern Province, hoping to earn a little extra money for their families. They had gone in search of gold but never returned. The makeshift pit they were digging in collapsed on them. This was the third fatal mine accident, leaving a total of at least five children dead, in the last four years in this region. Mohamed and Yayah were part of a phenomenon that has seen a growing number of children missing school in parts of Sierra Leone to mine the precious metal in potentially lethal pits, according to headteachers and community activists. The Eastern Province has historically been known for diamond mining. But in recent years informal - or artisanal - gold mining has expanded as the diamond reserves have been depleted. David Wilkins / BBC People dig up the rich earther wherever they think they might be able to find gold Mining sites pop up wherever local people find deposits in this land laden with riches - on farmland, in former graveyards and along riverbeds. There are few formal mining companies operating here, but in the areas which are not considered profitable, the landscape is dotted with these unregulated pits that can be as deep as 4m (13 feet). Similar - and equally dangerous - mines can be found in many African countries and there are often reports of deadly collapses. Most families in Nyimbadu rely on small-scale farming and petty trading for a living. Alternative employment is scarce so the opportunity to earn some extra cash is very attractive. But the community in the village gathered at the local funeral home know the work also comes at a price, with the loss of two young lives full of promise. Yayah's mother, Namina Jenneh, is a widow and had been relying on her young son to help provide for her other five children. As someone who worked in the pits herself, she acknowledges that she introduced Yayah to mining but says: \"He didn't tell me he was going to that site - if I had known I would have stopped him. \" When she heard about the collapse, she says she begged someone to \"call the excavator driver. \"When he arrived, he cleared the debris that had buried the children. \" But it was too late to save them. Namina Jenneh Yayah Jenneh was mining in order to help his mother support his five siblings Ms Jenneh speaks with deep pain. On a mobile phone with a cracked screen, she scrolls through pictures of her son, a boy with bright eyes who supported her. Sahr Ansumana, a local child protection activist, takes me to the collapsed pit. \"If you ask some parents, they'll tell you there's no other alternative. They are poor, they are widows, they are single parents, \" he says. \"They have to take care of the kids. They themselves encourage the kids to go and mine. We are struggling and need help. It's worrying and getting out of hand. \" But the warning goes unheeded – the loss of Yayah and Mohamed has not emptied the pits. The day after their funerals, miners including children are back at work, their hands sifting sand by the river or inspecting the earth manually excavated in search of the glimmer of gold. David Wilkins / BBC Komba Sesay would like to become a lawyer but is missing school in order to mine At one site I meet 17-year-old Komba Sesay who wants to be a lawyer, but he spends daylight hours here to support his mother. \"There is no money, \" he says. \"That is what we are trying to find. I am working so I can register and sit my [high school] exams. I want to return to school. I'm not happy here. \" Komba's earnings are meagre. In most weeks he earns about $3. 50 (£2. 65) – less than half the country's minimum wage. But he perseveres in the hope of striking it rich. On some, very rare, good days he has found enough ore to earn him $35. Of course, he knows the work is risky. Komba has friends who have been injured in pit collapses. But he feels that mining is the only way he can earn some money. David Wilkins / BBC The dangerous work sees people digging with minimal tools in order to find some gold And it is not only pupils who are leaving schools. Roosevelt Bundo, the headteacher of Gbogboafeh Aladura Junior Secondary School in Nyimbadu says \"teachers also leave classes to go to the mining sites, they mine together with the students\". Their government pay cannot compete with what they may be able to earn from gold mining. There are also wider signs of change around the mining hubs. What were once small camps have swelled into towns in the last two years. The government says it is addressing the issue. Information Minister Chernor Bah tells the BBC that the government remains committed to education but adds that the state recognises the many challenges people face. \"We spend about 8. 9% of our GDP, the highest of any other country in this sub-region, on education, \" he says, adding that funds go to teachers, school-feeding programmes and subsidies intended to keep children in the classroom. But on the ground, reality bites. Immediate survival often wins over policy. Charities and local activists try to remove children from the pits and place them back into school, but without reliable alternatives for income, the pits are too attractive. Back in Nyimbado, the families of the two dead boys appear exhausted and hollowed out. The loss is not just of two young lives. It is the steady erosion of possibility for a generation. \"We need help, \" the activist Mr Ansumana says. \"Not prayers. Not promises. Help. \" You may also be interested in: Getty Images/BBC",
+      "content_preview": "# Two teenagers went to seek gold. They were buried alive in a mine collapse Godwin AsedibaBBC News Komla Dumor Award winner, Eastern Province, Sierra Leone Andre Lombard / BBC Namina Jenneh is mourning her 17-year-old son who died while mining for gold There is a sense of disbelief in this Sierra Leonean village as people weep in front of the bodies of two teenage boys wrapped in white cloth. The day before, 16-year-old Mohamed Bangura and 17-year-old Yayah Jenneh left their homes in Nyimbadu, ..."
+    },
+    {
+      "processing_rank": 18,
+      "url_id": 15193,
+      "url": "https://www.abc.es/internacional/muertos-tras-derrumbe-dos-edificos-fez-marruecos-20251210100627-nt.html",
+      "title": "Al menos 19 muertos tras el derrumbe de dos edificios en Fez (Marruecos)",
+      "source": "www.abc.es",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "json_ld",
+      "extraction_error": null,
+      "word_count": 184,
+      "archive_url": null,
+      "full_content": "Al menos 19 muertos y 16 personas heridas tras el derrumbe de dos edificios este miércoles en la ciudad de Fez (Marruecos). Las autoridades locales de la prefectura de Fez informaron de que dos edificios adyacentes de cuatro plantas se habían derrumbado durante la noche, . . . según la agencia estatal de noticias MAP. Los edificios estaban habitados por ocho familias y se encontraban en el barrio de Al-Mustaqbal. Tan pronto como se les informó del incidente, las autoridades locales, los servicios de seguridad y las unidades de protección civil se desplazaron al lugar y comenzaron inmediatamente las operaciones de búsqueda y rescate, según la agencia. Los heridos fueron trasladados al centro hospitalario universitario de Fez, mientras que las operaciones de búsqueda y rescate continuaron durante toda la noche para encontrar a otras personas que pudieran seguir atrapadas bajo los escombros, informó la agencia de noticias. La mayor parte de la población, los centros financieros e industriales y las infraestructuras vitales de Marruecos se concentran en el noroeste, mientras que el resto del país depende de la agricultura, la pesca y el turismo.",
+      "content_preview": "Al menos 19 muertos y 16 personas heridas tras el derrumbe de dos edificios este miércoles en la ciudad de Fez (Marruecos). Las autoridades locales de la prefectura de Fez informaron de que dos edificios adyacentes de cuatro plantas se habían derrumbado durante la noche, . . . según la agencia estatal de noticias MAP. Los edificios estaban habitados por ocho familias y se encontraban en el barrio de Al-Mustaqbal. Tan pronto como se les informó del incidente, las autoridades locales, los servicio..."
+    },
+    {
+      "processing_rank": 19,
+      "url_id": 15235,
+      "url": "https://www.abc.es/espana/andalucia/almeria/guardia-civil-apunta-pareja-madre-menor-garrucha-20251210082804-nts.html",
+      "title": "La Guardia Civil apunta a que la pareja de la madre del niño de Garrucha lo habría violado y golpeado hasta la muerte",
+      "source": "www.abc.es",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "json_ld",
+      "extraction_error": null,
+      "word_count": 495,
+      "archive_url": null,
+      "full_content": "La Guardia Civil apunta en su investigación del menor asesinado en Garrucha (Almería) que la pareja de la madre habría violado y golpeado hasta matar al niño, según se desprende de la investigación de la Guardia Civil a la que ha tenido acceso la Cadena. . . Cope, que no descarta incluso que la madre fuese testigo de una parte de la agresión. Así se recoge en el auto de ingreso en prisión dictado por la Sección Civil y de Instrucción número 4 del Tribunal de Instancia de Vera (Almería) en el que se deja constancia de cómo ya antes de la agresión mortal, la pareja de la progenitora «maltrataba y golpeaba» de forma habitual al menor. Según los investigadores, el hombre aprovechaba los momentos en los que se quedaba al cuidado del menor en el domicilio que compartía con su madre y en una ocasión habría llegado a fracturar un hueso del brazo del niño. Se añade que esas agresiones se producían posiblemente «con conocimiento» de la madre. Tal y como señala el auto, sobre las 11: 00 horas del pasado 3 de diciembre la progenitora se fue a preparar comidas al quiosco en el que trabajaba, dejando solos en la vivienda a su pareja y al niño. El hombre habría aprovechado para violar al menor y golpearlo en el abdomen y otras partes del cuerpo. Una agresión que según el informe preliminar de la autopsia habría provocado la muerte de la víctima a causa de un shock hipovolémico, desgarro hepático y un politraumatismo abdominal con derrame intestinal. La Guardia Civil considera que la madre podría haber presenciado al menos una parte de esta agresión ya que sobre las 12: 00 horas habría regresado al domicilio, después de que su compañero sentimental le trasladase que el niño se encontraba «mal». Acudió inmediatamente al domicilio, lo que hace pensar a los investigadores según consta en el auto, que «incluso podría haber estado presente en parte de esa agresión física del menor» que finalmente falleció sobre las 15: 30 horas. La madre, presente durante la agresiónSegún el auto, el propio acusado manifestó ante el juez que la mujer habría acudido en las «horas previas al fallecimiento del menor al domicilio» y habría estado presente durante parte del episodio sin que «hubiera tenido intención presunta de evitarlo o asistir a su hijo». En este sentido, se incide en la transcripción de los mensajes que habría remitido la mujer a sus familiares y a otras personas, de los que se deduce «indiciariamente que la propia investigada se habría atribuido participación presunta en la causa de la muerte del menor» y que además habría acompañado a su pareja mientras portaba el cuerpo sin vida de su hijo, sin hacer nada. La investigación apunta que, una vez muerto el niño, los investigados habrían acudido con su cuerpo hasta un antiguo búnker ubicado en la playa de Garrucha, en el límite con el municipio vecino de Mojácar, donde abandonaron el cadáver.",
+      "content_preview": "La Guardia Civil apunta en su investigación del menor asesinado en Garrucha (Almería) que la pareja de la madre habría violado y golpeado hasta matar al niño, según se desprende de la investigación de la Guardia Civil a la que ha tenido acceso la Cadena. . . Cope, que no descarta incluso que la madre fuese testigo de una parte de la agresión. Así se recoge en el auto de ingreso en prisión dictado por la Sección Civil y de Instrucción número 4 del Tribunal de Instancia de Vera (Almería) en el que..."
+    },
+    {
+      "processing_rank": 20,
+      "url_id": 15349,
+      "url": "https://www.elconfidencial.com/espana/comunidad-valenciana/2025-12-10/violencia-machista-mujer-catarroja-1tna-1tps_4263285/",
+      "title": "Detenido el agresor de su pareja en Catarroja (Valencia), que murió 3 días después",
+      "source": "www.elconfidencial.com",
+      "category": "sociedad",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 418,
+      "archive_url": null,
+      "full_content": "10/12/2025 - 08: 14 Actualizado: 10/12/2025 - 11: 48 La Guardia Civil ha detenido este miércoles al supuesto agresor de su **pareja en Catarroja (Valencia)**, una mujer de 48 años que ha fallecido en la UCI de un hospital tres **días después de su ingreso**, tras un primer arresto en el que quedó en libertad con medidas cautelares. El Juzgado de Violencia sobre la Mujer de Sueca ha dictado esta mañana de miércoles **una orden de detención por riesgo de fug** a, y se ha vuelto a detener al supuesto **agresor, de 43 años, ** según han informado fuentes de la investigación. Tras la agresión, que se produjo la madrugada del viernes al sábado pasado en un domicilio de Catarroja, la mujer fue trasladada a un centro hospitalario y la **policía judicial** de **Alfafar**, que se hizo cargo de la investigación, detuvo a su pareja. El detenido pasó este martes a disposición del juzgado, que **decretó su libertad con medidas cautelares**, mientras que horas después de la decisión judicial la mujer **murió en el hospital a causa de las heridas sufridas**, según la Guardia Civil. Al parecer, el hombre llamó al teléfono de emergencias 112**para avisar de que la mujer se había caído y golpeado la cabeza**, si bien los servicios médicos alertaron de que las heridas que presentaba **no se debían a una caída accidental, ** según han indicado a EFE fuentes municipales, que han precisado que la mujer no estaba en el sistema VioGén. Tras ser detenido por la Guardia Civil porque**su testimonio sobre lo ocurrido no cuadraba con las lesiones**, el hombre pasó este martes a disposición del Juzgado de Violencia sobre la Mujer de Sueca, donde el juez practicó varias testificales y convocó la **comparecencia de prisión prevista** en la ley de Enjuiciamiento criminal, según fuentes próximas al caso. En esa comparecencia, que se produjo antes de que falleciera la mujer, la única acusación personada, que era la Fiscalía, **no solicitó la medida de prisión**, por lo que el juez no la pudo acordar y lo que hizo fue dictaminar **una orden de alejamiento y prohibición de comunicación** con la víctima. La Delegación del Gobierno contra la Violencia de Género **está recabando datos del asesinato**. La Guardia Civil ha detenido este miércoles al supuesto agresor de su **pareja en Catarroja (Valencia)**, una mujer de 48 años que ha fallecido en la UCI de un hospital tres **días después de su ingreso**, tras un primer arresto en el que quedó en libertad con medidas cautelares.",
+      "content_preview": "10/12/2025 - 08: 14 Actualizado: 10/12/2025 - 11: 48 La Guardia Civil ha detenido este miércoles al supuesto agresor de su **pareja en Catarroja (Valencia)**, una mujer de 48 años que ha fallecido en la UCI de un hospital tres **días después de su ingreso**, tras un primer arresto en el que quedó en libertad con medidas cautelares. El Juzgado de Violencia sobre la Mujer de Sueca ha dictado esta mañana de miércoles **una orden de detención por riesgo de fug** a, y se ha vuelto a detener al supues..."
+    },
+    {
+      "processing_rank": 21,
+      "url_id": 15367,
+      "url": "https://www.elconfidencial.com/tecnologia/novaceno/2025-12-09/china-investigacion-combustible-armas-hipersonicas_4263084/",
+      "title": "Científicos chinos encuentran una fuente inagotable de combustible para sus armas hipersónicas",
+      "source": "www.elconfidencial.com",
+      "category": "tecnologia",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 794,
+      "archive_url": null,
+      "full_content": "[Un equipo de científicos]( de la Universidad Agrícola y Forestal del Noroeste de China ha desarrollado un gel que funciona con energía solar para extraer agua dulce y boro del océano. El descubrimiento permite al país asiático un acceso ilimitado a un elemento que hasta ahora dependía de proveedores extranjeros y**que es crucial para alimentar los motores de sus armas hipersónicas**. El boro es un componente fundamental para elaborar los combustibles sólidos de los motores scramjet que equipan algunos de los sistemas hipersónicos más avanzados de China. También resulta fundamental en los imanes de tierras raras de neodimio-hierro-boro que se usan en aplicaciones industriales y militares. Sin embargo, a pesar de tener la mayor demanda mundial de este elemento, China no es un gran productor y **depende de importaciones principalmente de Turquía y Estados Unidos, sus principales competidores geopolíticos. ** El nuevo método no solo garantiza el suministro estratégico de boro, sino que resuelve un problema de salud pública causado por el agua. Los sistemas convencionales de [desalinización]( por ósmosis inversa no pueden eliminar el boro del agua de mar y, de hecho, tienden a concentrarlo, lo que representa **un riesgo sanitario si se consume durante períodos prolongados**. Sin embargo, el nuevo gel captura el elemento antes de que pueda contaminar el agua potable producida. ## Cómo funciona El hallazgo llega del equipo del Laboratorio Provincial Clave de Shaanxi para el Desarrollo y Utilización de Recursos Vegetales Económicos. Los investigadores han creado **un gel compuesto denominado MMS** a partir de alginato de sodio. En esta estructura incorporaron MXene, un nanomaterial bidimensional con propiedades similares al grafeno conocido por su alta eficiencia fototérmica, y Mg O, un compuesto de óxido de magnesio que actúa como adsorbente de boro. El equipo luego dispuso el gel en láminas delgadas de 2 milímetros de espesor, con una capa flotando en la interfaz aire-agua para absorber la luz solar y mientras la otra permanece sumergida. Cuando la luz solar calienta la capa de MXene, el agua se evapora desde la superficie, creando un gradiente de concentración que atrae continuamente agua de mar hacia arriba a través del gel. Según los investigadores, esta configuración crea una sinérgica que **integra efectos de temperatura, concentración y flujo de fluidos para mejorar la captura de boro. ** La capa inferior en contacto con el agua de mar absorbe simultáneamente agua y atrapa iones de boro gracias al MgO integrado en la matriz. Los experimentos de laboratorio mostraron que bajo la luz del Sol, el gel MMS alcanza una tasa de evaporación de 2, 14 kilogramos de agua dulce por metro cuadrado por hora y acumula 225, 52 miligramos de boro en nueve horas. El equipo atribuye este rendimiento a la **estructura porosa interna del gel** y las capacidades combinadas de conversión fototérmica y adsorción del MXene y el MgO. Los investigadores concluyen en su [estudio]( que el gel MMS \"exhibe un gran potencial para producir simultáneamente agua dulce y extraer boro del agua de mar o salmuera\", aunque señalan que aún se **necesitan analizar el \"coste y escalabilidad, ** especialmente para aplicaciones industriales\". Una vez desarrollada completamente, la tecnología podría ofrecer un nuevo camino para países que buscan acceso seguro al boro mientras mejoran la seguridad y sostenibilidad de la desalinización. ## Vital para el Ejército chino Si China logra escalar esta tecnología, podría romper su dependencia estratégica de proveedores occidentales en un momento de creciente tensión geopolítica, mientras convierte los océanos en una fuente prácticamente ilimitada de **un elemento crítico para su arsenal militar más avanzado. ** El boro es un elemento ligero que se utiliza como **combustible sólido en los motores _[scramjet]( **de algunas armas hipersónicas avanzadas chinas. Para China, las armas hipersónicas son una garantía asimétrica contra un potencial conflicto con intervención estadounidense. Al dominar esta tecnología, China pretende **ganar una guerra antes incluso de que se libere, ** haciendo que el coste de la intervención estadounidense —como la pérdida de un grupo de portaaviones— sea prohibitivamente alto. Según expertos de EEUU citados en informes recientes, China ha completado**[un salto estratégico]( en armamento hipersónico que \"desafía las leyes de la física\"**. A diferencia de otros países, Beijing ha pasado de prototipos a producción en masa, creando armas que vuelven obsoletos los sistemas de defensa antimisiles occidentales actuales. Estos misiles hipersónicos ofrecen la capacidad de alcanzar objetivos de alto valor en cualquier punto del planeta en menos de 30 minutos. [Un equipo de científicos]( de la Universidad Agrícola y Forestal del Noroeste de China ha desarrollado un gel que funciona con energía solar para extraer agua dulce y boro del océano. El descubrimiento permite al país asiático un acceso ilimitado a un elemento que hasta ahora dependía de proveedores extranjeros y**que es crucial para alimentar los motores de sus armas hipersónicas**.",
+      "content_preview": "[Un equipo de científicos]( de la Universidad Agrícola y Forestal del Noroeste de China ha desarrollado un gel que funciona con energía solar para extraer agua dulce y boro del océano. El descubrimiento permite al país asiático un acceso ilimitado a un elemento que hasta ahora dependía de proveedores extranjeros y**que es crucial para alimentar los motores de sus armas hipersónicas**. El boro es un componente fundamental para elaborar los combustibles sólidos de los motores scramjet que equipan ..."
+    },
+    {
+      "processing_rank": 22,
+      "url_id": 15432,
+      "url": "https://elpais.com/cultura/2025-12-10/muere-robe-iniesta-lider-de-extremoduro-a-los-63-anos.html",
+      "title": "Muere Robe Iniesta, fundador de Extremoduro y figura central en la música española, a los 63 años",
+      "source": "elpais.com",
+      "category": "sociedad",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 2006,
+      "archive_url": null,
+      "full_content": "Robe Iniesta ha muerto. Y lo ha hecho de forma tan inesperada que cuesta enfrentarse hoy a cualquier texto sobre él. Poco antes de las cuatro de la madrugada, el _manager_ del músico extremeño enviaba un texto a este periodista: “Nuestro Robe ha fallecido. Estamos rotos”. Iniesta padecía “una enfermedad” desde hacía unos meses. Su círculo más íntimo no quiso que se conociera la gravedad de su estado. Tenía 63 años. [Hace un año el cantante suspendió de manera]( \" indefinida sus últimos conciertos en Madrid tras ser diagnosticado con un “tromboembolismo pulmonar”. La última vez que Iniesta fue entrevistado en EL PAÍS, en mayo de 2024, cuando presentaba su imponente último disco, _Se nos lleva el aire, _ la charla finalizó así: **P. ** Dígame si estos son los cálculos que maneja: después de esta gira de 2024 estará dos años desaparecido y luego 12 meses para componer. En la próxima gira, entonces, tendrá 66 o 67 años. **R. ** Uf. No sé si será esa edad, pero que en la próxima gira voy a tener muchos años, pues sí. Y, encima, algunos años de joven me cuentan como los años de perro [risas]. Así que en 2027 tendré ciento y pico años. [La trascendencia de Iniesta]( \" en la música española es gigantesca. Un caso poco habitual: alguien que viniendo del rock agreste fue conquistando terrenos hasta convertirse en un clásico respetado por todo el mundo. Sus letras, primero de exaltación marginal en la incipiente etapa con Extremoduro y después de una profunda carga filosófica y romántica, se encuentran entre lo mejor del rock español de todos los tiempos. Muchos de sus textos versan sobre el amor romántico. Debajo de ese coraza de tipo malencarado latía un corazón híper sensible, que escribía sobre amores, pasiones y ausencias dolorosas. “Hoy despedimos al último gran filósofo, al último gran humanista y literato contemporáneo de lengua hispana, y al cantante cuyas melodías han conseguido estremecer a generaciones y generaciones”, expone el escrito de su representante. Desde primera hora de esta mañana, cientos de mensajes están despidiendo al músico extremeño. Hace unos meses Robe todavía seguía de “mala leche” por la suspensión de los conciertos de Madrid por el trombo pulmonar. En su cabeza tenía retomar los recitales para cerrar la que él calificó como “la mejor gira de mi vida”. “Todo el que ha tenido la suerte de trabajar con Robe, después de hacerlo, reconoce ser mucho mejor profesional, y mucho mejor persona. Muy tristes por esta pronta despedida, pero igualmente agradecidos, a más no poder, de haber recibido un tesoro en forma de legado para seguir el camino que nos queda en la vida”, señala el comunicado de Dromedario Records que ha anunciado su fallecimiento. El éxito de Extremoduro pilló a contrapié a la industria musical. Fue un fenómeno que se fraguó en la calle, a base de conciertos y con el empuje de la gente, que veía a Iniesta como el cantor de la marginalidad. Aquí no existía un soporte promocional. Fue una conquista calle por calle, garito por garito. “Rock transgresivo”, lo definió el propio grupo. Robe consiguió el dinero para grabar su primer disco con una versión callejera del [_crowdfunding_]( vendía papeletas en los bares a los colegas por 1. 000 pesetas a cambio del disco… cuando estuviera hecho. Lo grabó, entregó el álbum a sus _creyentes_ y, a partir de ahí, todo fue en ascenso. El músico Robe Iniesta en un concierto en Madrid, el 10 de abril de 1999. Claudio AlvarezRobe Iniesta (a la derecha), durante su actuación en el Palacio de Deportes de Madrid, el 10 de abril de 1999. Claudio AlvarezGrabación en Bilbao del disco Extrechinato y Tú, fruto de la unión de dos de las bandas de rock más populares del país, Extremoduro —liderada por Robe Iniesta— y Platero y Tú, para dar voz a un poeta desconocido. Manolo Chinato, pastor y dueño de un bar en Puerto de Béjar (Salamanca), escribe ‘versos de amor y rebeldía’ en sus ratos libres. ” En la imagen, Robe Iniesta (a la derecha), en 2001. Cristobal ManuelRobe Iniesta, durante la grabación en Bilbao del disco Extrechinato y Tú, proyecto que unió a dos de las bandas de rock más populares del país —Extremoduro y Platero y Tú, en 2001. Cristobal ManuelRobe Iniesta (segundo por la izquierda), junto al resto de los miembros del grupo Extremoduro, en la sede de la Sociedad General de Autores Españoles (SGAE) en Madrid en 2002. Bernardo PerezEl líder de Extremoduro, Robe Iniesta (segundo por la derecha), junto al resto de la banda, muestra el disco de oro obtenido por la venta anticipada de 40. 000 ejemplares de su nuevo álbum La ley innata, unos días antes de su lanzamiento, en Madrid en 2008. J. L. Pino (EFE)Robe Iniesta, autor de la novela El viaje íntimo a la locura durante una entrevista en Madrid en 2009. Claudio AlvarezRobe Iniesta retratado en Madrid, en 2009. Claudio AlvarezEl guitarrista y cantante de Extremoduro, Robe Iniesta, durante un concierto en Madrid en 2014. Alberto Martín (EFE)El rockero placentino Robe Iniesta recibe la Medalla de Extremadura 2014 de manos del presidente José Antonio Monago, durante la celebración del Día de Extremadura en el Teatro Romano de Mérida. Jero Morales (EFE)Robe Iniesta, durante la presentación de su segundo trabajo en solitario Destrozares, canciones para el final de los tiempos, durante una rueda de prensa celebrada en Madrid en 2016. Claudio AlvarezLos líderes de Extremoduro, Robe Iniesta e Iñaki Antón, en Madrid tras el anuncio de la separación del grupo en 2019. J. J. Guillén (EFE)Robe Iniesta fotografiado en Madrid, en 2022. Kiko Huesca (EFE)Robe Iniesta, durante un concierto en Cáceres en 2022. Jero Morales (EFE)Robe Iniesta, durante la presentación en Madrid de su cuarto álbum en solitario Se nos lleva el aire, en Madrid el 19 de diciembre de 2023. Europa Press News (Europa Press via Getty Images)Roberto Iniesta, en un concierto en el Auditorio Marina Sur de Valencia en 2024. Europa Press News (Europa Press via Getty Images) Canciones como _Jesucristo García, La hoguera_ o _Extremaydura, _ contenidas en el primer disco de Extremoduro __(1989), __ mostraban a un letrista que dibujaba retratos de tipos a los que el sistema les había dado la espalda y los acompañaba de una voz áspera y de una música combativa emparentada con el rock callejero español de la escuela de Leño. “Estuve cuatro años por ahí dando tumbos. Pero tumbos auténticos. Iba con mi bulldog _Angelito_ de ciudad en ciudad. A veces dormía en casas de colegas y otras nos buscábamos la vida”. Así definió el músico sus primeros años. Pronto empezó la llamada _etapa del caos, _ en los primeros noventa. Conciertos descontrolados, letras de canciones que se olvidan, perros en el escenario, demasiado alcohol y sustancias. El grupo viajaba incluso con un _camello. _ Su legado musical se fue ampliando, con discos grabados con poco presupuesto, pero las canciones comienzan a tatuarse en la piel de los aficionados: _Tu corazón, Deltoya, Ama, ama, ama y ensancha el alma_(con letra del poeta de bar Manolo Chinato), _Sin Dios ni amo. . . _ Robe cultivaba su perfil indómito y paralelamente comenzaba a leer poesía. Su escritura gana en profundidad. Robe Iniesta, en un concierto en Madrid en 2017. Foto: Víctor Lerena (EFE) [En su camino se cruza entonces Iñaki _Uoho_ Antón, ]( \" miembro de Platero y Tú. Ambos grupos se reconocen y ven que juntos pueden comandar un movimiento, el resurgir del rock urbano. Protagonizan varias giras juntos donde ya llenan pabellones. Uoho pasa a formar parte de Extremoduro y con su llegada el grupo se profesionaliza, su sonido mejora, sus discos se graban en condiciones. _Agila_ (1996) supone un cambio total en Extremoduro: un disco de canciones soberbias, con las mejores letras de Iniesta hasta la fecha y la cuidada producción de Uoho. Uno de sus sencillos, _So payaso, _ vive en los primeros puestos de la lista de Los40, prueba clara de que Extremoduro ya había conquistado a todo el mundo. Robe había sufrido un par de sustos con las sustancias y a finales de los noventa decide bajar el ritmo. Regresa con su pareja, de la que se había separado y con la que comparte dos hijos, y dosifica las drogas. “Dejé la heroína mucho antes de empezar con Extremoduro… Le eché cojones y la dejé solo. Mucha gente está empeñada en decir que soy yonqui, pero no es verdad. Solo me pongo… lo normal. La droga no es mala. Los malos son los hombres y sus acciones. Es como si pegas un tiro a alguien y le echas la culpa a la bala”, dijo a este periódico. Robe Iniesta, en un concierto en Cáceres en 2022. Jero Morales (EFE) En esta época, Robe se entrega a la poesía y a la literatura de forma desordenada y compulsiva, Su paleta va desde los autores que encuentra en los bares (Sor Kampana, Chinato…) a las referencias clásicas (Machado, Neruda, Miguel Hernández…). [Después de _Agila_ Extremoduro]( \" publicó cinco discos, todos relevantes, sobre todo _La ley innata_ (2008), donde comienza a convertir su escritura en tratados filosóficos. El final de Extremoduro llega con el distanciamiento entre Robe e Iñaki. Aquello que comenzaron como una fiesta creativa se ha convertido en una empresa. Grandes giras, presupuestos amplios, mucho que organizar, reuniones con abogados. . . Esta logística supera a los dos amigos y su relación se rompe. La última gira de Extremoduro se la llevó la pandemia. Robe prefirió centrarse en su carrera en solitario, que había comenzado en 2015 con _Lo que aletea en nuestras cabezas, _ y la gira de Extremoduro quedó aparcada definitivamente. Sus dos últimos discos en solitario, _Mayéutica_ (2021) y _Se nos lleva el aire_ (2023), presentan a un escritor mayúsculo, un poeta sabio y en estado de gracia reflexionando sobre la transcendencia e intrascendencia del ser humano, ofreciendo soluciones para vivir felizmente en este mundo efímero. Los versos de esa obra maestra que es [_El poder del arte_]( \" suenan hoy como un maravilloso recuerdo a un hombre que transformó la vida de mucha gente: “Sé que puede que mañana ya no nos quede nada y ya nada importe. / Voy alzando la mirada y casi no sé de nada, nada que importe. / Tal vez, si pudiera hablarte, de si fuera cierto, que el poder del arte bien nos pudiera salvar. / De una vida inerte, de una vida triste, de una mala muerte”. El Robe de los últimos tiempos era un tipo que había limado su afilado carácter. Seguía siendo un tipo desconfiado, pero se iba abriendo con los años. Ofrecía entrevistas con regularidad, eso sí, casi siempre por teléfono y cuando publicaba disco o salía de gira. Reía mucho en estos encuentros con la prensa. Vivía entre Extremadura y el País Vasco junto a su mujer, Bibi, siempre dispuesta a echar una mano cuando había que organizar la intendencia de un día de actuación. La pareja tiene dos hijos, ya camino de la treintena, uno de ellos músico. También se dejaba querer en estos últimos tiempos el músico extremeño, recibiendo algún que otro homenaje. Enternecedor resultó un encuentro que tuvo en el Piornal (Valle del Jerte, Cáceres) al recibir la Cereza de Oro. Allí, [unos niños de un colegio le cantaron el clásico de Extremoduro]( _Ama, ama, ama y ensancha el alma. _ Robe se conmovió. __ “Creo que al final lo que manda es la música. Y aunque a la gente le dé mucho morbo mi pasado, lo que cuentan son las canciones. Cuando llevas tanto tiempo y haces músicas diferentes es normal que le gustes a mucha gente a la que le interesan las canciones”, dijo a este periódico tras aquel homenaje. Y eso es lo que nos quedará siempre de Robe, sus canciones y la enorme capacidad que tenía para emocionar con ellas. Roberto Iniesta, 'Robe', actúa durante una actuación en el Auditorio Marina Sur, el 11 de mayo de 2024 en Valencia. Foto: Rober Solsona/Europa Press | Vídeo: EPV",
+      "content_preview": "Robe Iniesta ha muerto. Y lo ha hecho de forma tan inesperada que cuesta enfrentarse hoy a cualquier texto sobre él. Poco antes de las cuatro de la madrugada, el _manager_ del músico extremeño enviaba un texto a este periodista: “Nuestro Robe ha fallecido. Estamos rotos”. Iniesta padecía “una enfermedad” desde hacía unos meses. Su círculo más íntimo no quiso que se conociera la gravedad de su estado. Tenía 63 años. [Hace un año el cantante suspendió de manera]( \" indefinida sus últimos concierto..."
+    },
+    {
+      "processing_rank": 23,
+      "url_id": 15443,
+      "url": "https://elpais.com/sociedad/2025-12-10/muere-una-mujer-en-catarroja-tras-tres-dias-en-la-uci-por-una-brutal-paliza-de-su-pareja.html",
+      "title": "Muere una mujer en Catarroja después de tres días en la UCI por una paliza de su pareja",
+      "source": "elpais.com",
+      "category": "sociedad",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 795,
+      "archive_url": null,
+      "full_content": "Un coche de la Guardia Civil. Guardia Civil (GUARDIA CIVIL) Una mujer de 48 años, vecina de [Catarroja]( \" murió la tarde del martes en el Hospital La Fe de Valencia después de permanecer en coma tres días en la Unidad de Cuidados Intensivos (UCI). La víctima [había recibido una paliza]( \" en la madrugada del viernes al sábado, presuntamente, de su pareja. La Guardia Civil de Alfafar detuvo al supuesto agresor, de 43 años, que pasó ayer a disposición judicial, según ha confirmado el instituto armado, pero quedó en libertad provisional con medidas cautelares antes de conocerse el fallecimiento de la mujer. Un juzgado de Sueca ha emitido hoy una nueva orden de arresto contra él, ante el riesgo de fuga, y el hombre ha sido detenido en Catarroja. A petición de la Fiscalía, el titular del Juzgado de Violencia sobre la mujer número 1 de Sueca ha decretado prisión provisional, comunicada y sin fianza para el detenido, al que imputa los delitos de homicidio y maltrato habitual, informa el Tribunal Superior de Justicia de la Comunitat Valenciana (TSJCV). La agresión se produjo de madrugada después de una fuerte discusión en el domicilio, según advirtieron los vecinos, y a la mañana siguiente fue la pareja la que llamó al teléfono de Emergencias 112 diciendo que su pareja había tenido un accidente y se encontraba inconsciente en casa. Cuando fue atendida por los servicios médicos, las heridas que presentaba la mujer no se correspondían con una caída accidental como aseguró su pareja. La mujer presentaba golpes por todo el cuerpo, sobre todo en la cabeza, con un fuerte traumatismo craneoencefálico, lo que explicaría el coma. El presunto agresor fue detenido en una primera ocasión el pasado fin de semana porque su testimonio sobre lo ocurrido en el domicilio de la pareja no cuadraba con las lesiones que presentaba la víctima, y ayer martes pasó a disposición del Juzgado de Violencia sobre la Mujer de Sueca, donde su titular practicó varias testificales y convocó la comparecencia de prisión prevista en la ley de Enjuiciamiento criminal, según fuentes próximas al caso. En esa comparecencia, que se produjo antes de la muerte de la mujer, la única acusación personada, que era la Fiscalía, no solicitó la medida de prisión preventiva, por lo que el juez no la pudo acordar y lo que hizo fue dictaminar una orden de alejamiento y prohibición de comunicación con la víctima. Según el TSJCV, no constan denuncias previas por hechos de violencia de género del detenido respecto a la víctima, aunque el hombre sí tiene antecedentes penales de este tipo respecto a otras mujeres. La Delegación del Gobierno contra la Violencia de Género ya se encuentra recabando datos sobre la muerte de la mujer y la Guardia Civil la investiga como un posible caso de violencia de género. El Ayuntamiento de Catarroja ha trasladado su pésame por el fallecimiento de la vecina, llamada Natividad. También, ha expresado su “cariño, respeto y acompañamiento” a su familia y entorno más cercano. “Estamos en contacto con las autoridades competentes, permanecemos a la espera de los avances de la investigación y el comunicado oficial por parte de la Delegación del Gobierno que confirme que nos encontramos ante un caso de violencia de género”, ha remitido el consistorio a través de una nota. En este punto, ha puntualizado que, “hasta que dicha confirmación se produzca, por respeto a la víctima y a su familia”, el consistorio considera “imprescindible” preservar su intimidad y permitir que las autoridades continúen su trabajo. “Reiteramos nuestro rechazo absoluto a cualquier manifestación de violencia machista y defendemos con firmeza la necesidad de reconocer, nombrar y combatir esta realidad”, zanja el Ayuntamiento y añade: “La violencia de género existe y negarla solo contribuye a perpetuar el sufrimiento de las víctimas”. En lo que va de año, 45 mujeres han sido asesinadas por sus parejas o exparejas. Desde que arrancó la [estadística oficial]( en 2003, son 1. 340 mujeres. _El teléfono 016 atiende a las víctimas de violencia machista, a sus familias y a su entorno las 24 horas del día, todos los días del año, en 53 idiomas diferentes. El número no queda registrado en la factura telefónica, pero hay que borrar la llamada del dispositivo. También se puede contactar a través del correo electrónico_[. es_](mailto: ) _y por WhatsApp en el número 600 000 016. Los menores pueden dirigirse al teléfono de la Fundación ANAR 900 20 20 10. Si es una situación de emergencia, se puede llamar al 112 o a los teléfonos de la Policía Nacional (091) y de la Guardia Civil (062). Y en caso de no poder llamar, se puede recurrir a la aplicación ALERTCOPS, desde la que se envía una señal de alerta a la Policía con geolocalización. _",
+      "content_preview": "Un coche de la Guardia Civil. Guardia Civil (GUARDIA CIVIL) Una mujer de 48 años, vecina de [Catarroja]( \" murió la tarde del martes en el Hospital La Fe de Valencia después de permanecer en coma tres días en la Unidad de Cuidados Intensivos (UCI). La víctima [había recibido una paliza]( \" en la madrugada del viernes al sábado, presuntamente, de su pareja. La Guardia Civil de Alfafar detuvo al supuesto agresor, de 43 años, que pasó ayer a disposición judicial, según ha confirmado el instituto ar..."
+    },
+    {
+      "processing_rank": 24,
+      "url_id": 15470,
+      "url": "https://elpais.com/internacional/2025-12-10/el-regimen-de-tunez-choca-con-la-ue-y-se-ve-amenazado-por-los-sindicatos-tras-encarcelar-a-la-oposicion.html",
+      "title": "El régimen de Túnez choca con la UE y se ve amenazado por los sindicatos tras encarcelar a la oposición",
+      "source": "elpais.com",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 1346,
+      "archive_url": null,
+      "full_content": "Amenazado por la reciente [ola de protestas sociales que sacude Túnez, ]( \" presidente Kais Said ha tenido un choque diplomático con la UE, que apuntala la economía del país magrebí a cambio del control de la migración irregular. También se ha visto desafiado por la convocatoria de una huelga general de la [Unión General de Tunecina del Trabajo ]( \" sindicato con un millón de afiliados en un país de 12 millones de habitantes. Said, que gobierna de forma autocrática desde 2021 tras haber clausurado el Parlamento, ha acorralado en los dos últimos años a la oposición. Con el ingreso en prisión, el pasado jueves, de [Nejib Chebbi Ahmed, ]( \" de 81 años y líder de la coalición opositora Frente de la Salvación Nacional, casi toda la disidencia al régimen ha acabado ya entre rejas o en el exilio. Por cuarto fin de semana consecutivo, una masiva manifestación recorrió el sábado la céntrica avenida Habib Burgiba de la capital tunecina bajo el lema “La oposición no es un crimen” y para reclamar la liberación de los detenidos por delitos de opinión. El [encarcelamiento de Chebbi, ]( \" de la izquierda desde hace seis décadas y figura política de la transición, tras el derrocamiento del dictador Zin el Abidín Bel Alí en las revueltas de la Primavera Árabe de 2011, cierra la lista de más de 40 opositores encausados en un macrojuicio por “atentar contra la seguridad del Estado”. Su sentencia firme a 12 años de cárcel fue dictada la semana pasada. Otros presos han visto ratificadas sus condenas de hasta 45 años de prisión, mientras que unos pocos –procesados en rebeldía, como el intelectual francés Bernard-Henri Lévy– se encuentran a salvo en el extranjero. Su arresto estuvo precedido por el de destacados opositores como la activista política Chaima Issa o el abogado Ayachi Hammami. Issa, condenada a 20 años de prisión, fue detenida en el curso de la [manifestación de la oposición]( \" organizada el día 1 por agentes de paisano que cubrían su rostro para no ser identificados y que la evacuaron en un furgón sin placas de identificación policial. La [ONG Human Rights Watch]( \" (HRW), con sede en Nueva York, sostiene que “las duras penas impuestas persiguen silenciar a la disidencia” de manera que casi toda la oposición se encuentra en la cárcel o en el exilio, y que Túnez “ha regresado a la era represiva” del dictador Ben Alí tras el paréntesis democrático posterior a la Primavera Árabe. HRW ha pedido este martes la liberación de todos los condenados, ya que considera que los [cargos presentados en su contra eran “infundados”]( \" y no se han basado en “pruebas creíbles”. El anuncio hecho público el viernes por la poderosa [central de trabajadores tunecina]( \" de convocar una huelga general en enero es interpretado como un ultimátum al presidente tras la erosión de las libertades y escalada del acoso a la oposición. La protesta también se dirige contra el deterioro de la situación social y laboral en el país norteafricano, donde el salario mínimo mensual está fijado en 520 dinares (150 euros) mientras la tasa de inflación supera el 5% anual, tras haber alcanzado el 10% en 2023. “No nos intimida la amenaza de la cárcel y proseguiremos nuestra lucha”, ha advertido Nuredín Tabubi, líder de la [UGTT, ]( \" sindicato que, en aras de poner fin al caos en la economía, avaló en 2021 el autogolpe presidencial para disolver un Parlamento surgido de las urnas que no controlaba. La semana anterior a la convocatoria del primer paro nacional contra el Gobierno desde la llegada al poder de Said, el sindicalista Tabubi se había reunido con el embajador de la Unión Europea en Túnez, Giuseppe Perrone. En un inusual gesto diplomático, Said convocó al enviado comunitario en el palacio de Cartago, sede de la Presidencia tunecina, para protestar contra lo que denominó “flagrante injerencia” en los asuntos internos de su país. La queja presentada al embajador coincide además con una resolución no vinculante aprobada por el [Parlamento Europeo ]( \" la que se llamaba a la liberación de los detenidos en Túnez por el mero ejercicio de la libertad de expresión. En paralelo, el ministro de Asuntos Exteriores conminó a la embajadora de Países Bajos en Túnez por haberse entrevistado con un miembro de la oposición. ### Control del flujo de pateras En sucesivas votaciones sobre Túnez, la Eurocámara ha estimado que las ayudas económicas enviadas por la UE deben estar condicionadas a los criterios de respeto a los derechos humanos y a la libertad de expresión. Tras un acuerdo alcanzado con Bruselas en 2023, Said ha emprendido una política de [mano dura con los migrantes irregulares subsaharianos]( \" que tratan de alcanzar desde Túnez las costas europeas en pateras por el Mediterráneo central. En contrapartida, aspira a recibir hasta 1. 000 millones de euros en forma de ayuda al desarrollo del país magrebí. La Italia de la primera ministra Giorgia Meloni se presenta como la principal valedora del [acuerdo de asociación estratégica]( \" del Túnez de Said con la Unión, adonde el país magrebí envía el 70% de sus exportaciones. En los once primeros meses de este año, Italia ha registrado la entrada de 4. 500 migrantes irregulares procedentes del litoral tunecino, en el mismo periodo de 2023 fueron 96. 000 las entradas por la misma vía de migrantes de muy variadas nacionalidades. La UE se dispone a considerar a T[únez como “país seguro” ]( \" el objetivo de acelerar la denegación de peticiones de asilo “infundadas” y el retorno de migrantes irregulares procedes del sus costas. El deterioro de los servicios públicos y la crisis económica en la que está sumido el país magrebí están detrás de la mayor oleada de malestar ciudadano registrada desde la llegada al poder de Said, que ha pilotado la demolición del sistema multipartidista surgido en 2011 en el primer estallido de la [Primavera Árabe. ]( \" presidente achaca sistemáticamente las expresiones de descontento a una conspiración extranjera dirigida a socavar el Estado mediante crisis ficticias. ### Revuelta contra la contaminación Las protestas más masivas se han registrado en la región costera de Gabes (sureste), donde la [contaminación causada por la industria química]( \" ha movilizado miles de manifestantes. En septiembre, más de 200 personas, en su mayoría menores en edad escolar, tuvieron que ser atendidas en centros sanitarios de la zona con problemas respiratorios. Said aseguró el sábado mediante un comunicado de la Presidencia que las deficiencias observadas en las instalaciones de la empresa pública Groupe Chimique Tunisiene (CGT) se deben a la falta de mantenimiento y a la corrupción publica anteriores a su mandato. Organizaciones de la sociedad civil han denunciado ante la justicia la grave [contaminación ambiental ]( \" exigir el cierre de la planta de CGT de Gabes. El tribunal que lleva el procedimiento, calificado de urgente, volvió a retrasar el jueves su decisión, por cuarta vez desde la fecha prevista, y lo ha aplazado hasta el 25 de diciembre. Las cuatro decenas de dirigentes de partidos, ex altos cargos, intelectuales y empresarios que han sido condenados en firme por [“conspirar contra la seguridad del Estado” ]( \" son figuras de distintas corrientes políticas ―conservadores y progresistas, laicos e islamistas―, aunque con el denominador común de haberse opuesto a la deriva autoritaria del presidente Said. En otro proceso, también ha sido condenado a 22 años de prisión el líder histórico islamista [Rachid Ganuchi]( \" de 83 años, fundador del partido Ennahda, el más votado (40, 7%) en las elecciones legislativas de 2019, las últimas a las que pudo presentarse antes de su prohibición. El acoso a la oposición comenzó en febrero de 2023 en una redada policial en la casa del dirigente socialdemócrata [Jayan Turqui Zaragoza, ]( \" quien cuenta con pasaporte español como hijo de una exilada republicana tras la Guerra Civil española. Su detención se produjo después de haber organizado en su casa una reunión a la que asistieron diplomáticos occidentales, miembros de la oposición y representantes de la sociedad civil tunecina en torno a un tradicional cuscús.",
+      "content_preview": "Amenazado por la reciente [ola de protestas sociales que sacude Túnez, ]( \" presidente Kais Said ha tenido un choque diplomático con la UE, que apuntala la economía del país magrebí a cambio del control de la migración irregular. También se ha visto desafiado por la convocatoria de una huelga general de la [Unión General de Tunecina del Trabajo ]( \" sindicato con un millón de afiliados en un país de 12 millones de habitantes. Said, que gobierna de forma autocrática desde 2021 tras haber clausura..."
+    },
+    {
+      "processing_rank": 25,
+      "url_id": 15765,
+      "url": "https://www.nytimes.com/2025/12/09/world/middleeast/iran-egypt-world-cup-seattle-pride.html",
+      "title": "Seattle’s Plans for a Pride Match at World Cup Infuriates Iran and Egypt",
+      "source": "www.nytimes.com",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "xpath_cache",
+      "extraction_error": null,
+      "word_count": 401,
+      "archive_url": null,
+      "full_content": "The two countries, which criminalize homosexuality and impose severe punishments for it, were picked to play on a day celebrating L. G. B. T. Q. communities. Farnaz Fassihi, who has covered Iran for three decades, living and traveling in the country, has written about Iran’s national soccer team at several World Cup games. Long before the World Cup draw last week determined which teams would play where and when, one game was designated as the Pride Match. The game in Seattle on June 26 will go all out with rainbow banners, flags, arts and stories to showcase the L. G. B. T. Q. communities in Washington State. “With hundreds of thousands of visitors and billions of viewers worldwide, this is a once-in-a-lifetime moment to showcase and celebrate LGBTQIA+ communities in Washington, ” SeattleFWC26, the organizing committee for the city’s participation in the World Cup 2026 games, says on its website. Then came the luck of the draw: Iran and Egypt, two countries that criminalize homosexuality and impose severe punishments for it, will be playing the Pride Match. And they have both roundly rejected having any links between their game and the L. G. B. T. Q. events. The football associations for Iran and Egypt said on Tuesday that they had both written to FIFA, soccer’s global governing body, objecting to the Pride association with their match, demanding that all such events and displays coinciding with the game be canceled and insisting that the match be designated strictly as a sports event. TheEgyptian Football Association said in its letter to FIFAthat the Pride Match events “directly conflict with the cultural, religious and social values in the region, particularly in Arab and Islamic societies, ” and would “provoke cultural and religious sensitivities” of Iranian and Egyptian fans. Mehdi Taj, the head of Iran’s Football Association, said on state television Tuesday that Iran had also protested the Pride Match designation with FIFA. Iranian news media reported that the country’s team players would not wear rainbow arm bands or display any support for Pride. We are having trouble retrieving the article content. Please enable JavaScript in your browser settings. Thank you for your patience while we verify access. If you are in Reader mode please exit andlog intoyour Times account, orsubscribefor all of The Times. Thank you for your patience while we verify access. Already a subscriber? Log in. Want all of The Times? Subscribe.",
+      "content_preview": "The two countries, which criminalize homosexuality and impose severe punishments for it, were picked to play on a day celebrating L. G. B. T. Q. communities. Farnaz Fassihi, who has covered Iran for three decades, living and traveling in the country, has written about Iran’s national soccer team at several World Cup games. Long before the World Cup draw last week determined which teams would play where and when, one game was designated as the Pride Match. The game in Seattle on June 26 will go a..."
+    }
+  ],
+  "newsletter_preview": {
+    "word_count": 1303,
+    "char_count": 11044,
+    "first_500_chars": "En un mundo donde las tensiones geopolíticas y los cambios políticos parecen ser la norma, hoy nos encontramos con un conjunto de eventos que nos recuerdan la complejidad y la interconexión de nuestras realidades globales. Comencemos en el sudeste asiático, donde el [**conflicto entre Tailandia y Camboya**](https://www.lemonde.fr/international/article/2025/12/10/face-aux-tensions-thailande-cambodge-plus-de-500-000-personnes-evacuent-les-regions-frontalieres_6656682_3210.html) ha obligado a evacu..."
+  }
+}

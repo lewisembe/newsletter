@@ -1,0 +1,131 @@
+# PoC Category Classification - Configuration
+# Clasificación de titulares por categorías usando embeddings
+# Comparación con clasificación LLM (ground truth)
+
+database:
+  # Path to news.db (relative to this directory)
+  path: ../data/news.db
+
+  # Filtros para dataset de test
+  filters:
+    # Solo URLs con categoría asignada (LLM ground truth)
+    require_categoria: true
+
+    # Limitar a fechas recientes (opcional, null = todas)
+    # Format: YYYY-MM-DD
+    date_from: null
+    date_to: null
+
+    # Número máximo de URLs a procesar (null = todas)
+    # Útil para tests rápidos
+    max_urls: 100
+
+    # Categorías a incluir (null = todas)
+    # Ejemplo: ['economia', 'politica', 'tecnologia']
+    categories_filter: null
+
+model:
+  # HuggingFace model for embeddings
+  # Reutilizar mismo modelo de poc_clustering para consistencia
+  name: intfloat/multilingual-e5-small
+
+  # Cache directory for downloaded models
+  # Apuntar al mismo cache de poc_clustering para no duplicar
+  cache_dir: ../poc_clustering/models_cache
+
+  # Batch size for embedding generation (adjust based on RAM)
+  batch_size: 100
+
+  # Device: 'cpu' or 'cuda'
+  device: cpu
+
+classification:
+  # Método de clasificación
+  # Options: 'knn', 'cosine_similarity', 'threshold'
+  method: cosine_similarity
+
+  # K para KNN (si method = 'knn')
+  knn_k: 5
+
+  # Threshold de similitud mínima (si method = 'threshold')
+  # Si ninguna categoría supera el threshold → 'otros'
+  similarity_threshold: 0.5
+
+  # Usar embeddings de ejemplos además de descripciones
+  use_examples: true
+
+  # Número de ejemplos por categoría a usar
+  examples_per_category: 3
+
+  # Estrategia para combinar múltiples embeddings de categoría
+  # Options: 'mean', 'max', 'weighted_mean'
+  category_embedding_strategy: mean
+
+categories:
+  # Path to categories.yml (relative to this directory)
+  config_path: ../config/categories.yml
+
+  # Categorías a excluir del análisis (ej: 'otros')
+  # Útil para evaluar solo categorías bien definidas
+  exclude: []
+
+comparison:
+  # Métricas a calcular
+  metrics:
+    - accuracy
+    - precision
+    - recall
+    - f1_score
+    - confusion_matrix
+
+  # Análisis de errores
+  error_analysis:
+    # Incluir ejemplos de errores en el informe
+    include_examples: true
+
+    # Número máximo de ejemplos por tipo de error
+    max_examples_per_error: 5
+
+    # Analizar patrones de confusión entre categorías
+    analyze_confusion_patterns: true
+
+  # Visualizaciones (requiere matplotlib/seaborn)
+  visualizations:
+    # Generar gráficos
+    enabled: true
+
+    # Confusion matrix heatmap
+    confusion_matrix_heatmap: true
+
+    # Distribución de similitudes por categoría
+    similarity_distributions: true
+
+    # t-SNE/UMAP projection (opcional, más lento)
+    embedding_projection: false
+
+output:
+  # Output format
+  format: markdown
+
+  # Incluir métricas detalladas por categoría
+  include_per_category_metrics: true
+
+  # Incluir tabla de comparación LLM vs Embeddings
+  include_comparison_table: true
+
+  # Incluir análisis de costos y latencia
+  include_performance_comparison: true
+
+  # Guardar resultados en CSV (además de Markdown)
+  export_csv: true
+
+  # Directorio de salida
+  output_dir: ./output
+
+# Logging
+logging:
+  # Nivel de log: DEBUG, INFO, WARNING, ERROR
+  level: INFO
+
+  # Mostrar barra de progreso
+  show_progress: true

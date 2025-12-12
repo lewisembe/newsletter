@@ -1,0 +1,57 @@
+"""
+Database Manager for Newsletter Utils - PostgreSQL Migration
+
+Automatically uses PostgreSQL instead of SQLite.
+Provides backward-compatible interface so no code changes needed in pipeline stages.
+
+Author: Newsletter Utils Team
+Updated: 2025-12-02 - Migrated from SQLite to PostgreSQL
+"""
+
+import os
+import logging
+from dotenv import load_dotenv
+
+# Import PostgreSQL adapter
+from common.postgres_db import PostgreSQLURLDatabase
+
+logger = logging.getLogger(__name__)
+
+# Load environment variables
+load_dotenv()
+
+
+class SQLiteURLDatabase(PostgreSQLURLDatabase):
+    """
+    Backward-compatible database interface.
+
+    Now uses PostgreSQL instead of SQLite, but maintains the same API
+    so existing code doesn't need to change.
+
+    Usage (unchanged):
+        db = SQLiteURLDatabase()  # Now connects to PostgreSQL automatically
+        db.add_url({...})
+    """
+
+    def __init__(self, db_path: str = "data/news.db"):
+        """
+        Initialize database connection.
+
+        Args:
+            db_path: IGNORED - kept for backward compatibility only
+                     PostgreSQL connection string now comes from DATABASE_URL env var
+        """
+        # Get PostgreSQL connection string from environment
+        connection_string = os.getenv(
+            'DATABASE_URL',
+            'postgresql://newsletter_user:newsletter_pass@localhost:5432/newsletter_db'
+        )
+
+        # Call PostgreSQL parent class
+        super().__init__(connection_string)
+
+        logger.info("Database initialized (PostgreSQL)")
+
+
+# Export for compatibility
+__all__ = ['SQLiteURLDatabase']

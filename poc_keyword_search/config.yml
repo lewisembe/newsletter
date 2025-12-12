@@ -1,0 +1,116 @@
+# POC Keyword Search Configuration
+#
+# This config defines keyword topics for Google News search.
+# Unlike the main pipeline (which scrapes from fixed sources),
+# this POC searches for URLs by topic/keyword.
+
+# Database configuration
+database:
+  path: "poc_keyword_search/data/poc_news.db"  # Independent POC database
+
+# Google News search configuration
+search_config:
+  language: "es"           # Language code: es, en, fr
+  country: "ES"            # Country code: ES, US, FR, GB
+  rate_limit_delay: 1.0    # Seconds between requests (be nice to Google)
+  deduplication: true      # Remove duplicate URLs
+  validate_urls: true      # Basic URL validation
+  source_label: "keyword_search"  # Value for 'source' column in DB
+
+  # URL Resolution (uses googlenewsdecoder + Base64 fallback)
+  # Decodes Google News redirect URLs to get original article URLs
+  # Works on all architectures (x86_64, ARM64, etc.)
+  resolve_urls: true      # Set to false to keep Google News URLs as-is
+
+# URL Classification (reuse from main pipeline)
+classification:
+  enabled: true            # Classify as contenido/no_contenido
+  use_llm_fallback: true   # Use LLM if regex rules don't match
+  classify_subtype: false  # Don't classify temporal/atemporal (optional)
+
+# Keyword topics for search
+# Each topic will be searched independently
+#
+# TIME WINDOW OPTIONS (when parameter):
+#   - "1h"  : Last hour (real-time breaking news)
+#   - "1d"  : Last 24 hours (daily news - recommended for daily execution)
+#   - "7d"  : Last 7 days (weekly topics or less frequent news)
+#   - "30d" : Last 30 days (monthly topics or rare events)
+#
+# BEST PRACTICES:
+#   - Daily execution: Use "1d" for most topics
+#   - Hourly updates: Use "1h" for breaking news
+#   - Weekly digests: Use "7d" for slower-moving topics
+#   - Elections/events: Use "7d" or "30d" for less frequent coverage
+#
+keyword_topics:
+  # Economics & Finance
+  - topic: "inflación España"
+    when: "1d"             # Time range: 1h, 1d, 7d, 30d (customizable per topic)
+    max_results: 50        # Max articles to retrieve
+    priority: high
+    description: "Spanish inflation news and monetary policy"
+
+  - topic: "BCE tipos de interés"
+    when: "1d"
+    max_results: 30
+    priority: high
+    description: "European Central Bank interest rate decisions"
+
+  - topic: "Banco de España economía"
+    when: "1d"
+    max_results: 20
+    priority: medium
+    description: "Bank of Spain economic reports and forecasts"
+
+  # Geopolitics
+  - topic: "guerra Ucrania"
+    when: "1d"
+    max_results: 40
+    priority: high
+    description: "Ukraine war developments"
+
+  - topic: "Unión Europea política"
+    when: "1d"
+    max_results: 25
+    priority: medium
+    description: "EU political decisions and regulations"
+
+  # Spanish Politics
+  - topic: "gobierno España Sánchez"
+    when: "1d"
+    max_results: 30
+    priority: high
+    description: "Spanish government and PM Sánchez news"
+
+  - topic: "elecciones España"
+    when: "7d"             # Wider window for less frequent news
+    max_results: 20
+    priority: low
+    description: "Spanish election news"
+
+  # Markets & Business
+  - topic: "bolsa española IBEX 35"
+    when: "1d"
+    max_results: 25
+    priority: medium
+    description: "Spanish stock market news"
+
+  - topic: "sector bancario España"
+    when: "1d"
+    max_results: 20
+    priority: medium
+    description: "Spanish banking sector news"
+
+# Advanced settings
+advanced:
+  # Fallback keywords if primary search returns < threshold
+  min_results_threshold: 5
+  enable_fallback: false
+
+  # Logging
+  log_level: "INFO"
+
+  # Performance
+  parallel_searches: false  # Set true for concurrent searches (faster but more load)
+  max_workers: 3           # Max parallel workers if enabled

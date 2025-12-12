@@ -1,0 +1,101 @@
+url_id,title,llm_category,embedding_category,confidence,correct
+8467,Invasion de l’Ukraine en cartes : l’évolution des combats semaine après semaine,geopolitica,geopolitica,0.8479850121446992,True
+8466,"Clara Verduch, entrenadora: «En Barre los cambios físicos se ven muy rápido en comparación a otros deportes»",deportes,deportes,0.8806374519544877,True
+8465,"Puigdemont acusa a jueces, periodistas y políticos de perpetuar el franquismo",politica,geopolitica,0.8425027638050766,False
+8464,Shein bajo la lupa: Greenpeace encuentra sustancias tóxicas en sus prendas,tecnologia,tecnologia,0.8609282512010666,True
+8463,Italia extradita a Alemania al cerebro logístico del sabotaje del gasoducto Nord Stream,geopolitica,geopolitica,0.8595687930384698,True
+8462,Bruselas rechaza que el plan de paz de EE.UU. y Rusia no tenga en cuenta a Ucrania y la UE,geopolitica,geopolitica,0.8593496475954916,True
+8461,El juez Peinado encarga un informe para esclarecer si Begoña Gómez cometió intrusismo al firmar pliegos de contratación de la UCM,politica,politica,0.8516351496308743,True
+8460,El Gobierno eleva su oferta salarial a los funcionarios un punto: 11% entre 2025 y 2028,politica,economia,0.8648994104491118,False
+8458,Así ha sido la tercera edición de EXPANSIÓN IA Inteligencia Artificial y Nuevas Tecnologías,tecnologia,tecnologia,0.8878085107280633,True
+8456,Cómo evitar que su agente de IA sea un socio brillante sin estrategia,tecnologia,otros,0.8563478660423163,False
+8455,Pfizer presenta resultados prometedores de su nueva vacuna ARNm contra la gripe,tecnologia,tecnologia,0.8740177729245733,True
+8454,El fotógrafo que nos hace mirar de otra manera La Alhambra de Granada y la Mezquita de Córdoba,sociedad,sociedad,0.8435223675806545,True
+8453,"Más de 50 estrellas Michelin homenajean a Berasategui: ""La revolución de la cocina española es la unidad del sector""",sociedad,sociedad,0.86417201498398,True
+8452,Nokia escindirá la filial de IA para impulsar su negocio,finanzas,finanzas,0.8415868449310393,True
+8451,KPMG lanza un nuevo negocio para 'start up' y se refuerza con el fichaje de Marta Echarri,finanzas,finanzas,0.8444691828653035,True
+8448,Ceca rompe con el equipo investigado por la trama al ex jefe de la UDEF,politica,deportes,0.8545318345533666,False
+8446,Probamos las nuevas gafas inteligentes Meta Oakley Vanguard,tecnologia,tecnologia,0.8828476239134158,True
+8445,Coruñesas reabrirá su pescadería de Recoletos aliado con Los 33,sociedad,sociedad,0.8440978986304084,True
+8443,"'Bernabéu Infinito', la alianza del Real Madrid con Apple para ""abrir las puertas a todo el planeta""",sociedad,tecnologia,0.8590965122416312,False
+8442,ArcelorMittal: un valor bien soportado y con mucho potencial,finanzas,finanzas,0.8677115688303073,True
+8441,Nvidia bate las previsiones y gana un 65% más en el tercer trimestre,finanzas,finanzas,0.873392775583858,True
+8440,"Naturgy: el canal alcista, dibujado con escuadra y cartabón",finanzas,sociedad,0.8401626130996243,False
+8438,Valores Ibex 35,finanzas,finanzas,0.8920984768269222,True
+8437,Precio Gasolina hoy,finanzas,finanzas,0.8927815653877027,True
+8436,Euríbor hoy,economia,tecnologia,0.8643397084518886,False
+8431,La londinense Bond Street tiene el alquiler más caro del mundo,economia,finanzas,0.838311171430768,False
+8430,Nace el primer sistema para medir las emisiones de CO2 de la economía digital en España,tecnologia,tecnologia,0.8467125938291375,True
+8429,"Endesa convence con sus cuentas, pero sufre 'mal de altura'",finanzas,finanzas,0.8643106629970496,True
+8428,Foodiverse sale de pérdidas tras reordenar su deuda,finanzas,finanzas,0.8617524201769153,True
+8427,Selenta (Brookfield) busca crecer con contratos de gestión y dar el salto internacional,finanzas,finanzas,0.8637516885072805,True
+8426,Reino Unido elevará a 120.000 libras la garantía de depósitos,finanzas,finanzas,0.8691825802146445,True
+8425,Deutsche Bank rebaja a la mitad su valoración de eDreams,finanzas,finanzas,0.8687833694496485,True
+8424,"Hacienda prorroga el sistema de módulos para autónomos, pero deja los límites en el aire",economia,politica,0.8557978264831692,False
+8423,"Axa prevé cerrar de forma inminente su entrada en Fiberpass, la firma de Telefónica y Vodafone",finanzas,finanzas,0.8662533823655436,True
+8422,El Senado aprueba la propuesta del PP para despenalizar el corte de suministros a los 'okupas',politica,politica,0.8446988738494967,True
+8421,Cuánto subirán las pensiones a partir del 1 de enero de 2026,economia,politica,0.8520653340956152,False
+8420,"Sostenibilidad, digitalización y formación revolucionan la industria",tecnologia,tecnologia,0.8813128147811896,True
+8419,La noruega Kongsberg desembarca en España ante la eclosión de fondos públicos para Defensa,geopolitica,geopolitica,0.8504857679707613,True
+8418,Santander AM prevé que las bolsas escalen a nuevos máximos y destaca que la española está barata,finanzas,finanzas,0.89091327674496,True
+8417,Santander lanza el 'Depósito iPhone' para dinero nuevo y ganar clientes vinculados,finanzas,finanzas,0.846274188049029,True
+8416,El seguro gana un 11% más impulsado por autos y salud,finanzas,finanzas,0.8711445095999057,True
+8415,El objetivo de triplicar la energía nuclear requiere que EEUU y Europa igualen a China,tecnologia,geopolitica,0.8637009666779268,False
+8414,Las cuatro bazas de Europa para superar a Wall Street persistentemente,finanzas,finanzas,0.8886922947634461,True
+8413,"Ceuta irrumpe con Endesa, REE y Templus en 'data center'",finanzas,otros,0.8613698698577682,False
+8412,Redeia negociará con Iberdrola y Endesa el plan antiapagones,finanzas,finanzas,0.8510472286612698,True
+8411,Cómo impulsan el negocio familiar Torrons Vicens y Kave Home,finanzas,finanzas,0.8604893365353712,True
+8410,El Gobierno eleva su oferta de subida de sueldo a funcionarios al 11% hasta 2028,politica,economia,0.8663235979917048,False
+8409,El debate de investidura en Valencia será el 27 de noviembre,politica,politica,0.8378318923518618,True
+8408,"De París a la COP30: un éxito en el freno de las emisiones que no basta, faltan más renovables",tecnologia,finanzas,0.859570208644409,False
+8407,"La patronal de Inditex, Mango y Tendam ofrece una subida salarial anual del 3%",economia,economia,0.8773429488370599,True
+8406,"El CEO que relevó a Ana Botín en Santander UK, nuevo presidente de Jupiter",finanzas,finanzas,0.8304705560765879,True
+8405,"Ricardo Pumar: ""Insur espera crecer más de un 60% hasta 2030""",finanzas,finanzas,0.8703670385654969,True
+8404,Los fabricantes de helicópteros sobrevuelan un mercado cada vez más pequeño,finanzas,finanzas,0.858152802486102,True
+8403,"La brecha de precios con el euro, una amenaza para las exportaciones españolas",economia,economia,0.8469719901087107,True
+8402,"Inflación, pesado lastre para las exportaciones",economia,economia,0.8887120182774095,True
+8401,Europa y la carrera por los recursos naturales,geopolitica,deportes,0.8562320102256127,False
+8400,Cerdán desbarata el plan de Sánchez,politica,politica,0.8600281672697909,True
+8399,"Un Presupuesto ""irresistible"", ¿como la corrupción?",politica,politica,0.8668151724478537,True
+8398,La última oportunidad de Europa para no perder el tren de la inteligencia artificial,tecnologia,tecnologia,0.8564363369253989,True
+8397,Inditex bate a LVMH como líder mundial de la moda,finanzas,sociedad,0.8678922224180075,False
+8396,Hacienda disparará el control a los pagos por Bizum y con tarjeta desde 2026,politica,finanzas,0.8567110314659937,False
+8394,Super Mario Bros cumple cuarenta años con un negocio en plena forma,tecnologia,sociedad,0.8453765293960162,False
+8393,Cómo debe trabajar un líder la comunicación de forma eficaz,otros,geopolitica,0.8385632121981577,False
+8392,"Todd Green (King): ""Siempre he disfrutado del proceso de sintetizar""",otros,deportes,0.8600060408813606,False
+8391,El grupo japonés Sojitz toma el control de Nexus Energía,finanzas,finanzas,0.8685797949571994,True
+8390,Bankinter modifica la cúpula para crecer en pagos digitales,finanzas,economia,0.8555391454736012,False
+8389,"JPMorgan 'deposita' su confianza en CaixaBank, relanzado en el Ibex",finanzas,finanzas,0.8634155267376986,True
+8386,"Sergio Atares: ""La innovación no es un departamento, es nuestra forma de trabajar""",tecnologia,tecnologia,0.8540538037393104,True
+8385,"Deloitte incorpora a 1.500 recién graduados, un 30% más",finanzas,tecnologia,0.8650525365267165,False
+8384,Los ascensos a socios en las Big Four se hunden a mínimos de cinco años,finanzas,finanzas,0.8660258908970928,True
+8383,"Juan Roig: ""Vamos a continuar reclamando el Corredor Mediterráneo. Algún día llegará un ministro al que creamos""",politica,deportes,0.8518193145020341,False
+8382,Mapfre ultima la compra de las oficinas Ombú a Acciona,finanzas,finanzas,0.8727942107831911,True
+8381,"La CNMC permitirá a Aena subir las tarifas un 6,44% en 2026",economia,economia,0.8718277538366908,True
+8380,¿Celebrar la muerte de Franco o la proclamación del Rey Juan Carlos?,politica,deportes,0.8443524454531381,False
+8379,Éxitos y fracasos de la economía española en el tardofranquismo y la Democracia,politica,otros,0.8540940972321355,False
+8378,Del 20-N de 1975 al 20-N de 2025,politica,politica,0.8740969785918776,True
+8377,La Rioja: el arte de las pequeñas cosas aplicado a los grandes eventos,otros,sociedad,0.8520576736459825,False
+8376,El 'efecto Nvidia' frena la caída del bitcoin,finanzas,finanzas,0.8632819189775051,True
+8375,La división de la Fed enfría el recorte de tipos en diciembre,finanzas,finanzas,0.8690800776314813,True
+8374,Cuándo y cómo va a estallar la próxima corrección,finanzas,finanzas,0.8705092928451763,True
+8373,JPMorgan tiene criterios opuestos ante la burbuja en IA,finanzas,finanzas,0.8750976417187755,True
+8372,Jefferies cree que BBVA recomprará 6.000 millones,finanzas,finanzas,0.8775933242339837,True
+8371,Las siete grandes apuestas de BlackRock en Europa,finanzas,finanzas,0.8704631193155001,True
+8370,Meta deberá pagar 479 millones a los medios españoles por competencia desleal,finanzas,deportes,0.8599725029433887,False
+8369,El Constitucional avala los anticipos fiscales que Hacienda cobra a las grandes empresas,politica,politica,0.8544012074567635,True
+8368,El Gobierno eleva su oferta de subida de sueldo a los funcionarios al 11% hasta 2028,politica,economia,0.8633504457287824,False
+8367,Así gestiona su fortuna Amancio Ortega,finanzas,sociedad,0.8576616322291563,False
+8366,Amancio Ortega compra The Post en Canadá por cerca de 700 millones,finanzas,sociedad,0.8514323421101618,False
+8365,"Cuáles son las profesiones del futuro, con Juanjo Amorín.",finanzas,tecnologia,0.8809934774784669,False
+8364,"Cómo detectar las oportunidades de inversión ""invisibles"", con Iván Martín, de Magallanes.",finanzas,finanzas,0.8808782897598313,True
+8363,"La Primera de Expansión sobre Acciona, PwC, Santander, Larry Summers, Nvidia y Bankinter.",finanzas,finanzas,0.9072157571020367,True
+8351,Valores Bolsa,finanzas,finanzas,0.9113231527007737,True
+8350,Santander First Brands,finanzas,sociedad,0.850345518286777,False
+8349,Santander dividendos,finanzas,economia,0.8835128025711257,False
+8348,Nieve alerta España,sociedad,geopolitica,0.8670721992002254,False
+8347,Crónica Bolsa,finanzas,finanzas,0.9102111853745778,True
+8346,Subida sueldo funcionarios,politica,politica,0.8934480214451705,True
+8345,Mahou transformará bares,economia,sociedad,0.8752399199012582,False
+8344,ETF renta fija,finanzas,economia,0.8802894878636948,False
+8343,Banco Sabadell,finanzas,deportes,0.8544449847118166,False

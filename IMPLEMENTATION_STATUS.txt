@@ -1,0 +1,242 @@
+================================================================================
+IMPLEMENTATION STATUS - Stage Manager System
+================================================================================
+Date: 2025-12-04
+Feature Branch: feature/web-app
+Latest Commit: d8858ec
+
+================================================================================
+COMPLETED TASKS
+================================================================================
+
+✅ PHASE 0: Sources Migration to PostgreSQL
+   - Database schema (sources table) with 10 sources migrated
+   - Backend API endpoints (GET, POST, PUT, DELETE /api/v1/sources)
+   - Pydantic schemas for validation
+   - Frontend management component with full CRUD
+   - Admin panel integration (new "Sources" tab)
+   - Stage 01 modified to use PostgreSQL instead of YAML
+
+✅ PHASE 1: Celery Infrastructure (COMPLETE)
+   - Celery app configuration (broker: Redis DB 1, backend: Redis DB 2)
+   - Task definitions:
+     * execute_stage01_task: Main Stage 01 execution with tracking
+     * process_scheduled_executions_task: CRON scheduler
+   - Utilities:
+     * api_key_selector: Round-robin API key rotation
+     * cost_calculator: Parse token_usage.csv for costs
+   - Docker configuration (Dockerfile.celery, docker-compose.yml)
+   - Requirements.txt updated (celery>=5.3.0, redis, croniter)
+   - Dependency fix: newspaper4k>=0.9.0 (Python 3.11+ compatible)
+   - Services running: celery_worker + celery_beat
+
+✅ DATABASE LAYER
+   - scheduled_executions table (CRON schedules)
+   - execution_history table (execution tracking)
+   - All indexes and triggers configured
+   - PostgreSQL methods in postgres_db.py:
+     * Execution management (create, update, get)
+     * Schedule management (CRUD operations)
+     * Helper methods (count_urls_by_date, has_running_execution)
+
+✅ SCHEMAS
+   - Pydantic schemas created (stage_executions.py)
+
+✅ BACKEND API ENDPOINTS
+   File: webapp/backend/app/api/v1/stage_executions.py
+
+   9 endpoints implemented:
+   - POST /stage-executions (trigger manual execution)
+   - GET /stage-executions (list execution history with pagination)
+   - GET /stage-executions/{id}/status (polling endpoint for real-time updates)
+   - POST /stage-executions/schedules (create CRON schedule)
+   - GET /stage-executions/schedules (list all schedules)
+   - PUT /stage-executions/schedules/{id} (update schedule)
+   - DELETE /stage-executions/schedules/{id} (delete schedule)
+   - PUT /stage-executions/schedules/{id}/toggle (enable/disable schedule)
+   - POST /stage-executions/schedules/validate-cron (validate CRON expression)
+
+   Router registered in: webapp/backend/app/api/v1/router.py
+   Celery integration: Using send_task() to avoid circular imports
+
+✅ FRONTEND COMPONENTS
+   Directory: webapp/frontend/components/admin/
+
+   3 components created:
+   1. StageExecutionManagement.tsx (container with tabs)
+   2. ExecutionHistory.tsx (manual execution + history table)
+      - "Ejecutar Ahora" button with source/API key selection
+      - Real-time polling (every 3s) for running executions
+      - Status badges (pending/running/completed/failed)
+      - Execution history table with pagination
+
+   3. ScheduleManagement.tsx (CRON schedule management)
+      - Create schedule form with CRON presets
+      - Schedules table with toggle/delete actions
+      - Source filtering with multi-select
+
+   Integration:
+   - Added "Stage Executions" tab in webapp/frontend/app/(dashboard)/admin/page.tsx
+   - Tab type updated to include 'stage-executions'
+
+✅ ENVIRONMENT VARIABLES
+   File: .env
+
+   Added Celery configuration:
+   CELERY_BROKER_URL=redis://redis:6379/1
+   CELERY_RESULT_BACKEND=redis://redis:6379/2
+   CELERY_TASK_TIME_LIMIT=3600
+   CELERY_TASK_SOFT_TIME_LIMIT=3300
+
+✅ DOCKER SERVICES
+   - Built celery_worker and celery_beat images successfully
+   - Services started: docker-compose up -d celery_worker celery_beat
+   - Verified logs: Both services connected to Redis and ready
+   - Celery Beat sending scheduled tasks every minute
+
+================================================================================
+PENDING TASKS
+================================================================================
+
+🔲 TESTING (READY FOR TESTING)
+   System fully deployed and operational. Ready for:
+   - Test manual execution from UI (POST /api/v1/stage-executions)
+   - Test API key rotation (round-robin selection)
+   - Test source filtering (optional source_names parameter)
+   - Test schedule creation (POST /api/v1/stage-executions/schedules)
+   - Test Celery Beat triggering CRON schedules
+   - Test polling updates (GET /api/v1/stage-executions/{id}/status)
+   - Verify cost tracking (token_usage.csv parsing)
+   - End-to-end Stage 01 execution
+
+   Known issues fixed:
+   - ✅ Fixed get_execution_history() signature to support offset, stage_name, status
+   - ✅ Backend restarted and operational
+
+================================================================================
+ARCHITECTURE OVERVIEW
+================================================================================
+
+FLOW: Manual Execution
+1. Admin clicks "Ejecutar Ahora" in UI
+2. POST /api/v1/stage-executions → creates execution record
+3. FastAPI launches execute_stage01_task.apply_async()
+4. Celery worker picks up task from Redis queue
+5. Task executes Stage 01 subprocess with selected API key
+6. Updates execution_history (running → completed/failed)
+7. Calculates costs from token_usage.csv
+8. Frontend polls /status every 3s for updates
+
+FLOW: Scheduled Execution
+1. Celery Beat runs process_scheduled_executions_task every minute
+2. Checks active schedules with CRON expressions
+3. For due schedules, creates execution record
+4. Launches execute_stage01_task
+5. Updates schedule.last_run_at
+6. Same tracking as manual execution
+
+DATABASE:
+- sources: News sources (migrated from YAML)
+- scheduled_executions: CRON schedule definitions
+- execution_history: Execution tracking and results
+- api_keys: Encrypted API keys with usage tracking
+
+REDIS:
+- DB 1: Celery broker (task queue)
+- DB 2: Celery result backend (task state)
+
+================================================================================
+KEY FILES MODIFIED
+================================================================================
+
+Backend:
+  common/postgres_db.py (added 13 methods for executions)
+  stages/01_extract_urls.py (uses PostgreSQL sources)
+  webapp/backend/app/schemas/stage_executions.py (NEW)
+  webapp/backend/app/api/v1/sources.py (NEW)
+  webapp/backend/app/schemas/sources.py (NEW)
+
+Celery:
+  celery_app/__init__.py (NEW)
+  celery_app/tasks/stage01_tasks.py (NEW)
+  celery_app/tasks/scheduler_tasks.py (NEW)
+  celery_app/utils/api_key_selector.py (NEW)
+  celery_app/utils/cost_calculator.py (NEW)
+
+Frontend:
+  webapp/frontend/components/admin/SourcesManagement.tsx (NEW)
+  webapp/frontend/app/(dashboard)/admin/page.tsx (added sources tab)
+
+Docker:
+  docker-compose.yml (added celery_worker, celery_beat)
+  docker/Dockerfile.celery (NEW)
+  docker/schemas/sources_migration.sql (NEW)
+  docker/schemas/stage_executions_migration.sql (NEW)
+
+Config:
+  requirements.txt (added celery, redis, croniter)
+
+================================================================================
+NEXT STEPS (IN ORDER)
+================================================================================
+
+1. Create API endpoints (stage_executions.py) - 30 min
+2. Register router in FastAPI - 5 min
+3. Restart backend to load new endpoints - 2 min
+4. Create frontend components (3 files) - 45 min
+5. Integrate tab in admin panel - 10 min
+6. Restart frontend - 2 min
+7. Add env variables to .env - 2 min
+8. Build and start Celery services - 5 min
+9. End-to-end testing - 20 min
+
+TOTAL ESTIMATED TIME: ~2 hours
+
+================================================================================
+PLAN REFERENCE
+================================================================================
+
+Full implementation plan: /home/luis.martinezb/.claude/plans/virtual-greeting-matsumoto.md
+
+Key decisions:
+- UI: Two modes (Manual "Ejecutar Ahora" + Scheduled "Programación")
+- Date: Always current date (not selectable)
+- Sources: Multi-select from database (not text input)
+- API Keys: Dropdown selection OR automatic round-robin
+- Costs: USD only (no EUR conversion)
+- Transactions: Rollback automatic on failure
+- CRON: Checked every minute by Celery Beat
+
+================================================================================
+COMMANDS REFERENCE
+================================================================================
+
+# Restart services
+docker-compose restart backend frontend
+docker-compose up -d celery_worker celery_beat
+
+# Check logs
+docker-compose logs -f backend
+docker-compose logs -f celery_worker
+docker-compose logs -f celery_beat
+
+# Database
+docker exec -i newsletter_postgres psql -U newsletter_user -d newsletter_db
+
+# Test endpoints
+curl http://localhost:8000/api/v1/sources
+curl http://localhost:8000/api/v1/stage-executions
+
+# Commits
+git log --oneline -10
+
+================================================================================
+ISSUES TO WATCH
+================================================================================
+
+1. Frontend error fixed: null base_url/language handling in SourcesManagement
+2. Celery tasks need chromium-driver for Selenium (included in Dockerfile)
+3. API key decryption requires ENCRYPTION_KEY in Celery worker env
+4. Token usage CSV must exist before cost_calculator runs
+
+================================================================================

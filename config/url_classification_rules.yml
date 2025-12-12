@@ -1,0 +1,880 @@
+version: '1.0'
+last_updated: '2025-11-24T10:59:02.304225'
+global_rules: []
+sources:
+  elconfidencial:
+    rules:
+    - name: contenido_articulos_con_id
+      pattern: ^https?://www\.elconfidencial\.com/espana/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+_[0-9]+/?$
+      content_type: contenido
+      confidence: medium
+      examples: 10
+      coverage_percentage: 4.93
+      type_consistency: 90.0
+      sample_urls:
+      - https://www.elconfidencial.com/espana/2025-11-24/fiscal-general-renuncia-condena-ts_4253206/
+      - https://www.elconfidencial.com/espana/2025-11-24/gobierno-sanchez-ifema-comisario-castro-ferraz-elecciones_4253015/
+      - https://www.elconfidencial.com/espana/2025-11-24/pp-entierra-vinculo-pnv-descarta-llamar-aitor-esteban-senado_4252343/
+    - name: contenido_articulos_con_id
+      pattern: ^https?://www\.elconfidencial\.com/economia/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+_[0-9]+/?$
+      content_type: contenido
+      confidence: medium
+      examples: 4
+      coverage_percentage: 1.97
+      type_consistency: 100.0
+      sample_urls:
+      - https://www.elconfidencial.com/economia/2025-11-24/huelga-tecnicos-hacienda-26-noviembre-afectar_4253265/
+      - https://www.elconfidencial.com/economia/2025-11-24/espana-convierte-paraiso-inversion-multinacionales_4252061/
+      - https://www.elconfidencial.com/economia/2025-11-23/iberia-detecta-un-incidente-de-seguridad-que-compromete-datos-de-clientes_4252825/
+    - name: contenido_articulos_con_id
+      pattern: ^https?://www\.elconfidencial\.com/salud/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+_[0-9]+/?$
+      content_type: contenido
+      confidence: medium
+      examples: 5
+      coverage_percentage: 2.46
+      type_consistency: 100.0
+      sample_urls:
+      - https://www.elconfidencial.com/salud/2025-11-24/zanjan-el-debate-sobre-la-vacuna-del-vph_4251886/
+      - https://www.elconfidencial.com/salud/2025-11-24/tca-secuelas-largo-plazo_4251883/
+      - https://www.elconfidencial.com/salud/2025-11-24/servicios-no-prestados-por-gedosol_4252568/
+    - name: contenido_articulos_con_id
+      pattern: ^https?://www\.elconfidencial\.com/tecnologia/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+_[0-9]+/?$
+      content_type: contenido
+      confidence: medium
+      examples: 4
+      coverage_percentage: 1.97
+      type_consistency: 75.0
+      sample_urls:
+      - https://www.elconfidencial.com/tecnologia/2025-11-24/soy-un-loco-del-bricolaje-y-estas-son-las-mejores-ofertas-de-black-friday-para-manitas_4250524/
+      - https://www.elconfidencial.com/tecnologia/2025-11-24/tano-santos-economista-entrevista_4252256/
+      - https://www.elconfidencial.com/tecnologia/2025-09-23/1qrt-google-discover-noticias-el-confidencial_4214567/
+    - name: contenido_articulos_con_id
+      pattern: ^https?://www\.elconfidencial\.com/television/[^/]+/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+_[0-9]+/?$
+      content_type: contenido
+      confidence: high
+      examples: 11
+      coverage_percentage: 5.42
+      type_consistency: 100.0
+      sample_urls:
+      - https://www.elconfidencial.com/television/programas-tv/2025-11-24/audiencias-23-noviembre-gh-debate_4253187/
+      - https://www.elconfidencial.com/television/series-tv/2025-11-24/suenos-de-libertad-avance-semana-48-2025-antena3-diagonaltv_4251022/
+      - https://www.elconfidencial.com/television/series-tv/2025-11-24/la-promesa-avance-capitulo-722-lunes-24-noviembre_4253239/
+    - name: contenido_articulos_con_id
+      pattern: ^https?://www\.elconfidencial\.com/espana/[^/]+/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+_[0-9]+/?$
+      content_type: contenido
+      confidence: high
+      examples: 13
+      coverage_percentage: 6.4
+      type_consistency: 100.0
+      sample_urls:
+      - https://www.elconfidencial.com/espana/castilla-y-leon/2025-11-24/tragedia-minera-leon-sentencia-victimas-1hms_4252428/
+      - https://www.elconfidencial.com/espana/andalucia/2025-11-24/rufian-persigue-yolanda-diaz-cis-socios-arrojan-dudas-candidatura_4251712/
+      - https://www.elconfidencial.com/espana/madrid/2025-11-24/psoe-ignoro-alerta-troceo-contratos-empresa-vivienda-leganes_4250342/
+    - name: contenido_articulos_con_id
+      pattern: ^https?://www\.elconfidencial\.com/deportes/[^/]+/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+_[0-9]+/?$
+      content_type: contenido
+      confidence: high
+      examples: 12
+      coverage_percentage: 5.91
+      type_consistency: 100.0
+      sample_urls:
+      - https://www.elconfidencial.com/deportes/formula-1/2025-11-24/fernando-alonso-aston-martin-gp-las-vegas_4252957/
+      - https://www.elconfidencial.com/deportes/formula-1/2025-11-24/mclaren-norris-presion-verstappen-red-bull_4252866/
+      - https://www.elconfidencial.com/deportes/boxeo-y-artes-marciales/2025-11-23/arman-tsarukyan-reta-topuria-para-de-correr-firma-contrato_4252933/
+    - name: contenido_articulos_con_id
+      pattern: ^https?://www\.elconfidencial\.com/[^/]+/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+_[0-9]+/?$
+      content_type: contenido
+      confidence: high
+      examples: 82
+      coverage_percentage: 40.39
+      type_consistency: 95.12
+      sample_urls:
+      - https://www.elconfidencial.com/espana/2025-11-24/fiscal-general-renuncia-condena-ts_4253206/
+      - https://www.elconfidencial.com/economia/2025-11-24/huelga-tecnicos-hacienda-26-noviembre-afectar_4253265/
+      - https://www.elconfidencial.com/salud/2025-11-24/zanjan-el-debate-sobre-la-vacuna-del-vph_4251886/
+    - name: contenido_articulos_con_id
+      pattern: ^https?://blogs\.elconfidencial\.com/espana/[^/]+/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+_[0-9]+/?$
+      content_type: contenido
+      confidence: medium
+      examples: 7
+      coverage_percentage: 3.45
+      type_consistency: 100.0
+      sample_urls:
+      - https://blogs.elconfidencial.com/espana/caza-mayor/2025-11-24/despues-nos-preguntamos-por-que-jovenes-votan-vox_4253151/
+      - https://blogs.elconfidencial.com/espana/no-es-no/2025-11-24/sanchez-corrupcion-ignorancia-poder-1hms_4252688/
+      - https://blogs.elconfidencial.com/espana/al-grano/2025-11-24/condena-fiscal-franco-gobierno-ayuso-1hms_4253142/
+    - name: contenido_articulos_con_id
+      pattern: ^https?://www\.elconfidencial\.com/espana/andalucia/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+_[0-9]+/?$
+      content_type: contenido
+      confidence: medium
+      examples: 4
+      coverage_percentage: 1.97
+      type_consistency: 100.0
+      sample_urls:
+      - https://www.elconfidencial.com/espana/andalucia/2025-11-24/rufian-persigue-yolanda-diaz-cis-socios-arrojan-dudas-candidatura_4251712/
+      - https://www.elconfidencial.com/espana/andalucia/2025-11-24/el-caso-almeria-prende-el-temor-en-el-pp-a-mas-gasolina-para-vox-tras-el-tropiezo-de-los-cribados_4251718/
+      - https://www.elconfidencial.com/espana/andalucia/2025-11-24/multa-de-20-000-por-no-devolver-el-dinero-de-vasos-reutilizables-en-conciertos-de-manuel-carrasco-en-sevilla_4252263/
+    - name: contenido_articulos_con_id
+      pattern: ^https?://www\.elconfidencial\.com/empresas/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+_[0-9]+/?$
+      content_type: contenido
+      confidence: medium
+      examples: 8
+      coverage_percentage: 3.94
+      type_consistency: 100.0
+      sample_urls:
+      - https://www.elconfidencial.com/empresas/2025-11-24/general-dynamics-visita-pp-aliados-contra-indra_4252465/
+      - https://www.elconfidencial.com/empresas/2025-11-24/mckinsey-regalo-armada-plan-estrategico-concurso-2-1-m-ejecutarlo_4252035/
+      - https://www.elconfidencial.com/empresas/2025-11-24/hacienda-aeat-empresas-derivaciones-responsabilidad-ts_4252291/
+    - name: contenido_articulos_con_id
+      pattern: ^https?://www\.elconfidencial\.com/mundo/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+_[0-9]+/?$
+      content_type: contenido
+      confidence: medium
+      examples: 10
+      coverage_percentage: 4.93
+      type_consistency: 100.0
+      sample_urls:
+      - https://www.elconfidencial.com/mundo/2025-11-24/tercera-batalla-general-invierno-rusia-quiere-sin-luz-ucrania_4252871/
+      - https://www.elconfidencial.com/mundo/2025-11-24/cartel-soles-terrorista-venezuela-1tps_4253191/
+      - https://www.elconfidencial.com/mundo/2025-11-23/rusia-drones-ucrania-ataque-odesa-1tps_4252832/
+    - name: contenido_articulos_con_id
+      pattern: ^https?://www\.elconfidencial\.com/espana/madrid/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+_[0-9]+/?$
+      content_type: contenido
+      confidence: medium
+      examples: 3
+      coverage_percentage: 1.48
+      type_consistency: 100.0
+      sample_urls:
+      - https://www.elconfidencial.com/espana/madrid/2025-11-24/psoe-ignoro-alerta-troceo-contratos-empresa-vivienda-leganes_4250342/
+      - https://www.elconfidencial.com/espana/madrid/2025-11-24/incendio-las-rozas-muerto-humo-1tna-1tps_4253181/
+      - https://www.elconfidencial.com/espana/madrid/2025-11-24/parque-desconocido-madrid-cascadas-1tna-1qrt_4251185/
+    - name: contenido_articulos_con_id
+      pattern: ^https?://www\.elconfidencial\.com/mercados/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+_[0-9]+/?$
+      content_type: contenido
+      confidence: medium
+      examples: 4
+      coverage_percentage: 1.97
+      type_consistency: 100.0
+      sample_urls:
+      - https://www.elconfidencial.com/mercados/2025-11-24/renta-4-banco-licencia-operar-criptoactivos-bitcoin-ethereum_4253241/
+      - https://www.elconfidencial.com/mercados/2025-11-24/bolsa-ibex-35-hoy-en-directo-mercados_4253198/
+      - https://www.elconfidencial.com/mercados/2025-11-23/burbuja-ia-refugio-inversores-escapatoria-pinchazo_4252459/
+    - name: contenido_articulos_con_id
+      pattern: ^https?://www\.vanitatis\.elconfidencial\.com/famosos/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+_[0-9]+/?$
+      content_type: contenido
+      confidence: medium
+      examples: 4
+      coverage_percentage: 1.97
+      type_consistency: 100.0
+      sample_urls:
+      - https://www.vanitatis.elconfidencial.com/famosos/2025-11-24/carlos-sainz-mentiria-si-dijese-que-no-senti-miedo-cuando-mi-hijo-decidio-perseguir-su-sueno_4249579/
+      - https://www.vanitatis.elconfidencial.com/famosos/2025-11-24/manuela-villena-juanma-moreno-bonilla-ayuso-libro-mujeres_4251795/
+      - https://www.vanitatis.elconfidencial.com/famosos/2025-11-24/mejores-fotos-reunion-felipe-juan-carlos-boda-bebe-boris-becker_4253000/
+    - name: contenido_articulos_con_id
+      pattern: ^https?://www\.elconfidencial\.com/cultura/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+_[0-9]+/?$
+      content_type: contenido
+      confidence: medium
+      examples: 5
+      coverage_percentage: 2.46
+      type_consistency: 100.0
+      sample_urls:
+      - https://www.elconfidencial.com/cultura/2025-11-24/pronombres-cortesia-lenguas-hispanico-1hms_4248735/
+      - https://www.elconfidencial.com/cultura/2025-11-24/1qrt-pelicula-cine-clasico-reverte-obra-maestra_4253245/
+      - https://www.elconfidencial.com/cultura/2025-11-23/antes-de-rosalia-las-famosas-ya-utilizaban-lux_4250460/
+    - name: contenido_articulos_con_id
+      pattern: ^https?://www\.elconfidencial\.com/viajes/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+_[0-9]+/?$
+      content_type: contenido
+      confidence: medium
+      examples: 3
+      coverage_percentage: 1.48
+      type_consistency: 100.0
+      sample_urls:
+      - https://www.elconfidencial.com/viajes/2025-11-24/5-lugares-en-ruinas-galicia-encanto-1qrt-1tna_4249758/
+      - https://www.elconfidencial.com/viajes/2025-11-24/aldea-maldita-gallega-descubrir-abandonada-1qrt-1tna_4250464/
+      - https://www.elconfidencial.com/viajes/2025-11-24/pueblo-jaen-guadalquivir-isabel-ii-1qrt-1tna_4249834/
+    - name: contenido_articulos_con_id
+      pattern: ^https?://www\.elconfidencial\.com/gastronomia/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+_[0-9]+/?$
+      content_type: contenido
+      confidence: medium
+      examples: 4
+      coverage_percentage: 1.97
+      type_consistency: 100.0
+      sample_urls:
+      - https://www.elconfidencial.com/gastronomia/2025-11-24/aitor-santamaria-apuestas-michelin-parrilla-euskal-sushi_4251061/
+      - https://www.elconfidencial.com/gastronomia/2025-11-24/pasta-fresca-black-angus-nuevo-neoyorquino-madrid_4249693/
+      - https://www.elconfidencial.com/gastronomia/2025-11-18/casa-menjars-hermanos-bar-familiar-alta-cocina-barcelona_4246645/
+    - name: contenido_articulos_con_id
+      pattern: ^https?://www\.elconfidencial\.com/tecnologia/novaceno/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+_[0-9]+/?$
+      content_type: contenido
+      confidence: medium
+      examples: 4
+      coverage_percentage: 1.97
+      type_consistency: 100.0
+      sample_urls:
+      - https://www.elconfidencial.com/tecnologia/novaceno/2025-11-24/antropologia-evolucion-humana-adaptacion-genetica_4252433/
+      - https://www.elconfidencial.com/tecnologia/novaceno/2025-11-23/nueva-estructura-oceanica-china-sin-igual-apocalipsis-nuclear_4252097/
+      - https://www.elconfidencial.com/tecnologia/novaceno/2025-11-22/investigacion-cerebro-neuorlogia-implante-recupera-habla_4252125/
+    - name: contenido_articulos_con_id
+      pattern: ^https?://www\.vanitatis\.elconfidencial\.com/[^/]+/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+_[0-9]+/?$
+      content_type: contenido
+      confidence: medium
+      examples: 7
+      coverage_percentage: 3.45
+      type_consistency: 100.0
+      sample_urls:
+      - https://www.vanitatis.elconfidencial.com/famosos/2025-11-24/carlos-sainz-mentiria-si-dijese-que-no-senti-miedo-cuando-mi-hijo-decidio-perseguir-su-sueno_4249579/
+      - https://www.vanitatis.elconfidencial.com/famosos/2025-11-24/manuela-villena-juanma-moreno-bonilla-ayuso-libro-mujeres_4251795/
+      - https://www.vanitatis.elconfidencial.com/famosos/2025-11-24/mejores-fotos-reunion-felipe-juan-carlos-boda-bebe-boris-becker_4253000/
+    - name: contenido_articulos_con_id
+      pattern: ^https?://www\.elconfidencial\.com/decompras/ofertas/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+_[0-9]+/?$
+      content_type: contenido
+      confidence: medium
+      examples: 3
+      coverage_percentage: 1.48
+      type_consistency: 100.0
+      sample_urls:
+      - https://www.elconfidencial.com/decompras/ofertas/2025-11-24/ofertas-moviles-black-friday_4249993/
+      - https://www.elconfidencial.com/decompras/ofertas/2025-11-24/ofertas-electrodomesticos-black-friday_4250321/
+      - https://www.elconfidencial.com/decompras/ofertas/2025-11-24/ofertas-portatiles-black-friday_4251473/
+    - name: contenido_articulos_con_id
+      pattern: ^https?://www\.elconfidencial\.com/deportes/futbol/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+_[0-9]+/?$
+      content_type: contenido
+      confidence: medium
+      examples: 4
+      coverage_percentage: 1.97
+      type_consistency: 100.0
+      sample_urls:
+      - https://www.elconfidencial.com/deportes/futbol/2025-11-23/real-madrid-elche-xabi-alonso-eder-sarabia_4253161/
+      - https://www.elconfidencial.com/deportes/futbol/2025-11-23/florentino-perez-caso-negreira-no-es-normal-barcelona-pague-vicepresidente-arbitro_4252921/
+      - https://www.elconfidencial.com/deportes/futbol/2025-11-23/real-madrid-florentino-perez-asamblea-barca_4252914/
+  elpais:
+    rules:
+    - name: contenido_articulos_fechados
+      pattern: ^https?://elpais\.com/espana/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+\.html$
+      content_type: contenido
+      confidence: high
+      examples: 17
+      coverage_percentage: 6.8
+      type_consistency: 100.0
+      sample_urls:
+      - https://elpais.com/espana/2025-11-24/el-fiscal-general-presenta-su-renuncia-tras-la-condena-del-supremo.html
+      - https://elpais.com/espana/2025-11-24/ultima-hora-de-la-actualidad-politica-en-directo.html
+      - https://elpais.com/espana/2025-11-24/lea-la-carta-en-la-que-el-fiscal-general-del-estado-pide-su-cese.html
+    - name: contenido_articulos_fechados
+      pattern: ^https?://elpais\.com/internacional/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+\.html$
+      content_type: contenido
+      confidence: medium
+      examples: 8
+      coverage_percentage: 3.2
+      type_consistency: 100.0
+      sample_urls:
+      - https://elpais.com/internacional/2025-11-24/europa-celebra-el-progreso-en-el-plan-de-paz-para-ucrania-pero-advierte-de-que-aun-quedan-grandes-cuestiones-sin-resolver.html
+      - https://elpais.com/internacional/2025-11-24/estados-unidos-declara-terrorista-a-maduro-en-plena-escalada-militar-con-venezuela.html
+      - https://elpais.com/internacional/2025-11-24/el-misterio-de-los-drones-sobre-europa-alimenta-el-temor-a-la-amenaza-rusa.html
+    - name: contenido_articulos_fechados
+      pattern: ^https?://elpais\.com/[^/]+/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+\.html$
+      content_type: contenido
+      confidence: high
+      examples: 94
+      coverage_percentage: 37.6
+      type_consistency: 90.43
+      sample_urls:
+      - https://elpais.com/espana/2025-11-24/el-fiscal-general-presenta-su-renuncia-tras-la-condena-del-supremo.html
+      - https://elpais.com/espana/2025-11-24/ultima-hora-de-la-actualidad-politica-en-directo.html
+      - https://elpais.com/espana/2025-11-24/lea-la-carta-en-la-que-el-fiscal-general-del-estado-pide-su-cese.html
+    - name: contenido_articulos_fechados
+      pattern: ^https?://elpais\.com/ciencia/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+\.html$
+      content_type: contenido
+      confidence: medium
+      examples: 3
+      coverage_percentage: 1.2
+      type_consistency: 100.0
+      sample_urls:
+      - https://elpais.com/ciencia/2025-11-24/habla-el-denunciante-de-la-presunta-corrupcion-en-el-cnio-es-una-organizacion-mafiosa.html
+      - https://elpais.com/ciencia/2025-11-23/como-llego-tu-gato-a-tu-regazo-un-libro-desafia-la-historia-de-la-domesticacion-del-felino-mas-popular.html
+      - https://elpais.com/ciencia/2025-11-22/animales-con-imanes-en-la-cabeza-induccion-magnetica-bioquimica-cuantica-y-nanocristales-de-magnetita-para-no-perderse.html
+    - name: contenido_articulos_fechados
+      pattern: ^https?://elpais\.com/economia/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+\.html$
+      content_type: contenido
+      confidence: medium
+      examples: 4
+      coverage_percentage: 1.6
+      type_consistency: 100.0
+      sample_urls:
+      - https://elpais.com/economia/2025-11-24/las-compras-secretas-de-china-impulsan-el-precio-del-oro-un-40.html
+      - https://elpais.com/economia/2025-11-24/tap-trata-de-dejar-atras-una-decada-de-turbulencias-con-una-segunda-privatizacion.html
+      - https://elpais.com/economia/2025-11-24/la-politica-industrial-que-precisa-la-ue.html
+    - name: contenido_articulos_fechados
+      pattern: ^https?://elpais\.com/sociedad/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+\.html$
+      content_type: contenido
+      confidence: medium
+      examples: 6
+      coverage_percentage: 2.4
+      type_consistency: 100.0
+      sample_urls:
+      - https://elpais.com/sociedad/2025-11-24/andalucia-tardo-el-doble-que-el-resto-de-las-comunidades-en-administrar-una-nueva-terapia-contra-el-cancer.html
+      - https://elpais.com/sociedad/2025-11-18/asi-se-preparan-los-consumidores-para-ahorrar-en-su-cesta-de-la-compra-navidena.html
+      - https://elpais.com/sociedad/2025-11-23/nuevas-pistas-situan-en-cuba-a-martino-ramos-el-profesor-pederasta-que-violo-repetidamente-a-una-alumna.html
+    - name: contenido_articulos_fechados
+      pattern: ^https?://elpais\.com/gente/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+\.html$
+      content_type: contenido
+      confidence: medium
+      examples: 4
+      coverage_percentage: 1.6
+      type_consistency: 100.0
+      sample_urls:
+      - https://elpais.com/gente/2025-11-24/la-infanta-eulalia-la-primera-borbon-que-escandalizo-a-espana-con-sus-memorias-feminista-divorciada-y-un-poco-republicana.html
+      - https://elpais.com/gente/2025-11-24/leonie-von-ungern-sternberg-baronesa-y-tiktokera-pertenecer-a-la-aristocracia-no-significa-nada-pueden-quitartelo-todo-salvo-lo-que-esta-en-tu-cabeza.html
+      - https://elpais.com/gente/2025-11-24/singapur-deporta-al-australiano-que-se-abalanzo-sobre-ariana-grande-durante-el-estreno-de-wicked-parte-ii.html
+    - name: contenido_articulos_fechados
+      pattern: ^https?://elpais\.com/cultura/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+\.html$
+      content_type: contenido
+      confidence: medium
+      examples: 6
+      coverage_percentage: 2.4
+      type_consistency: 100.0
+      sample_urls:
+      - https://elpais.com/cultura/2025-11-24/las-heces-de-thor-un-libro-desvela-aspectos-intimos-de-la-vida-corriente-de-los-vikingos.html
+      - https://elpais.com/cultura/2025-11-24/la-historia-viva-del-archivo-de-lorca.html
+      - https://elpais.com/cultura/2025-11-24/peridis-vinetista-vivimos-un-momento-de-desguace-descorazonador-porque-los-escandalos-son-generalizados.html
+    - name: contenido_articulos_fechados
+      pattern: ^https?://elpais\.com/deportes/[^/]+/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+\.html$
+      content_type: contenido
+      confidence: medium
+      examples: 6
+      coverage_percentage: 2.4
+      type_consistency: 83.33
+      sample_urls:
+      - https://elpais.com/deportes/futbol/2025-11-23/el-real-madrid-se-tuerce-y-enlaza-en-elche-su-tercer-partido-sin-ganar.html
+      - https://elpais.com/deportes/baloncesto/2025-11-24/chus-mateo-solo-las-victorias-justifican-que-has-trabajado-bien-y-eso-no-es-justo.html
+      - https://elpais.com/deportes/futbol/2025-11-24/el-cuarto-gol-de-escocia.html
+    - name: contenido_articulos_fechados
+      pattern: ^https?://elpais\.com/tecnologia/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+\.html$
+      content_type: contenido
+      confidence: medium
+      examples: 4
+      coverage_percentage: 1.6
+      type_consistency: 100.0
+      sample_urls:
+      - https://elpais.com/tecnologia/2025-11-24/el-coladero-de-las-subvenciones-millonarias-al-kit-digital-me-vendian-clientes-que-no-eran-reales.html
+      - https://elpais.com/tecnologia/2025-11-21/las-cinco-mejores-apps-para-parejas-de-dibujos-sorpresa-en-el-movil-al-tamagotchi-del-amor.html
+      - https://elpais.com/tecnologia/2025-11-20/comparte-la-baliza-v16-nuestra-posicion-cuando-esta-apagada-las-dudas-sobre-el-nuevo-accesorio-obligatorio-para-los-coches.html
+    - name: contenido_articulos_fechados
+      pattern: ^https?://elpais\.com/espana/madrid/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+\.html$
+      content_type: contenido
+      confidence: medium
+      examples: 4
+      coverage_percentage: 1.6
+      type_consistency: 100.0
+      sample_urls:
+      - https://elpais.com/espana/madrid/2025-11-24/hace-40-anos-eran-500-madres-contra-la-droga-hoy-son-ocho-abuelas-activistas-que-ayudan-a-inmigrantes.html
+      - https://elpais.com/espana/madrid/2025-11-22/madrid-enciende-la-navidad-con-13-millones-de-luces-y-un-villancico-de-bisbal-esta-ciudad-tiene-los-brazos-abiertos.html
+      - https://elpais.com/espana/madrid/2025-11-22/la-justicia-tumba-los-argumentos-del-gobierno-de-ayuso-para-no-entregar-las-actas-de-inspeccion-de-las-residencias-en-lo-peor-de-la-pandemia.html
+    - name: contenido_articulos_fechados
+      pattern: ^https?://cincodias\.elpais\.com/companias/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+\.html$
+      content_type: contenido
+      confidence: medium
+      examples: 3
+      coverage_percentage: 1.2
+      type_consistency: 100.0
+      sample_urls:
+      - https://cincodias.elpais.com/companias/2025-11-24/repsol-gana-a-hacienda-en-los-tribunales-y-evita-pagar-una-reclamacion-de-mas-de-100-millones.html
+      - https://cincodias.elpais.com/companias/2025-11-24/el-automovil-prepara-un-aluvion-de-coches-electricos-de-menos-de-25000-euros-made-in-europe-para-2026.html
+      - https://cincodias.elpais.com/companias/2025-11-24/kkr-salda-las-deudas-con-los-acreedores-y-saca-definitivamente-a-dentix-del-concurso-cinco-anos-despues.html
+    - name: contenido_articulos_fechados
+      pattern: ^https?://elpais\.com/gastronomia/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+\.html$
+      content_type: contenido
+      confidence: medium
+      examples: 4
+      coverage_percentage: 1.6
+      type_consistency: 100.0
+      sample_urls:
+      - https://elpais.com/gastronomia/2025-11-24/el-cocinero-nacho-manzano-el-menu-degustacion-no-esta-muerto-quien-va-a-recorrer-500-kilometros-para-comer-solo-tres-platos.html
+      - https://elpais.com/gastronomia/2025-11-24/la-gastronomia-en-los-tiempos-de-gaza-el-chef-palestino-que-reparte-pizzas.html
+      - https://elpais.com/gastronomia/2025-11-23/la-guia-gastro-2026-una-seleccion-de-los-restaurantes-y-comercios-favoritos-de-los-expertos-de-el-pais.html
+    - name: contenido_articulos_fechados
+      pattern: ^https?://elpais\.com/television/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+\.html$
+      content_type: contenido
+      confidence: medium
+      examples: 4
+      coverage_percentage: 1.6
+      type_consistency: 100.0
+      sample_urls:
+      - https://elpais.com/television/2025-11-24/rosalia-y-la-fase-mesianica.html
+      - https://elpais.com/television/2025-11-24/del-final-de-franco-al-dj-carl-cox-la-ruta-cambia-el-bakalao-por-ibiza-para-contar-dos-espanas-paralelas.html
+      - https://elpais.com/television/2025-11-22/jose-miguel-monzon-el-gran-wyoming-voy-a-retirarme-antes-de-que-me-de-el-ictus.html
+  elmundo:
+    rules:
+    - name: contenido_articulos_fechados
+      pattern: ^https?://www\.elmundo\.es/economia/[^/]+/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+\.html$
+      content_type: contenido
+      confidence: medium
+      examples: 7
+      coverage_percentage: 3.87
+      type_consistency: 100.0
+      sample_urls:
+      - https://www.elmundo.es/economia/macroeconomia/2025/11/24/6923500821efa0e8188b459b.html
+      - https://www.elmundo.es/economia/empresas/2025/11/23/691dec5ae85ece15758b45a6.html
+      - https://www.elmundo.es/economia/empresas/2025/11/24/691c5fd7e9cf4abf568b4584.html
+    - name: contenido_articulos_fechados
+      pattern: ^https?://www\.elmundo\.es/internacional/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+\.html$
+      content_type: contenido
+      confidence: medium
+      examples: 10
+      coverage_percentage: 5.52
+      type_consistency: 70.0
+      sample_urls:
+      - https://www.elmundo.es/internacional/2025/11/24/692314f8fdddffc9178b45a2.html
+      - https://www.elmundo.es/internacional/2025/11/24/6923f6151ee97cbdb60ef141-directo.html
+      - https://www.elmundo.es/internacional/2025/11/24/69240d2e21efa0135e8b459b.html
+    - name: contenido_articulos_fechados
+      pattern: ^https?://www\.elmundo\.es/opinion/columnistas/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+\.html$
+      content_type: contenido
+      confidence: medium
+      examples: 4
+      coverage_percentage: 2.21
+      type_consistency: 100.0
+      sample_urls:
+      - https://www.elmundo.es/opinion/columnistas/2025/11/23/6923457ce9cf4acf768b456e.html
+      - https://www.elmundo.es/opinion/columnistas/2025/11/23/69235940e4d4d894708b45a3.html
+      - https://www.elmundo.es/opinion/columnistas/2025/11/23/6922c995e85eceb72b8b456e.html
+    - name: contenido_articulos_fechados
+      pattern: ^https?://www\.elmundo\.es/[^/]+/[^/]+/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+\.html$
+      content_type: contenido
+      confidence: high
+      examples: 26
+      coverage_percentage: 14.36
+      type_consistency: 76.92
+      sample_urls:
+      - https://www.elmundo.es/economia/macroeconomia/2025/11/24/6923500821efa0e8188b459b.html
+      - https://www.elmundo.es/television/momentvs/2025/11/24/69241131e9cf4ae1018b4584.html
+      - https://www.elmundo.es/yodona/vida-saludable/2025/11/24/691c6c79fc6c8377468b457b.html
+    - name: no_contenido_con_slug
+      pattern: ^https?://www\.elmundo\.es/especiales/[^/]+/index\.html$
+      content_type: no_contenido
+      confidence: medium
+      examples: 4
+      coverage_percentage: 2.21
+      type_consistency: 75.0
+      sample_urls:
+      - https://www.elmundo.es/especiales/los-mas-ricos/index.html
+      - https://www.elmundo.es/especiales/ranking-universidades/index.html
+      - https://www.elmundo.es/especiales/mejores-masters/index.html
+  expansion:
+    rules:
+    - name: contenido_articulos_fechados
+      pattern: ^https?://www\.expansion\.com/empresas/[^/]+/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+\.html$
+      content_type: contenido
+      confidence: high
+      examples: 15
+      coverage_percentage: 9.38
+      type_consistency: 100.0
+      sample_urls:
+      - https://www.expansion.com/empresas/banca/2025/11/24/6923774de5fdea04548b4591.html
+      - https://www.expansion.com/empresas/motor/2025/11/24/6920cb71468aeb7b638b45a4.html
+      - https://www.expansion.com/empresas/tecnologia/2025/11/24/6920b989e5fdeaf8178b45a7.html
+    - name: contenido_articulos_fechados
+      pattern: ^https?://www\.expansion\.com/economia/[^/]+/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+\.html$
+      content_type: contenido
+      confidence: medium
+      examples: 8
+      coverage_percentage: 5.0
+      type_consistency: 100.0
+      sample_urls:
+      - https://www.expansion.com/economia/politica/2025/11/24/69240cebe5fdea87648b4598.html
+      - https://www.expansion.com/economia/politica/2025/11/24/69240241468aebfe6a8b4594.html
+      - https://www.expansion.com/economia/financial-times/2025/11/24/69241a2e468aebed478b4595.html
+    - name: contenido_articulos_fechados
+      pattern: ^https?://www\.expansion\.com/directivos/[^/]+/[^/]+/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+\.html$
+      content_type: contenido
+      confidence: medium
+      examples: 4
+      coverage_percentage: 2.5
+      type_consistency: 100.0
+      sample_urls:
+      - https://www.expansion.com/directivos/estilo-vida/rincones-gastronomicos/2025/11/24/6923529f468aeb883d8b45a0.html
+      - https://www.expansion.com/directivos/estilo-vida/cultura/2025/11/24/69235555468aeb3a4f8b45a6.html
+      - https://www.expansion.com/directivos/estilo-vida/tendencias/2025/11/21/69209e64468aebbd328b459a.html
+    - name: contenido_articulos_fechados
+      pattern: ^https?://www\.expansion\.com/podcasts/[^/]+/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+\.html$
+      content_type: contenido
+      confidence: medium
+      examples: 6
+      coverage_percentage: 3.75
+      type_consistency: 83.33
+      sample_urls:
+      - https://www.expansion.com/podcasts/la-primera-de-expansion/2025/11/24/6923f357468aeb883d8b45bd.html
+      - https://www.expansion.com/podcasts/genios-finanzas/2025/11/24/691efba4e5fdea42788b45a2.html
+      - https://www.expansion.com/podcasts/en-accion/2025/11/19/691de871468aeb9b778b4571.html
+    - name: contenido_articulos_fechados
+      pattern: ^https?://www\.expansion\.com/empresas/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+\.html$
+      content_type: contenido
+      confidence: medium
+      examples: 8
+      coverage_percentage: 5.0
+      type_consistency: 100.0
+      sample_urls:
+      - https://www.expansion.com/empresas/2025/11/24/69233ab6e5fdea71208b458e.html
+      - https://www.expansion.com/empresas/2025/11/24/6923931e468aeb646d8b458e.html
+      - https://www.expansion.com/empresas/2025/11/24/692395d9e5fdea9c698b458c.html
+    - name: contenido_articulos_fechados
+      pattern: ^https?://www\.expansion\.com/mercados/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+\.html$
+      content_type: contenido
+      confidence: high
+      examples: 11
+      coverage_percentage: 6.88
+      type_consistency: 100.0
+      sample_urls:
+      - https://www.expansion.com/mercados/2025/11/24/69240172e524b700f54a43e3-directo.html
+      - https://www.expansion.com/mercados/2025/11/24/692410a8e5fdeac74b8b458d.html
+      - https://www.expansion.com/mercados/2025/11/24/69205c8e468aeb7b638b4585.html
+    - name: contenido_articulos_fechados
+      pattern: ^https?://www\.expansion\.com/economia/politica/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+\.html$
+      content_type: contenido
+      confidence: medium
+      examples: 3
+      coverage_percentage: 1.88
+      type_consistency: 100.0
+      sample_urls:
+      - https://www.expansion.com/economia/politica/2025/11/24/69240cebe5fdea87648b4598.html
+      - https://www.expansion.com/economia/politica/2025/11/24/69240241468aebfe6a8b4594.html
+      - https://www.expansion.com/economia/politica/2025/11/23/69230836e5fdea3f0c8b459a.html
+    - name: contenido_articulos_fechados
+      pattern: ^https?://www\.expansion\.com/[^/]+/[^/]+/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+\.html$
+      content_type: contenido
+      confidence: high
+      examples: 42
+      coverage_percentage: 26.25
+      type_consistency: 92.86
+      sample_urls:
+      - https://www.expansion.com/empresas/banca/2025/11/24/6923774de5fdea04548b4591.html
+      - https://www.expansion.com/economia/politica/2025/11/24/69240cebe5fdea87648b4598.html
+      - https://www.expansion.com/mercados/bitcoin/2025/11/24/69241819e5fdeac64b8b45a5.html
+  abc:
+    rules:
+    - name: contenido_articulos_timestamp
+      pattern: ^https?://www\.abc\.es/espana/[^/]+-20[0-9]{12}-nt\.html$
+      content_type: contenido
+      confidence: high
+      examples: 11
+      coverage_percentage: 7.59
+      type_consistency: 90.91
+      sample_urls:
+      - https://www.abc.es/espana/fiscal-general-estado-presenta-dimision-tras-fallo-20251124084311-nt.html
+      - https://www.abc.es/espana/sanchez-tampoco-sometera-debate-sobre-estado-nacion-20251124042407-nt.html
+      - https://www.abc.es/espana/fugitivos-buscados-espana-profesor-abuso-alumna-jefes-20251124093337-nt.html
+    - name: contenido_articulos_timestamp
+      pattern: ^https?://www\.abc\.es/economia/[^/]+-20[0-9]{12}-nt\.html$
+      content_type: contenido
+      confidence: medium
+      examples: 3
+      coverage_percentage: 2.07
+      type_consistency: 100.0
+      sample_urls:
+      - https://www.abc.es/economia/casa-prefabricada-180-metros-cuadrados-cinco-habitaciones-20251124161951-nt.html
+      - https://www.abc.es/economia/caseros-trasladan-tasa-basuras-inquilino-nuevos-contratos-20251124191036-nt.html
+      - https://www.abc.es/economia/bruselas-maniobra-ocultar-origen-productos-sahara-20251124172621-nt.html
+    - name: contenido_articulos_timestamp
+      pattern: ^https?://www\.abc\.es/sociedad/[^/]+-20[0-9]{12}-nt\.html$
+      content_type: contenido
+      confidence: medium
+      examples: 5
+      coverage_percentage: 3.45
+      type_consistency: 100.0
+      sample_urls:
+      - https://www.abc.es/sociedad/santo-hoy-lunes-24-11-2025-santoral-nsv-20251124070101-nt.html
+      - https://www.abc.es/sociedad/ultima-bala-inigo-errejon-lleva-extincion-colegios-20251124165613-nt.html
+      - https://www.abc.es/sociedad/aemet-avisa-durara-frio-espana-tras-paso-20251124204041-nt.html
+    - name: contenido_articulos_timestamp
+      pattern: ^https?://www\.abc\.es/internacional/[^/]+-20[0-9]{12}-nt\.html$
+      content_type: contenido
+      confidence: medium
+      examples: 8
+      coverage_percentage: 5.52
+      type_consistency: 100.0
+      sample_urls:
+      - https://www.abc.es/internacional/eeuu-insiste-autoria-propuesta-suya-rusia-20251123195710-nt.html
+      - https://www.abc.es/internacional/eeuu-declara-terrorista-maduro-abre-puerta-intervencion-20251124082530-nt.html
+      - https://www.abc.es/internacional/raynell-martinez-militar-venezolana-exiliada-bloqueo-aereo-20251123035858-nt.html
+    - name: contenido_articulos_timestamp
+      pattern: ^https?://www\.abc\.es/gente/[^/]+-20[0-9]{12}-nt\.html$
+      content_type: contenido
+      confidence: medium
+      examples: 3
+      coverage_percentage: 2.07
+      type_consistency: 100.0
+      sample_urls:
+      - https://www.abc.es/gente/weinstein-spacey-escandalos-marcaron-despues-hollywood-20251123190000-nt.html
+      - https://www.abc.es/gente/secreto-mejor-guardado-taylor-swift-boda-travis-20251124102815-nt.html
+      - https://www.abc.es/gente/viaje-superacion-juan-gabriel-abusos-sufridos-infancia-20251122083914-nt.html
+    - name: contenido_articulos_timestamp
+      pattern: ^https?://www\.abc\.es/espana/[^/]+/[^/]+-20[0-9]{12}-nt\.html$
+      content_type: contenido
+      confidence: medium
+      examples: 10
+      coverage_percentage: 6.9
+      type_consistency: 100.0
+      sample_urls:
+      - https://www.abc.es/espana/cataluna/pujol-paso-librarse-banquillo-once-anos-despues-20251124111232-nt.html
+      - https://www.abc.es/espana/cataluna/ostracismo-rehabilitacion-patriarca-20251124125641-nt.html
+      - https://www.abc.es/espana/madrid/joven-ataco-policia-grito-allahu-akbar-acuchillo-20251124204857-nt.html
+    - name: contenido_articulos_timestamp
+      pattern: ^https?://www\.abc\.es/deportes/[^/]+/[^/]+-20[0-9]{12}-nt\.html$
+      content_type: contenido
+      confidence: medium
+      examples: 10
+      coverage_percentage: 6.9
+      type_consistency: 90.0
+      sample_urls:
+      - https://www.abc.es/deportes/futbol/martinez-montoro-madrid-volvio-centrar-focos-polemica-discutido-empate-20251124093305-nt.html
+      - https://www.abc.es/deportes/futbol/javier-aznar-dias-inciertos-20251123013300-nt.html
+      - https://www.abc.es/deportes/real-madrid/xabi-alonso-hable-vinicius-salir-inicio-entiende-20251123235442-nt.html
+    - name: contenido_con_slug
+      pattern: ^https?://finanzas\.abc\.es/[^/]+/?$
+      content_type: contenido
+      confidence: medium
+      examples: 3
+      coverage_percentage: 2.07
+      type_consistency: 100.0
+      sample_urls:
+      - https://finanzas.abc.es/prestamos-personales/
+      - https://finanzas.abc.es/cuentas-corrientes/
+      - https://finanzas.abc.es/cuentas-remuneradas/
+  ft:
+    rules:
+    - name: contenido_1
+      pattern: ^https?://www\.ft\.com/content/[^/]+$
+      content_type: contenido
+      confidence: high
+      examples: 80
+      coverage_percentage: 37.56
+      type_consistency: 98.75
+      sample_urls:
+      - https://www.ft.com/content/17e11e17-a84a-4575-9ff2-723d6e01b6f0
+      - https://www.ft.com/content/12637528-8c94-4105-a0d8-c53712046435
+      - https://www.ft.com/content/6e8b5e22-6a55-47ae-9f81-3b081e8fa039
+  nyt:
+    rules:
+    - name: contenido_articulos_fechados
+      pattern: ^https?://www\.nytimes\.com/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/business/[^/]+\.html$
+      content_type: contenido
+      confidence: medium
+      examples: 4
+      coverage_percentage: 1.6
+      type_consistency: 100.0
+      sample_urls:
+      - https://www.nytimes.com/2025/10/26/business/china-us-trade.html
+      - https://www.nytimes.com/2025/11/24/business/eu-trade-trump-tariffs.html
+      - https://www.nytimes.com/2025/11/24/business/germany-toys-holidays-tariffs-trump.html
+    - name: contenido_articulos_fechados
+      pattern: ^https?://www\.nytimes\.com/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/us/[^/]+\.html$
+      content_type: contenido
+      confidence: medium
+      examples: 4
+      coverage_percentage: 1.6
+      type_consistency: 100.0
+      sample_urls:
+      - https://www.nytimes.com/2025/11/23/us/h-rap-brown-dead.html
+      - https://www.nytimes.com/2025/11/23/us/morgan-geyser-missing-slenderman-stabbing.html
+      - https://www.nytimes.com/2025/11/22/us/tatiana-schlossberg-kennedy-cancer.html
+    - name: contenido_articulos_fechados
+      pattern: ^https?://www\.nytimes\.com/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/opinion/[^/]+\.html$
+      content_type: contenido
+      confidence: high
+      examples: 14
+      coverage_percentage: 5.6
+      type_consistency: 92.86
+      sample_urls:
+      - https://www.nytimes.com/2025/11/23/opinion/trump-illegal-war.html
+      - https://www.nytimes.com/2025/11/23/opinion/meaning-epstein-emails.html
+      - https://www.nytimes.com/2025/11/23/opinion/jobs-report-immigration-trump.html
+    - name: contenido_articulos_fechados
+      pattern: ^https?://www\.nytimes\.com/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/style/[^/]+\.html$
+      content_type: contenido
+      confidence: medium
+      examples: 3
+      coverage_percentage: 1.2
+      type_consistency: 100.0
+      sample_urls:
+      - https://www.nytimes.com/2025/11/23/style/whitney-houston-drum-challenge.html
+      - https://www.nytimes.com/2025/11/23/style/mamdani-trump-reactions-fuentes-bannon.html
+      - https://www.nytimes.com/2025/11/19/style/chatgpt-ai-college-application-advice.html
+    - name: no_contenido_con_slug
+      pattern: ^https?://cooking\.nytimes\.com/[^/]+/[^/]+$
+      content_type: no_contenido
+      confidence: medium
+      examples: 7
+      coverage_percentage: 2.8
+      type_consistency: 71.43
+      sample_urls:
+      - https://cooking.nytimes.com/68861692-nyt-cooking/1334836-easy-salmon-recipes
+      - https://cooking.nytimes.com/68861692-nyt-cooking/638891-best-soup-stew-recipes
+      - https://cooking.nytimes.com/topics/easy-weeknight
+    - name: contenido_con_slug
+      pattern: ^https?://www\.nytimes\.com/wirecutter/reviews/[^/]+/?$
+      content_type: contenido
+      confidence: medium
+      examples: 6
+      coverage_percentage: 2.4
+      type_consistency: 100.0
+      sample_urls:
+      - https://www.nytimes.com/wirecutter/reviews/best-air-purifier/
+      - https://www.nytimes.com/wirecutter/reviews/best-electric-toothbrush/
+      - https://www.nytimes.com/wirecutter/reviews/best-pressure-washer/
+    - name: contenido_articulos_fechados
+      pattern: ^https?://www\.nytimes\.com/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/arts/design/[^/]+\.html$
+      content_type: contenido
+      confidence: medium
+      examples: 3
+      coverage_percentage: 1.2
+      type_consistency: 100.0
+      sample_urls:
+      - https://www.nytimes.com/2025/11/22/arts/design/phillips-collection-art-sold.html
+      - https://www.nytimes.com/2025/11/20/arts/design/ruth-asawa-moma.html
+      - https://www.nytimes.com/2025/11/21/arts/design/al-rockoff-war-photography-killing-fields.html
+    - name: contenido_articulos_fechados
+      pattern: ^https?://www\.nytimes\.com/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/arts/music/[^/]+\.html$
+      content_type: contenido
+      confidence: medium
+      examples: 5
+      coverage_percentage: 2.0
+      type_consistency: 100.0
+      sample_urls:
+      - https://www.nytimes.com/2025/11/22/arts/music/met-opera-protest-security-lapse.html
+      - https://www.nytimes.com/2025/11/23/arts/music/donald-glover-childish-gambino-stroke.html
+      - https://www.nytimes.com/2025/11/22/arts/music/beatles-anthology-gen-x.html
+    - name: contenido_articulos_fechados
+      pattern: ^https?://www\.nytimes\.com/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/movies/[^/]+\.html$
+      content_type: contenido
+      confidence: medium
+      examples: 3
+      coverage_percentage: 1.2
+      type_consistency: 100.0
+      sample_urls:
+      - https://www.nytimes.com/2025/11/20/movies/wicked-for-good-review.html
+      - https://www.nytimes.com/2025/11/21/movies/wicked-for-good-2-ariana-grande-cynthia-erivo.html
+      - https://www.nytimes.com/2025/11/22/movies/davine-joy-randolph-eternity.html
+    - name: contenido_articulos_fechados
+      pattern: ^https?://www\.nytimes\.com/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/arts/television/[^/]+\.html$
+      content_type: contenido
+      confidence: medium
+      examples: 3
+      coverage_percentage: 1.2
+      type_consistency: 100.0
+      sample_urls:
+      - https://www.nytimes.com/2025/11/20/arts/television/netflix-house-philadelphia-king-of-prussia.html
+      - https://www.nytimes.com/2025/11/16/arts/television/snl-trump-epstein-glen-powell-olivia-dean.html
+      - https://www.nytimes.com/2025/11/16/arts/television/it-welcome-to-derry-recap-season-1-episode-4.html
+    - name: contenido_articulos_fechados
+      pattern: ^https?://www\.nytimes\.com/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/theater/[^/]+\.html$
+      content_type: contenido
+      confidence: medium
+      examples: 3
+      coverage_percentage: 1.2
+      type_consistency: 100.0
+      sample_urls:
+      - https://www.nytimes.com/2025/11/20/theater/two-strangers-carry-cake-review.html
+      - https://www.nytimes.com/2025/11/21/theater/initiative-review-else-went.html
+      - https://www.nytimes.com/2025/11/20/theater/practice-review-nazareth-hassan.html
+  bbc:
+    rules:
+    - name: contenido_1
+      pattern: ^https?://www\.bbc\.com/news/articles/[^/]+$
+      content_type: contenido
+      confidence: high
+      examples: 25
+      coverage_percentage: 49.02
+      type_consistency: 100.0
+      sample_urls:
+      - https://www.bbc.com/news/articles/c5y0y56x6veo
+      - https://www.bbc.com/news/articles/c0jepgyl2jwo
+      - https://www.bbc.com/news/articles/cx2y2le8lx1o
+    - name: contenido_con_slug
+      pattern: ^https?://www\.bbc\.com/sport/[^/]+/articles/[^/]+$
+      content_type: contenido
+      confidence: medium
+      examples: 5
+      coverage_percentage: 9.8
+      type_consistency: 100.0
+      sample_urls:
+      - https://www.bbc.com/sport/football/articles/c9wv9vyww94o
+      - https://www.bbc.com/sport/football/articles/cqxqr2v3q7po
+      - https://www.bbc.com/sport/cricket/articles/cz94pz4eqy1o
+  lemonde:
+    rules:
+    - name: contenido_articulos_con_id
+      pattern: ^https?://www\.lemonde\.fr/economie/article/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+_[0-9]+_3234\.html$
+      content_type: contenido
+      confidence: medium
+      examples: 5
+      coverage_percentage: 2.82
+      type_consistency: 100.0
+      sample_urls:
+      - https://www.lemonde.fr/economie/article/2025/11/24/apple-vise-en-france-par-une-action-de-groupe-d-utilisateurs-dans-le-streaming-musical_6654596_3234.html
+      - https://www.lemonde.fr/economie/article/2025/11/24/l-editeur-du-daily-mail-en-passe-d-acquerir-le-telegraph-un-nouveau-dilemme-qui-emerge-pour-la-democratie-britannique_6654615_3234.html
+      - https://www.lemonde.fr/economie/article/2025/11/24/fnac-darty-agitation-en-coulisse-face-a-l-arrivee-du-chinois-jd-com_6654580_3234.html
+    - name: contenido_articulos_con_id
+      pattern: ^https?://www\.lemonde\.fr/idees/article/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+_[0-9]+_3232\.html$
+      content_type: contenido
+      confidence: medium
+      examples: 6
+      coverage_percentage: 3.39
+      type_consistency: 100.0
+      sample_urls:
+      - https://www.lemonde.fr/idees/article/2025/11/24/une-autre-police-est-possible-et-les-policiers-eux-memes-ont-tout-a-y-gagner_6654606_3232.html
+      - https://www.lemonde.fr/idees/article/2025/11/24/l-euro-constitue-un-sedatif-puissant-face-a-la-derive-budgetaire-de-la-france_6654590_3232.html
+      - https://www.lemonde.fr/idees/article/2025/11/23/michael-spence-economiste-le-developpement-rapide-de-l-ia-offre-d-importantes-possibilites-aux-economies-emergentes_6654558_3232.html
+    - name: contenido_articulos_con_id
+      pattern: ^https?://www\.lemonde\.fr/culture/article/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+_[0-9]+_3246\.html$
+      content_type: contenido
+      confidence: medium
+      examples: 4
+      coverage_percentage: 2.26
+      type_consistency: 100.0
+      sample_urls:
+      - https://www.lemonde.fr/culture/article/2025/11/24/l-acteur-allemand-udo-kier-visage-des-films-de-lars-von-trier-est-mort-a-81-ans_6654617_3246.html
+      - https://www.lemonde.fr/culture/article/2025/11/23/didier-moi-et-les-autres-les-enfants-du-silence-sur-lcp-victimes-de-viols-dans-leur-enfance-ils-racontent-leur-sale-histoire_6654563_3246.html
+      - https://www.lemonde.fr/culture/article/2025/11/23/aux-bouffes-du-nord-raphael-fait-defiler-sa-vie-comme-un-karaoke_6654564_3246.html
+    - name: contenido_articulos_con_id
+      pattern: ^https?://www\.lemonde\.fr/planete/article/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+_[0-9]+_3244\.html$
+      content_type: contenido
+      confidence: medium
+      examples: 3
+      coverage_percentage: 1.69
+      type_consistency: 100.0
+      sample_urls:
+      - https://www.lemonde.fr/planete/article/2025/11/24/commerce-des-especes-menacees-anguilles-rhinoceros-et-requins-au-c-ur-des-debats-mondiaux-a-la-cites-en-ouzbekistan_6654618_3244.html
+      - https://www.lemonde.fr/planete/article/2025/11/24/la-ligne-a-tres-haute-tension-vers-fos-sur-mer-menace-plusieurs-especes-d-oiseaux-en-voie-de-disparition-selon-une-note-confidentielle_6654592_3244.html
+      - https://www.lemonde.fr/planete/article/2025/11/24/vigilance-orange-pluie-inondation-en-gironde-dordogne-et-correze_6654597_3244.html
+    - name: contenido_articulos_con_id
+      pattern: ^https?://www\.lemonde\.fr/international/article/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+_[0-9]+_3210\.html$
+      content_type: contenido
+      confidence: medium
+      examples: 7
+      coverage_percentage: 3.95
+      type_consistency: 100.0
+      sample_urls:
+      - https://www.lemonde.fr/international/article/2025/11/24/plan-trump-pour-l-ukraine-aux-etats-unis-la-confusion-regne-autour-de-la-genese-du-document_6654594_3210.html
+      - https://www.lemonde.fr/international/article/2025/11/24/plan-trump-pour-l-ukraine-a-geneve-marco-rubio-a-tente-de-rassurer-kiev-et-ses-allies-europeens-sur-les-intentions-americaines_6654583_3210.html
+      - https://www.lemonde.fr/international/article/2025/11/24/liban-malgre-la-treve-l-armee-israelienne-tue-un-haut-responsable-du-hezbollah-en-banlieue-de-beyrouth_6654602_3210.html
+    - name: contenido_articulos_con_id
+      pattern: ^https?://www\.lemonde\.fr/politique/article/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+_[0-9]+_823448\.html$
+      content_type: contenido
+      confidence: medium
+      examples: 4
+      coverage_percentage: 2.26
+      type_consistency: 100.0
+      sample_urls:
+      - https://www.lemonde.fr/politique/article/2025/11/24/debut-de-la-permission-de-sortie-d-un-detenu-narcotrafiquant-a-vendin-le-vieil_6654610_823448.html
+      - https://www.lemonde.fr/politique/article/2025/11/24/le-gouvernement-lecornu-un-gouvernement-technique-rattrape-par-la-politique_6654593_823448.html
+      - https://www.lemonde.fr/politique/article/2025/11/24/municipales-2026-a-aubervilliers-lfi-part-a-l-offensive-en-comptant-sur-une-dynamique-nationale_6654604_823448.html
+    - name: contenido_articulos_con_id
+      pattern: ^https?://www\.lemonde\.fr/[^/]+/article/20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}/[^/]+_[0-9]+_[0-9]+\.html$
+      content_type: contenido
+      confidence: high
+      examples: 66
+      coverage_percentage: 37.29
+      type_consistency: 98.48
+      sample_urls:
+      - https://www.lemonde.fr/economie/article/2025/11/24/apple-vise-en-france-par-une-action-de-groupe-d-utilisateurs-dans-le-streaming-musical_6654596_3234.html
+      - https://www.lemonde.fr/economie/article/2025/11/24/l-editeur-du-daily-mail-en-passe-d-acquerir-le-telegraph-un-nouveau-dilemme-qui-emerge-pour-la-democratie-britannique_6654615_3234.html
+      - https://www.lemonde.fr/idees/article/2025/11/24/une-autre-police-est-possible-et-les-policiers-eux-memes-ont-tout-a-y-gagner_6654606_3232.html

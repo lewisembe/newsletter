@@ -1,0 +1,58 @@
+# Experimento 3: Estrategia weighted_mean
+# Hipótesis: Dar más peso a la descripción vs ejemplos mejora precisión
+
+database:
+  path: ../data/news.db
+  filters:
+    require_categoria: true
+    date_from: null
+    date_to: null
+    max_urls: 100
+    categories_filter: null
+
+model:
+  name: intfloat/multilingual-e5-small
+  cache_dir: ../poc_clustering/models_cache
+  batch_size: 100
+  device: cpu
+
+classification:
+  method: cosine_similarity
+  knn_k: 5
+  similarity_threshold: 0.5
+  use_examples: true
+  examples_per_category: 3
+  category_embedding_strategy: weighted_mean  # ← CAMBIO: mean → weighted_mean
+
+categories:
+  config_path: ../config/categories.yml
+  exclude: []
+
+comparison:
+  metrics:
+    - accuracy
+    - precision
+    - recall
+    - f1_score
+    - confusion_matrix
+  error_analysis:
+    include_examples: true
+    max_examples_per_error: 5
+    analyze_confusion_patterns: true
+  visualizations:
+    enabled: false
+    confusion_matrix_heatmap: false
+    similarity_distributions: false
+    embedding_projection: false
+
+output:
+  format: markdown
+  include_per_category_metrics: true
+  include_comparison_table: true
+  include_performance_comparison: true
+  export_csv: true
+  output_dir: ./output/experiments
+
+logging:
+  level: INFO
+  show_progress: true

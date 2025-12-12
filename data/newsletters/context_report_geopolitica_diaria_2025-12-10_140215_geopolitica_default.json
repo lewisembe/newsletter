@@ -1,0 +1,344 @@
+{
+  "metadata": {
+    "newsletter_name": "geopolitica_diaria",
+    "run_date": "2025-12-10",
+    "generated_at": "2025-12-10T14:02:15.097677+01:00",
+    "stage": "05_generate_newsletters"
+  },
+  "configuration": {
+    "max_articles": 10,
+    "top_with_content": 10,
+    "expected_categories": [
+      "geopolitica"
+    ],
+    "ranked_file_categories": null,
+    "template": "default",
+    "model_writer": "gpt-4o-mini",
+    "output_format": "markdown"
+  },
+  "ranked_data": {
+    "total_urls_in_ranked_file": 0,
+    "urls_selected_for_processing": 10,
+    "initial_ranked_order": []
+  },
+  "content_extraction": {
+    "urls_requested_for_content": [
+      {
+        "rank": 1,
+        "url_id": 15725,
+        "url": "https://www.lemonde.fr/international/article/2025/12/10/face-aux-tensions-thailande-cambodge-plus-de-500-000-personnes-evacuent-les-regions-frontalieres_6656682_3210.html",
+        "title": "Face aux tensions Thaïlande-Cambodge, plus de 500 000 personnes évacuent les régions frontalières"
+      },
+      {
+        "rank": 2,
+        "url_id": 15667,
+        "url": "https://www.ft.com/content/4f0e678d-2ff7-4a1e-8fa3-8be35b553585",
+        "title": "Donald Trump pledges to intervene as Thailand-Cambodia conflict flares"
+      },
+      {
+        "rank": 3,
+        "url_id": 15717,
+        "url": "https://www.lemonde.fr/afrique/article/2025/12/10/rdc-la-region-des-grands-lacs-plus-que-jamais-en-proie-a-la-guerre-une-semaine-apres-la-paix-signee-a-washington_6656708_3212.html",
+        "title": "L’est de la RDC plus que jamais en proie à la guerre, une semaine après la « paix » signée à Washington"
+      },
+      {
+        "rank": 4,
+        "url_id": 15435,
+        "url": "https://elpais.com/internacional/2025-12-10/maria-corina-machado-no-asistira-a-la-ceremonia-de-entrega-de-los-premios-nobel.html",
+        "title": "La líder opositora María Corina Machado logra salir de Venezuela: “Estaré en Oslo, estoy de camino”"
+      },
+      {
+        "rank": 5,
+        "url_id": 15470,
+        "url": "https://elpais.com/internacional/2025-12-10/el-regimen-de-tunez-choca-con-la-ue-y-se-ve-amenazado-por-los-sindicatos-tras-encarcelar-a-la-oposicion.html",
+        "title": "El régimen de Túnez choca con la UE y se ve amenazado por los sindicatos tras encarcelar a la oposición"
+      },
+      {
+        "rank": 6,
+        "url_id": 15493,
+        "url": "https://elpais.com/internacional/2025-12-09/el-ministro-ultra-israeli-itamar-ben-gvir-luce-un-pin-con-una-horca-en-defensa-de-la-pena-de-muerte-para-palestinos.html",
+        "title": "El ministro ultra israelí Itamar Ben Gvir exhibe su defensa de la pena de muerte para palestinos con un pin con forma de horca"
+      },
+      {
+        "rank": 7,
+        "url_id": 15639,
+        "url": "https://www.ft.com/content/ea36e244-4b2d-486e-881d-af7e1c25094a",
+        "title": "Trump gives Zelenskyy ‘days’ to respond to peace proposal"
+      },
+      {
+        "rank": 8,
+        "url_id": 15278,
+        "url": "https://www.bbc.com/news/articles/c208vd511ljo",
+        "title": "Nobel officials unsure when Peace Prize winner will arrive for ceremony"
+      },
+      {
+        "rank": 9,
+        "url_id": 15259,
+        "url": "https://www.bbc.com/news/articles/cqxq38028djo",
+        "title": "South Korea protests Chinese and Russian warplanes in its airspace"
+      },
+      {
+        "rank": 10,
+        "url_id": 15193,
+        "url": "https://www.abc.es/internacional/muertos-tras-derrumbe-dos-edificos-fez-marruecos-20251210100627-nt.html",
+        "title": "Al menos 19 muertos tras el derrumbe de dos edificios en Fez (Marruecos)"
+      }
+    ],
+    "urls_successfully_extracted": [
+      {
+        "rank": 1,
+        "url_id": 15725,
+        "url": "https://www.lemonde.fr/international/article/2025/12/10/face-aux-tensions-thailande-cambodge-plus-de-500-000-personnes-evacuent-les-regions-frontalieres_6656682_3210.html",
+        "title": "Face aux tensions Thaïlande-Cambodge, plus de 500 000 personnes évacuent les régions frontalières",
+        "method": "readability",
+        "word_count": 663
+      },
+      {
+        "rank": 2,
+        "url_id": 15667,
+        "url": "https://www.ft.com/content/4f0e678d-2ff7-4a1e-8fa3-8be35b553585",
+        "title": "Donald Trump pledges to intervene as Thailand-Cambodia conflict flares",
+        "method": "llm_direct",
+        "word_count": 224
+      },
+      {
+        "rank": 3,
+        "url_id": 15717,
+        "url": "https://www.lemonde.fr/afrique/article/2025/12/10/rdc-la-region-des-grands-lacs-plus-que-jamais-en-proie-a-la-guerre-une-semaine-apres-la-paix-signee-a-washington_6656708_3212.html",
+        "title": "L’est de la RDC plus que jamais en proie à la guerre, une semaine après la « paix » signée à Washington",
+        "method": "llm_direct",
+        "word_count": 230
+      },
+      {
+        "rank": 4,
+        "url_id": 15435,
+        "url": "https://elpais.com/internacional/2025-12-10/maria-corina-machado-no-asistira-a-la-ceremonia-de-entrega-de-los-premios-nobel.html",
+        "title": "La líder opositora María Corina Machado logra salir de Venezuela: “Estaré en Oslo, estoy de camino”",
+        "method": "readability",
+        "word_count": 924
+      },
+      {
+        "rank": 5,
+        "url_id": 15470,
+        "url": "https://elpais.com/internacional/2025-12-10/el-regimen-de-tunez-choca-con-la-ue-y-se-ve-amenazado-por-los-sindicatos-tras-encarcelar-a-la-oposicion.html",
+        "title": "El régimen de Túnez choca con la UE y se ve amenazado por los sindicatos tras encarcelar a la oposición",
+        "method": "readability",
+        "word_count": 1346
+      },
+      {
+        "rank": 6,
+        "url_id": 15493,
+        "url": "https://elpais.com/internacional/2025-12-09/el-ministro-ultra-israeli-itamar-ben-gvir-luce-un-pin-con-una-horca-en-defensa-de-la-pena-de-muerte-para-palestinos.html",
+        "title": "El ministro ultra israelí Itamar Ben Gvir exhibe su defensa de la pena de muerte para palestinos con un pin con forma de horca",
+        "method": "readability",
+        "word_count": 1062
+      },
+      {
+        "rank": 7,
+        "url_id": 15639,
+        "url": "https://www.ft.com/content/ea36e244-4b2d-486e-881d-af7e1c25094a",
+        "title": "Trump gives Zelenskyy ‘days’ to respond to peace proposal",
+        "method": "llm_direct",
+        "word_count": 223
+      },
+      {
+        "rank": 8,
+        "url_id": 15278,
+        "url": "https://www.bbc.com/news/articles/c208vd511ljo",
+        "title": "Nobel officials unsure when Peace Prize winner will arrive for ceremony",
+        "method": "readability",
+        "word_count": 319
+      },
+      {
+        "rank": 9,
+        "url_id": 15259,
+        "url": "https://www.bbc.com/news/articles/cqxq38028djo",
+        "title": "South Korea protests Chinese and Russian warplanes in its airspace",
+        "method": "readability",
+        "word_count": 338
+      },
+      {
+        "rank": 10,
+        "url_id": 15193,
+        "url": "https://www.abc.es/internacional/muertos-tras-derrumbe-dos-edificos-fez-marruecos-20251210100627-nt.html",
+        "title": "Al menos 19 muertos tras el derrumbe de dos edificios en Fez (Marruecos)",
+        "method": "json_ld",
+        "word_count": 184
+      }
+    ],
+    "urls_failed_extraction": [],
+    "extraction_stats": {
+      "total_requested": 10,
+      "total_success": 10,
+      "total_failed": 0,
+      "success_rate": 100.0
+    }
+  },
+  "articles": [
+    {
+      "processing_rank": 1,
+      "url_id": 15725,
+      "url": "https://www.lemonde.fr/international/article/2025/12/10/face-aux-tensions-thailande-cambodge-plus-de-500-000-personnes-evacuent-les-regions-frontalieres_6656682_3210.html",
+      "title": "Face aux tensions Thaïlande-Cambodge, plus de 500 000 personnes évacuent les régions frontalières",
+      "source": "www.lemonde.fr",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 663,
+      "archive_url": null,
+      "full_content": "Des Thaïlandais évacués vers un abri temporaire après les affrontements à la frontière entre la Thaïlande et le Cambodge, dans la province de Buriram (Thaïlande), le 8 décembre 2025. SAROT MEKSOPHAWANNAKUL / THAI NEWS PIX / AFP Les autorités de la Thaïlande et du Cambodge ont annoncé, mercredi 10 décembre, que plus de 500 000 personnes avaient été évacuées des régions frontalières depuis la reprise des affrontements, dimanche. _« Plus de 400 000 personnes ont été déplacées vers des abris »_, a déclaré lors d’un point presse le porte-parole du ministère de la défense thaïlandais, Surasant Kongsiri. _« Les civils ont dû évacuer massivement en raison de ce que nous avons évalué comme une menace imminente pour leur sécurité »_, a-t-il ajouté. _« Au total, 20 105 familles, soit 101 229 personnes, ont été évacuées vers des abris et chez des proches dans cinq provinces »_, a, pour sa part, déclaré la porte-parole du ministère de la défense cambodgien, Maly Socheata. ## Au moins onze morts dans les récents affrontements Les deux pays s’accusent mutuellement d’avoir déclenché la reprise des hostilités, qui ont fait au moins onze morts: sept civils cambodgiens et quatre soldats thaïlandais, selon les derniers bilans des autorités. Le Cambodge et la Thaïlande, qui se disputent de longue date des morceaux de territoire le long de leur frontière, s’étaient déjà affrontés en juillet. Cinq jours de combats, au sol et dans les airs, avaient fait 43 morts et contraint quelque 300 000 personnes à évacuer de part et d’autre. Des tirs d’artillerie résonnaient, mercredi matin, dans le village cambodgien quasi désert de Samraong, à quelques kilomètres de la frontière et de plusieurs temples historiques revendiqués par la Thaïlande. _« Les combats sont plus intenses cette fois_ [qu’en juillet]_, les Thaïlandais larguent des bombes avec des avions de chasse »_, a dit à l’Agence France-Presse (AFP) Lay Non, qui a trouvé refuge dans une pagode de la province de Siem Reap. De l’autre côté de la frontière, Niam Poda faisait sa lessive lundi chez elle, dans la province thaïlandaise de Sa Kaeo, lorsqu’une forte explosion a retenti. _« J’ai dû courir pour sauver ma vie dès que j’ai pu »_, a témoigné l’agricultrice de 62 ans. ## Donald Trump prévoit « de passer un appel » La Thaïlande poursuivra ses opérations militaires jusqu’à ce que le Cambodge _« change de position »_, a affirmé, mardi soir, le ministère de la défense thaïlandais, sans montrer de signes d’apaisement. Les deux parties avaient signé le 26 octobre un accord de cessez-le-feu, sous l’égide de Washington, mais il a depuis été suspendu. Leur conflit repose sur un différend ancien concernant le tracé de certaines parties de leur frontière – longue de 800 kilomètres – datant de la colonisation française. Mardi, lors d’un discours devant ses partisans en Pennsylvanie, Donald Trump a déclaré qu’il prévoyait _« de passer un appel »_ au sujet du conflit Cambodge-Thaïlande. _« Je pense qu’ils s’en sortiront_, a-t-il poursuivi. _Qui d’autre pourrait dire: “Je vais passer un coup de fil et arrêter une guerre entre deux pays très puissants” »_, a-t-il relevé. ## Le Cambodge se retire des Jeux d’Asie du Sud-Est Dans ce contexte, le Cambodge a décidé de se retirer des Jeux d’Asie du Sud-Est organisés en Thaïlande, a fait savoir, mercredi à l’AFP, Akarin Hiranprueck, un haut responsable de la compétition sportive. Des membres de la délégation cambodgienne avaient participé mardi au défilé des athlètes, lors de la cérémonie d’ouverture à Bangkok, ville hôte au même titre que la province côtière de Chonburi. La cérémonie a eu lieu sous haute sécurité, en présence de membres de la famille royale thaïlandaise. Le Comité national olympique cambodgien (NOCC) avait déjà annoncé à la fin de novembre que ses athlètes ne participeraient pas aux épreuves concernant huit disciplines _« en raison d’importants problèmes de sécurité »_. Des milliers d’athlètes originaires de onze pays asiatiques doivent prendre part jusqu’au 20 décembre à des épreuves de football, skateboard, voile ou encore d’escrime.",
+      "content_preview": "Des Thaïlandais évacués vers un abri temporaire après les affrontements à la frontière entre la Thaïlande et le Cambodge, dans la province de Buriram (Thaïlande), le 8 décembre 2025. SAROT MEKSOPHAWANNAKUL / THAI NEWS PIX / AFP Les autorités de la Thaïlande et du Cambodge ont annoncé, mercredi 10 décembre, que plus de 500 000 personnes avaient été évacuées des régions frontalières depuis la reprise des affrontements, dimanche. _« Plus de 400 000 personnes ont été déplacées vers des abris »_, a d..."
+    },
+    {
+      "processing_rank": 2,
+      "url_id": 15667,
+      "url": "https://www.ft.com/content/4f0e678d-2ff7-4a1e-8fa3-8be35b553585",
+      "title": "Donald Trump pledges to intervene as Thailand-Cambodia conflict flares",
+      "source": "www.ft.com",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "llm_direct",
+      "extraction_error": null,
+      "word_count": 224,
+      "archive_url": null,
+      "full_content": "Donald Trump has pledged to intervene in the escalating conflict between Thailand and Cambodia, stating he will 'make a phone call' to address the situation. This comes after a truce brokered by the US president in July collapsed, leading to renewed tensions along the border between the two Southeast Asian nations. The conflict has intensified over the disputed area surrounding the ancient Preah Vihear temple, which has been a source of contention for decades. Both countries have mobilized troops to the region, raising concerns about a potential military confrontation. Trump's commitment to intervene marks a significant shift in US foreign policy in the region, as he seeks to assert American influence amidst growing tensions in Southeast Asia. Analysts suggest that his involvement could either help de-escalate the situation or complicate it further, depending on how both nations respond to his overtures. The international community is watching closely, as any military escalation could have broader implications for regional stability. The US has historically played a mediating role in Southeast Asian disputes, and Trump's willingness to engage directly may signal a new approach to diplomacy in the area. As the situation develops, both Thailand and Cambodia are urged to exercise restraint and seek a peaceful resolution to their differences. The potential for dialogue remains, but the path forward will require careful navigation to avoid further conflict.",
+      "content_preview": "Donald Trump has pledged to intervene in the escalating conflict between Thailand and Cambodia, stating he will 'make a phone call' to address the situation. This comes after a truce brokered by the US president in July collapsed, leading to renewed tensions along the border between the two Southeast Asian nations. The conflict has intensified over the disputed area surrounding the ancient Preah Vihear temple, which has been a source of contention for decades. Both countries have mobilized troop..."
+    },
+    {
+      "processing_rank": 3,
+      "url_id": 15717,
+      "url": "https://www.lemonde.fr/afrique/article/2025/12/10/rdc-la-region-des-grands-lacs-plus-que-jamais-en-proie-a-la-guerre-une-semaine-apres-la-paix-signee-a-washington_6656708_3212.html",
+      "title": "L’est de la RDC plus que jamais en proie à la guerre, une semaine après la « paix » signée à Washington",
+      "source": "www.lemonde.fr",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "llm_direct",
+      "extraction_error": null,
+      "word_count": 230,
+      "archive_url": null,
+      "full_content": "Une semaine après la signature d'un accord de paix à Washington, la région des Grands Lacs, et plus particulièrement l'est de la République démocratique du Congo (RDC), est de nouveau en proie à la violence. Les combats entre les forces armées congolaises et les groupes armés se sont intensifiés, entraînant des déplacements massifs de populations et une détérioration de la situation humanitaire. Les tensions sont exacerbées par des rivalités ethniques et des luttes pour le contrôle des ressources naturelles. Les groupes armés, dont certains sont soutenus par des pays voisins, continuent de semer la terreur dans les villages, rendant la vie quotidienne insupportable pour des milliers de personnes. Les promesses de paix faites lors des négociations à Washington semblent désormais vaines, alors que les civils subissent les conséquences de ce cycle de violence. Les organisations humanitaires alertent sur l'urgence de la situation, appelant à une intervention internationale pour protéger les populations vulnérables. Les autorités congolaises, tout en affirmant leur engagement envers la paix, peinent à contenir la montée des violences. Les forces de sécurité sont souvent accusées de ne pas agir avec suffisamment de fermeté contre les groupes armés, laissant les civils à la merci de ces derniers. Dans ce contexte chaotique, les espoirs d'une résolution pacifique du conflit s'amenuisent. Les habitants de l'est de la RDC continuent de vivre dans la peur, attendant désespérément une amélioration de leur situation.",
+      "content_preview": "Une semaine après la signature d'un accord de paix à Washington, la région des Grands Lacs, et plus particulièrement l'est de la République démocratique du Congo (RDC), est de nouveau en proie à la violence. Les combats entre les forces armées congolaises et les groupes armés se sont intensifiés, entraînant des déplacements massifs de populations et une détérioration de la situation humanitaire. Les tensions sont exacerbées par des rivalités ethniques et des luttes pour le contrôle des ressource..."
+    },
+    {
+      "processing_rank": 4,
+      "url_id": 15435,
+      "url": "https://elpais.com/internacional/2025-12-10/maria-corina-machado-no-asistira-a-la-ceremonia-de-entrega-de-los-premios-nobel.html",
+      "title": "La líder opositora María Corina Machado logra salir de Venezuela: “Estaré en Oslo, estoy de camino”",
+      "source": "elpais.com",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 924,
+      "archive_url": null,
+      "full_content": "La líder opositora venezolana [María Corina Machado]( \" galardonada con el [Nobel de la Paz]( \" de este año, ha logrado salir de Venezuela para viajar hacia Oslo, la capital noruega, aunque no podrá acudir a la ceremonia de entrega del premio, que se celebrará este miércoles en el Ayuntamiento de la ciudad, según ha informado el Instituto Nobel noruego. “Ha hecho todo lo posible para asistir a la ceremonia de hoy. Un viaje en una situación de extremo peligro”, [ha comunicado la organización en una breve nota]( \" “Estamos profundamente felices de confirmar que ella está a salvo y que estará con nosotros en Oslo”. “Estaré en Oslo, estoy en camino”, ha dicho Machado en una conversación telefónica con el secretario del Comité Nobel Noruego, Jørgen Watne Frydnes, [difundida por la organización]( \" En la charla mantenida entre los dos, Machado ha agradecido de nuevo el galardón y los esfuerzos de todos los que han arriesgado sus vidas. “Siento decirte que no podré llegar a tiempo a la ceremonia”, ha manifestado al teléfono la líder opositora pocos minutos antes de coger un avión, como ella misma ha confesado a Watne Frydnes. “Sé que hay muchos venezolanos que sí han podido llegar a Oslo, así como mi familia y mi equipo”, ha proseguido Machado, “tan pronto como llegue, podré abrazar a mi familia e hijos, que no he visto en dos años, así como a tantos venezolanos y noruegos que sé que comparten nuestra lucha y esfuerzo”. La posible llegada de Machado a Noruega ha causado una enorme expectación dentro y fuera de Venezuela. En un inicio, se esperaba que la dirigente opositora, de 58 años, apareciera por primera vez en Noruega en la tradicional rueda de prensa que precede a la ceremonia de entrega, prevista para el martes a la una de la tarde (hora local y de la España peninsular, ocho de la mañana en Venezuela). El encuentro con los medios de comunicación fue pospuesto y después cancelado definitivamente por los organizadores. “La propia María Corina Machado ha afirmado en entrevistas a medios [lo desafiante que será su viaje a Oslo]( \" Por eso, en este punto no podemos dar ninguna información sobre cuándo ni cómo va a llegar a la ceremonia del premio Nobel de la Paz”, informó Erik Aasheim, portavoz del Instituto del Nobel, que adelantó hace un par de semanas la intención de la líder opositora de viajar al país escandinavo para recoger el premio. El Instituto Nobel noruego informó a primera hora del miércoles de que la opositora no estaría en la gala en Oslo. “Lamentablemente, no se encuentra en Noruega ahora. Y no estará en el escenario del Ayuntamiento de Oslo a la una de hoy, cuando comience la ceremonia”, agregó el director del [Instituto Nobel]( \" Ana Corina Sosa, la hija de Machado, será quien recoja el premio en su honor: una medalla y un diploma. Tradicionalmente, después de que el Comité Noruego del Nobel expone las razones por las que concede el premio durante la ceremonia, la persona ganadora o alguien en su representación pronuncia un discurso, conocido tradicionalmente como la conferencia Nobel. “Simplemente, vive bajo la amenaza de muerte del régimen”, señaló el director del Instituto noruego sobre las dificultades logísticas para poder contar con la presencia de Machado. “Esa amenaza también se aplica cuando está fuera del país, tanto por parte del régimen como de los amigos del régimen en todo el mundo”, agregó Harpviken. El equipo de Machado aún no ha dado a conocer las razones por las que no podrá estar presente ni información sobre dónde se encuentra la líder opositora. “Es una pena, siempre es mejor cuando el ganador del Nobel está presente”, lamentó el ministro de Exteriores noruego, Espen Barth Eide, en declaraciones a la prensa de su país. La política conservadora ha estado en paradero desconocido desde agosto de 2024, apenas unas semanas después de que se celebraran las elecciones presidenciales en Venezuela del año pasado, en las que [Nicolás Maduro]( \" se declaró ganador, pese a las acusaciones de fraude y al recuento que presentó la oposición y que favorecía al exdiplomático [Edmundo González]( \" por amplio margen. Machado, la figura más visible de la disidencia al régimen chavista, se había impuesto en las primarias de la oposición con un 93% de las preferencias, pero fue inhabilitada por las autoridades electorales para participar y se volcó en apoyar la candidatura de González. El Instituto Nobel noruego anunció el premio para Machado el pasado 10 de octubre, en pleno pico de [las tensiones entre Estados Unidos y Venezuela]( \" por el despliegue militar ordenado por [Donald Trump]( \" en aguas del Caribe. Desde entonces se ha barajado la posibilidad de que la líder opositora salga del país, así como sus implicaciones políticas. En paralelo a la ceremonia formal de entrega, se espera también que los cientos de venezolanos que han hecho el viaje puedan seguir el acto en una plaza contigua al Centro Nobel de la Paz y a unos metros del Ayuntamiento de Oslo. La tradicional [procesión de las antorchas]( \" y un banquete encabezado por altos cargos del Gobierno, el poder judicial y la monarquía de Noruega son otras actividades programadas para este miércoles. Cuatro presidentes latinoamericanos han sido invitados por la líder opositora venezolana. José Raúl Mulino, de Panamá, llegó el lunes a la capital noruega. El martes aterrizaron el controvertido Javier Milei, de Argentina, y Santiago Peña, de Paraguay. Se espera que el último en sumarse, este mismo miércoles, sea Daniel Noboa, de Ecuador.",
+      "content_preview": "La líder opositora venezolana [María Corina Machado]( \" galardonada con el [Nobel de la Paz]( \" de este año, ha logrado salir de Venezuela para viajar hacia Oslo, la capital noruega, aunque no podrá acudir a la ceremonia de entrega del premio, que se celebrará este miércoles en el Ayuntamiento de la ciudad, según ha informado el Instituto Nobel noruego. “Ha hecho todo lo posible para asistir a la ceremonia de hoy. Un viaje en una situación de extremo peligro”, [ha comunicado la organización en u..."
+    },
+    {
+      "processing_rank": 5,
+      "url_id": 15470,
+      "url": "https://elpais.com/internacional/2025-12-10/el-regimen-de-tunez-choca-con-la-ue-y-se-ve-amenazado-por-los-sindicatos-tras-encarcelar-a-la-oposicion.html",
+      "title": "El régimen de Túnez choca con la UE y se ve amenazado por los sindicatos tras encarcelar a la oposición",
+      "source": "elpais.com",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 1346,
+      "archive_url": null,
+      "full_content": "Amenazado por la reciente [ola de protestas sociales que sacude Túnez, ]( \" presidente Kais Said ha tenido un choque diplomático con la UE, que apuntala la economía del país magrebí a cambio del control de la migración irregular. También se ha visto desafiado por la convocatoria de una huelga general de la [Unión General de Tunecina del Trabajo ]( \" sindicato con un millón de afiliados en un país de 12 millones de habitantes. Said, que gobierna de forma autocrática desde 2021 tras haber clausurado el Parlamento, ha acorralado en los dos últimos años a la oposición. Con el ingreso en prisión, el pasado jueves, de [Nejib Chebbi Ahmed, ]( \" de 81 años y líder de la coalición opositora Frente de la Salvación Nacional, casi toda la disidencia al régimen ha acabado ya entre rejas o en el exilio. Por cuarto fin de semana consecutivo, una masiva manifestación recorrió el sábado la céntrica avenida Habib Burgiba de la capital tunecina bajo el lema “La oposición no es un crimen” y para reclamar la liberación de los detenidos por delitos de opinión. El [encarcelamiento de Chebbi, ]( \" de la izquierda desde hace seis décadas y figura política de la transición, tras el derrocamiento del dictador Zin el Abidín Bel Alí en las revueltas de la Primavera Árabe de 2011, cierra la lista de más de 40 opositores encausados en un macrojuicio por “atentar contra la seguridad del Estado”. Su sentencia firme a 12 años de cárcel fue dictada la semana pasada. Otros presos han visto ratificadas sus condenas de hasta 45 años de prisión, mientras que unos pocos –procesados en rebeldía, como el intelectual francés Bernard-Henri Lévy– se encuentran a salvo en el extranjero. Su arresto estuvo precedido por el de destacados opositores como la activista política Chaima Issa o el abogado Ayachi Hammami. Issa, condenada a 20 años de prisión, fue detenida en el curso de la [manifestación de la oposición]( \" organizada el día 1 por agentes de paisano que cubrían su rostro para no ser identificados y que la evacuaron en un furgón sin placas de identificación policial. La [ONG Human Rights Watch]( \" (HRW), con sede en Nueva York, sostiene que “las duras penas impuestas persiguen silenciar a la disidencia” de manera que casi toda la oposición se encuentra en la cárcel o en el exilio, y que Túnez “ha regresado a la era represiva” del dictador Ben Alí tras el paréntesis democrático posterior a la Primavera Árabe. HRW ha pedido este martes la liberación de todos los condenados, ya que considera que los [cargos presentados en su contra eran “infundados”]( \" y no se han basado en “pruebas creíbles”. El anuncio hecho público el viernes por la poderosa [central de trabajadores tunecina]( \" de convocar una huelga general en enero es interpretado como un ultimátum al presidente tras la erosión de las libertades y escalada del acoso a la oposición. La protesta también se dirige contra el deterioro de la situación social y laboral en el país norteafricano, donde el salario mínimo mensual está fijado en 520 dinares (150 euros) mientras la tasa de inflación supera el 5% anual, tras haber alcanzado el 10% en 2023. “No nos intimida la amenaza de la cárcel y proseguiremos nuestra lucha”, ha advertido Nuredín Tabubi, líder de la [UGTT, ]( \" sindicato que, en aras de poner fin al caos en la economía, avaló en 2021 el autogolpe presidencial para disolver un Parlamento surgido de las urnas que no controlaba. La semana anterior a la convocatoria del primer paro nacional contra el Gobierno desde la llegada al poder de Said, el sindicalista Tabubi se había reunido con el embajador de la Unión Europea en Túnez, Giuseppe Perrone. En un inusual gesto diplomático, Said convocó al enviado comunitario en el palacio de Cartago, sede de la Presidencia tunecina, para protestar contra lo que denominó “flagrante injerencia” en los asuntos internos de su país. La queja presentada al embajador coincide además con una resolución no vinculante aprobada por el [Parlamento Europeo ]( \" la que se llamaba a la liberación de los detenidos en Túnez por el mero ejercicio de la libertad de expresión. En paralelo, el ministro de Asuntos Exteriores conminó a la embajadora de Países Bajos en Túnez por haberse entrevistado con un miembro de la oposición. ### Control del flujo de pateras En sucesivas votaciones sobre Túnez, la Eurocámara ha estimado que las ayudas económicas enviadas por la UE deben estar condicionadas a los criterios de respeto a los derechos humanos y a la libertad de expresión. Tras un acuerdo alcanzado con Bruselas en 2023, Said ha emprendido una política de [mano dura con los migrantes irregulares subsaharianos]( \" que tratan de alcanzar desde Túnez las costas europeas en pateras por el Mediterráneo central. En contrapartida, aspira a recibir hasta 1. 000 millones de euros en forma de ayuda al desarrollo del país magrebí. La Italia de la primera ministra Giorgia Meloni se presenta como la principal valedora del [acuerdo de asociación estratégica]( \" del Túnez de Said con la Unión, adonde el país magrebí envía el 70% de sus exportaciones. En los once primeros meses de este año, Italia ha registrado la entrada de 4. 500 migrantes irregulares procedentes del litoral tunecino, en el mismo periodo de 2023 fueron 96. 000 las entradas por la misma vía de migrantes de muy variadas nacionalidades. La UE se dispone a considerar a T[únez como “país seguro” ]( \" el objetivo de acelerar la denegación de peticiones de asilo “infundadas” y el retorno de migrantes irregulares procedes del sus costas. El deterioro de los servicios públicos y la crisis económica en la que está sumido el país magrebí están detrás de la mayor oleada de malestar ciudadano registrada desde la llegada al poder de Said, que ha pilotado la demolición del sistema multipartidista surgido en 2011 en el primer estallido de la [Primavera Árabe. ]( \" presidente achaca sistemáticamente las expresiones de descontento a una conspiración extranjera dirigida a socavar el Estado mediante crisis ficticias. ### Revuelta contra la contaminación Las protestas más masivas se han registrado en la región costera de Gabes (sureste), donde la [contaminación causada por la industria química]( \" ha movilizado miles de manifestantes. En septiembre, más de 200 personas, en su mayoría menores en edad escolar, tuvieron que ser atendidas en centros sanitarios de la zona con problemas respiratorios. Said aseguró el sábado mediante un comunicado de la Presidencia que las deficiencias observadas en las instalaciones de la empresa pública Groupe Chimique Tunisiene (CGT) se deben a la falta de mantenimiento y a la corrupción publica anteriores a su mandato. Organizaciones de la sociedad civil han denunciado ante la justicia la grave [contaminación ambiental ]( \" exigir el cierre de la planta de CGT de Gabes. El tribunal que lleva el procedimiento, calificado de urgente, volvió a retrasar el jueves su decisión, por cuarta vez desde la fecha prevista, y lo ha aplazado hasta el 25 de diciembre. Las cuatro decenas de dirigentes de partidos, ex altos cargos, intelectuales y empresarios que han sido condenados en firme por [“conspirar contra la seguridad del Estado” ]( \" son figuras de distintas corrientes políticas ―conservadores y progresistas, laicos e islamistas―, aunque con el denominador común de haberse opuesto a la deriva autoritaria del presidente Said. En otro proceso, también ha sido condenado a 22 años de prisión el líder histórico islamista [Rachid Ganuchi]( \" de 83 años, fundador del partido Ennahda, el más votado (40, 7%) en las elecciones legislativas de 2019, las últimas a las que pudo presentarse antes de su prohibición. El acoso a la oposición comenzó en febrero de 2023 en una redada policial en la casa del dirigente socialdemócrata [Jayan Turqui Zaragoza, ]( \" quien cuenta con pasaporte español como hijo de una exilada republicana tras la Guerra Civil española. Su detención se produjo después de haber organizado en su casa una reunión a la que asistieron diplomáticos occidentales, miembros de la oposición y representantes de la sociedad civil tunecina en torno a un tradicional cuscús.",
+      "content_preview": "Amenazado por la reciente [ola de protestas sociales que sacude Túnez, ]( \" presidente Kais Said ha tenido un choque diplomático con la UE, que apuntala la economía del país magrebí a cambio del control de la migración irregular. También se ha visto desafiado por la convocatoria de una huelga general de la [Unión General de Tunecina del Trabajo ]( \" sindicato con un millón de afiliados en un país de 12 millones de habitantes. Said, que gobierna de forma autocrática desde 2021 tras haber clausura..."
+    },
+    {
+      "processing_rank": 6,
+      "url_id": 15493,
+      "url": "https://elpais.com/internacional/2025-12-09/el-ministro-ultra-israeli-itamar-ben-gvir-luce-un-pin-con-una-horca-en-defensa-de-la-pena-de-muerte-para-palestinos.html",
+      "title": "El ministro ultra israelí Itamar Ben Gvir exhibe su defensa de la pena de muerte para palestinos con un pin con forma de horca",
+      "source": "elpais.com",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 1062,
+      "archive_url": null,
+      "full_content": "Itamar Ben-Gvir, el [ultraderechista ministro de Seguridad Nacional de Israel, ]( \" se presentó este lunes en la Comisión de Seguridad Nacional del Parlamento israelí con un pin que representaba una horca prendido en la solapa de su chaqueta. Esa comisión examinaba el proyecto estrella de su partido, Poder Judío, que consiste en ampliar la pena de muerte que ya existe en la legislación israelí a los palestinos que asesinen a ciudadanos israelíes. Aunque el borrador de la ley no los menciona de forma explícita, tal y como está redactado, ellos serían la única categoría a quien se aplicaría esa nueva norma, que no recoge una pena análoga para los israelíes que asesinen a palestinos. El propio Ben Gvir dejó claro más tarde en un tuit que su gesto y el de sus correligionarios, que también lucieron el pin, es un símbolo de su “compromiso con la aprobación de una ley” para los “terroristas” (los palestinos) que, según escribió, “merecen morir”. En la víspera, los asesores legales del Comité de Seguridad Nacional habían puesto de relieve que el borrador es difícilmente compatible, no solo con las leyes internacionales firmadas por Israel, sino incluso con las leyes fundamentales israelíes que sirven de Constitución. Según su dictamen, el borrador prácticamente obliga a los jueces a imponer la pena capital en caso de asesinato de israelíes, por encima de las circunstancias en las que sucedan los hechos, lo que anula la discrecionalidad de los tribunales y supera incluso lo previsto en la legislación israelí para los responsables de los crímenes de la Alemania nazi. Ninguno de los delitos contemplados en las leyes israelíes que conllevan la pena de muerte obliga ahora a los jueces a aplicar esa pena capital, afirman los asesores legales. “Ni siquiera en la Ley de Castigo contra los Nazis y sus Colaboradores. Los tribunales siempre conservan su discreción para imponer una pena más leve”, subrayan. Esa norma contra los nazis fue la que se aplicó en uno de los dos únicos casos en los que Israel ha aplicado la pena capital desde la creación de su Estado en 1948: [el ahorcamiento en 1962 del nazi Adolf Eichmann]( secuestrado antes por el Mosad en Buenos Aires. Las condenas a muerte obligatorias a las que aspiran Ben Gvir y su partido se aplicarían además solo a los palestinos. [Incluidos los de Cisjordania, ]( \" un territorio palestino ocupado, donde estos están sujetos a la legislación militar (incluidos los niños) mientras que los colonos judíos que viven allí —ilegalmente, según la legislación internacional— están amparados por la jurisdicción civil, mucho más garantista. El borrador de esta legislación [dio un paso adelante el pasado 3 de noviembre]( \" cuando la Comisión de Seguridad Nacional la aprobó en primera lectura, antes de pasar al plenario del Parlamento israelí, donde se examina ahora. En la sesión plenaria de este lunes, Ben Gvir aseguró que la pequeña soga amarilla que lucieron él y sus compañeros de partido es “una de las opciones mediante las cuales la ley aplicará la pena de muerte a los terroristas”. Luego añadió que además de la horca “existe la opción de la silla eléctrica y la inyección letal”. El ministro continuó su intervención restando importancia a las críticas de la Asociación Médica de Israel, al proclamar que ha recibido “cientos de llamadas de médicos” que se ofrecieron a aplicar la pena capital a condenados. “Me dijeron: ‘Itamar, solo dime cuándo’”, afirmó el titular de Seguridad Nacional. El primer ministro israelí, Benjamín Netanyahu, apoya el proyecto de ley de sus socios más radicales. El borrador cuenta también con el respaldo del servicio de seguridad e inteligencia interior, Shin Bet, según informó su director, David Zini, al Gobierno en noviembre. Este servicio de inteligencia se había opuesto durante años a la norma. ### Críticas escasas El ministro Ben Gvir, [ él mismo un colono que vive en el asentamiento de Kiriat Arba]( \" cerca de la ciudad cisjordana de Hebrón, es el máximo representante de la extrema derecha nacionalista israelí y del movimiento radical que aspira a colonizar y anexionarse Gaza y Cisjordania (el otro territorio ocupado, Jerusalén Este, ya fue anexionado ilegalmente por Israel en 1980). El éxito de su partido y la progresiva normalización de unas ideas que hace años eran consideradas extremistas en Israel ilustra la derechización de una sociedad que alcanzó su culmen tras el ataque de Hamás del 7 de octubre de 2023 y la respuesta israelí en forma de ofensiva en Gaza, que ya ha causado más de 70. 000 muertos. Hasta hace pocos años, este ministro tenía en su caso un retrato de Baruj Goldstein, el colono que en 1994 [asesinó a tiros a 29 palestinos al abrir fuego contra la multitud]( en una mezquita de Hebrón. Para Ben Gvir, Goldstein es “un héroe”, en sus propias palabras. El auge de este discurso ultra en Israel ha propiciado que el titular de Seguridad Nacional abandonara los márgenes de la política israelí para situarse en su centro al entrar en la coalición de gobierno de Benjamín Netanyahu, tras las elecciones de 2022. Esta extrema derecha nacionalista da voz y voto en el Ejecutivo al movimiento de colonos radicales que [ha estado marcando en buena medida la senda a seguir en Gaza]( \" y en Cisjordania. Solo organizaciones de derechos humanos y la irrelevante izquierda israelí han criticado que Ben Gvir compareciera en el Parlamento con la pequeña soga. Esas escasas voces críticas han subrayado además el color del pin: amarillo, al igual que el lazo de esa tonalidad que en los últimos dos años había simbolizado el clamor por el retorno a Israel de los rehenes tomados por Hamás y otros grupos armados palestinos el 7 de octubre de 2023. El símbolo de la soga es también uno de los que utiliza la organización racista estadounidense, Ku Klux Klan. El diario _Haaretz_, cuya línea editorial se enmarca en el sionismo moderado de centroizquierda, [recogía este lunes las críticas]( \" del instituto de investigación israelí Zulat para la Igualdad y los Derechos Humanos. Esa organización cree que la aprobación de la ley tendría como consecuencia que la pena capital “no se impondría a un acusado por su responsabilidad en el acto, sino por su identidad nacional y la de la víctima”, lo que consagraría una “jerarquía” en el asesinato. El grupo compara esta ley en proyecto con “la legislación nazi”.",
+      "content_preview": "Itamar Ben-Gvir, el [ultraderechista ministro de Seguridad Nacional de Israel, ]( \" se presentó este lunes en la Comisión de Seguridad Nacional del Parlamento israelí con un pin que representaba una horca prendido en la solapa de su chaqueta. Esa comisión examinaba el proyecto estrella de su partido, Poder Judío, que consiste en ampliar la pena de muerte que ya existe en la legislación israelí a los palestinos que asesinen a ciudadanos israelíes. Aunque el borrador de la ley no los menciona de f..."
+    },
+    {
+      "processing_rank": 7,
+      "url_id": 15639,
+      "url": "https://www.ft.com/content/ea36e244-4b2d-486e-881d-af7e1c25094a",
+      "title": "Trump gives Zelenskyy ‘days’ to respond to peace proposal",
+      "source": "www.ft.com",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "llm_direct",
+      "extraction_error": null,
+      "word_count": 223,
+      "archive_url": null,
+      "full_content": "Former President Donald Trump has given Ukrainian President Volodymyr Zelenskyy a deadline of 'days' to respond to a peace proposal aimed at ending the ongoing conflict with Russia. This ultimatum was communicated through U. S. envoys who are pressing for a swift agreement to a ceasefire, with hopes of reaching a resolution by Christmas. The proposal reportedly includes terms that would require significant concessions from Ukraine, which has been resisting pressure to negotiate with Russia since the invasion began. The urgency of the situation has been underscored by the ongoing military and humanitarian crises in Ukraine, as well as the geopolitical implications of the conflict. Trump's approach has raised concerns among some analysts and officials who fear that a rushed agreement could undermine Ukraine's sovereignty and territorial integrity. They argue that any peace deal must prioritize Ukraine's long-term security and independence, rather than simply appeasing Russia. As the deadline approaches, Zelenskyy faces mounting pressure both domestically and internationally. The Ukrainian government has been cautious in its response, emphasizing the need for a comprehensive and just peace that reflects the will of the Ukrainian people. The situation remains fluid, with various stakeholders weighing in on the potential outcomes of the proposed negotiations. The coming days will be critical in determining the future of Ukraine and its relationship with both the U. S. and Russia.",
+      "content_preview": "Former President Donald Trump has given Ukrainian President Volodymyr Zelenskyy a deadline of 'days' to respond to a peace proposal aimed at ending the ongoing conflict with Russia. This ultimatum was communicated through U. S. envoys who are pressing for a swift agreement to a ceasefire, with hopes of reaching a resolution by Christmas. The proposal reportedly includes terms that would require significant concessions from Ukraine, which has been resisting pressure to negotiate with Russia since..."
+    },
+    {
+      "processing_rank": 8,
+      "url_id": 15278,
+      "url": "https://www.bbc.com/news/articles/c208vd511ljo",
+      "title": "Nobel officials unsure when Peace Prize winner will arrive for ceremony",
+      "source": "www.bbc.com",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 319,
+      "archive_url": null,
+      "full_content": "A press conference by María Corina Machado - the Nobel Peace Prize laureate, who is currently in-hiding - was cancelled on Tuesday, with the Nobel Institute saying they are \"in the dark\" about her whereabouts. Machado is Venezuela's opposition leader and has been in hiding since the country's disputed 2024 election, which she and her supporters say was stolen. She was awarded the Nobel Peace Prize for efforts to bring democracy to Venezuela, and was expected to formally collect it in a ceremony on Wednesday. Although Machado regularly gives social media video updates, usually against a neutral white wall, her current whereabouts are unknown. The Nobel Institute had previously said she would attend the event in person, however on Tuesday it said in a statement: \"María Corina Machado has herself stated in interviews how challenging the journey to Oslo, Norway will be. We therefore cannot at this point provide any further information about when and how she will arrive for the Nobel peace prize ceremony. \" Machado's family are already in Oslo. Venezuela's government has said that if she left Venezuela, Machado would be considered a \"fugitive\" by the authorities. The country's attorney general, Tarek William Saab, told AFP last month: \"By being outside Venezuela and having numerous criminal investigations, she is considered a fugitive\". He added that she is accused of \"acts of conspiracy, incitement of hatred, terrorism\". Machado had earlier told her followers that she would return to Venezuela after collecting the prize. If she attends, it would be her first public appearance since the start of the year, when she went to a protest in Caracas on 9 January against the inauguration of Venezuelan President Nicolás Maduro. After Venezuela's 2024 election, the opposition published tallies suggesting it won, despite Maduro claiming victory. Some nations, including the US, have recognised its candidate - Edmundo González - as the president-elect. Machado was banned from running in the election.",
+      "content_preview": "A press conference by María Corina Machado - the Nobel Peace Prize laureate, who is currently in-hiding - was cancelled on Tuesday, with the Nobel Institute saying they are \"in the dark\" about her whereabouts. Machado is Venezuela's opposition leader and has been in hiding since the country's disputed 2024 election, which she and her supporters say was stolen. She was awarded the Nobel Peace Prize for efforts to bring democracy to Venezuela, and was expected to formally collect it in a ceremony ..."
+    },
+    {
+      "processing_rank": 9,
+      "url_id": 15259,
+      "url": "https://www.bbc.com/news/articles/cqxq38028djo",
+      "title": "South Korea protests Chinese and Russian warplanes in its airspace",
+      "source": "www.bbc.com",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 338,
+      "archive_url": null,
+      "full_content": "South Korea has lodged a complaint with the Chinese and Russian defence attaches based in the country, a day after their warplanes entered its air defence zone. Seoul said it sent up fighter jets to \"take tactical measures in preparation for any emergencies\" after seven Russian and two Chinese military aircraft \"briefly entered\" the zone on Tuesday, but noted they \"did not violate\" South Korea's airspace. Some countries delineate air identification defence zones, wherein they require foreign planes to identify themselves. These are not part of sovereign airspaces under international law. In March this year, Seoul also deployed fighter jets after several Russian warplanes flew into the zone. The Russian aircraft entered Korea's Air Defense Identification Zone (Kadiz) near Ulleung Island and Dokdo, while the Chinese aircraft entered near Ieodo, a Joint Chiefs of Staff official said, according to South Korean media. Both sides' aircraft then regrouped in the airspace near Japan's Tsushima Island, the official said. \"Our military will actively respond to aircraft activities from neighbouring countries in the Kadiz in compliance with international law, \" South Korea's defence ministry said on Wednesday when lodging the complaint. Both Japan and South Korea have laid claims to the [Dokdo island grouping]( as has North Korea. Ieodo - a submerged rock above the South Korean island of Jeju - is a point of dispute between Seoul and Beijing, each of whom have included it in their air defence zones. China on Wednesday confirmed that its air force had conducted a joint patrol with Russia in the East China Sea and Western Pacific airspace. The exercise was part of an \"annual cooperation plan\" between Beijing and Moscow to \"address regional challenges and maintain regional peace and stability\", said a national defence spokesman. China and Russia have entered South Korea's air defence zone without notification on several occasions since 2019, often during similar exercises. Russia does not recognise South Korea's air defence zone, describing it as \"unilaterally\" established and saying it should therefore not create any legal obligations for other countries.",
+      "content_preview": "South Korea has lodged a complaint with the Chinese and Russian defence attaches based in the country, a day after their warplanes entered its air defence zone. Seoul said it sent up fighter jets to \"take tactical measures in preparation for any emergencies\" after seven Russian and two Chinese military aircraft \"briefly entered\" the zone on Tuesday, but noted they \"did not violate\" South Korea's airspace. Some countries delineate air identification defence zones, wherein they require foreign pla..."
+    },
+    {
+      "processing_rank": 10,
+      "url_id": 15193,
+      "url": "https://www.abc.es/internacional/muertos-tras-derrumbe-dos-edificos-fez-marruecos-20251210100627-nt.html",
+      "title": "Al menos 19 muertos tras el derrumbe de dos edificios en Fez (Marruecos)",
+      "source": "www.abc.es",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "json_ld",
+      "extraction_error": null,
+      "word_count": 184,
+      "archive_url": null,
+      "full_content": "Al menos 19 muertos y 16 personas heridas tras el derrumbe de dos edificios este miércoles en la ciudad de Fez (Marruecos). Las autoridades locales de la prefectura de Fez informaron de que dos edificios adyacentes de cuatro plantas se habían derrumbado durante la noche, . . . según la agencia estatal de noticias MAP. Los edificios estaban habitados por ocho familias y se encontraban en el barrio de Al-Mustaqbal. Tan pronto como se les informó del incidente, las autoridades locales, los servicios de seguridad y las unidades de protección civil se desplazaron al lugar y comenzaron inmediatamente las operaciones de búsqueda y rescate, según la agencia. Los heridos fueron trasladados al centro hospitalario universitario de Fez, mientras que las operaciones de búsqueda y rescate continuaron durante toda la noche para encontrar a otras personas que pudieran seguir atrapadas bajo los escombros, informó la agencia de noticias. La mayor parte de la población, los centros financieros e industriales y las infraestructuras vitales de Marruecos se concentran en el noroeste, mientras que el resto del país depende de la agricultura, la pesca y el turismo.",
+      "content_preview": "Al menos 19 muertos y 16 personas heridas tras el derrumbe de dos edificios este miércoles en la ciudad de Fez (Marruecos). Las autoridades locales de la prefectura de Fez informaron de que dos edificios adyacentes de cuatro plantas se habían derrumbado durante la noche, . . . según la agencia estatal de noticias MAP. Los edificios estaban habitados por ocho familias y se encontraban en el barrio de Al-Mustaqbal. Tan pronto como se les informó del incidente, las autoridades locales, los servicio..."
+    }
+  ],
+  "newsletter_preview": {
+    "word_count": 952,
+    "char_count": 7230,
+    "first_500_chars": "En el sudeste asiático, la frontera entre Tailandia y Camboya se ha convertido nuevamente en un polvorín, con más de [**500,000 personas evacuadas**](https://www.lemonde.fr/international/article/2025/12/10/face-aux-tensions-thailande-cambodge-plus-de-500-000-personnes-evacuent-les-regions-frontalieres_6656682_3210.html) desde el 8 de diciembre debido a intensos enfrentamientos. Este conflicto territorial, que ha sido una fuente de tensiones durante décadas, se centra en la disputa por el templo ..."
+  }
+}

@@ -1,0 +1,55 @@
+# Database drivers
+psycopg[binary]>=3.1.0  # PostgreSQL adapter (psycopg3)
+psycopg-pool>=3.2.0     # Connection pooling
+
+# Web Scraping
+selenium>=4.15.0
+beautifulsoup4>=4.12.0
+requests>=2.31.0
+lxml>=5.1.0
+
+# Content Extraction (Stage 04)
+newspaper4k>=0.9.0  # Updated fork of newspaper3k for Python 3.11+ compatibility
+readability-lxml>=0.8.1
+html2text>=2024.2.26
+
+# OpenAI API
+openai>=1.0.0
+
+# Configuration
+python-dotenv>=1.0.0
+pyyaml>=6.0.0
+
+# Templates (Stage 05)
+jinja2>=3.1.0
+
+# Data Processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Semantic Clustering
+sentence-transformers>=3.0.0
+faiss-cpu>=1.8.0
+
+# Testing
+pytest>=7.4.0
+pytest-mock>=3.12.0
+
+# Logging
+colorlog>=6.7.0
+
+# Utilities
+python-dateutil>=2.8.0
+
+# Task Queue & Scheduling
+celery[redis]>=5.3.0
+redis>=5.0.0
+croniter>=2.0.0
+
+# Encryption (for API key storage)
+cryptography>=41.0.0
+
+# Google News Search (POC Keyword Search) - DISABLED due to Python 3.11+ compatibility issues
+# pygooglenews>=0.1.2
+feedparser>=6.0.11
+# googlenewsdecoder>=0.1.7  # Decodes Google News URLs to original article URLs

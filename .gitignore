@@ -1,0 +1,112 @@
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv
+.virtualenv
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+.nox/
+coverage.xml
+*.cover
+.cache
+nosetests.xml
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# Environment variables with credentials
+.env
+.env.local
+.env.*.local
+
+# Cookies (contain session tokens)
+config/cookies_*.json
+
+# Generated data (not source code)
+data/raw/*.csv
+data/processed/*.csv
+data/processed/*.json
+data/processed/newsletters/
+data/*.db
+data/*.db-journal
+
+# Logs
+logs/*.log
+logs/*/*.log
+logs/token_usage.csv
+
+# Old/archived code
+old/
+
+# Temporary files
+*.tmp
+*.temp
+.ipynb_checkpoints/
+*.bak
+*.swp
+nohup*.out
+test_*.py
+test_*.txt
+show_*.py
+create_*.py
+
+# OS
+Thumbs.db
+.Spotlight-V100
+.Trashes
+
+# Node.js / Frontend
+node_modules/
+.next/
+.turbo/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Legacy / Databases
+legacy/*.db
+legacy/*.db-journal
+legacy/*.db.backup.*
+
+# ML Models / Cache
+poc_clustering/models_cache/
+poc_clustering/state/*.bin
+*.faiss

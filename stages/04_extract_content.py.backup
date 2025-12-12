@@ -1,0 +1,872 @@
+#!/usr/bin/env python3
+"""
+Stage 04: Extract Content - Full Article Content Extraction
+
+This script extracts full article content from ranked URLs using multiple extraction methods:
+1. XPath Cache - Reuse domain-specific selectors (free, instant)
+2. newspaper3k - Automatic extraction (free, 70-80% success)
+3. readability-lxml - Mozilla algorithm (free, fallback)
+4. LLM XPath Discovery - Intelligent selector discovery (paid, last resort)
+
+Key Features:
+- Paywall detection with archive.today fallback
+- XPath cache for efficient domain-specific extraction
+- Multiple extraction methods with cascading fallback
+- Content cleaning and validation
+- Database persistence with extraction metadata
+
+Author: Newsletter Utils Team
+Created: 2025-11-13
+"""
+
+import os
+import sys
+import json
+import argparse
+import logging
+from datetime import datetime
+from pathlib import Path
+from typing import List, Dict, Any, Optional
+
+# Add project root to path
+project_root = Path(__file__).parent.parent
+sys.path.insert(0, str(project_root))
+
+from dotenv import load_dotenv
+from common.db import SQLiteURLDatabase
+from common.llm import LLMClient
+from common.stage04_extraction import (
+    load_xpath_cache,
+    extract_content_with_cache,
+    clean_content,
+    fetch_html_with_cascade  # NEW: Clean fetch cascade
+)
+from common.stage04_extraction.authenticated_scraper import (
+    AuthenticatedScraper,
+    get_domain_from_url
+)
+
+# Load environment variables
+load_dotenv()
+
+# Configuration
+DB_PATH = os.getenv('DB_PATH', 'data/news.db')
+XPATH_CACHE_PATH = os.getenv('XPATH_CACHE_PATH', 'config/xpath_cache.yml')
+STAGE04_TIMEOUT = int(os.getenv('STAGE04_TIMEOUT', '30'))
+STAGE04_MIN_WORD_COUNT = int(os.getenv('STAGE04_MIN_WORD_COUNT', '100'))
+STAGE04_MAX_WORD_COUNT = int(os.getenv('STAGE04_MAX_WORD_COUNT', '10000'))
+
+# Setup logging
+logger = logging.getLogger(__name__)
+
+
+def setup_logging(run_date: str, verbose: bool = False) -> str:
+    """
+    Setup logging for Stage 04.
+
+    Args:
+        run_date: Date string for log directory
+        verbose: Enable verbose logging
+
+    Returns:
+        Path to log file
+    """
+    # Create logs directory for this date
+    log_dir = Path("logs") / run_date
+    log_dir.mkdir(parents=True, exist_ok=True)
+
+    log_file = log_dir / "04_extract_content.log"
+
+    # Configure logging
+    log_level = logging.DEBUG if verbose else logging.INFO
+    logging.basicConfig(
+        level=log_level,
+        format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+        handlers=[
+            logging.FileHandler(log_file),
+            logging.StreamHandler()
+        ]
+    )
+
+    logger.info(f"Stage 04 logging initialized: {log_file}")
+    return str(log_file)
+
+
+# DEPRECATED: Old fetch_direct() removed
+# Now using fetch_html_with_cascade() from common.stage04_extraction.fetch_cascade
+
+
+def process_url(
+    url_data: Dict[str, Any],
+    rank: int,
+    total: int,
+    db: SQLiteURLDatabase,
+    llm_client: LLMClient,
+    xpath_cache: Dict,
+    args: argparse.Namespace,
+    cookie_manager = None
+) -> Dict[str, Any]:
+    """
+    Process a single URL: fetch, detect paywall, extract content, save to DB.
+
+    Args:
+        url_data: URL data dict from ranking JSON
+        rank: Current rank number (for logging)
+        total: Total URLs to process
+        db: Database instance
+        llm_client: LLM client instance
+        xpath_cache: Loaded XPath cache
+        args: Command-line arguments
+
+    Returns:
+        Result dictionary with success status and metadata
+    """
+    url_id = url_data['id']
+    url = url_data['url']
+    title = url_data.get('title', 'Untitled')
+
+    logger.info("="*80)
+    logger.info(f"[{rank}/{total}] Processing: {title}")
+    logger.info(f"URL: {url}")
+    logger.info(f"ID: {url_id}")
+    logger.info("="*80)
+
+    # Check if already extracted (unless --force)
+    if not args.force:
+        existing = db.get_url_by_id(url_id)
+        if existing and existing.get('full_content'):
+            logger.info(f"✓ Already extracted ({existing.get('word_count')} words), skipping")
+            return {
+                'success': True,
+                'url_id': url_id,
+                'method': 'cached',
+                'word_count': existing.get('word_count'),
+                'skipped': True
+            }
+
+    # STEP 1: Fetch HTML using cascade (tries multiple methods until success)
+    logger.info("")
+    logger.info("="*80)
+    logger.info("STEP 1: FETCH HTML (with cascade of methods)")
+    logger.info("="*80)
+
+    fetch_result = fetch_html_with_cascade(
+        url=url,
+        llm_client=llm_client,
+        cookie_manager=cookie_manager,
+        skip_paywall_check=args.skip_paywall_check,
+        timeout=STAGE04_TIMEOUT,
+        title=title  # Pass title for content validation
+    )
+
+    if not fetch_result['success']:
+        logger.error(f"✗ All fetch methods failed: {fetch_result['error']}")
+        db.update_content_extraction(
+            url_id,
+            extraction_status='failed',
+            extraction_error=fetch_result['error']
+        )
+        return {
+            'success': False,
+            'url_id': url_id,
+            'error': fetch_result['error']
+        }
+
+    # Extract results
+    html = fetch_result['html']
+    fetch_method = fetch_result['method']
+    archive_url_used = fetch_result.get('archive_url')
+
+    logger.info("")
+    logger.info("="*80)
+    logger.info(f"✓ HTML FETCHED SUCCESSFULLY via: {fetch_method}")
+    if archive_url_used:
+        logger.info(f"  Archive URL: {archive_url_used}")
+    logger.info("="*80)
+    logger.info("")
+
+    # STEP 2: Extract content
+    logger.info("="*80)
+    logger.info("STEP 2: EXTRACT CONTENT (newspaper/readability/LLM)")
+    logger.info("="*80)
+    result = extract_content_with_cache(url, html, llm_client, xpath_cache, title=title)
+
+    if not result['success']:
+        logger.error(f"✗ Extraction failed: {result.get('error')}")
+        db.update_content_extraction(
+            url_id,
+            extraction_status='failed',
+            extraction_error=result.get('error', 'Unknown extraction error'),
+            extraction_method=result.get('method', 'unknown')
+        )
+        return {
+            'success': False,
+            'url_id': url_id,
+            'error': result.get('error'),
+            'method': result.get('method')
+        }
+
+    logger.info(f"✓ Content extracted via: {result['method']}")
+    logger.info("")
+
+    # STEP 3: Clean content
+    logger.info("="*80)
+    logger.info("STEP 3: CLEAN & VALIDATE CONTENT")
+    logger.info("="*80)
+    raw_content = result['content']
+    clean_text = clean_content(raw_content, max_length=STAGE04_MAX_WORD_COUNT * 5)
+
+    word_count = len(clean_text.split())
+
+    # Validate word count
+    if word_count < STAGE04_MIN_WORD_COUNT:
+        logger.error(f"✗ Content too short: {word_count} words (min: {STAGE04_MIN_WORD_COUNT})")
+        db.update_content_extraction(
+            url_id,
+            full_content=clean_text,
+            extraction_status='failed',
+            extraction_error=f'Content too short ({word_count} words)',
+            extraction_method=result['method'],
+            word_count=word_count,
+            archive_url=archive_url_used
+        )
+        return {
+            'success': False,
+            'url_id': url_id,
+            'error': f'Content too short ({word_count} words)',
+            'method': result['method'],
+            'word_count': word_count
+        }
+
+    if word_count > STAGE04_MAX_WORD_COUNT:
+        logger.warning(f"⚠ Content too long: {word_count} words (may include page boilerplate)")
+    else:
+        logger.info(f"✓ Content validated: {word_count} words")
+
+    logger.info("")
+
+    # STEP 4: Save to database
+    logger.info("="*80)
+    logger.info("STEP 4: SAVE TO DATABASE")
+    logger.info("="*80)
+    db.update_content_extraction(
+        url_id,
+        full_content=clean_text,
+        extraction_method=result['method'],
+        extraction_status='success',
+        word_count=word_count,
+        archive_url=archive_url_used
+    )
+
+    logger.info("")
+    logger.info("="*80)
+    logger.info(f"✓✓✓ SUCCESS ✓✓✓")
+    logger.info(f"  Fetch method: {fetch_method}")
+    logger.info(f"  Extraction method: {result['method']}")
+    logger.info(f"  Word count: {word_count}")
+    if archive_url_used:
+        logger.info(f"  Archive URL: {archive_url_used}")
+    logger.info("="*80)
+
+    return {
+        'success': True,
+        'url_id': url_id,
+        'method': result['method'],
+        'word_count': word_count,
+        'used_archive': bool(archive_url_used)
+    }
+
+
+def build_candidate_pool(ranked_urls: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """
+    Build ordered pool of candidate URLs for extraction with smart priority.
+
+    Strategy:
+    1. For dual_subset format: Featured articles get priority, with non-featured as substitutes
+    2. For legacy/clustering format: Primary articles followed by their related_articles
+
+    For dual_subset (post-clustering removal):
+    - Featured articles (is_featured=True) are tried first for content extraction
+    - If featured article fails, non-featured articles serve as substitute pool
+    - Non-featured are added as candidates after each featured (sorted by rank)
+    - This ensures: [Featured #1, Non-Featured #11-20, Featured #2, Non-Featured #11-20, ...]
+
+    Args:
+        ranked_urls: List of URL dicts with optional 'related_articles' or 'is_featured'
+
+    Returns:
+        Flat list of candidate dicts with metadata:
+        - All original fields (id, url, title, etc.)
+        - 'candidate_type': 'primary', 'related', 'featured', or 'substitute'
+        - 'original_rank': Rank of the article in original list
+        - 'parent_id': For substitutes/related, ID of the primary/featured article
+    """
+    candidates = []
+
+    # Check if this is dual_subset format
+    # Method 1: has is_featured field (future format)
+    # Method 2: has reason field with "Featured article" value (current format)
+    has_featured_field = any('is_featured' in url for url in ranked_urls)
+    has_reason_field = any(url.get('reason') == 'Featured article' for url in ranked_urls)
+
+    if has_featured_field or has_reason_field:
+        # NEW DUAL_SUBSET FORMAT: Separate featured vs non-featured
+        if has_featured_field:
+            # Use is_featured field (future format)
+            featured = [url for url in ranked_urls if url.get('is_featured', False)]
+            non_featured = [url for url in ranked_urls if not url.get('is_featured', False)]
+        else:
+            # Use reason field (current format)
+            featured = [url for url in ranked_urls if url.get('reason') == 'Featured article']
+            non_featured = [url for url in ranked_urls if url.get('reason') != 'Featured article']
+
+        non_featured_sorted = sorted(non_featured, key=lambda x: x.get('rank', 999))
+
+        # Build candidate pool: featured first, then non-featured as backups
+        # Featured articles are tried first for content extraction
+        for feat_article in featured:
+            featured_candidate = feat_article.copy()
+            featured_candidate['candidate_type'] = 'featured'
+            featured_candidate['original_rank'] = feat_article.get('rank', 0)
+            featured_candidate['parent_id'] = None
+            candidates.append(featured_candidate)
+
+        # Add non-featured articles ONCE as backup pool (not repeated per featured)
+        for non_feat in non_featured_sorted:
+            substitute_candidate = non_feat.copy()
+            substitute_candidate['candidate_type'] = 'substitute'
+            substitute_candidate['original_rank'] = non_feat.get('rank', 0)
+            substitute_candidate['parent_id'] = None  # Not tied to specific featured article
+            candidates.append(substitute_candidate)
+    else:
+        # LEGACY/CLUSTERING FORMAT: Use related_articles
+        for rank, primary_url in enumerate(ranked_urls, start=1):
+            # Add primary article
+            primary_candidate = primary_url.copy()
+            primary_candidate['candidate_type'] = 'primary'
+            primary_candidate['original_rank'] = rank
+            primary_candidate['parent_id'] = None
+            candidates.append(primary_candidate)
+
+            # Add related articles immediately after (maintaining priority)
+            related_articles = primary_url.get('related_articles', [])
+            for related in related_articles:
+                related_candidate = related.copy()
+                related_candidate['candidate_type'] = 'related'
+                related_candidate['original_rank'] = rank
+                related_candidate['parent_id'] = primary_url['id']
+                candidates.append(related_candidate)
+
+    return candidates
+
+
+def print_summary(
+    results: List[Dict[str, Any]],
+    execution_report: Dict[str, Any]
+):
+    """
+    Print execution summary with statistics including substitution report.
+
+    Args:
+        results: List of processing results
+        execution_report: Execution report with substitution tracking
+    """
+    total = len(results)
+    successful = sum(1 for r in results if r['success'] and not r.get('skipped'))
+    skipped = sum(1 for r in results if r.get('skipped'))
+    failed = sum(1 for r in results if not r['success'])
+    used_archive = sum(1 for r in results if r.get('used_archive'))
+
+    # Method breakdown
+    method_counts = {}
+    for r in results:
+        if r['success'] and not r.get('skipped'):
+            method = r.get('method', 'unknown')
+            method_counts[method] = method_counts.get(method, 0) + 1
+
+    # Word count stats
+    word_counts = [r['word_count'] for r in results if r.get('word_count')]
+    avg_words = sum(word_counts) / len(word_counts) if word_counts else 0
+
+    logger.info("="*80)
+    logger.info("STAGE 04 SUMMARY")
+    logger.info("="*80)
+    logger.info(f"Total URLs processed: {total}")
+    logger.info(f"  ✓ Successfully extracted: {successful}")
+    logger.info(f"  → Skipped (already extracted): {skipped}")
+    logger.info(f"  ✗ Failed: {failed}")
+    logger.info(f"  📦 Used archive.today: {used_archive}")
+    logger.info("")
+    logger.info("Extraction methods used:")
+    for method, count in sorted(method_counts.items(), key=lambda x: x[1], reverse=True):
+        logger.info(f"  {method}: {count}")
+    logger.info("")
+    logger.info(f"Average word count: {avg_words:.0f} words")
+    logger.info("")
+    logger.info("SUBSTITUTION REPORT:")
+    logger.info(f"  Target articles: {execution_report['target_articles_count']}")
+    logger.info(f"  Final with content: {execution_report['final_articles_with_content']}")
+    logger.info(f"  Substitutions made: {execution_report['substitutions_made']}")
+    logger.info(f"  Status: {execution_report['status']}")
+    logger.info("="*80)
+
+
+def main():
+    """Main execution function for Stage 04."""
+    parser = argparse.ArgumentParser(
+        description="Stage 04: Extract full article content from ranked URLs"
+    )
+
+    parser.add_argument(
+        '--input',
+        required=True,
+        help='Path to ranked JSON file from Stage 03 (e.g., data/processed/ranked_2025-11-13_*.json)'
+    )
+
+    parser.add_argument(
+        '--cantidad-articulos',
+        type=int,
+        default=None,
+        help='Number of top articles to extract content from (default: all articles in ranked file)'
+    )
+
+    parser.add_argument(
+        '--force',
+        action='store_true',
+        help='Re-extract content even if already exists in database'
+    )
+
+    parser.add_argument(
+        '--skip-paywall-check',
+        action='store_true',
+        help='Skip paywall validation (extract directly without checking)'
+    )
+
+    parser.add_argument(
+        '--verbose',
+        action='store_true',
+        help='Enable verbose logging'
+    )
+
+    args = parser.parse_args()
+
+    # Load ranked JSON
+    input_path = Path(args.input)
+    if not input_path.exists():
+        logger.error(f"Input file not found: {args.input}")
+        return 1
+
+    with open(input_path, 'r', encoding='utf-8') as f:
+        ranked_data = json.load(f)
+
+    run_date = ranked_data.get('run_date', datetime.now().strftime('%Y-%m-%d'))
+
+    # Setup logging
+    setup_logging(run_date, args.verbose)
+
+    logger.info("="*80)
+    logger.info("STAGE 04: EXTRACT CONTENT WITH SMART SUBSTITUTION")
+    logger.info("="*80)
+    logger.info(f"Input file: {args.input}")
+    logger.info(f"Run date: {run_date}")
+    logger.info(f"Force re-extraction: {args.force}")
+    logger.info(f"Skip paywall check: {args.skip_paywall_check}")
+    logger.info(f"Substitution enabled: {args.enable_substitution}")
+
+    # Load primary URLs - support both formats
+    if 'headlines' in ranked_data:
+        # NEW DUAL SUBSET FORMAT
+        logger.info("Detected dual subset format (headlines + featured)")
+        ranked_urls = ranked_data['headlines']
+        featured_ids = set(ranked_data.get('featured', []))
+
+        # Mark which articles are featured
+        for url in ranked_urls:
+            url['is_featured'] = url['id'] in featured_ids
+
+        logger.info(f"Total headlines: {len(ranked_urls)}")
+        logger.info(f"Featured articles: {len(featured_ids)}")
+
+        # Extract only featured articles by default
+        if args.cantidad_articulos:
+            # User specified custom count - take top N
+            target_count = args.cantidad_articulos
+            primary_urls = ranked_urls[:args.cantidad_articulos]
+        else:
+            # Default: extract only featured articles
+            primary_urls = [url for url in ranked_urls if url['is_featured']]
+            target_count = len(primary_urls)
+            logger.info(f"Extracting content for featured articles only (use --max-articles to override)")
+    else:
+        # LEGACY FORMAT (ranked_urls)
+        logger.info("Detected legacy format (ranked_urls)")
+        ranked_urls = ranked_data['ranked_urls']
+
+        # Check if this is dual_subset using reason field (not marked with is_featured yet)
+        has_featured_reason = any(url.get('reason') == 'Featured article' for url in ranked_urls)
+
+        if has_featured_reason:
+            # Dual subset format (no clustering) - use reason field to mark featured
+            logger.info("Detected dual subset indicators (reason field)")
+            for url in ranked_urls:
+                # Don't override if already set, otherwise use reason field
+                if 'is_featured' not in url:
+                    url['is_featured'] = url.get('reason') == 'Featured article'
+        else:
+            # True legacy format or old clustering format
+            # Mark all as featured for backward compatibility
+            for url in ranked_urls:
+                if 'is_featured' not in url:
+                    url['is_featured'] = True
+
+        # Determine target count
+        if args.cantidad_articulos:
+            target_count = args.cantidad_articulos
+            # For dual subset: pass ALL ranked_urls to build_candidate_pool
+            # It will separate featured vs non-featured internally
+            if has_featured_reason:
+                primary_urls = ranked_urls  # Pass all 19 URLs
+            else:
+                primary_urls = ranked_urls[:args.cantidad_articulos]
+        else:
+            target_count = len(ranked_urls)
+            primary_urls = ranked_urls
+
+    logger.info(f"Target articles with content: {target_count}")
+    logger.info(f"Primary articles in ranking: {len(primary_urls)}")
+
+    # Count total related articles available
+    total_related = sum(len(url.get('related_articles', [])) for url in primary_urls)
+    logger.info(f"Related articles available: {total_related}")
+
+    # Initialize database and LLM client
+    db = SQLiteURLDatabase(DB_PATH)
+    llm_client = LLMClient()
+
+    # Load XPath cache
+    logger.info(f"Loading XPath cache from {XPATH_CACHE_PATH}")
+    xpath_cache = load_xpath_cache(XPATH_CACHE_PATH)
+    logger.info(f"XPath cache loaded: {len(xpath_cache)} entries")
+
+    # Initialize cookie manager (for DB-based authenticated fetching)
+    use_cookies = os.getenv('STAGE04_USE_COOKIES', 'true').lower() == 'true'
+    auto_renew_cookies = os.getenv('AUTO_RENEW_COOKIES', 'true').lower() == 'true'
+
+    from common.stage04_extraction.cookie_manager import CookieManager
+    cookie_manager = None
+
+    if use_cookies:
+        logger.info(f"Initializing cookie manager (DB-based, auto_renew={auto_renew_cookies})")
+        try:
+            cookie_manager = CookieManager(db=db, headless=True)
+            logger.info("✓ Cookie manager initialized")
+
+            # Auto-renew cookies for all domains before processing
+            if auto_renew_cookies:
+                domains = db.get_all_cookie_domains()
+                if domains:
+                    logger.info(f"🔄 Auto-renewing cookies for {len(domains)} domains...")
+                    for domain in domains:
+                        try:
+                            cookie_manager.check_and_renew_if_needed(
+                                f"https://{domain}",
+                                threshold_days=7
+                            )
+                        except Exception as e:
+                            logger.warning(f"Failed to renew cookies for {domain}: {e}")
+                    logger.info("✓ Cookie auto-renewal completed")
+
+        except Exception as e:
+            logger.warning(f"Failed to initialize cookie manager: {e}")
+            logger.warning("Continuing without cookie-based authentication")
+    else:
+        logger.info("Cookie-based authentication disabled (STAGE04_USE_COOKIES=false)")
+
+    # Build candidate pool with smart priority (primary + related grouped)
+    logger.info("-"*80)
+    logger.info("Building candidate pool...")
+    candidate_pool = build_candidate_pool(primary_urls)
+    logger.info(f"Candidate pool size: {len(candidate_pool)}")
+
+    # Count by candidate type
+    type_counts = {}
+    for c in candidate_pool:
+        ctype = c['candidate_type']
+        type_counts[ctype] = type_counts.get(ctype, 0) + 1
+
+    if type_counts:
+        logger.info("Candidate breakdown:")
+        for ctype, count in sorted(type_counts.items()):
+            logger.info(f"  {ctype.capitalize()}: {count}")
+    logger.info("-"*80)
+
+    # Initialize tracking structures
+    execution_report = {
+        'target_articles_count': target_count,
+        'final_articles_with_content': 0,
+        'total_attempts': 0,
+        'successful_extractions': 0,
+        'failed_extractions': 0,
+        'substitutions_made': 0,
+        'status': 'pending',
+        'details': []
+    }
+
+    final_articles = []  # Articles with successful content extraction
+    results = []  # All processing results for logging
+
+    # Process candidates until we reach target or exhaust pool
+    candidate_idx = 0
+    current_target_rank = 1
+    processed_ids = set()  # Track IDs we've already tried
+
+    while len(final_articles) < target_count and candidate_idx < len(candidate_pool):
+        candidate = candidate_pool[candidate_idx]
+        url_id = candidate['id']
+
+        # Skip if already processed
+        if url_id in processed_ids:
+            candidate_idx += 1
+            continue
+
+        processed_ids.add(url_id)
+        candidate_idx += 1
+
+        # Determine if this is original target or substitution
+        candidate_type = candidate['candidate_type']
+        is_primary = candidate_type in ['primary', 'featured']
+        is_substitute = candidate_type in ['related', 'substitute']
+        original_rank = candidate['original_rank']
+
+        logger.info("")
+        logger.info("="*80)
+        if is_primary:
+            logger.info(f"TARGET RANK {current_target_rank}/{target_count}: Processing {candidate_type} article")
+        else:
+            logger.info(f"TARGET RANK {current_target_rank}/{target_count}: Trying {candidate_type} (substitution)")
+        logger.info(f"Type: {candidate_type}")
+        logger.info(f"Original rank: {original_rank}")
+        if is_substitute and candidate.get('parent_id'):
+            logger.info(f"Substituting for: ID {candidate.get('parent_id')}")
+        logger.info(f"Title: {candidate.get('title', 'Untitled')}")
+        logger.info("="*80)
+
+        # Attempt extraction
+        try:
+            result = process_url(
+                candidate,
+                current_target_rank,
+                target_count,
+                db,
+                llm_client,
+                xpath_cache,
+                args,
+                cookie_manager=cookie_manager
+            )
+            results.append(result)
+            execution_report['total_attempts'] += 1
+
+            # Check if extraction succeeded
+            if result['success'] and not result.get('skipped'):
+                # SUCCESS: Add to final articles
+                execution_report['successful_extractions'] += 1
+
+                article_entry = {
+                    'rank': current_target_rank,
+                    'id': url_id,
+                    'url': candidate['url'],
+                    'title': candidate['title'],
+                    'source': candidate.get('source', ''),
+                    'categoria_tematica': candidate.get('categoria_tematica', 'otros'),
+                    'word_count': result.get('word_count', 0),
+                    'extraction_method': result.get('method', 'unknown'),
+                    'was_substitution': not is_primary,
+                    'original_rank': original_rank,
+                    'candidate_type': candidate_type
+                }
+
+                # Add substitution metadata if applicable
+                if not is_primary:
+                    article_entry['substitution_source_rank'] = original_rank
+                    article_entry['original_target_rank'] = current_target_rank
+                    if candidate.get('parent_id'):
+                        article_entry['substituted_for_id'] = candidate.get('parent_id')
+
+                final_articles.append(article_entry)
+
+                # Track in execution report
+                detail_entry = {
+                    'target_rank': current_target_rank,
+                    'url_id': url_id,
+                    'title': candidate['title'],
+                    'candidate_type': candidate_type,
+                    'extraction_status': 'success',
+                    'word_count': result.get('word_count', 0),
+                    'method': result.get('method', 'unknown')
+                }
+
+                if not is_primary:
+                    execution_report['substitutions_made'] += 1
+                    detail_entry['parent_id'] = candidate.get('parent_id')
+                    detail_entry['substitution_source_rank'] = original_rank
+                    detail_entry['substitution_reason'] = f'{candidate_type.capitalize()} used due to primary/featured article extraction failure'
+
+                execution_report['details'].append(detail_entry)
+
+                # Move to next target rank
+                current_target_rank += 1
+                if not is_primary:
+                    logger.info(f"✓ SUCCESS: Substitution successful! {candidate_type.capitalize()} article (rank {original_rank}) used for target rank {current_target_rank-1}")
+                else:
+                    logger.info(f"✓ SUCCESS: {candidate_type.capitalize()} article extracted successfully")
+                logger.info(f"Total progress: {len(final_articles)}/{target_count}")
+
+            elif result.get('skipped'):
+                # Already extracted - count as success
+                execution_report['successful_extractions'] += 1
+
+                article_entry = {
+                    'rank': current_target_rank,
+                    'id': url_id,
+                    'url': candidate['url'],
+                    'title': candidate['title'],
+                    'source': candidate.get('source', ''),
+                    'categoria_tematica': candidate.get('categoria_tematica', 'otros'),
+                    'word_count': result.get('word_count', 0),
+                    'extraction_method': 'cached',
+                    'was_substitution': not is_primary,
+                    'original_rank': original_rank,
+                    'candidate_type': candidate_type
+                }
+
+                # Add substitution metadata if applicable
+                if not is_primary:
+                    article_entry['substitution_source_rank'] = original_rank
+                    article_entry['original_target_rank'] = current_target_rank
+                    if candidate.get('parent_id'):
+                        article_entry['substituted_for_id'] = candidate.get('parent_id')
+
+                final_articles.append(article_entry)
+
+                detail_entry = {
+                    'target_rank': current_target_rank,
+                    'url_id': url_id,
+                    'title': candidate['title'],
+                    'candidate_type': candidate_type,
+                    'extraction_status': 'success',
+                    'word_count': result.get('word_count', 0),
+                    'method': 'cached',
+                    'note': 'Previously extracted'
+                }
+
+                if not is_primary:
+                    execution_report['substitutions_made'] += 1
+                    detail_entry['parent_id'] = candidate.get('parent_id')
+                    detail_entry['substitution_source_rank'] = original_rank
+
+                execution_report['details'].append(detail_entry)
+
+                current_target_rank += 1
+                if not is_primary:
+                    logger.info(f"✓ SUCCESS: Substitution successful! Cached {candidate_type} article (rank {original_rank}) used for target rank {current_target_rank-1}")
+                else:
+                    logger.info(f"✓ SUCCESS: {candidate_type.capitalize()} article already cached")
+                logger.info(f"Total progress: {len(final_articles)}/{target_count})")
+
+            else:
+                # FAILURE: Log and continue to next candidate
+                execution_report['failed_extractions'] += 1
+
+                logger.warning(f"✗ FAILED: {result.get('error', 'Unknown error')}")
+
+                if args.enable_substitution:
+                    logger.info(f"→ Will try next candidate for rank {current_target_rank}")
+                else:
+                    logger.info(f"→ Substitution disabled, moving to next target rank")
+                    current_target_rank += 1
+
+                # Track failure in report
+                detail_entry = {
+                    'target_rank': current_target_rank,
+                    'url_id': url_id,
+                    'title': candidate['title'],
+                    'candidate_type': candidate['candidate_type'],
+                    'extraction_status': 'failed',
+                    'error': result.get('error', 'Unknown error')
+                }
+                execution_report['details'].append(detail_entry)
+
+        except Exception as e:
+            logger.error(f"Unexpected error processing URL {url_id}: {e}", exc_info=True)
+            execution_report['total_attempts'] += 1
+            execution_report['failed_extractions'] += 1
+
+            results.append({
+                'success': False,
+                'url_id': url_id,
+                'error': f'Unexpected error: {e}'
+            })
+
+            detail_entry = {
+                'target_rank': current_target_rank,
+                'url_id': url_id,
+                'title': candidate.get('title', 'Unknown'),
+                'candidate_type': candidate['candidate_type'],
+                'extraction_status': 'error',
+                'error': f'Unexpected error: {e}'
+            }
+            execution_report['details'].append(detail_entry)
+
+            if not args.enable_substitution:
+                current_target_rank += 1
+
+    # Finalize execution report
+    execution_report['final_articles_with_content'] = len(final_articles)
+
+    if len(final_articles) >= target_count:
+        execution_report['status'] = 'success'
+    elif len(final_articles) > 0:
+        execution_report['status'] = 'partial_success'
+    else:
+        execution_report['status'] = 'failed'
+
+    if execution_report['substitutions_made'] > 0:
+        execution_report['status'] += '_with_substitutions'
+
+    # Save output with execution report
+    logger.info("-"*80)
+    logger.info("Saving output with execution report...")
+    output_data = {
+        'run_date': run_date,
+        'generated_at': datetime.now().isoformat(),
+        'input_file': str(input_path),
+        'execution_report': execution_report,
+        'articles': final_articles
+    }
+
+    output_dir = Path("data") / "processed"
+    output_dir.mkdir(parents=True, exist_ok=True)
+    timestamp = datetime.now().strftime('%H%M%S')
+    output_file = output_dir / f"content_{run_date}_{timestamp}.json"
+
+    with open(output_file, 'w', encoding='utf-8') as f:
+        json.dump(output_data, f, ensure_ascii=False, indent=2)
+
+    logger.info(f"Output saved: {output_file}")
+
+    # Print summary
+    print_summary(results, execution_report)
+
+    # Cleanup authenticated scraper
+    # Cookie manager cleanup (if needed in future)
+    if cookie_manager:
+        logger.debug("Cookie manager cleanup (no action needed)")
+
+    logger.info("")
+    logger.info("Stage 04 completed successfully")
+    logger.info(f"Output file: {output_file}")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

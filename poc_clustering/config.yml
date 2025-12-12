@@ -1,0 +1,70 @@
+# PoC Clustering - Configuration
+#
+# NOTE: All relative paths in this file are resolved relative to this config file's location.
+# When Stage 01 calls the clustering module, it normalizes paths using load_clustering_config()
+# to ensure correct resolution regardless of execution context.
+
+database:
+  # Path to news.db (relative to this config file: poc_clustering/)
+  path: ../data/news.db
+
+model:
+  # HuggingFace model for embeddings
+  name: intfloat/multilingual-e5-small
+  # Cache directory for downloaded models (relative to this config file)
+  cache_dir: ./models_cache
+  # Batch size for embedding generation (adjust based on RAM)
+  batch_size: 100
+  # Device: 'cpu' or 'cuda'
+  device: cpu
+
+state:
+  # Directory to persist FAISS index and clustering state (relative to this config file)
+  directory: ./state
+
+clustering:
+  # Base similarity threshold (0.0 - 1.0)
+  # Ajustado alto para agrupar sólo titulares casi idénticos (nivel noticia)
+  # 0.94 reduce falsos positivos en patrones estructurales similares (ej: "FT interview with X")
+  similarity_threshold: 0.94
+
+  # Enable adaptive threshold (μ - k*σ per cluster)
+  adaptive_threshold: true
+
+  # Factor para threshold adaptativo (más agresivo=clusters más compactos)
+  adaptive_k: 1.1
+
+  # Minimum number of articles to include cluster in report
+  min_cluster_size: 2
+
+  # Maximum number of nearest neighbors to check (menor = matches cercanos)
+  max_neighbors: 3
+
+hashtag:
+  # OpenAI model for hashtag generation
+  llm_model: gpt-4o-mini
+
+  # Maximum number of titles to send as context
+  max_titles_for_context: 5
+
+  # Temperature for LLM (0.0 = deterministic, 1.0 = creative)
+  temperature: 0.3
+
+  # Max tokens for hashtag generation
+  max_tokens: 50
+
+output:
+  # Output format (currently only 'markdown' supported)
+  format: markdown
+
+  # Include performance metrics in report
+  include_metrics: true
+
+  # Include full URLs in report
+  include_urls: true
+
+  # Include source domain in article listings
+  include_source: true
+
+  # Maximum clusters to include in detailed report (0 = all)
+  max_clusters_detailed: 50

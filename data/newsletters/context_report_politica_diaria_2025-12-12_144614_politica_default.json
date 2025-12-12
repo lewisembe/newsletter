@@ -1,0 +1,343 @@
+{
+  "metadata": {
+    "newsletter_name": "politica_diaria",
+    "run_date": "2025-12-12",
+    "generated_at": "2025-12-12T14:46:14.415912+01:00",
+    "stage": "05_generate_newsletters"
+  },
+  "configuration": {
+    "max_articles": 10,
+    "top_with_content": 10,
+    "expected_categories": [
+      "politica"
+    ],
+    "ranked_file_categories": null,
+    "template": "default",
+    "model_writer": "gpt-4o-mini",
+    "output_format": "markdown"
+  },
+  "ranked_data": {
+    "total_urls_in_ranked_file": 0,
+    "urls_selected_for_processing": 10,
+    "initial_ranked_order": []
+  },
+  "content_extraction": {
+    "urls_requested_for_content": [
+      {
+        "rank": 1,
+        "url_id": 17115,
+        "url": "https://www.lemonde.fr/m-le-mag/article/2025/12/12/nous-ne-sommes-pas-en-train-de-tendre-vers-une-force-autoritaire-nous-y-sommes-au-fbi-la-grande-purge-a-commence_6656969_4500055.html",
+        "title": "Le FBI aux ordres de Donald Trump : « Nous ne sommes pas en train de tendre vers une force autoritaire. Nous y sommes »"
+      },
+      {
+        "rank": 2,
+        "url_id": 17195,
+        "url": "https://www.nytimes.com/2025/12/10/climate/gregg-phillips-fema.html",
+        "title": "A Proponent of Election Conspiracy Theories Will Take a Top Role at FEMA"
+      },
+      {
+        "rank": 3,
+        "url_id": 17082,
+        "url": "https://www.ft.com/content/a114351c-2f4f-4688-96d9-5ae1af777420",
+        "title": "Donald Trump threatens federal funding cuts for states with ‘onerous’ AI laws"
+      },
+      {
+        "rank": 4,
+        "url_id": 16972,
+        "url": "https://www.expansion.com/juridico/actualidad-tendencias/2025/12/08/6936addc468aebd8148b459c.html",
+        "title": "EEUU se queda sin fiscales por miedo a las 'vendettas' de Trump"
+      },
+      {
+        "rank": 5,
+        "url_id": 17121,
+        "url": "https://www.lemonde.fr/international/article/2025/12/12/le-premier-ministre-thailandais-prive-du-soutien-d-une-partie-de-l-opposition-decide-de-dissoudre-l-assemblee_6657023_3210.html",
+        "title": "Le premier ministre thaïlandais, privé du soutien d’une partie de l’opposition, décide de dissoudre l’Assemblée"
+      },
+      {
+        "rank": 6,
+        "url_id": 16894,
+        "url": "https://elpais.com/us/migracion/2025-12-11/las-nuevas-restricciones-de-trump-no-dejan-a-ningun-migrante-a-salvo-ser-un-residente-legal-en-ee-uu-es-ser-un-ciudadano-de-segunda.html",
+        "title": "Las nuevas restricciones de Trump no dejan a ningún migrante a salvo: “Ser un residente legal en EE UU es ser un ciudadano de segunda”"
+      },
+      {
+        "rank": 7,
+        "url_id": 16714,
+        "url": "https://www.elconfidencial.com/espana/2025-12-11/dimite-javier-izquierdo-ejecutiva-psoe-escandalo-denuncias-acoso_4264814/",
+        "title": "Dimite Javier Izquierdo, miembro de la Ejecutiva del PSOE, en pleno escándalo por las denuncias de acoso"
+      },
+      {
+        "rank": 8,
+        "url_id": 16777,
+        "url": "https://elpais.com/espana/2025-12-12/anticorrupcion-investiga-si-plus-ultra-derivo-dinero-del-rescate-para-blanquear-fondos-de-venezuela-en-francia-suiza-y-espana.html",
+        "title": "Anticorrupción investiga si Plus Ultra derivó dinero del rescate para blanquear fondos de Venezuela en Francia, Suiza y España"
+      },
+      {
+        "rank": 9,
+        "url_id": 16629,
+        "url": "https://www.elconfidencial.com/espana/2025-12-12/la-uco-entra-en-hacienda-y-transicion-ecologica-y-en-las-empresas-publicas-correos-y-cofivacasa_4265034/",
+        "title": "La UCO entra en Hacienda y Transición Ecológica y en las empresas públicas Correos y Cofivacasa"
+      },
+      {
+        "rank": 10,
+        "url_id": 16668,
+        "url": "https://www.elconfidencial.com/espana/pais-vasco/2025-12-11/condenas-franquismo-fusilamientos-reconocimiento-victimas-1tps_4264569/",
+        "title": "El Gobierno reconoce como víctimas a Txiki y Otaegi, miembros de ETA, y anula sus sentencias de muerte"
+      }
+    ],
+    "urls_successfully_extracted": [
+      {
+        "rank": 1,
+        "url_id": 17115,
+        "url": "https://www.lemonde.fr/m-le-mag/article/2025/12/12/nous-ne-sommes-pas-en-train-de-tendre-vers-une-force-autoritaire-nous-y-sommes-au-fbi-la-grande-purge-a-commence_6656969_4500055.html",
+        "title": "Le FBI aux ordres de Donald Trump : « Nous ne sommes pas en train de tendre vers une force autoritaire. Nous y sommes »",
+        "method": "readability",
+        "word_count": 343
+      },
+      {
+        "rank": 3,
+        "url_id": 17082,
+        "url": "https://www.ft.com/content/a114351c-2f4f-4688-96d9-5ae1af777420",
+        "title": "Donald Trump threatens federal funding cuts for states with ‘onerous’ AI laws",
+        "method": "llm_direct",
+        "word_count": 286
+      },
+      {
+        "rank": 4,
+        "url_id": 16972,
+        "url": "https://www.expansion.com/juridico/actualidad-tendencias/2025/12/08/6936addc468aebd8148b459c.html",
+        "title": "EEUU se queda sin fiscales por miedo a las 'vendettas' de Trump",
+        "method": "json_ld",
+        "word_count": 1323
+      },
+      {
+        "rank": 5,
+        "url_id": 17121,
+        "url": "https://www.lemonde.fr/international/article/2025/12/12/le-premier-ministre-thailandais-prive-du-soutien-d-une-partie-de-l-opposition-decide-de-dissoudre-l-assemblee_6657023_3210.html",
+        "title": "Le premier ministre thaïlandais, privé du soutien d’une partie de l’opposition, décide de dissoudre l’Assemblée",
+        "method": "llm_direct",
+        "word_count": 273
+      },
+      {
+        "rank": 6,
+        "url_id": 16894,
+        "url": "https://elpais.com/us/migracion/2025-12-11/las-nuevas-restricciones-de-trump-no-dejan-a-ningun-migrante-a-salvo-ser-un-residente-legal-en-ee-uu-es-ser-un-ciudadano-de-segunda.html",
+        "title": "Las nuevas restricciones de Trump no dejan a ningún migrante a salvo: “Ser un residente legal en EE UU es ser un ciudadano de segunda”",
+        "method": "readability",
+        "word_count": 1753
+      },
+      {
+        "rank": 7,
+        "url_id": 16714,
+        "url": "https://www.elconfidencial.com/espana/2025-12-11/dimite-javier-izquierdo-ejecutiva-psoe-escandalo-denuncias-acoso_4264814/",
+        "title": "Dimite Javier Izquierdo, miembro de la Ejecutiva del PSOE, en pleno escándalo por las denuncias de acoso",
+        "method": "readability",
+        "word_count": 700
+      },
+      {
+        "rank": 8,
+        "url_id": 16777,
+        "url": "https://elpais.com/espana/2025-12-12/anticorrupcion-investiga-si-plus-ultra-derivo-dinero-del-rescate-para-blanquear-fondos-de-venezuela-en-francia-suiza-y-espana.html",
+        "title": "Anticorrupción investiga si Plus Ultra derivó dinero del rescate para blanquear fondos de Venezuela en Francia, Suiza y España",
+        "method": "readability",
+        "word_count": 920
+      },
+      {
+        "rank": 9,
+        "url_id": 16629,
+        "url": "https://www.elconfidencial.com/espana/2025-12-12/la-uco-entra-en-hacienda-y-transicion-ecologica-y-en-las-empresas-publicas-correos-y-cofivacasa_4265034/",
+        "title": "La UCO entra en Hacienda y Transición Ecológica y en las empresas públicas Correos y Cofivacasa",
+        "method": "readability",
+        "word_count": 720
+      },
+      {
+        "rank": 10,
+        "url_id": 16668,
+        "url": "https://www.elconfidencial.com/espana/pais-vasco/2025-12-11/condenas-franquismo-fusilamientos-reconocimiento-victimas-1tps_4264569/",
+        "title": "El Gobierno reconoce como víctimas a Txiki y Otaegi, miembros de ETA, y anula sus sentencias de muerte",
+        "method": "readability",
+        "word_count": 531
+      }
+    ],
+    "urls_failed_extraction": [
+      {
+        "rank": 2,
+        "url_id": 17195,
+        "url": "https://www.nytimes.com/2025/12/10/climate/gregg-phillips-fema.html",
+        "title": "A Proponent of Election Conspiracy Theories Will Take a Top Role at FEMA",
+        "status": "failed",
+        "error": "All fetch methods failed (tried: cookies, direct, no-js, selenium-no-js, archive.today)"
+      }
+    ],
+    "extraction_stats": {
+      "total_requested": 10,
+      "total_success": 9,
+      "total_failed": 1,
+      "success_rate": 90.0
+    }
+  },
+  "articles": [
+    {
+      "processing_rank": 1,
+      "url_id": 17115,
+      "url": "https://www.lemonde.fr/m-le-mag/article/2025/12/12/nous-ne-sommes-pas-en-train-de-tendre-vers-une-force-autoritaire-nous-y-sommes-au-fbi-la-grande-purge-a-commence_6656969_4500055.html",
+      "title": "Le FBI aux ordres de Donald Trump : « Nous ne sommes pas en train de tendre vers une force autoritaire. Nous y sommes »",
+      "source": "www.lemonde.fr",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 343,
+      "archive_url": null,
+      "full_content": "Trois coups retentissent, la salle se lève. L’audience peut commencer, ce 8 octobre, au tribunal d’Alexandria, dans la banlieue chic de Washington: _« Les Etats-Unis contre James Comey! », _ lance la greffière. Le prévenu déploie son grand corps, 2, 03 mètres dressés face à la cour tel un épouvantail. L’ancien directeur du FBI (Federal Bureau of Investigation) ne se retourne pas vers sa famille, qui a fait la queue parmi la foule des journalistes afin d’assister à ce moment historique. Dehors, des manifestants bravent la pluie pour dénoncer une _« justice spectacle ». _ James Comey, 64 ans, commence la première manche de son bras de fer judiciaire contre Donald Trump, l’homme le plus puissant de la planète. Le haut fonctionnaire est poursuivi pour entrave à une commission d’enquête parlementaire et fausses déclarations au Congrès. Il lui est reproché d’avoir menti au sujet de sa conduite des investigations sur l’ingérence russe dans la campagne présidentielle américaine de 2016. Moscou avait alors cherché à favoriser la victoire de Donald Trump face à Hillary Clinton. Malgré de lourds soupçons, la complicité du républicain n’avait pas été démontrée. Le milliardaire est persuadé que le FBI cherchait sa perte avec cette très médiatique instruction. Rancunier, il crie aujourd’hui vengeance. James Comey est l’homme qui a refusé de lui prêter allégeance en 2017, lors d’un dîner en tête à tête**** à la Maison Blanche, digne de la mafia. _« J’ai besoin de loyauté, j’attends de la loyauté », _ lui lançait ce soir-là le président américain. Donald Trump attendait notamment de son convive qu’il enterre une enquête du FBI portant sur les liens avec la Russie de son conseiller à la sécurité nationale, Michael Flynn. Faute d’avoir donné la réponse escomptée, le directeur du Bureau était limogé quelques semaines plus tard. Il racontera la scène dans ses Mémoires, qui seront adaptés dans une série télévisée, _The Comey Rule_ (2020), cruelle pour Donald Trump, campé en personnage brutal et sans limites. **Il vous reste 90. 69% de cet article à lire. La suite est réservée aux abonnés. **",
+      "content_preview": "Trois coups retentissent, la salle se lève. L’audience peut commencer, ce 8 octobre, au tribunal d’Alexandria, dans la banlieue chic de Washington: _« Les Etats-Unis contre James Comey! », _ lance la greffière. Le prévenu déploie son grand corps, 2, 03 mètres dressés face à la cour tel un épouvantail. L’ancien directeur du FBI (Federal Bureau of Investigation) ne se retourne pas vers sa famille, qui a fait la queue parmi la foule des journalistes afin d’assister à ce moment historique. Dehors, d..."
+    },
+    {
+      "processing_rank": 2,
+      "url_id": 17195,
+      "url": "https://www.nytimes.com/2025/12/10/climate/gregg-phillips-fema.html",
+      "title": "A Proponent of Election Conspiracy Theories Will Take a Top Role at FEMA",
+      "source": "www.nytimes.com",
+      "category": "politica",
+      "has_full_content": false,
+      "extraction_status": "failed",
+      "extraction_method": null,
+      "extraction_error": "All fetch methods failed (tried: cookies, direct, no-js, selenium-no-js, archive.today)",
+      "word_count": null,
+      "archive_url": null
+    },
+    {
+      "processing_rank": 3,
+      "url_id": 17082,
+      "url": "https://www.ft.com/content/a114351c-2f4f-4688-96d9-5ae1af777420",
+      "title": "Donald Trump threatens federal funding cuts for states with ‘onerous’ AI laws",
+      "source": "www.ft.com",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "llm_direct",
+      "extraction_error": null,
+      "word_count": 286,
+      "archive_url": null,
+      "full_content": "Donald Trump ha amenazado con recortar la financiación federal a los estados que implementen leyes de inteligencia artificial (IA) que considere \"onerosas\". Esta declaración se produce en un contexto donde la administración de Trump busca equilibrar la regulación de la IA con los intereses de la industria tecnológica, especialmente en un momento en que Silicon Valley está presionando para evitar restricciones que puedan obstaculizar la innovación. El ex presidente, que ha expresado su preocupación por el impacto de la IA en el empleo y la economía, ha señalado que algunas leyes estatales podrían ser demasiado restrictivas y perjudiciales para el crecimiento del sector tecnológico. En su opinión, estas regulaciones podrían desincentivar la inversión y el desarrollo de nuevas tecnologías en los Estados Unidos. Trump ha instado a los gobernadores y legisladores estatales a reconsiderar cualquier legislación que pueda ser vista como un obstáculo para el avance de la IA. Su administración ha argumentado que un enfoque más flexible y menos regulado es necesario para mantener la competitividad de Estados Unidos en el ámbito global. La amenaza de recortes en la financiación federal ha sido recibida con preocupación por algunos líderes estatales, quienes temen que esto pueda afectar a programas esenciales en áreas como educación y salud. Sin embargo, otros han apoyado la postura de Trump, argumentando que es necesario proteger la innovación y el crecimiento económico en un sector que está en rápida evolución. La situación refleja una creciente tensión entre la necesidad de regular la tecnología emergente y el deseo de fomentar un entorno que permita la innovación. A medida que la IA continúa avanzando, es probable que este debate se intensifique, con implicaciones significativas para el futuro de la regulación tecnológica en Estados Unidos.",
+      "content_preview": "Donald Trump ha amenazado con recortar la financiación federal a los estados que implementen leyes de inteligencia artificial (IA) que considere \"onerosas\". Esta declaración se produce en un contexto donde la administración de Trump busca equilibrar la regulación de la IA con los intereses de la industria tecnológica, especialmente en un momento en que Silicon Valley está presionando para evitar restricciones que puedan obstaculizar la innovación. El ex presidente, que ha expresado su preocupaci..."
+    },
+    {
+      "processing_rank": 4,
+      "url_id": 16972,
+      "url": "https://www.expansion.com/juridico/actualidad-tendencias/2025/12/08/6936addc468aebd8148b459c.html",
+      "title": "EEUU se queda sin fiscales por miedo a las 'vendettas' de Trump",
+      "source": "www.expansion.com",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "json_ld",
+      "extraction_error": null,
+      "word_count": 1323,
+      "archive_url": null,
+      "full_content": "Nadie quiere ser fiscal en Estados Unidos. En un escenario jurídico dominado por las vendettas personales del presidente norteamericano, Donald Trump, el Departamento de Justicia (DOJ, por sus siglas en inglés) sufre una de las mayores fugas de talento de su historia. Desde el inicio del segundo mandato de Trump, miles de abogados y funcionarios con una dilatada experiencia han dejado sus puestos en el organismo, y las vacantes apenas se están cubriendo. No se trata de un recorte presupuestario, sino de falta de un mínimo de candidatos cualificados para disimular la diáspora de quienes temen ser el foco de la ira presidencial o, peor aún, convertirse en peones de la cruzada que la Casa Blanca libra en los tribunales contra sus adversarios políticos. Se estima que más de 5. 500 empleados -entre abogados y funcionarios de carrera- han abandonado el Departamento de Justicia en los últimos meses, según cifras de la organización Justice Connection. Las estadísticas incluyen renuncias, pero también despidos y planes de jubilación anticipada promovidos por la Administración republicana para deshacerse de los fiscales no alineados ideológicamente, según se desprende de una investigación llevada a cabo por The Washington Post. El organismo, que sería el equivalente al Ministerio Fiscal en España, contaba el año pasado con unos 10. 000 letrados en total, incluyendo fiscales federales y personal de agencias dependientes, como el FBI -cuyo exdirector, James Comey, ha sido recientemente imputado por investigar los supuestos vínculos rusos de Trump en el pasado-. La crisis de talento y reputación del DOJ es un punto de inflexión para un cuerpo históricamente considerado como uno de los destinos más prestigiosos no solo para los graduados de las mejores facultades de Derecho de Estados Unidos, sino también para los profesionales del sector con una dilatada carrera en el sector privado que buscan un trampolín para colmar sus aspiraciones políticas. La realidad ahora es bien distinta. Decanos y profesores de centros tan prestigiosos como Georgetown, Harvard o Yale reconocen un desplome en el número de estudiantes interesados en trabajar en el DOJ. &quot; Pasamos de tener decenas de solicitudes cada año a casi ninguna&quot; , según ha admitido William Treanor, exdecano de Georgetown, al diario The Washington Post. En algunos estados, los fiscales federales han recurrido incluso a campañas de. En Washington D. C. , la fiscal Jeanine Pirro llegó a pedir en televisión que los abogados interesados en unirse al cuerpo le escribieran directamente a su email. En Chicago, su homólogo Andrew Boutros envió cartas a excompañeros rogándoles que regresaran al servicio público ante la imposibilidad de encontrar sustitutos. Según los expertos, el problema no radica solo en la falta de atractivo de las ofertas laborales del Departamento de Justicia, sino especialmente en el desplazamiento ideológico e instrumentalización política del cuerpo de fiscales. La misma razón que ha provocado el éxodo de profesionales también hace inviable que sus puestos se cubran con facilidad. Procesos de selección Además de los pocos aspirantes interesados, su currículum tampoco es muy extenso. La mayoría procede de oficinas republicanas del Congreso o de grupos de presión conservadores, no de otros tribunales o de grandes despachos, como ocurría hasta ahora. Los procesos de selección, también politizados, se ralentizan, con los tiempos agravados por el último cierre de la Administración federal, el más largo de la historia, que ha provocado un cuello de botella que podría mantener bloqueada la situación en los juzgados del país durante meses. Evidentemente, esta situación preocupa a expertos en derecho laboral y a antiguos fiscales, que han alzado la voz para advertir del riesgo de una &quot; politización encubierta&quot; del servicio civil. Es más, en los formularios de admisión se ha incorporado una pregunta para los candidatos sobre qué orden ejecutiva de Trump consideran más significativa y cómo contribuirían a desarrollarla. Los juristas del país se quejan de que se trata de una forma de &quot; evaluar la lealtad política&quot; dentro de las filas del Departamento de Justicia. Por su parte, el equipo de la fiscal general, Pam Bondi, ha negado reiteradamente que se discrimine a nadie por motivos ideológicos y asegura que su prioridad es &quot; contratar a los profesionales más cualificados para proteger la seguridad pública y el cumplimiento de la ley&quot; . Sin embargo, la realidad muestra un panorama de oficinas saturadas y divisiones enteras operando con la mitad de su personal. La División de Derechos Civiles, por ejemplo, ha perdido a la mayoría de sus 600 empleados y solo ha logrado reemplazar a una docena. Los despachos de los fiscales se encuentran desbordados, con expedientes que se acumulan y juicios que se retrasan sine die. La situación se ha agravado por los despidos selectivos de veteranos considerados &quot; hostiles&quot; al Gobierno. Varios de los fiscales que participaron en las causas contra los asaltantes del Capitolio el 6 de enero de 2021 han sido apartados de sus cargos o forzados a dimitir. Otros, que se negaron a presentar acusaciones por falta de pruebas, fueron cesados sin explicación. Solo en este año, al menos 200 empleados de la carrera judicial, incluidos 80 jueces de inmigración, han sido destituidos. El resultado: un incremento drástico del atasco judicial y una sobrecarga en los tribunales de inmigración, que dependen del DOJ. Por el contrario, los magistrados federales no dependen de este organismo, aunque sí son nominados por Trump y ratificados por el Senado. Salarios Para los abogados jóvenes, además, la propuesta económica resulta poco atractiva. Mientras un recién incorporado en un gran bufete puede superar los 230. 000 dólares anuales más bonus, un fiscal federal comienza su carrera en torno a los 70. 000 dólares, con escasas perspectivas de promoción a corto plazo. Tradicionalmente, el incentivo para aceptar estas ofertas era el prestigio del DOJ, la vocación de servicio público y la estabilidad laboral. Pero la ecuación ya no funciona. Las consecuencias de esta crisis van más allá de los pasillos del DOJ. Con miles de puestos vacantes, la capacidad del Departamento para investigar delitos complejos &mdash; desde el crimen organizado hasta los fraudes financieros&mdash; se ve comprometida. La escasez de fiscales experimentados también amenaza con ralentizar los casos pendientes y debilitar la defensa jurídica del Estado en los tribunales. La situación ha obligado a redistribuir expedientes entre oficinas y a priorizar solo los procesos considerados más urgentes. Este deterioro coincide con una ofensiva política del presidente Trump contra las universidades y centros académicos de élite, a los que acusa de promover políticas de diversidad y equidad que &quot; adoctrinan&quot; a los estudiantes. En febrero, el entonces fiscal interino del distrito de Columbia, Ed Martin, llegó a enviar una carta a Georgetown anunciando que no contrataría a graduados de instituciones con programas DEI (diversidad, equidad e inclusión). Aun así, desde el DOJ aseguran que no se han creado listas negras formales de universidades. La crisis deja a la principal institución judicial de Estados Unidos debilitada, fragmentada y políticamente dividida, con un impacto directo sobre la confianza pública en la Justicia y la aplicación de la ley. Dimisiones para no investigar conspiracionesUn ejemplo de la crisis que atraviesa el Departamento de Justicia estadounidense es la reciente dimisi&oacute; n de dos fiscales de Florida, que se negaron a participar en una investigaci&oacute; n sobre una supuesta &quot; gran conspiraci&oacute; n&quot; contra antiguos directores de los servicios de inteligencia de EEUU. En declaraciones a medios locales, los funcionarios reconocen que &quot; todo el mundo est&aacute; con los nervios de punta&quot; , con miedo a ser presionados para incorporarse a alguna de las causas pol&iacute; ticas impulsadas desde el Despacho Oval, desde donde se ha llegado a pedir la detenci&oacute; n de figuras tan prominentes como la del expresidente Barack Obama o el exdirector de la CIA John Brennan. Los fiscales que han presentado su dimisi&oacute; n en los &uacute; ltimos meses ante su negativa a participar en estos procesos alegan que lo hacen para &quot; no formar parte en algo que viola las responsabilidades &eacute; ticas&quot; del cargo de fiscal.",
+      "content_preview": "Nadie quiere ser fiscal en Estados Unidos. En un escenario jurídico dominado por las vendettas personales del presidente norteamericano, Donald Trump, el Departamento de Justicia (DOJ, por sus siglas en inglés) sufre una de las mayores fugas de talento de su historia. Desde el inicio del segundo mandato de Trump, miles de abogados y funcionarios con una dilatada experiencia han dejado sus puestos en el organismo, y las vacantes apenas se están cubriendo. No se trata de un recorte presupuestario,..."
+    },
+    {
+      "processing_rank": 5,
+      "url_id": 17121,
+      "url": "https://www.lemonde.fr/international/article/2025/12/12/le-premier-ministre-thailandais-prive-du-soutien-d-une-partie-de-l-opposition-decide-de-dissoudre-l-assemblee_6657023_3210.html",
+      "title": "Le premier ministre thaïlandais, privé du soutien d’une partie de l’opposition, décide de dissoudre l’Assemblée",
+      "source": "www.lemonde.fr",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "llm_direct",
+      "extraction_error": null,
+      "word_count": 273,
+      "archive_url": null,
+      "full_content": "Le premier ministre thaïlandais, Srettha Thavisin, a annoncé, vendredi 12 décembre, la dissolution de l’Assemblée nationale, après avoir perdu le soutien d’une partie de l’opposition. Cette décision survient alors que le pays est confronté à une crise politique croissante, exacerbée par des tensions entre le gouvernement et les partis d’opposition. Srettha, qui a pris ses fonctions en septembre, a déclaré que la dissolution était nécessaire pour permettre de nouvelles élections et restaurer la confiance du public dans le processus démocratique. \"Nous devons écouter la voix du peuple et donner la possibilité à tous les citoyens de s’exprimer lors des prochaines élections\", a-t-il affirmé lors d’une conférence de presse. La décision de dissoudre l’Assemblée a été accueillie avec des réactions mitigées. Certains analystes estiment qu’elle pourrait ouvrir la voie à une nouvelle ère politique, tandis que d’autres craignent qu’elle n’aggrave les divisions existantes au sein du pays. Le gouvernement a été critiqué pour sa gestion de l’économie et des questions sociales, et la perte de soutien de l’opposition pourrait compliquer davantage sa position. Les élections anticipées devraient avoir lieu dans les mois à venir, mais la date exacte reste à déterminer. Les partis d’opposition, qui avaient initialement soutenu le gouvernement, ont exprimé leur mécontentement face à certaines politiques et décisions prises par Srettha. Ils ont appelé à une réforme politique plus large et à une meilleure représentation des citoyens dans le processus décisionnel. La situation en Thaïlande reste volatile, avec des manifestations sporadiques et des appels à des réformes démocratiques plus profondes. Les observateurs politiques surveillent de près les développements, alors que le pays se prépare à une nouvelle phase de son histoire politique.",
+      "content_preview": "Le premier ministre thaïlandais, Srettha Thavisin, a annoncé, vendredi 12 décembre, la dissolution de l’Assemblée nationale, après avoir perdu le soutien d’une partie de l’opposition. Cette décision survient alors que le pays est confronté à une crise politique croissante, exacerbée par des tensions entre le gouvernement et les partis d’opposition. Srettha, qui a pris ses fonctions en septembre, a déclaré que la dissolution était nécessaire pour permettre de nouvelles élections et restaurer la c..."
+    },
+    {
+      "processing_rank": 6,
+      "url_id": 16894,
+      "url": "https://elpais.com/us/migracion/2025-12-11/las-nuevas-restricciones-de-trump-no-dejan-a-ningun-migrante-a-salvo-ser-un-residente-legal-en-ee-uu-es-ser-un-ciudadano-de-segunda.html",
+      "title": "Las nuevas restricciones de Trump no dejan a ningún migrante a salvo: “Ser un residente legal en EE UU es ser un ciudadano de segunda”",
+      "source": "elpais.com",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 1753,
+      "archive_url": null,
+      "full_content": "Una notificación inesperada llegó de parte del Servicio de Ciudadanía e Inmigración (USCIS). “Por medio de la presente, le informamos que, debido a circunstancias imprevistas, hemos tenido que cancelar la entrevista programada para el miércoles 3 de diciembre de 2025 a las 09. 50 am”. Zoe, una cubana que lleva cinco años como residente permanente en Nueva York y pide no dar su apellido, estaba ultimando los detalles, repasando nombres de congresistas y líderes históricos, y releyendo los deberes y derechos que debe saber quien aspire a convertirse en ciudadano de Estados Unidos. “Yo feliz, porque todo andaba viento en popa, estudiándome a Lincoln, a Washington y a cuanto miembro hay en el Congreso”, dice. Ahora, a través de un correo electrónico, le anunciaban que el camino hacia su naturalización era indefinido. Esa es casi la única garantía —por el momento— en un país empeñado en [expulsar a sus migrantes]( \" La notificación escueta que recibió el 1 de diciembre dejó saber que le informarían de “cualquier medida adicional que se tome en este caso, incluyendo la información sobre la reprogramación de la entrevista”. El USCIS no olvidó añadir que lamentaban “cualquier inconveniente que esto pueda ocasionar”. Zoe pensó que podría ser una equivocación, un imprevisto. “Cosas del azar, la nevada o falta de personal por el cierre del Gobierno”, se dijo. Cuando despertó a la mañana siguiente, la noticia era una realidad en todos los medios de prensa del país: la Administración de Donald Trump había puesto en pausa las solicitudes de migración de los nacionales de 19 países considerados de alto riesgo, entre los que están Cuba y Venezuela, una medida tomada como expansión del [_travel ban_ anunciado en junio]( \" Quedaban suspendidas las solicitudes de residencia permanente o ciudadanía, y los aplicantes serían sometidos a revisiones más exhaustivas. El director del USCIS, Joseph B. Edlow, dijo en un comunicado que estaban implementando “más medidas de protección que garantizan que el fraude, el engaño y las amenazas no vulneren la integridad de nuestro sistema de inmigración”. Automáticamente, migrantes de todo el país comenzaron a reportar la llegada no solo del mismo correo electrónico, sino la cancelación de sus juramentos de ciudadanía. La última de las medidas que ha tomado la Casa Blanca atenta contra quienes creían que estaban un poco más a salvo: los residentes permanentes, a un paso de convertirse en ciudadanos. Pero en un momento en el que incluso se ha amenazado con [eliminar la ciudadanía por nacimiento]( \" o que el Servicio de Inmigración y Control de Aduanas (ICE) ha arrestado a personas naturalizadas, la única certeza es que ningún migrante está fuera de peligro. “Llevaba meses teniendo conversaciones con mi esposo, desde que empezaron a salir más y más videos de los arrestos arbitrarios del ICE”, cuenta Zoe. “Él me decía que nada de esto me iba a tocar, que soy residente legal, casada con un ciudadano americano, con un hijo americano. Pero yo sentía que sí, que a mí también me podía tocar, porque al final van detrás de todos los inmigrantes, buscando nuevas y truculentas maneras de atemorizarnos. Ser un residente legal en Estados Unidos es ahora mismo ser un ciudadano de segunda clase. Tengo miedo de viajar y que luego no me dejen entrar, miedo de que me revoquen la _green card_, de que me separen de mi bebé”. Agentes detienen a un migrante después de salir de la corte, en Nueva York, en junio de 2025. Olga Fedorova (AP) Lo primero era, según la Administración Trump, detener la migración ilegal y expulsar del país a “lo peor de lo peor”. Llegaron suspensiones del Estatus de Protección Temporal y _parole_ humanitario. Luego extendieron su poder hasta las cortes de migración, y el ICE empezó a ser parte de la vida diaria en las grandes ciudades del país. Pero eso no basta y van mucho más allá. El concepto de “criminal” se ha expandido y el mensaje ha sido claro: ningún extranjero es bienvenido. A bordo del _Air Force One_, donde Trump hace unos días explicó su idea de la llamad _a_ migración inversa, que consiste en “sacar a la gente que está en nuestro país” y que entró gracias a la Administración de Joe Biden, al presidente le preguntaron si pensaba desnaturalizar a migrantes. “Si tengo el poder para hacerlo, lo haré. Absolutamente”, respondió. ### Procesos en suspensión [Los disparos del ciudadano afgano de 29 años Rahmanullah Lakanwal]( \" el 26 de noviembre, contra dos agentes de la Guardia Nacional, fueron el último detonador para que Trump diera luz verde al recrudecimiento de su política antiinmigrante. No pasó mucho tiempo desde el incidente que removió a Washington D. C. para que el mandatario amenazara con suspender la migración desde “todos los países del Tercer Mundo”. Para finales de noviembre, ya estaban apareciendo las nuevas medidas que hoy tienen en vilo a todos los migrantes. Según la abogada de migración Liudmila Marcelo son políticas que afectan fundamentalmente a aquellos que no tienen registros criminales, “pues estos son los que se reportan con el ICE, cumplen con sus fechas de corte y desean seguir los pasos correctos y necesarios para obtener un estatus legal”. “Nunca se ha tratado de inmigrantes con registros criminales, porque esos inmigrantes no son fáciles de encontrar y procesar, esos inmigrantes no van a corte, no se reportan al ICE”, sostiene. Ángela Linares —una cubana que pidió cambiar su nombre— ha sido varias veces afectada por las políticas migratorias del presidente. Hace más de un año creyó que era afortunada, cuando se le abrió un camino legal hacia Estados Unidos tras ser beneficiaria del _parole_ humanitario. El día en que la Casa Blanca deshabilitó el programa, Linares comenzó a transitar la vida como una persona al margen de todo en Florida. “Me dejaron ilegal aquí, tuve que ponerme en pausa porque desde el momento en que limitaron todos los procesos no me ha salido ni mi permiso de trabajo, ni mi residencia. La vida está en pausa”, dice. Ahora trabaja “por la izquierda”, y tampoco se atreve a manejar desde su casa en West Palm Beach hasta la de sus padres en Cape Coral, por miedo a que la policía la detenga. “Mi padre no quiere que yo vaya a verlo, sabe que cualquier salida es un riesgo, te detienen y no les importa nada, están violando todo, no hay ningún estado de seguridad”. La familia vive con el temor de que, después de casi una década de espera, Linares, de 49 años, tenga que irse sola una vez más. En 2016, sus padres, ciudadanos estadounidenses, comenzaron su proceso de reclamación. En 2024 la suerte se le adelantó y se reunió con ellos como beneficiaria del _parole_. La notificación de que se presentara a la embajada de La Habana para obtener su visa de reunificación familiar llegó cuando ya estaba en Estados Unidos. En otro momento hubiese valorado la posibilidad de regresar a la isla y presentarse ante las autoridades consulares, pero lo cierto es que el _travel ban_ la considera “no prioritaria” por tratarse de una hija mayor de edad. Perdió también la posibilidad de su reclamación. Con las últimas medidas, le cayó encima otro balde de agua fría. Por su condición de cubana pudo aplicar a [la Ley de Ajuste]( \" pero ahora mismo se ve afectado su proceso de residencia. En un mensaje en X a finales de noviembre, Joseph B. Edlow, el director del USCIS, dijo que por petición de Trump ha ordenado “una revisión rigurosa, a gran escala, de cada tarjeta de residente de cada extranjero de cada país de preocupación”. De acuerdo con la abogada Marcelo, pausar estos procesos “implica que el volumen de casos estancados va a crecer”, a pesar de que ya se estaban experimentando demoras considerables en los procesamientos de las residencias por Ajuste Cubano. “Esto va a traer consigo un período aún mayor de incertidumbre para aquellos que no se sienten seguros hasta que reciban su residencia permanente, porque si bien es cierto que cumplen con los requisitos, mientras esa residencia no se otorgue, están en peligro de ser detenidos”. Joseph Edlow en las oficinas del USCIS, en Camp Springs, Maryland, el 8 de septiembre. Mark Schiefelbein (AP) Además de los procesos de residencia permanente o ciudadanía, se han puesto en pausa también las peticiones de asilo. Según Edlow, la suspensión se mantendrá “hasta que podamos garantizar que todos los extranjeros sean investigados y examinados con el máximo rigor posible”. La medida afecta a más de 1, 5 millones de personas con solicitudes de asilo pendientes. Aun así, el abogado Aaron Ortiz-Santos insiste en que desde su bufete están recomendando a los clientes no dejar de tramitar sus casos. “Le decimos a la gente que los siga presentando para que en caso de que se demande y se suspendan estas reglas, puedan continuar los procesos”. Por ahora, no obstante, no existe una fecha oficial de cuándo se reanudarán. ### “Están quitando lo esencial para que la gente se vaya” El Gobierno estadounidense —que sabe que “la deportación más grande de la historia” implica un gasto extremo y que tampoco es fácil localizar a los millones de indocumentados que pretender expulsar— ha estado echando mano de otro tipo de estrategias para arrinconarlos o hacerlos optar por la autodeportación. La Administración republicana arrancó el último mes del año con restricciones a los [permisos de trabajo]( \" limitando a 18 meses aquellos que antes alcanzaban los cinco años. Según el director del USCIS, la medida garantiza que quienes “buscan trabajar en Estados Unidos no representen una amenaza para la seguridad pública ni promuevan ideologías contrarias a los valores nacionales”. Por otro lado, varios migrantes han comenzado a reportar notificaciones desde sus bancos, que les piden actualizar su estatus migratorio para evitar el cierre o congelamiento de cuentas. A quienes no hayan hecho solicitudes de asilo, no tengan residencia o permisos de trabajo, les será imposible justificar su estatus. Dice Linares que el reto mayor en este tiempo es levantarse en la mañana “sin seguridad de nada”. “¿Cómo vas a vivir si no tienes dinero? Porque si no tienes permiso de trabajo y no tienes cómo pagar, no puedes tener una renta. ¿Qué haces si no tienes una licencia para conducir en un país donde hay que manejar? Te están asfixiando, te están quitando la libertad, no te puedes mover, y si no tienes trabajo no puedes vivir en este país. Para eso lo están haciendo. Están quitando lo esencial para que la gente se vaya”.",
+      "content_preview": "Una notificación inesperada llegó de parte del Servicio de Ciudadanía e Inmigración (USCIS). “Por medio de la presente, le informamos que, debido a circunstancias imprevistas, hemos tenido que cancelar la entrevista programada para el miércoles 3 de diciembre de 2025 a las 09. 50 am”. Zoe, una cubana que lleva cinco años como residente permanente en Nueva York y pide no dar su apellido, estaba ultimando los detalles, repasando nombres de congresistas y líderes históricos, y releyendo los deberes..."
+    },
+    {
+      "processing_rank": 7,
+      "url_id": 16714,
+      "url": "https://www.elconfidencial.com/espana/2025-12-11/dimite-javier-izquierdo-ejecutiva-psoe-escandalo-denuncias-acoso_4264814/",
+      "title": "Dimite Javier Izquierdo, miembro de la Ejecutiva del PSOE, en pleno escándalo por las denuncias de acoso",
+      "source": "www.elconfidencial.com",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 700,
+      "archive_url": null,
+      "full_content": "El secretario de Estudios y Programas de la Comisión Ejecutiva Federal del PSOE, **Javier Izquierdo**, ha dimitido este jueves **como miembro de la Ejecutiva socialista** en medio del escándalo de las denuncias por acoso sexual que afecta a Ferraz. En [un mensaje publicado en redes sociales]( explica que ha comunicado a la dirección federal del partido su renuncia \"como miembro de la CEF y**también como senador** \". \"Lo hago para afrontar **otras tareas profesionales y personales** seguro de que habrá quien lo haga mejor\", expone. Actualmente, Izquierdo [era senador por Valladolid]( y miembro titular de la Diputación Permanente de la Cámara Alta, portavoz del Grupo Socialista en la Comisión de Vivienda y Agenda Urbana, y en la Comisión de Investigación sobre la Gestión del presidente del Centro de Investigaciones Sociológicas (CIS); viceportavoz en la Comisión de Interior y vocal en la Comisión Mixta de Seguridad Nacional y en la Comisión Mixta para la Unión Europea. La secretaria de organización del PSOE, Rebeca Torró, por su parte, ha indicado este viernes en rueda de prensa que**no les consta que exista ninguna denuncia** sobre Javier Izquierdo, pero que el partido sí que ha procedido a **abrirle un expediente**. \"Queremos esclarecer lo que ha pasado alrededor de Javier Izquierdo\", ha expuesto Torró. Minutos después del anuncio de la dimisión este jueves, [Eldiario. es]( informó sobre un nuevo escrito registrado en el canal antiacoso de Ferraz que apunta a Izquierdo, sumándose al escándalo por denuncias de acoso sexual y contra comportamientos machistas que vive el PSOE, y el cual ha supuesto ya **el cese de cuatro personas** del partido. El caso más reciente es el del alcalde de Monforte, **José Tomé**, que dimitió este miércoles [como presidente de la Diputación de Lugo]( y dejó todos sus cargos **en el Partido Socialista de Galicia** tras varias denuncias contra él. No obstante, se mantiene como diputado y al frente del Ayuntamiento, aunque Ferraz le ha pedido que entregue las actas. Este miércoles, la dirección nacional del PSOE[ confirmó la existencia de dichas denuncias]( contra Tomé realizadas**a través de un canal interno y anónimo; ** estas habían salido a la luz pocas horas antes en la cadena Cuatro. El programa Código 10 ya adelantaba en la noche del martes el comportamiento inadecuado del todavía alcalde de Monforte con varias mujeres y recogía sus testimonios. Las denunciantes le atribuyen tocamientos, ofrecimientos de empleo**a cambio de favores sexuales** y comunicaciones de contenido sexual explícito. Según uno de los testimonios recogidos por la citada cadena de televisión, \"lleva tiempo**acosando sexualmente a muchas de las mujeres** del partido\" y \"le da igual que seas militante, simpatizante, concejala, periodista o diputada, no se salva ninguna\", aludiendo además a \"actitudes asquerosas\", \"tocamientos no autorizados\" y a que \"se cree impune\". Días antes, a principios del mes de diciembre, [en Torremolinos, ]( una militante del PSOE**denunció ante la Fiscalía de Málaga** al secretario general del partido en la localidad malagueña, **Antonio Navarro, ** por presunto acoso sexual. La denunciante había acudido inicialmente al canal habilitado por Ferraz para este tipo de denuncias, mismo organismo al que llegaron las denuncias por una situación similar protagonizada por **Francisco Salazar. ** Opinión Hombre fuerte del PSOE, Salazar fue obligado el pasado mes de julio a dejar su cargo **tanto en Moncloa como en el partido** tras varias denuncias por comportamientos machistas. Los presuntos casos de acoso sexual también se cobraron el pasado domingo [la baja de Antonio Hernández]( mano derecha de Salazar en la Presidencia del Gobierno. Hernández era director del departamento de Coordinación Política del gabinete del presidente y había trabajado siempre junto a Salazar hasta tal punto que, según el relato de algunas de las víctimas remitido de manera anónima a Ferraz, **menospreció las quejas de las trabajadoras** y pasó por normal el comportamiento inadecuado de su amigo. El secretario de Estudios y Programas de la Comisión Ejecutiva Federal del PSOE, **Javier Izquierdo**, ha dimitido este jueves **como miembro de la Ejecutiva socialista** en medio del escándalo de las denuncias por acoso sexual que afecta a Ferraz. En [un mensaje publicado en redes sociales]( explica que ha comunicado a la dirección federal del partido su renuncia \"como miembro de la CEF y**también como senador** \".",
+      "content_preview": "El secretario de Estudios y Programas de la Comisión Ejecutiva Federal del PSOE, **Javier Izquierdo**, ha dimitido este jueves **como miembro de la Ejecutiva socialista** en medio del escándalo de las denuncias por acoso sexual que afecta a Ferraz. En [un mensaje publicado en redes sociales]( explica que ha comunicado a la dirección federal del partido su renuncia \"como miembro de la CEF y**también como senador** \". \"Lo hago para afrontar **otras tareas profesionales y personales** seguro de que..."
+    },
+    {
+      "processing_rank": 8,
+      "url_id": 16777,
+      "url": "https://elpais.com/espana/2025-12-12/anticorrupcion-investiga-si-plus-ultra-derivo-dinero-del-rescate-para-blanquear-fondos-de-venezuela-en-francia-suiza-y-espana.html",
+      "title": "Anticorrupción investiga si Plus Ultra derivó dinero del rescate para blanquear fondos de Venezuela en Francia, Suiza y España",
+      "source": "elpais.com",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 920,
+      "archive_url": null,
+      "full_content": "La Fiscalía Anticorrupción investiga si la compañía aérea Plus Ultra desvió el dinero del rescate de 53 millones de euros que el Gobierno le inyectó tras la pandemia y lo utilizó para blanquear fondos de Venezuela a través de Francia, Suiza y España. La denuncia fue inicialmente interpuesta en la Audiencia Nacional, pero tras el rechazo de este órgano por falta de competencia, la Fiscalía se dirigió al Juzgado de Instrucción número 15 de Madrid que ya había abierto una causa por este rescate aunque estaba archivada. [Este jueves la operación cristalizó con el registro de la sede de la compañía ]( \" la detención de su presidente, Julio Martínez, y el consejero delegado, Roberto Roselli. La investigación permanece bajo secreto de sumario. Anticorrupción recibió el pasado año sendas solicitudes de cooperación internacional procedentes de Francia (Parquet National Financier) y de Suiza (Fiscalía de Ginebra) para que se autorizara la entrada y registro de varios domicilios ubicados en Madrid capital, Pozuelo, Tenerife y Mallorca. Pedían colaboración porque estaban indagando en una red de blanqueo vinculada a Venezuela que operaba también en territorio español. Con estos mimbres, el ministerio público que lucha contra la corrupción llegó a la conclusión de que la compañía había hecho un presunto “uso indebido” de las ayudas públicas que fueron aprobadas en Consejo de Ministros el 9 de marzo de 2021 y el dinero se había destinado, en realidad, a pagar créditos anteriormente suscritos. “La sociedad Plus Ultra figura como firmante y beneficiaria de unos contratos de préstamos con tres sociedades de la organización criminal, implicadas en las ventas de oro”, indica la documentación a la que ha tenido acceso EL PAÍS. La Fiscalía cree que el rescate se usó para devolver dinero adeudado y que el fin real era blanquear ingresos opacos. Anticorrupción sospechaba en su denuncia que para blanquear se había podido utilizar la venta de relojes de lujo. Efectivos de la Guardia Civil y de la Policía Nacional durante el registro de la sede de la aerolínea Plus Ultra en Madrid, este jueves. Alberto Ortega (Europa Press) La institución que dirige el fiscal jefe Alejandro Luzón presentó dicha denuncia en la Audiencia Nacional el 21 de octubre del pasado año, a la vez que estaban en marcha otras operaciones como el _caso Koldo_ o el _caso hidrocarburos_. Se dirigía contra tres personas de origen peruano, dos venezolanos, un ciudadano de Países Bajos y, al menos, un abogado español, a quienes consideraba miembros de una “organización criminal”. La actividad consistía, presuntamente, en blanquear “fondos ilícitos” procedentes de malversaciones cometidas en Venezuela por “funcionarios públicos”. En concreto, detallan fondos públicos de los Comités Locales de Abastecimiento y Producción (CLAP) venezolanos —un plan gubernamental de distribución de alimentos—y de venta de oro del banco del país. La implicación de la organización en España fue tal que, cree la Fiscalía, la compañía aérea desvió la ayuda del rescate en “fechas consecutivas a la recepción” del mismo a “cuentas en el extranjero de sociedades que forman parte de la organización criminal”. La Audiencia Nacional rechazó investigar no porque no hubiera delito, sino porque creía que no era competencia de ese órgano que se dedica a las diligencias más complejas y que afectan a un número grande de autonomías. La Sala de lo Penal, en cambio, invitó a Anticorrupción a dirigirse al Juzgado de Instrucción número 15 de Madrid donde ya se había tramitado una causa por el rescate de Plus Ultra y se había archivado de forma provisional. Provisional porque si aparecen nuevos indicios, como era el caso, el asunto podría reabrirse, como finalmente ocurrió. Un avión de la compañía aérea Plus Ultra, en el aeropuerto de Barcelona en 2023. NurPhoto (NurPhoto via Getty Images) La magistrada Esperanza Collazos tuvo que dar carpetazo de forma [prematura a la investigación sobre el rescate en 2023]( \" por un error en los plazos de prórroga de la instrucción. Vox, PP y Manos Limpias formaban parte de unas diligencias que trataban de dilucidar si la mercantil merecía la ayuda pública y si el dinero había terminado en un pago a la compañía estatal de petróleo de Venezuela PDVSA. El Gobierno había marcado a Plus Ultra como compañía “estratégica” para justificar el rescate, pero los expertos designados por el juzgado señalaban que la empresa tenía visos de insolvencia y cierre desde 2019 lo que imposibilitaba optar a la inyección de millones que partió de la Sociedad Estatal de Participaciones Industriales (SEPI). Fuentes de la investigación confirman que la Fiscalía Anticorrupción se dirigió a principios de este año a dicho juzgado, una vez la Audiencia Nacional cerró la puerta, y el asunto se reactivó. El ministerio fiscal cree que la red fraudulenta se valió de sociedades para adquirir bienes inmuebles, así como de la suscripción de contratos de préstamo a la sociedad Plus Ultra, que fueron íntegramente reembolsados. La denuncia hablaba, incluso, de la venta de oro por importe de unos 30 millones de euros a una sociedad en Emiratos Árabes por parte de la sociedad que concedió los préstamos, o del envío de dinero por parte de la misma empresa a una cuenta de Panamá. Algunos de los clientes de esta red dedicada al blanqueo de capitales tienen antecedentes policiales en España y otros, incluso, están imputados en otras investigaciones de la Audiencia Nacional. Más allá del presidente y consejero delegado de la compañía, Julio Martínez y Roberto Roselli, el resto de nombres todavía no ha aflorado, pues la causa continúa bajo secreto. La Fiscalía habla de indicios de “defraudación al Estado”.",
+      "content_preview": "La Fiscalía Anticorrupción investiga si la compañía aérea Plus Ultra desvió el dinero del rescate de 53 millones de euros que el Gobierno le inyectó tras la pandemia y lo utilizó para blanquear fondos de Venezuela a través de Francia, Suiza y España. La denuncia fue inicialmente interpuesta en la Audiencia Nacional, pero tras el rechazo de este órgano por falta de competencia, la Fiscalía se dirigió al Juzgado de Instrucción número 15 de Madrid que ya había abierto una causa por este rescate aun..."
+    },
+    {
+      "processing_rank": 9,
+      "url_id": 16629,
+      "url": "https://www.elconfidencial.com/espana/2025-12-12/la-uco-entra-en-hacienda-y-transicion-ecologica-y-en-las-empresas-publicas-correos-y-cofivacasa_4265034/",
+      "title": "La UCO entra en Hacienda y Transición Ecológica y en las empresas públicas Correos y Cofivacasa",
+      "source": "www.elconfidencial.com",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 720,
+      "archive_url": null,
+      "full_content": "La Unidad Central Operativa (UCO) de la Guardia Civil ha ampliado este viernes los registros relacionados con la operación que se ha saldado [con la detención de la fontanera del PSOE Leire Díez]( el expresidente de la Sepi Vicente Fernández y el empresario vasco Antxon Alonso. Según aseguran fuentes del caso Leire, ha accedido a los **Ministerios de Hacienda y Transición Ecológica, ** además de entrar en Correos y la empresa dependiente de la Sepi Cofivacasa. En concreto, [los agentes que actúan en coordinación]( con el Juzgado Central de Instrucción 6 de la Audiencia Nacional y la Fiscalía Anticorrupción han reclamado documentación en las **Direcciones Generales de Patrimonio del Estado y Política Energética y Minas**. También se han dirigido al Tribunal Administrativo Central de Recursos Contractuales, confirman las mismas fuentes. El caso ha sido bautizado con el nombre de pila de la fontanera. La operación se desató en la tarde de este miércoles con los arrestos de Díez, Alonso y Fernández que pasarán a disposición del juez Antonio Piña en la mañana de este sábado. Se les atribuye la comisión de delitos de prevaricación, malversación, tráfico de influencias y organización criminal. Más allá de los tres arrestados, se investiga a **otra docena de personas**. Todas ellas están vinculadas con contrataciones irregulares bajo el manto de la Sepi. La organización investigada se dedicaba, según consideran acreditado los investigadores, a**vender influencias en el partido socialista** y mediar con diferentes empresas a cambio del **cobro de comisiones o prebendas**. La empresa Servinabar, propiedad de Alonso y vinculada a Santos Cerdán, servía para la canalización de los pagos, como sucede en el caso Acciona que investiga el Tribunal Supremo. El expresidente de la Sepi estuvo contratado en ella tras abandonar en 2018 su cargo público, salpicado por la causa de la mina de Aznalcóllar. [Servinabar no era la única pantalla]( Como ha publicado El Confidencial, la trama habría empleado terceras empresas para camuflar el cobro de los sobornos. ## De Enusa a Correos Leire Díez trabajó tres años en la Empresa Nacional de Uranio (ENUSA) en años coincidentes con las tareas públicas de Fernández. Entró en esta sociedad meses después de que Pedro Sánchez llegara al poder, en concreto, en octubre de 2018 en la compañía pública. **Más tarde dio el salto a Correos** para ocuparse de las relaciones institucionales del Grupo que presidió el exjefe de gabinete de Pedro Sánchez, Juanma Serrano. Cofivacasa, por su parte, se ocupa de actividades de liquidación de las sociedades estatales. Las entradas de este viernes**se suman a las desarrolladas en las últimas horas**. Entre el miércoles y el jueves, la [UCO registró ]( empresas y viviendas]( entre ellas, las oficinas de la Sociedad Estatal de Participaciones Industriales (SEPI) y sus filiales Sepides, Mercasa y Enusa. Según las pesquisas, Leire Díez y Vicente Fernández se habrían concertado con Antxón Alonso, socio de [Santos Cerdán]( en la constructora Servinabar 2000 SL, para ofrecer a todo tipo de compañías privadas **su intermediación ante instituciones y empresas públicas** controladas por el Gobierno de [Pedro Sánchez]( o el PSOE. Sus servicios incluían la adulteración de adjudicaciones y concesiones. A cambio, los tres presuntos cabecillas de la organización se llevaban un porcentaje. Tras conocerse los registros, **desde el Ministerio de Transición Ecológica** han precisado que la Guardia Civil ha acudido a su sede para reclamar dos expedientes administrativos que han sido facilitados \"con total colaboración\". \"Los expedientes aportados fueron tramitados con todas las garantías y siguiendo los procedimientos habituales establecidos\", han añadido. Por su parte, la vicepresidenta y ministra de Hacienda, **María Jesús Montero**, ha asegurado que se prestará una \"absoluta colaboración\" a los cuerpos y fuerzas de seguridad. \"Que lleguen hasta cualquier lugar, por supuesto, de cualquier institución, cualquier organismo donde entiendan que puedan requerir información que sea útil para la investigación, porque de esto es de lo que se trata, de requerir información\", ha precisado. La Unidad Central Operativa (UCO) de la Guardia Civil ha ampliado este viernes los registros relacionados con la operación que se ha saldado [con la detención de la fontanera del PSOE Leire Díez]( el expresidente de la Sepi Vicente Fernández y el empresario vasco Antxon Alonso. Según aseguran fuentes del caso Leire, ha accedido a los **Ministerios de Hacienda y Transición Ecológica, ** además de entrar en Correos y la empresa dependiente de la Sepi Cofivacasa.",
+      "content_preview": "La Unidad Central Operativa (UCO) de la Guardia Civil ha ampliado este viernes los registros relacionados con la operación que se ha saldado [con la detención de la fontanera del PSOE Leire Díez]( el expresidente de la Sepi Vicente Fernández y el empresario vasco Antxon Alonso. Según aseguran fuentes del caso Leire, ha accedido a los **Ministerios de Hacienda y Transición Ecológica, ** además de entrar en Correos y la empresa dependiente de la Sepi Cofivacasa. En concreto, [los agentes que actúa..."
+    },
+    {
+      "processing_rank": 10,
+      "url_id": 16668,
+      "url": "https://www.elconfidencial.com/espana/pais-vasco/2025-12-11/condenas-franquismo-fusilamientos-reconocimiento-victimas-1tps_4264569/",
+      "title": "El Gobierno reconoce como víctimas a Txiki y Otaegi, miembros de ETA, y anula sus sentencias de muerte",
+      "source": "www.elconfidencial.com",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 531,
+      "archive_url": null,
+      "full_content": "El **Gobierno** ha reconocido \"la ilegalidad y la ilegitimidad\" de los [consejos de guerra]( que juzgaron a los **miembros de ETA** **Juan Paredes**, Txiki, y **Ángel Otaegi**, y también ha considerado \"**ilegítimas y nulas** \" las dos condenas dictadas que tuvieron como consecuencia su **fusilamiento por el régimen franquista**. Las familias de Txiki y Otaegi formularon el pasado 14 de enero la solicitud de **Declaración de Reconocimiento y Reparación Personal** de ambos jóvenes, que fueron fusilados en 1975, solicitud que fue formalizada ante la **delegada del Gobierno en el País Vasco**, **Marisol Garmendia**, quien trasladó al **Ejecutivo** las dos peticiones formalizadas ante su registro general. El **asesoramiento jurídico** y la redacción y fundamentación jurídica empleada como argumentación de las dos solicitudes individualizadas ha sido elaborada por el representante legal de ambas familias, el abogado y catedrático de **Derecho Internacional Privado**, **Juanjo Álvarez**, quien ha confirmado a EFE **la resolución favorable del Gobierno para ambos casos**. **Álvarez** fundamentó su argumentación en los principios recogidos en los artículos 4, 5 y 6 de la [Ley de Memoria Democrática]( que declara \"**el carácter ilegal y radicalmente nulo de todas las condenas y sanciones** producidas durante la guerra y la dictadura por razones políticas, ideológicas o de conciencia\". Opinión Fruto de sendas resoluciones favorables, fechadas ambas el 25 de noviembre y comunicadas recientemente a las respectivas familias, el Gobierno reconoce que los dos jóvenes fusilados padecieron \"**persecución por razones políticas e ideológicas durante la dictadura franquista** \". ## \"Ilegítima y nula\" la condena a muerte El documento oficial pone de relieve su condición de [víctimas]( por haber sido \"**vulneradas las más elementales exigencias del derecho a un juicio justo**, así como la concurrencia de intimidación e indefensión\", al tiempo que declara \"ilegales\" los **consejos de guerra** a los que fueron sometidos e \"ilegítimas y nulas, por vicios de forma y fondo, las condenas\" que derivaron en su fusilamiento. Álvarez ha precisado que tal y como señala la comunicación recibida por los allegados de Txiki y Otaegi y enviada desde el [Ministerio de Memoria Democrática]( estas resoluciones permiten \"**recuperar la dignidad personal de ambos** \" y \"contribuyen al reconocimiento de quienes, como las dos personas injustamente fusiladas, sufrieron las consecuencias de la represión\". Ambas familias, \"reconfortadas tras haber obtenido la resolución favorable por parte del **Gobierno español** \", han transmitido su agradecimiento a quienes han hecho posible esta reparación personal y el **reconocimiento institucional**. Han querido además particularizar este agradecimiento, por un lado, en la **delegada del Gobierno en Euskadi**, por su gestión, y por otro en el **ministro de Política Territorial y Memoria Democrática**, **Ángel Víctor Torres** y su equipo por **haber admitido los argumentos y resuelto de forma favorable sus solicitudes**. También ha reconocido el apoyo recibido en su momento por el **Gobierno Vasco** que, a través de la [dirección de Derechos Humanos del Departamento de Justicia]( **reconoció a ambos jóvenes la condición de víctimas**. El **Gobierno** ha reconocido \"la ilegalidad y la ilegitimidad\" de los [consejos de guerra]( que juzgaron a los **miembros de ETA** **Juan Paredes**, Txiki, y **Ángel Otaegi**, y también ha considerado \"**ilegítimas y nulas** \" las dos condenas dictadas que tuvieron como consecuencia su **fusilamiento por el régimen franquista**.",
+      "content_preview": "El **Gobierno** ha reconocido \"la ilegalidad y la ilegitimidad\" de los [consejos de guerra]( que juzgaron a los **miembros de ETA** **Juan Paredes**, Txiki, y **Ángel Otaegi**, y también ha considerado \"**ilegítimas y nulas** \" las dos condenas dictadas que tuvieron como consecuencia su **fusilamiento por el régimen franquista**. Las familias de Txiki y Otaegi formularon el pasado 14 de enero la solicitud de **Declaración de Reconocimiento y Reparación Personal** de ambos jóvenes, que fueron fus..."
+    }
+  ],
+  "newsletter_preview": {
+    "word_count": 867,
+    "char_count": 6930,
+    "first_500_chars": "Imagina que estás leyendo una novela de intriga, pero en lugar de ficción, es la vida real. [**James Comey**](https://www.lemonde.fr/m-le-mag/article/2025/12/12/nous-ne-sommes-pas-en-train-de-tendre-vers-une-force-autoritaire-nous-y-sommes-au-fbi-la-grande-purge-a-commence_6656969_4500055.html), quien fue director del FBI, está ahora en medio de un juicio por obstrucción de justicia. Todo comenzó en 2016, cuando Comey lideraba la investigación sobre la supuesta interferencia rusa en las eleccion..."
+  }
+}

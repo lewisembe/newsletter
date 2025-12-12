@@ -1,0 +1,337 @@
+{
+  "metadata": {
+    "newsletter_name": "tecnologia_diaria",
+    "run_date": "2025-12-12",
+    "generated_at": "2025-12-12T14:41:28.773574+01:00",
+    "stage": "05_generate_newsletters"
+  },
+  "configuration": {
+    "max_articles": 10,
+    "top_with_content": 10,
+    "expected_categories": [
+      "tecnologia"
+    ],
+    "ranked_file_categories": null,
+    "template": "default",
+    "model_writer": "gpt-4o-mini",
+    "output_format": "markdown"
+  },
+  "ranked_data": {
+    "total_urls_in_ranked_file": 0,
+    "urls_selected_for_processing": 10,
+    "initial_ranked_order": []
+  },
+  "content_extraction": {
+    "urls_requested_for_content": [
+      {
+        "rank": 1,
+        "url_id": 16847,
+        "url": "https://elpais.com/espana/madrid/2025-12-11/los-analisis-de-las-ciguenas-muertas-en-getafe-confirman-que-se-trata-de-un-brote-de-gripe-aviar-de-alta-patogenicidad.html",
+        "title": "Madrid confirma que la muerte masiva de cigüeñas en el Manzanares se debe a un potente brote de gripe aviar"
+      },
+      {
+        "rank": 2,
+        "url_id": 16589,
+        "url": "https://www.bbc.com/news/articles/cj4q1l0ly7wo",
+        "title": "Tapanuli orangutans: Fears grow that world's rarest apes were swept away in Sumatran floods"
+      },
+      {
+        "rank": 3,
+        "url_id": 17186,
+        "url": "https://www.nytimes.com/2025/12/11/technology/openai-google-ai-technology-gap.html",
+        "title": "Can OpenAI Respond After Google Closes the A.I. Technology Gap?"
+      },
+      {
+        "rank": 4,
+        "url_id": 17199,
+        "url": "https://www.nytimes.com/2025/12/11/health/cdc-covid-vaccines-children-er-visits.html",
+        "title": "Covid Vaccines Reduced Children’s Likelihood of E.R. and Urgent Care Visits, the C.D.C. Reported"
+      },
+      {
+        "rank": 5,
+        "url_id": 17200,
+        "url": "https://www.nytimes.com/2025/12/11/health/eli-lilly-retatrutide-weight-loss-drug.html",
+        "title": "Major Weight Loss and Knee-Pain Relief Seen With New Eli Lilly Drug"
+      },
+      {
+        "rank": 6,
+        "url_id": 17150,
+        "url": "https://www.nytimes.com/2025/12/11/technology/ai-trump-executive-order.html",
+        "title": "Trump Signs Executive Order to Neuter State A.I. Laws"
+      },
+      {
+        "rank": 7,
+        "url_id": 17078,
+        "url": "https://www.ft.com/content/51b70635-0fc5-4dd2-b698-14c939f98d93",
+        "title": "Eli Lilly shot helped patients lose 29% of body weight"
+      },
+      {
+        "rank": 8,
+        "url_id": 16954,
+        "url": "https://www.expansion.com/economia-digital/companias/2025/12/12/693bc9cae5fdea3b2c8b4583.html",
+        "title": "OpenAI actualiza ChatGPT tras entrar en \"código rojo\"  por el ascenso de Google"
+      },
+      {
+        "rank": 9,
+        "url_id": 16997,
+        "url": "https://www.expansion.com/uestudio/2025/12/11/693a8bd8468aeb7e3b8b45a0.html",
+        "title": "Predecir riesgos con IA: la clave para reducir un 4% la siniestralidad en carretera"
+      },
+      {
+        "rank": 10,
+        "url_id": 16743,
+        "url": "https://www.elconfidencial.com/tecnologia/ciencia/2025-12-12/china-nucleo-tierra-nuevo-estado-materia-1qrt_4264366/",
+        "title": "China asegura haber encontrado un nuevo estado de la materia en el núcleo de la Tierra. Y eso resuelve un gran misterio"
+      }
+    ],
+    "urls_successfully_extracted": [
+      {
+        "rank": 1,
+        "url_id": 16847,
+        "url": "https://elpais.com/espana/madrid/2025-12-11/los-analisis-de-las-ciguenas-muertas-en-getafe-confirman-que-se-trata-de-un-brote-de-gripe-aviar-de-alta-patogenicidad.html",
+        "title": "Madrid confirma que la muerte masiva de cigüeñas en el Manzanares se debe a un potente brote de gripe aviar",
+        "method": "readability",
+        "word_count": 806
+      },
+      {
+        "rank": 2,
+        "url_id": 16589,
+        "url": "https://www.bbc.com/news/articles/cj4q1l0ly7wo",
+        "title": "Tapanuli orangutans: Fears grow that world's rarest apes were swept away in Sumatran floods",
+        "method": "readability",
+        "word_count": 938
+      },
+      {
+        "rank": 7,
+        "url_id": 17078,
+        "url": "https://www.ft.com/content/51b70635-0fc5-4dd2-b698-14c939f98d93",
+        "title": "Eli Lilly shot helped patients lose 29% of body weight",
+        "method": "llm_direct",
+        "word_count": 285
+      },
+      {
+        "rank": 8,
+        "url_id": 16954,
+        "url": "https://www.expansion.com/economia-digital/companias/2025/12/12/693bc9cae5fdea3b2c8b4583.html",
+        "title": "OpenAI actualiza ChatGPT tras entrar en \"código rojo\"  por el ascenso de Google",
+        "method": "json_ld",
+        "word_count": 334
+      },
+      {
+        "rank": 9,
+        "url_id": 16997,
+        "url": "https://www.expansion.com/uestudio/2025/12/11/693a8bd8468aeb7e3b8b45a0.html",
+        "title": "Predecir riesgos con IA: la clave para reducir un 4% la siniestralidad en carretera",
+        "method": "readability",
+        "word_count": 746
+      },
+      {
+        "rank": 10,
+        "url_id": 16743,
+        "url": "https://www.elconfidencial.com/tecnologia/ciencia/2025-12-12/china-nucleo-tierra-nuevo-estado-materia-1qrt_4264366/",
+        "title": "China asegura haber encontrado un nuevo estado de la materia en el núcleo de la Tierra. Y eso resuelve un gran misterio",
+        "method": "readability",
+        "word_count": 499
+      }
+    ],
+    "urls_failed_extraction": [
+      {
+        "rank": 3,
+        "url_id": 17186,
+        "url": "https://www.nytimes.com/2025/12/11/technology/openai-google-ai-technology-gap.html",
+        "title": "Can OpenAI Respond After Google Closes the A.I. Technology Gap?",
+        "status": "failed",
+        "error": "All fetch methods failed (tried: cookies, direct, no-js, selenium-no-js, archive.today)"
+      },
+      {
+        "rank": 4,
+        "url_id": 17199,
+        "url": "https://www.nytimes.com/2025/12/11/health/cdc-covid-vaccines-children-er-visits.html",
+        "title": "Covid Vaccines Reduced Children’s Likelihood of E.R. and Urgent Care Visits, the C.D.C. Reported",
+        "status": "failed",
+        "error": "All fetch methods failed (tried: cookies, direct, no-js, selenium-no-js, archive.today)"
+      },
+      {
+        "rank": 5,
+        "url_id": 17200,
+        "url": "https://www.nytimes.com/2025/12/11/health/eli-lilly-retatrutide-weight-loss-drug.html",
+        "title": "Major Weight Loss and Knee-Pain Relief Seen With New Eli Lilly Drug",
+        "status": "failed",
+        "error": "All fetch methods failed (tried: cookies, direct, no-js, selenium-no-js, archive.today)"
+      },
+      {
+        "rank": 6,
+        "url_id": 17150,
+        "url": "https://www.nytimes.com/2025/12/11/technology/ai-trump-executive-order.html",
+        "title": "Trump Signs Executive Order to Neuter State A.I. Laws",
+        "status": "failed",
+        "error": "All fetch methods failed (tried: cookies, direct, no-js, selenium-no-js, archive.today)"
+      }
+    ],
+    "extraction_stats": {
+      "total_requested": 10,
+      "total_success": 6,
+      "total_failed": 4,
+      "success_rate": 60.0
+    }
+  },
+  "articles": [
+    {
+      "processing_rank": 1,
+      "url_id": 16847,
+      "url": "https://elpais.com/espana/madrid/2025-12-11/los-analisis-de-las-ciguenas-muertas-en-getafe-confirman-que-se-trata-de-un-brote-de-gripe-aviar-de-alta-patogenicidad.html",
+      "title": "Madrid confirma que la muerte masiva de cigüeñas en el Manzanares se debe a un potente brote de gripe aviar",
+      "source": "elpais.com",
+      "category": "tecnologia",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 806,
+      "archive_url": null,
+      "full_content": "El Laboratorio Central de Veterinaria, dependiente del Ministerio de Agricultura, Pesca y Medio Ambiente, ha confirmado este jueves la presencia de [gripe aviar]( \" de alta patogenicidad en los ejemplares de cigüeña que a finales de la semana pasada aparecieron muertos en las [inmediaciones del río Manzanares]( \" El medio millar de cigüeñas encontradas no solo en aguas del río Manzanares, sino también en la zona de Perales del Río y la Marañosa, en el municipio de Getafe, estaban afectadas por un brote de gripe aviar de alta gravedad. Aunque en un primer momento los resultados reflejaban una baja incidencia del virus, ahora la Consejería de Medio Ambiente confirma en un comunicado que los análisis adicionales han resultado concluyentes y debe por ello informar al resto de administraciones. El análisis señala que además existen otros tres focos ubicados en Boadilla, Arganda del Rey y Rivas-Vaciamadrid y que afecta a las aves que llegaron a España desde el norte de Europa en busca de temperaturas más cálidas. “Muchas de ellas llegan con el virus de la gripe aviar, por lo que se producen fallecimientos en los diferentes municipios donde recalan”, han apuntado desde la Consejería, que insisten en que el virus se ha detectado y “disparado” en 26 países europeos en las últimas semanas. El consejero de Medio Ambiente, Agricultura e Interior, Carlos Novillo, ha aclarado que por el momento tan solo se ha encontrado el virus en “aves silvestres” y que “no hay ninguna explotación avícola afectada en la región”. “Nos alegramos de que esas medidas de contención que tenemos en toda España y que estamos coordinando con el Ministerio estén funcionando”, ha añadido. La Comunidad de Madrid ha comunicado el brote de gripe aviar a la Red de Alerta Sanitaria Veterinaria (RASVE) y a los municipios de la zona, principalmente a Getafe, el más afectado, a quienes ha remitido una carta explicando la situación y ofreciendo una serie de recomendaciones para que este no alcance a las aves de corral. En ella, la consejería recuerda que tiene “la competencia exclusiva en materia de agricultura y ganadería”. Esta enfermedad es una variante de la gripe A que se contagia principalmente a través de las mucosas y tiene un efecto en los humanos similar a la gripe estacional. Sin embargo, aún no se han constatado casos de transferencia por contacto directo en Europa, y tampoco se puede adquirir por consumo de carne, huevos o derivados. Entre estas medidas destaca la prohibición de la cría de aves al aire libre y se solicita que las explotaciones no comerciales o familiares estén convenientemente registradas. Algunas medidas afectan a parques y jardines de la Comunidad de Madrid. Entre los municipios afectados están: Alcorcón, Arganda del Rey, Boadilla del Monte, Campo Real, Getafe, Leganés, Loeches, el sur de Madrid capital, Majadahonda, Mejorada del Campo, Morata de Tajuña, Móstoles, Pinto, Pozuelo de Alarcón, Rivas-Vaciamadrid, San Martín de la Vega, Velilla de San Antonio y Villaviciosa de Odón. La Agencia de Seguridad y Emergencias Madrid 112 (ASEM112) ha hecho un llamamiento a la población de la Comunidad de Madrid para que, en caso de encontrarse un animal enfermo o muerto, no se aproximen ni lo toquen y avisen al 112. Pero la confirmación del virus, una semana después de que aparecieran las primeras cigüeñas muertas, ha provocado la indignación entre los bomberos que han participado en la recogida de estos últimos días. De hecho, el sindicato de bomberos de la Comunidad de Madrid, que representa a siete de cada 10 profesionales en la región, exige la destitución del Director General de Emergencias, Pablo Cristóbal Mayoral, a quién responsabilizan de la “deficiente gestión del brote no declarado” que ha dejado más de medio millar de cigüeñas muertas en el Manzanares y que ”amenaza seriamente la salud de la población y de los bomberos que han trabajado en la zona afectada”, dicen en su comunicado de protesta. Según la carta que darán a conocer este viernes, “el Director General de Emergencias ha estado completamente ausente durante el despliegue de efectivos para retirar aves muertas. Así, no se ha informado a los bomberos ni del riesgo biológico al que se han expuesto, ni si estos profesionales deben seguir medidas preventivas o terapéuticas tras su intervención”. Los bomberos reprochan a las autoridades de la Comunidad de Madrid que cualquier intervención de riesgo biológico conlleva una amenaza para la salud y le acusan de no haber hecho un adecuado seguimiento de la de los bomberos implicados en la retirada de más de 500 aves muertas, acumuladas principalmente en el agua. Europa entera ha sufrido este año un repunte brutal de casos de gripe aviar en aves silvestres y de corral. En 2025, en España se declararon más de 100 brotes en aves silvestres, afectando a múltiples comunidades autónomas como Andalucía, Extremadura, Galicia, País Vasco y Castilla y León.",
+      "content_preview": "El Laboratorio Central de Veterinaria, dependiente del Ministerio de Agricultura, Pesca y Medio Ambiente, ha confirmado este jueves la presencia de [gripe aviar]( \" de alta patogenicidad en los ejemplares de cigüeña que a finales de la semana pasada aparecieron muertos en las [inmediaciones del río Manzanares]( \" El medio millar de cigüeñas encontradas no solo en aguas del río Manzanares, sino también en la zona de Perales del Río y la Marañosa, en el municipio de Getafe, estaban afectadas por u..."
+    },
+    {
+      "processing_rank": 2,
+      "url_id": 16589,
+      "url": "https://www.bbc.com/news/articles/cj4q1l0ly7wo",
+      "title": "Tapanuli orangutans: Fears grow that world's rarest apes were swept away in Sumatran floods",
+      "source": "www.bbc.com",
+      "category": "tecnologia",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 938,
+      "archive_url": null,
+      "full_content": "# Fears grow that world's rarest apes were swept away in Sumatran floods Navin Singh KhadkaEnvironment correspondent, BBC World Service Orangutan Information Centre The Tapanuli orangutan was only discovered by scientists to be a separate species in 2017 – distinct from the Sumatran and Bornean apes An unusual silence in the forests of north Sumatra in Indonesia is worrying wildlife experts and conservationists. Here, in the mountainous forests of Batang Toru, is where they had always seen and heard the world's rarest ape, the Tapanuli orangutans. But ever since Cyclone Senyar devastated Sumatra on 25 November, the critically endangered primates have not been seen in the area, conservation workers say. Their absence has fuelled speculation as to whether the great apes were swept away by floods and landslides. And while some believe the animals may have travelled to a safer location, a carcass found in the area, said to be that of an orangutan, is fuelling conservationists' fears. Fewer than 800 Tapanuli orangutans remain and any loss would have a serious impact on the species, conservationists say. Humanitarian workers told the BBC they found the dead animal semi-buried in the debris of mud and logs in Pulo Pakkat village in central Tapanuli district earlier this week. \"When I first saw it I was not sure what it was, because it was kind of defaced, perhaps because it was buried underneath by the sludge and logs, \" said Deckey Chandra, who has been working with a humanitarian team in the area. He previously worked in the conservation of the Tapanuli orangutans. \"I have seen several dead bodies of humans in the past few days but this was the first dead wildlife, \" he said. \"They used to come to this place to eat fruits. But now it seems to have become their graveyard. \" Getty Images Cyclone Senyar swept across Sumatra in late November, devastating the Indonesian island Mr Chandra shared with the BBC pictures he took of the carcass, some of which show him with the dead animal. Conservationists working in the region believe it is of the Tapanuli orangutan, a species that was only discovered in 2017. The other two species are Bornean and Sumatran orangutans. More than 900 people have died as a result of heavy rain, floods and landslides since Cyclone Senyar ravaged parts of Indonesia in late November. Hundreds are still missing, with many villages in Sumatra completely destroyed as the storm swept across the island. Professor Erik Meijaard, managing director of Borneo Futures in Brunei, is now studying the disasters' impact on the orangutans with the help of satellite images. He said 4, 800 hectares (11, 860 acres) of forest on the mountain slopes can be seen as destroyed by landslides - but since part of the satellite image is cloud covered, he's extrapolated the destruction figure to 7, 200 hectares in his preliminary observation. \"The destroyed areas would have contained some 35 orangutans, and considering the violence of the destruction it wouldn't surprise us if they are all dead. That's a major blow to the population, \" he told the BBC. \"These areas show as bare soil on satellite imagery where two weeks ago it was primary forest. Complete destruction. Many patches of several hectares completely denuded. It must have been hellish in the forest at the time. \" Prof Mejjard said he too has seen the picture of the dead orangutan shared by Chandra. \"What struck me is that all the flesh had been ripped off the face, \" he said. \"If a few hectares of forest comes down in massive landslides, even powerful orangutans are helpless and just get mangled. \" Panut Hadisiswoyo, founder of Orangutan Information Centre which works for the conservation of the primates in the region, said the carcass meant it was highly possible some Tapanuli orangutans were unable to escape as rushing waters and landslides swept through their habitat. Getty Images Experts suggest that as much as 7, 200 hectares of forest was destroyed in the recent cyclone Pictures showing the carcass of a Sumatran elephant, another critically endangered species, being swept away by floods in Aceh in northern Sumatra went viral on social media last week. The island hosts a range of endangered species like Sumatran tigers, elephants and rhinos. But conservation workers say there are particular concerns for orangutans and other primates, like gibbons, because huge parts of the mountainous forest in the Tapanuli district saw massive landslides due to Cyclone Senyar's extreme rainfall. Some locals say the primates must have escaped before the disaster struck, as they can sense danger beforehand. But some primate experts say that may not have been the case. \"During heavy rains orangutans either just sit in a tree or gather branches and leaves to use as an umbrella and then wait for the rain to stop, \" said Serge Wich, professor of primate biology at Liverpool John Moores University, who has conducted research on Tapanuli orangutans. \"But this time, by the time the rain stopped it was too late: parts of their habitat - the slopes of valleys - were wiped out by landslides, which means there must have been consequences for them. \" The recent floods have also damaged a number of orangutan research centres in Sumatra - including at Ketambe, the world's first orangutan research centre, in Aceh. Dr Ian Singleton, scientific director for the Sumatran Orangutan Conservation Programme, said the Ketambe centre is now almost completely destroyed. \"It needs to be rebuilt as soon as possible so it can continue to play that role in protecting the forests in that area and its orangutans. \"",
+      "content_preview": "# Fears grow that world's rarest apes were swept away in Sumatran floods Navin Singh KhadkaEnvironment correspondent, BBC World Service Orangutan Information Centre The Tapanuli orangutan was only discovered by scientists to be a separate species in 2017 – distinct from the Sumatran and Bornean apes An unusual silence in the forests of north Sumatra in Indonesia is worrying wildlife experts and conservationists. Here, in the mountainous forests of Batang Toru, is where they had always seen and h..."
+    },
+    {
+      "processing_rank": 3,
+      "url_id": 17186,
+      "url": "https://www.nytimes.com/2025/12/11/technology/openai-google-ai-technology-gap.html",
+      "title": "Can OpenAI Respond After Google Closes the A.I. Technology Gap?",
+      "source": "www.nytimes.com",
+      "category": "tecnologia",
+      "has_full_content": false,
+      "extraction_status": "failed",
+      "extraction_method": null,
+      "extraction_error": "All fetch methods failed (tried: cookies, direct, no-js, selenium-no-js, archive.today)",
+      "word_count": null,
+      "archive_url": null
+    },
+    {
+      "processing_rank": 4,
+      "url_id": 17199,
+      "url": "https://www.nytimes.com/2025/12/11/health/cdc-covid-vaccines-children-er-visits.html",
+      "title": "Covid Vaccines Reduced Children’s Likelihood of E.R. and Urgent Care Visits, the C.D.C. Reported",
+      "source": "www.nytimes.com",
+      "category": "tecnologia",
+      "has_full_content": false,
+      "extraction_status": "failed",
+      "extraction_method": null,
+      "extraction_error": "All fetch methods failed (tried: cookies, direct, no-js, selenium-no-js, archive.today)",
+      "word_count": null,
+      "archive_url": null
+    },
+    {
+      "processing_rank": 5,
+      "url_id": 17200,
+      "url": "https://www.nytimes.com/2025/12/11/health/eli-lilly-retatrutide-weight-loss-drug.html",
+      "title": "Major Weight Loss and Knee-Pain Relief Seen With New Eli Lilly Drug",
+      "source": "www.nytimes.com",
+      "category": "tecnologia",
+      "has_full_content": false,
+      "extraction_status": "failed",
+      "extraction_method": null,
+      "extraction_error": "All fetch methods failed (tried: cookies, direct, no-js, selenium-no-js, archive.today)",
+      "word_count": null,
+      "archive_url": null
+    },
+    {
+      "processing_rank": 6,
+      "url_id": 17150,
+      "url": "https://www.nytimes.com/2025/12/11/technology/ai-trump-executive-order.html",
+      "title": "Trump Signs Executive Order to Neuter State A.I. Laws",
+      "source": "www.nytimes.com",
+      "category": "tecnologia",
+      "has_full_content": false,
+      "extraction_status": "failed",
+      "extraction_method": null,
+      "extraction_error": "All fetch methods failed (tried: cookies, direct, no-js, selenium-no-js, archive.today)",
+      "word_count": null,
+      "archive_url": null
+    },
+    {
+      "processing_rank": 7,
+      "url_id": 17078,
+      "url": "https://www.ft.com/content/51b70635-0fc5-4dd2-b698-14c939f98d93",
+      "title": "Eli Lilly shot helped patients lose 29% of body weight",
+      "source": "www.ft.com",
+      "category": "tecnologia",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "llm_direct",
+      "extraction_error": null,
+      "word_count": 285,
+      "archive_url": null,
+      "full_content": "Eli Lilly’s experimental obesity drug has shown promising results in a recent clinical trial, helping patients lose an average of 29% of their body weight over a 16-month period. The trial involved more than 2, 500 participants and demonstrated significant weight loss compared to a placebo group. The drug, known as tirzepatide, works by mimicking hormones that regulate appetite and glucose metabolism. This mechanism has been linked to not only weight loss but also improvements in blood sugar levels and other metabolic markers. The results are a boost for Eli Lilly, which is looking to expand its presence in the booming obesity treatment market. The company has already seen success with its diabetes drug, Trulicity, and is now positioning tirzepatide as a potential game-changer in the fight against obesity. Experts have noted that while the weight loss results are impressive, the long-term safety and efficacy of the drug will need to be evaluated further. Additionally, the high cost of such treatments may limit access for many patients. Eli Lilly plans to submit its findings to regulatory authorities in the coming months, with hopes of gaining approval for the drug as a treatment for obesity. If approved, tirzepatide could become one of the first medications specifically approved for weight management in patients without diabetes. The trial results have sparked interest among investors and healthcare professionals alike, as obesity continues to be a significant public health challenge worldwide. With rising obesity rates linked to various health issues, effective treatments are in high demand. As the pharmaceutical industry continues to innovate in this space, Eli Lilly’s tirzepatide could pave the way for new approaches to obesity management, potentially changing the lives of millions struggling with weight-related health problems.",
+      "content_preview": "Eli Lilly’s experimental obesity drug has shown promising results in a recent clinical trial, helping patients lose an average of 29% of their body weight over a 16-month period. The trial involved more than 2, 500 participants and demonstrated significant weight loss compared to a placebo group. The drug, known as tirzepatide, works by mimicking hormones that regulate appetite and glucose metabolism. This mechanism has been linked to not only weight loss but also improvements in blood sugar lev..."
+    },
+    {
+      "processing_rank": 8,
+      "url_id": 16954,
+      "url": "https://www.expansion.com/economia-digital/companias/2025/12/12/693bc9cae5fdea3b2c8b4583.html",
+      "title": "OpenAI actualiza ChatGPT tras entrar en \"código rojo\"  por el ascenso de Google",
+      "source": "www.expansion.com",
+      "category": "tecnologia",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "json_ld",
+      "extraction_error": null,
+      "word_count": 334,
+      "archive_url": null,
+      "full_content": "OpenAI ha presentado GPT-5. 2, una nueva versión del modelo detrás de ChatGPT, en medio de la presión competitiva de Google. El lanzamiento se produce después de que Sam Altman, CEO de OpenAI, activara recientemente un &quot; código rojo&quot; interno para reforzar su chatbot tras los avances conseguidos por su rival con Gemini 3. OpenAI ha señalado que el lanzamiento de GPT-5. 2 llevaba tiempo previsto, aunque reconoce que el refuerzo de recursos en torno a ChatGPT ha contribuido a acelerar planes. El movimiento de su rival obligó a la compañía a priorizar los desarrollos orientados a mejorar su chatbot y relegar proyectos no esenciales. En declaraciones a la CNBC, Altman ha asegurado que espera dar por cerrado este periodo de alerta máxima en enero. Impulso en la empresa Con GPT-5. 2, que se integra desde hoy en ChatGPT y está disponible para desarolladores, OpenAI busca ganar impulso en la empresa. La compañía destaca mejoras en tareas habituales del trabajo del conocimiento, como la creación de hojas de cálculo y presentaciones, la programación y el manejo de grandes volúmenes de información. Además, afirma que el nuevo modelo es menos propenso a alucinaciones y ofrece mayores garantías en seguridad, incluidos aspectos relacionados con la salud mental. En una evaluación interna basada en una prueba de rendimiento propia, GDPVal, OpenAI sostiene que el nuevo modelo alcanza resultados comparables a profesionales humanos en alrededor del 71% de las tareas analizadas, como la elaboración de documentos técnicos, legales o financieros. OpenAI también señala los buenos resultados en benchmarks utilizados para medir capacidades de razonamiento científico. Sin embargo, se queda por detrás de Claude, de su rival Anthropic, en tareas de programación. De hecho, Anthropic está ganando terreno en el segmento corporativo, en un momento de interés creciente de las empresas por desplegar proyectos de inteligencia artificial, lo que eleva la presión sobre OpenAI. En este marco, Fidji Simo, responsable de aplicaciones de OpenAI, ha remarcado que esta versión se ha diseñado &quot; para desbloquear más valor económico&quot; .",
+      "content_preview": "OpenAI ha presentado GPT-5. 2, una nueva versión del modelo detrás de ChatGPT, en medio de la presión competitiva de Google. El lanzamiento se produce después de que Sam Altman, CEO de OpenAI, activara recientemente un &quot; código rojo&quot; interno para reforzar su chatbot tras los avances conseguidos por su rival con Gemini 3. OpenAI ha señalado que el lanzamiento de GPT-5. 2 llevaba tiempo previsto, aunque reconoce que el refuerzo de recursos en torno a ChatGPT ha contribuido a acelerar pla..."
+    },
+    {
+      "processing_rank": 9,
+      "url_id": 16997,
+      "url": "https://www.expansion.com/uestudio/2025/12/11/693a8bd8468aeb7e3b8b45a0.html",
+      "title": "Predecir riesgos con IA: la clave para reducir un 4% la siniestralidad en carretera",
+      "source": "www.expansion.com",
+      "category": "tecnologia",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 746,
+      "archive_url": null,
+      "full_content": "La siniestralidad en carretera sigue cobrándose vidas cada año. Según el balance provisional de la DGT para vías interurbanas, el año pasado **murieron 1. 154 personas en 1. 040 siniestros mortales** en las carreteras españolas, con 4. 634 heridos graves que requirieron hospitalización. **Abertis**, que opera cerca de 8. 000 kilómetros de autopistas en 15 países, está aplicando inteligencia artificial para **intentar anticiparlos** antes de que ocurran. La alianza de la compañía con **Google Cloud** y la creación de su nuevo **laboratorio de innovación, Future Road Lab**, en Barcelona, son las dos patas de una estrategia que pone los datos en el centro. ## De gestionar el tráfico a anticiparlo En mayo de 2025, Abertis llegó a un acuerdo con Google Cloud para implementar **Roads Management Insights (RMI)**, una herramienta desarrollada sobre Google Maps y BigQuery que analiza datos de tráfico en tiempo real mediante inteligencia artificial y sistemas GIS. La plataforma permite **identificar patrones de congestión y sus causas**, prever condiciones meteorológicas adversas y su impacto en la movilidad, detectar zonas de alto riesgo para aplicar medidas correctivas y **optimizar la planificación urbana e interurbana** mejorando la seguridad vial. Las primeras pruebas se están realizando en la **autopista C-32 de Barcelona y en la A4 Holding italiana**, dentro del Future Road Lab de Abertis (AFRL), el centro de innovación y test site creado por la compañía para experimentar con soluciones de movilidad inteligente. ## Future Road Lab: el laboratorio de la autopista del futuro El **AFRL** es un espacio pionero donde Abertis pone a prueba tecnologías emergentes antes de implementarlas a gran escala. **Localizado en Barcelona** y con _living labs_ en distintas concesiones, su objetivo es **aumentar la seguridad y reducir la contaminación** en las vías mediante el análisis y supervisión en tiempo real de patrones y flujos de tráfico, la predicción del riesgo de accidentes y la detección de incidencias en tiempo real. Este laboratorio forma parte de **Beyond Roads**, el hub de innovación de Abertis dedicado a explorar la transformación de las vías de alta capacidad a través de la tecnología, el uso de datos y la IA. ## Inteligencia artificial para reducir la siniestralidad Los resultados hablan por sí solos: durante 2024, Abertis logró reducir el índice de mortalidad de usuarios (IF3) **hasta los 1, 3 puntos**, mejorando un 4% respecto a 2023. La compañía alinea estos objetivos con los marcos internacionales promovidos por Naciones Unidas, concretamente con la **Segunda Década de Acción de Road Safety** para 2030. Para atacar el problema, Abertis puso en marcha **Zero Accidents AI Challenge**, una convocatoria abierta a startups de todo el mundo que trabajen en soluciones de IA para anticipar y gestionar accidentes. La startup española **EarthPulse** fue la ganadora de esta segunda edición de Abertis Global Challenges, gracias a su plataforma Road Safety Pulse, capaz de anticipar riesgos mediante el análisis inteligente de datos satelitales y viales. ## Innovación abierta y colaborativa Abertis ha consolidado un modelo de innovación abierta que se apoya en la colaboración con startups, universidades, centros tecnológicos, administraciones públicas y empresas de otros sectores como **el energético y las telecomunicaciones**. Este modelo de innovación abierta se concreta en varios proyectos como los **LABs de innovación**, espacios donde se testean nuevas tecnologías como sensores inteligentes, conectividad 5G o sistemas cooperativos C-ITS; el **Observatorio de Innovación**, que identifica tendencias emergentes aplicables a la movilidad; el **programa intrapreneurship**, que fomenta la creatividad interna; y las **Cátedras Abertis**, que promueven la investigación académica aplicada entre universidades y empresa. El **Observatorio de comportamiento de los usuarios**, que recoge datos agregados de los diferentes países donde opera Abertis, permite comparar el comportamiento de los conductores y **observar las principales infracciones** para focalizar mejor las campañas de concienciación desarrolladas a través de la Fundación Abertis. ## Sostenibilidad e innovación: dos caras de la misma moneda Todas las iniciativas de innovación abarcan diferentes facetas y áreas estratégicas como la gestión y el **mantenimiento de la infraestructura y los pavimentos**, la transformación digital e inteligente, la gestión anticipativa del tráfico, **la energía y su gestión** para hacer frente a los retos de la movilidad actual. Es así que, bajo su Estrategia de Sostenibilidad 2022-2030, Abertis aspira a seguir trabajando en línea a los **criterios ambientales, sociales y de gobernanza** con el fin de seguir contribuyendo a una movilidad más segura y sostenible. ## Realizado por UE Studio Este texto ha sido desarrollado por UE Studio, firma creativa de branded content y marketing de contenidos de Unidad Editorial, para ABERTIS",
+      "content_preview": "La siniestralidad en carretera sigue cobrándose vidas cada año. Según el balance provisional de la DGT para vías interurbanas, el año pasado **murieron 1. 154 personas en 1. 040 siniestros mortales** en las carreteras españolas, con 4. 634 heridos graves que requirieron hospitalización. **Abertis**, que opera cerca de 8. 000 kilómetros de autopistas en 15 países, está aplicando inteligencia artificial para **intentar anticiparlos** antes de que ocurran. La alianza de la compañía con **Google Clo..."
+    },
+    {
+      "processing_rank": 10,
+      "url_id": 16743,
+      "url": "https://www.elconfidencial.com/tecnologia/ciencia/2025-12-12/china-nucleo-tierra-nuevo-estado-materia-1qrt_4264366/",
+      "title": "China asegura haber encontrado un nuevo estado de la materia en el núcleo de la Tierra. Y eso resuelve un gran misterio",
+      "source": "www.elconfidencial.com",
+      "category": "tecnologia",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 499,
+      "archive_url": null,
+      "full_content": "China ha logrado reproducir en laboratorio las condiciones extremas del núcleo interno de la Tierra y ha verificado la existencia de un [estado superiónico]( que **transforma la comprensión científica sobre la estructura profunda del planeta**. Esta fase explicaría la suavidad detectada en los registros sísmicos y el comportamiento del campo magnético, un reto geofísico que llevaba décadas sin resolverse. El equipo de la Universidad de Sichuan y de la Academia China de Ciencias demostró que las aleaciones de hierro y carbono sometidas a presiones y temperaturas extremas permiten que**los átomos ligeros se desplacen libremente dentro de una red sólida**, generando un [material]( sorprendentemente blando. Este comportamiento concuerda con la velocidad inusualmente lenta de las ondas de cizalla observadas en el núcleo interno. ## Estado superiónico Los resultados, [publicados en _National Science Review_]( constituyen la primera constatación experimental de esta fase, ya anticipada por simulaciones realizadas en 2022. Para replicar las condiciones del [interior terrestre]( los investigadores impulsaron muestras metálicas a más de siete kilómetros por segundo, **alcanzando 140 gigapascales y unos 2. 600 °K**, parámetros comparables a los existentes en el corazón del planeta. Las mediciones acústicas efectuadas durante el experimento revelaron un descenso acusado en la velocidad de las ondas de cizalla y un aumento significativo en la _[razón de Poisson]( Los modelos de dinámica molecular confirmaron que los átomos de carbono se desplazan por el entramado de hierro sin desordenarlo. El profesor [Youjun Zhang]( afirmó: \"Por primera vez **hemos demostrado experimentalmente que la aleación de hierro** y carbono presenta una velocidad de cizalla notablemente baja bajo condiciones del núcleo interno\". ## Reinterpretación del núcleo La investigadora [Yuqian Huang]( señaló que la movilidad de los elementos ligeros podría aportar energía adicional al _geodinamo_, **el mecanismo que sostiene el campo magnético terrestre**. Según explicó: \"La difusión atómica dentro del núcleo interno representa una fuente de energía que no se había tenido en cuenta para el geodinamo\". Este proceso también contribuiría a explicar la anisotropía sísmica detectada en diversas campañas de observación. La investigación invita a replantear el papel de los elementos ligeros, ya que resalta la **importancia de las soluciones sólidas intersticiales frente a las aleaciones por sustitución o a los compuestos más complejos**. Esta aproximación ofrece un marco coherente para interpretar la elasticidad y las [propiedades sísmicas del núcleo interno]( factores esenciales para entender la dinámica profunda del planeta. El profesor Zhang sostiene que estos resultados obligan a **abandonar la visión tradicional de un núcleo rígido e inmóvil**. Los datos obtenidos apuntan a una región dinámica, marcada por la movilidad de los átomos ligeros, que influye tanto en las propiedades sísmicas como en el [comportamiento magnético de la Tierra]( China ha logrado reproducir en laboratorio las condiciones extremas del núcleo interno de la Tierra y ha verificado la existencia de un [estado superiónico]( que **transforma la comprensión científica sobre la estructura profunda del planeta**. Esta fase explicaría la suavidad detectada en los registros sísmicos y el comportamiento del campo magnético, un reto geofísico que llevaba décadas sin resolverse.",
+      "content_preview": "China ha logrado reproducir en laboratorio las condiciones extremas del núcleo interno de la Tierra y ha verificado la existencia de un [estado superiónico]( que **transforma la comprensión científica sobre la estructura profunda del planeta**. Esta fase explicaría la suavidad detectada en los registros sísmicos y el comportamiento del campo magnético, un reto geofísico que llevaba décadas sin resolverse. El equipo de la Universidad de Sichuan y de la Academia China de Ciencias demostró que las ..."
+    }
+  ],
+  "newsletter_preview": {
+    "word_count": 885,
+    "char_count": 6819,
+    "first_500_chars": "En Madrid, la calma del río Manzanares se ha visto interrumpida por un [**brote de gripe aviar**](https://elpais.com/espana/madrid/2025-12-11/los-analisis-de-las-ciguenas-muertas-en-getafe-confirman-que-se-trata-de-un-brote-de-gripe-aviar-de-alta-patogenicidad.html) que ha dejado a más de 500 cigüeñas muertas. No es un caso aislado; este problema ha afectado a las aves silvestres en 26 países europeos en 2025. La gripe aviar, que se identificó por primera vez en Italia en 1878, ha sido una preoc..."
+  }
+}

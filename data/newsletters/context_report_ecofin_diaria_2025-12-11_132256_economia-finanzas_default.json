@@ -1,0 +1,345 @@
+{
+  "metadata": {
+    "newsletter_name": "ecofin_diaria",
+    "run_date": "2025-12-11",
+    "generated_at": "2025-12-11T13:22:56.094497+01:00",
+    "stage": "05_generate_newsletters"
+  },
+  "configuration": {
+    "max_articles": 10,
+    "top_with_content": 10,
+    "expected_categories": [
+      "economia",
+      "finanzas"
+    ],
+    "ranked_file_categories": null,
+    "template": "default",
+    "model_writer": "gpt-4o-mini",
+    "output_format": "markdown"
+  },
+  "ranked_data": {
+    "total_urls_in_ranked_file": 0,
+    "urls_selected_for_processing": 10,
+    "initial_ranked_order": []
+  },
+  "content_extraction": {
+    "urls_requested_for_content": [
+      {
+        "rank": 1,
+        "url_id": 16371,
+        "url": "https://www.lemonde.fr/international/article/2025/12/10/la-reserve-federale-americaine-baisse-ses-taux-sur-fond-de-division-des-gouverneurs-quant-a-l-etat-de-l-economie-aux-etats-unis_6656819_3210.html",
+        "title": "La Réserve fédérale américaine baisse ses taux sur fond de division des gouverneurs quant à l’état de l’économie aux Etats-Unis"
+      },
+      {
+        "rank": 2,
+        "url_id": 16278,
+        "url": "https://www.ft.com/content/86872584-c844-4d71-af16-60157c1585ec",
+        "title": "Federal Reserve cuts rates to 3-year low after fractious meeting"
+      },
+      {
+        "rank": 3,
+        "url_id": 16319,
+        "url": "https://www.ft.com/content/6149f7d9-7ebb-43b1-9b74-9381f80cf35c",
+        "title": "Fed cuts rates amid growing division"
+      },
+      {
+        "rank": 4,
+        "url_id": 16288,
+        "url": "https://www.ft.com/content/6a04be70-6d05-4f03-b4c7-39ceae52bb64",
+        "title": "Fed to launch $40bn debt-buying scheme after money market strains"
+      },
+      {
+        "rank": 5,
+        "url_id": 16216,
+        "url": "https://www.expansion.com/empresas/energia/2025/12/11/6939ee09e5fdea11488b4577.html",
+        "title": "Iberdrola y Endesa alertan: España ha perdido 332.000 millones de inversión"
+      },
+      {
+        "rank": 6,
+        "url_id": 16213,
+        "url": "https://www.expansion.com/mercados/2025/12/10/6939b184e5fdeadc358b45b8.html",
+        "title": "La Fed recorta los tipos hasta  el 3,5% y aleja las rebajas de 2026"
+      },
+      {
+        "rank": 7,
+        "url_id": 16140,
+        "url": "https://elpais.com/economia/2025-12-10/bruselas-investiga-la-compra-de-la-operadora-tercat-del-puerto-de-barcelona-por-el-gigante-msc-y-la-china-hutchison-ports.html",
+        "title": "Bruselas investiga la compra de la operadora TERCAT del Puerto de Barcelona por el gigante MSC y la china Hutchison Ports"
+      },
+      {
+        "rank": 8,
+        "url_id": 15955,
+        "url": "https://www.elconfidencial.com/economia/2025-12-10/bruselas-investigacion-venta-terminal-tercat-puerto-barcelona_4263966/",
+        "title": "Bruselas abre una investigación por la venta del 50% de la terminal TERCAT del puerto de Barcelona"
+      },
+      {
+        "rank": 9,
+        "url_id": 15978,
+        "url": "https://www.elconfidencial.com/economia/2025-12-10/fed-recorta-tipos-3-75_4263937/",
+        "title": "La Fed recorta los tipos hasta el 3,75% y solo espera una posible bajada en 2026"
+      },
+      {
+        "rank": 10,
+        "url_id": 15895,
+        "url": "https://www.bbc.com/news/articles/cx257k3n2g1o",
+        "title": "Fed cuts rate but future easing uncertain"
+      }
+    ],
+    "urls_successfully_extracted": [
+      {
+        "rank": 1,
+        "url_id": 16371,
+        "url": "https://www.lemonde.fr/international/article/2025/12/10/la-reserve-federale-americaine-baisse-ses-taux-sur-fond-de-division-des-gouverneurs-quant-a-l-etat-de-l-economie-aux-etats-unis_6656819_3210.html",
+        "title": "La Réserve fédérale américaine baisse ses taux sur fond de division des gouverneurs quant à l’état de l’économie aux Etats-Unis",
+        "method": "readability",
+        "word_count": 311
+      },
+      {
+        "rank": 2,
+        "url_id": 16278,
+        "url": "https://www.ft.com/content/86872584-c844-4d71-af16-60157c1585ec",
+        "title": "Federal Reserve cuts rates to 3-year low after fractious meeting",
+        "method": "llm_direct",
+        "word_count": 285
+      },
+      {
+        "rank": 3,
+        "url_id": 16319,
+        "url": "https://www.ft.com/content/6149f7d9-7ebb-43b1-9b74-9381f80cf35c",
+        "title": "Fed cuts rates amid growing division",
+        "method": "json_ld",
+        "word_count": 152
+      },
+      {
+        "rank": 4,
+        "url_id": 16288,
+        "url": "https://www.ft.com/content/6a04be70-6d05-4f03-b4c7-39ceae52bb64",
+        "title": "Fed to launch $40bn debt-buying scheme after money market strains",
+        "method": "llm_direct",
+        "word_count": 204
+      },
+      {
+        "rank": 5,
+        "url_id": 16216,
+        "url": "https://www.expansion.com/empresas/energia/2025/12/11/6939ee09e5fdea11488b4577.html",
+        "title": "Iberdrola y Endesa alertan: España ha perdido 332.000 millones de inversión",
+        "method": "json_ld",
+        "word_count": 428
+      },
+      {
+        "rank": 6,
+        "url_id": 16213,
+        "url": "https://www.expansion.com/mercados/2025/12/10/6939b184e5fdeadc358b45b8.html",
+        "title": "La Fed recorta los tipos hasta  el 3,5% y aleja las rebajas de 2026",
+        "method": "json_ld",
+        "word_count": 796
+      },
+      {
+        "rank": 7,
+        "url_id": 16140,
+        "url": "https://elpais.com/economia/2025-12-10/bruselas-investiga-la-compra-de-la-operadora-tercat-del-puerto-de-barcelona-por-el-gigante-msc-y-la-china-hutchison-ports.html",
+        "title": "Bruselas investiga la compra de la operadora TERCAT del Puerto de Barcelona por el gigante MSC y la china Hutchison Ports",
+        "method": "readability",
+        "word_count": 535
+      },
+      {
+        "rank": 8,
+        "url_id": 15955,
+        "url": "https://www.elconfidencial.com/economia/2025-12-10/bruselas-investigacion-venta-terminal-tercat-puerto-barcelona_4263966/",
+        "title": "Bruselas abre una investigación por la venta del 50% de la terminal TERCAT del puerto de Barcelona",
+        "method": "xpath_cache",
+        "word_count": 575
+      },
+      {
+        "rank": 9,
+        "url_id": 15978,
+        "url": "https://www.elconfidencial.com/economia/2025-12-10/fed-recorta-tipos-3-75_4263937/",
+        "title": "La Fed recorta los tipos hasta el 3,75% y solo espera una posible bajada en 2026",
+        "method": "xpath_cache",
+        "word_count": 889
+      },
+      {
+        "rank": 10,
+        "url_id": 15895,
+        "url": "https://www.bbc.com/news/articles/cx257k3n2g1o",
+        "title": "Fed cuts rate but future easing uncertain",
+        "method": "readability",
+        "word_count": 967
+      }
+    ],
+    "urls_failed_extraction": [],
+    "extraction_stats": {
+      "total_requested": 10,
+      "total_success": 10,
+      "total_failed": 0,
+      "success_rate": 100.0
+    }
+  },
+  "articles": [
+    {
+      "processing_rank": 1,
+      "url_id": 16371,
+      "url": "https://www.lemonde.fr/international/article/2025/12/10/la-reserve-federale-americaine-baisse-ses-taux-sur-fond-de-division-des-gouverneurs-quant-a-l-etat-de-l-economie-aux-etats-unis_6656819_3210.html",
+      "title": "La Réserve fédérale américaine baisse ses taux sur fond de division des gouverneurs quant à l’état de l’économie aux Etats-Unis",
+      "source": "www.lemonde.fr",
+      "category": "economia",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 311,
+      "archive_url": null,
+      "full_content": "Jerome Powell, le président de la Réserve fédérale américaine, à Washington, le 10 décembre 2025. KEVIN LAMARQUE/REUTERS Plusieurs messages ressortent de la réunion de la Réserve fédérale américaine (Fed), mercredi 10 décembre, et ils ne disent pas tous la même chose. La banque centrale a décidé d’abaisser ses taux directeurs d’un quart de point pour la troisième fois d’affilée, une première depuis 2019 – ils se situent désormais entre 3, 5 % et 3, 75 %. Il s’agit du niveau le plus bas depuis trois ans, ce qui n’a pas empêché le président américain, Donald Trump, de déclarer, dans la foulée de l’annonce, que la Fed aurait pu _« doubler »_ sa baisse de taux. Ce nouveau coup de pouce à l’économie américaine s’accompagne d’un gros sous-titre: le conseil des gouverneurs et directeurs de banques centrales locales, qui prend la décision à l’issue d’un vote, n’a jamais eu l’air aussi divisé, dans l’histoire récente, sur la lecture des événements actuels et sur la stratégie à suivre par la suite. _« Les conditions sur le marché du travail semblent se refroidir progressivement, et l’inflation demeure quelque peu élevée au regard de nos objectifs »_, a déclaré Jerome Powell. Le président de la Réserve fédérale estime que les données n’ont pas fondamentalement changé depuis octobre, malgré le shutdown, la longue fermeture de l’administration fédérale, et la non-publication de données récentes essentielles sur l’emploi et les niveaux des prix. Ce qui signifie qu’à ses yeux, la balance des risques penche toujours en faveur d’un soutien au marché du travail. Les derniers signaux semblent en effet montrer que les créations d’emplois sont insuffisantes depuis plusieurs mois, signe d’une économie peu dynamique. La baisse des taux vise à fluidifier ce marché, mais peut dans le même temps nourrir l’inflation. **Il vous reste 67. 98% de cet article à lire. La suite est réservée aux abonnés. **",
+      "content_preview": "Jerome Powell, le président de la Réserve fédérale américaine, à Washington, le 10 décembre 2025. KEVIN LAMARQUE/REUTERS Plusieurs messages ressortent de la réunion de la Réserve fédérale américaine (Fed), mercredi 10 décembre, et ils ne disent pas tous la même chose. La banque centrale a décidé d’abaisser ses taux directeurs d’un quart de point pour la troisième fois d’affilée, une première depuis 2019 – ils se situent désormais entre 3, 5 % et 3, 75 %. Il s’agit du niveau le plus bas depuis tr..."
+    },
+    {
+      "processing_rank": 2,
+      "url_id": 16278,
+      "url": "https://www.ft.com/content/86872584-c844-4d71-af16-60157c1585ec",
+      "title": "Federal Reserve cuts rates to 3-year low after fractious meeting",
+      "source": "www.ft.com",
+      "category": "economia",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "llm_direct",
+      "extraction_error": null,
+      "word_count": 285,
+      "archive_url": null,
+      "full_content": "The Federal Reserve has cut interest rates to a three-year low following a contentious meeting that saw significant dissent among policymakers. The decision to lower rates to 2. 25% was not unanimous, with three members of the Federal Open Market Committee (FOMC) voting against the move, marking the largest revolt since 2019. The dissenting votes came from prominent figures within the Fed, highlighting a growing divide over the central bank's approach to monetary policy amid ongoing economic uncertainty. Some members expressed concerns that the rate cut could lead to overheating in the economy, while others argued it was necessary to support growth and employment. This decision reflects the Fed's ongoing struggle to balance its dual mandate of promoting maximum employment and stable prices. The central bank has faced increasing pressure to respond to signs of slowing economic growth, particularly in the manufacturing sector, which has been adversely affected by trade tensions and global economic headwinds. In a press conference following the meeting, Fed Chair Jerome Powell emphasized the need for a cautious approach, stating that the central bank would continue to monitor economic indicators closely. He acknowledged the dissent within the committee but reiterated that the decision was made with the overall economic outlook in mind. Market reactions to the rate cut were mixed, with some investors expressing relief while others remained cautious about the implications for future growth. Analysts suggest that the Fed may need to consider further rate cuts if economic conditions do not improve in the coming months. As the Fed navigates these challenges, the implications of its decisions will be closely watched by both domestic and international markets, as well as by policymakers who are grappling with their own economic challenges.",
+      "content_preview": "The Federal Reserve has cut interest rates to a three-year low following a contentious meeting that saw significant dissent among policymakers. The decision to lower rates to 2. 25% was not unanimous, with three members of the Federal Open Market Committee (FOMC) voting against the move, marking the largest revolt since 2019. The dissenting votes came from prominent figures within the Fed, highlighting a growing divide over the central bank's approach to monetary policy amid ongoing economic unc..."
+    },
+    {
+      "processing_rank": 3,
+      "url_id": 16319,
+      "url": "https://www.ft.com/content/6149f7d9-7ebb-43b1-9b74-9381f80cf35c",
+      "title": "Fed cuts rates amid growing division",
+      "source": "www.ft.com",
+      "category": "economia",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "json_ld",
+      "extraction_error": null,
+      "word_count": 152,
+      "archive_url": null,
+      "full_content": "The Federal Reserve cut interest rates by a quarter point, and Oracle shares fell on Wednesday after it reported disappointing revenues. Plus, there’s one conglomerate in Abu Dhabi dominating the economy and its ownership is in the hands of the royal family. Mentioned in this podcast: Federal Reserve cuts rates to lowest level in three years in divisive decision Oracle shares slide as data centre spending mounts How Abu Dhabi’s economy came to be dominated by IHC Note: The FT does not use generative AI to voice its podcasts Today’s FT News Briefing was hosted and edited by Sonja Hutson, and produced by Fiona Symon and Victoria Craig. Our show was mixed by Kelly Garry. Additional help from Gavin Kallmann, Michael Lello and David da Silva. The FT’s acting co-head of audio is Topher Forhecz. The show’s theme music is by Metaphor Music. Read a transcript of this episode on FT. com",
+      "content_preview": "The Federal Reserve cut interest rates by a quarter point, and Oracle shares fell on Wednesday after it reported disappointing revenues. Plus, there’s one conglomerate in Abu Dhabi dominating the economy and its ownership is in the hands of the royal family. Mentioned in this podcast: Federal Reserve cuts rates to lowest level in three years in divisive decision Oracle shares slide as data centre spending mounts How Abu Dhabi’s economy came to be dominated by IHC Note: The FT does not use genera..."
+    },
+    {
+      "processing_rank": 4,
+      "url_id": 16288,
+      "url": "https://www.ft.com/content/6a04be70-6d05-4f03-b4c7-39ceae52bb64",
+      "title": "Fed to launch $40bn debt-buying scheme after money market strains",
+      "source": "www.ft.com",
+      "category": "finanzas",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "llm_direct",
+      "extraction_error": null,
+      "word_count": 204,
+      "archive_url": null,
+      "full_content": "The US central bank is set to launch a $40bn debt-buying scheme aimed at stabilizing the money markets, which have recently shown signs of strain. This decision comes just weeks after the Federal Reserve halted its balance sheet reduction program, a move that was intended to tighten monetary policy. The new initiative will involve the purchase of short-term Treasuries, which are government securities that mature in less than a year. The Fed's actions are designed to inject liquidity into the financial system and ensure that banks have enough cash on hand to meet their obligations. Market analysts have expressed concerns about the recent volatility in money markets, which has been exacerbated by rising interest rates and a decrease in available cash. The Fed's intervention is seen as a necessary step to prevent further disruptions and maintain stability in the financial system. This move reflects the central bank's ongoing commitment to support the economy and manage inflationary pressures. By increasing its purchases of government debt, the Fed aims to reassure investors and restore confidence in the markets. As the situation develops, the Fed will continue to monitor economic indicators and adjust its policies as needed to ensure that the financial system remains robust and resilient.",
+      "content_preview": "The US central bank is set to launch a $40bn debt-buying scheme aimed at stabilizing the money markets, which have recently shown signs of strain. This decision comes just weeks after the Federal Reserve halted its balance sheet reduction program, a move that was intended to tighten monetary policy. The new initiative will involve the purchase of short-term Treasuries, which are government securities that mature in less than a year. The Fed's actions are designed to inject liquidity into the fin..."
+    },
+    {
+      "processing_rank": 5,
+      "url_id": 16216,
+      "url": "https://www.expansion.com/empresas/energia/2025/12/11/6939ee09e5fdea11488b4577.html",
+      "title": "Iberdrola y Endesa alertan: España ha perdido 332.000 millones de inversión",
+      "source": "www.expansion.com",
+      "category": "economia",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "json_ld",
+      "extraction_error": null,
+      "word_count": 428,
+      "archive_url": null,
+      "full_content": "Las compañías aprovechan la iniciativa europea para intensificar sus exigencias al Gobierno español para que desbloquee algunos cuellos de botella del sector, instándole a que siga &quot; la hoja de ruta de Bruselas&quot; sin más dilación, para evitar que España se quede a la cola. A juicio de las eléctricas, &quot; España no está cumpliendo con las exigencias marcadas por Bruselas&quot; , según se desprende del análisis de la situación nacional frente a las nuevas directrices europeas. Planificación muy rígida El documento europeo destaca la necesidad de una planificación centralizada y flexible, inversiones anticipadas y una gestión ágil de las conexiones a la red. En España, el proceso de planificación &quot; sigue siendo excesivamente largo y rígido, y el Operador del Sistema no ha ejecutado las inversiones previstas&quot; , dicen las eléctricas, en referencia a Redeia, que a través de Red Eléctrica gestiona la red de alta tensión. Además, tachan a Redeia (participada en un 20% por el Estado) de falta de independencia. También denuncian la falta de coordinación entre el Gobierno central y las comunidades autónomas, lo que genera conflictos de interés y retrasos en proyectos clave. Saturación de la red La saturación de la red es otro de los grandes problemas, dicen. Recuerdan que el 87% de los nudos ya están saturados, lo que impide atraer nueva industria y electrificar sectores como el transporte o la vivienda. En 2024, menos del 10% de las solicitudes de conexión a la red de distribución fueron concedidas, dejando sin materializar inversiones por valor de 332. 000 millones de euros. Esta situación también retrasa la instalación de puntos de recarga para vehículos eléctricos. De hecho, la Comisión insta a la modificación de directrices para promover conexiones eficientes y rápidas, con criterios anticipatorios. El marco retributivo propuesto para la distribución eléctrica en España es otro punto crítico, recuerdan desde las eléctricas. Tasa de retribución La tasa de retribución (6, 58%) es muy inferior a la de otros países europeos (7, 4% en Alemania, 8, 8% en Irlanda, por ejemplo) y sectores regulados nacionales, lo que desincentiva la inversión y va en contra de las recomendaciones tanto de la Comisión Europea como del propio Ministerio para la Transición Ecológica. Límite a la inversión Además, se mantienen límites históricos a la inversión, se reducen los costes permitidos al suministro y se introduce un coste máximo para nuevas conexiones, lo que dejará fuera proyectos estratégicos y, en contra de la no discriminación entre usuarios de la red que indica Europa, acentuará la discriminación territorial y entre consumidores en función de su coste de conexión.",
+      "content_preview": "Las compañías aprovechan la iniciativa europea para intensificar sus exigencias al Gobierno español para que desbloquee algunos cuellos de botella del sector, instándole a que siga &quot; la hoja de ruta de Bruselas&quot; sin más dilación, para evitar que España se quede a la cola. A juicio de las eléctricas, &quot; España no está cumpliendo con las exigencias marcadas por Bruselas&quot; , según se desprende del análisis de la situación nacional frente a las nuevas directrices europeas. Planific..."
+    },
+    {
+      "processing_rank": 6,
+      "url_id": 16213,
+      "url": "https://www.expansion.com/mercados/2025/12/10/6939b184e5fdeadc358b45b8.html",
+      "title": "La Fed recorta los tipos hasta  el 3,5% y aleja las rebajas de 2026",
+      "source": "www.expansion.com",
+      "category": "economia",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "json_ld",
+      "extraction_error": null,
+      "word_count": 796,
+      "archive_url": null,
+      "full_content": "La Reserva Federal rebajó los tipos de interés en un cuarto de punto, hasta situar el rango oficial entre el 3, 5% y el 3, 75%, en la que ya es la tercera bajada consecutiva en lo que va de año y el nivel más bajo desde finales de 2022. El movimiento, ampliamente descontado por Wall Street, también puso de manifiesto la profunda división que existe en el seno del banco central estadounidense, con tres votos en contra, el mayor desacuerdo desde 2019. Las previsiones publicadas este miércoles por la Fed también muestran una división total. Con una ligera diferencia, la balanza se inclina a favor de los gobernadores que esperan terminar el próximo ejercicio con al menos un recorte y, en el mejor de los escenarios, llegar hasta dos, con el tipo final en el tramo comprendido entre el 3% y el 3, 25%. Aun así, siete de los 19 miembros que emiten voto para configurar las previsiones consideran que el ajuste a la baja ha terminado y tres de ellos incluso creen que será necesario volver a subir los tipos en 2026. Se trata de un empeoramiento de las previsiones que manejaba el banco central hace tan solo tres meses, cuando dos rebajas a lo largo de 2026 parecían garantizadas. Ahora, la segunda está en dudas. Además, el presidente de la Fed, Jerome Powell, endureció su mensaje al asegurar que &quot; con el nivel actual estamos bien posicionados para esperar y ver cómo evoluciona la economía&quot; , aunque sin ofrecer más pistas sobre el calendario que maneja. La reacción de los mercados fue positiva, en la medida en que el anuncio ya estaba descontado. Reacción El Nasdaq se recuperó tras una larga jornada en rojo y tras las palabras de Powell se apuntó un 0, 33%, mientras que el SandP y el Dow Jones subieron un 0, 67% y un 1, 05%, respectivamente. Más allá de la foto que ayer dibujaban los gobernadores de la Fed, lo cierto es que los inversores ya habían rebajado considerablemente esta semana su expectativa de grandes recortes para 2026, después de que Kevin Hassett, el favorito de Donald Trump para suceder a Powell, haya dicho que si fuera ratificado no va a ceder a la presión de la Casa Blanca para avanzar más rápido en el recorte de tipos. &quot; No hay margen para esperar más de un recorte en 2026&quot; , según apunta Roger Aliaga-Diaz, director global de construcción de carteras y economista jefe para América de Vanguard. En su opinión, el hecho de que la inflación esté por encima de su objetivo del 2% por quinto año consecutivo complica nuevas rebajas de tipos. No es el único que opina así. Tras el recorte de este miércoles, los analistas de Goldman Sachs coinciden en que, en el mejor de los casos, se pueden esperar dos movimientos más a la baja de un cuarto de punto en 2026, pero ninguno antes de marzo. Tienen claro que el camino actual de tres rebajas consecutivas del último trimestre ha llegado a su fin. Además, hay que tener en cuenta que Powell seguirá en el cargo hasta mayo, por lo que todavía estará al frente de las próximas tres reuniones del comité de política monetaria. Los analistas esperan que desafíe las presiones de la Casa Blanca y mantenga los tipos sin cambios, como ya lo hizo durante la mayor parte de este ejercicio (hasta que en septiembre se produjo el primer recorte de 2025). Con este movimiento ahora, la Fed busca ganar tiempo y proteger la economía de un deterioro más acusado, y a la espera también de que se actualicen todas las cifras macro, ya que en sus últimas dos citas el banco central se ha visto forzado a tomar decisiones solo con el dato parcial del paro, que es el único que se publicó durante el cierre de la Administración federal en octubre, el más largo de la historia del país por la falta de acuerdo político en los presupuestos públicos. La próxima semana será clave, ya que está prevista la publicación de las nuevas cifras de empleo, así como el IPC de noviembre y el PIB del tercer trimestre. Hasta ahora, el mercado laboral es el que más preocupa a la Fed, con el paro actualmente en el 4, 4%, la cifra más alta registrada desde 2022. Mientras, la inflación no ha dejado de crecer este año, especialmente por el impacto de la guerra arancelaria. Y si bien el alza de los precios ha sido más moderada de lo previsto, el IPC se encuentra en el 3%, un punto porcentual por encima del objetivo del 2% que la Fed esperaba haber alcanzado ya a estas alturas del ejercicio antes de que Trump declarara la guerra comercial al mundo.",
+      "content_preview": "La Reserva Federal rebajó los tipos de interés en un cuarto de punto, hasta situar el rango oficial entre el 3, 5% y el 3, 75%, en la que ya es la tercera bajada consecutiva en lo que va de año y el nivel más bajo desde finales de 2022. El movimiento, ampliamente descontado por Wall Street, también puso de manifiesto la profunda división que existe en el seno del banco central estadounidense, con tres votos en contra, el mayor desacuerdo desde 2019. Las previsiones publicadas este miércoles por ..."
+    },
+    {
+      "processing_rank": 7,
+      "url_id": 16140,
+      "url": "https://elpais.com/economia/2025-12-10/bruselas-investiga-la-compra-de-la-operadora-tercat-del-puerto-de-barcelona-por-el-gigante-msc-y-la-china-hutchison-ports.html",
+      "title": "Bruselas investiga la compra de la operadora TERCAT del Puerto de Barcelona por el gigante MSC y la china Hutchison Ports",
+      "source": "elpais.com",
+      "category": "finanzas",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 535,
+      "archive_url": null,
+      "full_content": "La Comisión Europea sospecha que la adquisición del control conjunto de TERCAT, que opera la terminal BEST del puerto de Barcelona, por parte del gigante naviero MSC, con sede en Suiza, y de la firma china Hutchison Ports puede estar infringiendo [las normas europeas de competencia. ]( \" Por ese motivo, Bruselas ha anunciado la apertura de una investigación en profundidad. El Ejecutivo europeo quiere así ver si se confirman sus sospechas iniciales, entre otras si esta transacción puede provocar un aumento de los precios o una reducción de la calidad de los servicios de la terminal de contenedores en el puerto barcelonés, según ha indicado en un comunicado. El paso se ha dado después de que una investigación preliminar concluyera que “la operación podría reducir significativamente la competencia en el mercado de prestación de servicios de terminales de contenedores en el puerto de Barcelona”, además de provocar precios más altos y una disminución de la calidad de los servicios a las competidoras de MSC. [TERCAT (Terminal Catalunya SAU) opera BEST, ]( \" una de las dos principales terminales de contenedores de aguas profundas situadas en el puerto de Barcelona. La compañía está controlada por Hutchison Ports, que forma parte de [un conglomerado con sede en Hong Kong. ]( \" A finales de junio, el Puerto de Barcelona dio su visto bueno a la transmisión del 50% de TERCAT a Terminal Investments Limited Holding (TIL), un operador portuario que forma parte del grupo MSC Mediterranean Shipping Company Holding (MSC), líder mundial en transporte marítimo de contenedores con importantes operaciones en el puerto de Barcelona, recuerda la Comisión. Los servicios de la terminal de contenedores del puerto de Barcelona son “un importante factor para la prestación de servicios de transporte marítimo regular de contenedores para la carga con origen o destino en Barcelona y su interior”, subraya Bruselas. Lo que la investigación en profundidad pretende ahora confirmar o desmentir es su sospecha preliminar de que la entidad fusionada surgida del acuerdo pueda “excluir” a compañías navieras de contenedores competidoras, “ofreciendo un trato preferencial a MSC para el uso de los servicios de la terminal de contenedores de BEST”, explica el comunicado. Específicamente, subraya la Comisión, ese potencial trato “discriminatorio” podría reflejarse en “precios más elevados, acceso tardío al muelle y disponibilidad limitada de grúas y espacio de almacenamiento para los competidores de MSC”. Una situación que se complica porque Bruselas también quiere confirmar si las navieras excluidas podrían además tener “posibilidades limitadas de cambiar” a la otra terminal de contenedores de alta mar del puerto de Barcelona, la Terminal de Contenedores de Barcelona (TCB). Bruselas, que tiene la obligación de evaluar las fusiones y adquisiciones en las que participen empresas con un volumen de negocios superior a determinados umbrales y de impedir las concentraciones que obstaculicen de manera significativa la competencia efectiva en el Espacio Económico Europeo (EEE) o en una parte sustancial del mismo, recibió notificación de la transacción barcelonesa el pasado 5 de noviembre. Tras la decisión de abrir una investigación en profundidad, la Comisión dispone ahora de 90 días laborables, hasta el 30 de abril de 2026, para tomar una decisión, que subraya no se verá prejuzgada por el paso dado este miércoles.",
+      "content_preview": "La Comisión Europea sospecha que la adquisición del control conjunto de TERCAT, que opera la terminal BEST del puerto de Barcelona, por parte del gigante naviero MSC, con sede en Suiza, y de la firma china Hutchison Ports puede estar infringiendo [las normas europeas de competencia. ]( \" Por ese motivo, Bruselas ha anunciado la apertura de una investigación en profundidad. El Ejecutivo europeo quiere así ver si se confirman sus sospechas iniciales, entre otras si esta transacción puede provocar ..."
+    },
+    {
+      "processing_rank": 8,
+      "url_id": 15955,
+      "url": "https://www.elconfidencial.com/economia/2025-12-10/bruselas-investigacion-venta-terminal-tercat-puerto-barcelona_4263966/",
+      "title": "Bruselas abre una investigación por la venta del 50% de la terminal TERCAT del puerto de Barcelona",
+      "source": "www.elconfidencial.com",
+      "category": "economia",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "xpath_cache",
+      "extraction_error": null,
+      "word_count": 575,
+      "archive_url": null,
+      "full_content": "La Comisión Europea ha abierto una investigación este miércoles por la venta del 50% deTerminal Catalunya (TERCAT)en el puerto de Barcelona por parte de Barcelona Europe South Terminal (Best), controlada por la compañía china Hutchison Ports, aTerminal Investments Limited Holding (TiL), controlada por la suizaMSCy elfondo de inversión BlackRock. La operación, para la que la autoridad portuaria dio luz verde en verano, fue notificada a la dirección general de Competencia el 5 de noviembre. Ahorala Comisión Europeacuenta con 90 días, hasta 30 de abrilde 2026, para tomar una decisión respecto a esta operación. Los técnicos comunitarios temen que la misma “podríareducir significativamente la competenciaen el mercado de prestación de servicios de terminales de contenedores en el puerto de Barcelona y dar lugar a un aumento de los precios y una disminución de la calidad de los servicios para las compañías navieras”. La compra tendríaun valor de entre 250 y 300 millones de eurosy se anunció en julio de 2024. La operación enel puerto de Barcelonase coció al mismo tiempo que se producía una coreografía alrededor del portfolio global marítimo deHutchison Ports, con una posible compra por parte precisamente de TiL, que acabó perdiendo fuelle el pasado verano. La francesaCMA CGMparece estar ahora también interesada por adquirir la cartera portuaria dela compañía con sede en Hong Kong, que tiene un valor de casi 23. 000 millones de euros, como también lo está la gigante COSCO. Hutchison controla, además de esta terminal barcelonesa, otras importantes terminales de otros puertos europeos claves, como el de Amsterdam, Amberes y Rotterdam. La preocupación de la Comisión Europea es que la nueva entidad, producto dela fusión de Best(controlada por Hutchison Ports)con TiL(controlada por MSC) podría ofrecer un “trato preferencial” a MSC, parte de TiL y que es una empresa de transporte de contenedores. “Este trato discriminatorio podría traducirse, en particular, en precios más elevados, acceso tardío al muelle y disponibilidad limitada de grúas y espacio de almacenamiento paralos competidores de MSC”, señala el Ejecutivo comunitario. Además, la Comisión considera que la competencia de MSCtiene pocas opciones alternativasdentro del propio puerto de Barcelona. “Las compañías navieras excluidas parecen tener posibilidades limitadas de cambiar a la otra terminal de contenedores de alta mar del puerto de Barcelona, la Terminal de Contenedores (TCB)”, señalael departamento de Competencia de la Comisión. En caso de que los técnicos de la institución europea certifiquen que efectivamente la operación genera un riesgo para la competencia, las partes involucradas en la operación pueden ofrecer lo que en el argot de competencia se conocen como “remedies” o compromisos para convencer al Ejecutivo comunitario. El Port de Barcelona ha defendido desde este verano quelas condiciones de la operaciónpara el reparto de TERCAT son \"objetivas y transparentes\", garantizando la competencia en la terminal. El presidente del Port, José Alberto Carbonell, defendió este pasado verano que “la presencia de MSC en el accionariado de Tercat (BEST) será un paso importante de cara a los servicios que se presten desde el Puerto de Barcelona y ampliará la conectividad del recinto”. La Comisión Europea ha abierto una investigación este miércoles por la venta del 50% deTerminal Catalunya (TERCAT)en el puerto de Barcelona por parte de Barcelona Europe South Terminal (Best), controlada por la compañía china Hutchison Ports, aTerminal Investments Limited Holding (TiL), controlada por la suizaMSCy elfondo de inversión BlackRock. La operación, para la que la autoridad portuaria dio luz verde en verano, fue notificada a la dirección general de Competencia el 5 de noviembre.",
+      "content_preview": "La Comisión Europea ha abierto una investigación este miércoles por la venta del 50% deTerminal Catalunya (TERCAT)en el puerto de Barcelona por parte de Barcelona Europe South Terminal (Best), controlada por la compañía china Hutchison Ports, aTerminal Investments Limited Holding (TiL), controlada por la suizaMSCy elfondo de inversión BlackRock. La operación, para la que la autoridad portuaria dio luz verde en verano, fue notificada a la dirección general de Competencia el 5 de noviembre. Ahoral..."
+    },
+    {
+      "processing_rank": 9,
+      "url_id": 15978,
+      "url": "https://www.elconfidencial.com/economia/2025-12-10/fed-recorta-tipos-3-75_4263937/",
+      "title": "La Fed recorta los tipos hasta el 3,75% y solo espera una posible bajada en 2026",
+      "source": "www.elconfidencial.com",
+      "category": "economia",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "xpath_cache",
+      "extraction_error": null,
+      "word_count": 889,
+      "archive_url": null,
+      "full_content": "Los miembros del Comité de Mercado Abierto de la Reserva Federal (FOMC, por sus siglas en inglés) han decidido en su reunión de este martes y miércoles aprobar una nueva bajada de lostipos de interés, la tercera de 2025. De esta manera, el precio del dinero se sitúa ahora en el rango entre el 3, 5% y el 3, 75% tras un recorte de 25 puntos básicos. Además, los gobernadores han votado susperspectivas macroeconómicasy sus previsiones sobre elnivel de tipos a cierre de 2026 y 2027, opiniones que se plasman en el cuadro de puntos. Según el nuevo escenario, la Fed estaría anticipando solo un descenso en 2026 y dos en 2027, como ya hizo en septiembre, hasta dejar los tipos en un rango alto del 3%. No obstante, se trata de un escenario largo plazo sujeto todavía a mucha incertidumbre, más teniendo en cuenta elrelevo en la presidencia de la Reserva Federalen mayo. En general, los principalesíndices bursátileshan reaccionado de manera positivaa la decisión y a la mejora de las perspectivas económicas de la Fed. El Dow Jones sube por encima del punto porcentual una hora después, mientras que el S&P 500 crece ya cerca del punto y Nasdaq se sitúa en un avance del 0, 5%. LaFedprioriza por el momento el mandato de proteger elmercado laboralantes que el de la estabilidad de precios. Los riesgos para los dos mandatos tiran en direcciones opuestas desde hace meses, con la inflación repuntando por los aranceles y la tasa de paro ascendiendo ante una debilidad más fuerte de la esperada en la creación de empleo. Esto ha llevado a unadecisión ajustadade los miembros del FOMC que, además, se ha producido conmuy pocos datos macroeconómicos nuevostras el parón en las publicaciones oficiales provocado por el cierre gubernamental de 43 días. La inflación medida en elPCE, el índice de precios del consumo personal, creció hasta el2, 8%en septiembre en comparación con el año anterior, la cifra más alta desde marzo de 2024, debido a que los aranceles están impulsando el precio de los bienes. En la misma línea, elCPI(el IPC), marcó un crecimiento del3%en septiembre. Sin embargo, latasa de parotambién creció hasta el4, 4%en septiembre, el valor más alto desde octubre de 2021. Respecto al PIB, la oficina de análisis económico aún no ha publicado la cifra relativa al tercer trimestre, pero algunos indicadores privados apuntan a una economía resiliente. De hecho, la Fed proyecta ahora un mejor comportamiento del crecimiento económico de EEUU para los próximos años. En concreto, eleva al1, 7%el crecimiento del PIB para este año respecto, una décima más de lo esperado en septiembre, al2, 3% en 2026, cinco décimas más, y al 2% en 2027 una décima más. Por primera vez incorporan también el escenario para 2028, para el que prevén un crecimiento del 1, 9%. La proyección se mantiene estable en la tasa de desempleo, que cerraría 2025 en un 4, 5% y descendería al 4, 4% en 2026. Respecto a lainflación, mejora el escenariorespecto al ejercicio de septiembre, con un PCE en 2025 del 2, 9% (una décima menos) y del 2, 4% en 2026 (dos décimas menos). La inflación medida por este indicador llegaría al 2% en 2028. Según ha explicado el presidente de la Reserva Federal, Jerome Powell, en la rueda de prensa posterior a la decisión, la revisión al alza del crecimiento económico se debe aun consumo de los hogares \"resiliente\"y a que lainversión empresarialestá aumentando al calor de la IA. Además, la política fiscal del Gobierno está apoyando el crecimiento económico. Sin embargo, unainmigraciónmás baja de la registrada antes de la vuelta de Trump a la Casa Blanca está lastrando el empleo. De hecho, Powell ha detallado que es posible que las ganancias de empleo se hayansobreestimado en alrededor de 60. 000en los últimos meses, a razón de unas 20. 000 por mes, por lo que hay un \"enfriamiento gradualdel mercado laboral\". Según el comunicado de la Fed, han votadoa favor del recorte de diciembre nueve miembros del comité, incluyendo al presidente. Los votos contrarios han sido los de Stephen Miran, ex asesor económico de Trump, que prefería reducir el rango en medio punto porcentual en esta reunión (como en las anteriores) y los gobernadores Austan D. Goolsbee y Jeffrey R. Schmid, quienes preferían mantener los tipos. A pesar de esta división y del debate de las últimas semanas, el recorte de diciembre estabaampliamente descontado por los mercados financieros. La herramienta FedWatch, de CME Group, reflejaba una hora antes del vaticinio de la Fed que los mercados apostaban con un 89, 6% de probabilidades por una tercera bajada de 25 puntos básicos en diciembre. El escenario es mucho más incierto para 2026, con las opiniones divididas, pero más favorables a un mantenimiento. De hecho, los mercados consideran, por el momento, que el rango actual se mantendrá hasta junio de 2026, lo que supondría queeste podría ser el último recorte con Powell en el cargo. Los miembros del Comité de Mercado Abierto de la Reserva Federal (FOMC, por sus siglas en inglés) han decidido en su reunión de este martes y miércoles aprobar una nueva bajada de lostipos de interés, la tercera de 2025. De esta manera, el precio del dinero se sitúa ahora en el rango entre el 3, 5% y el 3, 75% tras un recorte de 25 puntos básicos.",
+      "content_preview": "Los miembros del Comité de Mercado Abierto de la Reserva Federal (FOMC, por sus siglas en inglés) han decidido en su reunión de este martes y miércoles aprobar una nueva bajada de lostipos de interés, la tercera de 2025. De esta manera, el precio del dinero se sitúa ahora en el rango entre el 3, 5% y el 3, 75% tras un recorte de 25 puntos básicos. Además, los gobernadores han votado susperspectivas macroeconómicasy sus previsiones sobre elnivel de tipos a cierre de 2026 y 2027, opiniones que se ..."
+    },
+    {
+      "processing_rank": 10,
+      "url_id": 15895,
+      "url": "https://www.bbc.com/news/articles/cx257k3n2g1o",
+      "title": "Fed cuts rate but future easing uncertain",
+      "source": "www.bbc.com",
+      "category": "economia",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 967,
+      "archive_url": null,
+      "full_content": "# Fed lowers interest rates but future cuts uncertain Danielle KayeBusiness reporter Reuters US Federal Reserve Chair Jerome Powell The US Federal Reserve has lowered interest rates for the third time this year, even as internal divisions create uncertainty about additional cuts in the coming months. The central bank said on Wednesday it was lowering the target for its key lending rate by 0. 25 percentage points, putting it in a range of 3. 50% to 3. 75% - its lowest level in three years. But policymakers disagree about how the Fed should balance competing priorities: a weakening job market on the one hand, and rising prices on the other. The Fed's economic projections released on Wednesday suggest one rate cut will take place next year, although new data could change this. Fed chair Jerome Powell said central bankers needed time to see how the Fed's three cuts this year work their way through the US economy. Policymakers will examine incoming data closely ahead of the Fed's next meeting in January, he added. \"We are well-positioned to wait to see how the economy evolves, \" Powell told reporters. Those hoping for interest rates to keep coming down, including President Donald Trump, might have to wait. The Fed is facing a \"very challenging situation\" as it confronts risks of rising inflation and unemployment, Powell said, adding: \"You can't do two things at once\". The decision to lower rates on Wednesday was not unanimous, suggesting widening divisions among central bankers over the outlook for the US economy. Three Fed officials broke ranks and officially dissented. Stephen Miran, who is on leave from his post leading Trump's Council of Economic Advisers, voted for a larger 0. 5 percentage point cut. Austan Goolsbee, president of the Federal Reserve Bank of Chicago, and Jeffrey Schmid, president of the Federal Reserve Bank of Kansas City, voted to hold rates steady. Trump, who has repeatedly urged Powell to lower rates, said after the meeting on Wednesday that the Fed's cut could have been \"at least doubled\". \"Our rates should be much lower, \" he said at a roundtable at the White House. \"We should have the lowest rates in the world. \" A data blackout during the longest-ever US government shutdown, which ended in November, has left policymakers partially in the dark about the state of the economy. But concerns about a slowing job market continue to outweigh inflation fears, at least for now. The unemployment rate ticked up from 4. 3% to 4. 4% in September, Labor Department figures showed in a [delayed report released last month]( Cutting interest rates is aimed at stimulating the job market by creating lower borrowing costs for businesses. Inflation is still above the Fed's 2% target. In September, [it hit 3% for the first time]( since January. But while tariffs appear to be boosting some consumer prices, recent milder-than-expected inflation readings have allowed the Fed to focus on boosting the labour market by lowering rates, analysts said. Colleen McHugh, consultant to investment platform Wealthify, said higher-than-target inflation made it trickier for the Fed to cut rates, but the jobs market appeared to have nudged them in that direction. She expects one to two more rate cuts next year. \"I think the conundrum in the states at the moment is that there's a lot of political pressure on the Fed chair and the committee there to cut rates, \" she told the BBC's Today programme. ## Dissents and disagreements Policymakers remain divided over the path forward for interest rates. Asked about disagreement among policymakers, Powell acknowledged that it was \"unusual\" to have \"persistent tension\" between the Fed's two mandates to keep prices stable and unemployment low. \"And when you do, this is what you see, \" he said, referring to growing divisions. But Powell characterised the internal debate between Fed officials as thoughtful and respectful. \"We come together and we reach a place where we can make a decision, \" he said. Central bankers are poised to have a bit more clarity next week, with the expected release of official data on the labour market and inflation for November. The incoming data could shift policymakers' outlook, potentially bolstering calls for further easing next year if there are new signs that the job market is stalling. ## Who will succeed Powell? Trump's search for Powell's replacement as Fed chair, once his term ends next May, is adding to uncertainty about the path forward for Fed policy. Trump could announce his pick as soon as within the next few weeks. Kevin Hassett, a long-time conservative economist and key Trump economic adviser, is seen as the front-runner to succeed Powell. A Trump loyalist, Hassett served as chair of the White House Council of Economic Advisers during Trump's first term and now leads the National Economic Council. He has been a stalwart defender of Trump's economic policies, downplaying data showing signs of weakness in the US economy, doubling down on allegations of bias at the Bureau of Labor Statistics and backing Trump's handling of the Fed. Hassett's allegiance to the president has drawn questions from analysts about whether he would act independently. Other names that have been floated for the Fed chair include economist Kevin Warsh, current Fed Governor Christopher Waller and even Treasury Secretary Scott Bessent. Trump is \"still making up his mind, and he's looking for someone who will be in his way of thinking, \" Thomas Hoenig, a distinguished senior fellow at the Mercatus Center, told the BBC. The candidates, he added, \"have to project that they will be independent, or the markets will become quite nervous - and that will create more volatility\". Asked on Wednesday whether Trump's search for a new Fed chair is hindering his job or changing his thinking, Powell responded with a resounding \"no\".",
+      "content_preview": "# Fed lowers interest rates but future cuts uncertain Danielle KayeBusiness reporter Reuters US Federal Reserve Chair Jerome Powell The US Federal Reserve has lowered interest rates for the third time this year, even as internal divisions create uncertainty about additional cuts in the coming months. The central bank said on Wednesday it was lowering the target for its key lending rate by 0. 25 percentage points, putting it in a range of 3. 50% to 3. 75% - its lowest level in three years. But po..."
+    }
+  ],
+  "newsletter_preview": {
+    "word_count": 862,
+    "char_count": 6408,
+    "first_500_chars": "En el complejo entramado de la economía global, las decisiones de la [**Reserva Federal de los Estados Unidos**](https://www.lemonde.fr/international/article/2025/12/10/la-reserve-federale-americaine-baisse-ses-taux-sur-fond-de-division-des-gouverneurs-quant-a-l-etat-de-l-economie-aux-etats-unis_6656819_3210.html) resuenan con fuerza. En un movimiento que ha captado la atención mundial, la [**Fed ha reducido sus tasas de interés a un rango de entre 3,5% y 3,75%**](https://www.ft.com/content/8687..."
+  }
+}

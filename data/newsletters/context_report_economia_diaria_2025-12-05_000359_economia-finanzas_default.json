@@ -1,0 +1,495 @@
+{
+  "metadata": {
+    "newsletter_name": "economia_diaria",
+    "run_date": "2025-12-05",
+    "generated_at": "2025-12-07T00:03:59.349111+01:00",
+    "stage": "05_generate_newsletters"
+  },
+  "configuration": {
+    "max_articles": 15,
+    "top_with_content": 15,
+    "expected_categories": [
+      "economia",
+      "finanzas"
+    ],
+    "ranked_file_categories": null,
+    "template": "default",
+    "model_writer": "gpt-4o-mini",
+    "output_format": "markdown"
+  },
+  "ranked_data": {
+    "total_urls_in_ranked_file": 0,
+    "urls_selected_for_processing": 15,
+    "initial_ranked_order": []
+  },
+  "content_extraction": {
+    "urls_requested_for_content": [
+      {
+        "rank": 1,
+        "url_id": 12264,
+        "url": "https://www.elmundo.es/economia/macroeconomia/2025/12/05/6932c613e9cf4a230b8b4584.html",
+        "title": "Crece la pobreza: el número de hogares vulnerables que cobra el Ingreso Mínimo Vital sube en 379.000 personas el último año"
+      },
+      {
+        "rank": 2,
+        "url_id": 12258,
+        "url": "https://www.elmundo.es/economia/empresas/2025/12/05/6932d300fdddffe22c8b459e.html",
+        "title": "Netflix comprará Warner Bros Discovery por unos 83.000 millones de dólares"
+      },
+      {
+        "rank": 3,
+        "url_id": 12035,
+        "url": "https://www.elconfidencial.com/economia/2025-12-05/pib-de-la-eurozona-acelero-mas-de-lo-previsto_4261074/",
+        "title": "El PIB de la eurozona aceleró más de lo previsto su crecimiento, hasta el 0,3%"
+      },
+      {
+        "rank": 4,
+        "url_id": 11909,
+        "url": "https://www.elconfidencial.com/economia/2025-12-05/recaudacion-impuesto-sobre-sociedades_4260676/",
+        "title": "El impuesto sobre sociedades supera los 40.000 M por primera vez desde la burbuja"
+      },
+      {
+        "rank": 5,
+        "url_id": 11916,
+        "url": "https://www.elconfidencial.com/economia/2025-12-05/foment-pide-mas-inmigrantes-en-pleno-auge-antiinmigracion_4260710/",
+        "title": "Foment pide más inmigrantes en pleno auge de los partidos antiinmigración"
+      },
+      {
+        "rank": 6,
+        "url_id": 11911,
+        "url": "https://www.elconfidencial.com/empresas/2025-12-05/netflix-negocia-exclusiva-warner-bros-compra-hbo-estudios-cine_4260943/",
+        "title": "Unión de plataformas de 'streaming': Netflix compra HBO Max a Warner por 72.000 M"
+      },
+      {
+        "rank": 7,
+        "url_id": 12304,
+        "url": "https://www.elmundo.es/economia/2025/12/05/6932df79e85ecef75f8b45be.html",
+        "title": "Garamendi echa en falta 'cultura del esfuerzo' y dice que \"el gran problema laboral en España es el absentismo\": se concentran \"los viernes y los lunes\""
+      },
+      {
+        "rank": 8,
+        "url_id": 12093,
+        "url": "https://www.elconfidencial.com/mercados/2025-12-05/inditex-ibex-fed-claves-semana-mercados_4261673/",
+        "title": "Inditex pone en órbita al Ibex e insonoriza las dudas: tres claves que movieron el mercado"
+      },
+      {
+        "rank": 9,
+        "url_id": 12060,
+        "url": "https://www.elconfidencial.com/mercados/2025-12-05/argentina-regresa-a-los-mercados-globales_4261337/",
+        "title": "Argentina regresa a los mercados globales con un bono en dólares con un interés del 6,5%"
+      },
+      {
+        "rank": 10,
+        "url_id": 12019,
+        "url": "https://www.elconfidencial.com/mercados/2025-12-05/inocsa-triunfa-en-su-opa-por-catalana-occidente_4260996/",
+        "title": "Inocsa triunfa en su opa por Catalana Occidente y la sacará de bolsa"
+      },
+      {
+        "rank": 11,
+        "url_id": 11940,
+        "url": "https://www.elconfidencial.com/mercados/2025-12-05/bolsa-ibex-35-hoy-en-directo-mercados_4260885/",
+        "title": "Bolsa e Ibex 35 hoy, en directo | Wall St. cierra al alza por cuarto día tras datos de inflación moderados"
+      },
+      {
+        "rank": 12,
+        "url_id": 11963,
+        "url": "https://www.elconfidencial.com/motor/2025-12-03/por-que-cuesta-mas-tener-coche_4258437/",
+        "title": "Hasta un 27% más caro: por qué cuesta más ahora tener un coche"
+      },
+      {
+        "rank": 13,
+        "url_id": 11989,
+        "url": "https://blogs.elconfidencial.com/espana/por-si-acaso/2025-12-05/sobrecoste-electricidad-renovables-tarifa-1hms_4259998/",
+        "title": "El mercado frente a la intervención progresista: una historia eléctrica"
+      },
+      {
+        "rank": 14,
+        "url_id": 12246,
+        "url": "https://www.elmundo.es/economia/dinero-inversion/2025/12/05/6931a99fe4d4d8ff2b8b45b1.html",
+        "title": "Huida histórica de la bolsa estadounidense: los inversores españoles registran las mayores salidas de fondos del siglo"
+      },
+      {
+        "rank": 15,
+        "url_id": 12096,
+        "url": "https://www.elconfidencial.com/economia/2025-12-05/lorena-alvarez-economista-cuatro-perfiles-financieros-ultimos-en-hacer-bizum-1qrt_4261199/",
+        "title": "Lorena Álvarez, economista, explica los cuatro perfiles financieros: \"Son los últimos en hacer los Bizum\""
+      }
+    ],
+    "urls_successfully_extracted": [
+      {
+        "rank": 1,
+        "url_id": 12264,
+        "url": "https://www.elmundo.es/economia/macroeconomia/2025/12/05/6932c613e9cf4a230b8b4584.html",
+        "title": "Crece la pobreza: el número de hogares vulnerables que cobra el Ingreso Mínimo Vital sube en 379.000 personas el último año",
+        "method": "readability",
+        "word_count": 638
+      },
+      {
+        "rank": 2,
+        "url_id": 12258,
+        "url": "https://www.elmundo.es/economia/empresas/2025/12/05/6932d300fdddffe22c8b459e.html",
+        "title": "Netflix comprará Warner Bros Discovery por unos 83.000 millones de dólares",
+        "method": "readability",
+        "word_count": 658
+      },
+      {
+        "rank": 3,
+        "url_id": 12035,
+        "url": "https://www.elconfidencial.com/economia/2025-12-05/pib-de-la-eurozona-acelero-mas-de-lo-previsto_4261074/",
+        "title": "El PIB de la eurozona aceleró más de lo previsto su crecimiento, hasta el 0,3%",
+        "method": "readability",
+        "word_count": 467
+      },
+      {
+        "rank": 4,
+        "url_id": 11909,
+        "url": "https://www.elconfidencial.com/economia/2025-12-05/recaudacion-impuesto-sobre-sociedades_4260676/",
+        "title": "El impuesto sobre sociedades supera los 40.000 M por primera vez desde la burbuja",
+        "method": "readability",
+        "word_count": 826
+      },
+      {
+        "rank": 5,
+        "url_id": 11916,
+        "url": "https://www.elconfidencial.com/economia/2025-12-05/foment-pide-mas-inmigrantes-en-pleno-auge-antiinmigracion_4260710/",
+        "title": "Foment pide más inmigrantes en pleno auge de los partidos antiinmigración",
+        "method": "readability",
+        "word_count": 1154
+      },
+      {
+        "rank": 6,
+        "url_id": 11911,
+        "url": "https://www.elconfidencial.com/empresas/2025-12-05/netflix-negocia-exclusiva-warner-bros-compra-hbo-estudios-cine_4260943/",
+        "title": "Unión de plataformas de 'streaming': Netflix compra HBO Max a Warner por 72.000 M",
+        "method": "readability",
+        "word_count": 504
+      },
+      {
+        "rank": 7,
+        "url_id": 12304,
+        "url": "https://www.elmundo.es/economia/2025/12/05/6932df79e85ecef75f8b45be.html",
+        "title": "Garamendi echa en falta 'cultura del esfuerzo' y dice que \"el gran problema laboral en España es el absentismo\": se concentran \"los viernes y los lunes\"",
+        "method": "readability",
+        "word_count": 653
+      },
+      {
+        "rank": 8,
+        "url_id": 12093,
+        "url": "https://www.elconfidencial.com/mercados/2025-12-05/inditex-ibex-fed-claves-semana-mercados_4261673/",
+        "title": "Inditex pone en órbita al Ibex e insonoriza las dudas: tres claves que movieron el mercado",
+        "method": "readability",
+        "word_count": 1210
+      },
+      {
+        "rank": 9,
+        "url_id": 12060,
+        "url": "https://www.elconfidencial.com/mercados/2025-12-05/argentina-regresa-a-los-mercados-globales_4261337/",
+        "title": "Argentina regresa a los mercados globales con un bono en dólares con un interés del 6,5%",
+        "method": "readability",
+        "word_count": 427
+      },
+      {
+        "rank": 10,
+        "url_id": 12019,
+        "url": "https://www.elconfidencial.com/mercados/2025-12-05/inocsa-triunfa-en-su-opa-por-catalana-occidente_4260996/",
+        "title": "Inocsa triunfa en su opa por Catalana Occidente y la sacará de bolsa",
+        "method": "readability",
+        "word_count": 396
+      },
+      {
+        "rank": 11,
+        "url_id": 11940,
+        "url": "https://www.elconfidencial.com/mercados/2025-12-05/bolsa-ibex-35-hoy-en-directo-mercados_4260885/",
+        "title": "Bolsa e Ibex 35 hoy, en directo | Wall St. cierra al alza por cuarto día tras datos de inflación moderados",
+        "method": "readability",
+        "word_count": 673
+      },
+      {
+        "rank": 12,
+        "url_id": 11963,
+        "url": "https://www.elconfidencial.com/motor/2025-12-03/por-que-cuesta-mas-tener-coche_4258437/",
+        "title": "Hasta un 27% más caro: por qué cuesta más ahora tener un coche",
+        "method": "readability",
+        "word_count": 756
+      },
+      {
+        "rank": 13,
+        "url_id": 11989,
+        "url": "https://blogs.elconfidencial.com/espana/por-si-acaso/2025-12-05/sobrecoste-electricidad-renovables-tarifa-1hms_4259998/",
+        "title": "El mercado frente a la intervención progresista: una historia eléctrica",
+        "method": "readability",
+        "word_count": 1198
+      },
+      {
+        "rank": 14,
+        "url_id": 12246,
+        "url": "https://www.elmundo.es/economia/dinero-inversion/2025/12/05/6931a99fe4d4d8ff2b8b45b1.html",
+        "title": "Huida histórica de la bolsa estadounidense: los inversores españoles registran las mayores salidas de fondos del siglo",
+        "method": "readability",
+        "word_count": 722
+      },
+      {
+        "rank": 15,
+        "url_id": 12096,
+        "url": "https://www.elconfidencial.com/economia/2025-12-05/lorena-alvarez-economista-cuatro-perfiles-financieros-ultimos-en-hacer-bizum-1qrt_4261199/",
+        "title": "Lorena Álvarez, economista, explica los cuatro perfiles financieros: \"Son los últimos en hacer los Bizum\"",
+        "method": "readability",
+        "word_count": 485
+      }
+    ],
+    "urls_failed_extraction": [],
+    "extraction_stats": {
+      "total_requested": 15,
+      "total_success": 15,
+      "total_failed": 0,
+      "success_rate": 100.0
+    }
+  },
+  "articles": [
+    {
+      "processing_rank": 1,
+      "url_id": 12264,
+      "url": "https://www.elmundo.es/economia/macroeconomia/2025/12/05/6932c613e9cf4a230b8b4584.html",
+      "title": "Crece la pobreza: el número de hogares vulnerables que cobra el Ingreso Mínimo Vital sube en 379.000 personas el último año",
+      "source": "www.elmundo.es",
+      "category": "economia",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 638,
+      "archive_url": null,
+      "full_content": "El **Ingreso Mínimo Vital (IMV)** es una prestación diseñada para completar la renta de las familias vulnerables que cobran muy poco dinero o no tienen ingresos y están condenadas a la pobreza. En el último año, el número de beneficarios de esta ayuda ha crecido en España **un 18, 7%**, lo que supone que**se han sumado 378. 838 personas** que ahora necesitan este dinero extra del Estado para vivir. Según los datos publicados este viernes por el Ministerio de Seguridad Social, en total en el país hay 785. 722 hogares que reciben esta prestación, en los que viven **2, 4 millones de personas (el 40, 8%, niños)** que necesitan estos ingresos para poder vivir dignamente. De media, reciben**485 euros por hogar**, con lo que el Estado destina **406, 1 millones de euros mensuales** a su pago. La prestación varía en función del número de personas que viven en cada hogar, con lo que cambia mucho de unas familias a otras. \"Tanto por las características de los titulares como de los beneficiarios, podemos decir que el IMV tiene un marcado **perfil femenino**, donde el **67, 9%** de los **titulares** (533. 681) son mujeres\", ha explicado el departamento que dirige Elma Saiz. Del total de familias cubiertas por el IMV, en más de dos tercios (538. 873 hogares, el 68, 6% del total) hay niños y **133. 078** son **hogares monoparentales**, la mayoría encabezados por mujeres. La**brecha generacional** que sufre el país se constata al analizar la edad media de los beneficiarios del Ingreso Mínimo Vital, que se sitúa en los**28, 37 años** si se cogen únicamente los titulares de la prestación -es decir, omitiendo los beneficiarios indirectos, por ejemplo los hijos en una familia en la que el titular es la madre-. Son los **jóvenes** los que están atravesando más dificultades por los precios de la vivienda desorbitados -tanto en compra como en alquiler- y la precariedad del empleo, y eso se traduce en que muchos necesitan ingresos adicionales. Para facilitar que los jóvenes puedan acceder a la prestación, el Gobierno ha permitido que puedan solicitarla los mayores de 18 años o menores **emancipados con hijos o hijas a cargo** y se ha reducido el período de vida independiente para los jóvenes menores de 30 años, de 3 a 2 años. Aunque es positivo que el IMV cubra las necesidades de quienes lo necesitan en España, no lo es tanto que**cada vez haya más familias** que tienen que recurrir a esta prestación, ya que denota un **empobrecimiento** general de algunas capas de la sociedad. El Ministerio admite que es un instrumento \"clave en la lucha contra la pobreza y la exclusión social\". ## Mínimo un año de residencia legal en España Para solicitar el IMV, es necesario**haber residido en España de forma legal, ** efectiva y continuada**durante al menos el año anterior. ** La residencia se demuestra mediante la inscripción en el registro central de extranjeros en el caso de ciudadanos comunitarios y suizos, o con la correspondiente autorización en el caso de personas de terceros países. El domicilio en España se verifica con certificado de empadronamiento, y la unidad de convivencia se demuestra mediante el libro de familia, certificados del registro civil o datos padronales. Además, tanto la persona solicitante como su hogar deben encontrarse en **situación de vulnerabilidad económica, ** al no disponer de ingresos o patrimonio suficientes según los estándares. El IMV es compatible con rentas del trabajo y contempla incentivos para favorecer la inserción laboral y mejorar las condiciones de vida de las familias. Asimismo, el nuevo sistema de doble revisión de ingresos implantado permite a las familias conocer de antemano la actualización de su prestación. Como consecuencia, desde mayo, los beneficiarios saben ya si, en función de los ingresos del año anterior, su prestación se incrementará, se reducirá o se extinguirá. * * *",
+      "content_preview": "El **Ingreso Mínimo Vital (IMV)** es una prestación diseñada para completar la renta de las familias vulnerables que cobran muy poco dinero o no tienen ingresos y están condenadas a la pobreza. En el último año, el número de beneficarios de esta ayuda ha crecido en España **un 18, 7%**, lo que supone que**se han sumado 378. 838 personas** que ahora necesitan este dinero extra del Estado para vivir. Según los datos publicados este viernes por el Ministerio de Seguridad Social, en total en el país..."
+    },
+    {
+      "processing_rank": 2,
+      "url_id": 12258,
+      "url": "https://www.elmundo.es/economia/empresas/2025/12/05/6932d300fdddffe22c8b459e.html",
+      "title": "Netflix comprará Warner Bros Discovery por unos 83.000 millones de dólares",
+      "source": "www.elmundo.es",
+      "category": "finanzas",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 658,
+      "archive_url": null,
+      "full_content": "Pablo Scarpellini Los Ángeles Actualizado Viernes, 5 diciembre 2025 \\- 13: 41 Terremoto en la industria del cine. El gigante del _streaming_**Netflix** comprará el estudio de cine y televisión**Warner Bros Discovery** por casi 83. 000 millones de dólares, anunciaron ambas empresas este viernes en un comunicado conjunto. Se trata de la mayor adquisición en el sector del entretenimiento desde que Disney compró **Fox** por 71. 000 millones de dólares en 2019. Con la operación, Netflix se hará con uno de los catálogos más poderosos de la industria. En su caja fuerte, Warner tiene clásicos como _El mago de Oz_ y _Ben-Hur_, series como _Juego de Tronos_ y _Friends_, o franquicias com _Harry Potter_, _The Matrix_, el Universo DC —con Batman, Superman, Wonderwoman o Aquaman en ese club— o _Mad Max_. A eso hay que sumarle su negocio televisivo, con canales como CNN, HGTV, Discovery Channel o TBS. El botín es de impresión. El lunes se venció el plazo para presentar una segunda ronda de ofertas y los tres actores principales presentaron su nueva declaración de intenciones. No habían detalles específicos sobre cada oferta pero sí se sabía que Netflix llevaba ventaja. Según _Reuters_, la compañía con sede en Los Gatos, California, había presentado **una oferta con el 85% en efectivo** para hacerse con la división de streaming de Warner, que incluye su marca más prestigiosa: **HBO**. Sólo Paramount pretendía quedarse con toda la compañía, no con una parte. Ni a Netflix y ni a Comcast les interesa los canales de televisión por cable, un negocio en declive en EEUU desde hace años tras la irrupción del _streaming_. Durante la carrera, el proceso regulatorio amenazaba con ser un obstáculo considerable, y en eso Paramount tenía una clara ventaja. Se llama **Donald Trump**, el presidente de EEUU. **David Ellison**, presidente de Paramount e hijo del fundador de Oracle, Larry Ellison, tiene línea directa con el republicano gracias a su padre. Washington había dejado entrever que la carta de Paramount tendría el camino mucho más despejado que la de sus competidores, algo que ya quedó patente con la reciente fusión de Skydance, el estudio fundado por Ellison, y Paramount, una operación de 8. 400 millones de dólares que contó con el visto bueno de la FCC el pasado verano. La idea de dividir Warner no ha surgido a raíz de la guerra de ofertas. En enero, el consejo de administración decidió que era la mejor forma de hacer frente al panorama actual, marcado por**los 37. 000 millones de dólares de deuda** que arrastran desde la fusión, el declive de suscripciones a la televisión por cable —con la consiguiente bajada de ingresos por. Después se produjeron las muestras de interés no solicitado. \"Tras recibir el interés de múltiples partes, hemos iniciado una revisión exhaustiva de alternativas estratégicas para identificar la mejor manera de aprovechar al máximo el valor de nuestros activos\", declaró en un comunicado el polémico **David Zaslav**, el actual CEO de Warner Bros Discovery. A Zaslav le han acusado de sacrificar el prestigio de HBO para lograr más suscriptores. El lanzamiento de la plataforma **Max en 2023** supuso un cambio de paradigma para una de las marcas de culto de la televisión estadounidense, con la introducción de _realities_ y series de menor categoría que desataron un aluvión de críticas. Con el tiempo, Zaslav se dio cuenta de su error y dio marcha atrás en julio al anunciar que la plataforma volvería a llamarse HBO Max. Con esto, está el futuro del **cine en salas. ** Netflix ya ha dejado claro que el negocio tradicional no le interesa. De hecho, ha sido una de sus principales amenazas en la última década. La pregunta es qué pasa con los estudios de la Warner si la plataforma de _streaming_ se hace con ellos. ¿Se mantendría el ritmo de estrenos en salas o se haría al estilo Netflix, con ventanas mucho más reducidas y pensando únicamente en la temporada de premios? * * *",
+      "content_preview": "Pablo Scarpellini Los Ángeles Actualizado Viernes, 5 diciembre 2025 \\- 13: 41 Terremoto en la industria del cine. El gigante del _streaming_**Netflix** comprará el estudio de cine y televisión**Warner Bros Discovery** por casi 83. 000 millones de dólares, anunciaron ambas empresas este viernes en un comunicado conjunto. Se trata de la mayor adquisición en el sector del entretenimiento desde que Disney compró **Fox** por 71. 000 millones de dólares en 2019. Con la operación, Netflix se hará con u..."
+    },
+    {
+      "processing_rank": 3,
+      "url_id": 12035,
+      "url": "https://www.elconfidencial.com/economia/2025-12-05/pib-de-la-eurozona-acelero-mas-de-lo-previsto_4261074/",
+      "title": "El PIB de la eurozona aceleró más de lo previsto su crecimiento, hasta el 0,3%",
+      "source": "www.elconfidencial.com",
+      "category": "economia",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 467,
+      "archive_url": null,
+      "full_content": "El **crecimiento del producto interior bruto** (PIB) de la [eurozona]( aceleró en el tercer trimestre al 0, 3%**, frente a la expansión del 0, 1% observada en los tres meses anteriores, superando así en una décima la estimación inicial de la oficina comunitaria de estadística, Eurostat. En el caso de los Veintisiete, **el PIB avanzó un 0, 4%** entre julio y septiembre en comparación con los tres meses anteriores, cuando la expansión fue del 0, 3%, después de que ambos datos hayan sido revisados una décima al alza. Respecto del tercer trimestre del año pasado, **el PIB aumentó un 1, 4% en la[zona euro]( y un 1, 6% en el conjunto de la UE, en línea con la estimación inicial. Entre los Estados miembros para los que se dispone de datos del tercer trimestre de 2025, **Dinamarca** (+2, 3%) registró el mayor aumento del PIB en comparación con el trimestre anterior, seguida de **Luxemburgo y Suecia** (ambos +1, 1%). Por contra, se observaron descensos en **Irlanda, Finlandia** (ambos -0, 3%) y **Rumanía**(-0, 2%). Entre las mayores economías de [la UE]( moderó su expansión al 0, 6% desde el 0, 8% del segundo trimestre**, mientras que Alemania se estancó, después de la contracción del 0, 2% del trimestre anterior y Francia aceleró su crecimiento al 0, 5% desde el 0, 3%. En el caso de Italia, el PIB creció una décima en el tercer trimestre, después de una caída del 0, 1% en los tres meses anteriores. Los datos de crecimiento del PIB en el tercer trimestre **reflejan un aumento del 0, 2%** en el gasto en consumo final de los hogares tanto en la[ zona euro]( como en la UE, frente al 0, 3% de ambas regiones en el trimestre precedente, mientras que el gasto en consumo final de las administraciones públicas aumentó un 0, 7% tanto en la zona euro como en la UE, frente al 0, 4% y el 0, 5% respectivamente de los tres meses anteriores. De su lado, la formación bruta de capital fijo aumentó un 0, 9% en la zona euro, frente al -1, 7% del trimestre anterior, y un 1, 1% en la UE, tras un -1, 4%. Asimismo, **las exportaciones aumentaron un 0, 7% en la zona euro y un 0, 9% en la UE**, tras un -0, 4% y un -0, 1%, respectivamente, mientras que las importaciones aumentaron un 1, 3% en ambas regiones, después de un -0, 1% en la eurozona y un 0, 3% en la UE en el segundo trimestre. El **crecimiento del producto interior bruto** (PIB) de la [eurozona]( aceleró en el tercer trimestre al 0, 3%**, frente a la expansión del 0, 1% observada en los tres meses anteriores, superando así en una décima la estimación inicial de la oficina comunitaria de estadística, Eurostat.",
+      "content_preview": "El **crecimiento del producto interior bruto** (PIB) de la [eurozona]( aceleró en el tercer trimestre al 0, 3%**, frente a la expansión del 0, 1% observada en los tres meses anteriores, superando así en una décima la estimación inicial de la oficina comunitaria de estadística, Eurostat. En el caso de los Veintisiete, **el PIB avanzó un 0, 4%** entre julio y septiembre en comparación con los tres meses anteriores, cuando la expansión fue del 0, 3%, después de que ambos datos hayan sido revisados ..."
+    },
+    {
+      "processing_rank": 4,
+      "url_id": 11909,
+      "url": "https://www.elconfidencial.com/economia/2025-12-05/recaudacion-impuesto-sobre-sociedades_4260676/",
+      "title": "El impuesto sobre sociedades supera los 40.000 M por primera vez desde la burbuja",
+      "source": "www.elconfidencial.com",
+      "category": "economia",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 826,
+      "archive_url": null,
+      "full_content": "En una época en la que todos los tributos recaudan más que nunca, hay uno que todavía no ha superado el techo de la burbuja inmobiliaria: el [impuesto sobre sociedades]( Sin embargo, en los últimos años **empieza a levantar cabeza**. En 2025 superará los 40. 000 millones de ingresos por primera vez (y única) desde 2007. En el pico de la burbuja inmobiliaria, este tributo llegó a generar casi **45. 000 millones** de recaudación. Tal era su ritmo de crecimiento, con un avance medio anual del 17% entre 1997 y 2007, que para los gobiernos era **casi imposible gastar** todo lo que generaba por encima de las previsiones. El impuesto sobre sociedades pinchó con la burbuja y **va a tardar cerca de 20 años** en recuperar su recaudación de aquellos años. Y serán muchos más si se deflacta. La [Autoridad Independiente de Responsabilidad Fiscal (AIReF)]( prevé que la recaudación de sociedades ascienda a 42. 300 millones de euros este año, quedándose un 9% por debajo del pico de la burbuja. Estos datos muestran hasta qué punto la fiscalidad en **España** se ha ido desplazando desde las empresas hacia los consumidores y, sobre todo, los trabajadores. El IRPF es ahora el gran impuesto recaudador, que generará este año 141. 000 millones, un 94% más que en el pico de la burbuja. Este ha sido el impuesto que **han subido todos los gobiernos** desde la burbuja para incrementar la recaudación pública. Aun así, la trayectoria del impuesto sobre sociedades en el último año es reseñable. Tras [la reforma]( aprobada por el **Gobierno** a finales de 2024 para limitar las deducciones y fijar un tipo mínimo del 15% (directiva europea), la recaudación **va camino de crecer un 8, 3% en 2025**, aunque los beneficios empresariales se han estancado. Y, si se compara con las cifras previas a la pandemia, los ingresos van a ser casi el doble (un 78% superiores a los de 2019). Finalmente, el impuesto sobre sociedades empieza a recuperarse. Según los cálculos de la AIReF, las modificaciones aprobadas el año pasado **generarán casi 3. 400 millones de euros** adicionales de recaudación en 2025 y otros 1. 700 millones anuales a partir de 2026. Un parche que permite minimizar la utilización de los beneficios fiscales que tiene el tributo. Sin embargo, el Gobierno también aprobó rebajas del [IRPF]( para pymes por exigencia de **Junts**, lo que tendrá un impacto relevante sobre el impuesto a partir del próximo año. La AIReF anticipa que \"el Impuesto sobre Sociedades experimenta **cierto estancamiento entre 2026 y 2028**, coincidiendo con la entrada en vigor de la reducción de tipos a microempresas y empresas de reducida dimensión\". Una vez más, los partidos políticos han vuelto a caer en la tentación de hacer más agujeros a este impuesto. ## Vuelta al 2000 Para constatar el esfuerzo fiscal que hacen las empresas hay que comparar el impuesto sobre sociedades que pagan sobre algún agregado de la economía. Por ejemplo, si se mide con respecto al PIB, el impuesto sobre sociedades **representará este año el 2, 5%** del total de la producción nacional. Es la cifra más alta desde el año 2007, pero inferior a la de todos los años de la burbuja. El nivel de recaudación será comparable al que había a principios del siglo, mientras que los impuestos sobre los consumidores y sobre los trabajadores son muy superiores. Cuando se compara el ritmo del impuesto con los beneficios empresariales, **la brecha es incluso superior**. Desde el año 2007, la renta primaria de las empresas (beneficios antes de impuestos) se ha duplicado, pero la recaudación de sociedades es todavía un 8% inferior. Si se observa la serie histórica desde principios de siglo, el impuesto se infló durante la burbuja gracias a los beneficios extraordinarios que conseguían las empresas. Desde la crisis financiera y hasta 2019, el impuesto sobre sociedades **no consiguió recuperarse**, lastrado por la compensación de bases imponibles negativas y la congelación de los precios. Sin embargo, algo ha cambiado en los últimos años. El impuesto ya está creciendo por encima de los beneficios empresariales, en gran medida gracias a las reformas para tapar los agujeros del impuesto, y también por el avance de la inflación que ha disparado los beneficios en muchos sectores. Por primera vez desde los años de la burbuja, el impuesto sobre sociedades tiene una elasticidad superior a 1. Pero solo es una recuperación temporal, ya que la bajada progresiva del impuesto a las pequeñas empresas **frenará los ingresos tributarios** a partir del próximo año. Los salarios seguirán siendo quienes soporten el grueso de [la presión fiscal, ]( agravada por la progresividad en frío. En una época en la que todos los tributos recaudan más que nunca, hay uno que todavía no ha superado el techo de la burbuja inmobiliaria: el [impuesto sobre sociedades]( Sin embargo, en los últimos años **empieza a levantar cabeza**. En 2025 superará los 40. 000 millones de ingresos por primera vez (y única) desde 2007.",
+      "content_preview": "En una época en la que todos los tributos recaudan más que nunca, hay uno que todavía no ha superado el techo de la burbuja inmobiliaria: el [impuesto sobre sociedades]( Sin embargo, en los últimos años **empieza a levantar cabeza**. En 2025 superará los 40. 000 millones de ingresos por primera vez (y única) desde 2007. En el pico de la burbuja inmobiliaria, este tributo llegó a generar casi **45. 000 millones** de recaudación. Tal era su ritmo de crecimiento, con un avance medio anual del 17% e..."
+    },
+    {
+      "processing_rank": 5,
+      "url_id": 11916,
+      "url": "https://www.elconfidencial.com/economia/2025-12-05/foment-pide-mas-inmigrantes-en-pleno-auge-antiinmigracion_4260710/",
+      "title": "Foment pide más inmigrantes en pleno auge de los partidos antiinmigración",
+      "source": "www.elconfidencial.com",
+      "category": "economia",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 1154,
+      "archive_url": null,
+      "full_content": "La intensidad de la ola migratoria iniciada en **España** después de la pandemia ha coincidido con un **momento político de rechazo a la inmigración en todo el mundo**. El mayor ejemplo es **Trump**, que desde su vuelta a la **Casa Blanca** ha expulsado a miles de inmigrantes, lo cual está debilitando el mercado laboral estadounidense. No obstante, políticas de mayor control de fronteras y de limitación de la inmigración también se están produciendo en países donde gobiernan partidos de izquierda, como es el caso de [Reino Unido]( En España, la principal canalización del descontento con los inmigrantes se vehicula a través del auge de [Vox]( pero también de regionales como [Aliança Catalana]( En este contexto, parte del empresariado ha decidido tomar parte en el debate, aunque sin aclarar del todo su propuesta. El presidente de **Foment del Treball** y vicepresidente de **CEOE**, **Josep Sánchez Llibre**, ha sido claro en su mensaje político durante la presentación de un informe demográfico realizado por el centro de estudios de la propia patronal catalana (**SBEES**). \"Las empresas españolas **necesitamos de la[inmigración]( como el agua que bebemos cada día**. Tenemos verdaderos problemas para poder absorber la demanda que tienen nuestras empresas\", ha afirmado. En su opinión, \"la economía española necesita inevitablemente de inmigración para progresar\", por lo que \"la inmigración es necesaria para **sostener el Estado del bienestar** \". Esta rotundidad parte de unos cálculos demográficos que dibujan un horizonte poco alentador. Foment estima que 5, 4 millones de personas abandonarán el mercado **laboral** por jubilación o por menor actividad en la etapa final de su vida laboral **a lo largo de la próxima década** y, sin inmigración adicional, solo entrarían a trabajar unos cuatro millones de trabajadores, creando un saldo negativo de 1, 4 millones. \"Un **6, 3% de los empleos totales no podrían ser cubiertos\"**, señala el informe. \"Si se quiere mantener el nivel de actividad y ocupación actual, habrá que cubrir de alguna manera con población exterior\", ha advertido **Juan Francisco Caro**, autor principal del informe. Es el resultado de la caída de la [natalidad]( en España, incluso entre las mujeres extranjeras, que hace que la tasa de **fecundidad sea inferior a la tasa de reemplazo** (2, 1 hijos por mujer) **desde 1976**. De hecho, desde 2017 se registran más muertes que nacimientos en el territorio nacional. Por ello, Sánchez Llibre ha propuesto impulsar \"**un gran pacto social** entre los poderes públicos y la sociedad civil que permita corregir y superar los cambios que se están produciendo como consecuencia de esta transformación demográfica\". A través de esta vía, que plantearán al Gobierno de España, a los grupos parlamentarios, a las autonomías y a los sindicatos, Foment pretende que se combata la \"asociación de la inmigración con inseguridad y delincuencia\" y que se ayude a las personas que lleguen \"al país a integrarse **'dignamente'** \". Ha pedido acometer este debate \"con urgencia\" y \"no ignorar las dificultades lógicas\" que supone acoger a personas de culturas diferentes, atender la sobrecarga de los servicios públicos y la saturación del acceso a la vivienda. \"Hoy los empresarios necesitamos de la inmigración para ser productivos y competitivos, por eso planteamos este gran pacto social. **Vamos a buscar la complicidad** con el fin de dar solución a un problema candente de las empresas\", ha asegurado. ## No rechaza una regularización, pero tampoco la respalda Existe, por tanto, una preocupación creciente en parte del empresariado por la brecha entre sus necesidades presentes y futuras y el [descontento de buena parte de la sociedad española]( con la inmigración. No obstante, Foment evita apoyar o rechazar políticas. \"Esa es la segunda fase de la discusión\", ha descartado Sánchez Llibre. Aunque fuentes de la organización inciden en que la patronal opina de políticas económicas, pero no de políticas migratorias, consolidando su puesta de perfil al hablar de regulaciones concretas. Un claro ejemplo es la postura sobre la **propuesta de[regularización]( de medio millón de inmigrantes**, iniciativa estancada en el **Congreso** desde abril de 2024 que, no obstante, el Gobierno podría efectuar por real decreto-ley. \"No opinamos sobre medidas concretas, hay que ver si la regularización puede contribuir y si el volumen propuesto es suficiente. Es un debate que se pretende abrir a partir del informe\", ha defendido Caro. Aunque también ha reconocido que \"la regularización puede facilitar que algunas personas que residen en España sigan contribuyendo a la economía\" en casos como agotamiento de un permiso de trabajo anterior, **el líder de Foment no ha opinado al respecto**. Las empresas no pueden contratar a personas en situación irregular, por lo que una tramitación masiva de expedientes les **ampliaría la oferta de mano de obra**. La regularización de 2005, la última, elevó la recaudación de impuestos y cotizaciones sociales y aumentó el empleo formal. Sin embargo, la encuesta realizada por **Opina 360** e incluida en el estudio de Foment da cuenta de lo polémica que resulta esta medida. El **31, 5%** de los encuestados están **a favor** de facilitar los trámites para regularizar a los inmigrantes y el 38, 4% considera más adecuado facilitar los permisos de trabajo, pero **limitar las concesiones de nacionalidad** española. Esta vía sería la de optar por estancias temporales sujetas a un empleo, pero sin derechos como el del voto, que solo pueden ejercer los ciudadanos con nacionalidad española. Además, un **25, 9%** de los encuestados considera que **se deberían restringir los visados** de entrada y las concesiones de asilo. Los porcentajes varían mucho según la autoubicación ideológica del encuestado: el 56, 5% de los que se sitúan en la izquierda están a favor de la regularización, el 27, 3% en el centro y el 9, 9% en la derecha. De hecho, en la derecha, la opción mayoritaria, con un 49, 2%, es la de restringir los visados. Patrones similares se encuentran en las **preguntas sobre la percepción de la inmigración** residente en el país. De hecho, la opción mayoritaria en los encuestados de derechas es \"no sabe/no contesta\" cuando se les pregunta por qué aspecto positivo consideran que es el principal de los extranjeros entre una lista de opciones, seguido de aportación a la economía. También creen, en un **48, 8%**, que **los inmigrantes aumentan la inseguridad**. El próximo miércoles, Foment y CEOE reunirán a una serie de personalidades y expertos, entre ellos expolíticos del **PP**, para presentar en abierto el pacto social planteado este jueves a la prensa, pero no se abordarán políticas concretas. La intensidad de la ola migratoria iniciada en **España** después de la pandemia ha coincidido con un **momento político de rechazo a la inmigración en todo el mundo**. El mayor ejemplo es **Trump**, que desde su vuelta a la **Casa Blanca** ha expulsado a miles de inmigrantes, lo cual está debilitando el mercado laboral estadounidense. No obstante, políticas de mayor control de fronteras y de limitación de la inmigración también se están produciendo en países donde gobiernan partidos de izquierda, como es el caso de [Reino Unido](",
+      "content_preview": "La intensidad de la ola migratoria iniciada en **España** después de la pandemia ha coincidido con un **momento político de rechazo a la inmigración en todo el mundo**. El mayor ejemplo es **Trump**, que desde su vuelta a la **Casa Blanca** ha expulsado a miles de inmigrantes, lo cual está debilitando el mercado laboral estadounidense. No obstante, políticas de mayor control de fronteras y de limitación de la inmigración también se están produciendo en países donde gobiernan partidos de izquierd..."
+    },
+    {
+      "processing_rank": 6,
+      "url_id": 11911,
+      "url": "https://www.elconfidencial.com/empresas/2025-12-05/netflix-negocia-exclusiva-warner-bros-compra-hbo-estudios-cine_4260943/",
+      "title": "Unión de plataformas de 'streaming': Netflix compra HBO Max a Warner por 72.000 M",
+      "source": "www.elconfidencial.com",
+      "category": "finanzas",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 504,
+      "archive_url": null,
+      "full_content": "05/12/2025 - 09: 29 Actualizado: 05/12/2025 - 13: 38 La unión de plataformas de _streaming_ se ha consumado. Warner Bros. Discovery, que había iniciado**[conversaciones exclusivas con Netflix]( para la venta de su plataforma de streaming (HBO Max)** y los estudios de cine y televisión, han concluido con éxito y el precio ofrecido ha sido de 72. 000 millones de dólares o, el equivalente, a 27, 75 dólares por cada acción de WBD. De este modo, **Netflix tomó la delantera respecto de Paramount y Comcast**, que también habían expresado su interés en la compañía dirigida por David Zaslav, que lanzó el pasado mes de octubre un proceso competitivo de licitación por sus activos. **Netflix habría presentado la oferta más alta por los estudios y el negocio de streaming de Warner Bros**. Discovery, además de ofrecer garantías de que seguirá permitiendo que las películas de Warner Bros se estrenen en cines, aunque un acuerdo podría ser difícil de aprobar, dado que combinaría dos de las principales plataformas de streaming de Estados Unidos. En este sentido, Bloomberg apunta que N**etflix ofrecería el pago de una indemnización de 5. 000 millones** de dólares (4. 287 millones de euros) en el caso de una ruptura del acuerdo si los reguladores no aprueban la transacción, que podría anunciarse en los próximos días. Antes del cierre de la venta, Warner Bros. Discovery, cuyo valor supera los 60. 000 millones de dólares (51. 452 millones de euros), **completará la escisión prevista de canales de cable, como CNN, TBS y TNT. ** De su lado, Paramount Skydance, compañía dirigida por David Ellison, hijo del cofundador de Oracle Larry Ellison, ha cuestionado la imparcialidad del proceso de licitación al considerar que Warner Bros. Discovery **estaría actuando en favor de un solo postor, ** en referencia a Netflix. \"Le escribimos en nombre de Paramount Skydance Corporation para expresar nuestra seria preocupación por la imparcialidad y la idoneidad del proceso de licitación para una posible fusión con Warner Bros. Discovery\", señalaban los abogados de Paramount Skydance en una carta remitida al consejero delegado de Warner Bros. Discovery (WBD), David Zaslav. A raíz de esta \"profunda preocupación\" por la integridad del proceso, Paramount **solicitó a WBD confirmar si ha designado un comité especial independiente compuesto por miembros desinteresados de su junt** a directiva para considerar las posibles transacciones y tomar una decisión final y, de no ser así, instaba a la empresa a que otorgue poder a dicho comité especial. \"Este parecería ser un paso importante en esta etapa, para garantizar la imparcialidad e impecabilidad del proceso de transacción y maximizar el valor de cualquier resultado que WBD determine perseguir\", concluyen en la carta. La unión de plataformas de _streaming_ se ha consumado. Warner Bros. Discovery, que había iniciado**[conversaciones exclusivas con Netflix]( para la venta de su plataforma de streaming (HBO Max)** y los estudios de cine y televisión, han concluido con éxito y el precio ofrecido ha sido de 72. 000 millones de dólares o, el equivalente, a 27, 75 dólares por cada acción de WBD.",
+      "content_preview": "05/12/2025 - 09: 29 Actualizado: 05/12/2025 - 13: 38 La unión de plataformas de _streaming_ se ha consumado. Warner Bros. Discovery, que había iniciado**[conversaciones exclusivas con Netflix]( para la venta de su plataforma de streaming (HBO Max)** y los estudios de cine y televisión, han concluido con éxito y el precio ofrecido ha sido de 72. 000 millones de dólares o, el equivalente, a 27, 75 dólares por cada acción de WBD. De este modo, **Netflix tomó la delantera respecto de Paramount y Com..."
+    },
+    {
+      "processing_rank": 7,
+      "url_id": 12304,
+      "url": "https://www.elmundo.es/economia/2025/12/05/6932df79e85ecef75f8b45be.html",
+      "title": "Garamendi echa en falta 'cultura del esfuerzo' y dice que \"el gran problema laboral en España es el absentismo\": se concentran \"los viernes y los lunes\"",
+      "source": "www.elmundo.es",
+      "category": "economia",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 653,
+      "archive_url": null,
+      "full_content": "Actualizado Viernes, 5 diciembre 2025 \\- 14: 37 El presidente de la CEOE, Antonio Garamendi, echa en falta **'cultura del esfuerzo'** para trabajar en sectores donde se necesitan \"miles\" de trabajadores como hostelería, construcción o transporte, y ha dicho que es una cuestión de \"actitud\" porque en el Estado hay tres millones de parados si se contabilizan \"de verdad\", según informa Europa Press. A su juicio, el \"gran problema\" laboral de España es **\"el elevado absentismo laboral existente\"** y ha resaltado que las bajas labores se concentran en lunes y viernes y que \"un millón y medio de personas faltan cada día al trabajo en el Estado\". Durante la apertura de la cumbre empresarial 'Liderando en incertidumbre' celebrada en Vitoria-Gasteiz, Garamendi ha realizado un análisis de la situación económica y ha reconocido que la economía española y vasca van \"bien\", pero que existen problemas de fondo que, a su juicio, no se atajan como es preciso. En este sentido, echa en falta en la sociedad 'cultura del esfuerzo' y ha recordado que en España hay tres millones de parados si se contabilizan \"de verdad\" pero, sin embargo, \"faltan miles de personas en la hostelería, miles de personas en la construcción, miles de personas en el transporte, y eso es un problema de actitud\", ha asegurado. Según ha precisado, se trata de empleos \"con sus convenios colectivos, donde **falta gente** \", y ha censurado que una parte de la sociedad defienda que no se puede \"traer gente de fuera que, por lo menos, querrán venir a trabajar\", y que la patronal reclama o que, desde determinados partidos se defienda una cultura de \"trabajar menos horas\". ## BAJAS LABORALES Garamendi ha trasladado que \"en España faltan 1. 600. 000 personas a trabajar todos los días cuando, el año pasado eran 1. 400. 000\". Y ha apuntado a la juventud, puesto que \"los menores de 35 años el año pasado han acumulado 9 millones de días sin trabajar. Sabemos que muchos de esos días **son los viernes y los lunes\". ** El líder de la patronal ha cifrado el coste de esta situación en **32. 000 millones de euros**, de los que 16. 000 millones son a las empresas, más el coste de la gente y de reposición. El presidente de la CEOE ha vuelto a criticar a la vicepresidenta y ministra de Trabajo, Yolanda Díaz, a la que ha acusado de meterles \"**la motosierra** \" al responsabilizarles de costes laborales como las bajas por cuestiones de salud mental. ## SITUACIÓN ECONOMÍA ESPAÑA En cuanto a los datos micro, ha recomendado detenerse a observar que \"cuando la gente va al **supermercado** a veces tiene problemas para llegar a fin de mes por los precios y ese es un problema que se está trasladando de lo privado todo a lo público\". En este sentido, ha recordado que desde la patronal están de acuerdo en **subir los salarios** para superar ese problema, pero que conviene detenerse y tener en cuenta que, para los empresarios, \"los costes salariales unitarios se han disparado\", y ha subrayado que la retención de la Seguridad Social es del trabajador y ha subido \"más del 65%\". Por ello, ha reiterado que las cotizaciones a la Seguridad Social deben ser vistas como parte del salario del trabajador y que los empresarios \"lo único que hacemos es poner en la Seguridad Social el dinero, pero que es suyo\". En este sentido, ha propuesto aplicar el sistema de los autónomos al conjunto de los asalariados para que \"pudiéramos hacer como ellos, para que Hacienda y la Seguridad Social hicieran lo que hace con ellos, que pudiéramos pagar el sueldo bruto para que la gente fuera consciente realmente del coste de las retribuciones\". \"No decimos que no hay que pagar impuestos, sino que sería más eficiente esa gestión si esa parte que está yendo a lo público, **fuera al bolsillo de los trabajadores\"**, ha concluido. * * *",
+      "content_preview": "Actualizado Viernes, 5 diciembre 2025 \\- 14: 37 El presidente de la CEOE, Antonio Garamendi, echa en falta **'cultura del esfuerzo'** para trabajar en sectores donde se necesitan \"miles\" de trabajadores como hostelería, construcción o transporte, y ha dicho que es una cuestión de \"actitud\" porque en el Estado hay tres millones de parados si se contabilizan \"de verdad\", según informa Europa Press. A su juicio, el \"gran problema\" laboral de España es **\"el elevado absentismo laboral existente\"** y..."
+    },
+    {
+      "processing_rank": 8,
+      "url_id": 12093,
+      "url": "https://www.elconfidencial.com/mercados/2025-12-05/inditex-ibex-fed-claves-semana-mercados_4261673/",
+      "title": "Inditex pone en órbita al Ibex e insonoriza las dudas: tres claves que movieron el mercado",
+      "source": "www.elconfidencial.com",
+      "category": "finanzas",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 1210,
+      "archive_url": null,
+      "full_content": "Las bolsas internacionales ponen fin a **una semana de lectura compleja**, en la que los inversores han adoptado [mayoritariamente una postura positiva]( aunque sin librarse de las dudas que se han ido haciendo presentes a lo largo de las últimas semanas. Con los inversores descontando los días para una nueva reunión de la Fed, han sido pequeños detalles los que han inclinado la balanza de las principales bolsas mundiales del lado de las ganancias, a pesar de algunas pequeñas **tensiones en los mercados de deuda. ** Una vez más, la nota más positiva la consigue el Ibex, que establece un nuevo máximo histórico a lomos de **Inditex**, [con una ganancia semanal del 1, 9%]( con la que da continuidad a un año de ganancias históricas, **ya al filo del 44%. ** En el resto de Europa, solo el Dax alemán se muestra capaz de seguir, de lejos, la estela del índice español, mientras que en **Wall Street** los avances, aunque limitados, permiten al S&P 500 **coquetear de nuevo con niveles récord. ** ## 1\\. Esperando a Powell. . . con un ojo en Japón La próxima semana, los inversores se enfrentarán una vez más a [una reunión trascendental de la Fed]( aunque en la que parece haber poco margen para la sorpresa. El dato del indicador PCE (la lectura de inflación favorita del banco central), conocido este viernes, no deparó ninguna sorpresa, con lo que deja **expedito el camino a un nuevo recorte de tipos** que el mercado tiene plenamente asumido. La clave, por tanto, vuelve a estar en las pistas que deje la institución que dirige **Jerome Powell** sobre su disposición a [seguir aliviando el precio del dinero]( en los próximos meses. Los datos conocidos en los últimos días no dejan nada claro si la economía norteamericana (y especialmente su mercado laboral) se está debilitando con la intensidad suficiente para que la Fed pueda dibujar una senda clara e indiscutible de nuevos recortes. Aunque, **sin evidencias aún de una amenaza inflacionaria** en la mayor economía del mundo, este resulta el camino más probable en el medio plazo. La gran incógnita es si llegará con la velocidad e intensidad suficiente para agradar a los inversores. Mientras, los inversores han tenido que lidiar con ciertas turbulencias en los mercados de deuda, que han tenido a Japón como epicentro. La perspectiva de una próxima subida de tipos en el país asiático ha elevado con fuerza las rentabilidades de sus bonos, que**escalan a máximos de casi dos décadas**, y arrastra consigo el resto de bonos occidentales (el español firma su mayor repunte de rentabilidades desde julio). Una de las grandes preocupaciones que enfrentan los inversores es la posibilidad de que se desate un movimiento similar al que [se desató en el verano de 2024, ]( cuando las señales de subida de tipos en Japón provocaron **un súbito colapso en los mercados**, ante las carreras de los inversores para cerrar sus operaciones de 'carry trade' y recomprar yenes. ## 2\\. ¿Quién se fía de la IA? Después de las tensiones que golpearon a las grandes tecnológicas durante buena parte de noviembre, la calma parece haber regresado al parqué, con valores como [Nvidia recuperando algo del terreno perdido]( y **Alphabet** rentabilizando su posición de nuevo caballo ganador de la industria. Sin embargo, algunas noticias mantienen al mercado en posición de guardia, con el temor persistente a que cualquier desliz haga tambalearse todo el ecosistema. En este sentido, las informaciones que apuntan a que **Microsoft** podría haber recortado [sus perspectivas de ventas de IA ]( supuesto una nueva señal de alerta que, si bien no ha provocado un tumulto generalizado, sí se observa como **una llamada a la prudencia. ** En este contexto, la próxima semana, casi al mismo tiempo que se conocerá la decisión de la Fed, los inversores se enfrentarán a [las cuentas de Oracle]( una de las empresas del entorno IA que más dudas ha enfrentado en las últimas semanas, por las elevadas inversiones comprometidas en cuestión de IA y su **extrema dependencia de OpenAI** en este segmento. Tras retroceder alrededor de un 35% desde sus máximos, el listón para la compañía parece actualmente bastante bajo, lo que podría facilitar que sus cuentas agraden al mercado y supongan **un refuerzo a la temática de la IA**. Sin embargo, el caso reciente de Nvidia evidencia que incluso unos números por encima de las previsiones podrían ser insuficientes, si no contienen los elementos que vienen demandando los inversores (menor concentración de clientes, señales de rentabilidad de las inversiones, etc. ). ## 3\\. Inditex se viste de gala y el sector autos se enciende Mientras la IA parece acapararlo todo en Wall Street, Europa encuentra sus propias vías para apuntar al alza y prolongar un año más que positivo. Unas buenas cifras del sector servicios (que alcanza **sus mejores datos en 30 meses**) y un mejor dato de crecimiento han servido en la última semana para reforzar la tesis de inversión en una región que, aunque a trompicones, parece encaminarse hacia una salida de su crisis. Una idea que, sin embargo, se ve a menudo amenazada por las distintas vulnerabilidades que asolan la región. Las esperanzas de una próxima paz en Ucrania se ven hoy algo más alejadas que hace solo una semana e, incluso, las amenazas del presidente ruso, **Vladímir Putin**, a Europa han recordado a los inversores que el viejo continente es hoy el escenario de [una delicada batalla geopolítica]( en la que las posibilidades de una escalada no son, ni mucho menos, insignificantes. Y los problemas que ha enfrentado**el Gobierno alemán** para sacar adelante --este viernes, finalmente, lo consiguió-- su reforma de las pensiones han recordado que los planes políticos de refuerzo económico de la región penden habitualmente de **una situación política cada vez más enrevesada**. Todo esto en un mercado que, con las ganancias acumuladas en el año, cotiza actualmente a unas valoraciones que no ofrecen mucho margen para errores, según la estratega de Citi Beata Manthey. Pese a esto, los inversores han acabado encontrando motivos para la confianza gracias a unos pocos sectores que se han convertido en motor de las ganancias semanales. Destaca, especialmente, el sector de automoción, que ha firmado su mejor semana en ocho meses, apoyado en las expectativas de[ próximos cambios regulatorios]( en EEUU y Europa que alivien una situación de elevadas tribulaciones. El respaldo de **Bank of America** ha sido otro de los trampolines de una industria en la que destacan **Stellantis**, con ganancias superiores al 13%, y las alemanas **BMW**, **Porsche** y **Volkswagen**, que firman alzas entre el 9, 6 y el 8, 5%. También ha sido una semana de sólidas ganancias para la industria textil, aunque en este caso quepa atribuirlas casi en exclusiva a Inditex, que ha conquistado al mercado con unas cuentas que vuelven a evidenciar que sus capacidades de[ crecimiento sin merma de sus márgenes]( la sitúan más cerca del sector del lujo que de sus competidores de comercio minorista. Con ganancias semanales del 13, 7% (su mejor registro en cinco años), la matriz de **Zara** alcanza un nuevo máximo histórico —en registros ajustados por dividendo— y **engorda su valoración en más de 20. 000 millones de euros**, alcanzando nuevamente el nivel de los 170. 000 millones de euros de capitalización.",
+      "content_preview": "Las bolsas internacionales ponen fin a **una semana de lectura compleja**, en la que los inversores han adoptado [mayoritariamente una postura positiva]( aunque sin librarse de las dudas que se han ido haciendo presentes a lo largo de las últimas semanas. Con los inversores descontando los días para una nueva reunión de la Fed, han sido pequeños detalles los que han inclinado la balanza de las principales bolsas mundiales del lado de las ganancias, a pesar de algunas pequeñas **tensiones en los ..."
+    },
+    {
+      "processing_rank": 9,
+      "url_id": 12060,
+      "url": "https://www.elconfidencial.com/mercados/2025-12-05/argentina-regresa-a-los-mercados-globales_4261337/",
+      "title": "Argentina regresa a los mercados globales con un bono en dólares con un interés del 6,5%",
+      "source": "www.elconfidencial.com",
+      "category": "finanzas",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 427,
+      "archive_url": null,
+      "full_content": "El ministro de Economía de [Argentina]( **Luis Caputo**, anunció este viernes la emisión de **un bono en dólares** con vencimiento a cuatro años y **un interés del 6, 5%**, con el objetivo de cubrir parte de los vencimientos de deuda que el país debe afrontar en enero sin afectar a las reservas del Banco Central. \"**Vamos a salir con un bono a 4 años**, a noviembre de 2029, con un cupón. Es un dato importantísimo por lo que se viene hablando de la acumulación de reservas. La idea es pagar los vencimientos de enero sin que bajen las reservas\", señaló Caputo en una entrevista con la cadena de televisión América 24. El nuevo instrumento, que será emitido bajo legislación[ argentina]( permitirá al Tesoro cubrir parcialmente**los pagos de deuda externa** de enero por alrededor de 4. 300 millones de dólares. El llamado a licitación del **BONAR 2029N** fue oficializado por el **Ministerio de Economía**, que aclaró que el bono pagará el capital íntegro al vencimiento, previsto para el 30 de noviembre de 2029. La tasa final dependerá del precio de colocación determinado en la subasta, que se realizará **el próximo miércoles 10 de diciembre**, mientras que la liquidación de la operación será el viernes 12 del mismo mes. \"En un contexto de fuerte compresión de las tasas de interés de los bonos en dólares fruto del resultado electoral y del sostenido desempeño del programa económico, **el Tesoro busca ampliar sus objetivos financieros** para cubrir los vencimientos de deuda en dólares sin afectar las reservas netas del BCRA\", destacó la Secretaría de Finanzas en un comunicado oficial. Opinión El presidente [Javier Milei ]( la medida a través de X: \"**Volvimos al mercado de capitales con un bono a 2029 con cupón del 6, 5% bajo ley local** \". Caputo destacó que el país no pretende cubrir la totalidad de los vencimientos de enero únicamente con esta colocación, sino combinarla con **operaciones de reposición con bancos internacionales. ** Argentina, cuya prima de riesgo es actualmente de**634 puntos básicos**, no emite deuda en los mercados internacionales desde 2018 por las altas tasas de interés que debería convalidar. El Banco Central de Argentina ha tenido dificultades para acumular reservas monetarias, que actualmente**rondan los 41. 882 millones. ** El ministro de Economía de [Argentina]( **Luis Caputo**, anunció este viernes la emisión de **un bono en dólares** con vencimiento a cuatro años y **un interés del 6, 5%**, con el objetivo de cubrir parte de los vencimientos de deuda que el país debe afrontar en enero sin afectar a las reservas del Banco Central.",
+      "content_preview": "El ministro de Economía de [Argentina]( **Luis Caputo**, anunció este viernes la emisión de **un bono en dólares** con vencimiento a cuatro años y **un interés del 6, 5%**, con el objetivo de cubrir parte de los vencimientos de deuda que el país debe afrontar en enero sin afectar a las reservas del Banco Central. \"**Vamos a salir con un bono a 4 años**, a noviembre de 2029, con un cupón. Es un dato importantísimo por lo que se viene hablando de la acumulación de reservas. La idea es pagar los ve..."
+    },
+    {
+      "processing_rank": 10,
+      "url_id": 12019,
+      "url": "https://www.elconfidencial.com/mercados/2025-12-05/inocsa-triunfa-en-su-opa-por-catalana-occidente_4260996/",
+      "title": "Inocsa triunfa en su opa por Catalana Occidente y la sacará de bolsa",
+      "source": "www.elconfidencial.com",
+      "category": "finanzas",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 396,
+      "archive_url": null,
+      "full_content": "**Inocsa**, una sociedad que agrupa a accionistas ligados a **la familia Serra** y que controla un 62% de [la aseguradora ]( Occidente**, ha logrado un apoyo a su opa del 94, 27% de las acciones a las que se dirigía la oferta, por lo que pasará a controlar otro 35, 79% adicional de la aseguradora y podrá sacarla de bolsa. La Comisión Nacional del Mercado de Valores (CNMV), el supervisor bursátil español, ha dado a conocer este viernes el resultado de la opa lanzada por la familia Serra para hacerse con el control absoluto de la aseguradora y excluir a la compañía de bolsa, **una oferta que lanzó el 28 de abril. ** Inocsa **controla un 62, 03% del capital social** de la [aseguradora ]( la opa se dirigía al 37, 97% del capital que aún no controlaba del grupo con el fin de sacar a la compañía de la bolsa. Inocsa había fijado en **15, 67 millones de acciones** el número mínimo de títulos del [Grupo Catalana Occidente ]( que debía aprobar la opa voluntaria que ha formulado sobre la compañía aseguradora para que se cumpliera la condición de aceptación mínima. Finalmente, **la opa ha sido aceptada por 42, 95 millones de acciones**, un 94, 27% del total, y representativas de un 35, 79% del capital social de [la aseguradora. ]( En consecuencia, la oferta pública **\"ha tenido resultado positivo\"**, ha concluido la CNMV, \"al haber sido el número de acciones comprendidas en las declaraciones de aceptación superior al límite mínimo fijado por el oferente para su efectividad\". La oferta ha sido aceptada en la modalidad de efectivo por 38 millones de acciones de Grupo Catalana Occidente y en la modalidad de canje **por 4, 94 millones de acciones. ** El**precio ofrecido era de 49, 75 euros por acción** y, alternativamente, se ofrecía un canje de 1 nueva acción de clase B de Inoc SA por cada 43, 9446 acciones de [Catalana Occidente]( para un máximo de 8 millones de acciones de la sociedad afectada. **Inocsa**, una sociedad que agrupa a accionistas ligados a **la familia Serra** y que controla un 62% de [la aseguradora ]( Occidente**, ha logrado un apoyo a su opa del 94, 27% de las acciones a las que se dirigía la oferta, por lo que pasará a controlar otro 35, 79% adicional de la aseguradora y podrá sacarla de bolsa.",
+      "content_preview": "**Inocsa**, una sociedad que agrupa a accionistas ligados a **la familia Serra** y que controla un 62% de [la aseguradora ]( Occidente**, ha logrado un apoyo a su opa del 94, 27% de las acciones a las que se dirigía la oferta, por lo que pasará a controlar otro 35, 79% adicional de la aseguradora y podrá sacarla de bolsa. La Comisión Nacional del Mercado de Valores (CNMV), el supervisor bursátil español, ha dado a conocer este viernes el resultado de la opa lanzada por la familia Serra para hace..."
+    },
+    {
+      "processing_rank": 11,
+      "url_id": 11940,
+      "url": "https://www.elconfidencial.com/mercados/2025-12-05/bolsa-ibex-35-hoy-en-directo-mercados_4260885/",
+      "title": "Bolsa e Ibex 35 hoy, en directo | Wall St. cierra al alza por cuarto día tras datos de inflación moderados",
+      "source": "www.elconfidencial.com",
+      "category": "finanzas",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 673,
+      "archive_url": null,
+      "full_content": "Las bolsas europeas se tiñen de rojo (excepto la alemana). A pesar de haber cotizado en verde la mayor parte de la sesión, los mercados europeos se han girado finalmente hacia el signo negativo. Así, el**Ibex 35**, que ha logrado**renovar sus máximos históricos** a lo largo de la mañana, echa el freno a una espectacular racha de nueve días consecutivos de subidas, una de las mejores del año. La caída del índice nacional ha sido hoy del 0, 35%, lo que le deja ubicado en los **16. 688 puntos**(ha llegado a superar los 16. 770 durante la sesión). No obstante, a pesar de no haber conseguido el pleno alcista, despide una semana cuyo balance resulta claramente positivo al ganar un 1, 9%. Entre los principales lastres del selectivo español se encuentran hoy **Logista**(-3, 06%), **Naturgy**(-2, 05%) y **Solaria**(-1, 69%), con la banca cerrando también una desafortunada sesión, siendo **CaixaBank**(-1, 59%), **Sabadell**(-1, 25%) y **BBVA**(-1, 15%) los más castigados del sector. En el lado contrario y en verde, han cerrado hoy valores como **Puig**, que gana un 1, 61%, así como **Fluidra**(+1, 27%) y **Redeia** (+1, 2%), junto con algunos de los pesos pesados: **Telefónica**(+0, 66%) e **Iberdrola**(+0, 25%). En el resto de plazas europeas, sobresale el **Dax alemán, ** que se salva de las caídas y rebota un 0, 6%, en una buena jornada para a BMW (+3, 5%), en un contexto en el que se ha aprobado la reforma de las pensiones en Alemania que aumentará el gasto y que permite esquivar al **Gobierno de Merz** la amenaza de una crisis. Por otra parte, el **Cac francés** pierde un ligero 0, 1% y el **Mib italiano, ** un 0, 2%. Todo esto a pesar de que ha sido una jornada de buenos datos macroeconómicos en Europa. [El PIB de la eurozona]( aceleró más de lo previsto su crecimiento en el tercer trimestre, hasta el 0, 3%. En contraste, los índices de **Wall Street cierran al alza, ** aunque saldan la semana con ganancias muy leves. Los inversores han digerido hoy el dato del **PCE de EEUU, ** que ha cumplido con lo previsto. El deflactor de consumo privado se ha mantenido en septiembre en el 2, 8% interanual, según la Oficina de Análisis Económico del Departamento de Comercio. Además, la inflación subyacente ha sorprendido con una mejora de previsión del mercado, tras registrar un descenso de una décima en la tasa interanual, que se ha reducido al 2, 8%. Este dato llega días antes de que **la Fed** lleve a cabo su reunión y decisión de tipos de interés, prevista para el próximo miércoles. En ella, podría acometer una rebaja de 25 puntos básicos, algo que el mercado da ya por descontado. * **Inocsa**, una sociedad que agrupa a accionistas ligados a la familia Serra y que controla un 62% de la aseguradora **Catalana Occidente**, ha logrado un apoyo a su opa del 94, 27% de las acciones a las que se dirigía la oferta, por lo que pasará a controlar otro 35, 79% adicional de [la aseguradora]( y podrá sacarla de bolsa. * Las acciones de **OHLA** han llegado a subir un 4% en la sesión bursátil de este viernes, después de que un tribunal haya rebajado de **24 millones a 900. 000 euros el pago que OHLA** y un socio tenían que abonar por las obras del hospital de Sidra, en Doha. A cierre de sesión, la cotización de la constructora se ha estabilizado en el 1, 09%. * Las acciones de **Moore Threads Technology, ** el fabricante chino de unidades de procesamiento gráfico (GPU) fundado en 2020 por un exempleado de Nvidia, suben un 425% en su debut este viernes en la Bolsa de Shanghái. * El ministro de Economía de Argentina, **Luis Caputo**, anunció este viernes la emisión de un****[bono en dólares]( con vencimiento**a cuatro años y un interés del 6, 5%**, con el objetivo de cubrir parte de los vencimientos de deuda que el país debe afrontar en enero sin afectar a las reservas del Banco Central.",
+      "content_preview": "Las bolsas europeas se tiñen de rojo (excepto la alemana). A pesar de haber cotizado en verde la mayor parte de la sesión, los mercados europeos se han girado finalmente hacia el signo negativo. Así, el**Ibex 35**, que ha logrado**renovar sus máximos históricos** a lo largo de la mañana, echa el freno a una espectacular racha de nueve días consecutivos de subidas, una de las mejores del año. La caída del índice nacional ha sido hoy del 0, 35%, lo que le deja ubicado en los **16. 688 puntos**(ha ..."
+    },
+    {
+      "processing_rank": 12,
+      "url_id": 11963,
+      "url": "https://www.elconfidencial.com/motor/2025-12-03/por-que-cuesta-mas-tener-coche_4258437/",
+      "title": "Hasta un 27% más caro: por qué cuesta más ahora tener un coche",
+      "source": "www.elconfidencial.com",
+      "category": "economia",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 756,
+      "archive_url": null,
+      "full_content": "Según el [nuevo libro blanco]( de **Arval Mobility Observatory**, entre 2020 y 2025 factores como el **combustible** o la **electricidad**, el **mantenimiento**, las **reparaciones**, **neumáticos**, **seguros** e incluso la **financiación** han experimentado incrementos simultáneos poco habituales, **influyendo en el precio final de los coches**. El informe describe el periodo como una “tormenta perfecta”, con subidas concurrentes en todos los frentes. En España, las asociaciones del sector también registran incrementos sostenidos en [precio medio de vehículo]( **mantenimiento y seguros**, en línea con las tendencias europeas analizadas en este estudio. El informe señala que [los precios de los vehículos nuevos]( crecido un 19% en solo cinco años**. No es un efecto aislado: responde a una mezcla de inflación, cambios en la oferta de modelos y una transición industrial que encarece la tecnología básica de cada vehículo. Los fabricantes han redirigido también su porfolio hacia SUV, [híbridos enchufables]( y eléctricos, impulsados por normas de emisiones cada vez más estrictas. **Modelos todos estos más caros de producir** y, por tanto, más caros de vender. A ello se han sumado las disrupciones de la cadena de suministro pospandemia y un **aumento del coste de componentes críticos**, **especialmente las baterías**. El **mercado de ocasión**, según Arval, tampoco ha actuado como válvula de escape. Tras un pico del 44, 5% entre 2020 y 2022, los precios han bajado ligeramente, pero siguen **un 18, 5% por encima de 2020**. ## Qué está incrementando el precio de los coches El combustible sigue siendo otro de los grandes motores del gasto, ya que **puede representar hasta el 30% del TCO de un[coche de combustión]( Entre tensiones geopolíticas, volatilidad energética y crisis de suministros, **el coste medio de carburantes ha subido un 32% desde 2020. ** De esta forma, un conductor que gastase 1. 000 euros en gasolina hace cinco años hoy roza los 1. 320 euros para recorrer lo mismo. La [electrificación]( tampoco se ha quedado al margen. La electricidad ha sido incluso más volátil: en la Unión Europea, **los precios han aumentado de media un 80%** para empresas y un 70% para consumidores domésticos entre 2020 y 2024. Cargar un eléctrico sigue siendo más barato que repostar gasolina o diésel, pero la brecha ya no es tan amplia como antes. Por su parte, **la factura del taller se ha encarecido un 29%**. La causa no es solo la inflación: los coches son cada vez más complejos, integran más electrónica, sensores y funciones avanzadas, lo que eleva la mano de obra y la especialización. Una [factura de taller]( de 600 euros en 2020 equivaldría hoy a unos 770 euros. El informe sitúa el aumento de **neumáticos** **y seguros** también en torno al 27%. En el primer caso, influye el aumento de costes de materias primas y transporte; en el segundo, el incremento del valor medio de los vehículos y la subida de los costes de reparación. La subida del TCO no es coyuntural ni depende de un solo factor: es el resultado de un cambio profundo en la industria, en la energía y en la [tecnología del automóvil]( La movilidad costará más en los próximos años y **la clave estará en gestionar bien qué se compra, cómo se usa y cómo se financia**. El estudio no solo cuantifica el problema, sino que arroja también algo de luz a esta situación: propone **distintas palancas de control** válidas para quien gestiona una flota y para cualquier conductor que quiera reducir el coste real de moverse. Primero, **elegir bien el coche**. Seleccionar un vehículo adecuado al uso evita pagar de más. Muchos [SUV]( por ejemplo, son más caros de comprar y costosos de mover que berlinas equivalentes. Asimismo, los **contratos de renting o leasing más largos**, especialmente de 60 meses, permiten reducir cuotas y TCO, sobre todo en eléctricos y respecto a los arrendamientos de 36 meses. Igualmente, el **comportamiento del conductor** influye en el 60% de los componentes del TCO. Una formación en conducción eficiente y un seguimiento de buenos hábitos al volante reducen el consumo, desgaste y averías en el vehículo. Por último, [en flotas electrificadas]( y en hogares con vehículos eléctricos (BEV) o híbridos enchufables (PHEV), una **estrategia inteligente de recarga** reduce sustancialmente el coste energético. Según el [nuevo libro blanco]( de **Arval Mobility Observatory**, entre 2020 y 2025 factores como el **combustible** o la **electricidad**, el **mantenimiento**, las **reparaciones**, **neumáticos**, **seguros** e incluso la **financiación** han experimentado incrementos simultáneos poco habituales, **influyendo en el precio final de los coches**. El informe describe el periodo como una “tormenta perfecta”, con subidas concurrentes en todos los frentes.",
+      "content_preview": "Según el [nuevo libro blanco]( de **Arval Mobility Observatory**, entre 2020 y 2025 factores como el **combustible** o la **electricidad**, el **mantenimiento**, las **reparaciones**, **neumáticos**, **seguros** e incluso la **financiación** han experimentado incrementos simultáneos poco habituales, **influyendo en el precio final de los coches**. El informe describe el periodo como una “tormenta perfecta”, con subidas concurrentes en todos los frentes. En España, las asociaciones del sector tam..."
+    },
+    {
+      "processing_rank": 13,
+      "url_id": 11989,
+      "url": "https://blogs.elconfidencial.com/espana/por-si-acaso/2025-12-05/sobrecoste-electricidad-renovables-tarifa-1hms_4259998/",
+      "title": "El mercado frente a la intervención progresista: una historia eléctrica",
+      "source": "www.elconfidencial.com",
+      "category": "economia",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 1198,
+      "archive_url": null,
+      "full_content": "El pasado siete de noviembre se aprobó la propuesta de orden ministerial que regula**las ayudas a la generación eléctrica** sujeta al régimen especial que denominamos \"RECORE\" (Renovables, Cogeneración y Residuos). En el año 2026, **las facturas eléctricas** que pagaremos empresas y consumidores incluirán, en conjunto, un cargo de 5. 908 millones de euros. Si a esta cantidad le sumamos algo más de 2. 000 millones correspondientes al pago de la anualidad del [déficit de tarifa]( el sobrecoste a incluir en la factura eléctrica superará los 8. 000 millones. Para poner esta cifra en contexto, el valor de la electricidad vendida en 2024 fue de 12. 652 millones. En resumen: [ la electricidad ]( vamos a pagar**tendrá un sobrecoste del orden del 60%**. Para llegar al precio final, aún habrá que sumarle el coste del transporte y la distribución de electricidad -los llamados peajes- y, por supuesto, los impuestos. El origen de esta historia es conocido. El Gobierno de**Rodríguez Zapatero** decidió en 2007 garantizar a [las inversiones en renovables]( todavía en los inicios de su desarrollo tecnológico, un retorno del 9% durante veinticinco años, **sin considerar la inversión unitaria, ** es decir, cuanto costaba el megavatio instalado, y sin limitar **ni el importe** en euros de la subvención total **ni la cantidad de megavatios** instalados al amparo de este sistema de ayudas. Las inversiones se dispararon, y cuando el Gobierno comenzó a tomar conciencia de la magnitud de las cifras, estableció un plazo temporal a la vigencia del sistema, sin apenas resultados. Los[ paneles solares]( venían en avión desde China: el coste no era relevante dado que su retribución estaba garantizada. El **incremento de costes** que este sistema de ayudas supuso se incluyó en la tarifa eléctrica, pero el Gobierno decidió hacer trampas en el solitario: se incrementaban los costes, pero**se congelaba la tarifa**. El resultado fue el conocido déficit de tarifa. El Gobierno de **Mariano Rajoy** tuvo que hacerse cargo del problema. Titulizó el déficit de tarifa acumulado, que aún estamos pagando -hasta 2027- en sucesivas anualidades. Reequilibró el sistema [con subidas de precios e impuestos]( y recortó las ayudas a las renovables, con la consiguiente **cascada de reclamaciones judiciales** internacionales, que aún hoy colean, más de diez años después. De esta historia, que aún sufrimos, pueden extraerse varias lecciones. La primera es que por muy \"progresistas\" que fueran las renovables en la primera década de este siglo o [el hidrógeno \"verde\"]( ahora, todas las nuevas tecnologías necesitan tiempo para consolidarse **como una alternativa real**. Pueden funcionar, pero su coste es superior al de otras alternativas existentes. Su \"disponibilidad\" desde un punto de vista económico, es limitada. En términos más radicales, lo que no es rentable no está disponible, porque**nadie invierte para perder dinero. ** La segunda lección es que si, pese a lo que nos dice la primera lección, se quiere apoyar el despliegue de [una tecnología emergente]( el apoyo debe ser tasado, limitado en su volumen económico. Si, además, esta segunda lección se quiere aprobar con nota, el apoyo económico a una tecnología emergente debe figurar en los**Presupuestos del Estado**. No tiene sentido obligar a los consumidores de electricidad a pagar por algo que **no está claro que funcione** o, si lo hace, es a un coste superior a otras alternativas disponibles. Opinión TE PUEDE INTERESAR José Carlos Díez La tercera, última, y quizás más importante lección, es que el resultado de estas intervenciones suele ser, en el mejor de los casos, una victoria pírrica. El [desarrollo de la energía fotovoltaica ]( España es elocuente. Antes de las subvenciones del Gobierno de Zapatero, la implantación de plantas fotovoltaicas en el sistema eléctrico peninsular**era prácticamente inexistente**. En 2006, había 119 megavatios, que pasaron a 594 en 2007 y a 3. 205 en 2008, gracias al sistema de ayudas. Diez años después la potencia fotovoltaica instalada era de 4. 526 megavatios -algo más de 1. 000 megavatios más en diez años-. Desde entonces, **la potencia fotovoltaica se dispara, ** hasta alcanzar los 38. 455 a finales de 2025, una media de 4. 800 megavatios anuales durante los últimos siete años. La razón del crecimiento acelerado de los últimos años**no es ningún sistema de ayudas**. Simplemente, la tecnología fotovoltaica **ha madurado**, ha reducido sus costes hasta convertirse en la forma más barata de producir electricidad. [ El mercado ha hecho el resto]( El problema para los consumidores españoles es que el coste medio de los megavatios fotovoltaicos desarrollado con el sistema de ayudas de Zapatero, pese a la rebaja posterior del PP, **estará por encima de los 200 euros** por megavatio hora, mientras que el precio de los megavatios hora producidos sin ayudas, con[ inversiones libremente decidida]( por los distintos agentes del mercado, se prevé que el año que viene se sitúe **entre los 25 y los 35 euros** por megavatio hora. La diferencia es el coste del progresismo que soportaremos hasta bien entrada la década que viene. Tampoco este esfuerzo nos ha servido mucho en términos de volumen. Todos los megavatios fotovoltaicos desarrollados gracias a las ayudas hace quince años son, en números redondos, **los que hoy instalamos en un año. ** Ahora, nuestro problema más acuciante es que la potencia instalada renovable **carece de capacidad de almacenamiento, ** lo que empuja los precios a la baja. Si los pronósticos sobre el [precio capturado de la fotovoltaica]( se cumplen, es muy probable que el ritmo inversor se detenga. [Las baterías]( seguirán bajando de precio, con lo que antes o después **se producirá un incremento notable** de su desarrollo. En todo caso, el mercado es, como hemos visto, mejor asignador de recursos que la intervención administrativa. La cuestión que el mercado no puede resolver, porque no existe, es el desarrollo de **las redes de transporte y distribución**. Sólo hay una red que llega a cada cliente y su coste **ha de estar regulado. ** Lo que no se puede olvidar es que toda regulación tiene que tener un objetivo. En el caso que nos ocupa, debe ser fomentar la inversión. Se supone que estamos inmersos en [un proceso de electrificación]( que debe, pese a las renuencias del progresismo oficial, i**ncrementar la demanda de electricidad**. Sería bueno que alguien pudiera**explicarnos qué elementos** de la nueva regulación, propuesta para los próximos seis años, incentiva el proceso inversor, imprescindible para cualquier incremento de demanda. El pasado siete de noviembre se aprobó la propuesta de orden ministerial que regula**las ayudas a la generación eléctrica** sujeta al régimen especial que denominamos \"RECORE\" (Renovables, Cogeneración y Residuos). En el año 2026, **las facturas eléctricas** que pagaremos empresas y consumidores incluirán, en conjunto, un cargo de 5. 908 millones de euros. Si a esta cantidad le sumamos algo más de 2. 000 millones correspondientes al pago de la anualidad del [déficit de tarifa]( el sobrecoste a incluir en la factura eléctrica superará los 8. 000 millones. Para poner esta cifra en contexto, el valor de la electricidad vendida en 2024 fue de 12. 652 millones. En resumen: [ la electricidad ]( vamos a pagar**tendrá un sobrecoste del orden del 60%**. Para llegar al precio final, aún habrá que sumarle el coste del transporte y la distribución de electricidad -los llamados peajes- y, por supuesto, los impuestos.",
+      "content_preview": "El pasado siete de noviembre se aprobó la propuesta de orden ministerial que regula**las ayudas a la generación eléctrica** sujeta al régimen especial que denominamos \"RECORE\" (Renovables, Cogeneración y Residuos). En el año 2026, **las facturas eléctricas** que pagaremos empresas y consumidores incluirán, en conjunto, un cargo de 5. 908 millones de euros. Si a esta cantidad le sumamos algo más de 2. 000 millones correspondientes al pago de la anualidad del [déficit de tarifa]( el sobrecoste a i..."
+    },
+    {
+      "processing_rank": 14,
+      "url_id": 12246,
+      "url": "https://www.elmundo.es/economia/dinero-inversion/2025/12/05/6931a99fe4d4d8ff2b8b45b1.html",
+      "title": "Huida histórica de la bolsa estadounidense: los inversores españoles registran las mayores salidas de fondos del siglo",
+      "source": "www.elmundo.es",
+      "category": "finanzas",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 722,
+      "archive_url": null,
+      "full_content": "Actualizado Viernes, 5 diciembre 2025 \\- 01: 25 EEUU, el emblema del capitalismo y del mercado libre, viene protagonizando este año titulares difíciles de creer en un tiempo anterior a la _era trumpist_ a. Con el susto olvidado ya, la primavera de 2025 pasará a la historia por la crisis de credibilidad sin precedentes generada por la dialéctica de un presidente de EEUU. Entre marzo y abril, Donald Trump anunció aranceles a buena parte de los países del mundo, con tasas iniciales que rozaron la hipérbole, pero que derivaron en una caída de su divisa, de la bolsa americana (incluida la tecnología) e inyectaron una gran incertidumbre en las previsiones de económicas. Esto generó un cambio de sentimiento entre los inversores europeos que empezaron a regresar a casa -a Europa-, y se empezó a hablar de la necesidad de diversificar y de restar peso a la tecnología estadounidense dentro de las carteras. A menos de un mes para cerrar el año, **los fondos de bolsa estadounidense encajan el volumen más alto de reembolsos de todo el siglo XXI. ** Con datos de Inverco a cierre de noviembre, los fondos de renta variable de EEUU registraron salidas netas por un importe de 1. 773 millones de euros en el acumula de 2025. **Es la primera vez en 8 años que sale más dinero del que entra en estos productos. ** Para ponerlo en contexto, hay que entender que solo el dinero que se ha esfumado de los fondos estadounidenses equivale a la mitad de todo el dinero que hay invertido en fondos de bolsa española. Detrás de esta salida de fondos de bolsa estadounidense hay diferentes razones. Una de ellas es, sin duda, [ la gran rotación de activos ]( se inició la pasada primavera ante la volatilidad que introdujo en la ecuación Donald Trump, pero no es el único motivo. El desplome que protagoniza el dólar frente al resto de divisas también ha propiciado que muchos inversores nacionales deshagan sus posiciones. En su cruce frente al euro, la **divisa estadounidense registra a estas alturas del año su mayor caída de los últimos once ejercicios, por encima del 11%**. Por otro lado, a nadie escapa que las bolsas estadounidenses cotizan en máximos históricos gracias al tirón de las grandes tecnológicas estadounidenses lo que provoca cierto vértigo ante las valoraciones que alcanzan algunas cotizadas, como Nvidia (en los 4, 4 billones de dólares de capitalización), Apple (por encima de los 4 billones) o Microsoft (en 3, 55 billones de valor de mercado). La última vez que la bolsa estadounidense sufrió una corrección fuerte fue en el año 2022, cuando el S&P 500 cedió un 14, 4%. Y lo mismo ha sucedido con el Nasdaq 100, índice centrado en la tecnología, que salvo la excepción del 22, lleva años subiendo a ritmos de doble dígito, por encima del 33% en 2024 y del 49% en 2023 y ha firmado revalorizaciones superiores al 35% cinco de los últimos seis años. Tras tanta ganancia en bolsa, y ante [el temor de que explote una posible burbuja en la IA]( hay quien ha optado por recoger lo sembrado y vender. Por contra, los fondos que invierten en bolsa europea recibieron entradas netas (una vez descontadas las desinversiones) por valor de 173 millones de euros, algo que no sucedía desde 2021 y que pone fin a una tendencia de salidas de capitales hacia EEUU y otras regiones que se ha prolongado por un trienio. Esto quiere decir que **solo ha retornado el 9% de todo el dinero que salió de los fondos desde 2022**. En el balance anual se observa cómo**los fondos que invierten en bolsa española siguen sin levantar cabeza. ** Ni siquiera en un año histórico de ganancias, superiores al 40% para el Ibex 35, los inversores patrios han querido entrar en el producto nacional. El saldo neto arroja salidas de dinero de 21 millones de euros, lo que convierte a 2025 en el cuarto año consecutivo en el que los reembolsos son superiores a las entradas de dinero. De hecho, de los 1. 000 millones de euros que han aumentado su patrimonio los fondos de renta variable nacional podría decirse que ni un solo euro ha venido de entradas de dinero nuevo, sino que todo ha sido fruto de la revalorización del mercado. * * *",
+      "content_preview": "Actualizado Viernes, 5 diciembre 2025 \\- 01: 25 EEUU, el emblema del capitalismo y del mercado libre, viene protagonizando este año titulares difíciles de creer en un tiempo anterior a la _era trumpist_ a. Con el susto olvidado ya, la primavera de 2025 pasará a la historia por la crisis de credibilidad sin precedentes generada por la dialéctica de un presidente de EEUU. Entre marzo y abril, Donald Trump anunció aranceles a buena parte de los países del mundo, con tasas iniciales que rozaron la h..."
+    },
+    {
+      "processing_rank": 15,
+      "url_id": 12096,
+      "url": "https://www.elconfidencial.com/economia/2025-12-05/lorena-alvarez-economista-cuatro-perfiles-financieros-ultimos-en-hacer-bizum-1qrt_4261199/",
+      "title": "Lorena Álvarez, economista, explica los cuatro perfiles financieros: \"Son los últimos en hacer los Bizum\"",
+      "source": "www.elconfidencial.com",
+      "category": "economia",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 485,
+      "archive_url": null,
+      "full_content": "La**** economista y divulgadora financiera [Lorena Álvarez]( ha puesto el foco en un aspecto al que pocas veces se presta atención: **[la relación emocional que cada persona mantiene con su propio dinero]( En un vídeo publicado en su canal de YouTube, la experta explica que comprender esta dinámica es esencial para mejorar la salud financiera y tomar decisiones más conscientes. “Es importante entender cómo somos respecto al dinero”, afirma, recordando que estos patrones suelen formarse en la infancia y en el entorno familiar. Álvarez sostiene que conocer esta “personalidad financiera” permite identificar puntos fuertes, corregir hábitos dañinos y adoptar estrategias más equilibradas. Aunque describe cuatro grandes perfiles, advierte de que la mayoría de las personas encaja en una combinación de varios: “Aunque tenéis que saber que normalmente las personas solemos formar parte de dos o tres de las posturas, no somos radicalmente de una o radicalmente de otra”. El primero de ellos es el **perfil evitador**, personas que viven desconectadas de sus finanzas y prefieren no pensar en ingresos, gastos o presupuestos. No es miedo al dinero, explica, sino pura desatención. Aun así, alerta de que esa falta de control puede llevar a problemas futuros, deudas olvidadas o ausencia total de planificación. \"Suelen tener deudas muchas veces por desconocimiento o **tardan en pagar a la gente que deben dinero, son los últimos en hacer los[Bizum]( porque se desentienden de este tema\", señala. Su ventaja, según Álvarez, es que “viven ajenos a este tipo de problemas”, pero recuerda que ignorar un pilar tan relevante como el dinero puede causar dificultades graves. En el lado opuesto aparece el **[perfil gastador](, más impulsivo y orientado al disfrute inmediato. Este tipo de consumidor**“gasta sin pensar con antelación si ese gasto se lo pueden permitir o no”**, dejándose influir por el marketing y las compras emocionales. Su parte positiva es que saben vivir el presente, cuidarse y disfrutar, aunque con el riesgo de vaciar su cuenta a la misma velocidad que entra el dinero. El tercer grupo es el de [los ahorradores]( quienes sienten comodidad gestionando presupuestos, haciendo cálculos y planificando a largo plazo. Según Álvarez, valoran el orden y la estabilidad, aunque llevados al extremo pueden caer en el sacrificio constante del presente: renuncian a caprichos, viajes o cenas por priorizar el futuro. “Cada euro que van a gastar en algo lo piensan y lo repiensan muchísimo”, señala. El último perfil es el del **monje**, una postura marcada por la desconfianza hacia el dinero. Lo ven como algo que puede corromper o desviarles de su [crecimiento personal]( por lo que tratan de desprenderse de él en cuanto lo obtienen. \"Prefiere mucho más **centrarse en todo el tema más espiritual, desarrollo personal**, creyendo que el dinero interfiere en ese desarrollo personal\", explica. Aunque poseen una gran sensibilidad social, esta visión les impide construir un colchón financiero mínimo que les permita precisamente ayudar a otros, que suele ser su propósito final.",
+      "content_preview": "La**** economista y divulgadora financiera [Lorena Álvarez]( ha puesto el foco en un aspecto al que pocas veces se presta atención: **[la relación emocional que cada persona mantiene con su propio dinero]( En un vídeo publicado en su canal de YouTube, la experta explica que comprender esta dinámica es esencial para mejorar la salud financiera y tomar decisiones más conscientes. “Es importante entender cómo somos respecto al dinero”, afirma, recordando que estos patrones suelen formarse en la inf..."
+    }
+  ],
+  "newsletter_preview": {
+    "word_count": 1316,
+    "char_count": 10117,
+    "first_500_chars": "En el panorama económico actual, donde las cifras y los movimientos estratégicos se entrelazan, el aumento del [**Ingreso Mínimo Vital (IMV)**](https://www.elmundo.es/economia/macroeconomia/2025/12/05/6932c613e9cf4a230b8b4584.html) en España destaca como un reflejo del creciente empobrecimiento de la sociedad. Desde su implementación, el IMV ha sido una herramienta crucial para mitigar la pobreza, pero el aumento del 18,7% en los beneficiarios, que ahora alcanzan los 785.722 hogares, subraya una..."
+  }
+}

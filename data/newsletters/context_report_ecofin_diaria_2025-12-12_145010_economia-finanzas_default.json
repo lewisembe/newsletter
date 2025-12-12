@@ -1,0 +1,336 @@
+{
+  "metadata": {
+    "newsletter_name": "ecofin_diaria",
+    "run_date": "2025-12-12",
+    "generated_at": "2025-12-12T14:50:10.217077+01:00",
+    "stage": "05_generate_newsletters"
+  },
+  "configuration": {
+    "max_articles": 10,
+    "top_with_content": 10,
+    "expected_categories": [
+      "economia",
+      "finanzas"
+    ],
+    "ranked_file_categories": null,
+    "template": "default",
+    "model_writer": "gpt-4o-mini",
+    "output_format": "markdown"
+  },
+  "ranked_data": {
+    "total_urls_in_ranked_file": 0,
+    "urls_selected_for_processing": 10,
+    "initial_ranked_order": []
+  },
+  "content_extraction": {
+    "urls_requested_for_content": [
+      {
+        "rank": 1,
+        "url_id": 17141,
+        "url": "https://www.nytimes.com/2025/12/12/business/china-investment-economy.html",
+        "title": "Historic Shift Is Underway in China’s Economy as Investment Slump Deepens"
+      },
+      {
+        "rank": 2,
+        "url_id": 17146,
+        "url": "https://www.nytimes.com/2025/12/11/us/politics/maduro-oil-sanctions-venezuela-tanker.html",
+        "title": "U.S. Issues New Sanctions Targeting Maduro’s Family and the Oil Sector"
+      },
+      {
+        "rank": 3,
+        "url_id": 17026,
+        "url": "https://www.ft.com/content/1bacfc09-6a29-4be9-8da8-ed0960e0c774",
+        "title": "Crypto entrepreneur Do Kwon sentenced to 15 years in prison"
+      },
+      {
+        "rank": 4,
+        "url_id": 16977,
+        "url": "https://www.expansion.com/empresas/2025/12/11/693add7e468aeb91718b4581.html",
+        "title": "Detienen al presidente y al CEO de Plus Ultra como parte de una operación por presunto blanqueo"
+      },
+      {
+        "rank": 5,
+        "url_id": 16650,
+        "url": "https://www.elconfidencial.com/economia/2025-12-12/pensiones-subiran-finalmente-2-7-2026-ipc_4264884/",
+        "title": "Las pensiones subirán finalmente un 2,7% en 2026 con el IPC de noviembre en el 3%"
+      },
+      {
+        "rank": 6,
+        "url_id": 16480,
+        "url": "https://www.abc.es/economia/pensiones-20251212084218-nt.html",
+        "title": "Las pensiones subirán un 2,7% en 2026"
+      },
+      {
+        "rank": 7,
+        "url_id": 17158,
+        "url": "https://www.nytimes.com/2025/12/03/world/europe/ukraine-russia-european-union-frozen-assets.html",
+        "title": "Europe’s Financing Plan for Ukraine"
+      },
+      {
+        "rank": 8,
+        "url_id": 17198,
+        "url": "https://www.nytimes.com/2025/12/10/business/fed-interest-rates-loans-mortgages-credit-cards.html",
+        "title": "What the Fed’s Rate Decision Means for Your Finances"
+      },
+      {
+        "rank": 9,
+        "url_id": 17028,
+        "url": "https://www.ft.com/content/d7a52989-f9da-4947-8c24-47ac1a519254",
+        "title": "HSBC axes 160-year-old management scheme in bid to cut costs"
+      },
+      {
+        "rank": 10,
+        "url_id": 17055,
+        "url": "https://www.ft.com/content/7027ea39-7490-43de-953c-31ac822d565c",
+        "title": "FT Alphaville. ‘The darkest depths of winter still lie ahead for America’s capital markets’"
+      }
+    ],
+    "urls_successfully_extracted": [
+      {
+        "rank": 3,
+        "url_id": 17026,
+        "url": "https://www.ft.com/content/1bacfc09-6a29-4be9-8da8-ed0960e0c774",
+        "title": "Crypto entrepreneur Do Kwon sentenced to 15 years in prison",
+        "method": "llm_direct",
+        "word_count": 274
+      },
+      {
+        "rank": 4,
+        "url_id": 16977,
+        "url": "https://www.expansion.com/empresas/2025/12/11/693add7e468aeb91718b4581.html",
+        "title": "Detienen al presidente y al CEO de Plus Ultra como parte de una operación por presunto blanqueo",
+        "method": "json_ld",
+        "word_count": 708
+      },
+      {
+        "rank": 5,
+        "url_id": 16650,
+        "url": "https://www.elconfidencial.com/economia/2025-12-12/pensiones-subiran-finalmente-2-7-2026-ipc_4264884/",
+        "title": "Las pensiones subirán finalmente un 2,7% en 2026 con el IPC de noviembre en el 3%",
+        "method": "xpath_cache",
+        "word_count": 763
+      },
+      {
+        "rank": 6,
+        "url_id": 16480,
+        "url": "https://www.abc.es/economia/pensiones-20251212084218-nt.html",
+        "title": "Las pensiones subirán un 2,7% en 2026",
+        "method": "json_ld",
+        "word_count": 555
+      },
+      {
+        "rank": 9,
+        "url_id": 17028,
+        "url": "https://www.ft.com/content/d7a52989-f9da-4947-8c24-47ac1a519254",
+        "title": "HSBC axes 160-year-old management scheme in bid to cut costs",
+        "method": "llm_direct",
+        "word_count": 200
+      }
+    ],
+    "urls_failed_extraction": [
+      {
+        "rank": 1,
+        "url_id": 17141,
+        "url": "https://www.nytimes.com/2025/12/12/business/china-investment-economy.html",
+        "title": "Historic Shift Is Underway in China’s Economy as Investment Slump Deepens",
+        "status": "failed",
+        "error": "All fetch methods failed (tried: cookies, direct, no-js, selenium-no-js, archive.today)"
+      },
+      {
+        "rank": 2,
+        "url_id": 17146,
+        "url": "https://www.nytimes.com/2025/12/11/us/politics/maduro-oil-sanctions-venezuela-tanker.html",
+        "title": "U.S. Issues New Sanctions Targeting Maduro’s Family and the Oil Sector",
+        "status": "failed",
+        "error": "All fetch methods failed (tried: cookies, direct, no-js, selenium-no-js, archive.today)"
+      },
+      {
+        "rank": 7,
+        "url_id": 17158,
+        "url": "https://www.nytimes.com/2025/12/03/world/europe/ukraine-russia-european-union-frozen-assets.html",
+        "title": "Europe’s Financing Plan for Ukraine",
+        "status": "failed",
+        "error": "All fetch methods failed (tried: cookies, direct, no-js, selenium-no-js, archive.today)"
+      },
+      {
+        "rank": 8,
+        "url_id": 17198,
+        "url": "https://www.nytimes.com/2025/12/10/business/fed-interest-rates-loans-mortgages-credit-cards.html",
+        "title": "What the Fed’s Rate Decision Means for Your Finances",
+        "status": "failed",
+        "error": "All fetch methods failed (tried: cookies, direct, no-js, selenium-no-js, archive.today)"
+      },
+      {
+        "rank": 10,
+        "url_id": 17055,
+        "url": "https://www.ft.com/content/7027ea39-7490-43de-953c-31ac822d565c",
+        "title": "FT Alphaville. ‘The darkest depths of winter still lie ahead for America’s capital markets’",
+        "status": "failed",
+        "error": "All extraction methods failed (including LLM direct extraction)"
+      }
+    ],
+    "extraction_stats": {
+      "total_requested": 10,
+      "total_success": 5,
+      "total_failed": 5,
+      "success_rate": 50.0
+    }
+  },
+  "articles": [
+    {
+      "processing_rank": 1,
+      "url_id": 17141,
+      "url": "https://www.nytimes.com/2025/12/12/business/china-investment-economy.html",
+      "title": "Historic Shift Is Underway in China’s Economy as Investment Slump Deepens",
+      "source": "www.nytimes.com",
+      "category": "economia",
+      "has_full_content": false,
+      "extraction_status": "failed",
+      "extraction_method": null,
+      "extraction_error": "All fetch methods failed (tried: cookies, direct, no-js, selenium-no-js, archive.today)",
+      "word_count": null,
+      "archive_url": null
+    },
+    {
+      "processing_rank": 2,
+      "url_id": 17146,
+      "url": "https://www.nytimes.com/2025/12/11/us/politics/maduro-oil-sanctions-venezuela-tanker.html",
+      "title": "U.S. Issues New Sanctions Targeting Maduro’s Family and the Oil Sector",
+      "source": "www.nytimes.com",
+      "category": "finanzas",
+      "has_full_content": false,
+      "extraction_status": "failed",
+      "extraction_method": null,
+      "extraction_error": "All fetch methods failed (tried: cookies, direct, no-js, selenium-no-js, archive.today)",
+      "word_count": null,
+      "archive_url": null
+    },
+    {
+      "processing_rank": 3,
+      "url_id": 17026,
+      "url": "https://www.ft.com/content/1bacfc09-6a29-4be9-8da8-ed0960e0c774",
+      "title": "Crypto entrepreneur Do Kwon sentenced to 15 years in prison",
+      "source": "www.ft.com",
+      "category": "finanzas",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "llm_direct",
+      "extraction_error": null,
+      "word_count": 274,
+      "archive_url": null,
+      "full_content": "Do Kwon, el empresario de criptomonedas y cofundador de Terraform Labs, ha sido condenado a 15 años de prisión por un tribunal de Nueva York. La sentencia se produce tras un juicio en el que se le acusó de fraude y conspiración, relacionado con el colapso de la criptomoneda TerraUSD, que provocó pérdidas significativas a miles de inversores. El juez del caso describió las acciones de Kwon como un \"fraude de escala épica y generacional\", subrayando el impacto devastador que tuvo en la confianza del público en las criptomonedas. Durante el juicio, se presentó evidencia de que Kwon había engañado a los inversores sobre la estabilidad de su criptomoneda y había ocultado información crucial sobre los riesgos asociados. Kwon fue arrestado en Montenegro en marzo de 2023 y extraditado a Estados Unidos, donde enfrentó múltiples cargos. La fiscalía argumentó que su comportamiento fue deliberado y que Kwon había utilizado tácticas engañosas para atraer inversiones, lo que resultó en pérdidas de miles de millones de dólares. La sentencia de Kwon es un recordatorio de las crecientes preocupaciones regulatorias en torno a las criptomonedas y la necesidad de una mayor supervisión en el sector. Los reguladores han intensificado sus esfuerzos para abordar el fraude y proteger a los inversores en un mercado que ha sido objeto de críticas por su falta de transparencia y regulación. La condena de Kwon también plantea preguntas sobre el futuro de Terraform Labs y su tecnología, que había sido vista como innovadora antes de su colapso. Los inversores y analistas ahora están observando de cerca cómo se desarrollará la situación y qué implicaciones tendrá para el ecosistema de criptomonedas en general.",
+      "content_preview": "Do Kwon, el empresario de criptomonedas y cofundador de Terraform Labs, ha sido condenado a 15 años de prisión por un tribunal de Nueva York. La sentencia se produce tras un juicio en el que se le acusó de fraude y conspiración, relacionado con el colapso de la criptomoneda TerraUSD, que provocó pérdidas significativas a miles de inversores. El juez del caso describió las acciones de Kwon como un \"fraude de escala épica y generacional\", subrayando el impacto devastador que tuvo en la confianza d..."
+    },
+    {
+      "processing_rank": 4,
+      "url_id": 16977,
+      "url": "https://www.expansion.com/empresas/2025/12/11/693add7e468aeb91718b4581.html",
+      "title": "Detienen al presidente y al CEO de Plus Ultra como parte de una operación por presunto blanqueo",
+      "source": "www.expansion.com",
+      "category": "finanzas",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "json_ld",
+      "extraction_error": null,
+      "word_count": 708,
+      "archive_url": null,
+      "full_content": "La Policía Nacional ha detenido al presidente y propietario de Plus Ultra, Julio Martínez Sola, y al CEO del grupo, Roberto Roselli, después de que este jueves haya registrado la sede de la aerolínea en busca de documentación, en el marco de una investigación abierta por un presunto delito de blanqueo de capitales, al margen de la operación en la que ha sido detenida la exmilitante socialista Leire Díez. Agentes de la UDEF han registrado la sede de esta empresa en una actuación que se enmarca en una causa dirigida por el Juzgado de Instrucción número 15 de Madrid y que se mantiene bajo secreto. Se trata de una investigación diferente de la que se dirige contra Leire Díez, que fue detenida el miércoles junto a Fernández ante sospechas de irregularidades en contratos públicos. Ante esta entrada, y antes de conocerse los arrestos practicados, fuentes de la aerolínea han trasladado a EFE su plena colaboración y que están &quot; facilitando toda la documentación que precisen y que se circunscribe al área económica financiera&quot; , al tiempo que han subrayado que no se estaba produciendo un registro. &apos; Caso Leire&apos; Por otra parte, la Unidad Central Operativa (UCO) de la Guardia Civil ha entrado esta mañana en la sede de las empresas públicas SEPI, Sepides, Enusa y Mercasa para requerir documentación dentro de la operación en la que han sido detenidos la exmilitante socialista Leire Díez, el expresidente de SEPI Vicente Fernández y el empresario Antxon Alonso. Estos requerimientos de información se enmarcan las pesquisas que dirige el juez de la Audiencia Nacional Antonio Piña, en coordinación con la Fiscalía Anticorrupción. En el marco de esta operación, que se encuentra abierta y bajo secreto sumarial, se están han desarrollando hasta 19 registros o requerimientos de información en empresas y domicilios de Madrid, Zaragoza, Sevilla y Navarra. Los agentes han acudido a las sedes de las empresas públicas a requerir información. En el caso de Enusa, donde estuvo contratada Leire Díez, se ha tratado de un registro, según informa Efe. Además de esas empresas públicas, los agentes han acudido a las instalaciones de Forestalia en Zaragoza y Madrid, a la asesoría fiscal Conaudire, en la capital aragonesa y a la empresa Cemsal. El juez investiga posibles delitos de prevaricación, malversación, tráfico de influencias y organización criminal. Los tres detenidos serán puestos este sábado a disposición judicial y se encuentran desde ayer en dependencias de la Comandancia de la Guardia Civil en Tres Cantos (Madrid). Antxon Alonso, detenido ayer en Vizcaya, ya estaba siendo investigado en el Tribunal Supremo por su relación con la presunta trama de corrupción en la que estaría implicado Santos Cerdán, con el que firmó una escritura de compraventa por el 45% de las acciones de Servinabar, si bien el exdirigente socialista asegura que nunca se hizo efectiva. Según el último informe que presentó la UCO en el Supremo, Cerdán, a través de Servinabar, se quedaba con un 2% de cada adjudicación que lograba la constructora Acciona, una empresa que tiene varios exdirectivos investigados por su presunta relación con la trama del caso Koldo, y que supuestamente lograría contratos por medio de la &quot; indebida influencia&quot; del exdirigente socialista. Por su parte, Leire Díez estaba ya siendo investigada por el Juzgado de Instrucción número 9 de Madrid por delitos de cohecho y tráfico de influencias debido a presuntas maniobras contra miembros de la Fiscalía Anticorrupción o altos mandos de la Guardia Civil, como el teniente coronel de la UCO Antonio Balas. Extrabajadora de empresas dependientes de la SEPI como Enusa y Correos, Díaz enmarcó sus movimientos en una investigación periodística, pero en la causa en su contra figura la grabación de una reunión mantenida con el fiscal Ignacio Stampa en la que dice ser &quot; mano derecha&quot; de Santos Cerdán y &quot; la persona que ha puesto el PSOE&quot; para investigar posibles irregularidades. Asimismo, Vicente Fernández también está relacionado con Servinabar, empresa en la que trabajó después de dimitir en 2019 como presidente de SEPI al ser imputado por un supuesto amaño en el concurso internacional que adjudicó a la empresa México-Minorbis la explotación en la reserva minera de Aznalcóllar (Sevilla), un caso en el que resultó absuelto al igual que el resto de los 16 acusados.",
+      "content_preview": "La Policía Nacional ha detenido al presidente y propietario de Plus Ultra, Julio Martínez Sola, y al CEO del grupo, Roberto Roselli, después de que este jueves haya registrado la sede de la aerolínea en busca de documentación, en el marco de una investigación abierta por un presunto delito de blanqueo de capitales, al margen de la operación en la que ha sido detenida la exmilitante socialista Leire Díez. Agentes de la UDEF han registrado la sede de esta empresa en una actuación que se enmarca en..."
+    },
+    {
+      "processing_rank": 5,
+      "url_id": 16650,
+      "url": "https://www.elconfidencial.com/economia/2025-12-12/pensiones-subiran-finalmente-2-7-2026-ipc_4264884/",
+      "title": "Las pensiones subirán finalmente un 2,7% en 2026 con el IPC de noviembre en el 3%",
+      "source": "www.elconfidencial.com",
+      "category": "economia",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "xpath_cache",
+      "extraction_error": null,
+      "word_count": 763,
+      "archive_url": null,
+      "full_content": "El IPC definitivo del mes de noviembre, publicado este viernes por el INE, determina que las pensiones públicassubirán un 2, 7% el próximo año. La cuantía se corresponde con la inflación promedio de los 12 meses anteriores al cambio de año, hasta noviembre. En el mes de noviembre, la inflación se situó en el 3%, lo que evidencia que los precios siguen subiendo a un ritmo alto en España. Esta revalorización de las pensiones supondrá unos570 euros más al añopara los jubilados y unos 500 euros para la media de pensiones del sistema. La subida de las pensiones beneficiará a más de 12 millones de personas, ya que incluye a casi el millón que percibe una pensión de las clases pasivas, sistema especial para funcionarios y otros trabajadores públicos. La revalorización de las pensiones de 2026 serásimilar a la de 2025, que fue del 2, 75%. En la memoria económica que acompañó al decreto de subida de las pensiones, el Gobierno calculó que elcoste de esa subidaascendía a 7. 000 millones de euros. Una cifra que, previsiblemente, será similar este año. Es cierto que todavía se desconoce la cuantía de la subida de las pensiones mínimas y no contributivas, pero el Gobierno lleva años subiéndolas por encima del IPC para que ganen capacidad de compra. El coste acumulado de la revalorización desde el año 2022, cuando entró en vigor la reforma de pensiones, se quedará cerca de los40. 000 millones de eurosal año. Este punto es importante, porque las revalorizaciones son acumulativas. Cada año se consolida el incremento del año anterior y, sobre ese incremento, vuelve a operar la subida del año siguiente. Aunque la ley de pensiones recoge la revalorización con el IPC, la subida no es automática, sino que tiene que canalizarse a través de una norma con rango de ley (real decreto-ley) y ser aprobada por el Congreso. En principio, todos los partidos políticos están a favor del incremento, pero el Gobierno tuvo problemas para lograrlo el año pasado. El motivo fue que incorporó a esta subida otras medidas que no generaban el mismo consenso. El primer decreto ómnibus fuetumbado por el Congresoy el Gobierno salvó los muebles a última hora con un acuerdo con Junts que debaja fueraalgunas de las medidasque el Ejecutivo intentó colar inicialmente. El dato de inflación publicado esta mañana por el INE muestra que los preciossiguen subiendo intensamenteen España. En el último año, lo han hecho en un 3%. Es una décima menos que en noviembre, pero superior a las expectativas que tenían los expertos hasta hace unos meses. La realidad es que la inflación está siendo más persistente de lo que esperaban. Después de alcanzar, en octubre, el nivelmás alto en 16 meses, la inflación de noviembre frenó en una décima hasta el 3%, gracias a la energía. Sin embargo, la inflación subyacentesiguió subiendo, en una décima, hasta el 2, 6%. Alimentos, bebidas no alcohólicas y servicios de ocio siguen empujando al alza los precios, lo que evidencia que siguen existiendo tensiones inflacionistas. Esta situación es consecuencia, en buena medida, del dinamismo del consumo en España, que permite a las empresas subir sus tarifas sin perder facturación. Por ejemplo, el precio de hoteles y restaurantes sigue subiendo a tasas del 4, 5% interanual. Los alimentos y bebidas no alcohólicas subieron un 2, 8% y las bebidas alcohólicas y tabaco, un 4, 3%. Sin embargo, el grupo que más sube es el de la vivienda, un 5, 7% interanual. Esto incluye un alza del 2, 4% en los alquileres de la vivienda; un 4, 1% en los diversos servicios de mantenimiento de la vivienda y, sobre todo, la subida del 30% de lastasas de recogida de basurasa medida que los ayuntamientos van aplicando la nueva ley del Gobierno. En el extremo opuesto de la distribución está elvestido y el calzado, en crisis de precios permanente, que apenas ha subido un 0, 3% en el último año. También losmuebles y otros artículos del hogarregistran una inflación baja, del 1%. Se trata de bienes en los que la competencia de precios internacional sigue siendo feroz y obliga a todo el sector a congelar, cuando no bajar, sus tarifas. El IPC definitivo del mes de noviembre, publicado este viernes por el INE, determina que las pensiones públicassubirán un 2, 7% el próximo año. La cuantía se corresponde con la inflación promedio de los 12 meses anteriores al cambio de año, hasta noviembre. En el mes de noviembre, la inflación se situó en el 3%, lo que evidencia que los precios siguen subiendo a un ritmo alto en España.",
+      "content_preview": "El IPC definitivo del mes de noviembre, publicado este viernes por el INE, determina que las pensiones públicassubirán un 2, 7% el próximo año. La cuantía se corresponde con la inflación promedio de los 12 meses anteriores al cambio de año, hasta noviembre. En el mes de noviembre, la inflación se situó en el 3%, lo que evidencia que los precios siguen subiendo a un ritmo alto en España. Esta revalorización de las pensiones supondrá unos570 euros más al añopara los jubilados y unos 500 euros para..."
+    },
+    {
+      "processing_rank": 6,
+      "url_id": 16480,
+      "url": "https://www.abc.es/economia/pensiones-20251212084218-nt.html",
+      "title": "Las pensiones subirán un 2,7% en 2026",
+      "source": "www.abc.es",
+      "category": "economia",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "json_ld",
+      "extraction_error": null,
+      "word_count": 555,
+      "archive_url": null,
+      "full_content": "Las más de diez millones de pensiones contributivas se revalorizarán en 2026 un 2, 7% tras conocerse este viernes los datos definitivos del INE, que sitúan el aumento de la inflación en el 3% en noviembre. Esto es así porque la ley establece. . . que las pensiones crecerán cada año lo mismo que el promedio de la inflación de los doce meses comprendidos entre noviembre del año en curso y diciembre del ejercicio anterior. Y la evolución media de los precios en este periodo ha sido del 2, 7%. La revalorización supondrá, aproximadamente, 570 euros adicionales al año para las personas con la pensión media de jubilación, mientras que las pensiones medias del sistema aumentarán en torno a 500 euros anuales. Este incremento beneficiará a los cerca de 9, 4 millones de jubilados. Las 734. 900 pensiones del Régimen de Clases Pasivas del Estado también se revalorizarán conforme al mismo índice. Así, un pensionista que perciba una pensión de 1. 511, 51 al mes (coincidente con la pensión media de jubilación de 2025) pasará a recibir en 2026 una pensión de 1. 552, 32 euros mensuales, lo que supone un incremento anual de 571, 35 euros. Noticia Relacionada estandar Si El recorte de las nóminas ha llenado la 'hucha de las pensiones' con 14. 000 millones Susana Alcelay El Mecanismo de Equidad Intergeneracional (MEI), en vigor desde 2023, aumentará el próximo año hasta el 0, 9% del salarioY para el caso de la pensión máxima se incrementará en 2026 con el IPC más un 0, 115% adicional, según determinó la reforma de pensiones. Con la revalorización del 2, 7% del IPC más ese porcentaje adicional, se situará en 3. 359, 6 euros. El incremento en la pensión máxima es algo superior a la subida general de las prestaciones debido al mayor esfuerzo de cotización realizado por las nóminas más altas para pagar las prestaciones. Así, su aumento es del IPC más un 0, 115 puntos porcentuales cada año. El incremento que tendrán las pensiones contributivas es similar a la aplicada este ejercicio, del 2, 8%, e inferior al 3, 8% de 2024 y al 8, 5% de 2023 y como ya informó ABC, supondrá un coste para las arcas de la Seguridad Social superior a los 5. 200 millones de euros, factura que llega en un momento de muy delicado para el sistema público, necesitado de la ayuda del Estado para pagar las nóminas y con una deuda de 126. 000 millones de euros, cuatro veces más que la que había en junio de 2018 cuando Pedro Sánchez llegó a la Moncloa. El pasivo entonces apenas llegaba a los 34. 000 millones. No contributivas: más del 5%Todas las jubilaciones verán subir sus nóminas el año próximo pero, como ocurre todos los ejercicios, la cuantía será superior para las mínimas y las no contributivas, tal y como marca la reforma de las pensiones aprobada el pasado 2024 con el objetivo de recortar su margen con el umbral de la pobreza. Este 2025 aumentaron un 6% las mínimas y del 9% las no contributivas, por encima en ambos casos del alza del 2, 8% que registraron las pensiones contributivas. «Sería razonable que subieran un 5% o más », dijo la titular de Seguridad Social, Elma Saiz, sobre el alza de estas no contributivas el año próximo.",
+      "content_preview": "Las más de diez millones de pensiones contributivas se revalorizarán en 2026 un 2, 7% tras conocerse este viernes los datos definitivos del INE, que sitúan el aumento de la inflación en el 3% en noviembre. Esto es así porque la ley establece. . . que las pensiones crecerán cada año lo mismo que el promedio de la inflación de los doce meses comprendidos entre noviembre del año en curso y diciembre del ejercicio anterior. Y la evolución media de los precios en este periodo ha sido del 2, 7%. La re..."
+    },
+    {
+      "processing_rank": 7,
+      "url_id": 17158,
+      "url": "https://www.nytimes.com/2025/12/03/world/europe/ukraine-russia-european-union-frozen-assets.html",
+      "title": "Europe’s Financing Plan for Ukraine",
+      "source": "www.nytimes.com",
+      "category": "economia",
+      "has_full_content": false,
+      "extraction_status": "failed",
+      "extraction_method": null,
+      "extraction_error": "All fetch methods failed (tried: cookies, direct, no-js, selenium-no-js, archive.today)",
+      "word_count": null,
+      "archive_url": null
+    },
+    {
+      "processing_rank": 8,
+      "url_id": 17198,
+      "url": "https://www.nytimes.com/2025/12/10/business/fed-interest-rates-loans-mortgages-credit-cards.html",
+      "title": "What the Fed’s Rate Decision Means for Your Finances",
+      "source": "www.nytimes.com",
+      "category": "finanzas",
+      "has_full_content": false,
+      "extraction_status": "failed",
+      "extraction_method": null,
+      "extraction_error": "All fetch methods failed (tried: cookies, direct, no-js, selenium-no-js, archive.today)",
+      "word_count": null,
+      "archive_url": null
+    },
+    {
+      "processing_rank": 9,
+      "url_id": 17028,
+      "url": "https://www.ft.com/content/d7a52989-f9da-4947-8c24-47ac1a519254",
+      "title": "HSBC axes 160-year-old management scheme in bid to cut costs",
+      "source": "www.ft.com",
+      "category": "finanzas",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "llm_direct",
+      "extraction_error": null,
+      "word_count": 200,
+      "archive_url": null,
+      "full_content": "HSBC ha decidido cerrar su programa de gestión 'International Manager', que ha estado en funcionamiento durante 160 años, como parte de un esfuerzo más amplio para reducir costos en la institución financiera. El CEO Georges Elhedery está llevando a cabo una reestructuración significativa en el banco, que es el mayor prestamista de Europa, en un intento por adaptarse a un entorno económico cambiante y a las presiones del mercado. El programa, que había sido una vía tradicional para el desarrollo de líderes dentro de HSBC, ya no aceptará nuevos reclutas. Esta decisión refleja un cambio en la estrategia del banco, que busca simplificar su estructura y mejorar la eficiencia operativa. HSBC ha enfrentado desafíos en los últimos años, incluyendo la presión de los inversores para mejorar la rentabilidad y la necesidad de adaptarse a un panorama regulatorio en constante evolución. La eliminación de este programa es parte de un esfuerzo más amplio para reducir gastos y optimizar operaciones en un contexto de creciente competencia en el sector bancario. El cierre del programa 'International Manager' es un indicativo de cómo HSBC está reevaluando sus prioridades y su enfoque hacia la gestión del talento en un mundo financiero que está cambiando rápidamente.",
+      "content_preview": "HSBC ha decidido cerrar su programa de gestión 'International Manager', que ha estado en funcionamiento durante 160 años, como parte de un esfuerzo más amplio para reducir costos en la institución financiera. El CEO Georges Elhedery está llevando a cabo una reestructuración significativa en el banco, que es el mayor prestamista de Europa, en un intento por adaptarse a un entorno económico cambiante y a las presiones del mercado. El programa, que había sido una vía tradicional para el desarrollo ..."
+    },
+    {
+      "processing_rank": 10,
+      "url_id": 17055,
+      "url": "https://www.ft.com/content/7027ea39-7490-43de-953c-31ac822d565c",
+      "title": "FT Alphaville. ‘The darkest depths of winter still lie ahead for America’s capital markets’",
+      "source": "www.ft.com",
+      "category": "finanzas",
+      "has_full_content": false,
+      "extraction_status": "failed",
+      "extraction_method": "failed",
+      "extraction_error": "All extraction methods failed (including LLM direct extraction)",
+      "word_count": null,
+      "archive_url": null
+    }
+  ],
+  "newsletter_preview": {
+    "word_count": 706,
+    "char_count": 5227,
+    "first_500_chars": "Hoy en el mundo de las finanzas y la economía, hay varias noticias que están dando de qué hablar, desde el mundo de las criptomonedas hasta las pensiones y la banca internacional.\n\nEmpecemos con [**Do Kwon**](https://www.ft.com/content/1bacfc09-6a29-4be9-8da8-ed0960e0c774), el cofundador de Terraform Labs. Ha sido condenado a 15 años de prisión por fraude con criptomonedas. Este caso nos recuerda los riesgos de un mercado que, aunque joven, ya ha visto colapsos impresionantes. La criptomoneda Te..."
+  }
+}

@@ -1,0 +1,341 @@
+{
+  "metadata": {
+    "newsletter_name": "politica_diaria",
+    "run_date": "2025-12-11",
+    "generated_at": "2025-12-11T08:12:17.880269+01:00",
+    "stage": "05_generate_newsletters"
+  },
+  "configuration": {
+    "max_articles": 10,
+    "top_with_content": 10,
+    "expected_categories": [
+      "politica"
+    ],
+    "ranked_file_categories": null,
+    "template": "default",
+    "model_writer": "gpt-4o-mini",
+    "output_format": "markdown"
+  },
+  "ranked_data": {
+    "total_urls_in_ranked_file": 0,
+    "urls_selected_for_processing": 10,
+    "initial_ranked_order": []
+  },
+  "content_extraction": {
+    "urls_requested_for_content": [
+      {
+        "rank": 1,
+        "url_id": 16434,
+        "url": "https://www.nytimes.com/2025/12/09/climate/epa-website-climate-change-causes.html",
+        "title": "E.P.A. Erases Mention of Humans Causing Climate Change From Some Web Pages"
+      },
+      {
+        "rank": 2,
+        "url_id": 16386,
+        "url": "https://www.nytimes.com/2025/12/10/us/politics/house-approves-defense-bill.html",
+        "title": "House Passes $900 Billion Bill That Would Put Trump’s Stamp on Military"
+      },
+      {
+        "rank": 3,
+        "url_id": 16310,
+        "url": "https://www.ft.com/content/03c341ba-210d-4195-87a9-621084a1fa26",
+        "title": "Bolivian ex-president Luis Arce arrested in corruption probe"
+      },
+      {
+        "rank": 4,
+        "url_id": 16135,
+        "url": "https://elpais.com/espana/2025-12-10/detenida-la-exmilitante-del-psoe-leire-diez.html",
+        "title": "La UCO detiene a la exmilitante del PSOE Leire Díez y al expresidente de la SEPI Vicente Fernández"
+      },
+      {
+        "rank": 5,
+        "url_id": 16112,
+        "url": "https://elpais.com/internacional/2025-12-11/la-camara-de-representantes-de-estados-unidos-aprueba-un-presupuesto-de-defensa-de-900000-millones-de-dolares.html",
+        "title": "La Cámara de Representantes de Estados Unidos aprueba un presupuesto de Defensa de 900.000 millones de dólares"
+      },
+      {
+        "rank": 6,
+        "url_id": 16001,
+        "url": "https://www.elconfidencial.com/mundo/2025-12-10/detenido-expresidente-bolivia-luis-arce-corrupcion_4263969/",
+        "title": "Detenido el expresidente de Bolivia Luis Arce por presunta corrupción"
+      },
+      {
+        "rank": 7,
+        "url_id": 15899,
+        "url": "https://www.bbc.com/news/articles/cr7l0nyxxygo",
+        "title": "Panic in France as children fall victim to lethal violence of Marseille drug gangs"
+      },
+      {
+        "rank": 8,
+        "url_id": 15879,
+        "url": "https://www.abc.es/espana/uco-detiene-fontanera-psoe-leire-diez-expresidente-20251210162615-nt.html#vtm_modulosEngag=lomas::noticia:1",
+        "title": "La UCO detiene a Leire Díez y al expresidente de la SEPI por presuntas irregularidades en contratos públicos"
+      },
+      {
+        "rank": 9,
+        "url_id": 15836,
+        "url": "https://www.abc.es/internacional/detenido-expresidente-bolivia-luis-arce-presunta-corrupcion-20251210205727-nt.html",
+        "title": "Detienen al expresidente de Bolivia Luis Arce por un caso de corrupción"
+      },
+      {
+        "rank": 10,
+        "url_id": 16441,
+        "url": "https://www.nytimes.com/interactive/2025/12/10/opinion/editorials/us-military-budget-waste.html",
+        "title": "Opinion | America Pours Billions Into the Military. We Don’t Know Where It All Goes."
+      }
+    ],
+    "urls_successfully_extracted": [
+      {
+        "rank": 3,
+        "url_id": 16310,
+        "url": "https://www.ft.com/content/03c341ba-210d-4195-87a9-621084a1fa26",
+        "title": "Bolivian ex-president Luis Arce arrested in corruption probe",
+        "method": "llm_direct",
+        "word_count": 315
+      },
+      {
+        "rank": 4,
+        "url_id": 16135,
+        "url": "https://elpais.com/espana/2025-12-10/detenida-la-exmilitante-del-psoe-leire-diez.html",
+        "title": "La UCO detiene a la exmilitante del PSOE Leire Díez y al expresidente de la SEPI Vicente Fernández",
+        "method": "readability",
+        "word_count": 1036
+      },
+      {
+        "rank": 5,
+        "url_id": 16112,
+        "url": "https://elpais.com/internacional/2025-12-11/la-camara-de-representantes-de-estados-unidos-aprueba-un-presupuesto-de-defensa-de-900000-millones-de-dolares.html",
+        "title": "La Cámara de Representantes de Estados Unidos aprueba un presupuesto de Defensa de 900.000 millones de dólares",
+        "method": "readability",
+        "word_count": 935
+      },
+      {
+        "rank": 6,
+        "url_id": 16001,
+        "url": "https://www.elconfidencial.com/mundo/2025-12-10/detenido-expresidente-bolivia-luis-arce-corrupcion_4263969/",
+        "title": "Detenido el expresidente de Bolivia Luis Arce por presunta corrupción",
+        "method": "llm_direct",
+        "word_count": 207
+      },
+      {
+        "rank": 7,
+        "url_id": 15899,
+        "url": "https://www.bbc.com/news/articles/cr7l0nyxxygo",
+        "title": "Panic in France as children fall victim to lethal violence of Marseille drug gangs",
+        "method": "readability",
+        "word_count": 1730
+      },
+      {
+        "rank": 8,
+        "url_id": 15879,
+        "url": "https://www.abc.es/espana/uco-detiene-fontanera-psoe-leire-diez-expresidente-20251210162615-nt.html#vtm_modulosEngag=lomas::noticia:1",
+        "title": "La UCO detiene a Leire Díez y al expresidente de la SEPI por presuntas irregularidades en contratos públicos",
+        "method": "json_ld",
+        "word_count": 753
+      },
+      {
+        "rank": 9,
+        "url_id": 15836,
+        "url": "https://www.abc.es/internacional/detenido-expresidente-bolivia-luis-arce-presunta-corrupcion-20251210205727-nt.html",
+        "title": "Detienen al expresidente de Bolivia Luis Arce por un caso de corrupción",
+        "method": "json_ld",
+        "word_count": 759
+      },
+      {
+        "rank": 10,
+        "url_id": 16441,
+        "url": "https://www.nytimes.com/interactive/2025/12/10/opinion/editorials/us-military-budget-waste.html",
+        "title": "Opinion | America Pours Billions Into the Military. We Don’t Know Where It All Goes.",
+        "method": "xpath_cache",
+        "word_count": 1482
+      }
+    ],
+    "urls_failed_extraction": [
+      {
+        "rank": 1,
+        "url_id": 16434,
+        "url": "https://www.nytimes.com/2025/12/09/climate/epa-website-climate-change-causes.html",
+        "title": "E.P.A. Erases Mention of Humans Causing Climate Change From Some Web Pages",
+        "status": "failed",
+        "error": "All fetch methods failed (tried: cookies, direct, no-js, selenium-no-js, archive.today)"
+      },
+      {
+        "rank": 2,
+        "url_id": 16386,
+        "url": "https://www.nytimes.com/2025/12/10/us/politics/house-approves-defense-bill.html",
+        "title": "House Passes $900 Billion Bill That Would Put Trump’s Stamp on Military",
+        "status": "failed",
+        "error": "All fetch methods failed (tried: cookies, direct, no-js, selenium-no-js, archive.today)"
+      }
+    ],
+    "extraction_stats": {
+      "total_requested": 10,
+      "total_success": 8,
+      "total_failed": 2,
+      "success_rate": 80.0
+    }
+  },
+  "articles": [
+    {
+      "processing_rank": 1,
+      "url_id": 16434,
+      "url": "https://www.nytimes.com/2025/12/09/climate/epa-website-climate-change-causes.html",
+      "title": "E.P.A. Erases Mention of Humans Causing Climate Change From Some Web Pages",
+      "source": "www.nytimes.com",
+      "category": "politica",
+      "has_full_content": false,
+      "extraction_status": "failed",
+      "extraction_method": null,
+      "extraction_error": "All fetch methods failed (tried: cookies, direct, no-js, selenium-no-js, archive.today)",
+      "word_count": null,
+      "archive_url": null
+    },
+    {
+      "processing_rank": 2,
+      "url_id": 16386,
+      "url": "https://www.nytimes.com/2025/12/10/us/politics/house-approves-defense-bill.html",
+      "title": "House Passes $900 Billion Bill That Would Put Trump’s Stamp on Military",
+      "source": "www.nytimes.com",
+      "category": "politica",
+      "has_full_content": false,
+      "extraction_status": "failed",
+      "extraction_method": null,
+      "extraction_error": "All fetch methods failed (tried: cookies, direct, no-js, selenium-no-js, archive.today)",
+      "word_count": null,
+      "archive_url": null
+    },
+    {
+      "processing_rank": 3,
+      "url_id": 16310,
+      "url": "https://www.ft.com/content/03c341ba-210d-4195-87a9-621084a1fa26",
+      "title": "Bolivian ex-president Luis Arce arrested in corruption probe",
+      "source": "www.ft.com",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "llm_direct",
+      "extraction_error": null,
+      "word_count": 315,
+      "archive_url": null,
+      "full_content": "Luis Arce, el ex presidente de Bolivia, fue arrestado en el marco de una investigación por corrupción, un mes después de dejar el cargo. Arce, quien asumió la presidencia en noviembre de 2020, fue detenido por la policía en su residencia en La Paz. Las autoridades han indicado que su arresto está relacionado con un caso de corrupción que involucra la gestión de recursos públicos durante su administración. La detención de Arce ha generado una gran conmoción en el país, donde su partido, el Movimiento al Socialismo (MAS), ha expresado su apoyo al ex presidente y ha denunciado lo que consideran una persecución política. Los líderes del MAS han convocado a manifestaciones en defensa de Arce y han pedido a sus seguidores que se movilicen en su apoyo. El caso de corrupción que se investiga involucra supuestas irregularidades en la asignación de contratos públicos y el uso de fondos estatales. Las autoridades han afirmado que hay pruebas suficientes para justificar la detención de Arce y que la investigación continuará en los próximos días. Arce ha negado cualquier irregularidad y ha calificado las acusaciones como infundadas. En un comunicado, su equipo legal ha afirmado que el ex presidente está dispuesto a colaborar con la justicia y a demostrar su inocencia. La situación política en Bolivia se ha vuelto cada vez más tensa desde la salida de Arce del poder, con protestas y enfrentamientos entre partidarios y opositores. La detención de Arce podría tener un impacto significativo en el futuro político del país y en la estabilidad del gobierno actual. Los analistas advierten que este caso podría abrir una nueva fase de inestabilidad en Bolivia, donde la polarización política ha sido una constante en los últimos años. La comunidad internacional también está atenta a los desarrollos de este caso, ya que podría influir en la percepción de la democracia y el estado de derecho en el país.",
+      "content_preview": "Luis Arce, el ex presidente de Bolivia, fue arrestado en el marco de una investigación por corrupción, un mes después de dejar el cargo. Arce, quien asumió la presidencia en noviembre de 2020, fue detenido por la policía en su residencia en La Paz. Las autoridades han indicado que su arresto está relacionado con un caso de corrupción que involucra la gestión de recursos públicos durante su administración. La detención de Arce ha generado una gran conmoción en el país, donde su partido, el Movimi..."
+    },
+    {
+      "processing_rank": 4,
+      "url_id": 16135,
+      "url": "https://elpais.com/espana/2025-12-10/detenida-la-exmilitante-del-psoe-leire-diez.html",
+      "title": "La UCO detiene a la exmilitante del PSOE Leire Díez y al expresidente de la SEPI Vicente Fernández",
+      "source": "elpais.com",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 1036,
+      "archive_url": null,
+      "full_content": "[La exmilitante y exconcejal del PSOE Leire Díez]( \" y el expresidente de la SEPI (Sociedad Estatal de Participaciones Industriales) Vicente Fernández han sido detenidos este miércoles por agentes de la Unidad Central Operativa (UCO) de la Guardia Civil, según han confirmado a EL PAÍS fuentes cercanas a la investigación. Ambos arrestos se enmarcan en un procedimiento relacionado con contratación pública, que impulsa el Juzgado Central de Instrucción número 6 de la Audiencia Nacional, encabezada por el magistrado Antonio Piña. La operación continúa abierta bajo la tutela de la Fiscalía Anticorrupción, según fuentes policiales y jurídicas. Las pesquisas se centran en posibles delitos de fraude, falsedad documental, malversación, tráfico de influencias y prevaricación. **** La investigación se encuentra secreta y en una fase inicial. Díez trabajó para una empresa pública, Enusa, participada en un 60% por la SEPI, en la época en que Fernández era presidente de la sociedad estatal. Las detenciones se han producido antes de la media tarde de este miércoles y los agentes han trasladado a Leire Díez a los calabozos de la Guardia Civil en Tres Cantos (Madrid). La exconcejala socialista, nacida en Bilbao hace 52 años, está también imputada en otra investigación por cohecho y tráfico de influencias que instruye el Juzgado Número 9 de Madrid. El ministerio público le atribuye el “liderazgo” de un “plan delictivo” para “desacreditar” a la cúpula de la UCO y de la Fiscalía Anticorrupción con el objetivo de “anular” causas que “afectan a políticos y empresarios”. Ella se presentaba como una reportera de investigación que lleva años indagando en las llamadas cloacas del Estado y ha negado su vinculación con el Partido Socialista. Sin embargo, [unas grabaciones que constan en el sumario del caso que dirige Arturo Zamarriego]( \" revelan que ella se presentaba como la “mano derecha” del ex secretario de Organización del PSOE Santos Cerdán. Díez fue teniente de alcalde socialista en el municipio cántabro de Vega de Pas tras las elecciones de 2011. Con el presidente del Gobierno Pedro Sánchez ya en La Moncloa fue nombrada responsable de comunicación de Enusa, empresa pública que depende la SEPI, entre 2018 y 2021, cuando la sociedad estatal estaba presidida por el otro detenido, Vicente Fernández. Luego, ostentó el cargo de consejera en Cistec, una empresa de servicios tecnológicos con sede en Bilbao, entre octubre de 2021 y mayo de 2023. Entre 2022 y 2024, fue directora de Filatelia y Relaciones Institucionales de Correos, de donde salió dando las gracias a Juan Manuel Serrano, quien fuera presidente de la compañía postal y ex jefe de gabinete de Pedro Sánchez antes de llegar a La Moncloa. A la izquierda Leire Díez, en 2022, cuando era la directora de Relaciones Institucionales y Filatelia. A. Pérez Meca / Europa Press Vicente Fernández Guerrero (Málaga, 52 años) accedió en 2018 a la presidencia de la SEPI, tras la investidura de Sánchez, y cesó un año y cinco meses después. Años más tarde, pidió permiso a la Oficina de Conflictos de Intereses para trabajar como asesor externo de Servinabar, una de las sociedades vinculadas al _caso Cerdán_, para la que trabajó de 2021 a 2023. La investigación que implica al ex secretario de Organización del PSOE ha revelado que Cerdán tenía presuntamente un 45% de esa mercantil que conseguía contratos públicos a través de supuestos amaños que perpetraban desde el Ministerio de Transportes. Fuentes del entorno de Fernández exponen que la asesoría a Servinabar fue de carácter directo para el dueño de la empresa, Joseba Antxon Alonso, y consistía en buscar socios y obras privadas y no públicas en la Costa del Sol. Por esa colaboración recibió entre 100. 000 y 200. 000 euros. Las mismas fuentes señalan que prestó a Leire Díez un piso en el madrileño barrio de Salamanca para algunas reuniones. Antes de su etapa en la SEPI, Fernández Guerrero fue interventor general de la Junta de Andalucía, el máximo órgano de control interno y contabilidad de la Administración andaluza. También ejerció como secretario general de Innovación, Industria y Energía en esa comunidad autónoma entre 2012 y 2016 y como secretario en consejos de administración de empresas públicas, como la Empresa Pública de Gestión de Activos, la Sociedad de Gestión, Financiación e Inversión Patrimonial; y Cartuja 93. Fernández, letrado de la Junta de Andalucía, obtuvo el número uno de su promoción. Fuentes próximas al ahora detenido en su etapa en Andalucía, destacan de él una enorme ambición profesional a la que se unían una gran capacidad técnica y nutridos contactos con el mundo empresarial y de la Administración. Fernánez en 2018, cuando era presidente de la SEPI, en un acto organizado con motivo de la celebración del 40 aniversario de la Constitución Española. Javier Lizón (EFE) El exdirectivo [estuvo imputado]( \" en una causa de la Audiencia de Sevilla por la adjudicación de la mina de Aznalcóllar (Sevilla), de la que resultó absuelto junto al resto de 15 acusados. El pasado mes de julio compareció en la comisión parlamentaria del Senado que investiga el _caso Cerdán, _ pero se acogió a su derecho a no declarar. El presidente del PP, Alberto Núñez Feijóo, se ha referido a las detenciones asegurando que se ha arrestado a una “fontanera” de Sánchez y a un “estrecho colaborador” de la vicepresidenta primera, María Jesús Montero. “Así no se puede seguir, @sanchezcastejon”, ha tuiteado. Antes, la portavoz parlamentaria del PP, Ester Muñoz, ha asegurado que “con este ritmo de escándalos, en 2027 del PSOE no van a quedar ni las raspas”, en referencia a la fecha límite de la legislatura, que el presidente Sánchez ha insistido que finalizará entonces. “A este ritmo de detenciones, probablemente, las cárceles se queden pequeñas”, ha añadido la portavoz popular. El portavoz parlamentario de Izquierda Unida, dentro de Sumar, socio minoritario del Gobierno, Enrique de Santiago, ha ceñido las detenciones en el marco de un asunto de particulares. “Desgraciadamente, hay problemas de corrupción. Nosotros hemos dicho claramente cómo analizamos este problema. Todo lo que atañe a personas particulares es de particulares. En el momento que se cruce la línea y lo que aparezca es financiación a un partido, eso ya es otros términos, por supuesto”, ha asegurado. Con información de **Óscar López-Fonseca** y **J J Gálvez. **",
+      "content_preview": "[La exmilitante y exconcejal del PSOE Leire Díez]( \" y el expresidente de la SEPI (Sociedad Estatal de Participaciones Industriales) Vicente Fernández han sido detenidos este miércoles por agentes de la Unidad Central Operativa (UCO) de la Guardia Civil, según han confirmado a EL PAÍS fuentes cercanas a la investigación. Ambos arrestos se enmarcan en un procedimiento relacionado con contratación pública, que impulsa el Juzgado Central de Instrucción número 6 de la Audiencia Nacional, encabezada ..."
+    },
+    {
+      "processing_rank": 5,
+      "url_id": 16112,
+      "url": "https://elpais.com/internacional/2025-12-11/la-camara-de-representantes-de-estados-unidos-aprueba-un-presupuesto-de-defensa-de-900000-millones-de-dolares.html",
+      "title": "La Cámara de Representantes de Estados Unidos aprueba un presupuesto de Defensa de 900.000 millones de dólares",
+      "source": "elpais.com",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 935,
+      "archive_url": null,
+      "full_content": "La Cámara de Representantes de Estados Unidos ha aprobado un proyecto de ley que asigna 900. 000 millones de dólares para gasto de [Defensa]( \" El prolijo documento, que cuenta con el respaldo de los dos partidos, incluye medidas de apoyo a los aliados europeos, incluida Ucrania, en momentos en los que la Casa Blanca redobla sus críticas a sus socios en el continente. También añade una provisión para forzar al secretario de Defensa, Pete Hegseth, a hacer público el vídeo del [ataque a una narcolancha en el Caribe]( \" en el que un segundo bombardeo mató a los supervivientes del primero. Y prevé una reforma del sistema militar de compras de armamento y una subida de sueldo del 3, 8% para los soldados. El proyecto de ley de Presupuesto para la Defensa Nacional, de 3. 000 páginas, recibió el respaldo de 312 congresistas de los dos partidos, por 112 que se opusieron. Se espera que obtenga sin problemas el visto bueno del Senado la semana próxima, inmediatamente antes de las vacaciones navideñas, y el presidente Donald Trump la firme sin objeciones. Previamente, la Casa Blanca había expresado su “firme apoyo” a la amplia ley. Entre otras cosas, la nueva medida busca proteger la presencia militar estadounidense en Europa de las veleidades de una Administración que, en su [nueva Estrategia de Seguridad Nacional]( \" acusa al continente de estar en riesgo de una “destrucción de su civilización”, de frenar la libertad de expresión de la extrema derecha y se muestra mucho más crítico contra los gobiernos aliados que contra la Rusia hostil. El Gobierno estadounidense ya ha [retirado parte del contingente que mantenía hasta ahora en Rumanía]( \" para [proteger el flanco este]( \" de la amenaza rusa, y los aliados temen que este paso solo sea el principio de una salida mayor. El documento exige al Pentágono mantener al menos 76. 000 soldados en Europa a menos que los aliados de la OTAN sean consultados y se determine que retirar esas tropas es necesario para los intereses estadounidenses. En la actualidad Estados Unidos mantiene un contingente de 80. 000 a 100. 000 militares en el continente europeo. Asimismo una provisión del proyecto de ley obliga a Washington a mantener al menos 28. 500 soldados en Corea del Sur. Pese a las presiones de Trump sobre el presidente ucranio, Volodímir Zelenski, para que acepte rápidamente un acuerdo de paz por el que cedería a Rusia el 20% del territorio de su país, y su amenaza de retirar su apoyo a la nación ocupada, el proyecto de ley también envía un espaldarazo a Kiev, relativamente modesto pero muy bienvenido: autoriza 400 millones de dólares anuales para 2026 y 2027 para fabricar armas destinadas a [Ucrania]( \" La medida ha logrado algo que cada vez parece más difícil en un mundo político en Washington cada vez más polarizado: un compromiso en el que los dos partidos han cedido. Los republicanos consiguen recortes y eliminaciones de programas y partidas presupuestarias dedicados a la lucha contra el cambio climático y a apoyar la diversidad. El ala dura del Partido Republicano se lamenta, por su parte, de que la nueva ley no incluya más recortes a la presencia militar estadounidense en el exterior. Los demócratas obtienen un mayor escrutinio sobre el Pentágono y la cancelación de varias autorizaciones a guerras ya antiguas. Incluida la quizá más simbólica de todas, la de Irak que Estados Unidos lanzó en 2003 con el argumento falso de que el entonces régimen de Sadam Husein contaba con armas de destrucción masiva. Con la aprobación de esta ley, Washington pondrá fin oficialmente a la invasión. Un paso necesario, según los legisladores, para subrayar que hoy día Irak es un socio estratégico y para evitar abusos en el futuro: la primera Administración de Trump recurrió en parte a la resolución que autorizaba la guerra en Irak como justificación legal para el ataque de drones que mató al general iraní Qasim Suleimani en 2020. “Necesitamos una fuerza de combate dispuesta, capaz y letal porque las amenazas contra nuestra nación, especialmente las procedentes de China, son más complejas y desafiantes que nunca en los últimos cuarenta años”, ha declarado el presidente del Comité de Servicios Armados de la cámara baja, el republicano Mike Rogers. La medida confirma el levantamiento de las sanciones estadounidenses contra Siria. Y uno de los cambios más significativos que introduce la medida es una reforma del sistema de compras de armamento en el Pentágono, que busca acelerar el proceso de adquisiciones, una de las prioridades para Hegseth. Según la Casa Blanca, el nuevo procedimiento “reforzará la base industrial de defensa al tiempo que elimina fondos para programas radicales y que desperdician dinero”. El secretario de Defensa se ve también presionado a dar más información sobre el ataque del 2 de septiembre contra la narcolancha en aguas internacionales del Caribe frente a Venezuela, en la que viajaban once personas. Aquel ataque fue el primero de lo que el Pentágono denomina ahora “Operación Lanza del Sur” contra los carteles de la droga, que ha hundido al menos 22 embarcaciones y ha matado a 87 personas. Al anunciarlo en redes sociales, Trump incluyó un vídeo en el que se veía la lancha alcanzada por un proyectil. Hace dos semanas se supo que al menos dos personas sobrevivieron ese bombardeo, pero el almirante al mando de la operación ordenó un segundo golpe que los mató. La nueva ley prevé retener el 25% del presupuesto para viajes de Hegseth si el jefe del Pentágono no divulga el vídeo completo del ataque y las órdenes exactas que se dieron para ejecutarlo.",
+      "content_preview": "La Cámara de Representantes de Estados Unidos ha aprobado un proyecto de ley que asigna 900. 000 millones de dólares para gasto de [Defensa]( \" El prolijo documento, que cuenta con el respaldo de los dos partidos, incluye medidas de apoyo a los aliados europeos, incluida Ucrania, en momentos en los que la Casa Blanca redobla sus críticas a sus socios en el continente. También añade una provisión para forzar al secretario de Defensa, Pete Hegseth, a hacer público el vídeo del [ataque a una narcol..."
+    },
+    {
+      "processing_rank": 6,
+      "url_id": 16001,
+      "url": "https://www.elconfidencial.com/mundo/2025-12-10/detenido-expresidente-bolivia-luis-arce-corrupcion_4263969/",
+      "title": "Detenido el expresidente de Bolivia Luis Arce por presunta corrupción",
+      "source": "www.elconfidencial.com",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "llm_direct",
+      "extraction_error": null,
+      "word_count": 207,
+      "archive_url": null,
+      "full_content": "Luis Arce, el expresidente de Bolivia, ha sido detenido por presunta corrupción, según ha confirmado su exministra de la Presidencia, María Nela Prada. La detención se produce en un contexto de creciente tensión política en el país, donde las acusaciones de corrupción han salpicado a varios exfuncionarios del gobierno de Arce. Prada ha declarado que la detención de Arce es un acto de persecución política y ha instado a la comunidad internacional a intervenir en la situación. El expresidente, que ocupó el cargo desde noviembre de 2020 hasta noviembre de 2025, ha negado las acusaciones y ha afirmado que se trata de un intento de desacreditar su gestión. Las autoridades bolivianas han indicado que la investigación se centra en irregularidades en la gestión de fondos públicos durante su mandato. Arce fue elegido en medio de una crisis política y social en Bolivia, y su gobierno ha enfrentado numerosas críticas por su manejo de la economía y la corrupción. La detención ha generado reacciones mixtas en el país, con algunos sectores apoyando la acción judicial y otros denunciando un uso político de la justicia. Se espera que la situación se desarrolle en los próximos días, con posibles movilizaciones en apoyo a Arce y en contra de su detención.",
+      "content_preview": "Luis Arce, el expresidente de Bolivia, ha sido detenido por presunta corrupción, según ha confirmado su exministra de la Presidencia, María Nela Prada. La detención se produce en un contexto de creciente tensión política en el país, donde las acusaciones de corrupción han salpicado a varios exfuncionarios del gobierno de Arce. Prada ha declarado que la detención de Arce es un acto de persecución política y ha instado a la comunidad internacional a intervenir en la situación. El expresidente, que..."
+    },
+    {
+      "processing_rank": 7,
+      "url_id": 15899,
+      "url": "https://www.bbc.com/news/articles/cr7l0nyxxygo",
+      "title": "Panic in France as children fall victim to lethal violence of Marseille drug gangs",
+      "source": "www.bbc.com",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 1730,
+      "archive_url": null,
+      "full_content": "# Panic in France as children fall victim to lethal violence of Marseille drug gangs Andrew HardingParis correspondent, Marseille AFP via Getty Images Drug crime has skyrocketed in Marseille, France's second largest city _Warning: This article contains disturbing details from the start. _ A group of children spotted Adel's body on their way to school, just as his parents were heading to the police station to report him missing. A grotesque, charred silhouette, reclining, with one knee raised, as if lounging on one of Marseille's nearby beaches. He was 15 when he died, in the usual way: a bullet in the head, then petrol poured over his slim corpse and set on fire. Someone even filmed the scene on the beach, the latest in a grim series of shoot-then-burn murders linked to this port city's fast-evolving drug wars, increasingly fuelled by social media and now marked by chillingly random acts of violence and by the growing role of children, often coerced into the trade. \"It's chaos now, \" said a scrawny gang-member, lifting his shirt in a nearby park to show us a torso marked by the scars of at least four bullets - the result of an attempted assassination by a rival gang. France's Ministry of Justice estimates that the number of teenagers involved in the drugs trade has risen more than four-fold in the past eight years. \"I've been in [a gang] since I was 15. But everything has changed now. The codes, the rules – there are no more rules. Nobody respects anything these days. The bosses start. . . to use youngsters. They pay them peanuts. And they end up killing others for no real reason. It's anarchy, all over town, \" said the man, now in his early 20s, who asked us to use his nickname, The Immortal. The Immortal, a Marseille gang member, showing his bullet wounds from a rival gang attack Across Marseille, police, lawyers, politicians and community organisers talk of a _psychose_ – a state of collective trauma or panic – gripping parts of the city, as they debate whether to fight back with ever tougher police action or with fresh attempts to address entrenched poverty. \"It's an atmosphere of fear. It's obvious that the drug traffickers are dominant, and gaining more ground every day, \" said a local lawyer, who asked to remain anonymous for fear of reprisals against her or her family. \"The rule of law is now subordinate to the gangs. Until we have a strong state again, we have to take precautions, \" she said, explaining her recent decision to stop representing victims of gang violence. \"There's so much competition in the drugs trade that. . . people are ready to do anything. So, we have kids aged 13 or 14 who come in as lookouts or dealers. The young see dead bodies, they hear about it, every day. And they're no longer afraid of killing, or being killed, \" community organiser Mohamed Benmeddour told us. The trigger for Marseille's current _psychose_ was the murder, last month, of Mehdi Kessaci, a 20-year-old trainee policeman with no links to the drug trade. It is widely believed his death was intended as a warning to his brother, a prominent 22-year-old anti-gang activist and aspiring politician named Ahmed Kessaci. Under close police protection now, Kessaci spoke to the BBC about Mehdi's death, and the guilt he feels. \"Should I have made my family leave [Marseille]? The struggle of my life is going to be this fight against guilt, \" he said. AFP via Getty Images French anti-drug activist Amine Kessaci (centre) is mourning his brother Mehdi, who was murdered in Marseille Ahmed Kessaci first rose to national prominence in 2020, after his older brother, a gang member named Brahim, was also murdered. \"We've had this _psychose_ for years. We've known that our lives are hanging by a single thread. But everything changed since Covid. The perpetrators are getting younger and younger. The victims are younger and younger, \" he said. \"My little brother was an innocent victim. There was a time when the real thugs. . . had a moral code. You don't kill in daytime. Not in front of everyone. You don't burn bodies. First you threaten with a shot to the leg. . . Today these steps have all disappeared. \" Citing today's \"unprecedented\" levels of violence, French police are responding with what they call security \"bombardments\" in high-crime areas of Marseille. Although one gang, the DZ Mafia, now appears to dominate the trade, it operates a kind of franchise system, with a fractious network of small distributors often staffed by teenagers and undocumented immigrants, who clash violently over territory. According to one estimate, up to 20, 000 people may be involved in the city's drug industry. Last year officials confiscated €42m (£36m) in criminal assets from the gangs. Video footage shared on social media routinely shows gang members, armed with automatic rifles, shooting at each other in Marseille's various _cités_ – poor neighbourhoods characterised by high-rise buildings and a concentration of social housing. On a cold afternoon last week, we accompanied a group of armed riot police on one of their regular \"bombardment\" missions. The officers sped up to a dilapidated block of flats in their vans as a youthful gang look-out on the gate promptly fled on foot. Splitting into two groups, the police ran up either side of the building seeking to catch dealers in the stairwells. \"The aim is to disrupt the drug dealing spots. We've closed more than 40 of them. . . and we've locked up a lot of people, \" explained Sébastien Lautard, a regional police chief. Watch: BBC films arrests in Marseille drug raid \"Turn him round, \" said an officer, brusquely, as his team pinned an 18-year-old up against a door. In a filthy cellar nearby, the police found dozens of vials and tiny plastic bags used to distribute cocaine. Later, a policeman explained that the young man they had detained was pleading to be arrested, saying he had come to Marseille from another city, and was now being held against his will and forced to work for a drug gang. The officers took him away in a van. \"This is not El Dorado. We have a lot of youngsters recruited on social media. They come to Marseille thinking they'll make easy money. They're promised €200 ($233; £175) a day. But it often ends in misery, violence and sometimes death, \" said the city's chief prosecutor, Nicolas Bessone. In his office close to the city's old harbour, Bessone described an industry thought to be worth up to €7bn nationwide and characterised by two new developments: a growing emphasis on online recruitment, sales, and delivery; and a rising number of teenagers coerced into the trade. \"We now see how the traffickers enslave these. . . little soldiers. They create fictional debts to make them work for free. They torture them if they steal €20 to buy a sandwich. It's ultra-violence. The average age of the perpetrators and victims is getting younger and younger, \" said Bessone. He urged local people not to succumb to a _psychose_ but instead to \"react, to rise up\". The lawyer who asked us to hide her identity described a case she had handled. \"One young person, who absolutely didn't want to be part of a network, was picked up after school, forced to participate in the drugs trade, was raped, then threatened, then his family also threatened. All means are used to create a workforce, \" she said. On Tiktok, dozens of videos, set to music, advertise drugs for sale in Marseille's _cités_, \"from 10: 00 to midnight\", each product with its own emoji, for cocaine, hashish and marijuana. Other adverts seek to recruit new gang members with messages like \"recruiting a worker\", \"€250 for lookouts\", \"€500 to carry drugs\". For some local politicians, the answer to Marseille's troubles is a state of emergency, and far tougher rules on immigration. \"Authority must be restored. We need to end a culture of permissiveness in our country. We need to give more freedom, more power to the police and the judiciary, \" said Franck Alissio, a local MP for the populist, far-right National Rally party, and a prospective mayoral candidate. Although the ancient Mediterranean city of Marseille has, for centuries, been known for its large immigrant community, Alissio argued that \"today, the problem is that we are no longer able to integrate economically and assimilate. Too much immigration. It's the number [of immigrants] that's the problem. And in fact, the drug traffickers, dealers, lookouts, the leaders of these mafia, are almost all immigrants or foreigners with dual nationality. \" It is a controversial claim that is hard to verify in a country that strives to avoid including such details in official figures. Alissio claimed that billions of euros had been poured into Marseille's poorest neighborhoods by successive governments to no effect. He blamed parents and schools for allowing children into the drugs trade but added that he was focused on \"solving the problem, not doing sociology\". Far-right parties have long enjoyed strong support across the south of France, but less so in the diverse city of Marseille itself. Critics of the RN, like the lawyer whose identity we have concealed, accused the party of \"exploiting misery and fear, \" and wrongly blaming immigrants for a \"gangrene\" that is widespread across all communities in France. Philippe Pujol, a local writer and expert on the drug trade in Marseille, was also offered police protection after the murder of Mehdi Kessaci last month. \"I'm not sure if there's a good reason for this terror. But. . . terror is taking hold. I would rather be afraid and careful than take unnecessary risks, \" he said. But he hit back against calls for tougher police action, arguing it was merely nursing the symptoms \"of a suffering society\", rather than treating the causes of the problem. Describing entrenched poverty as a \"monster, \" Pujol painted a picture of a society radicalised by decades of neglect. \"The monster is a mixture of patronage, corruption, and political and economic decisions made against the public interest, \" Pujol said. \"These kids can be jerks when they're in a group, but when you're alone with them, they're still children, with dreams, who don't want this violence. \"",
+      "content_preview": "# Panic in France as children fall victim to lethal violence of Marseille drug gangs Andrew HardingParis correspondent, Marseille AFP via Getty Images Drug crime has skyrocketed in Marseille, France's second largest city _Warning: This article contains disturbing details from the start. _ A group of children spotted Adel's body on their way to school, just as his parents were heading to the police station to report him missing. A grotesque, charred silhouette, reclining, with one knee raised, as..."
+    },
+    {
+      "processing_rank": 8,
+      "url_id": 15879,
+      "url": "https://www.abc.es/espana/uco-detiene-fontanera-psoe-leire-diez-expresidente-20251210162615-nt.html#vtm_modulosEngag=lomas::noticia:1",
+      "title": "La UCO detiene a Leire Díez y al expresidente de la SEPI por presuntas irregularidades en contratos públicos",
+      "source": "www.abc.es",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "json_ld",
+      "extraction_error": null,
+      "word_count": 753,
+      "archive_url": null,
+      "full_content": "La Unidad Central Operativa (UCO) de la Guardia Civil ha detenido este miércoles a la exmilitante socialista y presunta fontanera del PSOE Leire Díez, según informan fuentes de la investigación a ABC. Junto a ella ha sido detenido también Vicente Fernández, quien fuera. . . presidente de la Sociedad Estatal de Participaciones Industriales (SEPI) entre junio de 2018 y octubre de 2019, y que está considerado como uno de los hombres de confianza de la ministra de Hacienda, María Jesús Montero. La causa, que permanece secreta, está liderada por el magistrado de la Audiencia Nacional Antonio Piña, en coordinación con la Fiscalía Anticorrupción, y las pesquisas indagan en presuntas irregularidades en contratos públicos. Los delitos que se les imputan a los dos detenidos, en un principio y según ha podido conocer este periódico, son los de falsedad documental, fraude, malversación de fondos públicos, tráfico de influencias y prevaricación. De momento, y dado que la operación sigue abierta, ha trascendido que se han realizado diversos registros por parte de los agentes de la UCOFuentes jurídicas consultadas por este periódico indican que, en principio, está previsto que ambos sean puestos a disposición del titular del Juzgado Central de Instrucción número 6 el próximo viernes, momento en el que deberá resolver si les envía a prisión o si acuerda medidas cautelares menos lesivas, como la retirada del pasaporte, la prohibición de salir de territorio nacional o las comparecencias periódicas ante el juzgado. Noticia Relacionada Perfil estandar No ¿Quién es Vicente Fernández? Mano derecha de Montero al frente de la SEPI antes de fichar por la empresa de Cerdán Antonio R. Vega Ha sido detenido junto a Leire Díez, la 'fontanera' del PSOE en una investigación de la Audiencia NacionalHasta entonces, y siempre según las fuentes consultadas, tanto Leire Díez como Vicente Fernández se encuentran en estos momentos en los calabozos de la Comandancia de la Guardia Civil de Tres Cantos (Madrid), donde fueron trasladados tras ser detenidos. Previsiblemente pasarán allí dos noches hasta que sean trasladado el viernes ante Piña. Las diligencias de investigación encomendadas a la UCO, y en concreto a la unidad que dirige el jefe de Delitos Económicos, Antonio Balas, han sido desarrolladas con gran hermetismo, y tras explotar la operación no se descartan nuevas detenciones. Una empresa tecnológicaFuentes de la investigación explican a ABC que las pesquisas podrían girar en torno a la etapa de Leire Díez en una empresa tecnológica y los contratos públicos que pudo haber obtenido. Se da la circunstancia de que la exmilitante socialista fue consejera de la sociedad Cistec Technology de octubre de 2021 a mayo del 2023. También ha trascendido que Leire Díez preparó presuntamente un argumentario contra la empresa minera Emerita Resources, que fue la que impulsó el caso Aznalcóllar en el que fue investigado Fernández. De hecho, el expresidente de la SEPI tuvo que dimitir de ese cargo tras su imputación en esa causa, de la que hace tan solo cinco días se conoció la sentencia por la que se absolvía a todos los encausados. Fernández está considerado como uno de los hombres de confianza de la actual vicepresidenta y ministra de Hacienda María Jesús Montero. Es más, el puesto de presidente de la SEPI estuvo vacante, con un líder provisional, durante más de dos años esperando el archivo de la causa en la que estaba investigado el ahora detenido por la UCO. Se da la circunstancia de que este ex alto cargo pidió permiso al Estado para trabajar en Servinabar, la empresa que la UCO vincula a Santos Cerdán y que está en el epicentro de la investigación abierta en el Tribunal Supremo contra el que fuera número tres del PSOE y contra el exministro José Luis Ábalos por presuntos amaños de contratos de obra pública a cambio de comisiones ilegales. En la empresa navarra, Fernández tenía el puesto ed asesor externo y accedió en mayo de 2021. Cabe recordar que la presunta fontanera del PSOE también está siendo investigada por delitos de tráfico de influencias y cohecho junto al empresario Javier Pérez Dolset en el marco de la causa abierta en el Juzgado de Instrucción número 9 de Madrid para indagar en las reuniones que mantuvo Díez para tratar de recopilar información sensible que pudiera ser utilizadas contra mandos de la Guardia Civil y determinados fiscales, entre ellos el fiscal jefe Anticorrupción, Alejandro Luzón. Una de esas reuniones fue con el fiscal Ignacio Stampa, quien grabó subrepticiamente el encuentro. Ahí, la exmilitante socialista reveló que ella iba en nombre de Santos Cerdán.",
+      "content_preview": "La Unidad Central Operativa (UCO) de la Guardia Civil ha detenido este miércoles a la exmilitante socialista y presunta fontanera del PSOE Leire Díez, según informan fuentes de la investigación a ABC. Junto a ella ha sido detenido también Vicente Fernández, quien fuera. . . presidente de la Sociedad Estatal de Participaciones Industriales (SEPI) entre junio de 2018 y octubre de 2019, y que está considerado como uno de los hombres de confianza de la ministra de Hacienda, María Jesús Montero. La c..."
+    },
+    {
+      "processing_rank": 9,
+      "url_id": 15836,
+      "url": "https://www.abc.es/internacional/detenido-expresidente-bolivia-luis-arce-presunta-corrupcion-20251210205727-nt.html",
+      "title": "Detienen al expresidente de Bolivia Luis Arce por un caso de corrupción",
+      "source": "www.abc.es",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "json_ld",
+      "extraction_error": null,
+      "word_count": 759,
+      "archive_url": null,
+      "full_content": "El expresidente Luis Arce Catacora fue detenido en La Paz este miércoles y trasladado a celdas policiales por presuntamente estar involucrado en delitos de corrupción. El operativo se realizó por sorpresa y sus excolaboradores calificaron el hecho como un «secuestro», mientras que. . . fuerzas políticas de ese país han respaldado la decisión. La noticia se conoció poco después del mediodía, cuando su exministra de la Presidencia, María Nela Prada, denunció públicamente que Arce había sido «secuestrado». Afirmó que agentes policiales lo subieron a un vehículo sin orden de aprehensión visible. El pasado mes de noviembre, el fiscal general del Estado de Bolivia, Roger Mariaca, reveló que el Ministerio Público había recibido nuevas denuncias contra Arce, tanto por hechos de su gobierno como por actuaciones previas, cuando era ministro de Economía. Noticia Relacionada estandar Si La oposición boliviana acudirá dividida a las elecciones presidenciales de agosto Ronald Catarí Samuel Doria Medina ha sido proclamado candidato del bloque, mientras que Jorge 'Tuto' Quiroga, que ha denunciado irregularidades, se presentará con su alianza Libertad y RepúblicaLa acusación por la que fue detenido Luis Arce es por el denominado Fondo de Desarrollo para los Pueblos Indígenas (FONDIOC), un programa estatal que debía financiar proyectos productivos en zonas rurales y que terminó simbolizando uno de los mayores escándalos de corrupción en Bolivia. La Fiscalía confirmó más tarde que los delitos por lo que se lo investiga es por incumplimiento de deberes y conducta antieconómica, consideran que hay indicios suficientes de autoría. Según el fiscal departamental Luis Carlos Torrez, la denuncia forma parte del caso Fondioc que derivó en un millonario escándalo de desvío de fondos entre 2014 y 2015, cuando Arce integraba su directorio como ministro de economía del expresidente Evo Morales. Auditorías y testimonios expuestos a lo largo del tiempo hablan de obras inexistentes, recursos desviados y transferencias sin control. Arce formó parte del directorio que autorizaba los desembolsos y, según documentos citados por denunciantes, habría avalado pagos que terminaron en cuentas particulares. El vicepresidente Edmand Lara felicitó públicamente a los efectivos de la policía que ejecutaron la aprehensión del expresidente Luis Arce y sostuvo que «todos los que han robado a la patria rendirán cuentas a la justicia». En un video difundido en redes sociales, recordó que ya había anticipado que Arce sería «el primero en entrar preso» y afirmó que los investigados deberán devolver «hasta el último centavo». Noticia Relacionada estandar Si Bolivia reabre la puerta a la DEA para colaborar con Trump en la lucha contra el narcotráfico Ronald Catari El retorno de la cooperación llega en un momento en el que el Gobierno de Paz intenta recomponer sus instituciones y reinsertarse en los circuitos internacionales de seguridadDesde noviembre, el nuevo gobierno del presidente Rodrigo Paz activó «comisiones de la verdad» para revisar la gestión pública de los últimos años: desde empresas estatales hasta programas sociales, pasando por contratos, subvenciones y ejecución presupuestaria. Paz aseguró que Bolivia enfrenta «cifras escalofriantes» de daño económico y que su administración destapará lo ocurrido en el manejo de fondos públicos. El caso FONDIOC encabeza esa lista. Tras la aprehensión, el exdiputado Rafael Quispe lo responsabilizó por las presuntas irregularidades en el manejo de recursos durante su etapa como ministro de Economía. Afirmó que existen documentos en los que Arce habría autorizado depósitos en cuentas particulares y estimó un desfalco que supera los mil millones de bolivianos. Quispe, quien fue denunciante del caso, sostuvo que Arce es el «principal responsable» por su rol en el directorio del Fondo y exigió que sea sometido a una audiencia cautelar y enviado a la cárcel con detención preventiva, del mismo modo que otras exautoridades implicadas. Un diputado de la Asamblea Legislativa, miembro de la Comisión de Justicia, explicó que se cumplieron tres requisitos: probabilidad de autoría, indicios de fuga y de obstaculización de la investigación. La autoridad considera que se dará apoyo político a la investigación. De hecho, ya se habla de conformar una comisión en la Asamblea Legislativa que investigue el presunto daño económico dentro del Fondo Indígena, además recuperar el dinero que fue presuntamente desvíado. «Ya se presentó la propuesta» dijo el diputado Edgar Zegarra. Si los hechos investigados se remontan a su época como ministro de Economía, Arce puede ser procesado en la justicia ordinaria, sin juicio de responsabilidades y sin intervención del Parlamento. Luis Arce es un economista que llegó al poder en Bolivia en 2020 prometiendo estabilidad y crecimiento. Este miércoles entró a celdas fuertemente custodiado, además es señalado como el Presidente que dejó a ese país en una profunda crisis económica.",
+      "content_preview": "El expresidente Luis Arce Catacora fue detenido en La Paz este miércoles y trasladado a celdas policiales por presuntamente estar involucrado en delitos de corrupción. El operativo se realizó por sorpresa y sus excolaboradores calificaron el hecho como un «secuestro», mientras que. . . fuerzas políticas de ese país han respaldado la decisión. La noticia se conoció poco después del mediodía, cuando su exministra de la Presidencia, María Nela Prada, denunció públicamente que Arce había sido «secue..."
+    },
+    {
+      "processing_rank": 10,
+      "url_id": 16441,
+      "url": "https://www.nytimes.com/interactive/2025/12/10/opinion/editorials/us-military-budget-waste.html",
+      "title": "Opinion | America Pours Billions Into the Military. We Don’t Know Where It All Goes.",
+      "source": "www.nytimes.com",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "xpath_cache",
+      "extraction_error": null,
+      "word_count": 1482,
+      "archive_url": null,
+      "full_content": "ByThe Editorial BoardThe editorial board is a group of opinion journalists whose views are informed by expertise, research, debate and certain longstandingvalues. It is separate from the newsroom. To understand whythe United States is struggling to buy and field the weapons of the future, consider the trouble it had buying the most basic weapon of the past. In 2011, the Army decided to get its soldiers new pistols. The odyssey that followed included a 350-page list of technical specifications, years of testing and a protracted battle on Capitol Hill between competing gun makers. The Pentagon won’t complete delivery until 2027 at the earliest. The Army could have raised an infantryman from birth to within two years of enlistment age in the time it would have taken to get him a new handgun. The story of the Pentagon’s new pistols would be funny if it didn’t point to a serious problem at the heart of America’s military. The Department of Defense has built a gilded fortress of people and processes that is slow, wasteful and married to the past. Of all the obstacles to fielding the military that America needs, the Pentagon’s bureaucracy may be the hardest to overcome. The Pentagon’s bureaucratic processes have stifled innovation and diverted funds from military needs. The military’s top ranks aredominatedby pilots, captains and other commanders who are disdainful of new, cheap alternatives to fighter jets, warships and tanks. The byzantine system for buying and testing weapons isolates the military from the innovative parts of the American economy. Congress underwrites the dysfunction with appropriations that are designed to deliver wins for its members rather than for America’s national security. Fixing this requires intervention. On Capitol Hill, the Senate leaders John Thune and Chuck Schumer should insist that the American military serve the nation before it serves as a local jobs program. But the biggest reformer needs to be the president. This is an installment ofOvermatched, a seriesfrom the Editorial Boardon why theU. S. militaryneeds to reinvent itself. We say this with some reservations, given President Trump’s destructive approach to government and his disregard for administrative competence. That said, he has shown an eagerness to disrupt old bureaucratic habits, and the Pentagon needs disruption. Mr. Trump should fix the Defense Department’s bureaucracy and provide political top cover for members of Congress to cut programs that their constituents support. Reforming the military is a long-term proposition, and politicians who plan to run for president in 2028 and the aides who will advise them should make Pentagon reform a central part of the policy agenda they will soon begin compiling. Bureaucracy may sound boring, but the safety of the country — and of our democratic allies in Asia and Europe — depends on the federal government getting serious about how it finances and equips our military. Lawmakers keep steering federal funds to the AH-64 Apache attack helicopter, which first flew in 1975. The problem startswith Congress. The proposed 2026 defense budget is loaded with pork for unnecessary programs. It has more than $300 million that the Defense Department didn’t ask for to buy and upgrade Humvees. There’s $240 million for the Gray Eagle drone, the Model T of unmanned aircraft that the Army labeled “obsolete. ” Then there’s over $360 million for an Apache helicopter that the Army didn’t request. As the House and Senate work toward the country’s first trillion-dollar defense budget, over $52 billion is for things members of Congress added, unbidden, to the Pentagon’s wish list, according to the independent budget watchdogTaxpayers for Common Sense. Congress manages to make things worse when it fails to spend money, too. For much of the past 15 years, lawmakers have passed budgets months late. That hobbles Pentagon planners, delaying investments on programs the military desperately needs. Without a formal budget, the militarystruggles to plan ahead. Percent of the fiscal year with a formal budget Between the pork and the budget lapses, no one can keep track of where all the money goes. The Defense Department is the only major federal agency never to get a clean bill of health from outside accountants, and has failed its last seven audits in as many years. When the bean counters can follow the money, they often find it has been wasted. Bases that the government targeted for closure more than a decade ago remain open. The military doesn’t have an adequate way to track spare parts, so instead of using what it already has, it just orders more. The services budgeted an estimated$1 billion more than they neededfor parts in 2021 alone. Worse than the waste is the status quo all that money strengthens and supports. The American military, whose budget is larger than those of thenext nine countriescombined, oversees aboutthree million peopleand controls some82 percentof the U. S. government’s total physical assets. A 2020 RANDstudyfound that officers who rose to leadership tended to be risk-averse and largely trained in positions such as captains and pilots. Unsurprisingly, it also found they were more likely to promote those with similar experiences and outlooks. Secretary of the Army Dan Driscoll is spearheading an internal effort to eliminate antiquated programs. That status quo command structure helps protect the labyrinthine inner workings of the Pentagon. Companies that want to sell to the military must navigate more than 2, 000 pages of the Federal Acquisition Regulation. The military’s testing and approval systems can thenrunto a decade for new weapons systems, a lifetime in an era of rapid change. Both hurdles favor the five major defense contractors and their armies of lobbyists, lawyers and former Pentagon officials. The result is a tendency to adapt old weapons platforms rather than develop new ones. The Army is paying the country’s largest military contractor, Lockheed Martin, $43 million to convert Blackhawk helicopters, which were designed in the Vietnam era, to allow them to carry and launch drones. Much cheaper options, like off-the-shelf drones, never see the light of day. The final problem: The system feeds on itself. Pentagon officials and congressional staff members have long migrated to the arms industry, getting well-paid jobs as board members and senior executives. That’s especially true of those at the top. By one count, more than80 percentof four-star generals and admirals who retired between 2018 and 2023 went on to work in the defense industry. So the spending continues on programs that won’t help America win the next war — and may ensure we lose it. The Trump administrationhas attacked the problem with its signature headstrong disruption. Army Secretary Dan Driscoll has tried to cancel multiple outdated weapons systems — the M10 Booker light tank, the Humvee replacement, overpriced aircraft — with resolve. In May, Defense Secretary Pete Hegsethslashedby half the staff of the Pentagon’s infamously slow testing office. In November, he unveiled an ambitious plan to reform the military’s approach to buying weapons. Fixing the broken bureaucracy, however, will take more than killing programs and firing people. After cutting the Pentagon’s testing staff, Mr. Hegseth left many requirements in place. An Oct. 15 memo he wrote requiring that any Pentagon employee receive permission before engaging with Congress undercuts his attempt to reform weapons purchases by making it harder to get new programs off the ground. Congress’s 2026 spending bill, introduced after many of Mr. Driscoll’s moves, was nevertheless larded up with failing programs. For the 250th anniversary of the U. S. Army, and elsewhere, Mr. Trump has focused on symbols of past military might. Mr. Trump should push for real change, not just the appearance of it. He should force the Pentagon to experiment with market approaches to budgeting in place of centralized planning. He should force services to place bets on start-up companies that get results rather than established ones that have mastered the broken system. The president should use his political clout to force reforms through Congress. He should push to pass the Audit the Pentagon Act, which wouldrequireany Pentagon component that fails the audit to return 0. 5 percent of its budget that fiscal year, followed by 1 percent for any year that follows. He should muscle through a new round of Base Realignment and Closure, the long dormant program thatstreamlinesthe closure of military bases that have outlived their usefulness. He should encourage Congress to pass Senator Elizabeth Warren’s Department of Defense Ethics and Anti-Corruption Act, which wouldlimitcontractors’ influence on military policy and create greater transparency over defense-contractor interactions. Most of all? The president should act now to ensure the Pentagon defends the country, not itself. Animation by Justin Metz. Photographs by Kenny Holston/The New York Times; Wojtek Radwanski/Agence France-Presse — Getty Images; Kenny Holston/The New York Times; Mark Peterson for The New York Times. The editorial board is a group of opinion journalists whose views are informed by expertise, research, debate and certain longstanding values. It is separate from the newsroom. Published Dec. 10, 2025 OvermatchedA series by the Editorial Board",
+      "content_preview": "ByThe Editorial BoardThe editorial board is a group of opinion journalists whose views are informed by expertise, research, debate and certain longstandingvalues. It is separate from the newsroom. To understand whythe United States is struggling to buy and field the weapons of the future, consider the trouble it had buying the most basic weapon of the past. In 2011, the Army decided to get its soldiers new pistols. The odyssey that followed included a 350-page list of technical specifications, y..."
+    }
+  ],
+  "newsletter_preview": {
+    "word_count": 884,
+    "char_count": 6601,
+    "first_500_chars": "En La Paz, Bolivia, el arresto del ex presidente [**Luis Arce**](https://www.ft.com/content/03c341ba-210d-4195-87a9-621084a1fa26) por corrupción ha sacudido el panorama político del país. Arce, quien asumió el cargo en noviembre de 2020 tras la renuncia de Evo Morales, ha sido acusado de irregularidades en la gestión de recursos públicos, lo que ha desencadenado protestas y un clima de tensión. La detención, realizada por sorpresa, ha sido calificada por sus excolaboradores como un 'secuestro', ..."
+  }
+}

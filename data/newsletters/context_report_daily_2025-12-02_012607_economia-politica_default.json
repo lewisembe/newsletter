@@ -1,0 +1,786 @@
+{
+  "metadata": {
+    "newsletter_name": "daily",
+    "run_date": "2025-12-02",
+    "generated_at": "2025-12-02T01:26:06.631915+01:00",
+    "stage": "05_generate_newsletters"
+  },
+  "configuration": {
+    "max_articles": 25,
+    "top_with_content": 25,
+    "expected_categories": [
+      "economia",
+      "politica"
+    ],
+    "ranked_file_categories": null,
+    "template": "default",
+    "model_writer": "gpt-4o",
+    "output_format": "markdown"
+  },
+  "ranked_data": {
+    "total_urls_in_ranked_file": 0,
+    "urls_selected_for_processing": 25,
+    "initial_ranked_order": []
+  },
+  "content_extraction": {
+    "urls_requested_for_content": [
+      {
+        "rank": 1,
+        "url_id": 11557,
+        "url": "https://www.lemonde.fr/idees/article/2025/12/01/clement-carbonnier-economiste-il-y-a-mieux-a-faire-que-subventionner-a-l-aveuglette-les-entreprises-payant-mal-leurs-salaries_6655560_3232.html",
+        "title": "Clément Carbonnier, économiste : « Nous savons aujourd’hui que la baisse des coûts de travail est un mauvais outil pour créer de l’emploi »"
+      },
+      {
+        "rank": 2,
+        "url_id": 11553,
+        "url": "https://www.lemonde.fr/economie/article/2025/12/01/black-friday-aux-etats-unis-les-ventes-sur-internet-ont-ete-dopees-par-un-nouvel-acteur-l-intelligence-artificielle_6655538_3234.html",
+        "title": "Black Friday aux Etats-Unis : « Les ventes sur Internet ont été dopées par un nouvel acteur, l’intelligence artificielle »"
+      },
+      {
+        "rank": 3,
+        "url_id": 11596,
+        "url": "https://www.lemonde.fr/podcasts/article/2025/12/01/affaire-epstein-l-epine-dans-le-pied-de-donald-trump_6655502_5463015.html#origin=podcast_home",
+        "title": "podcast Épisode du 01 décembre 2025 Affaire Epstein : l’épine dans le pied de Donald Trump Écouter l'épisode"
+      },
+      {
+        "rank": 4,
+        "url_id": 11586,
+        "url": "https://www.lemonde.fr/politique/article/2025/12/01/municipales-2026-le-maire-de-frejus-david-rachline-n-est-pas-reinvesti-par-le-rn_6655609_823448.html",
+        "title": "Municipales 2026 à Fréjus : le maire, David Rachline, n’est pas réinvesti par le RN"
+      },
+      {
+        "rank": 5,
+        "url_id": 11561,
+        "url": "https://www.lemonde.fr/economie/article/2025/12/01/l-incertitude-budgetaire-met-deja-l-audiovisuel-public-au-regime-sec_6655508_3234.html",
+        "title": "L’incertitude budgétaire met déjà l’audiovisuel public au régime sec"
+      },
+      {
+        "rank": 6,
+        "url_id": 11558,
+        "url": "https://www.lemonde.fr/idees/article/2025/12/01/s-il-doit-y-avoir-la-guerre-nous-devons-nous-y-preparer-l-heure-est-aux-choix-pas-aux-formules_6655595_3232.html",
+        "title": "« S’il doit y avoir la guerre, nous devons nous y préparer. L’heure est aux choix, pas aux formules »"
+      },
+      {
+        "rank": 7,
+        "url_id": 11478,
+        "url": "https://www.bbc.com/news/articles/c33mz477p4po",
+        "title": "Luigi Mangione in court as lawyers seek to rule out notebook, gun and other key evidence"
+      },
+      {
+        "rank": 8,
+        "url_id": 11498,
+        "url": "https://www.bbc.com/news/articles/c7vmn61l75ro",
+        "title": "Trump releases fraudster executive days into prison sentence"
+      },
+      {
+        "rank": 9,
+        "url_id": 11483,
+        "url": "https://www.bbc.com/news/articles/c5yd91y2250o",
+        "title": "Nonkululeko Mantula: South African radio presenter among five charged over Russia recruitment plot"
+      },
+      {
+        "rank": 10,
+        "url_id": 11460,
+        "url": "https://www.nytimes.com/2025/11/30/magazine/e-bikes-accidents-safety-legislation-california.html",
+        "title": "The Shocking Crash That Led One County to Reckon With the Dangers of E-Bikes"
+      },
+      {
+        "rank": 11,
+        "url_id": 11291,
+        "url": "https://www.ft.com/content/514cbc1d-9760-4def-b394-ea1835fdc7b3",
+        "title": "Why Australia loves muso politicians"
+      },
+      {
+        "rank": 12,
+        "url_id": 11311,
+        "url": "https://www.ft.com/content/1e0ac979-2210-4762-8684-09bbe5291ca5",
+        "title": "Spain fights to protect pork industry from swine fever outbreak"
+      },
+      {
+        "rank": 13,
+        "url_id": 11313,
+        "url": "https://www.ft.com/content/c0e103c8-b4cd-4eba-8568-9f6662d9ddbd",
+        "title": "opinion content. Markets Insight. EU watchdog must be given more power over fund managers, markets"
+      },
+      {
+        "rank": 14,
+        "url_id": 11314,
+        "url": "https://www.ft.com/content/89f172bb-0d60-47b0-ae56-853d25c52db8",
+        "title": "opinion content. Europe needs a plan for decoupling from America"
+      },
+      {
+        "rank": 15,
+        "url_id": 11315,
+        "url": "https://www.ft.com/content/7c1e68dc-305d-4d5b-b68f-e48c46827328",
+        "title": "opinion content. The FT View. The EU should play its Russian assets card"
+      },
+      {
+        "rank": 16,
+        "url_id": 11317,
+        "url": "https://www.ft.com/content/07970763-ad7a-452a-b3f5-82d6d3939ada",
+        "title": "Companies swamped by 3,000 hours of paperwork to tap EU climate funds"
+      },
+      {
+        "rank": 17,
+        "url_id": 11322,
+        "url": "https://www.ft.com/content/9ec1101b-570f-4560-a49e-bd0013a41219",
+        "title": "Bonus: What does the 2025 Budget mean for your money?"
+      },
+      {
+        "rank": 18,
+        "url_id": 11324,
+        "url": "https://www.ft.com/content/78d4ef71-2712-4e44-9f94-bc1ea00a9d15",
+        "title": "The 2025 Budget: what does it mean for your money?"
+      },
+      {
+        "rank": 19,
+        "url_id": 11325,
+        "url": "https://www.ft.com/content/64e180ca-5e87-4770-a290-5f476fd77356",
+        "title": "Is the US economy really K-shaped?"
+      },
+      {
+        "rank": 20,
+        "url_id": 11272,
+        "url": "https://www.ft.com/content/cbfd8af4-b3a8-4ade-9831-6cb7cf836745",
+        "title": "Who killed Europe’s single market dream?"
+      },
+      {
+        "rank": 21,
+        "url_id": 11264,
+        "url": "https://www.abc.es/espana/comunidad-valenciana/mercadona-confirma-cambios-horarios-supermercados-partir-diciembre-20251130122529-nt.html#vtm_modulosEngag=lomas::noticia:2",
+        "title": "Mercadona confirma cambios en los horarios de sus supermercados a partir del lunes 1 de diciembre"
+      },
+      {
+        "rank": 22,
+        "url_id": 11195,
+        "url": "https://www.abc.es/espana/juan-carlos-graba-video-alaba-transicion-pide-20251201153634-nt.html",
+        "title": "Un vídeo de Don Juan Carlos sorprende a Zarzuela, que lo tacha de «innecesario» e «inoportuno»"
+      },
+      {
+        "rank": 23,
+        "url_id": 11199,
+        "url": "https://www.abc.es/espana/castilla-leon/sector-castilla-leon-expectante-preocupado-ante-reaparicion-20251201202528-nt.html",
+        "title": "El sector de Castilla y León, «expectante» y «preocupado» ante la reaparición de la peste porcina"
+      },
+      {
+        "rank": 24,
+        "url_id": 11203,
+        "url": "https://www.abc.es/espana/monedero-reaparece-observador-honduras-plena-polemica-cercania-20251201154620-nt.html",
+        "title": "Monedero reaparece como «observador» en Honduras en plena polémica por su cercanía al oficialismo"
+      },
+      {
+        "rank": 25,
+        "url_id": 11207,
+        "url": "https://www.abc.es/espana/inspirado-conocida-pelicula-sobre-presos-ira-llevada-20251201100755-nt.html",
+        "title": "Inspirada en una conocida película sobre presos del IRA y llevada por su entorno: así funciona la cuenta en redes de Ábalos mientras está en prisión"
+      }
+    ],
+    "urls_successfully_extracted": [
+      {
+        "rank": 1,
+        "url_id": 11557,
+        "url": "https://www.lemonde.fr/idees/article/2025/12/01/clement-carbonnier-economiste-il-y-a-mieux-a-faire-que-subventionner-a-l-aveuglette-les-entreprises-payant-mal-leurs-salaries_6655560_3232.html",
+        "title": "Clément Carbonnier, économiste : « Nous savons aujourd’hui que la baisse des coûts de travail est un mauvais outil pour créer de l’emploi »",
+        "method": "llm_direct",
+        "word_count": 148
+      },
+      {
+        "rank": 2,
+        "url_id": 11553,
+        "url": "https://www.lemonde.fr/economie/article/2025/12/01/black-friday-aux-etats-unis-les-ventes-sur-internet-ont-ete-dopees-par-un-nouvel-acteur-l-intelligence-artificielle_6655538_3234.html",
+        "title": "Black Friday aux Etats-Unis : « Les ventes sur Internet ont été dopées par un nouvel acteur, l’intelligence artificielle »",
+        "method": "newspaper",
+        "word_count": 323
+      },
+      {
+        "rank": 4,
+        "url_id": 11586,
+        "url": "https://www.lemonde.fr/politique/article/2025/12/01/municipales-2026-le-maire-de-frejus-david-rachline-n-est-pas-reinvesti-par-le-rn_6655609_823448.html",
+        "title": "Municipales 2026 à Fréjus : le maire, David Rachline, n’est pas réinvesti par le RN",
+        "method": "llm_direct",
+        "word_count": 302
+      },
+      {
+        "rank": 5,
+        "url_id": 11561,
+        "url": "https://www.lemonde.fr/economie/article/2025/12/01/l-incertitude-budgetaire-met-deja-l-audiovisuel-public-au-regime-sec_6655508_3234.html",
+        "title": "L’incertitude budgétaire met déjà l’audiovisuel public au régime sec",
+        "method": "llm_direct",
+        "word_count": 274
+      },
+      {
+        "rank": 6,
+        "url_id": 11558,
+        "url": "https://www.lemonde.fr/idees/article/2025/12/01/s-il-doit-y-avoir-la-guerre-nous-devons-nous-y-preparer-l-heure-est-aux-choix-pas-aux-formules_6655595_3232.html",
+        "title": "« S’il doit y avoir la guerre, nous devons nous y préparer. L’heure est aux choix, pas aux formules »",
+        "method": "newspaper",
+        "word_count": 383
+      },
+      {
+        "rank": 7,
+        "url_id": 11478,
+        "url": "https://www.bbc.com/news/articles/c33mz477p4po",
+        "title": "Luigi Mangione in court as lawyers seek to rule out notebook, gun and other key evidence",
+        "method": "newspaper",
+        "word_count": 446
+      },
+      {
+        "rank": 8,
+        "url_id": 11498,
+        "url": "https://www.bbc.com/news/articles/c7vmn61l75ro",
+        "title": "Trump releases fraudster executive days into prison sentence",
+        "method": "newspaper",
+        "word_count": 420
+      },
+      {
+        "rank": 9,
+        "url_id": 11483,
+        "url": "https://www.bbc.com/news/articles/c5yd91y2250o",
+        "title": "Nonkululeko Mantula: South African radio presenter among five charged over Russia recruitment plot",
+        "method": "newspaper",
+        "word_count": 784
+      },
+      {
+        "rank": 11,
+        "url_id": 11291,
+        "url": "https://www.ft.com/content/514cbc1d-9760-4def-b394-ea1835fdc7b3",
+        "title": "Why Australia loves muso politicians",
+        "method": "llm_direct",
+        "word_count": 215
+      },
+      {
+        "rank": 12,
+        "url_id": 11311,
+        "url": "https://www.ft.com/content/1e0ac979-2210-4762-8684-09bbe5291ca5",
+        "title": "Spain fights to protect pork industry from swine fever outbreak",
+        "method": "llm_direct",
+        "word_count": 292
+      },
+      {
+        "rank": 16,
+        "url_id": 11317,
+        "url": "https://www.ft.com/content/07970763-ad7a-452a-b3f5-82d6d3939ada",
+        "title": "Companies swamped by 3,000 hours of paperwork to tap EU climate funds",
+        "method": "llm_direct",
+        "word_count": 171
+      },
+      {
+        "rank": 17,
+        "url_id": 11322,
+        "url": "https://www.ft.com/content/9ec1101b-570f-4560-a49e-bd0013a41219",
+        "title": "Bonus: What does the 2025 Budget mean for your money?",
+        "method": "json_ld",
+        "word_count": 221
+      },
+      {
+        "rank": 18,
+        "url_id": 11324,
+        "url": "https://www.ft.com/content/78d4ef71-2712-4e44-9f94-bc1ea00a9d15",
+        "title": "The 2025 Budget: what does it mean for your money?",
+        "method": "json_ld",
+        "word_count": 205
+      },
+      {
+        "rank": 19,
+        "url_id": 11325,
+        "url": "https://www.ft.com/content/64e180ca-5e87-4770-a290-5f476fd77356",
+        "title": "Is the US economy really K-shaped?",
+        "method": "newspaper",
+        "word_count": 143
+      },
+      {
+        "rank": 20,
+        "url_id": 11272,
+        "url": "https://www.ft.com/content/cbfd8af4-b3a8-4ade-9831-6cb7cf836745",
+        "title": "Who killed Europe’s single market dream?",
+        "method": "llm_direct",
+        "word_count": 264
+      },
+      {
+        "rank": 21,
+        "url_id": 11264,
+        "url": "https://www.abc.es/espana/comunidad-valenciana/mercadona-confirma-cambios-horarios-supermercados-partir-diciembre-20251130122529-nt.html#vtm_modulosEngag=lomas::noticia:2",
+        "title": "Mercadona confirma cambios en los horarios de sus supermercados a partir del lunes 1 de diciembre",
+        "method": "json_ld",
+        "word_count": 529
+      },
+      {
+        "rank": 22,
+        "url_id": 11195,
+        "url": "https://www.abc.es/espana/juan-carlos-graba-video-alaba-transicion-pide-20251201153634-nt.html",
+        "title": "Un vídeo de Don Juan Carlos sorprende a Zarzuela, que lo tacha de «innecesario» e «inoportuno»",
+        "method": "json_ld",
+        "word_count": 681
+      },
+      {
+        "rank": 23,
+        "url_id": 11199,
+        "url": "https://www.abc.es/espana/castilla-leon/sector-castilla-leon-expectante-preocupado-ante-reaparicion-20251201202528-nt.html",
+        "title": "El sector de Castilla y León, «expectante» y «preocupado» ante la reaparición de la peste porcina",
+        "method": "json_ld",
+        "word_count": 1379
+      },
+      {
+        "rank": 24,
+        "url_id": 11203,
+        "url": "https://www.abc.es/espana/monedero-reaparece-observador-honduras-plena-polemica-cercania-20251201154620-nt.html",
+        "title": "Monedero reaparece como «observador» en Honduras en plena polémica por su cercanía al oficialismo",
+        "method": "json_ld",
+        "word_count": 1146
+      },
+      {
+        "rank": 25,
+        "url_id": 11207,
+        "url": "https://www.abc.es/espana/inspirado-conocida-pelicula-sobre-presos-ira-llevada-20251201100755-nt.html",
+        "title": "Inspirada en una conocida película sobre presos del IRA y llevada por su entorno: así funciona la cuenta en redes de Ábalos mientras está en prisión",
+        "method": "json_ld",
+        "word_count": 728
+      }
+    ],
+    "urls_failed_extraction": [
+      {
+        "rank": 3,
+        "url_id": 11596,
+        "url": "https://www.lemonde.fr/podcasts/article/2025/12/01/affaire-epstein-l-epine-dans-le-pied-de-donald-trump_6655502_5463015.html#origin=podcast_home",
+        "title": "podcast Épisode du 01 décembre 2025 Affaire Epstein : l’épine dans le pied de Donald Trump Écouter l'épisode",
+        "status": "failed",
+        "error": "All fetch methods failed (tried: cookies, direct, no-js, selenium-no-js, archive.today)"
+      },
+      {
+        "rank": 10,
+        "url_id": 11460,
+        "url": "https://www.nytimes.com/2025/11/30/magazine/e-bikes-accidents-safety-legislation-california.html",
+        "title": "The Shocking Crash That Led One County to Reckon With the Dangers of E-Bikes",
+        "status": "failed",
+        "error": "All fetch methods failed (tried: cookies, direct, no-js, selenium-no-js, archive.today)"
+      },
+      {
+        "rank": 13,
+        "url_id": 11313,
+        "url": "https://www.ft.com/content/c0e103c8-b4cd-4eba-8568-9f6662d9ddbd",
+        "title": "opinion content. Markets Insight. EU watchdog must be given more power over fund managers, markets",
+        "status": "failed",
+        "error": "All extraction methods failed (including LLM direct extraction)"
+      },
+      {
+        "rank": 14,
+        "url_id": 11314,
+        "url": "https://www.ft.com/content/89f172bb-0d60-47b0-ae56-853d25c52db8",
+        "title": "opinion content. Europe needs a plan for decoupling from America",
+        "status": "failed",
+        "error": "All extraction methods failed (including LLM direct extraction)"
+      },
+      {
+        "rank": 15,
+        "url_id": 11315,
+        "url": "https://www.ft.com/content/7c1e68dc-305d-4d5b-b68f-e48c46827328",
+        "title": "opinion content. The FT View. The EU should play its Russian assets card",
+        "status": "failed",
+        "error": "All extraction methods failed (including LLM direct extraction)"
+      }
+    ],
+    "extraction_stats": {
+      "total_requested": 25,
+      "total_success": 20,
+      "total_failed": 5,
+      "success_rate": 80.0
+    }
+  },
+  "articles": [
+    {
+      "processing_rank": 1,
+      "url_id": 11557,
+      "url": "https://www.lemonde.fr/idees/article/2025/12/01/clement-carbonnier-economiste-il-y-a-mieux-a-faire-que-subventionner-a-l-aveuglette-les-entreprises-payant-mal-leurs-salaries_6655560_3232.html",
+      "title": "Clément Carbonnier, économiste : « Nous savons aujourd’hui que la baisse des coûts de travail est un mauvais outil pour créer de l’emploi »",
+      "source": "www.lemonde.fr",
+      "category": "economia",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "llm_direct",
+      "extraction_error": null,
+      "word_count": 148,
+      "archive_url": null,
+      "full_content": "Clément Carbonnier, économiste, souligne que la baisse des coûts de travail n'est pas un outil efficace pour créer de l'emploi. Selon lui, il existe de meilleures alternatives pour soutenir les entreprises et améliorer les conditions de travail des salariés. Il explique que les subventions accordées aux entreprises qui paient mal leurs salariés ne sont pas une solution durable. Au lieu de cela, il préconise des mesures qui favorisent la création d'emplois de qualité et la revalorisation des salaires. Carbonnier met en avant l'importance de la formation et de l'éducation pour permettre aux travailleurs de s'adapter aux évolutions du marché du travail. Il insiste sur le fait que les politiques publiques doivent viser à améliorer les compétences des salariés plutôt qu'à réduire les coûts de travail. Il conclut en affirmant que des investissements dans l'éducation et la formation professionnelle sont essentiels pour construire un avenir économique solide et équitable.",
+      "content_preview": "Clément Carbonnier, économiste, souligne que la baisse des coûts de travail n'est pas un outil efficace pour créer de l'emploi. Selon lui, il existe de meilleures alternatives pour soutenir les entreprises et améliorer les conditions de travail des salariés. Il explique que les subventions accordées aux entreprises qui paient mal leurs salariés ne sont pas une solution durable. Au lieu de cela, il préconise des mesures qui favorisent la création d'emplois de qualité et la revalorisation des sala..."
+    },
+    {
+      "processing_rank": 2,
+      "url_id": 11553,
+      "url": "https://www.lemonde.fr/economie/article/2025/12/01/black-friday-aux-etats-unis-les-ventes-sur-internet-ont-ete-dopees-par-un-nouvel-acteur-l-intelligence-artificielle_6655538_3234.html",
+      "title": "Black Friday aux Etats-Unis : « Les ventes sur Internet ont été dopées par un nouvel acteur, l’intelligence artificielle »",
+      "source": "www.lemonde.fr",
+      "category": "economia",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "newspaper",
+      "extraction_error": null,
+      "word_count": 323,
+      "archive_url": null,
+      "full_content": "Pas si noires. Les ventes du Black Friday, le fameux « vendredi noir », lorsque les commerçants cassent les prix après la dinde de Thanksgiving et avant Noël, ont été meilleures que prévu aux Etats-Unis. L’effet de l’inflation qui pèse sur les budgets et le moral des ménages américains a été moins fort que les promotions de fin d’année. L’Institut économique de MasterCard, qui s’appuie sur les paiements en caisse physique et en ligne, estime que les achats, hors automobile, ont progressé de 4, 1 % par rapport à 2024. Un employé de Best Buy transporte des cartons de produits électroniques, à Houston (Texas), aux Etats-Unis, vendredi 28 novembre 2025, jour du Black Friday. RONALDO SCHEMIDT/AFP Mais c’est en ligne et pas dans les centres commerciaux que tout s’est joué. Stables dans les boutiques, les ventes ont grimpé de l’ordre de 10 % sur Internet, dopées par un nouvel acteur: l’intelligence artificielle (IA). De plus en plus de clients lui délèguent la fastidieuse recherche de la promotion la plus intéressante. Selon Adobe Analytics, le trafic vers les sites de vente au détail provenant de services comme ChatGPT, Gemini, Perplexity… a augmenté de 805 % par rapport à 2024. Et ce n’est que le début d’une révolution schumpétérienne, selon un rapport publié par Katharina Schumacher et Roger Roberts, deux associés du cabinet de conseil McKinsey, le 17 octobre. Si l’IA nous oriente directement vers un produit au meilleur prix lorsque nous cherchons un téléphone, une paire de chaussures ou une nuit d’hôtel, irons-nous encore sur les sites comme Amazon, Fnac, Zalando ou Booking? Pas sûr, car les clients qui aujourd’hui utilisent l’IA comme un moteur de recherche survitaminé pourront aussi lui demander demain de procéder directement à l’achat. Fini la corvée de s’inscrire sur chaque site, de préciser son point de livraison préféré et son moyen de paiement. Il vous reste 36. 12% de cet article à lire. La suite est réservée aux abonnés.",
+      "content_preview": "Pas si noires. Les ventes du Black Friday, le fameux « vendredi noir », lorsque les commerçants cassent les prix après la dinde de Thanksgiving et avant Noël, ont été meilleures que prévu aux Etats-Unis. L’effet de l’inflation qui pèse sur les budgets et le moral des ménages américains a été moins fort que les promotions de fin d’année. L’Institut économique de MasterCard, qui s’appuie sur les paiements en caisse physique et en ligne, estime que les achats, hors automobile, ont progressé de 4, 1..."
+    },
+    {
+      "processing_rank": 3,
+      "url_id": 11596,
+      "url": "https://www.lemonde.fr/podcasts/article/2025/12/01/affaire-epstein-l-epine-dans-le-pied-de-donald-trump_6655502_5463015.html#origin=podcast_home",
+      "title": "podcast Épisode du 01 décembre 2025 Affaire Epstein : l’épine dans le pied de Donald Trump Écouter l'épisode",
+      "source": "www.lemonde.fr",
+      "category": "politica",
+      "has_full_content": false,
+      "extraction_status": "failed",
+      "extraction_method": null,
+      "extraction_error": "All fetch methods failed (tried: cookies, direct, no-js, selenium-no-js, archive.today)",
+      "word_count": null,
+      "archive_url": null
+    },
+    {
+      "processing_rank": 4,
+      "url_id": 11586,
+      "url": "https://www.lemonde.fr/politique/article/2025/12/01/municipales-2026-le-maire-de-frejus-david-rachline-n-est-pas-reinvesti-par-le-rn_6655609_823448.html",
+      "title": "Municipales 2026 à Fréjus : le maire, David Rachline, n’est pas réinvesti par le RN",
+      "source": "www.lemonde.fr",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "llm_direct",
+      "extraction_error": null,
+      "word_count": 302,
+      "archive_url": null,
+      "full_content": "David Rachline, le maire de Fréjus, ne sera pas réinvesti par le Rassemblement national (RN) pour les élections municipales de 2026. Cette décision survient dans un contexte où Rachline est confronté à plusieurs affaires judiciaires qui pourraient entacher son image et celle du parti. Le RN a décidé de ne pas renouveler sa confiance à Rachline, qui a été maire de Fréjus depuis 2014. Les dirigeants du parti estiment qu'il est préférable de se concentrer sur des candidats moins controversés pour les prochaines élections. Cette décision a été officialisée lors d'une réunion du bureau exécutif du RN, où il a été souligné que la priorité est de maintenir une image positive du parti à l'approche des élections. Rachline a été impliqué dans plusieurs affaires, notamment des accusations de favoritisme et de détournement de fonds publics. Bien qu'il ait toujours nié ces accusations, elles ont eu un impact significatif sur sa popularité et celle du RN dans la région. Le RN cherche à se repositionner et à renforcer sa base électorale en présentant des candidats qui ne sont pas associés à des scandales. Cette stratégie vise à attirer un électorat plus large et à éviter les erreurs du passé qui ont pu nuire à l'image du parti. Rachline, de son côté, a exprimé sa déception face à cette décision et a déclaré qu'il continuerait à travailler pour sa ville et ses habitants, indépendamment de son statut au sein du RN. Il a également affirmé qu'il n'abandonnerait pas la politique et qu'il envisagerait d'autres options pour son avenir politique. Cette situation soulève des questions sur l'avenir du RN à Fréjus et sur la manière dont le parti gérera les candidatures à l'approche des élections municipales. Les prochaines semaines seront cruciales pour déterminer qui sera le candidat du RN dans cette ville emblématique du Var.",
+      "content_preview": "David Rachline, le maire de Fréjus, ne sera pas réinvesti par le Rassemblement national (RN) pour les élections municipales de 2026. Cette décision survient dans un contexte où Rachline est confronté à plusieurs affaires judiciaires qui pourraient entacher son image et celle du parti. Le RN a décidé de ne pas renouveler sa confiance à Rachline, qui a été maire de Fréjus depuis 2014. Les dirigeants du parti estiment qu'il est préférable de se concentrer sur des candidats moins controversés pour l..."
+    },
+    {
+      "processing_rank": 5,
+      "url_id": 11561,
+      "url": "https://www.lemonde.fr/economie/article/2025/12/01/l-incertitude-budgetaire-met-deja-l-audiovisuel-public-au-regime-sec_6655508_3234.html",
+      "title": "L’incertitude budgétaire met déjà l’audiovisuel public au régime sec",
+      "source": "www.lemonde.fr",
+      "category": "economia",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "llm_direct",
+      "extraction_error": null,
+      "word_count": 274,
+      "archive_url": null,
+      "full_content": "L’incertitude budgétaire qui pèse sur l’audiovisuel public français est déjà palpable. Les chaînes de télévision et les stations de radio publiques se préparent à des coupes budgétaires significatives, alors que le gouvernement n’a pas encore tranché sur le montant des financements pour 2026. Cette situation est d’autant plus préoccupante que les médias publics, qui dépendent largement des subventions de l’État, doivent faire face à une concurrence accrue des plateformes de streaming et des chaînes privées. Les responsables des médias publics craignent que des réductions budgétaires ne compromettent leur capacité à produire des contenus de qualité et à remplir leur mission de service public. Les syndicats de journalistes et de techniciens ont déjà exprimé leur inquiétude, appelant à des manifestations pour défendre le financement de l’audiovisuel public. Ils soulignent que des coupes budgétaires pourraient entraîner des suppressions d’emplois et une diminution de la diversité des programmes. Le ministre de la Culture a promis que le gouvernement prendrait en compte les besoins des médias publics lors des discussions budgétaires, mais les incertitudes demeurent. Les responsables des chaînes publiques espèrent que le gouvernement reconnaîtra l’importance de l’audiovisuel public dans le paysage médiatique français et garantira un financement adéquat. En attendant, les chaînes de télévision et les stations de radio publiques doivent élaborer des plans d’urgence pour faire face à cette incertitude budgétaire. Cela pourrait inclure des réductions de personnel, des économies sur les productions et une réévaluation de leurs priorités éditoriales. La situation actuelle soulève des questions sur l’avenir de l’audiovisuel public en France et sur la manière dont il pourra continuer à jouer son rôle essentiel dans la société, notamment en matière d’information et de culture.",
+      "content_preview": "L’incertitude budgétaire qui pèse sur l’audiovisuel public français est déjà palpable. Les chaînes de télévision et les stations de radio publiques se préparent à des coupes budgétaires significatives, alors que le gouvernement n’a pas encore tranché sur le montant des financements pour 2026. Cette situation est d’autant plus préoccupante que les médias publics, qui dépendent largement des subventions de l’État, doivent faire face à une concurrence accrue des plateformes de streaming et des chaî..."
+    },
+    {
+      "processing_rank": 6,
+      "url_id": 11558,
+      "url": "https://www.lemonde.fr/idees/article/2025/12/01/s-il-doit-y-avoir-la-guerre-nous-devons-nous-y-preparer-l-heure-est-aux-choix-pas-aux-formules_6655595_3232.html",
+      "title": "« S’il doit y avoir la guerre, nous devons nous y préparer. L’heure est aux choix, pas aux formules »",
+      "source": "www.lemonde.fr",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "newspaper",
+      "extraction_error": null,
+      "word_count": 383,
+      "archive_url": null,
+      "full_content": "Le 18 novembre, lors du Congrès des maires, les propos du nouveau chef d’état-major des armées ont suscité la polémique. « Si notre pays flanche parce qu’il n’est pas prêt à accepter de perdre ses enfants (…) alors on est en risque », a notamment déclaré Fabien Mandon. Comment expliquer les réactions si contrastées de l’ensemble du spectre politique, alors même que les spécialistes, s’ils concèdent tout au plus une maladresse, maintiennent que Fabien Mandon est resté dans son rôle d’alerte? Cette prise de parole nous semble être fautive dans sa forme, mais aussi sur le fond, et révèle surtout l’impréparation de nos élites politiques et militaires. Nul pacifisme béat ni syndrome de Munich [l’idée reçue selon laquelle les démocraties européennes seraient, en raison de leur lâcheté, averses au conflit militaire] dans cette interpellation. S’il doit y avoir la guerre, nous devons nous y préparer. L’heure est aux choix, pas aux formules. Sur la forme, le choix de l’auditoire interpelle. Quitte à s’adresser à la population, pourquoi le faire devant les maires et non pas devant les représentants de la nation auprès desquels les termes utilisés, en octobre, lors de la commission de la défense nationale et des forces armées, étaient autrement pesés? Il faut tordre le cou à la fausse piste d’un simple manquement au devoir de réserve. Celui-ci est suffisamment indéterminé pour que les officiers prennent la parole dans l’espace public dans la limite de leurs attributions réglementaires. C’est en revanche l’ordre de la prise de parole publique qui pose un problème au regard de la tradition républicaine: le président de la République d’abord, le chef d’état-major des armées ensuite. Injonctions paternalistes Ce discours est-il une initiative personnelle? Si oui, faut-il s’en inquiéter? On ne peut feindre d’ignorer qu’il n’émane pas d’un simple chef d’administration, tant le contrôle politique des armées procède d’un régime dérogatoire et à plus forte raison lorsqu’il s’agit d’évoquer la mort de milliers de jeunes citoyens. Aucun haut fonctionnaire, peu importe sa position d’autorité, n’a ni le mandat ni la légitimité pour définir ce qui doit faire nation. A l’inverse, celui qui côtoie le chef de l’Etat depuis deux ans en tant que chef de l’état-major particulier a-t-il agi sur ordre? Il vous reste 65. 89% de cet article à lire. La suite est réservée aux abonnés.",
+      "content_preview": "Le 18 novembre, lors du Congrès des maires, les propos du nouveau chef d’état-major des armées ont suscité la polémique. « Si notre pays flanche parce qu’il n’est pas prêt à accepter de perdre ses enfants (…) alors on est en risque », a notamment déclaré Fabien Mandon. Comment expliquer les réactions si contrastées de l’ensemble du spectre politique, alors même que les spécialistes, s’ils concèdent tout au plus une maladresse, maintiennent que Fabien Mandon est resté dans son rôle d’alerte? Cett..."
+    },
+    {
+      "processing_rank": 7,
+      "url_id": 11478,
+      "url": "https://www.bbc.com/news/articles/c33mz477p4po",
+      "title": "Luigi Mangione in court as lawyers seek to rule out notebook, gun and other key evidence",
+      "source": "www.bbc.com",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "newspaper",
+      "extraction_error": null,
+      "word_count": 446,
+      "archive_url": null,
+      "full_content": "Mangione in court as lawyers seek to rule out notebook, gun and other key evidence 2 hours ago Share Save Madeline Halpert and Nada Tawfik, North America correspondent Share Save Getty Images Luigi Mangione, accused of killing United Healthcare CEO Brian Thompson, appeared in a pre-trial hearing on Monday Luigi Mangione, the man accused of fatally shooting United Healthcare CEO Brian Thompson in Manhattan a year ago this week, appeared in court on Monday as his lawyers challenge the admissibility of key evidence in his case. Mr Mangione, 27, has pleaded not guilty to both state and federal murder charges, which carry the possibility of the death penalty. The pre-trial hearing could last several days, as defence attorneys are expected to call a host of witnesses, including from Pennsylvania, where he was arrested at a McDonald's. In September a judge threw out state terrorism-related murder charges against Mr Mangione, arguing prosecutors had failed to establish evidence to justify them. Mr Mangione's legal team is now hoping to convince a judge to exclude evidence including a gun and a notebook in which prosecutors say he set out a motive. The defendant was arrested days after he allegedly shot Mr Thompson, a father of two, as he was walking into an investors' conference on a busy Manhattan street on 4 December 2024. A date for either of his trials has not yet been set. UnitedHealth United Healthcare chief executive Brian Thompson was a father-of-two Walking into court on Monday, Mr Mangione wore a grey suit and shirt, and court employees removed his hand restraints before he sat, as his lawyers requested. This week's hearing focuses on whether prosecutors illegally obtained evidence from Mr Mangione when they arrested him in Altoona, Pennsylvania, and whether it should be excluded as a result. Defence attorneys are seeking to suppress some of Mr Mangione's statements he made to police after being arrested - including allegedly giving them a false name. They argue he did so before police read him his rights, including the right to remain silent. His attorneys are also hoping to exclude from the trial a 9mm handgun that prosecutors say matches the one used in the killing, as well as writings found in Mr Mangione's backpack. Listen: The Mangione Trial podcast Prosecutors have alleged that Mr Mangione - the scion of a prominent Maryland family who graduated from an Ivy League university - had written in his notebook about \"the deadly, greed fueled health insurance cartel\". But defence lawyers are arguing his backpack was searched without a warrant, and the items found in it should be excluded for that reason. Reuters A supporter of Mangione outside court on Monday",
+      "content_preview": "Mangione in court as lawyers seek to rule out notebook, gun and other key evidence 2 hours ago Share Save Madeline Halpert and Nada Tawfik, North America correspondent Share Save Getty Images Luigi Mangione, accused of killing United Healthcare CEO Brian Thompson, appeared in a pre-trial hearing on Monday Luigi Mangione, the man accused of fatally shooting United Healthcare CEO Brian Thompson in Manhattan a year ago this week, appeared in court on Monday as his lawyers challenge the admissibilit..."
+    },
+    {
+      "processing_rank": 8,
+      "url_id": 11498,
+      "url": "https://www.bbc.com/news/articles/c7vmn61l75ro",
+      "title": "Trump releases fraudster executive days into prison sentence",
+      "source": "www.bbc.com",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "newspaper",
+      "extraction_error": null,
+      "word_count": 420,
+      "archive_url": null,
+      "full_content": "Trump releases fraudster executive days into prison sentence He's the latest in a string of white-collar criminals whose sentences Trump has commuted. Gentile, the former chief executive and founder of GPB Capital, was convicted last year in what federal prosecutors described as a multi-year scheme to defraud more than 10, 000 investors by misrepresenting the performance of private equity funds. Bureau of Prisons records show that Gentile was released on Wednesday, less than two weeks after he reported to prison. US President Donald Trump has commuted the sentence of former investment manager David Gentile, who was just days into a seven-year prison sentence for fraud. Gentile was convicted in August last year of securities and wire fraud charges, and sentenced in May. His co-defendant, Jeffry Schneider, was sentenced to six years on the same charges and is due to report to prison in January. US attorney Joseph Nocella said at the time of Gentile's sentencing that GPB Capital was built on a \"foundation of lies\" and that the company made $1. 6bn (£1. 2bn) while using investor capital to pay distributions to other investors. \"The sentences imposed today are well deserved and should serve as a warning to would-be fraudsters that seeking [sic] to get rich by taking advantage of investors gets you only a one-way ticket to jail, \" he said. But the White House says the Department of Justice under former President Joe Biden made multiple missteps - and that investors were aware that their money could be going towards other people's dividends. \"Even though this was disclosed to investors the Biden Department of Justice claimed this was a Ponzi scheme, \" the White House official said. \"This claim was profoundly undercut by the fact that GPB had explicitly told investors what would happen. \" The official also cited concerns from Gentile that prosecutors had elicited false testimony. Trump's commutation of Gentile's sentence does not clear him of his crimes like a full presidential pardon would, and it does not get rid of other potential penalties imposed. So far in his second term, the president has pardoned or commuted the sentences of multiple people convicted of different types of fraud, including wire, securities, tax and healthcare fraud. Last month, he pardoned Tennessee state House Speaker Glen Casada who was convicted of fraud, money laundering and conspiracy charges. Correction 1 December 2025: This article incorrectly stated that Jeffry Schneider \"remains behind bars\". It has been amended to make clear that he is yet to begin serving his prison sentence.",
+      "content_preview": "Trump releases fraudster executive days into prison sentence He's the latest in a string of white-collar criminals whose sentences Trump has commuted. Gentile, the former chief executive and founder of GPB Capital, was convicted last year in what federal prosecutors described as a multi-year scheme to defraud more than 10, 000 investors by misrepresenting the performance of private equity funds. Bureau of Prisons records show that Gentile was released on Wednesday, less than two weeks after he r..."
+    },
+    {
+      "processing_rank": 9,
+      "url_id": 11483,
+      "url": "https://www.bbc.com/news/articles/c5yd91y2250o",
+      "title": "Nonkululeko Mantula: South African radio presenter among five charged over Russia recruitment plot",
+      "source": "www.bbc.com",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "newspaper",
+      "extraction_error": null,
+      "word_count": 784,
+      "archive_url": null,
+      "full_content": "South African radio presenter among five charged over Russia recruitment plot 4 hours ago Share Save Khanyisile Ngcobo Johannesburg Share Save NPA Nonkululeko Patricia Mantula works for a flagship radio station in South Africa A radio presenter with South Africa's public broadcaster has appeared in court on a charge related to the alleged recruitment of men for the Russian military. Nonkululeko Patricia Mantula is among five people who prosecutors say are facing charges for contravening a law which prohibits South Africans from joining a foreign army without official permission. They have not yet been asked to plead. The arrests are the first since the South African government said in November that 17 citizens had \"seemingly\" been lured to join mercenary forces in the Russia-Ukraine war. Police told the BBC that at this stage, they are not linking the two cases. Mantula, 39, is a presenter of The Morning Bliss, a show on the SABC's SAFM radio station. Neither she nor SABC has commented on her arrest. Her arrest, along with four others, follows the dramatic resignation from parliament last Friday of Duduzile Zuma-Sambudla, the daughter of South Africa's former President Jacob Zuma, who has been accused of duping the 17 South African men - including some of her relatives - into fighting for Russia, an allegation she denies. The National Prosecuting Authority (NPA) said that Mantula had been arrested with four men, aged between 21 and 46. They each face a charge of contravening the Regulation of Foreign Military Assistance Act. The NPA said the arrests followed a tip-off from police at South Africa's main international airport in Johannesburg. They were \"intercepted\" as they attempted to travel to Russia via the United Arab Emirates, and \"were removed from the boarding gate after being deemed suspicious\", it added. The NPA said it was further alleged that Mantula \"had been facilitating the travel and recruitment of her co-accused into the Russian Federation military\". Mantula and her co-accused appeared briefly at the Kempton Park Magistrates' Court near Johannesburg on Monday, and were remanded in custody. NPA The five accused are due back in court on 8 December for a bail hearing The NPA said it was \"committed to ensuring that individuals who violate the laws of the country are held accountable and will continue to work with other law-enforcement partners to protect the integrity and security\" of South Africa. The accused are due to make their next court appearance on 8 December for a bail application. In November, South Africa's government said it had received distress calls from 17 citizens who were trapped in Ukraine's war-torn Donbas region after joining mercenary forces. It added that it was working through \"diplomatic channels\" to bring them back, but this has not yet happened. The men were lured to join the mercenary forces under the pretext of lucrative contracts, the government said, adding that it condemned \"the exploitation of young vulnerable people by individuals working with foreign military entities\". South Africa has an unemployment rate of more than 30%, which is even higher among young people. Zuma-Sambudla's resignation as an MP came after her half-sister, Nkosazana Zuma-Mncube, filed a complaint with police, accusing her of tricking the 17 men to fight for Russia as mercenaries. Zuma-Mncube said that eight of them were members of her family, and they had been \"handed to a Russian mercenary group to fight in the Ukraine war without their knowledge or consent\". South Africa's elite police unit, the Hawks, said the case was being investigated by its officers who focus on \"crime against the state\". Zuma-Sambudla, who became a member of parliament for the largest opposition party, uMkhonto weSizwe (MK), last year, has said in an affidavit that she thought the men were going to Russia for \"lawful\" training. MK says it was her decision to resign as she wants to focus her efforts on ensuring the return of those trapped in a war zone. In September, Kenyan police said they had rescued more than 20 people from a suspected trafficking ring that had lured them with job offers in Russia but intended to send them to fight in Ukraine. Ukraine has previously said that it was holding citizens of various countries - Somalia, Sierra Leone, Togo, Cuba and Sri Lanka - at prisoner-of-war camps. It has also previously come in for criticism for trying to recruit foreign nationals, including Africans, to fight on its side. In 2022, Senegal's foreign ministry said it had summoned Kyiv's ambassador to demand the withdrawal of an embassy post on Facebook urging foreigners to enlist for its war effort. At the time, Nigeria also warned that it would not tolerate Ukraine's recruitment drive, forcing it to back-pedal. Getty Images/BBC",
+      "content_preview": "South African radio presenter among five charged over Russia recruitment plot 4 hours ago Share Save Khanyisile Ngcobo Johannesburg Share Save NPA Nonkululeko Patricia Mantula works for a flagship radio station in South Africa A radio presenter with South Africa's public broadcaster has appeared in court on a charge related to the alleged recruitment of men for the Russian military. Nonkululeko Patricia Mantula is among five people who prosecutors say are facing charges for contravening a law wh..."
+    },
+    {
+      "processing_rank": 10,
+      "url_id": 11460,
+      "url": "https://www.nytimes.com/2025/11/30/magazine/e-bikes-accidents-safety-legislation-california.html",
+      "title": "The Shocking Crash That Led One County to Reckon With the Dangers of E-Bikes",
+      "source": "www.nytimes.com",
+      "category": "politica",
+      "has_full_content": false,
+      "extraction_status": "failed",
+      "extraction_method": null,
+      "extraction_error": "All fetch methods failed (tried: cookies, direct, no-js, selenium-no-js, archive.today)",
+      "word_count": null,
+      "archive_url": null
+    },
+    {
+      "processing_rank": 11,
+      "url_id": 11291,
+      "url": "https://www.ft.com/content/514cbc1d-9760-4def-b394-ea1835fdc7b3",
+      "title": "Why Australia loves muso politicians",
+      "source": "www.ft.com",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "llm_direct",
+      "extraction_error": null,
+      "word_count": 215,
+      "archive_url": null,
+      "full_content": "Australia has a long history of politicians who are also musicians, and this unique blend of politics and music has created a cultural phenomenon that resonates with many Australians. The appeal of 'muso politicians' lies in their ability to connect with the public on a personal level, often using their musical talents to engage with voters and convey their messages in a relatable way. In recent years, the popularity of these politicians has been evident in various elections, where candidates with musical backgrounds have garnered significant support. Their performances at rallies and public events often draw large crowds, showcasing their ability to entertain while also addressing important political issues. Critics, however, argue that the focus on a politician's musical abilities can overshadow their political qualifications and policies. An attempt to criticize the prime minister’s tastes in rock and post-punk music recently fell flat, highlighting the challenges faced by those who seek to separate the personal from the political in the public eye. Despite the criticisms, the trend of muso politicians continues to thrive in Australia. Their unique blend of artistry and governance reflects a broader cultural appreciation for creativity in leadership. As the political landscape evolves, it will be interesting to see how this phenomenon develops and whether it will influence future generations of politicians.",
+      "content_preview": "Australia has a long history of politicians who are also musicians, and this unique blend of politics and music has created a cultural phenomenon that resonates with many Australians. The appeal of 'muso politicians' lies in their ability to connect with the public on a personal level, often using their musical talents to engage with voters and convey their messages in a relatable way. In recent years, the popularity of these politicians has been evident in various elections, where candidates wi..."
+    },
+    {
+      "processing_rank": 12,
+      "url_id": 11311,
+      "url": "https://www.ft.com/content/1e0ac979-2210-4762-8684-09bbe5291ca5",
+      "title": "Spain fights to protect pork industry from swine fever outbreak",
+      "source": "www.ft.com",
+      "category": "economia",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "llm_direct",
+      "extraction_error": null,
+      "word_count": 292,
+      "archive_url": null,
+      "full_content": "Spain is battling to protect its pork industry from a swine fever outbreak that has led to one-third of its exports being blocked by foreign governments. The country, which is Europe’s largest producer of pig meat, is facing significant challenges as the disease spreads, prompting concerns over the economic impact on farmers and the broader agricultural sector. The outbreak has raised alarms among trading partners, with countries such as China and Japan halting imports of Spanish pork products. This has put immense pressure on the Spanish government to implement measures to contain the disease and reassure international markets about the safety of its pork supply. In response to the crisis, Spanish authorities are ramping up biosecurity measures on farms and increasing surveillance to detect any further spread of the virus. Farmers are being urged to adhere strictly to hygiene protocols to prevent contamination and protect their livestock. The situation is particularly dire for small farmers who rely heavily on exports for their income. Many are worried that prolonged restrictions could lead to financial ruin, as they struggle to cope with the loss of sales and the costs associated with implementing new biosecurity measures. Industry leaders are calling for government support to help mitigate the impact of the outbreak, including financial assistance and resources for farmers to improve their biosecurity practices. They emphasize the need for a coordinated response to restore confidence in the Spanish pork industry and ensure its long-term viability. As the situation develops, the Spanish government is working closely with international partners to monitor the outbreak and communicate updates to the public and the agricultural community. The hope is that with swift action and cooperation, the country can overcome this challenge and protect its vital pork industry from further harm.",
+      "content_preview": "Spain is battling to protect its pork industry from a swine fever outbreak that has led to one-third of its exports being blocked by foreign governments. The country, which is Europe’s largest producer of pig meat, is facing significant challenges as the disease spreads, prompting concerns over the economic impact on farmers and the broader agricultural sector. The outbreak has raised alarms among trading partners, with countries such as China and Japan halting imports of Spanish pork products. ..."
+    },
+    {
+      "processing_rank": 13,
+      "url_id": 11313,
+      "url": "https://www.ft.com/content/c0e103c8-b4cd-4eba-8568-9f6662d9ddbd",
+      "title": "opinion content. Markets Insight. EU watchdog must be given more power over fund managers, markets",
+      "source": "www.ft.com",
+      "category": "politica",
+      "has_full_content": false,
+      "extraction_status": "failed",
+      "extraction_method": "failed",
+      "extraction_error": "All extraction methods failed (including LLM direct extraction)",
+      "word_count": null,
+      "archive_url": null
+    },
+    {
+      "processing_rank": 14,
+      "url_id": 11314,
+      "url": "https://www.ft.com/content/89f172bb-0d60-47b0-ae56-853d25c52db8",
+      "title": "opinion content. Europe needs a plan for decoupling from America",
+      "source": "www.ft.com",
+      "category": "politica",
+      "has_full_content": false,
+      "extraction_status": "failed",
+      "extraction_method": "failed",
+      "extraction_error": "All extraction methods failed (including LLM direct extraction)",
+      "word_count": null,
+      "archive_url": null
+    },
+    {
+      "processing_rank": 15,
+      "url_id": 11315,
+      "url": "https://www.ft.com/content/7c1e68dc-305d-4d5b-b68f-e48c46827328",
+      "title": "opinion content. The FT View. The EU should play its Russian assets card",
+      "source": "www.ft.com",
+      "category": "politica",
+      "has_full_content": false,
+      "extraction_status": "failed",
+      "extraction_method": "failed",
+      "extraction_error": "All extraction methods failed (including LLM direct extraction)",
+      "word_count": null,
+      "archive_url": null
+    },
+    {
+      "processing_rank": 16,
+      "url_id": 11317,
+      "url": "https://www.ft.com/content/07970763-ad7a-452a-b3f5-82d6d3939ada",
+      "title": "Companies swamped by 3,000 hours of paperwork to tap EU climate funds",
+      "source": "www.ft.com",
+      "category": "economia",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "llm_direct",
+      "extraction_error": null,
+      "word_count": 171,
+      "archive_url": null,
+      "full_content": "Companies are facing a daunting challenge in accessing EU climate funds, with an estimated 3, 000 hours of paperwork required to tap into the €7. 1 billion allocated from the bloc’s flagship innovation programme for clean technology. Despite the significant amount of funding available, only 5% has been disbursed so far, raising concerns about the efficiency and accessibility of the application process. The complexity of the application procedures has left many companies overwhelmed, particularly smaller firms that may lack the resources to navigate the bureaucratic hurdles. Industry experts have called for a simplification of the process to ensure that the funds reach those who need them most, enabling a faster transition to greener technologies. As the EU aims to bolster its climate initiatives, the slow pace of fund distribution could hinder progress towards its environmental goals. Stakeholders are urging policymakers to streamline the application process and reduce the administrative burden on applicants, which could ultimately lead to a more effective allocation of resources and a quicker response to the climate crisis.",
+      "content_preview": "Companies are facing a daunting challenge in accessing EU climate funds, with an estimated 3, 000 hours of paperwork required to tap into the €7. 1 billion allocated from the bloc’s flagship innovation programme for clean technology. Despite the significant amount of funding available, only 5% has been disbursed so far, raising concerns about the efficiency and accessibility of the application process. The complexity of the application procedures has left many companies overwhelmed, particularly..."
+    },
+    {
+      "processing_rank": 17,
+      "url_id": 11322,
+      "url": "https://www.ft.com/content/9ec1101b-570f-4560-a49e-bd0013a41219",
+      "title": "Bonus: What does the 2025 Budget mean for your money?",
+      "source": "www.ft.com",
+      "category": "economia",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "json_ld",
+      "extraction_error": null,
+      "word_count": 221,
+      "archive_url": null,
+      "full_content": "It’s been a rollercoaster week for both UK politics and our personal finances, with chancellor Rachel Reeves setting out tens of billions of pounds of tax rises in the Budget. But how will these new taxes be applied and what could they cost you? In a Money Clinic podcast recorded live at the FT, host and consumer editor Claer Barrett is joined by Dan Neidle, the founder of Tax Policy Associates; Stuart Kirk, the FT’s investment columnist; and Tej Parikh, the FT’s economics leader writer, to field questions from readers and listeners. They cover everything from what the Budget means for people investing in UK markets, the new rules on pensions and salary sacrifice, how to stay under the £100, 000 threshold for childcare support and much more. To find out how much the five-year freeze to tax thresholds could cost you, find a free link to the FT’s Budget stealth tax calculator here Claer’s Budget column: A horrid Budget for ‘Henrys’ Salary sacrifice shake-up: what it means for staff and employers Follow Claer on social media @Claerb This episode was made available with thanks to FLIC, the FT’s Financial Literacy and Inclusion Campaign. For details about the campaign, read more about it here or click here and to donate, click here. Read a transcript of this episode on FT. com",
+      "content_preview": "It’s been a rollercoaster week for both UK politics and our personal finances, with chancellor Rachel Reeves setting out tens of billions of pounds of tax rises in the Budget. But how will these new taxes be applied and what could they cost you? In a Money Clinic podcast recorded live at the FT, host and consumer editor Claer Barrett is joined by Dan Neidle, the founder of Tax Policy Associates; Stuart Kirk, the FT’s investment columnist; and Tej Parikh, the FT’s economics leader writer, to fiel..."
+    },
+    {
+      "processing_rank": 18,
+      "url_id": 11324,
+      "url": "https://www.ft.com/content/78d4ef71-2712-4e44-9f94-bc1ea00a9d15",
+      "title": "The 2025 Budget: what does it mean for your money?",
+      "source": "www.ft.com",
+      "category": "economia",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "json_ld",
+      "extraction_error": null,
+      "word_count": 205,
+      "archive_url": null,
+      "full_content": "It’s been a rollercoaster week for both UK politics and our personal finances, with chancellor Rachel Reeves setting out tens of billions of pounds of tax rises in the Budget. But how will these new taxes be applied and what could they cost you? In a podcast recorded live at the FT, host and consumer editor Claer Barrett is joined by Dan Neidle, the founder of Tax Policy Associates; Stuart Kirk, the FT’s investment columnist; and Tej Parikh, the FT’s economics leader writer, to field questions from readers and listeners. They cover everything from what the Budget means for people investing in UK markets, the new rules on pensions and salary sacrifice, how to stay under the £100, 000 threshold for childcare support and much more. To find out how much the five-year freeze to tax thresholds could cost you, find a free link to the FT’s Budget stealth tax calculator here Claer’s Budget column: A horrid Budget for ‘Henrys’ Salary sacrifice shake-up: what it means for staff and employers Follow Claer on social media @Claerb This episode was made available with thanks to FLIC, the FT’s Financial Literacy and Inclusion Campaign. Read more about FLIC here or click here, and to donate, click here.",
+      "content_preview": "It’s been a rollercoaster week for both UK politics and our personal finances, with chancellor Rachel Reeves setting out tens of billions of pounds of tax rises in the Budget. But how will these new taxes be applied and what could they cost you? In a podcast recorded live at the FT, host and consumer editor Claer Barrett is joined by Dan Neidle, the founder of Tax Policy Associates; Stuart Kirk, the FT’s investment columnist; and Tej Parikh, the FT’s economics leader writer, to field questions f..."
+    },
+    {
+      "processing_rank": 19,
+      "url_id": 11325,
+      "url": "https://www.ft.com/content/64e180ca-5e87-4770-a290-5f476fd77356",
+      "title": "Is the US economy really K-shaped?",
+      "source": "www.ft.com",
+      "category": "economia",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "newspaper",
+      "extraction_error": null,
+      "word_count": 143,
+      "archive_url": null,
+      "full_content": "Your browser does not support playing this file but you can still download the MP3 file to play locally. Imagine a graph with one line going up over time. Below it, another line does just the opposite. It kind of looks like the letter K. The FT’s Claire Jones and Rob Armstrong break down why people are saying that letter represents the state of the economy and what it means for the White House. Mentioned in this podcast: Does the K-shaped economy theory even make sense? Email Marc with your questions (). This week’s show was mixed by Sam Giovinco. The FT’s acting co- head of audio is Topher Forhecz. Special thanks to Pierre Nicholson. The FT does not use generative AI to voice its podcasts. CREDIT: Bloomberg, PBS, CNN Read a transcript of this episode on FT. com View our accessibility guide.",
+      "content_preview": "Your browser does not support playing this file but you can still download the MP3 file to play locally. Imagine a graph with one line going up over time. Below it, another line does just the opposite. It kind of looks like the letter K. The FT’s Claire Jones and Rob Armstrong break down why people are saying that letter represents the state of the economy and what it means for the White House. Mentioned in this podcast: Does the K-shaped economy theory even make sense? Email Marc with your ques..."
+    },
+    {
+      "processing_rank": 20,
+      "url_id": 11272,
+      "url": "https://www.ft.com/content/cbfd8af4-b3a8-4ade-9831-6cb7cf836745",
+      "title": "Who killed Europe’s single market dream?",
+      "source": "www.ft.com",
+      "category": "economia",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "llm_direct",
+      "extraction_error": null,
+      "word_count": 264,
+      "archive_url": null,
+      "full_content": "A decades-long effort to tear down internal trade barriers has stalled, leaving the EU economy ‘tagging along behind’. The dream of a single market in Europe, which promised to create a seamless economic area across the continent, has faced numerous challenges in recent years. Political divisions, regulatory hurdles, and the impact of global events have all contributed to a sense of stagnation. As the EU grapples with these issues, questions arise about the future of its economic integration and the ability of member states to work together effectively. The vision of a unified market that fosters competition and innovation seems increasingly distant. In the wake of Brexit, the UK’s departure from the EU has further complicated matters, leading to a reevaluation of trade relationships and economic policies. The implications of this shift are still unfolding, but it is clear that the single market's original ambitions are under threat. Moreover, the rise of protectionist sentiments in various countries has added to the challenges facing the single market. Governments are increasingly prioritizing national interests over collective European goals, which undermines the foundational principles of the single market. The economic landscape is also changing, with new technologies and business models emerging that require a different approach to regulation and cooperation. The EU must adapt to these changes to remain competitive on the global stage. Ultimately, the question remains: who or what is responsible for the decline of Europe’s single market dream? The answer may lie in a combination of political, economic, and social factors that have converged to create a perfect storm of challenges for the EU.",
+      "content_preview": "A decades-long effort to tear down internal trade barriers has stalled, leaving the EU economy ‘tagging along behind’. The dream of a single market in Europe, which promised to create a seamless economic area across the continent, has faced numerous challenges in recent years. Political divisions, regulatory hurdles, and the impact of global events have all contributed to a sense of stagnation. As the EU grapples with these issues, questions arise about the future of its economic integration and..."
+    },
+    {
+      "processing_rank": 21,
+      "url_id": 11264,
+      "url": "https://www.abc.es/espana/comunidad-valenciana/mercadona-confirma-cambios-horarios-supermercados-partir-diciembre-20251130122529-nt.html#vtm_modulosEngag=lomas::noticia:2",
+      "title": "Mercadona confirma cambios en los horarios de sus supermercados a partir del lunes 1 de diciembre",
+      "source": "www.abc.es",
+      "category": "economia",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "json_ld",
+      "extraction_error": null,
+      "word_count": 529,
+      "archive_url": null,
+      "full_content": "Con la llegada de diciembre los españoles ya preparan los menús para las comidas y cenas de Navidad. Una de las fiestas más esperadas de todo el año a la que antes se le suma el puente de los días 6 y 8 por. . . el Día de la Constitución y la Inmaculada Concepción, respectivamente. Por todo ello, Mercadona ya ha anunciado todos los cambios en sus horarios para las próximas fechas. Así lo pueden conocer ya todos sus clientes que acuden con asiduidad a sus más de 1. 600 supermercados ubicados por toda España, pues los nuevos horarios ya se informado en cajas y en las entradas. Los 'jefes', como Mercadona llama a sus clientes, ya saben qué días cerrarán y cuáles estarán abiertos en Navidad. Noticias relacionadas estandar No Mercadona busca personal para trabajar en almacén tres días a la semana por 1. 280 euros más complementos David Maroto estandar No Mercadona busca personal para trabajar dos días a la semana por 855 euros de sueldo David MarotoNo hay duda que Mercadona se ha consolidado como la cadena de supermercados con mayor impacto en el mercado, tanto que conforme avanzó en exclusiva ABC, el Departamento de Agricultura del Gobierno de Estados Unidos definió a la empresa de Juan Roig en un informe oficial como un «fenómeno cultural». ¿Cuándo abre Mercadona en el puente de diciembre? El puente de diciembre es uno de los periodos vacacionales más esperados del año, debido a la proximidad de dos festivos nacionales: el día 6 (Día de la Constitución) y día 8 (Día de la Inmaculada Concepción). Mercadona ha anunciado que abrirá sus supermercados el 6 al caer sábado en horario habitual de 9 a 21. 30 horas, salvo en el País Vasco, mientras que cerrará en toda España el lunes 8 por el segundo festivo. Horario de Mercadona en el puente de diciembre Sábado 6 de diciembre: abierto de 9: 00 a 21: 30 horas. Domingo 7 de diciembre: cierre todo el día. Lunes 8 de diciembre: cierre todo el día. ¿Cuándo abre Mercadona en Navidad? Después del puente de diciembre, llega la Navidad y, con ella, el último festivo nacional antes de cerrar el año. Se trata del miércoles 25 de diciembre, Día de Navidad. La celebración de este día tan señalado en el calendario alterará el horario de Mercadona, que cerrará todos sus establecimientos, al igual que el miércoles 1 de enero, Año Nuevo. Además, los supermercados de la cadena valenciana modificarán su horario de apertura y cierre los martes 24 y 31 de diciembre, Nochebuena y Nochevieja, respectivamente. Mercadona abrirá sus establecimientos para facilitar las compras, aunque reducirá su horario habitual, de 9 a 19. 00 horas. Horario de Mercadona en Navidad Miércoles 24 de diciembre: de 09: 00 a 19: 00 horas. Jueves 25 de diciembre: cierre todo el día. Miércoles 31 de diciembre: de 09: 00 a 19: 00 horas. Jueves 1 de enero: cierre todo el día. En cualquier caso, Mercadona recomienda a sus clientes consultar en el buscador de tiendas de su página web oficial la información detallada sobre los horarios de cada establecimiento, además de los días en los que permanecerán cerrados.",
+      "content_preview": "Con la llegada de diciembre los españoles ya preparan los menús para las comidas y cenas de Navidad. Una de las fiestas más esperadas de todo el año a la que antes se le suma el puente de los días 6 y 8 por. . . el Día de la Constitución y la Inmaculada Concepción, respectivamente. Por todo ello, Mercadona ya ha anunciado todos los cambios en sus horarios para las próximas fechas. Así lo pueden conocer ya todos sus clientes que acuden con asiduidad a sus más de 1. 600 supermercados ubicados por ..."
+    },
+    {
+      "processing_rank": 22,
+      "url_id": 11195,
+      "url": "https://www.abc.es/espana/juan-carlos-graba-video-alaba-transicion-pide-20251201153634-nt.html",
+      "title": "Un vídeo de Don Juan Carlos sorprende a Zarzuela, que lo tacha de «innecesario» e «inoportuno»",
+      "source": "www.abc.es",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "json_ld",
+      "extraction_error": null,
+      "word_count": 681,
+      "archive_url": null,
+      "full_content": "Nueve días después de que la Casa del Rey celebrase medio siglo de la restauración de la llegada de la democracia sin la presencia de Juan Carlos I, el padre de Felipe VI ha difundido un vídeo entre su círculo más cercano con la. . . instrucción explícita de hacerlo llegar lo más lejos posible. Una especie de mensaje institucional al margen del Palacio de la Zarzuela que se hace público dos días antes de que se publique en España 'Reconciliación', sus controvertidas memorias editadas en Francia hace un mes. Se trata del primer mensaje que Don Juan Carlos realiza a la ciudadanía desde que abdicó la Corona en su hijo el 19 de junio de 2014. Aunque desde el Palacio de la Zarzuela nunca hacen comentarios sobre los movimientos de Don Juan Carlos -siempre dicen que sus actividades forman parte de su vida privada desde que en 2019 le comunicó a Don Felipe su decisión de retirarse de la vida pública e institucional-, en esta ocasión sí han entrado a valorarlo: desde la Casa del Rey han asegurado a ABC que desconocían la existencia de este vídeo, que no entienden la conveniencia del mismo y lo tachan de «inoportuno e innecesario». La estética del vídeo, donde aparece sentado y con la imagen de una bandera de España de fondo, ha llevado a pensar en la mañana de este lunes que se trataba de un montaje y no ha sido hasta mediodía cuando se ha confirmado su autenticidad. Aunque se podría haber grabado en Abu Dabi, donde Don Juan Carlos se instaló en el verano de 2020, cuando decidió salir de España por las causas judiciales por las que se le investigaba, fuentes de su entorno afirman que lo grabó el 30 de octubre en Vitoria, donde permaneció unas horas para someterse a unas pruebas médicas, antes de viajar a Cascais (Portugal). Fue durante el mismo viaje que le llevó a Sangenjo para una nueva competición de regatas. No se descarta que haya más vídeos grabados como este. Noticia Relacionada estandar Si Rabat castigará a Feijóo con más inmigración si corrige el giro de Sánchez respecto al Sahara Pablo Muñoz El Gobierno marroquí le prepara la 'bienvenida' con duros mensajes desde medios oficialesEl vídeo, que ha comenzado a difundirse por WhatsApp hasta que ha sido colgado en YouTube, arranca con una declaración del anterior jefe del Estado dirigida a los jóvenes. «Quiero dejar un breve mensaje para los jóvenes españoles, sobre todo para los que no conocéis la historia de España», dice mirando a cámara, sentado, con americana y sin corbata. En poco más de un minuto reclama que se reconozca el esfuerzo colectivo de la Transición: « Vuestros padres, vuestros abuelos y muchos españoles unidos conseguimos hacer una Transición ejemplar. Logramos cambiar este país en circunstancias muy complejas, en las que todos tuvimos que esforzarnos y arriesgar. Con generosidad y esfuerzo llegamos a lo que hoy somos». Ese es el hilo que utiliza Don Juan Carlos para justificar la publicación de sus memorias. «He realizado este esfuerzo de escribir mis memorias para que vuestros padres recuerden momentos históricos y vosotros conozcáis la historia reciente sin distorsiones interesadas», explica. Insiste en que ofrece el relato de alguien que vivió la Transición «en primera persona», con acontecimientos que, asegura, condicionaron el futuro del país y el legado que cree dejar. «He realizado este esfuerzo de escribir mis memorias para que vuestros padres recuerden momentos históricos y vosotros conozcáis la historia reciente sin distorsiones interesadas» Don Juan CarlosMensaje de apoyo a su hijoDon Juan Carlos reivindica al final del libro el papel de la institución en ese proceso. «La Monarquía ha jugado un papel esencial en toda esa transición. Desde su posición institucional hemos logrado enlazar a España con el resto del mundo», afirma. Y aprovecha el último tramo del mensaje para pedir el apoyo a su hijo: « Que apoyéis a mi hijo, el Rey Felipe, en este duro trabajo que es unir a todos los españoles y mantener el papel de España en el mundo. Gracias por escucharme. Un fuerte abrazo».",
+      "content_preview": "Nueve días después de que la Casa del Rey celebrase medio siglo de la restauración de la llegada de la democracia sin la presencia de Juan Carlos I, el padre de Felipe VI ha difundido un vídeo entre su círculo más cercano con la. . . instrucción explícita de hacerlo llegar lo más lejos posible. Una especie de mensaje institucional al margen del Palacio de la Zarzuela que se hace público dos días antes de que se publique en España 'Reconciliación', sus controvertidas memorias editadas en Francia ..."
+    },
+    {
+      "processing_rank": 23,
+      "url_id": 11199,
+      "url": "https://www.abc.es/espana/castilla-leon/sector-castilla-leon-expectante-preocupado-ante-reaparicion-20251201202528-nt.html",
+      "title": "El sector de Castilla y León, «expectante» y «preocupado» ante la reaparición de la peste porcina",
+      "source": "www.abc.es",
+      "category": "economia",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "json_ld",
+      "extraction_error": null,
+      "word_count": 1379,
+      "archive_url": null,
+      "full_content": "Más de treinta años después, la peste porcina reaparece en España. Concretamente, ha sido en Cataluña donde se han detectado dos jabalíes fallecidos infectados y otros ocho están en estudio. Los casos han surgido a centenares de kilómetros de Castilla y León, pero inevitablemente. . . la alerta se ha encendido ya y el sector en la Comunidad, donde existen más de 7. 100 explotaciones con este tipo de ganado, está ya «expectante ante lo que pueda pasar». También «preocupado» y a la espera de que se pueda poner freno cuanto antes a una enfermedad que, por el momento, se ha detectado únicamente en fauna silvestre en la provincia de Barcelona. El presidente de la Federación de Asociaciones de Productores de Ganado Porcino de Castilla y León, Miguel Ángel Ortiz, aseguró ayer que pese a la lejanía del territorio catalán la detección de la peste porcina «impactará sobre todo a las exportaciones a terceros países», que se blindarán, ante los casos aparecidos y acabará por «afectar» a todos las instalaciones de este tipo. En este escenario de «incertidumbre», «lo único que pueden hacer los ganaderos es mantener la calma y extremar las medidas de seguridad que ya se estaban aplicando». Son conscientes de la situación, detalló, y por ello se han mantenido ya desde hace tiempo reuniones «por si esto pasaba». «Ahora somos un sector más profesionalizado que hace treinta años, lo que ha ayudado a que exportemos a más de 150 países», indicó, algo que le lleva a pensar que el efecto será «menos negativo» que en el anterior brote español en 1994. En ese sentido, recordó que la enfermedad no se transmite al ser humano ni por contacto con los animales ni por ingestión de productos derivados de ellos y tampoco otra especie animal, por lo que pidió a la población que destierre el «miedo» a la hora de consumir los productos. No temen a que peligre la campaña navideña, porque ya «está muy avanzada». Los efectos, de llegar, será «después». En la Comunidad, hay un censo de más de un millón de ejemplares – el tercero más amplio de España y un 3, 3 por ciento más que en 2023 –, según los datos publicados por el Ministerio de Agricultura. El sector no ha dejado de crecer en los últimos tiempos. Desde la Denominación de Origen Guijuelo (Salamanca), una de las más importantes de Europa dedicada al jamón, están a la espera de la evolución. Así lo reconoció su directora general, Teresa Rodríguez, quien llamó a la «responsabilidad» y a seguir extremando las medidas de seguridad. Al respecto, explicó que desde el último foco detectado en España hay planes de contención «actualizados» en torno a una enfermedad que ya hace dos años comenzó a «aproximarse» a España con focos como los registrados en Italia. «Es una mala noticia», opinó sobre el hecho de que la peste porcina haya vuelto a España, por «las consecuencias que puede tener». Y es que se trata de una infección con una alta tasa de mortalidad en los animales afectados, lo que puede conllevar importantes pérdidas económicas entre los productores. Además, existe «mayor riesgo» en las explotaciones de extensivo, como las que existen en la provincia salmantina porque «el campo está abierto». Así que habrá que esperar a ver qué medidas se ponen en marcha por parte de las administraciones públicas. Unas acciones que, consideró, deben estar «coordinadas» entre los diferentes territorios y teniendo en cuenta las características de cada uno. Los veterinarios aseguran que el foco catalán está «muy localizado» La organización colegial veterinaria llama a la calma ante los dos positivos de peste porcina africana en sendos jabalíes en la provincia de Barcelona. Según detallaron ayer en un comunicado, se trata de un foco «muy localizado» y «controlado». Es más, insistieron en que el sistema de vigilancia se había ya «intensificado en los últimos años» al llegar algún brote a la Unión Europea y eso ha permitido detectarlo de «forma rápida». Además, destacaron que España es «referente mundial» en seguridad alimentaria y sanidad animal, de manera que los productos que llegan al mercado «están en perfectas condiciones». Por último, inciden en que esta enfermedad no se transmite a humanos y no se ha detectado ningún caso en granjas. Ante esta situación, la Junta de Castilla y León ya ha anunciado que intensificará la caza del jabalí para reducir su población en la Comunidad, especialmente en las zonas de producción de porcino, con el fin de evitar la transmisión ante los casos positivos detectados en estos mamíferos silvestres en la comunidad catalana. Esta medida se enmarca en el Plan de Gestión de esta especie impulsado por el Gobierno autonómico y se pone en marcha a pesar de no haberse detectado casos en Castilla y León. El Ejecutivo regional solicita, en este sentido, la colaboración de los ciudadanos y en el caso de detectar u observar ejemplares muertos o enfermos de jabalíes o cerdos silvestres pide que «informen inmediatamente a las autoridades a través de la línea de emergencias 1-1-2», informa Ical. Los consejeros de Medio Ambiente, Vivienda y Ordenación del Territorio, Juan Carlos Suárez Quiñones, y de Agricultura, Ganadería y Desarrollo Rural, María González Corral, mantuvieron ayer una reunión de coordinación con parte de su equipo y la directora general de Salud Pública, Cristina Granda, en la que se definieron las actuaciones y protocolos ante la identificación del virus. Noticia Relacionada estandar Si La vuelta de la peste porcina pone en riesgo casi 3. 700 millones en exportaciones Xavier VilaltellaEn primer lugar, el viceconsejero de Política Comunitaria y Desarrollo Rural, Jorge Llorente, trasladó «un mensaje de tranquilidad a la ciudadanía», ya que insistió en que se trata de una enfermedad no zoonósica, es decir, las personas no son susceptibles a la infección ni por contacto con los animales ni por ingestión de productos derivados de ellos. No obstante, l a Junta reforzará la información a los servicios veterinarios y al propio sector con el fin de que se extremen las medidas de bioseguridad en las explotaciones de ganado porcino y en el transporte de los animales. Además, se reforzará el control y prevención, así como la detención temprana del virus llegado el caso. En materia económica, dijo, el porcino es un sector «muy importante para la Comunidad y para España», y sostuvo que los acuerdos comerciales con terceros países «permiten la regionalización de la enfermedad y, por lo tanto, Castilla y León está libre». «Ahora hay que estar muy atentos y vigilantes, junto con el sector, a todo lo que pueda acontecer para desarrollar todas las actuaciones descritas en los planes nacionales o los manuales para esta enfermedad», apuntó. Control de jabalíesTambién se refirieron a este asunto las organizaciones agrarias. Asaja exigió «un control de censos de jabalíes» ante «su expansión» por todo el territorio. Por ello, consideró que el plan de contención debe ser «diferente» al que se puso en marcha hace treinta años y debe tener como «principal objetivo la vigilancia y el control» de la población del citado animal silvestre. Por todo ello, pidió a la Junta y al Gobierno central «un plan de actuación dotado de medidas y presupuesto económico suficiente». Además, resaltaron en un comunicado «el estricto control sanitario y de bioseguridad que se lleva a cabo en las granjas» del sector porcino español. En Castilla y León este aspecto es «mayor, si cabe, debido a que las granjas son más modernas, y las instalaciones, además de más distantes entre sí, se han construido con las últimas exigencias normativas», concluyeron. También UCCL instó a la «coordinación de todas las administraciones públicas» para contener posibles saltos de la enfermedad entre autonomías. Además, exigió que intensifiquen «los controles sobre fauna silvestre» porque es «un reservorio de enfermedades que transmiten a las ganaderías». Por su parte, el presidente de la Federación de Caza de Castilla y León, Santiago Iturmendi, explicó que el colectivo vive la situación con «muchísima preocupación» y recordó que llevan «mucho tiempo» advirtiendo del sobredimensionamiento de la población de jabalí y de que «esto iba a llegar». Además, rechazó que sea la UME quien tenga que encargarse de eliminar a los jabalíes de la zona en la que han aparecido los casos, ya que los cazadores tienen «más conocimiento» de la especie y pueden «colaborar».",
+      "content_preview": "Más de treinta años después, la peste porcina reaparece en España. Concretamente, ha sido en Cataluña donde se han detectado dos jabalíes fallecidos infectados y otros ocho están en estudio. Los casos han surgido a centenares de kilómetros de Castilla y León, pero inevitablemente. . . la alerta se ha encendido ya y el sector en la Comunidad, donde existen más de 7. 100 explotaciones con este tipo de ganado, está ya «expectante ante lo que pueda pasar». También «preocupado» y a la espera de que s..."
+    },
+    {
+      "processing_rank": 24,
+      "url_id": 11203,
+      "url": "https://www.abc.es/espana/monedero-reaparece-observador-honduras-plena-polemica-cercania-20251201154620-nt.html",
+      "title": "Monedero reaparece como «observador» en Honduras en plena polémica por su cercanía al oficialismo",
+      "source": "www.abc.es",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "json_ld",
+      "extraction_error": null,
+      "word_count": 1146,
+      "archive_url": null,
+      "full_content": "En una jornada electoral caótica en Honduras, marcada por fallos en los centros de votación y por incidentes en los que grupos afines al oficialismo intentaron impedir el recuento, la oposición terminó imponiéndose con claridad. El gobierno de la izquierdista Xiomara Castro, esposa del expresidente. . . Manuel Zelaya, había desplegado en Tegucigalpa una amplia delegación de observadores cercanos, alojados en dos hoteles de la capital, con la intención —según medios locales— de dar un brillo internacional a la continuidad en el poder. Entre ellos destacaba la presencia del español Juan Carlos Monedero. El oficialista Partido Libre trajo al politólogo español acompañado de una delegación de nueve españoles acreditados como observadoresEl oficialista Partido Libre trajo al politólogo español acompañado de una delegación de nueve españoles acreditados como observadores. Entre ellos había políticos de izquierda, como Ángela Rodríguez Costalero, de Izquierda Unida, y también perfiles cercanos al ecosistema mediático afín al oficialismo hondureño, como el periodista Néstor Prieto —participante en la Flotilla de Gaza y colaborador de Canal Red— o Sergio Ramos Ruiz, abogado y exconcejal en Murcia. Finalmente, la derecha se impuso. Con el 60% escrutado, el candidato del Partido Nacional, Nasry Asfura, se impuso con el 40%, levemente por delante del 39% de Salvador Nasralla, del partido Libertario, y el hundimiento al 19% de la oficialista Rixi Moncada, que fue ministra de Defensa con Xiomara Castro. Monedero es un politólogo y profesor español con una larga trayectoria en la izquierda y en Iberoamérica. Fue asesor de Izquierda Unida en España y posteriormente trabajó en América Latina, donde colaboró con el gobierno de Hugo Chávez entre 2005 y 2010. Durante esos años se vinculó a proyectos de formación política y defendió públicamente el llamado «Socialismo del Siglo XXI». Esa etapa lo convirtió en una figura conocida en círculos izquierdistas latinoamericanos y también en un interlocutor habitual en críticas al papel de Estados Unidos en la región. El politólogo se hizo después visible como comentarista y dirigente fundador de Podemos en España, tras su paso por Venezuela. Ha cultivado relaciones con sectores políticos afines al oficialismo en Venezuela y Nicaragua, y antes en Bolivia y Ecuador. Ha participado como observador en procesos electorales latinoamericanos, respaldando posturas que han generado polémica en varias ocasiones, especialmente en Venezuela. En las presidenciales venezolanas de 2024, por ejemplo, defendió públicamente la versión oficial del chavismo en unas elecciones cuestionadas por irregularidades, represión y denuncias de fraude, lo que provocó críticas de sectores de la oposición venezolana y de instituciones internacionales que señalaban graves problemas de transparencia en el proceso. En otros comicios de la región, sus declaraciones han sido recibidas con recelo por la oposición local, que lo acusa de ofrecer aval político a gobiernos bajo escrutinio. Una delegación diversaEs parte de una delegación diversa y llegada por vías paralelas. En el Hotel Honduras Maya se alojan alrededor de un centenar de visitantes traídos por el Gobierno a través de la Secretaría de Relaciones Exteriores, con gastos pagados y sin invitación del Consejo Nacional Electoral. Entre ellos hay activistas, simpatizantes, políticos extranjeros y analistas afines al oficialismo que no figuran como observadores acreditados. Su presencia, numerosa y heterogénea, ha generado inquietud entre misiones internacionales y partidos opositores, que veían en este grupo un intento de influir en el relato del proceso electoral desde fuera del marco institucional. La prensa hondureña informó que la candidata oficialista, Moncada, recurrió a un amplio equipo de asesores extranjeros para su campaña, entre ellos consultores brasileños, un argentino y una venezolana vinculados a estrategias digitales, comunicación política y operaciones de redes. Según estas investigaciones, parte de ese equipo operó de forma discreta desde edificios y hoteles en Tegucigalpa, bajo el paraguas de funcionarios del Gobierno, con tareas que iban desde la propaganda en redes hasta la coordinación de acciones de imagen y respuesta política. Los medios también detallaron que algunos de estos asesores han trabajado anteriormente en campañas de gobiernos de izquierda en América Latina y que varios de ellos han estado asociados a controversias en sus países de origen. Entre los nombres mencionados figuran Halley Arrais Do Nascimento Santana —considerado el líder del grupo—, así como la venezolana Janohi Rosas y el argentino Marcelo Falo. Su presencia en Honduras, señalaron los informes, generó inquietud en sectores políticos y dentro del propio aparato estatal por la influencia que podrían tener en un proceso electoral ya tenso y marcado por acusaciones cruzadas. Hubo miles de observadores desplegados en todo el país, procedentes de misiones internacionales, organizaciones regionales y redes cívicas locales. Llegaron desde la OEA, la Unión Europea, el Centro Carter y distintas plataformas latinoamericanas especializadas en supervisión electoral. Su trabajo consistió en recorrer centros de votación, verificar el acceso de los ciudadanos, supervisar el cierre de urnas y observar el traslado de actas en una jornada marcada por retrasos, fallos técnicos y episodios de tensión. Para muchos hondureños, su presencia ofrecía un mínimo de confianza en un proceso históricamente vulnerable a la presión política. ¿Operador político u observador imparcial? Juan Carlos Monedero aterrizó en Tegucigalpa en plena recta final de la campaña y actuó más como parte del dispositivo político del oficialismo que como observador independiente. Su presencia en el búnker de Rixi Moncada, sus intervenciones en redes y sus contactos con dirigentes de Libre lo situaron como una de las voces más visibles del esfuerzo del zelayismo por disputar el relato frente a la influencia explícita de Estados Unidos en estas elecciones. Desde la capital hondureña, Monedero se dedicó a cuestionar abiertamente la implicación de Donald Trump en la contienda, señalando que el respaldo del presidente estadounidense a Nasry Asfura y su decisión de indultar al exmandatario Juan Orlando Hernández —condenado en Estados Unidos por narcotráfico— formaban parte de lo que describió como una operación política destinada a bloquear el triunfo de Moncada. En uno de sus mensajes más difundidos, Monedero afirmó que el perdón a Hernández, decretado por Trump apenas días antes de la votación, demostraba que el gobierno estadounidense actuaba como un lobby «que cobra por hacer gestiones» mientras pedía el voto para el Partido Nacional. Aseguró que esa intervención buscaba impedir que «Rixi Presidenta» se impusiera en las urnas e insinuó que había intereses económicos y geopolíticos detrás del apoyo a la derecha hondureña. Sus declaraciones fueron celebradas por el oficialismo y criticadas por sectores que lo ven como un operador político extranjero más que como un observador imparcial. No se trata de los grupos invitados por el gobierno y alojados en hoteles de Tegucigalpa para respaldar al oficialismo, sino de misiones formales y acreditadas que operan bajo estándares internacionales y que rinden informes públicos. Estos observadores se mantuvieron en calles, colegios y centros de acopio durante todo el día, sin depender de autoridades locales ni participar en estructuras partidarias. Su labor fue decisiva para documentar irregularidades y confirmar que, pese al clima de tensión, el escrutinio debía seguir bajo vigilancia independiente.",
+      "content_preview": "En una jornada electoral caótica en Honduras, marcada por fallos en los centros de votación y por incidentes en los que grupos afines al oficialismo intentaron impedir el recuento, la oposición terminó imponiéndose con claridad. El gobierno de la izquierdista Xiomara Castro, esposa del expresidente. . . Manuel Zelaya, había desplegado en Tegucigalpa una amplia delegación de observadores cercanos, alojados en dos hoteles de la capital, con la intención —según medios locales— de dar un brillo inte..."
+    },
+    {
+      "processing_rank": 25,
+      "url_id": 11207,
+      "url": "https://www.abc.es/espana/inspirado-conocida-pelicula-sobre-presos-ira-llevada-20251201100755-nt.html",
+      "title": "Inspirada en una conocida película sobre presos del IRA y llevada por su entorno: así funciona la cuenta en redes de Ábalos mientras está en prisión",
+      "source": "www.abc.es",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "json_ld",
+      "extraction_error": null,
+      "word_count": 728,
+      "archive_url": null,
+      "full_content": "José Luis Ábalos ha utilizado una referencia cinematográfica para rebautizar su perfil en redes sociales. Fuentes del entorno del exministro explican a ABC que ﻿ 'En el nombre de Ábalos' es un homenaje a la película de 'En el nombre del padre' ya que. . . consideran que hay similitudes en el argumento de ese largometraje con lo que está viviendo el exdirigente socialista con su ingreso en Soto del Real. 'En el nombre del padre', que fue estrenada en 1993, narra la historia de un irlandés que fue encarcelado injustamente por un atentado del IRA. La película, protagonizada por Daniel Day Lewis, recibió siete nominaciones a los premios Óscar, pero no obtuvo estatuilla. Similitudes con la películaSe da la circunstancia de que en el final del largometraje el protagonista consigue demostrar su inocencia. El entorno de Ábalos explica a ABC que ambas historias guardan similitudes ya que consideran que no había riesgo de fuga para ordenar la prisión provisional del exministro. Noticia Relacionada estandar Si Paqui, la influyente mujer de Santos Cerdán que quería «mejor vida» Joan Guirado Quienes conocen al matrimonio sitúan a la esposa de Cerdán «detrás de los movimientos de su marido»Una decisión judicial «muy política», según consideran estas mismas fuentes. De ahí, el nuevo bautismo del nombre del perfil en redes sociales del exministro. Y es que sus mensajes actualizados están captando el foco mediático. «Mi agradecimiento por el buen trato que estoy recibiendo en prisión por parte de todos los funcionarios y por los demás internos. Mi adaptación está siendo menos traumática de lo que esperaba. Eso sí, aquí hace mucho frío», expuso el domingo ante la incredulidad de los usuarios que pensaban que era el propio Ábalos el que escribía desde la cárcel. No la lleva el exministroEstas mismas fuentes destacan a este medio que, evidentemente, el exministro no tiene su teléfono móvil en la celda de Soto del Real. Una persona de su máxima confianza de su entorno es la encargada de controlar las redes sociales del propio Ábalos. Esta persona mantiene comunicación directa con el exdirigente socialista y acuerdan los mensajes que se terminan publicando en la red social de 'X'. El exministro ya ha recibido en la cárcel de Soto del Real dos visitas: la de Víctor Manuel, su hijo mayor, y la de Andrea, su actual pareja. Cabe reseñar que estos encuentros ya solo se pueden producir previa reserva los fines de semana. Solo los abogados de ambos pueden frecuentar las dependencias y comunicarse con ellos de forma diaria, como decreto el magistrado Leopoldo Puente en su auto de ingreso en prisión provisional por el riesgo de fuga. La vida en prisión de Koldo y ÁbalosLa tranquilidad está siendo la nota predominante del paso por prisión de ambos, según informan fuentes penitenciarias a ABC. Koldo y Ábalos han quedado asignados en el módulo 13 del recinto madrileño, una zona considerada de respeto. Por el momento, exministro y su mano derecha siguen compartiendo hasta celda en las instalaciones. Se comportan de forma totalmente educada con sus compañeros reos y con los trabajadores del centro. Precisamente, los encargados del área sanitaria están muy pendientes de los movimientos de Koldo García ya que sufre diabetes y necesita medicación. Es por ello que será vigilado de cerca por estos funcionarios. El horario de ambos es todos los días el mismo. Las celdas se abren a las ocho y media de la mañana y se cierran a las ocho y media de la tarde. En ese periodo tienen tiempo para trabajar dentro de la prisión o para formarse. Ábalos y Koldo cuentan con 100 euros para poder comprar víveres tan diversos como chocolate, tabaco o calefactoresEstas mismas fuentes admiten que tanto Ábalos como Koldo se nutren entre sí y es raro verlos por separado en Soto del Real. Una circunstancia que, en estos momentos, se considera normal por parte de los funcionarios por el poco tiempo que llevan en la cárcel. Sobre este aspecto, el exasesor de Transportes, fiel a su figura desde hace tiempo, mantiene su intención de proteger en todo momento a quien fuera su jefe. La entrada conjunta en prisión ha potenciado este aspecto. Lo que sí va por separado es el dinero que tienen semanalmente para sus gastos en Soto del Real. Ambos cuentan con 100 euros para poder comprar víveres tan diversos como chocolate, tabaco o calefactores.",
+      "content_preview": "José Luis Ábalos ha utilizado una referencia cinematográfica para rebautizar su perfil en redes sociales. Fuentes del entorno del exministro explican a ABC que ﻿ 'En el nombre de Ábalos' es un homenaje a la película de 'En el nombre del padre' ya que. . . consideran que hay similitudes en el argumento de ese largometraje con lo que está viviendo el exdirigente socialista con su ingreso en Soto del Real. 'En el nombre del padre', que fue estrenada en 1993, narra la historia de un irlandés que fue..."
+    }
+  ],
+  "newsletter_preview": {
+    "word_count": 1064,
+    "char_count": 9293,
+    "first_500_chars": "Hoy en día, las políticas económicas y los movimientos políticos están más entrelazados que nunca. Vamos a echar un vistazo a algunas de las noticias más interesantes del momento.\n\nEmpezamos en Francia, donde el economista [**Clément Carbonnier**](https://www.lemonde.fr/idees/article/2025/12/01/clement-carbonnier-economiste-il-y-a-mieux-a-faire-que-subventionner-a-l-aveuglette-les-entreprises-payant-mal-leurs-salaries_6655560_3232.html) critica las políticas de reducción de costos laborales. Seg..."
+  }
+}

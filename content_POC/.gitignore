@@ -1,0 +1,25 @@
+# Sensitive files - DO NOT COMMIT
+cookies.json
+.env
+
+# Output files
+output/*.json
+!output/.gitkeep
+
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

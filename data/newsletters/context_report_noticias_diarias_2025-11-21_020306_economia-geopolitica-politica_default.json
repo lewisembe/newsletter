@@ -1,0 +1,645 @@
+{
+  "metadata": {
+    "newsletter_name": "noticias_diarias",
+    "run_date": "2025-11-21",
+    "generated_at": "2025-11-22T02:03:06.216770+01:00",
+    "stage": "05_generate_newsletters"
+  },
+  "configuration": {
+    "max_articles": 20,
+    "top_with_content": 20,
+    "expected_categories": [
+      "economia",
+      "politica",
+      "geopolitica"
+    ],
+    "ranked_file_categories": null,
+    "template": "default",
+    "model_writer": "gpt-4o",
+    "output_format": "markdown"
+  },
+  "ranked_data": {
+    "total_urls_in_ranked_file": 0,
+    "urls_selected_for_processing": 20,
+    "initial_ranked_order": []
+  },
+  "content_extraction": {
+    "urls_requested_for_content": [
+      {
+        "rank": 1,
+        "url_id": 9209,
+        "url": "https://www.lemonde.fr/international/article/2025/11/21/donald-trump-agite-la-menace-de-la-peine-de-mort-contre-des-elus-democrates-appelant-l-armee-a-desobeir_6654235_3210.html",
+        "title": "Donald Trump agite la menace de la peine de mort contre des élus démocrates appelant l’armée à désobéir"
+      },
+      {
+        "rank": 2,
+        "url_id": 9194,
+        "url": "https://www.lemonde.fr/international/article/2025/11/21/la-zone-jaune-de-gaza-laboratoire-de-l-apres-guerre-pour-israel_6654234_3210.html",
+        "title": "Gaza : derrière la « ligne jaune », des milices anti-Hamas et des gangs financés et armés par Israël"
+      },
+      {
+        "rank": 3,
+        "url_id": 9192,
+        "url": "https://www.lemonde.fr/international/article/2025/11/21/guerre-en-ukraine-ce-que-l-on-sait-des-28-mesures-du-plan-de-donald-trump_6654260_3210.html",
+        "title": "Guerre en Ukraine : ce que l’on sait des 28 mesures du plan de paix américain"
+      },
+      {
+        "rank": 4,
+        "url_id": 9141,
+        "url": "https://www.bbc.com/news/articles/ce3w1zeerywo",
+        "title": "Trump's growing impatience to end Ukraine war is a concern for Kyiv"
+      },
+      {
+        "rank": 5,
+        "url_id": 9145,
+        "url": "https://www.bbc.com/news/articles/c33mnvy5zppo",
+        "title": "Venezuela says opposition leader will become fugitive if she collects Nobel"
+      },
+      {
+        "rank": 6,
+        "url_id": 9149,
+        "url": "https://www.bbc.com/news/articles/cj4qxvy74qyo",
+        "title": "St Mary's School in Niger state: Pupils abducted from Nigerian Catholic school"
+      },
+      {
+        "rank": 7,
+        "url_id": 9153,
+        "url": "https://www.bbc.com/news/articles/c3rjr2r72gpo",
+        "title": "Russian envoy Kirill Dmitriev: Putin propagandist or key to peace with Ukraine?"
+      },
+      {
+        "rank": 8,
+        "url_id": 9166,
+        "url": "https://www.bbc.com/news/articles/c3v1xpyy955o",
+        "title": "Afghan national admits raping 12-year-old girl in Nuneaton"
+      },
+      {
+        "rank": 9,
+        "url_id": 9071,
+        "url": "https://www.nytimes.com/2025/11/21/world/europe/ukraine-russia-trump-peace-plan.html",
+        "title": "European Leaders Back Zelensky After U.S. Plan Leaves Them Out - The …"
+      },
+      {
+        "rank": 10,
+        "url_id": 9072,
+        "url": "https://www.nytimes.com/2025/11/21/world/middleeast/syria-mass-graves-civil-war.html",
+        "title": "Desperate Search for Missing Syrians Leads to Mass GravesMore than 100,000 people disappeared during Syria’s 13-year civil war. The new government faces the challenging task of exhuming remains from burial sites.5 min readLynsey Addario for The New York TimesDaniel Berehulak/The New York TimesDiego Ibarra Sanchez for The New York TimesEmile Ducke for The New York TimesEmile Ducke for The New York Times"
+      },
+      {
+        "rank": 11,
+        "url_id": 8992,
+        "url": "https://www.ft.com/content/6ea99b99-c2c4-4380-8d90-800e4334b5f1",
+        "title": "US plan for Ukraine-Russia peace calls on Kyiv to cede land under its control"
+      },
+      {
+        "rank": 12,
+        "url_id": 9022,
+        "url": "https://www.ft.com/content/edf7503c-e6b8-4ba0-aafa-737f8ef6a37a",
+        "title": "Saudi Arabia leads attempts to block climate deal, UN chief warns in closed-door talks"
+      },
+      {
+        "rank": 13,
+        "url_id": 8971,
+        "url": "https://www.abc.es/internacional/polonia-sube-tono-rusia-tras-sabotaje-via-20251121125835-nt.html",
+        "title": "Polonia sube el tono con Rusia tras el sabotaje en una vía ferroviaria clave: «Es terrorismo de Estado»"
+      },
+      {
+        "rank": 14,
+        "url_id": 8749,
+        "url": "https://elpais.com/internacional/2025-11-21/la-entrada-en-vigor-de-las-sanciones-a-rosneft-y-lukoil-dejan-en-el-limbo-millones-de-barriles-de-petroleo-ruso.html",
+        "title": "La entrada en vigor de las sanciones a Rosneft y Lukoil deja en el limbo millones de barriles de petróleo ruso"
+      },
+      {
+        "rank": 15,
+        "url_id": 8746,
+        "url": "https://elpais.com/internacional/2025-11-20/trump-reclama-la-pena-de-muerte-contra-varios-legisladores-democratas.html",
+        "title": "Trump reclama la pena de muerte contra varios legisladores demócratas"
+      },
+      {
+        "rank": 16,
+        "url_id": 8632,
+        "url": "https://www.elconfidencial.com/mundo/2025-11-21/ataque-ruso-zaporiyia-ucrania-muertos-1tps_4251688/",
+        "title": "Al menos cinco muertos y ocho heridos en nuevo ataque ruso en Zaporiyia"
+      },
+      {
+        "rank": 17,
+        "url_id": 8485,
+        "url": "https://www.abc.es/espana/moncloa-instara-fiscal-general-recurra-constitucional-dispuesta-20251121042630-nt.html",
+        "title": "Moncloa instará al fiscal general a que recurra al Constitucional y está dispuesta a acudir a Europa"
+      },
+      {
+        "rank": 18,
+        "url_id": 9214,
+        "url": "https://www.lemonde.fr/international/live/2025/11/21/en-direct-des-incursions-de-colons-israeliens-signalees-dans-plusieurs-villages-de-cisjordanie-deux-adolescents-tues-au-nord-de-jerusalem_6653956_3210.html",
+        "title": "EN DIRECT, Gaza : des incursions de colons israéliens signalées dans plusieurs villages de Cisjordanie"
+      },
+      {
+        "rank": 19,
+        "url_id": 8566,
+        "url": "https://www.elconfidencial.com/espana/2025-11-21/el-juez-convoca-el-jueves-a-abalos-y-koldo-para-decidir-si-los-manda-a-prision_4251798/",
+        "title": "El juez convoca el jueves a Ábalos y Koldo para decidir si los manda a prisión"
+      },
+      {
+        "rank": 20,
+        "url_id": 8720,
+        "url": "https://elpais.com/internacional/2025-11-21/los-28-puntos-del-plan-de-paz-que-ee-uu-y-rusia-han-presentado-a-ucrania-segun-medios-internacionales.html",
+        "title": "Los 28 puntos del plan de paz que EE UU y Rusia han presentado a Ucrania, según medios internacionales"
+      }
+    ],
+    "urls_successfully_extracted": [
+      {
+        "rank": 1,
+        "url_id": 9209,
+        "url": "https://www.lemonde.fr/international/article/2025/11/21/donald-trump-agite-la-menace-de-la-peine-de-mort-contre-des-elus-democrates-appelant-l-armee-a-desobeir_6654235_3210.html",
+        "title": "Donald Trump agite la menace de la peine de mort contre des élus démocrates appelant l’armée à désobéir",
+        "method": "newspaper",
+        "word_count": 723
+      },
+      {
+        "rank": 2,
+        "url_id": 9194,
+        "url": "https://www.lemonde.fr/international/article/2025/11/21/la-zone-jaune-de-gaza-laboratoire-de-l-apres-guerre-pour-israel_6654234_3210.html",
+        "title": "Gaza : derrière la « ligne jaune », des milices anti-Hamas et des gangs financés et armés par Israël",
+        "method": "llm_direct",
+        "word_count": 284
+      },
+      {
+        "rank": 3,
+        "url_id": 9192,
+        "url": "https://www.lemonde.fr/international/article/2025/11/21/guerre-en-ukraine-ce-que-l-on-sait-des-28-mesures-du-plan-de-donald-trump_6654260_3210.html",
+        "title": "Guerre en Ukraine : ce que l’on sait des 28 mesures du plan de paix américain",
+        "method": "newspaper",
+        "word_count": 1296
+      },
+      {
+        "rank": 4,
+        "url_id": 9141,
+        "url": "https://www.bbc.com/news/articles/ce3w1zeerywo",
+        "title": "Trump's growing impatience to end Ukraine war is a concern for Kyiv",
+        "method": "newspaper",
+        "word_count": 270
+      },
+      {
+        "rank": 5,
+        "url_id": 9145,
+        "url": "https://www.bbc.com/news/articles/c33mnvy5zppo",
+        "title": "Venezuela says opposition leader will become fugitive if she collects Nobel",
+        "method": "newspaper",
+        "word_count": 371
+      },
+      {
+        "rank": 6,
+        "url_id": 9149,
+        "url": "https://www.bbc.com/news/articles/cj4qxvy74qyo",
+        "title": "St Mary's School in Niger state: Pupils abducted from Nigerian Catholic school",
+        "method": "newspaper",
+        "word_count": 635
+      },
+      {
+        "rank": 7,
+        "url_id": 9153,
+        "url": "https://www.bbc.com/news/articles/c3rjr2r72gpo",
+        "title": "Russian envoy Kirill Dmitriev: Putin propagandist or key to peace with Ukraine?",
+        "method": "newspaper",
+        "word_count": 1135
+      },
+      {
+        "rank": 8,
+        "url_id": 9166,
+        "url": "https://www.bbc.com/news/articles/c3v1xpyy955o",
+        "title": "Afghan national admits raping 12-year-old girl in Nuneaton",
+        "method": "newspaper",
+        "word_count": 354
+      },
+      {
+        "rank": 9,
+        "url_id": 9071,
+        "url": "https://www.nytimes.com/2025/11/21/world/europe/ukraine-russia-trump-peace-plan.html",
+        "title": "European Leaders Back Zelensky After U.S. Plan Leaves Them Out - The …",
+        "method": "newspaper",
+        "word_count": 166
+      },
+      {
+        "rank": 11,
+        "url_id": 8992,
+        "url": "https://www.ft.com/content/6ea99b99-c2c4-4380-8d90-800e4334b5f1",
+        "title": "US plan for Ukraine-Russia peace calls on Kyiv to cede land under its control",
+        "method": "llm_direct",
+        "word_count": 148
+      },
+      {
+        "rank": 12,
+        "url_id": 9022,
+        "url": "https://www.ft.com/content/edf7503c-e6b8-4ba0-aafa-737f8ef6a37a",
+        "title": "Saudi Arabia leads attempts to block climate deal, UN chief warns in closed-door talks",
+        "method": "llm_direct",
+        "word_count": 183
+      },
+      {
+        "rank": 13,
+        "url_id": 8971,
+        "url": "https://www.abc.es/internacional/polonia-sube-tono-rusia-tras-sabotaje-via-20251121125835-nt.html",
+        "title": "Polonia sube el tono con Rusia tras el sabotaje en una vía ferroviaria clave: «Es terrorismo de Estado»",
+        "method": "json_ld",
+        "word_count": 395
+      },
+      {
+        "rank": 14,
+        "url_id": 8749,
+        "url": "https://elpais.com/internacional/2025-11-21/la-entrada-en-vigor-de-las-sanciones-a-rosneft-y-lukoil-dejan-en-el-limbo-millones-de-barriles-de-petroleo-ruso.html",
+        "title": "La entrada en vigor de las sanciones a Rosneft y Lukoil deja en el limbo millones de barriles de petróleo ruso",
+        "method": "newspaper",
+        "word_count": 2022
+      },
+      {
+        "rank": 15,
+        "url_id": 8746,
+        "url": "https://elpais.com/internacional/2025-11-20/trump-reclama-la-pena-de-muerte-contra-varios-legisladores-democratas.html",
+        "title": "Trump reclama la pena de muerte contra varios legisladores demócratas",
+        "method": "readability",
+        "word_count": 619
+      },
+      {
+        "rank": 16,
+        "url_id": 8632,
+        "url": "https://www.elconfidencial.com/mundo/2025-11-21/ataque-ruso-zaporiyia-ucrania-muertos-1tps_4251688/",
+        "title": "Al menos cinco muertos y ocho heridos en nuevo ataque ruso en Zaporiyia",
+        "method": "llm_direct",
+        "word_count": 154
+      },
+      {
+        "rank": 17,
+        "url_id": 8485,
+        "url": "https://www.abc.es/espana/moncloa-instara-fiscal-general-recurra-constitucional-dispuesta-20251121042630-nt.html",
+        "title": "Moncloa instará al fiscal general a que recurra al Constitucional y está dispuesta a acudir a Europa",
+        "method": "json_ld",
+        "word_count": 719
+      },
+      {
+        "rank": 18,
+        "url_id": 9214,
+        "url": "https://www.lemonde.fr/international/live/2025/11/21/en-direct-des-incursions-de-colons-israeliens-signalees-dans-plusieurs-villages-de-cisjordanie-deux-adolescents-tues-au-nord-de-jerusalem_6653956_3210.html",
+        "title": "EN DIRECT, Gaza : des incursions de colons israéliens signalées dans plusieurs villages de Cisjordanie",
+        "method": "xpath_cache",
+        "word_count": 1983
+      },
+      {
+        "rank": 19,
+        "url_id": 8566,
+        "url": "https://www.elconfidencial.com/espana/2025-11-21/el-juez-convoca-el-jueves-a-abalos-y-koldo-para-decidir-si-los-manda-a-prision_4251798/",
+        "title": "El juez convoca el jueves a Ábalos y Koldo para decidir si los manda a prisión",
+        "method": "newspaper",
+        "word_count": 601
+      },
+      {
+        "rank": 20,
+        "url_id": 8720,
+        "url": "https://elpais.com/internacional/2025-11-21/los-28-puntos-del-plan-de-paz-que-ee-uu-y-rusia-han-presentado-a-ucrania-segun-medios-internacionales.html",
+        "title": "Los 28 puntos del plan de paz que EE UU y Rusia han presentado a Ucrania, según medios internacionales",
+        "method": "newspaper",
+        "word_count": 1112
+      }
+    ],
+    "urls_failed_extraction": [
+      {
+        "rank": 10,
+        "url_id": 9072,
+        "url": "https://www.nytimes.com/2025/11/21/world/middleeast/syria-mass-graves-civil-war.html",
+        "title": "Desperate Search for Missing Syrians Leads to Mass GravesMore than 100,000 people disappeared during Syria’s 13-year civil war. The new government faces the challenging task of exhuming remains from burial sites.5 min readLynsey Addario for The New York TimesDaniel Berehulak/The New York TimesDiego Ibarra Sanchez for The New York TimesEmile Ducke for The New York TimesEmile Ducke for The New York Times",
+        "status": "failed",
+        "error": "All fetch methods failed (tried: cookies, direct, no-js, selenium-no-js, archive.today)"
+      }
+    ],
+    "extraction_stats": {
+      "total_requested": 20,
+      "total_success": 19,
+      "total_failed": 1,
+      "success_rate": 95.0
+    }
+  },
+  "articles": [
+    {
+      "processing_rank": 1,
+      "url_id": 9209,
+      "url": "https://www.lemonde.fr/international/article/2025/11/21/donald-trump-agite-la-menace-de-la-peine-de-mort-contre-des-elus-democrates-appelant-l-armee-a-desobeir_6654235_3210.html",
+      "title": "Donald Trump agite la menace de la peine de mort contre des élus démocrates appelant l’armée à désobéir",
+      "source": "www.lemonde.fr",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "newspaper",
+      "extraction_error": null,
+      "word_count": 723,
+      "archive_url": null,
+      "full_content": "Le sénateur démocrate de l’Arizona Mark Kelly lors d’une conférence de presse devant le Capitole, à Washington, le 18 novembre 2025. Cet ancien officier de marine et astronaute de la NASA a appelé, avec d’autres démocrates, les militaires à désobéir aux ordres illégaux. ANNABELLE GORDON / REUTERS Donald Trump a semblé menacer, jeudi 20 novembre, de la peine de mort des élus démocrates ayant appelé les militaires et les agents du renseignement américains à désobéir aux « ordres illégaux » de son gouvernement. « COMPORTEMENT SÉDITIEUX, passible de la peine de MORT! », a écrit le président américain sur son réseau Truth Social. « Absolument infâme », a réagi le Parti démocrate sur X. Six élus démocrates à la Chambre des représentants et au Sénat, ayant eux-mêmes servi dans l’armée ou les services secrets, ont publié mardi sur X une vidéo dans laquelle ils lancent à l’intention des militaires et des agents du renseignement: « Vous pouvez refuser les ordres illégaux. » Dans un message, Donald Trump a qualifié ces opposants de « traîtres » ayant un « comportement séditieux ». Le président a été accusé par l’opposition de recourir à l’armée sans fondement légal pour des opérations de maintien de l’ordre sur le sol américain et de lutte contre le narcotrafic à l’étranger. « Tous les ordres donnés par ce commandant en chef [un titre du président américain] à travers la chaîne de commandement, à travers le ministère de la guerre, sont légaux », a assuré, jeudi, la porte-parole de la Maison Blanche, Karoline Leavitt. « Non », a-t-elle répondu ensuite à une journaliste qui lui demandait si le président voulait exécuter les élus démocrates. Lire aussi | Article réservé à nos abonnés Donald Trump instrumentalise la violence d’extrême gauche pour justifier l’intervention de l’armée dans les grandes villes américaines Lire plus tard Avant Donald Trump, d’autres hauts responsables de la Maison Blanche avaient attaqué la vidéo des six élus de l’opposition. « Des responsables démocrates appellent ouvertement la CIA et les dirigeants de l’armée à se rebeller contre leur commandant en chef. Ne sous-estimez pas à quel point le Parti démocrate est devenu dangereusement radicalisé », avait réagi, mercredi, sur X le directeur de cabinet adjoint de la Maison Blanche, Stephen Miller. Dans la nuit de mercredi à jeudi, Donald Trump avait partagé une publication d’un autre utilisateur sur Truth Social, où il est écrit: « Pendez-les. » « Il craque une allumette dans un pays déjà imbibé de combustible politique », s’est indigné le chef des sénateurs démocrates, Chuck Schumer. « C’est l’heure de l’intégrité morale » Dans un communiqué publié jeudi, les six démocrates, dont le sénateur Mark Kelly, un ancien officier de marine et astronaute de la NASA, et la sénatrice Elissa Slotkin, qui a travaillé pour la CIA en Irak, ont appelé à « s’unir et condamner les appels du président à notre assassinat et à la violence politique. C’est l’heure de l’intégrité morale ». Les élus de l’opposition ont reçu le soutien d’un groupe disant représenter « plus de 360 » anciens responsables militaires et diplomatiques, pour lesquels la désobéissance à des ordres illégaux « est le fondement même du contrôle exercé par les civils sur l’armée ». Le Monde Application La Matinale du Monde Chaque matin, retrouvez notre sélection de 20 articles à ne pas manquer Télécharger l'application Les élus démocrates ne précisent pas dans leur vidéo à quels ordres ils font référence, mais Donald Trump et son fidèle allié au Pentagone, le ministre Pete Hegseth, sont critiqués pour leur utilisation des forces armées. Lire aussi | Article réservé à nos abonnés Déploiement naval américain dans les Caraïbes contre le narcotrafic: l’Amérique latine s’interroge sur les véritables intentions de Donald Trump Lire plus tard Le président a ordonné le déploiement de la garde nationale dans plusieurs villes démocrates, dont Los Angeles et Washington, contre l’avis des autorités locales. Les Etats-Unis ont également mené ces dernières semaines une vingtaine de frappes dans les Caraïbes et le Pacifique contre des embarcations qu’ils accusent – sans présenter de preuves – de transporter de la drogue, faisant au moins 83 victimes. Le Haut-Commissaire des Nations unies aux droits de l’homme, Volker Türk, a jugé, à propos de ces opérations, qu’il existait de « solides indices » de « violations du droit international » humanitaire et « d’exécutions extrajudiciaires ».",
+      "content_preview": "Le sénateur démocrate de l’Arizona Mark Kelly lors d’une conférence de presse devant le Capitole, à Washington, le 18 novembre 2025. Cet ancien officier de marine et astronaute de la NASA a appelé, avec d’autres démocrates, les militaires à désobéir aux ordres illégaux. ANNABELLE GORDON / REUTERS Donald Trump a semblé menacer, jeudi 20 novembre, de la peine de mort des élus démocrates ayant appelé les militaires et les agents du renseignement américains à désobéir aux « ordres illégaux » de son ..."
+    },
+    {
+      "processing_rank": 2,
+      "url_id": 9194,
+      "url": "https://www.lemonde.fr/international/article/2025/11/21/la-zone-jaune-de-gaza-laboratoire-de-l-apres-guerre-pour-israel_6654234_3210.html",
+      "title": "Gaza : derrière la « ligne jaune », des milices anti-Hamas et des gangs financés et armés par Israël",
+      "source": "www.lemonde.fr",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "llm_direct",
+      "extraction_error": null,
+      "word_count": 284,
+      "archive_url": null,
+      "full_content": "Derrière la « ligne jaune » de Gaza, des milices et des gangs anti-Hamas sous le regard complaisant d’Israël La bande de Gaza, après des semaines de bombardements israéliens, est devenue un terrain de lutte pour des groupes armés qui s'opposent au Hamas. Ces milices, souvent financées et armées par Israël, se sont installées dans la zone jaune, une région tampon entre Gaza et Israël. Les autorités israéliennes, tout en affichant leur soutien à ces groupes, semblent également jouer un jeu dangereux. En effet, ces milices, qui se présentent comme des défenseurs de la population contre le Hamas, pourraient rapidement devenir une menace pour la sécurité d'Israël lui-même. Les habitants de Gaza, quant à eux, se retrouvent pris entre deux feux. D'un côté, les bombardements israéliens continuent de faire des ravages, et de l'autre, les milices anti-Hamas imposent leur loi, souvent par la violence. Cette situation soulève des questions sur l'avenir de Gaza et sur la stratégie d'Israël dans la région. Alors que le Hamas a été affaibli par les récents conflits, la montée en puissance de ces milices pourrait créer un nouveau cycle de violence. Les experts s'interrogent sur la viabilité de cette approche. En soutenant des groupes armés, Israël risque de voir émerger des factions encore plus radicales, qui pourraient un jour se retourner contre lui. La communauté internationale, quant à elle, observe avec inquiétude cette évolution. Les appels à la paix et à la réconciliation se multiplient, mais la réalité sur le terrain semble de plus en plus complexe. Dans ce contexte, la zone jaune de Gaza apparaît comme un laboratoire de l'après-guerre pour Israël, où les enjeux de sécurité et de contrôle se mêlent à des considérations politiques et humanitaires.",
+      "content_preview": "Derrière la « ligne jaune » de Gaza, des milices et des gangs anti-Hamas sous le regard complaisant d’Israël La bande de Gaza, après des semaines de bombardements israéliens, est devenue un terrain de lutte pour des groupes armés qui s'opposent au Hamas. Ces milices, souvent financées et armées par Israël, se sont installées dans la zone jaune, une région tampon entre Gaza et Israël. Les autorités israéliennes, tout en affichant leur soutien à ces groupes, semblent également jouer un jeu dangere..."
+    },
+    {
+      "processing_rank": 3,
+      "url_id": 9192,
+      "url": "https://www.lemonde.fr/international/article/2025/11/21/guerre-en-ukraine-ce-que-l-on-sait-des-28-mesures-du-plan-de-donald-trump_6654260_3210.html",
+      "title": "Guerre en Ukraine : ce que l’on sait des 28 mesures du plan de paix américain",
+      "source": "www.lemonde.fr",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "newspaper",
+      "extraction_error": null,
+      "word_count": 1296,
+      "archive_url": null,
+      "full_content": "Un véhicule blindé ukrainien détruit, dans la cour d’un bâtiment abandonné à Bakhmout, dans l’oblast de Donetsk, en Ukraine, le 28 mai 2022. FRANCISCO SECO/AP Les Etats-Unis ont présenté un projet de plan pour l’Ukraine, qui prévoit notamment que Kiev cède les régions de Donetsk et Louhansk, dans l’est du pays, à Moscou, qu’elle réduise son armée à 600 000 militaires (contre environ 800 000 aujourd’hui) et que la Russie réintègre le G8. Lire aussi | EN DIRECT, guerre en Ukraine: les dirigeants européens et Volodymyr Zelensky ont discuté du plan américain pour mettre fin à la guerre et veulent une « paix durable et juste » Lire plus tard Selon la porte-parole de la Maison Blanche, Karoline Leavitt, l’émissaire diplomatique Steve Witkoff, et le secrétaire d’Etat américain, Marco Rubio, ont travaillé « discrètement » sur ce plan pendant environ un mois. « Le président [Trump] soutient ce plan. C’est un bon plan à la fois pour la Russie et pour l’Ukraine et nous pensons qu’il est acceptable pour les deux parties », a-t-elle soutenu jeudi. La proposition contient une unique ligne sur des « garanties de sécurité » pour l’Ukraine, sans les détailler. Volodymyr Zelensky a, pour sa part, déclaré qu’il comptait discuter du plan avec son homologue américain « dans les prochains jours ». « L’Ukraine a besoin de paix. (…) Une paix digne, afin que les conditions soient respectueuses de notre indépendance, de notre souveraineté et de la dignité du peuple ukrainien », a déclaré le président ukrainien dans un message sur les réseaux sociaux, après s’être entretenu avec le secrétaire à l’armée des Etats-Unis, Daniel Driscoll. Voici les 28 points de ce plan, selon le projet de texte dévoilé dans la nuit de jeudi à vendredi par divers médias, dont Axios et le « Financial Times » (FT), examiné et traduit par l’Agence France Presse (AFP): 1. La souveraineté de l’Ukraine sera confirmée. 2. Un accord global de non-agression sera conclu entre la Russie, l’Ukraine et l’Europe. Toutes les ambiguïtés laissées en suspens ces trente dernières années seront considérées comme résolues. 3. Il est attendu que la Russie n’envahira pas les pays voisins et que l’Organisation du traité de l’Atlantique Nord (OTAN) ne s’étendra pas davantage. 4. Un dialogue sera mené entre la Russie et l’OTAN, sous la médiation des Etats-Unis, afin de résoudre toutes les questions liées à la sécurité et de créer les conditions d’une désescalade. Selon le FT, l’objectif fixé est par ailleurs de « garantir la sécurité mondiale et d’accroître les possibilités de coopération et de développement économique futur ». 5. L’Ukraine recevra des garanties de sécurité fiables. 6. Les forces armées ukrainiennes seront limitées à 600 000 militaires. 7. L’Ukraine accepte d’inscrire dans sa Constitution qu’elle ne rejoindra pas l’OTAN, et l’OTAN accepte d’inclure dans ses statuts une disposition spécifiant que l’Ukraine ne sera pas intégrée à l’avenir. 8. L’OTAN accepte de ne pas stationner de troupes en Ukraine. 9. Des avions de combat européens seront basés en Pologne. 10. Les Etats-Unis recevront une compensation pour la garantie de sécurité. Si l’Ukraine envahit la Russie, elle perdra cette garantie. Si la Russie envahit l’Ukraine, outre une réponse militaire coordonnée et décisive, toutes les sanctions mondiales seront rétablies, la reconnaissance du nouveau territoire et tous les autres avantages de cet accord seront révoqués. Si l’Ukraine lance un missile sur Moscou ou Saint-Pétersbourg sans raison valable, la garantie de sécurité sera considérée comme nulle et non avenue. Le Monde Application La Matinale du Monde Chaque matin, retrouvez notre sélection de 20 articles à ne pas manquer Télécharger l'application 11. L’Ukraine est éligible à l’adhésion à l’Union européenne et bénéficiera d’un accès préférentiel à court terme au marché européen pendant que cette question est à l’étude. 12. Un important paquet mondial de mesures pour reconstruire l’Ukraine, incluant la création d’un fonds de développement pour l’Ukraine, la reconstruction de ses infrastructures gazières, la réhabilitation des zones touchées par la guerre, le développement de nouvelles infrastructures et la reprise de l’extraction de minéraux et de ressources naturelles, le tout accompagné d’un programme de financement spécial élaboré par la Banque mondiale. 13. La Russie sera réintégrée dans l’économie mondiale, avec des discussions prévues sur la levée des sanctions, la réintégration du G8 et la conclusion d’un accord de coopération économique à long terme avec les Etats-Unis. 14. Quelque 100 milliards de dollars d’actifs russes gelés seront investis dans les projets menés par les Etats-Unis pour reconstruire l’Ukraine et y investir, les Etats-Unis recevant 50 % des bénéfices de l’initiative. L’Europe ajoutera 100 milliards de dollars afin d’augmenter le montant des investissements disponibles pour la reconstruction de l’Ukraine. Les fonds européens gelés seront débloqués, et le reste des fonds russes gelés sera investi dans un véhicule d’investissement américano-russe séparé. 15. Un groupe de travail conjoint américano-russe sur les questions de sécurité sera créé afin de promouvoir et de garantir le respect de toutes les dispositions du présent accord. 16. La Russie inscrira dans la loi sa politique de non-agression envers l’Europe et l’Ukraine. 17. Les Etats-Unis et la Russie conviendront de prolonger la validité des traités sur la non-prolifération et le contrôle des armes nucléaires, y compris le traité START I. 18. L’Ukraine accepte de ne pas être un Etat doté de l’arme nucléaire conformément au traité sur la non-prolifération des armes nucléaires. 19. La centrale nucléaire de Zaporijia sera mise en service sous la supervision de l’Agence internationale de l’énergie atomique (AIEA), et l’électricité produite sera répartie à parts égales entre la Russie et l’Ukraine (50-50). 20. Les deux pays s’engagent à mettre en œuvre des programmes éducatifs dans les écoles et la société visant à promouvoir la compréhension et la tolérance mutuelle. 21. La Crimée, Louhansk et Donetsk seront des territoires reconnus, y compris par les Etats-Unis, comme de facto appartenant à la Russie. Kherson et Zaporijia seront gelées le long de la ligne de front actuelle, ce qui signifiera une reconnaissance de facto le long de cette ligne. La Russie renoncera aux autres territoires qu’elle contrôle en dehors des cinq territoires. Les forces ukrainiennes se retireront de la partie de l’oblast de Donetsk qu’elles contrôlent actuellement, qui sera ensuite utilisée pour créer une zone tampon. Un soldat ukrainien dans la ville de Kostiantynivka, située sur la ligne de front dans l’oblast de Donetsk, en Ukraine, le 15 novembre 2025. FORCES ARMÉES UKRAINIENNES/VIA REUTERS 22. Après avoir convenu des dispositions territoriales futures, la Fédération de Russie et l’Ukraine s’engagent à ne pas modifier ces dispositions par la force. Aucune garantie de sécurité ne s’appliquera en cas de violation de cet engagement. 23. La Russie n’empêchera pas l’Ukraine d’utiliser le Dniepr à des fins commerciales, et des accords seront conclus sur le libre transport des céréales à travers la mer Noire. 24. Un comité humanitaire sera créé pour régler les questions relatives aux échanges de prisonniers, à la restitution des corps, au retour des otages et des détenus civils, et un programme de réunification familiale sera mis en œuvre. 25. L’Ukraine organisera des élections dans cent jours. 26. Toutes les parties impliquées dans ce conflit bénéficieront d’une amnistie totale pour leurs actions pendant la guerre et s’engageront à ne faire aucune réclamation ni n’envisager aucune plainte à l’avenir. 27. Cet accord sera juridiquement contraignant. Sa mise en œuvre sera contrôlée et garantie par un « conseil de la paix », présidé par le président Donald J. Trump. Des sanctions seront imposées en cas de violation. 28. Une fois que toutes les parties auront accepté ce mémorandum, le cessez-le-feu prendra effet immédiatement après le retrait des deux parties vers les points convenus pour commencer la mise en œuvre de l’accord. Lire aussi | Article réservé à nos abonnés Guerre en Ukraine: les Européens opposés à une « capitulation » de Kiev Lire plus tard",
+      "content_preview": "Un véhicule blindé ukrainien détruit, dans la cour d’un bâtiment abandonné à Bakhmout, dans l’oblast de Donetsk, en Ukraine, le 28 mai 2022. FRANCISCO SECO/AP Les Etats-Unis ont présenté un projet de plan pour l’Ukraine, qui prévoit notamment que Kiev cède les régions de Donetsk et Louhansk, dans l’est du pays, à Moscou, qu’elle réduise son armée à 600 000 militaires (contre environ 800 000 aujourd’hui) et que la Russie réintègre le G8. Lire aussi | EN DIRECT, guerre en Ukraine: les dirigeants e..."
+    },
+    {
+      "processing_rank": 4,
+      "url_id": 9141,
+      "url": "https://www.bbc.com/news/articles/ce3w1zeerywo",
+      "title": "Trump's growing impatience to end Ukraine war is a concern for Kyiv",
+      "source": "www.bbc.com",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "newspaper",
+      "extraction_error": null,
+      "word_count": 270,
+      "archive_url": null,
+      "full_content": "Trump's growing impatience to end Ukraine war is a concern for Kyiv Ukrainian President Volodymyr Zelensky has been careful not to criticise or reject a US draft peace deal to end the Ukraine war - even though it appears to heavily reflect many of Moscow's demands. On Thursday, the White House pushed back on claims Ukraine was not involved in the drafting of the plan, which emerged after meetings between the US and Russia. In his nightly address, Zelensky said Ukraine needed peace and would engage in diplomacy and issue no rash statements. He said Ukraine was \"ready for constructive, honest and efficient work\". But there is deep concern about some of the reported proposals, including giving up the entire Donbas region, reducing the size of Ukraine's military, and ruling out the presence of international troops in the country - concessions which Ukraine has rejected in the past. Ukrainian MP Yaroslav Yurchyshyn told the Kyiv Independent that Washington wanted a \"quick peace at the expense of one side, which they consider weaker\". Recent events may have further weakened Ukraine's position. Russia has made further advances in the east of the country. Moscow's long-range strikes on Ukraine's grid has left most of the country facing power cuts. Allegations of serious corruption in Ukraine's government have also led to political infighting and diverted attention from the war. All these issues are impossible to ignore in both Washington and Moscow. US Secretary of State Marco Rubio has said that peace will require difficult decisions on both sides. A draft published in the media does include a promise of \"reliable security guarantees\" for Ukraine.",
+      "content_preview": "Trump's growing impatience to end Ukraine war is a concern for Kyiv Ukrainian President Volodymyr Zelensky has been careful not to criticise or reject a US draft peace deal to end the Ukraine war - even though it appears to heavily reflect many of Moscow's demands. On Thursday, the White House pushed back on claims Ukraine was not involved in the drafting of the plan, which emerged after meetings between the US and Russia. In his nightly address, Zelensky said Ukraine needed peace and would enga..."
+    },
+    {
+      "processing_rank": 5,
+      "url_id": 9145,
+      "url": "https://www.bbc.com/news/articles/c33mnvy5zppo",
+      "title": "Venezuela says opposition leader will become fugitive if she collects Nobel",
+      "source": "www.bbc.com",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "newspaper",
+      "extraction_error": null,
+      "word_count": 371,
+      "archive_url": null,
+      "full_content": "Venezuela says opposition leader will become fugitive if she collects Nobel 5 hours ago Share Save Matt Spivey Share Save Getty Images María Corina Machado has been in hiding since the start of the year Venezuela's opposition leader will be considered a \"fugitive\" if she travels to Norway to collect her Nobel Peace Prize, the nation's attorney general has said. Tarik William Saab told news agency AFP that María Corina Machado - who has been living in hiding to avoid arrest - was accused of \"acts of conspiracy, incitement of hatred, and terrorism\". The 58-year-old was named as the prestigious prize's recipient in October, being praised for her efforts towards a \"peaceful transition from dictatorship to democracy\". She has long denounced President Nicolás Maduro's government as \"criminal\" and called on Venezuelans to unite to depose it. Many nations view his rule as illegitimate. Machado - who has long been one of the most respected voices in Venezuela's opposition - was barred from running in last year's presidential elections, in which Maduro won a third six-year term in office. The elections were widely dismissed on the international stage as neither free nor fair, and sparked protests across the country. Despite her barring, Machado was able to unite Venezuela's opposition behind her little-known surrogate on the ballot, Edmundo González. The government-controlled National Electoral Council declared Maduro the winner - even though tallies from polling stations showed that González had won by a landslide. González later fled to Spain, fearing repression. This was followed by attempts to detain other opposition officials. The Nobel Committee, when announcing the recipient of the prize at the Norwegian Nobel Institute in Oslo, hailed Machado as \"one of the most extraordinary examples of civilian courage in Latin America in recent times\". Nobel chairman Jørgen Watne Frydnes said at the time he hoped Machado would be able to attend an award ceremony in Oslo on 10 December, but acknowledged the serious security situation she faced. Machado expressed shock at winning the prize, saying: \"I am just one person. I certainly do not deserve this. \" She added that it was the \"achievement of a whole society\". Getty Images Machado has long been a staunch critic of President Nicolás Maduro (pictured)",
+      "content_preview": "Venezuela says opposition leader will become fugitive if she collects Nobel 5 hours ago Share Save Matt Spivey Share Save Getty Images María Corina Machado has been in hiding since the start of the year Venezuela's opposition leader will be considered a \"fugitive\" if she travels to Norway to collect her Nobel Peace Prize, the nation's attorney general has said. Tarik William Saab told news agency AFP that María Corina Machado - who has been living in hiding to avoid arrest - was accused of \"acts..."
+    },
+    {
+      "processing_rank": 6,
+      "url_id": 9149,
+      "url": "https://www.bbc.com/news/articles/cj4qxvy74qyo",
+      "title": "St Mary's School in Niger state: Pupils abducted from Nigerian Catholic school",
+      "source": "www.bbc.com",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "newspaper",
+      "extraction_error": null,
+      "word_count": 635,
+      "archive_url": null,
+      "full_content": "Pupils abducted from Catholic school in fresh Nigeria attack 12 minutes ago Share Save Chris Ewokor, BBC Africa, Abuja and Wycliffe Muia Share Save Google An unknown number of pupils have been abducted by armed men from a Catholic school in central Nigeria, the second mass school kidnapping this week. The latest attack targeted St Mary's School in Papiri, Niger state, where authorities had already ordered the temporary closure of all boarding schools due to rising security threats. Details remain unclear but residents fear that close to 100 students and staff may have been taken away during the early-morning raid. Nigeria has faced a renewed wave of attacks by armed groups in recent days, including the kidnapping on Monday of more than 20 schoolgirls, who the BBC has been told are Muslim, from a boarding school in neighbouring Kebbi state. A church was also attacked in the south-western Kwara state, with two people killed and 38 abducted while the service was being broadcast online. Police said armed men - locally known as bandits - stormed St Mary's School on Friday at about 02: 00 local time (01: 00 GMT) and abducted an unconfirmed number of students from their hostel. Fear and uncertainty have gripped the area as families wait for news. The authorities in Niger state said the school had disregarded an order to close all boarding facilities following intelligence warnings of a heightened risk of attacks. \"Regrettably, St Mary's School proceeded to reopen and resume academic activities without notifying or seeking clearance from the state government, thereby exposing pupils and the staff to avoidable risk, \" they said in a statement. The school has not commented. The police said that security agencies were \"combing the forests with a view to rescue the abducted students\". The attack follows claims by US President Donald Trump that Christians are being persecuted in Nigeria, an allegation dismissed by the Nigerian government. Earlier this month, Trump said he would send troops into Nigeria \"guns a-blazing\" if its government \"continues to allow the killing of Christians\". The Nigerian government has pushed back on these claims, describing them as \"a gross misrepresentation of reality\". An official said that \"terrorists attack all who reject their murderous ideology - Muslims, Christians and those of no faith alike\". Nigeria is currently grappling multiple overlapping security crises. The country's 220 million people are roughly evenly split between followers of the two religions, with Muslims in the majority in the north. The kidnapping of people for ransom by criminal gangs, known locally as bandits, has become a major problem in many parts of the country. Africa Independent Television via Reuters Armed men exchanged fire with police officers before abducting girls from this school in Maga, Kebbi state, earlier this week In the north-east, jihadist groups have been battling the state for more than a decade. Organisations monitoring violence say most of the victims of these groups are Muslim because most attacks happen in the north. In the centre of the country, there are also frequently deadly attacks between herders, who are mostly Muslim, on farmers, who are largely Christian. However, analysts say these are often motivated by competition for resources such as water or land, rather than religion. Local media report that the kidnappers have demanded a ransom for those abducted from the church in Eruku, Kwara state. The payment of ransoms has been outlawed in an attempt to cut the supply of money to the criminal gangs but to little effect. Two of the schoolgirls abducted on Monday in Maga, Kebbi state have managed to escape, while 23 are still missing. Two people were killed in that attack. They were both Muslim. President Bola Tinubu this week postponed his foreign trips to address the rising wave of attacks across Africa's most populous country. Getty Images/BBC",
+      "content_preview": "Pupils abducted from Catholic school in fresh Nigeria attack 12 minutes ago Share Save Chris Ewokor, BBC Africa, Abuja and Wycliffe Muia Share Save Google An unknown number of pupils have been abducted by armed men from a Catholic school in central Nigeria, the second mass school kidnapping this week. The latest attack targeted St Mary's School in Papiri, Niger state, where authorities had already ordered the temporary closure of all boarding schools due to rising security threats. Details remai..."
+    },
+    {
+      "processing_rank": 7,
+      "url_id": 9153,
+      "url": "https://www.bbc.com/news/articles/c3rjr2r72gpo",
+      "title": "Russian envoy Kirill Dmitriev: Putin propagandist or key to peace with Ukraine?",
+      "source": "www.bbc.com",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "newspaper",
+      "extraction_error": null,
+      "word_count": 1135,
+      "archive_url": null,
+      "full_content": "Russian envoy Kirill Dmitriev: Putin propagandist or key to peace with Ukraine? 7 hours ago Share Save Paul Kirby, Europe digital editor and BBC Monitoring Share Save Bloomberg via Getty Images Kirill Dmitriev has played a prominent role in Russia's return from diplomatic isolation in 2025 Kirill Dmitriev is a rare breed of Russian diplomat. At 50 he is relatively young and he has a deep understanding of the US, having studied and worked there for several years. He is also a man of commerce, as head of the Russian Direct Investment Fund, and a good fit for his opposite number in the Trump administration, special envoy Steve Witkoff. Dmitriev now finds himself under the spotlight over a draft peace plan that emerged after he spent three days with Witkoff in Miami. His team has refused to comment on its proposals, which read like a Putin wishlist, requiring Ukraine to cede territory under its control and slash the size of its military. Ukraine's Volodymyr Zelensky has been careful not to reject its terms, but says any deal must bring a \"dignified peace, with terms that respect our independence, our sovereignty\". VYACHESLAV PROKOFYEV/POOL/AFP Witkoff (R) and Dmitriev have struck up a close diplomatic rapport Putin's special envoy understands modern Ukraine better than most in Moscow. He was brought up in Ukraine, and a friend claims that as a 15-year-old Dmitriev took part in pro-democracy protests in Kyiv before the fall of the Soviet Union. He has been a fixture of US-Russian diplomatic initiatives pretty much since the start of Trump's second presidency - and Steve Witkoff has been a regular counterpart. \"We are sure we are on the road to peace, and as peacemakers we need to make it happen, \" Dmitriev told a conference in Saudi Arabia in late October. The pair appear to have first crossed paths in February 2025 when Putin's envoy played a role in securing the release of an American teacher from a Russian jail. \"There's a gentleman from Russia, his name is Kirill, and he had a lot to do with this. He was important. He was an important interlocutor bridging the two sides, \" Witkoff told reporters. Days later, when US and Russian diplomats met in Saudi Arabia, in effect bringing an end to Russia's diplomatic isolation in the West, Dmitriev took part in talks on economic relations and Witkoff was there too. Dmitriev's direct approach to Trump officials has not always paid off. When Trump announced sanctions on Russia's top two oil firms last month, US Treasury Secretary Scott Bessent labelled him a \"Russian propagandist\" for suggesting it would mean higher US fuel prices at the pump. Unlike the majority of Putin's entourage, the Russian leader's envoy is comfortable in a US TV studio. He is careful to praise Trump's diplomatic skills while giving Western viewers the Russian government narrative in their own language. \"I'm not a military guy… but the position of [the] Russian military is they only hit military targets, \" he told CNN's Jake Tapper recently, days after a kindergarten was bombed in the Ukrainian city of Kharkiv. \"I'm just working to have dialogue and make sure that the conflict is ended as soon as possible. \" Dmitriev certainly is not a military guy, he's a private investment specialist with an eye for a deal. Getty Images When Putin travelled to the UAE in August, Dmitriev was there in the background Witkoff may rate him, but in 2022 during Joe Biden's presidency, the US Treasury called him a \"known Putin ally\" and imposed sanctions on the Russian Direct Investment Fund (RDIF) which he has run since 2011. \"While officially a sovereign wealth fund, RDIF is widely considered a slush fund for President Vladimir Putin and is emblematic of Russia's broader kleptocracy, \" it said. Dmitriev's attitude to the Biden years is pretty clear: under Biden there was no attempt to understand the Russian position, he argues, while Trump's team stopped World War Three. OLGA MALTSEVA/AFP Dmitriev's wife is a friend of Katerina Tikhonova, a daughter of Vladimir Putin It is claimed that Dmitriev has accumulated a real estate fortune with his wife, TV presenter Natalia Popova. Popova is a friend and colleague of Vladimir Putin's daughter, Katerina Tikhonova - and deputy head of Tikhonova's tech firm Innopraktika. Dmitriev is also widely seen as part of Tikhonova's circle. His rise to the top in Moscow is a far cry from his childhood in Kyiv, as the son of two scientists. Dmitriev's father is a well known cell biologist in Ukraine and his mother a geneticist. That scientific background may have influenced his move to use his Russian sovereign wealth fund to finance Russia's Covid vaccine Sputnik V. Dmitriev is believed to have first met Russia's long-time leader at the start of his presidency in 2000, but he has not always agreed with his views. While Putin saw the collapse of the Soviet Union as the \"biggest geopolitical catastrophe of the century\", a friend claims Dmitriev joined an anti-Soviet student protest in Kyiv at the age of 15. His relationship with the US began the same year, in 1990, when he took part in a student exchange programme in New Hampshire, where a local newspaper quoted him highlighting Ukraine's national identity: \"Ukraine had a long history as an independent nation before it became part of the Russian empire. \" He later returned to the US as a college student and wrote a thesis on privatisation in Ukraine while at Stanford University. In his thesis proposal he suggested the research would \"prepare me better for making a contribution to the reform process in Ukraine\". After earning an MBA at Harvard, he worked for McKinsey in Los Angeles, Prague and Moscow, and then joined the US-Russia Investment Fund, set up by the US to ease Russia's transition to a market economy. Dmitriev appeared critical of Putin's crackdown on Russia's oligarchs in 2003 in a column for the Vedomosti business paper. \"The world is shrewd enough to know the difference between following the letter of the law and using the law as a tool of influence, \" he wrote. By 2007 he was back in Ukraine, in charge of Icon Private Equity, an investment fund with offices in Kyiv and Moscow. Increasingly he lamented Ukraine's political \"instability\" and suggested Russia was better placed to respond to the global financial crisis. He was a regular guest on TV talk shows and in 2010 he warned Ukraine would face an \"economic Holodomor\" if it pursued a policy of isolation from Russia: a reference to the Ukrainian famine of the1930s brought on by the policies of Soviet dictator Joseph Stalin. In 2011 he moved back to Russia to take charge of the newly-launched Russian Direct Investment Fund and remains there to this day.",
+      "content_preview": "Russian envoy Kirill Dmitriev: Putin propagandist or key to peace with Ukraine? 7 hours ago Share Save Paul Kirby, Europe digital editor and BBC Monitoring Share Save Bloomberg via Getty Images Kirill Dmitriev has played a prominent role in Russia's return from diplomatic isolation in 2025 Kirill Dmitriev is a rare breed of Russian diplomat. At 50 he is relatively young and he has a deep understanding of the US, having studied and worked there for several years. He is also a man of commerce, as ..."
+    },
+    {
+      "processing_rank": 8,
+      "url_id": 9166,
+      "url": "https://www.bbc.com/news/articles/c3v1xpyy955o",
+      "title": "Afghan national admits raping 12-year-old girl in Nuneaton",
+      "source": "www.bbc.com",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "newspaper",
+      "extraction_error": null,
+      "word_count": 354,
+      "archive_url": null,
+      "full_content": "Afghan national admits raping 12-year-old girl 13 minutes ago Share Save Share Save BBC Ahmad Mulakhil, 23, changed his plea and admitted raping the girl in Nuneaton, Warwickshire An Afghan national has admitted raping a 12-year-old girl in Nuneaton. Ahmad Mulakhil pleaded guilty at Warwick Crown Court to one count of raping a child under the age of 13. He had previously denied the charge. Mulakhil, 23 and of no fixed abode, also denied abducting a child, three counts of rape of a child under 13 and two counts of sexual assault of a child under 13. He appeared alongside co-defendant Mohammad Kabir, 23, also of no fixed abode, and who denies attempting to take a child, aiding and abetting rape of a child under 13, and intentional strangulation of the girl. They are due to stand trial on 26 January. The defendants, who Warwickshire Police previously confirmed were Afghan nationals, were aided by interpreters during the hearing in front of Judge Kristina Montgomery KC. The offences are said to have taken place on 22 July. Mr Kabir spoke only to confirm his name, while Mulakhil confirmed his name and entered his guilty plea when he was rearraigned on one count of rape. Addressing the defendants in the dock, Judge Montgomery said: \"You will both be produced before the court on December 12. \"On that occasion, there will be further directions made and the complainant witness in the case will be in attendance to be cross-examined. \"You should both reflect carefully on your position before that takes place. \"You are both remanded into custody. \" Google Mulakhil and Mr Kabir were asked to reflect carefully on their position before their next court appearance The allegations against the two men led to protests outside Nuneaton Town Hall on 9 August when St George's Cross and Union flags were held as protesters marched along the high street and chanted \"stop the boats\" and \"we want our country back\". Stand Up to Racism counter-protesters were significantly outnumbered outside the Nuneaton and Bedworth Borough Council offices. Follow BBC Coventry & Warwickshire on BBC Sounds, Facebook, X and Instagram.",
+      "content_preview": "Afghan national admits raping 12-year-old girl 13 minutes ago Share Save Share Save BBC Ahmad Mulakhil, 23, changed his plea and admitted raping the girl in Nuneaton, Warwickshire An Afghan national has admitted raping a 12-year-old girl in Nuneaton. Ahmad Mulakhil pleaded guilty at Warwick Crown Court to one count of raping a child under the age of 13. He had previously denied the charge. Mulakhil, 23 and of no fixed abode, also denied abducting a child, three counts of rape of a child under 13..."
+    },
+    {
+      "processing_rank": 9,
+      "url_id": 9071,
+      "url": "https://www.nytimes.com/2025/11/21/world/europe/ukraine-russia-trump-peace-plan.html",
+      "title": "European Leaders Back Zelensky After U.S. Plan Leaves Them Out - The …",
+      "source": "www.nytimes.com",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "newspaper",
+      "extraction_error": null,
+      "word_count": 166,
+      "archive_url": "https://archive.today/newest/https://www.nytimes.com/2025/11/21/world/europe/ukraine-russia-trump-peace-plan.html",
+      "full_content": "European leaders on Friday warned that the Ukrainian army should not be defanged and that they should be consulted on talks to end the war in Ukraine, as they scrambled to respond to a U. S. -Russian peace plan that has largely excluded them and Kyiv. The plan, which was drafted without Ukrainian or European involvement, would require Kyiv to surrender significant slices of territory, reduce the size of its army and relinquish some types of weaponry, according to officials familiar with the proposal. Stefan Kornelius, a spokesman for Chancellor Friedrich Merz of Germany, said in a statement that Mr. Merz and the leaders of France and the United Kingdom had assured President Volodymyr Zelensky of Ukraine during a call on Friday of “their continued and full support on the path to a lasting and just peace. ” The statement did not explicitly mention the U. S. -Russian plan, which reflects the maximalist demands the Kremlin has made throughout the war, which Ukraine has long rejected.",
+      "content_preview": "European leaders on Friday warned that the Ukrainian army should not be defanged and that they should be consulted on talks to end the war in Ukraine, as they scrambled to respond to a U. S. -Russian peace plan that has largely excluded them and Kyiv. The plan, which was drafted without Ukrainian or European involvement, would require Kyiv to surrender significant slices of territory, reduce the size of its army and relinquish some types of weaponry, according to officials familiar with the prop..."
+    },
+    {
+      "processing_rank": 10,
+      "url_id": 9072,
+      "url": "https://www.nytimes.com/2025/11/21/world/middleeast/syria-mass-graves-civil-war.html",
+      "title": "Desperate Search for Missing Syrians Leads to Mass GravesMore than 100,000 people disappeared during Syria’s 13-year civil war. The new government faces the challenging task of exhuming remains from burial sites.5 min readLynsey Addario for The New York TimesDaniel Berehulak/The New York TimesDiego Ibarra Sanchez for The New York TimesEmile Ducke for The New York TimesEmile Ducke for The New York Times",
+      "source": "www.nytimes.com",
+      "category": "geopolitica",
+      "has_full_content": false,
+      "extraction_status": "failed",
+      "extraction_method": null,
+      "extraction_error": "All fetch methods failed (tried: cookies, direct, no-js, selenium-no-js, archive.today)",
+      "word_count": null,
+      "archive_url": null
+    },
+    {
+      "processing_rank": 11,
+      "url_id": 8992,
+      "url": "https://www.ft.com/content/6ea99b99-c2c4-4380-8d90-800e4334b5f1",
+      "title": "US plan for Ukraine-Russia peace calls on Kyiv to cede land under its control",
+      "source": "www.ft.com",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "llm_direct",
+      "extraction_error": null,
+      "word_count": 148,
+      "archive_url": null,
+      "full_content": "Ukrainian officials say President Volodymyr Zelenskyy is being pressed to agree to terms negotiated by the US and Russia. The proposal reportedly includes a call for Ukraine to cede control of certain territories it currently holds, a move that has sparked significant debate within the Ukrainian government and among its allies. Sources indicate that the US is advocating for a peace deal that would require Ukraine to make territorial concessions in order to facilitate a ceasefire and pave the way for negotiations with Russia. This development comes amid ongoing tensions and military engagements in the region, with both sides suffering heavy casualties. Critics of the plan argue that ceding land would undermine Ukraine's sovereignty and embolden Russia, while supporters believe it could be a necessary step towards achieving lasting peace. The situation remains fluid, with various stakeholders weighing in on the potential implications of such a peace agreement.",
+      "content_preview": "Ukrainian officials say President Volodymyr Zelenskyy is being pressed to agree to terms negotiated by the US and Russia. The proposal reportedly includes a call for Ukraine to cede control of certain territories it currently holds, a move that has sparked significant debate within the Ukrainian government and among its allies. Sources indicate that the US is advocating for a peace deal that would require Ukraine to make territorial concessions in order to facilitate a ceasefire and pave the way..."
+    },
+    {
+      "processing_rank": 12,
+      "url_id": 9022,
+      "url": "https://www.ft.com/content/edf7503c-e6b8-4ba0-aafa-737f8ef6a37a",
+      "title": "Saudi Arabia leads attempts to block climate deal, UN chief warns in closed-door talks",
+      "source": "www.ft.com",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "llm_direct",
+      "extraction_error": null,
+      "word_count": 183,
+      "archive_url": null,
+      "full_content": "Saudi Arabia is leading efforts to block a climate deal at COP30, according to UN Secretary-General António Guterres. In closed-door talks, Guterres expressed concern that the negotiations could fail due to the tactics employed by the Saudi delegation. The discussions at COP30 are critical as countries aim to finalize agreements that could significantly impact global climate action. Guterres highlighted the importance of unity among nations to address the climate crisis effectively. Sources indicate that Saudi Arabia's position is primarily driven by its economic interests, particularly in maintaining its oil production levels. The kingdom has been known to resist measures that could hinder its oil-dependent economy. Guterres's warnings come as negotiators face increasing pressure to reach a consensus before the conference concludes. The stakes are high, with many nations advocating for more ambitious targets to reduce greenhouse gas emissions. The UN chief's remarks underscore the challenges faced in international climate negotiations, where differing national interests often complicate the path to agreement. As the talks progress, the focus will remain on whether a compromise can be reached that satisfies both environmental goals and economic realities.",
+      "content_preview": "Saudi Arabia is leading efforts to block a climate deal at COP30, according to UN Secretary-General António Guterres. In closed-door talks, Guterres expressed concern that the negotiations could fail due to the tactics employed by the Saudi delegation. The discussions at COP30 are critical as countries aim to finalize agreements that could significantly impact global climate action. Guterres highlighted the importance of unity among nations to address the climate crisis effectively. Sources indi..."
+    },
+    {
+      "processing_rank": 13,
+      "url_id": 8971,
+      "url": "https://www.abc.es/internacional/polonia-sube-tono-rusia-tras-sabotaje-via-20251121125835-nt.html",
+      "title": "Polonia sube el tono con Rusia tras el sabotaje en una vía ferroviaria clave: «Es terrorismo de Estado»",
+      "source": "www.abc.es",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "json_ld",
+      "extraction_error": null,
+      "word_count": 395,
+      "archive_url": null,
+      "full_content": "El primer ministro de Polonia, Donald Tusk, ha asegurado este viernes que a pesar de que ha habido incidentes similares en el pasado, con el último acto de sabotaje, el domingo, a una vía de la red ferroviaria del país, Rusia «ha cruzado cierta línea». . . y «ahora incluso se puede hablar de terrorismo de Estado«. «Los acontecimientos recientes no dejan lugar a las ilusiones. Rusia está implementando otra fase de guerra híbrida destinada a desestabilizar nuestro país«, ha afirmado Tusk durante su intervención este viernes en el Parlamento. Noticia Relacionada estandar Si Cesiones para Ucrania, premios para Rusia: así es el plan de Trump para acabar con la guerra Javier Ansorena Contiene 28 puntos, cuyos detalles se han filtrado a varios medios europeos y estadounidensesDesde el atril de la Sejm, el primer ministro polaco ha insistido en que el ataque que se produjo el domingo en unas vías del tren que conectan la capital, Varsovia, con la ciudad de Lublin, está «inspirado y organizado directamente por los servicios del Kremlin» y fue más grave de lo muchos pensaron. El incidente se suma a otras provocaciones periódicas atribuidas al Gobierno de Vladimir Putin, desde invadir el espacio aéreo con cazas y drones a intimidar los puertos polacos del mar Báltico con buques fantasma. Tras el incidente de la vía ferroviaria, Varsovia ha comandado un despliegue de 10. 000 militares para vigilar estructuras críticas, líneas de transporte y edificios estatales. Las tensiones entre ambos países se mantienen in crescendo. Esta misma semana Polonia ha respondido a estas acciones de sabotaje atribuidas a Moscú cerrando en la ciudad de Gdansk el último consulado ruso que permanecía operativo y restringiendo la libertad de movimientos dentro del territorio polaco del personal diplomático de la Embajada de Varsovia. Tusk ha asegurado que con este tipo de acciones, Rusia no busca desestabilizar Polonia, sino también enfrentarla a Europa y a Ucrania. «No podemos permitir que esto suceda», ha dicho el primer ministro, quien ha apuntado hacia aquellos que dentro del país «han sido engañados por las mentiras» de Moscú. «Rusia quiere debilitarnos a toda costa, porque a día de hoy Polonia es demasiado fuerte para ser atacada directamente«, ha destacado Tusk, quien ha apelado a la unidad de los polacos ante estas amenazas. »O estamos unidos, o no existiremos«, ha vaticinado, según ha recogido la agencia estatal de noticias, PAP.",
+      "content_preview": "El primer ministro de Polonia, Donald Tusk, ha asegurado este viernes que a pesar de que ha habido incidentes similares en el pasado, con el último acto de sabotaje, el domingo, a una vía de la red ferroviaria del país, Rusia «ha cruzado cierta línea». . . y «ahora incluso se puede hablar de terrorismo de Estado«. «Los acontecimientos recientes no dejan lugar a las ilusiones. Rusia está implementando otra fase de guerra híbrida destinada a desestabilizar nuestro país«, ha afirmado Tusk durante s..."
+    },
+    {
+      "processing_rank": 14,
+      "url_id": 8749,
+      "url": "https://elpais.com/internacional/2025-11-21/la-entrada-en-vigor-de-las-sanciones-a-rosneft-y-lukoil-dejan-en-el-limbo-millones-de-barriles-de-petroleo-ruso.html",
+      "title": "La entrada en vigor de las sanciones a Rosneft y Lukoil deja en el limbo millones de barriles de petróleo ruso",
+      "source": "elpais.com",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "newspaper",
+      "extraction_error": null,
+      "word_count": 2022,
+      "archive_url": null,
+      "full_content": "Algo más de tres millones de barriles diarios de petróleo, casi la mitad de las exportaciones totales de Rusia, virtualmente sin dueño. De un día para otro. La entrada en vigor este viernes de las sanciones sobre el crudo que ponen en el mercado las dos mayores petroleras rusas, Rosneft y Lukoil, amaga con provocar una importante reconfiguración en los flujos globales de combustibles fósiles. China y la India, primer y segundo clientes de crudo ruso desde que Vladímir Putin optó por invadir Ucrania, a principios de 2022, empiezan a dar signos de reducir sus compras para evitar que caiga sobre ellos el yugo del Departamento del Tesoro de Estados Unidos. Y Turquía, tercero a gran distancia del resto, está diversificando sus compras a buen ritmo. A la fuerza ahorcan. A la espera de qué sucederá en los días y semanas posteriores al 21 de noviembre, la fecha marcada en rojo en el calendario, son varios los indicios que refrendan esa reducción en los flujos de barriles rusos hacia los países que estaban aprovechando la toxicidad del crudo de ese país en Occidente para aprovisionarse en condiciones ventajosas. La mayor de esas señales es el precio: incluso antes de entrar en vigor, el mero anuncio de las sanciones ha hundido el precio de la mezcla Urales ―el nombre que recibe en el mercado de materias primas― a su nivel más bajo en dos años y medio. Los exportadores rusos, en fin, se están viendo obligados a aplicar descuentos de más de 20 dólares (17 euros) por barril vendido respecto al precio de las referencias más comunes en Occidente: el Brent y el Texas. “Lo mejor que podría hacer es dejar de comprar petróleo y gas rudo”, le espetó el presidente estadounidense, Donald Trump, a su homólogo turco, Recep Tayyip Erdogan, en la Casa Blanca. Eran mediados de septiembre, y aún no había anunciado estas sanciones sobre Rosneft y Lukoil, pero el republicano ya parecía saber cuál sería su próximo disparo para tratar de sentar a Putin, de una vez por todas, a negociar. En aquel encuentro con Trump, Erdogan acordó la compra de gas licuado estadounidense durante 20 años e incrementar la cooperación en energía nuclear con EEUU (Rusia construye actualmente la hasta ahora única central atómica de Turquía). En cuanto al petróleo, en cambio, no se anunció nada. Sin embargo, la cuestión de las sanciones siempre ha estado pendiente. Desde hace un año, el flujo de barriles desde Rusia se ha ido reduciendo. Pero el acelerón final desde el anuncio de las sanciones: a principios de noviembre, ya con la fecha límite del día 21 a la vista, las empresas propietarias de las principales refinería turca, Tupras y la azerbaiyana Socar, anunciaron que incrementarían el número de países de procedencia. Abrir el abanico, claro, es sinónimo de reducir el crudo ruso que emplean para producir carburantes. Donald Trump estrecha la mano de su homólogo turco Erdogan, el pasado 25 de septiembre en la Casa Blanca. Associated Press/LaPresse (APN) Socar, cuya refinería turca ha funcionado en los últimos meses prácticamente solo con crudo ruso ha empezado a comprar a Kazajistán. Y, según la prensa del país, Tupras ya ha suspendido las compras a Rosneft, incrementando las compras de crudo a Irak, mucho más cerca, a lo que ha contribuido la resolución del conflicto sobre el petróleo kurdoiraquí, pendiente desde hace años. También ha adquirido, por primera vez, crudo de Brasil y Angola. Algunos analistas, con todo, creen que el suministro ruso continuará a través de terceras empresas y terceros países. Sea como fuere, ya hay una cosa clara: las nuevas sanciones han afectado al precio de los combustibles en las estaciones de servicio turcas, que se anota subidas notables en las últimas semanas. Otro indicio más de que el movimiento sobre las dos joyas de la corona petrolera rusa pueden estar funcionando en su meta de reducir los ingresos de ese país. En el caso de la India, lo que no consiguieron las sanciones secundarias estadounidenses sobre ese país ―que cesase o, al menos, redujese sus compras de crudo ruso― sí llevan camino de conseguirlo las medidas punitivas sobre Rosneft, Lukoil y quien se avenga a comerciar con ellos. Pese a que los envíos parecen haberse acelerado en los últimos días, antes de que se hagan efectivas las sanciones, cinco de las siete mayores firmas de refino del país ―entre ellas Reliance, la más grande de todas― han anunciado que dejarán de comprar crudo ruso a partir de este viernes. Las dos restantes, en el recuento de Bloomberg, son la estatal India Oil y Nayara, que hoy por hoy depende íntegramente del petróleo procedente del país euroasiático. El diario indio The Economic Times ha publicado que la entrada de crudo ruso al país asiático en la primera mitad de noviembre se redujo un 66% respecto a octubre. China, el mayor comprador de crudo ruso y el principal importador de petróleo del mundo, se ha colocado de perfil. No existen pronunciamientos oficiales. No hay una estrategia pública definida por el Gobierno, actor clave del sector energético. Pero los indicios también apuntan a que, al menos en un primer momento, el gigante asiático está reduciendo sus importaciones desde Rusia. Al poco de entrar en vigor el golpe de Washington, que siguió al que había dado previamente Reino Unido, las principales petroleras estatales chinas (PetroChina, Sinopec, CNOOC y Zhenhua Oil) suspendieron las compras “a corto plazo” de petróleo ruso transportado por mar, según múltiples fuentes anónimas del sector citadas por Reuters, debido a la preocupación por las sanciones. El bocado sería considerable, pero no inmenso: el flujo total de crudo por mar suma 1, 4 millones de barriles diarios, aunque la mayor parte lo compran refinerías independientes, incluidas pequeñas operadoras conocidas como “teteras” en China; la parte correspondiente a las compañías nacionales baila entre los 250. 000 y los 500. 000 barriles diarios, según la fuente que se consulte. China se ha convertido, desde el inicio de la invasión a Ucrania, en el principal aliado económico y diplomático de Rusia: ambos países declararon una “amistad” sin límites semanas antes de que los tanques rusos cruzaran las fronteras ucranias. China nunca ha condenado la guerra. Y en este tiempo, los intercambios comerciales han alcanzado cotas nunca vistas. Los líderes, Xi Jinping y Vladímir Putin, se ven a menudo, se llaman “viejo amigo” y hablan de pilotar juntos un mundo sacudido por “cambios no vistos en 100 años”. El gas y el petróleo son una pieza esencial del puzle para la gran fábrica del planeta. Hasta la fecha, las compañías del gigante asiático han ignorado en gran medida las sanciones occidentales al crudo ruso por mar. En 2024, los volúmenes procedentes de Rusia, incluidos los suministros por oleoducto y por mar, ascendieron a 108, 5 millones de toneladas métricas, según la Administración General de Aduanas de China, lo que equivale a 2, 17 millones de barriles diarios. Supone un aumento del 1% y un máximo histórico. A la vez, las compras procedentes de otros países, como Arabia Saudí descendieron un 9%. China compra sobre todo crudo del Pacífico de Siberia Oriental (ESPO, en la jerga del sector) exportado desde el puerto ruso de Kozmino, en el Lejano Oriente, debido a su proximidad. También recibe a través del ramal del oleoducto Skovorodino-Mohe, de 4. 070 km (2540 millas), que forma parte del oleoducto ESPO, lo que le permitía hasta la fecha eludir cualquier restricción en materia de buques y fletes. Además, Rusia ha tratado de aumentar sus exportaciones a la República Popular vía Kazajistán. La situación podría estar cambiando, según sugieren análisis del sector, sobre todo con la ampliación de las sanciones a puertos y refinerías chinas, que están ahogando los flujos de petróleo ruso -y también iraní- hacia el primer importador mundial. Aunque las soluciones emergentes entre los operadores chinos sugieren que esta desaceleración puede ser pasajera. Washington ha incluido en sus sanciones la terminal petrolera de Rizhao, que gestionaba aproximadamente una décima parte de las importaciones de crudo de China. Mientras, la UE y el Reino Unido han incluido en su lista negra a Shandong Yulong, una de las denominadas “teteras”, y uno de los principales compradores de petróleo ruso. Bruselas la incluyó en su último paquete punitivo contra Moscú, el decimonoveno, en el que golpeó también a otra refinería y al operador Chinaoil. La situación es incierta. Es probable que algunas refinerías chinas estén solo “a la espera” respecto a las compras a Rusia, para ver con qué rigor se aplican las sanciones, aseguraba Jianan Sun, de la consultora Energy Aspects, en declaraciones a Bloomberg. Para Emma Li, analista de Vortexa, plataforma que estudia los mercados energéticos, las recientes sanciones en las entidades chinas han tendido un impacto más tangible e inmediato en la logística convencional del crudo que en los flujos de petróleo sancionados. Las refinerías buscan “rutas de importación alternativas” para aprovisionarse, escribe en un reciente artículo en el que asevera que a China sigue llegando crudo sancionado: el de Venezuela, Irán y Rusia sumó en octubre un 30% de las importaciones por mar, según sus estimaciones. El conjunto de sanciones de octubre (a las petroleras rusas y a las refinerías chinas) habrían interrumpido los flujos principales de crudo de China y creado retos en la cadena de suministro para las empresas petroleras nacionales chinas, concluye Li. Mientras, las refinerías independientes siguen siendo resistentes y se benefician de mayores descuentos. Augura “una posible reanudación más amplia de las compras de crudo ruso” en las próximas semanas. Refinería en Wuhan, China, en una imagen sin datar. DARLEY SHEN (REUTERS) La fuerte caída de la demanda de petróleo por parte de los dos mayores clientes de Rusia supondrá una carga para los ingresos petroleros de Moscú y obligará a los principales importadores mundiales. La lógica económica invita a pensar en que, en cualquier otra circunstancias, debería presionar al alza los precios internacionales del crudo. Pero no parece que ese vaya a ser el caso: el mercado chapotea en crudo, con capacidad ociosa en la mayoría de grandes productores. La caída en la exportación de hidrocarburos merma la maquinaria bélica rusa, pero no es crítica para el Kremlin. El Gobierno ha diversificado las fuentes de financiación de sus presupuestos y prevé que los ingresos por hidrocarburos representen el 27% del total este año, aunque espera reducir su peso hasta el 22% en 2026. A cambio, aumenta la presión fiscal sobre las empresas y ciudadanos. Puertas afuera, el Gobierno ruso actúa como si las nuevas sanciones de Estados Unidos no existieran. El viceprimer ministro ruso y exresponsable de Energía, Alexánder Nóvak, ha subrayado este miércoles que el Kremlin mantiene su previsión de producción petrolera. Con todo, su flota acumula petróleo en alta mar a la espera de que sus clientes aclaren qué harán tras las sanciones. El tiempo dirá quién tiene razón. El paso dado por Washington aboca a Lukoil a ser troceada, deshaciéndose de sus activos internacionales, dada su exposición al exterior. No ocurrirá lo mismo con Rosneft, más centrada en el mercado interno ruso. Según los medios rusos, la compañía prefiere vender sus activos en un único lote y así sacar más rentabilidad de ellos. Sin embargo, los aspirantes han mostrado interés en algunos negocios concretos. Entre las compañías interesadas figuran las petroleras estadounidenses Chevron y Exxon, así como el fondo soberano de Emiratos Árabes Unidos. Lukoil tiene tres refinerías en Europa, varios yacimientos en Ghana, Egipto, Irak, Kazajistán, Nigeria, México y Uzbekistán, y gasolineras por todo el mundo. También en EE UU. Las sanciones de Trump se unen a la campaña de bombardeos ucrania contra las refinerías rusas. Aunque estas provocaron la disrupción del abastecimiento en algunas regiones, Moscú ha sorteado hasta ahora la amenaza de una crisis mayor gracias a que la capacidad de sus plantas supera sus necesidades. Según una estimación de la agencia Reuters, la producción de derivados de petróleo será apenas un 3% menor de lo previsto este año. “El Gobierno está registrando descensos de precios en las gasolineras independientes”, proclamó este miércoles Novak. El Kremlin, no obstante, mantiene hasta finales de año su prohibición a la exportación de gasolina.",
+      "content_preview": "Algo más de tres millones de barriles diarios de petróleo, casi la mitad de las exportaciones totales de Rusia, virtualmente sin dueño. De un día para otro. La entrada en vigor este viernes de las sanciones sobre el crudo que ponen en el mercado las dos mayores petroleras rusas, Rosneft y Lukoil, amaga con provocar una importante reconfiguración en los flujos globales de combustibles fósiles. China y la India, primer y segundo clientes de crudo ruso desde que Vladímir Putin optó por invadir Ucra..."
+    },
+    {
+      "processing_rank": 15,
+      "url_id": 8746,
+      "url": "https://elpais.com/internacional/2025-11-20/trump-reclama-la-pena-de-muerte-contra-varios-legisladores-democratas.html",
+      "title": "Trump reclama la pena de muerte contra varios legisladores demócratas",
+      "source": "elpais.com",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "readability",
+      "extraction_error": null,
+      "word_count": 619,
+      "archive_url": null,
+      "full_content": "Tras [el asesinato por un disparo del activista conservador Charlie Kirk]( \" el pasado septiembre, el gobernador de Utah, Stephen Cox, lanzó un emotivo llamamiento contra una violencia política cada vez más a flor de piel en Estados Unidos: “Tenemos que encontrar un modo de rebajar la retórica, o las cosas van a ir a peor”. Donald Trump le rebatió casi de inmediato, al atribuir toda la culpa a la izquierda en [una elegía sumamente polarizada]( \" durante aquel funeral. Este jueves, el presidente ha publicado mensajes en su red social que reclaman la pena de muerte por “comportamiento sedicioso” para un grupo de legisladores demócratas que han llamado a los militares del país a no cumplir órdenes que sean ilegales. El grupo de congresistas y senadores demócratas, todos ellos veteranos de las fuerzas armadas y encabezados por la senadora por Michigan Elissa Slotkin, habían grabado un vídeo en el que acusaban a la Administración de Trump de “enfrentar a nuestros militares y a nuestros profesionales de la comunidad de inteligencia con los ciudadanos de este país”, y advertían de que la confianza de los votantes en los militares se encuentra en juego. Trump ha hecho comentarios en público en el pasado, incluso en discursos ante soldados y altos mandos, en los que [se ha referido al “enemigo interior”]( \" y ha sugerido que las ciudades gobernadas por demócratas podrían servir de campos de entrenamiento para los soldados. Desde junio, el presidente estadounidense [ha ordenado el despliegue de soldados]( \" de la Guardia Nacional en media docena de urbes del país bajo mando de la oposición. El republicano también ha ordenado una campaña militar en el Caribe y en el Pacífico oriental para atacar supuestas lanchas del narcotráfico, en el que al menos 21 embarcaciones han quedado hundidas y han muerto al menos 83 personas en bombardeos que expertos y defensores de los derechos humanos consideran ilegales. En el vídeo, los políticos demócratas se dirigen directamente a las tropas y a los agentes de los servicios de inteligencia para recordarles que “pueden y “deben” “desobedecer órdenes ilegales”. El mensaje de los legisladores de la oposición había desatado la furia del Partido Republicano en el Capitolio. Y, desde este jueves, también la del propio presidente estadounidense. En dos mensajes en su red social, Truth, Trump escribe, en su estilo plagado de mayúsculas como gritos, “¡COMPORTAMIENTO SEDICIOSO, que se puede castigar con la MUERTE! ” “Esto es verdaderamente malo, y Peligroso para nuestro País. No se puede tolerar que esas palabras queden así. ¡¡¡COMPORTAMIENTO SEDICIOSO DE TRAIDORES! ! ! , declara el presidente estadounidense. “Colguémosles. GEORGE WASHINGTON (el fundador de la nación) LO HARÍA”, comentaba otro usuario, en un mensaje que retuiteaba el mandatario. El presidente de la Cámara de Representantes, Mike Johnson, defendía los comentarios del presidente. En declaraciones desde el Capitolio, sostenía que Trump simplemente se ha limitado a “definir el delito de sedición” y criticaba el comportamiento de los demócratas al grabar el vídeo como “intolerable”. Pero los demócratas montaban en cólera: “cuando Donald Trump emplea palabras como la ejecución y la traición, es muy posible que algunos de sus partidarios le tomen al pie de la letra. Está encendiendo una cerilla en un país empapado de gasolina política”. En declaraciones posteriores, la Casa Blanca trataba de rebajar las tensiones y aseguraba que Trump no reclama la ejecución de los legisladores demócratas. Pero también culpaba del episodio al partido de la oposición por alentar a los soldados y agentes de inteligencia a “desobedecer las órdenes legítimas del presidente”. “Si (las tropas) escuchan este mensaje radical de miembros del Congreso en activo, eso podría inspirar caos e incitar a la violencia, y ciertamente podría interrumpir la cadena de mando”.",
+      "content_preview": "Tras [el asesinato por un disparo del activista conservador Charlie Kirk]( \" el pasado septiembre, el gobernador de Utah, Stephen Cox, lanzó un emotivo llamamiento contra una violencia política cada vez más a flor de piel en Estados Unidos: “Tenemos que encontrar un modo de rebajar la retórica, o las cosas van a ir a peor”. Donald Trump le rebatió casi de inmediato, al atribuir toda la culpa a la izquierda en [una elegía sumamente polarizada]( \" durante aquel funeral. Este jueves, el presidente ..."
+    },
+    {
+      "processing_rank": 16,
+      "url_id": 8632,
+      "url": "https://www.elconfidencial.com/mundo/2025-11-21/ataque-ruso-zaporiyia-ucrania-muertos-1tps_4251688/",
+      "title": "Al menos cinco muertos y ocho heridos en nuevo ataque ruso en Zaporiyia",
+      "source": "www.elconfidencial.com",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "llm_direct",
+      "extraction_error": null,
+      "word_count": 154,
+      "archive_url": null,
+      "full_content": "Al menos cinco personas han muerto y ocho han resultado heridas en un nuevo ataque ruso en la región de Zaporiyia, en el sureste de Ucrania. El bombardeo, que tuvo lugar durante la noche, ha destruido varias construcciones residenciales y comercios, además de provocar un incendio que fue sofocado por los servicios de emergencia. Las autoridades locales han informado que entre los fallecidos se encuentran civiles, y que los heridos han sido trasladados a hospitales cercanos para recibir atención médica. La situación en la región sigue siendo crítica, con constantes ataques que afectan a la población civil. Este ataque se suma a una serie de bombardeos que han tenido lugar en las últimas semanas, intensificando la preocupación por la seguridad de los habitantes de Zaporiyia y otras áreas afectadas por el conflicto. Las autoridades ucranianas han condenado enérgicamente estos actos de agresión y han solicitado más apoyo internacional para hacer frente a la situación.",
+      "content_preview": "Al menos cinco personas han muerto y ocho han resultado heridas en un nuevo ataque ruso en la región de Zaporiyia, en el sureste de Ucrania. El bombardeo, que tuvo lugar durante la noche, ha destruido varias construcciones residenciales y comercios, además de provocar un incendio que fue sofocado por los servicios de emergencia. Las autoridades locales han informado que entre los fallecidos se encuentran civiles, y que los heridos han sido trasladados a hospitales cercanos para recibir atención ..."
+    },
+    {
+      "processing_rank": 17,
+      "url_id": 8485,
+      "url": "https://www.abc.es/espana/moncloa-instara-fiscal-general-recurra-constitucional-dispuesta-20251121042630-nt.html",
+      "title": "Moncloa instará al fiscal general a que recurra al Constitucional y está dispuesta a acudir a Europa",
+      "source": "www.abc.es",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "json_ld",
+      "extraction_error": null,
+      "word_count": 719,
+      "archive_url": null,
+      "full_content": "«El fiscal general es inocente y mas aún tras lo visto en el juicio». Esta fue la última proclama en favor de Álvaro García Ortiz que pronunció el presidente del Gobierno en el año largo que llevan desde Moncloa asumiendo su defensa. La condena. . . ha caído como una losa, porque supone un importante varapalo para Pedro Sánchez, que ha ligado su futuro político al horizonte judicial de «su fiscal general», como llegó a referirse a él en una rueda de prensa de balance desde Moncloa. Por esta razón, fuentes gubernamentales consultadas por ABC tratan de proyectar sensación de continuidad en la estrategia. No dan nada por perdido, pese a este primer revés que les lleva a activar su relevo, algo a lo que -hasta ahora- se habían negado. «Hay partido», sentencian, revelando que las siguientes pantallas ya están definidas y pasan por acudir en primer término al Tribunal Constitucional y, como último recurso, ante el Tribunal de Justicia de la Unión Europea (TJUE). Llegarán hasta el final por una causa que ha derivado en lo judicial, pero tiene mucho de política y en la que se libra la batalla por el relato ante la presidenta de la Comunidad de Madrid, Isabel Díaz Ayuso. «Nada ha cambiado», aseguran desde el entorno del presidente, en lo que respecta a su apoyo inquebrantable a García Ortiz, a quien han sostenido sin fisuras cuando estaba investigado y durante su paso por el banquillo. Con la sentencia encima de la mesa no habrá golpe de timón, pese a que desde Moncloa confirmaran ayer que, en los próximos días, se procederá al nombramiento de un nuevo fiscal general. Noticia Relacionada Presidenta de la mayoritaria Asociación de Fiscales estandar Si Cristina Dexeus: «Si García Ortiz hubiera dimitido nos habríamos ahorrado una situación tan indecorosa» Nati Villanueva La presidenta de la mayoritaria Asociación de Fiscales señala que tenían razón cuando pidieron su dimisión antes del juicioLa reacción fue inmediata y hubo quien tuvo que «morderse la lengua» para no responder airadamente y mantener la «prudencia» que se había impuesto como directriz inicial. Otros fueron más vehementes. «Es una vergüenza», señala un cargo. «Es algo gravísimo, le han condenado sin pruebas», tercia un miembro del Gabinete. Esta línea argumental, la de la prevaricación, se ha expuesto sin reparos incluso desde la mesa del Consejo de Ministros cuando hasta el pasado martes se sostenía que no había carga probatoria alguna contra él. Oposición al falloEn clave más institucional, Moncloa no ocultó su oposición al fallo. «Respetamos, pero no lo compartimos», se limitaron a señalar, para, a renglón seguido, reconocer la labor de García Ortiz «en defensa de la ley y la verdad en su etapa al frente de la Fiscalía General del Estado ». Una consideración en la que fue más allá el titular de Justicia, Félix Bolaños, que incluyó el respeto por «deber legal», pero manifestó un rechazo por «deber moral». «El Supremo no llega hasta aquí para absolverlo. Lo teníamos claro»En privado, las fuentes consultadas mostraban sin ambages su malestar. «Una cosa es el respeto a la Justicia y otra, muy distinta, que no veamos la actuación partidista de los jueces», se quejaban, dando alas a la teoría del 'lawfare'. Ya el presidente del Gobierno ubicó en estos términos el debate cuando en el arranque del curso, en una entrevista en TVE, acusó a «algunos» magistrados de «hacer política». MÁS INFORMACIÓN noticia Si La negativa de la ponente a condenar a García Ortiz precipitó la difusión del fallo noticia Si Una condena que refuerza el Estado de derecho noticia Si Su horizonte: tendrá que cesar aunque recurraEn Moncloa la prudencia fue deviniendo en enfado, pero algunos no ocultaban que «era lo esperado». «El Supremo no llega hasta aquí para absolverlo. Lo teníamos claro», señalan, aferrándose a la frase lapidaria de José María Aznar «el que pueda hacer que haga». «Y tanto que han hecho», sentencian en el entorno del presidente. Esto sigue abonando el argumentario gubernamental de que existe una «persecución» para tratar de tumbar al Ejecutivo y en Moncloa utilizarán todas las armas a su alcance. El problema para Sánchez es que esta vez no sale indemne, porque todavía sigue resonando aquella frase: «Y la pregunta es: ¿quién va a pedir disculpas? ¿Quién va a pedir perdón al fiscal general del Estado? Pues eso».",
+      "content_preview": "«El fiscal general es inocente y mas aún tras lo visto en el juicio». Esta fue la última proclama en favor de Álvaro García Ortiz que pronunció el presidente del Gobierno en el año largo que llevan desde Moncloa asumiendo su defensa. La condena. . . ha caído como una losa, porque supone un importante varapalo para Pedro Sánchez, que ha ligado su futuro político al horizonte judicial de «su fiscal general», como llegó a referirse a él en una rueda de prensa de balance desde Moncloa. Por esta razó..."
+    },
+    {
+      "processing_rank": 18,
+      "url_id": 9214,
+      "url": "https://www.lemonde.fr/international/live/2025/11/21/en-direct-des-incursions-de-colons-israeliens-signalees-dans-plusieurs-villages-de-cisjordanie-deux-adolescents-tues-au-nord-de-jerusalem_6653956_3210.html",
+      "title": "EN DIRECT, Gaza : des incursions de colons israéliens signalées dans plusieurs villages de Cisjordanie",
+      "source": "www.lemonde.fr",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "xpath_cache",
+      "extraction_error": null,
+      "word_count": 1983,
+      "archive_url": null,
+      "full_content": "Posez votre question à la rédaction: Plus de 80 écrivains et personnalités, parmi lesquels Abdellatif Laâbi, Leïla Slimani et Dominique Eddé, appellent les autorités françaises, dans une tribune auMonde, à donner refuge à la poétesse, dont les quatre enfants sont morts dans un bombardement mené par l’armée israélienne à Gaza. « A la suite d’une enquête préliminaire, il semble qu’aujourd’hui environ 15 terroristes soient sortis des infrastructures(…)souterraines à deux endroits différents, à l’est de la “ligne jaune”, dans l’est de Rafah », annonce l’armée israélienne, selon laquelle six ont été tués et cinq se sont rendus. Elle avait auparavant annoncéavoir« éliminé »cinq combattants à la sortie d’un tunnel du secteur, située au-delà de la « ligne jaune », ligne derrière laquelle ses forces se sont retirées dans le cadre de l’accord de cessez-le-feu entré en vigueur le 10 octobre. Les membres du cabinet de sécurité israélien ont décidé, jeudi soir, de constituer une cellule ministérielle pour superviser la mise en œuvre de la deuxième phase de l’accord de cessez-le-feu dans la bande de Gaza, rapporte la radio-télévision publique Kan. L’équipe sera, selon elle, constituée du ministre des affaires étrangères, Gideon Saar, du ministre de la justice, Yariv Levin, du ministre des finances, Bezalel Smotrich, et du ministre de la sécurité nationale, Itamar Ben Gvir. Les deux derniers, issus de l’extrême droite, ont voté contre l’accord, dont la deuxième phase doit débuter après la restitution des derniers corps d’otages. Publié le 15 novembre 2025 à 05h45 Temps deLecture 5 min. Découvrez les articles les plus lus par nos abonnés Article réservé aux abonnésBudget 2026: des députés socialistes cultivent la nostalgie du 49. 3 Temps de lectureTemps de4 min de lecture Article réservé aux abonnésEn Russie, plus de permis de séjour sans contrat avec l’armée Temps de lectureTemps de2 min de lecture Article réservé aux abonnésGuerre en Ukraine: les Européens opposés à une « capitulation » de Kiev Temps de lectureTemps de2 min de lecture Article réservé aux abonnésAya Nakamura publie « Destinée », un cinquième album à l’énergie et la fraîcheur retrouvées Temps de lectureTemps de3 min de lecture Article réservé aux abonnésA Marseille, l’Etat refuse de voir dans l’assassinat de Mehdi Kessaci un « échec collectif » Temps de lectureTemps de3 min de lecture Article réservé aux abonnésImmobilier: les écarts de prix redessinent la carte de Paris Temps de lectureTemps de2 min de lecture Le ministère de la santé palestinien dépend de l’Autorité palestinienne, qui siège à Ramallah, en Cisjordanie. La bande de Gaza, administrée par le Hamas depuis 2007, dispose de son propre ministère de la santé. L’agence de presse palestinienne WAFafait état, vendredi, de violences commises par des colons israéliens dans plusieurs localités de Cisjordanie. A Abou Falah, au nord de Ramallah, ils ont, selon elle, mis le feu à un bâtiment agricole après y avoir inscrit des slogans racistes. Près de Naplouse, six logements en construction ont également été incendiés, poursuit l’agence. Un groupe de colons a, par ailleurs, pénétré dans un village situé à l’est de Bethléem et les soldats israéliens qui les accompagnaient ont eu recours à des grenades lacrymogènes pour disperser les habitants qui tentaient de s’interposer, toujours selon WAFa, qui signale, en outre, l’installation d’une colonie sauvage près de Khan Al-Ahmar, à l’est de Jérusalem. Deux adolescents âgés de 16 et 18 ans touchés à l’aube par des tirs de l’armée israélienne à Kafr Aqab, au nord de Jérusalem, ont succombé à leurs blessures, rapporte le ministère de la santé palestinien. « Amr Khaled Ahmed Al-Marbou et Sami Ibrahim Sami Machayekh ont été tués par des tirs des forces d’occupation dans la ville de Kafr Aqab, près de Ramallah », écrit-il un communiqué. Ni l’armée ni la police israélienne, qui a autorité dans cette zone, n’ont répondu à une demande de commentaire de l’Agence France-Presse (AFP). Le Croissant-Rouge palestinien a rapporté avoir transporté deux personnes de Kafr Aqab vers un hôpital durant la nuit, l’une souffrant d’une« blessure très grave par balle réelle », l’autre d’une« blessure par balle réelle à la poitrine ». Adi Al-Chourfa, un ami de M. Marbou qui dit avoir assisté aux faits, a déclaré à l’AFP que les deux jeunes se trouvaient dans la rue lors d’affrontements entre forces israéliennes et Palestiniens quand ils ont été touchés. M. Marbou n’y participait pas, selon elle. Située du côté palestinien de la barrière de séparation construite par Israël, Kafr Aqab fait techniquement partie de Jérusalem-Est, occupée et annexée par Israël. Dans la moitié de l’enclave palestinienne que l’armée israélienne maintient sous son contrôle sont rassemblés quelques centaines de membres de milices anti-Hamas et de gangs, sur lesquels les autorités israéliennes entendent s’appuyer pour contrer le mouvement islamiste. L’armée israélienne annonceavoir« éliminé »dans la matinée cinq membres d’un groupe armé sortis d’un tunnel de Rafah, situé, selon elle, au-delà de la « ligne jaune », alors qu’ils se dirigeaient vers ses unités déployées dans le secteur. La ligne jaune délimite la zone au-delà de laquelle les forces israéliennes se sont retirées dans le cadre de l’accord de cessez-le-feu entré en vigueur le 10 octobre sous la pression américaine. « Nous sommes profondément préoccupés par les frappes aériennes israéliennes que nous avons vues, au cours desquelles des civils auraient été tués et blessés hier, y compris des enfants », a déclaré, jeudi soir, Stéphane Dujarric, le porte-parole du secrétaire général de l’ONU, Antonio Guterres. « Cela rappelle de façon frappante à quel point le cessez-le-feu est fragile. Nous avons besoin que chacun veille à ce que le cessez-le-feu tienne et continue de tenir », a-t-il ajouté. L’administration civile israélienne prévoit d’exproprier 1 800 dunams (1, 8 kilomètre carré) de terres privées dans le nord de la Cisjordanie pour le développement du site archéologique de Sebastia, près de Naplouse, rapportent, jeudi, plusieurs médias israéliens ainsi que l’agence Associated Press. Selon cette dernière, cela représente la plus grande saisie de terres importantes sur le plan archéologique jamais réalisée par Israël. L’ordre d’expropriation, publié la semaine dernière, englobe le site archéologique ainsi qu’une grande partie des oliveraies alentour, comptant des milliers d’arbres appartenant à des Palestiniens. L’administration civile, citée parThe Times of Israel, affirme que l’expropriation« devrait permettre le développement des infrastructures, l’expansion des fouilles archéologiques et la découverte de nouveaux vestiges historiques ». « L’expropriation sera effectuée dans des zones du site archéologique situées dans la zone C »de Cisjordanie, qui est sous le contrôle sécuritaire et civil total d’Israël, est-il précisé, sans que soit donné le nombre de propriétaires fonciers concernés par l’expropriation. Elle« est mise en œuvre à la suite d’une négligence intentionnelle de la part des propriétaires fonciers et des autorités palestiniennes », justifie l’administration civile. Pour en savoir plus sur ce site, vous pouvez lire notre reportage à Sebastia, publié en mai 2025. Publié le 04 mai 2025 à 04h00 Temps deLecture 6 min. L’armée israélienne a annoncé, jeudisur Telegram, avoir abattu plus tôt dans la journée deux personnes, qu’elle a qualifiées de« terroristes », et qui, selon elle, « franchissaient la ligne jaune et s’approchaient[de ses]troupes dans le sud de la bande de Gaza, représentant une menace immédiate pour celles-ci ». La « ligne jaune » délimite la zone au-delà de laquelle l’armée israélienne s’est retirée dans le cadre de l’accord de cessez-le-feu entré en vigueur à Gaza le 10 octobre sous la pression américaine. Les pays de l’Union européenne vont verser quelque 88 millions d’euros pour aider l’Autorité palestinienne, pressée de se réformer par les Européens, soucieux de son rôle futur dans le cadre du plan Trump pour la région. « Nous avons signé plus de 82 millions d’euros », qui viennent s’ajouter aux 6 millions d’euros déjà annoncés, a dit jeudi devant la presse la commissaire européenne chargée de la Méditerranée, Dubravka Suica, à l’issue d’une conférence des donateurs à Bruxelles. Plus de 60 délégations – des Vint-Sept de l’UE, des pays arabes et de plusieurs organisations internationales mais sans Israël – étaient réunies à Bruxelles pour discuter de la reconstruction, de la gouvernance et de la sécurité dans la bande de Gaza, ainsi que d’une proposition de réforme de l’Autorité palestinienne. « Aujourd’hui, nous avons présenté les progrès réalisés dans le cadre de notre programme de réforme nationale, qui est mis en œuvre, pas seulement promis, mais mis en œuvre et en avance sur le calendrier, ce qui a été reconnu par nos partenaires », a déclaré le premier ministre palestinien, Mohammad Mustafa. Et cela, « en dépit d’un environnement défavorable », a-t-il ajouté, en accusant Israël de chercher« à affaiblir l’Autorité palestinienne ainsi que sa capacité à fonctionner ». MmeSuica a réaffirmé sur ce point les appels lancés par l’Union européenne pour qu’Israël accepte de libérer les recettes fiscales dues à l’Autorité palestinienne, indispensables à son fonctionnement. L’Union européenne est le principal soutien financier de l’Autorité palestinienne. Elle conditionne toutefois le versement futur de cette aide à des réformes, qu’elle juge indispensables pour que cette autorité soit en mesure de jouer pleinement son rôle dans le cadre de la solution à deux Etats, israélien et palestinien, que les Européens défendent depuis des années. Sur le volet de la reconstruction de Gaza, un événement est prévu prochainement en Egypte afin de collecter des fonds. L’armée israélienne a déclaré, jeudisur Telegram, avoir abattu mercredi deux responsables du Hamas« en réponse à la violation de l’accord de cessez-le-feu ». Selon elle, il s’agirait du chef de la flotte maritime de l’organisation islamiste, Abdallah Abu Shamala, et d’un autre cadre du Hamas, Fadi Abu Mustafa, qui aurait participé à la prise d’otages israéliens. Les deux hommes auraient été tués lors des frappes qu’elle a menées mercredi dans la bande de Gaza, dans lesquelles 33 personnes ont trouvé la mort, selon le ministère de la santé de la bande de Gaza, sous l’autorité du Hamas. La diplomatie française s’est dite« préoccupée »par l’intensification des bombardements israéliens dans le sud du Liban. « Nous condamnons les frappes israéliennes qui tuent des civils dans le Sud. Notre position est celle du respect du cessez-le-feu du 27 novembre 2024 », a déclaré jeudi un porte-parole du ministère des affaires étrangères français auprès de l’agence de presseReuters. Le porte-parole a également déclaré, au sujet de la Syrie, que la diplomatie française suivait« avec une grande inquiétude l’évolution de la situation sur le plateau du Golan. La France appelle au retrait de l’armée israélienne et au respect de la souveraineté et de l’intégrité territoriale de la Syrie », a-t-il ajouté. Le Club des prisonniers palestiniens a dénoncé une« escalade sans précédent des violations israéliennes contre les enfants palestiniens »détenus dans les prisons israéliennes, dans une déclaration publiée jeudi à l’occasion de la Journée mondiale de l’enfance. Selon l’organisation, plus de 1 630 enfants ont été arrêtés en Cisjordanie et à Jérusalem depuis le début de la guerre à Gaza, en octobre 2023. Elle ajoute que, dans la bande de Gaza, un« nombre indéterminé »d’enfants ont également été arrêtés, « victimes de disparition forcée et privés de visites ». « Environ 350 enfants, dont deux filles », sont actuellement détenus dans les prisons israéliennes« dans des conditions qui violent toutes les normes internationales », et plus de 90 d’entre eux sont en détention administrative sans inculpation, explique-t-elle également. Le Club des prisonniers affirme avoir la preuve que« la politique de l’occupant[Israël]dans les prisons inclut la torture, la famine, la négligence médicale et l’isolement. Ces violations ont entraîné la mort d’un enfant détenu, victime de malnutrition en prison, un crime qui témoigne de la gravité de la situation », dénonce-t-il. Publié le 18 novembre 2025 à 10h58 Temps deLecture 3 min. Temps deLecture 1 min. Temps deLecture 5 min. Temps deLecture 7 min. Temps deLecture 1 min. Temps deLecture 1 min. Temps deLecture 5 min. Lire tous nos articles, analyses et reportages sur la guerre à Gaza. Retrouveznotre précédent live consacré à la bande de Gaza. Ce live a également été animé par Solène L’Hénoret, ainsi qu’Allison Ferrera (service photo).",
+      "content_preview": "Posez votre question à la rédaction: Plus de 80 écrivains et personnalités, parmi lesquels Abdellatif Laâbi, Leïla Slimani et Dominique Eddé, appellent les autorités françaises, dans une tribune auMonde, à donner refuge à la poétesse, dont les quatre enfants sont morts dans un bombardement mené par l’armée israélienne à Gaza. « A la suite d’une enquête préliminaire, il semble qu’aujourd’hui environ 15 terroristes soient sortis des infrastructures(…)souterraines à deux endroits différents, à l’es..."
+    },
+    {
+      "processing_rank": 19,
+      "url_id": 8566,
+      "url": "https://www.elconfidencial.com/espana/2025-11-21/el-juez-convoca-el-jueves-a-abalos-y-koldo-para-decidir-si-los-manda-a-prision_4251798/",
+      "title": "El juez convoca el jueves a Ábalos y Koldo para decidir si los manda a prisión",
+      "source": "www.elconfidencial.com",
+      "category": "politica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "newspaper",
+      "extraction_error": null,
+      "word_count": 601,
+      "archive_url": null,
+      "full_content": "EC EXCLUSIVO El juez del Tribunal Supremo, Leopoldo Puente, ha convocado para el próximo jueves 27 de noviembre al exministro José Luis Ábalos y a su asesor Koldo García para celebrar la vista de medidas cautelares en las que tendrá que decidir si los manda a prisión. La decisión del magistrado se produce después de que la Fiscalía haya pedido revisar su situación tras solicitar para ellos 24 y 19 años de cárcel, respectivamente por la trama de las mascarillas. Según ha informado el departamento de prensa del alto tribunal, el jueves se celebrará la comparecencia prevista en el artículo 505 de la Ley de Enjuiciamiento Criminal, al efecto de resolver sobre la modificación de las medidas cautelares para ambos que han solicitado tanto la Fiscalía como las acusaciones populares en sus escritos de acusación. Ambos deberán acudir personalmente y asistidos por su defensa. La Fiscalía ha presentado esta semana su escrito de calificación para la primera de las causas derivadas del llamado caso Koldo. Pide 24 años de prisión para Ábalos, 19 años y seis meses, y el empresario Víctor de Aldama, para el que pide 7. Además, reclamó al juez que celebre una vista de medidas cautelares para decidir si el exministro y su asesor deben entrar en prisión ante la cercanía del juicio en su contra. Opinión TE PUEDE INTERESAR Condenado el fiscal y 30 años para Ábalos: el 20-N que nunca soñó Sánchez Alberto Pérez Giménez En el caso de José Luis Ábalos, la petición de cárcel se desglosa en los siguientes delitos: organización criminal (7 años), cohecho (6), uso de información privilegiada (2), dos delitos de tráfico de influencias (4), y malversación de caudales públicos (5). Así lo detalla el escrito del fiscal jefe anticorrupción Alejandro Luzón, el investigador al que puso en su diana la presunta cloaca al servicio del PSOE que integraba Leire Díez. Acusaciones populares Por su parte, las acusaciones populares personadas en el caso Koldo reclamaron este jueves al Tribunal Supremo una pena de 30 años de prisión para el exministro. Reclama para Koldo García la misma pena, 30 años, y 7 para el empresario Víctor de Aldama. El ministerio público incluyó la solicitud de vistilla en la parte final del escrito donde, además, reclamó que se abra pieza separada de responsabilidad civil para \"asegurar la satisfacción de las responsabilidades pecuniarias que puedan derivarse de la causa\", con el objeto de que se les reclame una fianza aún por cuantificar. TE PUEDE INTERESAR Las acusaciones piden 30 años de cárcel a Ábalos y Koldo por el caso mascarillas Beatriz Parera De hecho, el juez ya se lo advirtió a ambos después de su última comparecencia. En el auto en el que argumentó su decisión de dejarles en libertad, apuntó a que eso de esquivar la cárcel podía dar un vuelco. Dijo que el riesgo de fuga resulta \"creciente\" conforme se acerca el juicio y, por tanto, podrá \"justificar\" medidas \"más gravosas\" como la prisión preventiva \"en lo porvenir\". Esta pieza del caso tiene que ver con la concesión de contratos para la compra de material sanitario durante la pandemia a una empresa que se llama Soluciones de Gestión. Aldama trabajaba para esa empresa y accedió a Ábalos por medio de Koldo García. La empresa se benefició con cerca de 50 millones de euros procedentes de administraciones gestionadas por el PSOE y a cambio el empresario pagaba comisiones ilegales al ministro y su asesor. La trama corrupta también asumió los gastos de las mujeres que acompañaban a Ábalos, como el pago del alquiler de un piso en plena Plaza de España de Madrid.",
+      "content_preview": "EC EXCLUSIVO El juez del Tribunal Supremo, Leopoldo Puente, ha convocado para el próximo jueves 27 de noviembre al exministro José Luis Ábalos y a su asesor Koldo García para celebrar la vista de medidas cautelares en las que tendrá que decidir si los manda a prisión. La decisión del magistrado se produce después de que la Fiscalía haya pedido revisar su situación tras solicitar para ellos 24 y 19 años de cárcel, respectivamente por la trama de las mascarillas. Según ha informado el departamento..."
+    },
+    {
+      "processing_rank": 20,
+      "url_id": 8720,
+      "url": "https://elpais.com/internacional/2025-11-21/los-28-puntos-del-plan-de-paz-que-ee-uu-y-rusia-han-presentado-a-ucrania-segun-medios-internacionales.html",
+      "title": "Los 28 puntos del plan de paz que EE UU y Rusia han presentado a Ucrania, según medios internacionales",
+      "source": "elpais.com",
+      "category": "geopolitica",
+      "has_full_content": true,
+      "extraction_status": "success",
+      "extraction_method": "newspaper",
+      "extraction_error": null,
+      "word_count": 1112,
+      "archive_url": null,
+      "full_content": "Varios medios internacionales, entre ellos Financial Times, Axios, y la Agencia France-Presse (AFP), han publicado desde la noche del jueves un plan de paz que supuestamente la Administración del presidente estadounidense, Donald Trump, ha presentado al mandatario ucranio, Volodímir Zelenski. En la redacción del plan ha participado Rusia, pero no se ha consultado ni a Ucrania ni a la Unión Europea, según los citados medios. En la propuesta de paz se otorgan grandes concesiones a Moscú. Entre ellas se incluyen importantes cesiones de territorio (en el punto 21), la obligación para Kiev de reducir su ejército y su compromiso de no ingresar en la OTAN. A continuación, los 28 puntos difundidos. La soberanía de Ucrania será confirmada. Se concluirá un acuerdo de no agresión integral entre Rusia, Ucrania y Europa. Todas las ambigüedades de los últimos 30 años se considerarán resueltas. Se espera que Rusia no invada a países vecinos y que la OTAN no se expanda más. Habrá un diálogo entre Rusia y la OTAN, mediado por Estados Unidos, para resolver todas las cuestiones de seguridad y crear condiciones de desescalada que garanticen la seguridad global y aumenten las oportunidades de cooperación y el desarrollo económico futuro. Ucrania recibirá garantías de seguridad fiables. [La propuesta no ofrece detalles sobre su alcance]. El tamaño de las Fuerzas Armadas de Ucrania quedará limitado a 600. 000 efectivos. [Axios recuerda que el ejército ucranio tiene entre 800. 000 y 850. 000 efectivos, y antes de la guerra rondaba los 250. 000, según un funcionario ucranio]. Ucrania acepta incluir en su Constitución que no ingresará en la OTAN, y la OTAN acepta incluir en sus estatutos una disposición que impida la futura adhesión de Ucrania. La OTAN acepta no estacionar tropas en Ucrania. Cazas europeos serán estacionados en Polonia. La garantía de EE UU: EE UU recibirá compensación por asumir esta garantía. Si Ucrania invade Rusia, perderá la garantía. Si Rusia invade Ucrania, además de una respuesta militar decisiva y coordinada, se restablecerán todas las sanciones globales, se revocará el reconocimiento del nuevo territorio y todos los beneficios de este acuerdo quedarán anulados. Si Ucrania lanza un misil contra Moscú o San Petersburgo sin causa, la garantía de seguridad se considerará inválida. Ucrania podrá acceder a la membresía de la UE y recibirá acceso preferencial a corto plazo al mercado europeo mientras se evalúa este asunto. Se establecerá un potente paquete global para la reconstrucción de Ucrania, que incluirá, entre otras cosas: La creación de un Fondo de Desarrollo de Ucrania para invertir en industrias de rápido crecimiento, como tecnología, centros de datos e inteligencia artificial. Cooperación entre EE UU y Ucrania para reconstruir, desarrollar, modernizar y operar conjuntamente la infraestructura gasista ucrania, incluidos gasoductos y almacenes. Esfuerzos conjuntos para rehabilitar áreas afectadas por la guerra y restaurar, reconstruir y modernizar ciudades y zonas residenciales. Desarrollo de infraestructuras. Extracción de minerales y recursos naturales. El Banco Mundial desarrollará un paquete especial de financiación para acelerar estos esfuerzos. Rusia será reintegrada a la economía global: El levantamiento de sanciones se discutirá y acordará por etapas y caso por caso. EE UU firmará un acuerdo de cooperación económica a largo plazo para un desarrollo mutuo en energía, recursos naturales, infraestructura, inteligencia artificial, centros de datos y proyectos de extracción de metales raros en el Ártico, entre otras oportunidades corporativas. Rusia será invitada a reincorporarse al G-8. Los fondos congelados [a Rusia] se utilizarán del siguiente modo: 100. 000 millones de dólares en activos rusos congelados se invertirán en esfuerzos liderados por EE UU para reconstruir e invertir en Ucrania. EE UU recibirá el 50% de los beneficios de esta operación. Europa añadirá 100. 000 millones para aumentar la inversión disponible en la reconstrucción de Ucrania. Los fondos europeos congelados serán descongelados. El resto se destinará a un fondo conjunto EE UU-Rusia para proyectos bilaterales que aumenten los incentivos a evitar un retorno al conflicto. Se establecerá un grupo de trabajo conjunto estadounidense-ruso sobre cuestiones de seguridad para promover y garantizar el cumplimiento de todas las disposiciones del acuerdo. Rusia consagrará por ley su política de no agresión hacia Europa y Ucrania. EE UU y Rusia acordarán prorrogar la validez de los tratados de no proliferación y control de armas nucleares, incluido el START I. Ucrania acepta ser un Estado no nuclear, de acuerdo con el Tratado de No Proliferación Nuclear. La central nuclear de Zaporiyia se pondrá en funcionamiento bajo supervisión del Organismo Internacional de Energía Atómica (OIEA), y la electricidad producida se repartirá por igual entre Rusia y Ucrania (50: 50). Ambos países se comprometen a implementar programas educativos en escuelas y en la sociedad para promover la comprensión y la tolerancia culturales y eliminar el racismo y los prejuicios: Ucrania adoptará normas de la UE sobre tolerancia religiosa y protección de minorías lingüísticas. Ambos países acordarán suprimir todas las medidas discriminatorias y garantizar los derechos de los medios y la educación ucranios y rusos. Toda ideología y actividad nazi deberá ser rechazada y prohibida. Territorios: Crimea, Lugansk y Donetsk serán reconocidos como de facto rusos, incluso por EE UU. Jersón y Zaporiyia quedarán congeladas en la línea de contacto, lo que equivaldrá a un reconocimiento de facto según esa línea. Rusia renunciará a otros territorios acordados que controle fuera de las cinco regiones. Las fuerzas ucranias se retirarán de la parte del óblast de Donetsk que actualmente controlan; esta zona de retirada se considerará una zona neutral desmilitarizada, reconocida internacionalmente como territorio perteneciente a la Federación Rusa. Las fuerzas rusas no entrarán en esta zona desmilitarizada. Tras acordar los futuros arreglos territoriales, Rusia y Ucrania se comprometen a no modificarlos por la fuerza. Cualquier garantía de seguridad no se aplicará si se incumple este compromiso. Rusia no impedirá que Ucrania utilice el río Dniéper para actividades comerciales, y se alcanzarán acuerdos para el libre transporte de grano por el mar Negro. Se establecerá un comité humanitario para resolver cuestiones pendientes: Todos los prisioneros y cuerpos serán intercambiados sobre la base de “todos por todos”. Todos los civiles detenidos y rehenes serán devueltos, incluidos los niños. Se implementará un programa de reunificación familiar. Se adoptarán medidas para aliviar el sufrimiento de las víctimas del conflicto. Ucrania celebrará elecciones en 100 días. Todas las partes implicadas en el conflicto recibirán amnistía total por sus actos durante la guerra y aceptarán no presentar reclamaciones ni examinar denuncias en el futuro. Este acuerdo será jurídicamente vinculante. Su implementación será supervisada y garantizada por el Consejo de la Paz, presidido por Donald J. Trump. Se impondrán sanciones en caso de violación. [Axios recuerda que esta es la misma estructura general que Trump propuso para el acuerdo de paz en Gaza].",
+      "content_preview": "Varios medios internacionales, entre ellos Financial Times, Axios, y la Agencia France-Presse (AFP), han publicado desde la noche del jueves un plan de paz que supuestamente la Administración del presidente estadounidense, Donald Trump, ha presentado al mandatario ucranio, Volodímir Zelenski. En la redacción del plan ha participado Rusia, pero no se ha consultado ni a Ucrania ni a la Unión Europea, según los citados medios. En la propuesta de paz se otorgan grandes concesiones a Moscú. Entre ell..."
+    }
+  ],
+  "newsletter_preview": {
+    "word_count": 898,
+    "char_count": 7623,
+    "first_500_chars": "En un giro que parece sacado de un thriller político, [**Donald Trump**](https://www.lemonde.fr/international/article/2025/11/21/donald-trump-agite-la-menace-de-la-peine-de-mort-contre-des-elus-democrates-appelant-l-armee-a-desobeir_6654235_3210.html) ha vuelto a encender la mecha de la polarización en Estados Unidos al amenazar con la pena de muerte a legisladores demócratas que han instado a desobedecer órdenes militares que consideran ilegales. Esta escalada retórica se produce en un clima ya..."
+  }
+}

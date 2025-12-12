@@ -1,0 +1,407 @@
+2025-11-24 13:39:37,464 - __main__ - INFO - POC Keyword Search - Logging initialized: poc_keyword_search/logs/2025-11-24/01_search_urls_by_topic.log
+2025-11-24 13:39:37,464 - __main__ - INFO - ============================================================
+2025-11-24 13:39:37,464 - __main__ - INFO - POC KEYWORD SEARCH - Stage 01 Alternative
+2025-11-24 13:39:37,464 - __main__ - INFO - Date: 2025-11-24
+2025-11-24 13:39:37,464 - __main__ - INFO - ============================================================
+2025-11-24 13:39:37,471 - __main__ - INFO - Loaded POC config from poc_keyword_search/config.yml
+2025-11-24 13:39:37,472 - __main__ - INFO - Filtering to 2 specific keywords
+2025-11-24 13:39:37,472 - __main__ - INFO - Total keywords to search: 2
+2025-11-24 13:39:37,472 - poc_keyword_search.src.google_news_searcher - INFO - Initialized Google News searcher: lang=es, country=ES
+2025-11-24 13:39:37,549 - common.stage01_extraction.url_classifier - INFO - Loaded 0 global rules and 78 source-specific rules from config/url_classification_rules.yml
+2025-11-24 13:39:37,603 - common.stage01_extraction.url_classifier - INFO - Loaded 839 cached no_contenido URLs from config/cached_no_content_urls.yml
+2025-11-24 13:39:37,604 - __main__ - INFO - URL classifier initialized
+2025-11-24 13:39:37,604 - __main__ - INFO - Connected to POC database
+2025-11-24 13:39:37,604 - __main__ - INFO - 
+[1/2] Searching: 'inflación España' (when=1d)
+2025-11-24 13:39:37,605 - poc_keyword_search.src.google_news_searcher - INFO - Searching Google News: keyword='inflación España', when=1d
+2025-11-24 13:39:38,220 - poc_keyword_search.src.google_news_searcher - INFO - Found 45 results for 'inflación España'
+2025-11-24 13:39:38,221 - poc_keyword_search.src.google_news_searcher - INFO - Successfully parsed 45 articles
+2025-11-24 13:40:15,787 - __main__ - INFO - POC Keyword Search - Logging initialized: poc_keyword_search/logs/2025-11-24/01_search_urls_by_topic.log
+2025-11-24 13:40:15,787 - __main__ - INFO - ============================================================
+2025-11-24 13:40:15,787 - __main__ - INFO - POC KEYWORD SEARCH - Stage 01 Alternative
+2025-11-24 13:40:15,787 - __main__ - INFO - Date: 2025-11-24
+2025-11-24 13:40:15,787 - __main__ - INFO - ============================================================
+2025-11-24 13:40:15,795 - __main__ - INFO - Loaded POC config from poc_keyword_search/config.yml
+2025-11-24 13:40:15,795 - __main__ - INFO - Filtering to 2 specific keywords
+2025-11-24 13:40:15,795 - __main__ - INFO - Total keywords to search: 2
+2025-11-24 13:40:15,795 - poc_keyword_search.src.google_news_searcher - INFO - Initialized Google News searcher: lang=es, country=ES
+2025-11-24 13:40:15,870 - common.stage01_extraction.url_classifier - INFO - Loaded 0 global rules and 78 source-specific rules from config/url_classification_rules.yml
+2025-11-24 13:40:15,925 - common.stage01_extraction.url_classifier - INFO - Loaded 839 cached no_contenido URLs from config/cached_no_content_urls.yml
+2025-11-24 13:40:15,925 - __main__ - INFO - URL classifier initialized
+2025-11-24 13:40:15,925 - __main__ - INFO - Connected to POC database
+2025-11-24 13:40:15,925 - __main__ - INFO - 
+[1/2] Searching: 'inflación España' (when=1d)
+2025-11-24 13:40:15,925 - poc_keyword_search.src.google_news_searcher - INFO - Searching Google News: keyword='inflación España', when=1d
+2025-11-24 13:40:16,211 - poc_keyword_search.src.google_news_searcher - INFO - Found 45 results for 'inflación España'
+2025-11-24 13:40:16,212 - poc_keyword_search.src.google_news_searcher - INFO - Successfully parsed 45 articles
+2025-11-24 13:40:16,227 - __main__ - INFO - ✓ 'inflación España': 45 new, 0 duplicates, 45 content, 0 no_content
+2025-11-24 13:40:17,227 - __main__ - INFO - 
+[2/2] Searching: 'BCE tipos de interés' (when=1d)
+2025-11-24 13:40:17,227 - poc_keyword_search.src.google_news_searcher - INFO - Searching Google News: keyword='BCE tipos de interés', when=1d
+2025-11-24 13:40:17,658 - poc_keyword_search.src.google_news_searcher - INFO - Found 12 results for 'BCE tipos de interés'
+2025-11-24 13:40:17,659 - poc_keyword_search.src.google_news_searcher - INFO - Successfully parsed 12 articles
+2025-11-24 13:40:17,668 - __main__ - INFO - ✓ 'BCE tipos de interés': 10 new, 2 duplicates, 10 content, 0 no_content
+2025-11-24 13:40:17,668 - __main__ - INFO - 
+============================================================
+2025-11-24 13:40:17,668 - __main__ - INFO - POC STAGE 01 COMPLETED
+2025-11-24 13:40:17,668 - __main__ - INFO - ============================================================
+2025-11-24 13:40:17,668 - __main__ - INFO - Keywords searched: 2
+2025-11-24 13:40:17,668 - __main__ - INFO - Total articles found: 57
+2025-11-24 13:40:17,668 - __main__ - INFO - New articles saved: 55
+2025-11-24 13:40:17,668 - __main__ - INFO -   - Content URLs: 55
+2025-11-24 13:40:17,668 - __main__ - INFO -   - No-content URLs: 0
+2025-11-24 13:40:17,668 - __main__ - INFO - Duplicates skipped: 2
+2025-11-24 13:40:17,668 - __main__ - INFO - ============================================================
+2025-11-24 16:34:11,796 - __main__ - INFO - POC Keyword Search - Logging initialized: poc_keyword_search/logs/2025-11-24/01_search_urls_by_topic.log
+2025-11-24 16:34:11,797 - __main__ - INFO - ============================================================
+2025-11-24 16:34:11,797 - __main__ - INFO - POC KEYWORD SEARCH - Stage 01 Alternative
+2025-11-24 16:34:11,797 - __main__ - INFO - Date: 2025-11-24
+2025-11-24 16:34:11,797 - __main__ - INFO - ============================================================
+2025-11-24 16:34:11,804 - __main__ - INFO - Loaded POC config from poc_keyword_search/config.yml
+2025-11-24 16:34:11,804 - __main__ - INFO - Filtering to 1 specific keywords
+2025-11-24 16:34:11,804 - __main__ - INFO - Total keywords to search: 1
+2025-11-24 16:34:11,804 - poc_keyword_search.src.google_news_searcher - INFO - Initialized Google News searcher: lang=es, country=ES
+2025-11-24 16:34:11,879 - common.stage01_extraction.url_classifier - INFO - Loaded 0 global rules and 78 source-specific rules from config/url_classification_rules.yml
+2025-11-24 16:34:11,935 - common.stage01_extraction.url_classifier - INFO - Loaded 839 cached no_contenido URLs from config/cached_no_content_urls.yml
+2025-11-24 16:34:11,935 - __main__ - INFO - URL classifier initialized
+2025-11-24 16:34:11,936 - __main__ - INFO - Connected to POC database
+2025-11-24 16:34:11,936 - __main__ - INFO - 
+[1/1] Searching: 'inflación España' (when=1d)
+2025-11-24 16:34:11,936 - poc_keyword_search.src.google_news_searcher - INFO - Searching Google News: keyword='inflación España', when=1d
+2025-11-24 16:34:12,537 - poc_keyword_search.src.google_news_searcher - INFO - Found 48 results for 'inflación España'
+2025-11-24 16:34:27,262 - poc_keyword_search.src.google_news_searcher - INFO - Successfully parsed 48 articles
+2025-11-24 16:34:54,405 - __main__ - INFO - POC Keyword Search - Logging initialized: poc_keyword_search/logs/2025-11-24/01_search_urls_by_topic.log
+2025-11-24 16:34:54,405 - __main__ - INFO - ============================================================
+2025-11-24 16:34:54,405 - __main__ - INFO - POC KEYWORD SEARCH - Stage 01 Alternative
+2025-11-24 16:34:54,405 - __main__ - INFO - Date: 2025-11-24
+2025-11-24 16:34:54,405 - __main__ - INFO - ============================================================
+2025-11-24 16:34:54,412 - __main__ - INFO - Loaded POC config from poc_keyword_search/config.yml
+2025-11-24 16:34:54,412 - __main__ - INFO - Filtering to 1 specific keywords
+2025-11-24 16:34:54,412 - __main__ - INFO - Total keywords to search: 1
+2025-11-24 16:34:54,412 - poc_keyword_search.src.google_news_searcher - INFO - Initialized Google News searcher: lang=es, country=ES
+2025-11-24 16:34:54,487 - common.stage01_extraction.url_classifier - INFO - Loaded 0 global rules and 78 source-specific rules from config/url_classification_rules.yml
+2025-11-24 16:34:54,541 - common.stage01_extraction.url_classifier - INFO - Loaded 839 cached no_contenido URLs from config/cached_no_content_urls.yml
+2025-11-24 16:34:54,541 - __main__ - INFO - URL classifier initialized
+2025-11-24 16:34:54,541 - __main__ - INFO - Connected to POC database
+2025-11-24 16:34:54,542 - __main__ - INFO - 
+[1/1] Searching: 'inflación España' (when=1d)
+2025-11-24 16:34:54,542 - poc_keyword_search.src.google_news_searcher - INFO - Searching Google News: keyword='inflación España', when=1d
+2025-11-24 16:34:54,806 - poc_keyword_search.src.google_news_searcher - INFO - Found 48 results for 'inflación España'
+2025-11-24 16:35:09,277 - poc_keyword_search.src.google_news_searcher - INFO - Successfully parsed 48 articles
+2025-11-24 16:36:12,730 - __main__ - INFO - POC Keyword Search - Logging initialized: poc_keyword_search/logs/2025-11-24/01_search_urls_by_topic.log
+2025-11-24 16:36:12,730 - __main__ - INFO - ============================================================
+2025-11-24 16:36:12,730 - __main__ - INFO - POC KEYWORD SEARCH - Stage 01 Alternative
+2025-11-24 16:36:12,730 - __main__ - INFO - Date: 2025-11-24
+2025-11-24 16:36:12,730 - __main__ - INFO - ============================================================
+2025-11-24 16:36:12,737 - __main__ - INFO - Loaded POC config from poc_keyword_search/config.yml
+2025-11-24 16:36:12,737 - __main__ - INFO - Filtering to 1 specific keywords
+2025-11-24 16:36:12,737 - __main__ - INFO - Total keywords to search: 1
+2025-11-24 16:36:12,737 - poc_keyword_search.src.google_news_searcher - INFO - Initialized Google News searcher: lang=es, country=ES
+2025-11-24 16:36:12,812 - common.stage01_extraction.url_classifier - INFO - Loaded 0 global rules and 78 source-specific rules from config/url_classification_rules.yml
+2025-11-24 16:36:12,865 - common.stage01_extraction.url_classifier - INFO - Loaded 839 cached no_contenido URLs from config/cached_no_content_urls.yml
+2025-11-24 16:36:12,865 - __main__ - INFO - URL classifier initialized
+2025-11-24 16:36:12,865 - __main__ - INFO - Connected to POC database
+2025-11-24 16:36:12,866 - __main__ - INFO - 
+[1/1] Searching: 'inflación España' (when=1d)
+2025-11-24 16:36:12,866 - poc_keyword_search.src.google_news_searcher - INFO - Searching Google News: keyword='inflación España', when=1d
+2025-11-24 16:36:13,499 - poc_keyword_search.src.google_news_searcher - INFO - Found 46 results for 'inflación España'
+2025-11-24 16:36:24,833 - poc_keyword_search.src.google_news_searcher - INFO - Successfully parsed 46 articles
+2025-11-24 16:36:24,846 - __main__ - INFO - ✓ 'inflación España': 46 new, 0 duplicates (0 new keywords), 46 content, 0 no_content
+2025-11-24 16:36:24,846 - __main__ - INFO - 
+============================================================
+2025-11-24 16:36:24,847 - __main__ - INFO - POC STAGE 01 COMPLETED
+2025-11-24 16:36:24,847 - __main__ - INFO - ============================================================
+2025-11-24 16:36:24,847 - __main__ - INFO - Keywords searched: 1
+2025-11-24 16:36:24,847 - __main__ - INFO - Total articles found: 46
+2025-11-24 16:36:24,847 - __main__ - INFO - New articles saved: 46
+2025-11-24 16:36:24,847 - __main__ - INFO -   - Content URLs: 46
+2025-11-24 16:36:24,848 - __main__ - INFO -   - No-content URLs: 0
+2025-11-24 16:36:24,848 - __main__ - INFO - Duplicates skipped: 0
+2025-11-24 16:36:24,848 - __main__ - INFO - ============================================================
+2025-11-24 16:37:50,835 - __main__ - INFO - POC Keyword Search - Logging initialized: poc_keyword_search/logs/2025-11-24/01_search_urls_by_topic.log
+2025-11-24 16:37:50,835 - __main__ - INFO - ============================================================
+2025-11-24 16:37:50,835 - __main__ - INFO - POC KEYWORD SEARCH - Stage 01 Alternative
+2025-11-24 16:37:50,835 - __main__ - INFO - Date: 2025-11-24
+2025-11-24 16:37:50,835 - __main__ - INFO - ============================================================
+2025-11-24 16:37:50,844 - __main__ - INFO - Loaded POC config from poc_keyword_search/config.yml
+2025-11-24 16:37:50,844 - __main__ - INFO - Filtering to 1 specific keywords
+2025-11-24 16:37:50,845 - __main__ - INFO - Total keywords to search: 1
+2025-11-24 16:37:50,845 - poc_keyword_search.src.google_news_searcher - INFO - Initialized Google News searcher: lang=es, country=ES
+2025-11-24 16:37:50,927 - common.stage01_extraction.url_classifier - INFO - Loaded 0 global rules and 78 source-specific rules from config/url_classification_rules.yml
+2025-11-24 16:37:50,982 - common.stage01_extraction.url_classifier - INFO - Loaded 839 cached no_contenido URLs from config/cached_no_content_urls.yml
+2025-11-24 16:37:50,982 - __main__ - INFO - URL classifier initialized
+2025-11-24 16:37:50,982 - __main__ - INFO - Connected to POC database
+2025-11-24 16:37:50,982 - __main__ - INFO - 
+[1/1] Searching: 'inflación España' (when=1d)
+2025-11-24 16:37:50,983 - poc_keyword_search.src.google_news_searcher - INFO - Searching Google News: keyword='inflación España', when=1d
+2025-11-24 16:37:51,369 - poc_keyword_search.src.google_news_searcher - INFO - Found 46 results for 'inflación España'
+2025-11-24 16:38:08,269 - poc_keyword_search.src.google_news_searcher - INFO - Successfully parsed 46 articles
+2025-11-24 16:38:08,282 - __main__ - INFO - ✓ 'inflación España': 46 new, 0 duplicates (0 new keywords), 46 content, 0 no_content
+2025-11-24 16:38:08,282 - __main__ - INFO - 
+============================================================
+2025-11-24 16:38:08,282 - __main__ - INFO - POC STAGE 01 COMPLETED
+2025-11-24 16:38:08,283 - __main__ - INFO - ============================================================
+2025-11-24 16:38:08,283 - __main__ - INFO - Keywords searched: 1
+2025-11-24 16:38:08,283 - __main__ - INFO - Total articles found: 46
+2025-11-24 16:38:08,283 - __main__ - INFO - New articles saved: 46
+2025-11-24 16:38:08,283 - __main__ - INFO -   - Content URLs: 46
+2025-11-24 16:38:08,283 - __main__ - INFO -   - No-content URLs: 0
+2025-11-24 16:38:08,283 - __main__ - INFO - Duplicates skipped: 0
+2025-11-24 16:38:08,283 - __main__ - INFO - ============================================================
+2025-11-24 16:50:51,229 - __main__ - INFO - POC Keyword Search - Logging initialized: poc_keyword_search/logs/2025-11-24/01_search_urls_by_topic.log
+2025-11-24 16:50:51,230 - __main__ - INFO - ============================================================
+2025-11-24 16:50:51,230 - __main__ - INFO - POC KEYWORD SEARCH - Stage 01 Alternative
+2025-11-24 16:50:51,230 - __main__ - INFO - Date: 2025-11-24
+2025-11-24 16:50:51,230 - __main__ - INFO - ============================================================
+2025-11-24 16:50:51,238 - __main__ - INFO - Loaded POC config from poc_keyword_search/config.yml
+2025-11-24 16:50:51,239 - __main__ - INFO - Filtering to 0 specific keywords
+2025-11-24 16:50:51,239 - __main__ - ERROR - No keyword topics to search!
+2025-11-24 16:51:03,793 - __main__ - INFO - POC Keyword Search - Logging initialized: poc_keyword_search/logs/2025-11-24/01_search_urls_by_topic.log
+2025-11-24 16:51:03,794 - __main__ - INFO - ============================================================
+2025-11-24 16:51:03,794 - __main__ - INFO - POC KEYWORD SEARCH - Stage 01 Alternative
+2025-11-24 16:51:03,794 - __main__ - INFO - Date: 2025-11-24
+2025-11-24 16:51:03,795 - __main__ - INFO - ============================================================
+2025-11-24 16:51:03,806 - __main__ - INFO - Loaded POC config from poc_keyword_search/config.yml
+2025-11-24 16:51:03,806 - __main__ - INFO - Total keywords to search: 9
+2025-11-24 16:51:03,806 - poc_keyword_search.src.google_news_searcher - INFO - Initialized Google News searcher: lang=es, country=ES, resolve_urls=False
+2025-11-24 16:51:03,807 - __main__ - INFO - URL resolution DISABLED (Google News URLs will be kept)
+2025-11-24 16:51:03,924 - common.stage01_extraction.url_classifier - INFO - Loaded 0 global rules and 78 source-specific rules from config/url_classification_rules.yml
+2025-11-24 16:51:04,008 - common.stage01_extraction.url_classifier - INFO - Loaded 839 cached no_contenido URLs from config/cached_no_content_urls.yml
+2025-11-24 16:51:04,008 - __main__ - INFO - URL classifier initialized
+2025-11-24 16:51:04,009 - __main__ - INFO - Connected to POC database
+2025-11-24 16:51:04,009 - __main__ - INFO - 
+[1/9] Searching: 'inflación España' (when=1d)
+2025-11-24 16:51:04,009 - poc_keyword_search.src.google_news_searcher - INFO - Searching Google News: keyword='inflación España', when=1d
+2025-11-24 16:51:04,752 - poc_keyword_search.src.google_news_searcher - INFO - Found 47 results for 'inflación España'
+2025-11-24 16:51:04,754 - poc_keyword_search.src.google_news_searcher - INFO - Successfully parsed 47 articles
+2025-11-24 16:51:04,766 - __main__ - INFO - ✓ 'inflación España': 47 new, 0 duplicates (0 new keywords), 47 content, 0 no_content
+2025-11-24 16:51:05,766 - __main__ - INFO - 
+[2/9] Searching: 'BCE tipos de interés' (when=1d)
+2025-11-24 16:51:05,766 - poc_keyword_search.src.google_news_searcher - INFO - Searching Google News: keyword='BCE tipos de interés', when=1d
+2025-11-24 16:51:06,384 - poc_keyword_search.src.google_news_searcher - INFO - Found 13 results for 'BCE tipos de interés'
+2025-11-24 16:51:06,385 - poc_keyword_search.src.google_news_searcher - INFO - Successfully parsed 13 articles
+2025-11-24 16:51:06,396 - __main__ - INFO - ✓ 'BCE tipos de interés': 11 new, 2 duplicates (2 new keywords), 11 content, 0 no_content
+2025-11-24 16:51:07,397 - __main__ - INFO - 
+[3/9] Searching: 'Banco de España economía' (when=1d)
+2025-11-24 16:51:07,397 - poc_keyword_search.src.google_news_searcher - INFO - Searching Google News: keyword='Banco de España economía', when=1d
+2025-11-24 16:51:08,045 - poc_keyword_search.src.google_news_searcher - INFO - Found 49 results for 'Banco de España economía'
+2025-11-24 16:51:08,045 - poc_keyword_search.src.google_news_searcher - INFO - Successfully parsed 20 articles
+2025-11-24 16:51:08,056 - __main__ - INFO - ✓ 'Banco de España economía': 18 new, 2 duplicates (2 new keywords), 18 content, 0 no_content
+2025-11-24 16:51:09,056 - __main__ - INFO - 
+[4/9] Searching: 'guerra Ucrania' (when=1d)
+2025-11-24 16:51:09,056 - poc_keyword_search.src.google_news_searcher - INFO - Searching Google News: keyword='guerra Ucrania', when=1d
+2025-11-24 16:51:09,853 - poc_keyword_search.src.google_news_searcher - INFO - Found 100 results for 'guerra Ucrania'
+2025-11-24 16:51:09,854 - poc_keyword_search.src.google_news_searcher - INFO - Successfully parsed 40 articles
+2025-11-24 16:51:09,864 - __main__ - INFO - ✓ 'guerra Ucrania': 40 new, 0 duplicates (0 new keywords), 40 content, 0 no_content
+2025-11-24 16:51:10,865 - __main__ - INFO - 
+[5/9] Searching: 'Unión Europea política' (when=1d)
+2025-11-24 16:51:10,865 - poc_keyword_search.src.google_news_searcher - INFO - Searching Google News: keyword='Unión Europea política', when=1d
+2025-11-24 16:51:11,594 - poc_keyword_search.src.google_news_searcher - INFO - Found 59 results for 'Unión Europea política'
+2025-11-24 16:51:11,595 - poc_keyword_search.src.google_news_searcher - INFO - Successfully parsed 25 articles
+2025-11-24 16:51:11,605 - __main__ - INFO - ✓ 'Unión Europea política': 24 new, 1 duplicates (1 new keywords), 24 content, 0 no_content
+2025-11-24 16:51:12,605 - __main__ - INFO - 
+[6/9] Searching: 'gobierno España Sánchez' (when=1d)
+2025-11-24 16:51:12,606 - poc_keyword_search.src.google_news_searcher - INFO - Searching Google News: keyword='gobierno España Sánchez', when=1d
+2025-11-24 16:51:13,462 - poc_keyword_search.src.google_news_searcher - INFO - Found 100 results for 'gobierno España Sánchez'
+2025-11-24 16:51:13,463 - poc_keyword_search.src.google_news_searcher - INFO - Successfully parsed 30 articles
+2025-11-24 16:51:13,473 - __main__ - INFO - ✓ 'gobierno España Sánchez': 30 new, 0 duplicates (0 new keywords), 30 content, 0 no_content
+2025-11-24 16:51:14,474 - __main__ - INFO - 
+[7/9] Searching: 'elecciones España' (when=7d)
+2025-11-24 16:51:14,474 - poc_keyword_search.src.google_news_searcher - INFO - Searching Google News: keyword='elecciones España', when=7d
+2025-11-24 16:51:15,315 - poc_keyword_search.src.google_news_searcher - INFO - Found 87 results for 'elecciones España'
+2025-11-24 16:51:15,316 - poc_keyword_search.src.google_news_searcher - INFO - Successfully parsed 20 articles
+2025-11-24 16:51:15,327 - __main__ - INFO - ✓ 'elecciones España': 20 new, 0 duplicates (0 new keywords), 20 content, 0 no_content
+2025-11-24 16:51:16,327 - __main__ - INFO - 
+[8/9] Searching: 'bolsa española IBEX 35' (when=1d)
+2025-11-24 16:51:16,327 - poc_keyword_search.src.google_news_searcher - INFO - Searching Google News: keyword='bolsa española IBEX 35', when=1d
+2025-11-24 16:51:17,002 - poc_keyword_search.src.google_news_searcher - INFO - Found 27 results for 'bolsa española IBEX 35'
+2025-11-24 16:51:17,005 - poc_keyword_search.src.google_news_searcher - INFO - Successfully parsed 25 articles
+2025-11-24 16:51:17,016 - __main__ - INFO - ✓ 'bolsa española IBEX 35': 25 new, 0 duplicates (0 new keywords), 25 content, 0 no_content
+2025-11-24 16:51:18,017 - __main__ - INFO - 
+[9/9] Searching: 'sector bancario España' (when=1d)
+2025-11-24 16:51:18,017 - poc_keyword_search.src.google_news_searcher - INFO - Searching Google News: keyword='sector bancario España', when=1d
+2025-11-24 16:51:18,528 - poc_keyword_search.src.google_news_searcher - INFO - Found 11 results for 'sector bancario España'
+2025-11-24 16:51:18,528 - poc_keyword_search.src.google_news_searcher - INFO - Successfully parsed 11 articles
+2025-11-24 16:51:18,539 - __main__ - INFO - ✓ 'sector bancario España': 10 new, 1 duplicates (1 new keywords), 10 content, 0 no_content
+2025-11-24 16:51:18,539 - __main__ - INFO - 
+============================================================
+2025-11-24 16:51:18,539 - __main__ - INFO - POC STAGE 01 COMPLETED
+2025-11-24 16:51:18,540 - __main__ - INFO - ============================================================
+2025-11-24 16:51:18,540 - __main__ - INFO - Keywords searched: 9
+2025-11-24 16:51:18,540 - __main__ - INFO - Total articles found: 231
+2025-11-24 16:51:18,540 - __main__ - INFO - New articles saved: 225
+2025-11-24 16:51:18,540 - __main__ - INFO -   - Content URLs: 225
+2025-11-24 16:51:18,540 - __main__ - INFO -   - No-content URLs: 0
+2025-11-24 16:51:18,540 - __main__ - INFO - Duplicates skipped: 6
+2025-11-24 16:51:18,540 - __main__ - INFO - ============================================================
+2025-11-24 16:52:04,940 - __main__ - INFO - POC Keyword Search - Logging initialized: poc_keyword_search/logs/2025-11-24/01_search_urls_by_topic.log
+2025-11-24 16:52:04,940 - __main__ - INFO - ============================================================
+2025-11-24 16:52:04,940 - __main__ - INFO - POC KEYWORD SEARCH - Stage 01 Alternative
+2025-11-24 16:52:04,940 - __main__ - INFO - Date: 2025-11-24
+2025-11-24 16:52:04,940 - __main__ - INFO - ============================================================
+2025-11-24 16:52:04,947 - __main__ - INFO - Loaded POC config from poc_keyword_search/config.yml
+2025-11-24 16:52:04,947 - __main__ - INFO - Filtering to 1 specific keywords
+2025-11-24 16:52:04,947 - __main__ - INFO - Total keywords to search: 1
+2025-11-24 16:52:04,948 - poc_keyword_search.src.google_news_searcher - INFO - Initialized Google News searcher: lang=es, country=ES, resolve_urls=False
+2025-11-24 16:52:04,948 - __main__ - INFO - URL resolution DISABLED (Google News URLs will be kept)
+2025-11-24 16:52:05,024 - common.stage01_extraction.url_classifier - INFO - Loaded 0 global rules and 78 source-specific rules from config/url_classification_rules.yml
+2025-11-24 16:52:05,080 - common.stage01_extraction.url_classifier - INFO - Loaded 839 cached no_contenido URLs from config/cached_no_content_urls.yml
+2025-11-24 16:52:05,080 - __main__ - INFO - URL classifier initialized
+2025-11-24 16:52:05,081 - __main__ - INFO - Connected to POC database
+2025-11-24 16:52:05,081 - __main__ - INFO - 
+[1/1] Searching: 'inflación España' (when=1d)
+2025-11-24 16:52:05,081 - poc_keyword_search.src.google_news_searcher - INFO - Searching Google News: keyword='inflación España', when=1d
+2025-11-24 16:52:05,353 - poc_keyword_search.src.google_news_searcher - INFO - Found 47 results for 'inflación España'
+2025-11-24 16:52:05,355 - poc_keyword_search.src.google_news_searcher - INFO - Successfully parsed 47 articles
+2025-11-24 16:52:05,369 - __main__ - INFO - ✓ 'inflación España': 47 new, 0 duplicates (0 new keywords), 47 content, 0 no_content
+2025-11-24 16:52:05,369 - __main__ - INFO - 
+============================================================
+2025-11-24 16:52:05,369 - __main__ - INFO - POC STAGE 01 COMPLETED
+2025-11-24 16:52:05,369 - __main__ - INFO - ============================================================
+2025-11-24 16:52:05,369 - __main__ - INFO - Keywords searched: 1
+2025-11-24 16:52:05,369 - __main__ - INFO - Total articles found: 47
+2025-11-24 16:52:05,369 - __main__ - INFO - New articles saved: 47
+2025-11-24 16:52:05,369 - __main__ - INFO -   - Content URLs: 47
+2025-11-24 16:52:05,369 - __main__ - INFO -   - No-content URLs: 0
+2025-11-24 16:52:05,369 - __main__ - INFO - Duplicates skipped: 0
+2025-11-24 16:52:05,369 - __main__ - INFO - ============================================================
+2025-11-24 17:27:17,826 - __main__ - INFO - POC Keyword Search - Logging initialized: poc_keyword_search/logs/2025-11-24/01_search_urls_by_topic.log
+2025-11-24 17:27:17,827 - __main__ - INFO - ============================================================
+2025-11-24 17:27:17,827 - __main__ - INFO - POC KEYWORD SEARCH - Stage 01 Alternative
+2025-11-24 17:27:17,827 - __main__ - INFO - Date: 2025-11-24
+2025-11-24 17:27:17,827 - __main__ - INFO - ============================================================
+2025-11-24 17:27:17,834 - __main__ - INFO - Loaded POC config from poc_keyword_search/config.yml
+2025-11-24 17:27:17,834 - __main__ - INFO - Filtering to 1 specific keywords
+2025-11-24 17:27:17,834 - __main__ - INFO - Total keywords to search: 1
+2025-11-24 17:27:17,835 - poc_keyword_search.src.google_news_searcher - INFO - Initialized Google News searcher: lang=es, country=ES, resolve_urls=True
+2025-11-24 17:27:17,835 - __main__ - INFO - URL resolution ENABLED (requires Selenium + geckodriver)
+2025-11-24 17:27:17,911 - common.stage01_extraction.url_classifier - INFO - Loaded 0 global rules and 78 source-specific rules from config/url_classification_rules.yml
+2025-11-24 17:27:17,966 - common.stage01_extraction.url_classifier - INFO - Loaded 839 cached no_contenido URLs from config/cached_no_content_urls.yml
+2025-11-24 17:27:17,966 - __main__ - INFO - URL classifier initialized
+2025-11-24 17:27:17,967 - __main__ - INFO - Connected to POC database
+2025-11-24 17:27:17,967 - __main__ - INFO - 
+[1/1] Searching: 'inflación España' (when=1d)
+2025-11-24 17:27:17,967 - poc_keyword_search.src.google_news_searcher - INFO - Searching Google News: keyword='inflación España', when=1d
+2025-11-24 17:27:18,618 - poc_keyword_search.src.google_news_searcher - INFO - Found 39 results for 'inflación España'
+2025-11-24 17:27:56,469 - poc_keyword_search.src.google_news_searcher - INFO - Successfully parsed 39 articles
+2025-11-24 17:27:56,478 - __main__ - INFO - ✓ 'inflación España': 39 new, 0 duplicates (0 new keywords), 39 content, 0 no_content
+2025-11-24 17:27:56,478 - __main__ - INFO - 
+============================================================
+2025-11-24 17:27:56,478 - __main__ - INFO - POC STAGE 01 COMPLETED
+2025-11-24 17:27:56,478 - __main__ - INFO - ============================================================
+2025-11-24 17:27:56,478 - __main__ - INFO - Keywords searched: 1
+2025-11-24 17:27:56,479 - __main__ - INFO - Total articles found: 39
+2025-11-24 17:27:56,479 - __main__ - INFO - New articles saved: 39
+2025-11-24 17:27:56,479 - __main__ - INFO -   - Content URLs: 39
+2025-11-24 17:27:56,479 - __main__ - INFO -   - No-content URLs: 0
+2025-11-24 17:27:56,479 - __main__ - INFO - Duplicates skipped: 0
+2025-11-24 17:27:56,479 - __main__ - INFO - ============================================================
+2025-11-24 20:37:30,266 - __main__ - INFO - POC Keyword Search - Logging initialized: poc_keyword_search/logs/2025-11-24/01_search_urls_by_topic.log
+2025-11-24 20:37:30,267 - __main__ - INFO - ============================================================
+2025-11-24 20:37:30,267 - __main__ - INFO - POC KEYWORD SEARCH - Stage 01 Alternative
+2025-11-24 20:37:30,267 - __main__ - INFO - Date: 2025-11-24
+2025-11-24 20:37:30,267 - __main__ - INFO - ============================================================
+2025-11-24 20:37:30,274 - __main__ - INFO - Loaded POC config from poc_keyword_search/config.yml
+2025-11-24 20:37:30,274 - __main__ - INFO - Total keywords to search: 9
+2025-11-24 20:37:30,274 - poc_keyword_search.src.google_news_searcher - INFO - Initialized Google News searcher: lang=es, country=ES, resolve_urls=True
+2025-11-24 20:37:30,274 - __main__ - INFO - URL resolution ENABLED (decodes Google News URLs to real article URLs)
+2025-11-24 20:37:30,350 - common.stage01_extraction.url_classifier - INFO - Loaded 0 global rules and 78 source-specific rules from config/url_classification_rules.yml
+2025-11-24 20:37:30,404 - common.stage01_extraction.url_classifier - INFO - Loaded 839 cached no_contenido URLs from config/cached_no_content_urls.yml
+2025-11-24 20:37:30,404 - __main__ - INFO - URL classifier initialized
+2025-11-24 20:37:30,405 - __main__ - INFO - Connected to POC database
+2025-11-24 20:37:30,405 - __main__ - INFO - 
+[1/9] Searching: 'inflación España' (when=1d)
+2025-11-24 20:37:30,405 - poc_keyword_search.src.google_news_searcher - INFO - Searching Google News: keyword='inflación España', when=1d
+2025-11-24 20:37:30,970 - poc_keyword_search.src.google_news_searcher - INFO - Found 50 results for 'inflación España'
+2025-11-24 20:38:58,217 - poc_keyword_search.src.google_news_searcher - INFO - Successfully parsed 50 articles
+2025-11-24 20:38:58,229 - __main__ - INFO - ✓ 'inflación España': 50 new, 0 duplicates (0 new keywords), 50 content, 0 no_content
+2025-11-24 20:38:59,229 - __main__ - INFO - 
+[2/9] Searching: 'BCE tipos de interés' (when=1d)
+2025-11-24 20:38:59,229 - poc_keyword_search.src.google_news_searcher - INFO - Searching Google News: keyword='BCE tipos de interés', when=1d
+2025-11-24 20:38:59,816 - poc_keyword_search.src.google_news_searcher - INFO - Found 15 results for 'BCE tipos de interés'
+2025-11-24 20:39:25,216 - poc_keyword_search.src.google_news_searcher - INFO - Successfully parsed 15 articles
+2025-11-24 20:39:25,223 - __main__ - INFO - ✓ 'BCE tipos de interés': 11 new, 4 duplicates (4 new keywords), 11 content, 0 no_content
+2025-11-24 20:39:26,223 - __main__ - INFO - 
+[3/9] Searching: 'Banco de España economía' (when=1d)
+2025-11-24 20:39:26,224 - poc_keyword_search.src.google_news_searcher - INFO - Searching Google News: keyword='Banco de España economía', when=1d
+2025-11-24 20:39:26,841 - poc_keyword_search.src.google_news_searcher - INFO - Found 50 results for 'Banco de España economía'
+2025-11-24 20:40:00,920 - poc_keyword_search.src.google_news_searcher - INFO - Successfully parsed 20 articles
+2025-11-24 20:40:00,943 - __main__ - INFO - ✓ 'Banco de España economía': 18 new, 2 duplicates (2 new keywords), 18 content, 0 no_content
+2025-11-24 20:40:01,943 - __main__ - INFO - 
+[4/9] Searching: 'guerra Ucrania' (when=1d)
+2025-11-24 20:40:01,944 - poc_keyword_search.src.google_news_searcher - INFO - Searching Google News: keyword='guerra Ucrania', when=1d
+2025-11-24 20:40:02,930 - poc_keyword_search.src.google_news_searcher - INFO - Found 100 results for 'guerra Ucrania'
+2025-11-24 20:41:10,696 - poc_keyword_search.src.google_news_searcher - INFO - Successfully parsed 40 articles
+2025-11-24 20:41:10,703 - __main__ - INFO - ✓ 'guerra Ucrania': 40 new, 0 duplicates (0 new keywords), 40 content, 0 no_content
+2025-11-24 20:41:11,704 - __main__ - INFO - 
+[5/9] Searching: 'Unión Europea política' (when=1d)
+2025-11-24 20:41:11,704 - poc_keyword_search.src.google_news_searcher - INFO - Searching Google News: keyword='Unión Europea política', when=1d
+2025-11-24 20:41:12,396 - poc_keyword_search.src.google_news_searcher - INFO - Found 53 results for 'Unión Europea política'
+2025-11-24 20:41:56,048 - poc_keyword_search.src.google_news_searcher - INFO - Successfully parsed 25 articles
+2025-11-24 20:41:56,057 - __main__ - INFO - ✓ 'Unión Europea política': 25 new, 0 duplicates (0 new keywords), 25 content, 0 no_content
+2025-11-24 20:41:57,057 - __main__ - INFO - 
+[6/9] Searching: 'gobierno España Sánchez' (when=1d)
+2025-11-24 20:41:57,057 - poc_keyword_search.src.google_news_searcher - INFO - Searching Google News: keyword='gobierno España Sánchez', when=1d
+2025-11-24 20:41:58,003 - poc_keyword_search.src.google_news_searcher - INFO - Found 95 results for 'gobierno España Sánchez'
+2025-11-24 20:42:48,053 - poc_keyword_search.src.google_news_searcher - INFO - Successfully parsed 30 articles
+2025-11-24 20:42:48,101 - __main__ - INFO - ✓ 'gobierno España Sánchez': 28 new, 2 duplicates (2 new keywords), 28 content, 0 no_content
+2025-11-24 20:42:49,102 - __main__ - INFO - 
+[7/9] Searching: 'elecciones España' (when=7d)
+2025-11-24 20:42:49,102 - poc_keyword_search.src.google_news_searcher - INFO - Searching Google News: keyword='elecciones España', when=7d
+2025-11-24 20:42:50,955 - poc_keyword_search.src.google_news_searcher - INFO - Found 91 results for 'elecciones España'
+2025-11-24 20:43:25,076 - poc_keyword_search.src.google_news_searcher - INFO - Successfully parsed 20 articles
+2025-11-24 20:43:25,087 - __main__ - INFO - ✓ 'elecciones España': 20 new, 0 duplicates (0 new keywords), 20 content, 0 no_content
+2025-11-24 20:43:26,087 - __main__ - INFO - 
+[8/9] Searching: 'bolsa española IBEX 35' (when=1d)
+2025-11-24 20:43:26,088 - poc_keyword_search.src.google_news_searcher - INFO - Searching Google News: keyword='bolsa española IBEX 35', when=1d
+2025-11-24 20:43:26,619 - poc_keyword_search.src.google_news_searcher - INFO - Found 32 results for 'bolsa española IBEX 35'
+2025-11-24 20:44:09,720 - poc_keyword_search.src.google_news_searcher - INFO - Successfully parsed 25 articles
+2025-11-24 20:44:09,728 - __main__ - INFO - ✓ 'bolsa española IBEX 35': 25 new, 0 duplicates (0 new keywords), 25 content, 0 no_content
+2025-11-24 20:44:10,728 - __main__ - INFO - 
+[9/9] Searching: 'sector bancario España' (when=1d)
+2025-11-24 20:44:10,729 - poc_keyword_search.src.google_news_searcher - INFO - Searching Google News: keyword='sector bancario España', when=1d
+2025-11-24 20:44:11,267 - poc_keyword_search.src.google_news_searcher - INFO - Found 14 results for 'sector bancario España'
+2025-11-24 20:44:35,249 - poc_keyword_search.src.google_news_searcher - INFO - Successfully parsed 14 articles
+2025-11-24 20:44:35,279 - __main__ - INFO - ✓ 'sector bancario España': 14 new, 0 duplicates (0 new keywords), 14 content, 0 no_content
+2025-11-24 20:44:35,280 - __main__ - INFO - 
+============================================================
+2025-11-24 20:44:35,280 - __main__ - INFO - POC STAGE 01 COMPLETED
+2025-11-24 20:44:35,280 - __main__ - INFO - ============================================================
+2025-11-24 20:44:35,280 - __main__ - INFO - Keywords searched: 9
+2025-11-24 20:44:35,280 - __main__ - INFO - Total articles found: 239
+2025-11-24 20:44:35,280 - __main__ - INFO - New articles saved: 231
+2025-11-24 20:44:35,281 - __main__ - INFO -   - Content URLs: 231
+2025-11-24 20:44:35,281 - __main__ - INFO -   - No-content URLs: 0
+2025-11-24 20:44:35,281 - __main__ - INFO - Duplicates skipped: 8
+2025-11-24 20:44:35,281 - __main__ - INFO - ============================================================
+2025-11-24 22:42:46,027 - __main__ - INFO - POC Keyword Search - Logging initialized: poc_keyword_search/logs/2025-11-24/01_search_urls_by_topic.log
+2025-11-24 22:42:46,028 - __main__ - INFO - ============================================================
+2025-11-24 22:42:46,028 - __main__ - INFO - POC KEYWORD SEARCH - Stage 01 Alternative
+2025-11-24 22:42:46,028 - __main__ - INFO - Date: 2025-11-24
+2025-11-24 22:42:46,029 - __main__ - INFO - ============================================================
+2025-11-24 22:42:46,036 - __main__ - INFO - Loaded POC config from poc_keyword_search/config.yml
+2025-11-24 22:42:46,036 - __main__ - INFO - Filtering to 1 specific keywords
+2025-11-24 22:42:46,036 - __main__ - INFO - Total keywords to search: 1
+2025-11-24 22:42:46,037 - poc_keyword_search.src.google_news_searcher - INFO - Initialized Google News searcher: lang=es, country=ES, resolve_urls=True
+2025-11-24 22:42:46,037 - __main__ - INFO - URL resolution ENABLED (decodes Google News URLs to real article URLs)
+2025-11-24 22:42:46,113 - common.stage01_extraction.url_classifier - INFO - Loaded 0 global rules and 78 source-specific rules from config/url_classification_rules.yml
+2025-11-24 22:42:46,168 - common.stage01_extraction.url_classifier - INFO - Loaded 839 cached no_contenido URLs from config/cached_no_content_urls.yml
+2025-11-24 22:42:46,168 - __main__ - INFO - URL classifier initialized
+2025-11-24 22:42:46,169 - __main__ - INFO - Connected to POC database
+2025-11-24 22:42:46,169 - __main__ - INFO - 
+[1/1] Searching: 'BCE tipos de interés' (when=1d)
+2025-11-24 22:42:46,169 - poc_keyword_search.src.google_news_searcher - INFO - Searching Google News: keyword='BCE tipos de interés', when=1d
+2025-11-24 22:42:46,899 - poc_keyword_search.src.google_news_searcher - INFO - Found 15 results for 'BCE tipos de interés'
+2025-11-24 22:43:05,454 - poc_keyword_search.src.google_news_searcher - INFO - Successfully parsed 15 articles
+2025-11-24 22:43:05,481 - __main__ - INFO - ✓ 'BCE tipos de interés': 3 new, 12 duplicates (9 new keywords), 3 content, 0 no_content
+2025-11-24 22:43:05,481 - __main__ - INFO - 
+============================================================
+2025-11-24 22:43:05,481 - __main__ - INFO - POC STAGE 01 COMPLETED
+2025-11-24 22:43:05,481 - __main__ - INFO - ============================================================
+2025-11-24 22:43:05,482 - __main__ - INFO - Keywords searched: 1
+2025-11-24 22:43:05,482 - __main__ - INFO - Total articles found: 15
+2025-11-24 22:43:05,482 - __main__ - INFO - New articles saved: 3
+2025-11-24 22:43:05,482 - __main__ - INFO -   - Content URLs: 3
+2025-11-24 22:43:05,482 - __main__ - INFO -   - No-content URLs: 0
+2025-11-24 22:43:05,482 - __main__ - INFO - Duplicates skipped: 12
+2025-11-24 22:43:05,482 - __main__ - INFO - ============================================================
